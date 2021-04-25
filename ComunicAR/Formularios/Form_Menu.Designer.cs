@@ -152,6 +152,7 @@ namespace ComunicAR.Formularios
             this.Name = "Form_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Form_Menu_Load);
             this.ResumeLayout(false);
 
         }

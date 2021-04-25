@@ -26,5 +26,10 @@ namespace ComunicAR.Formularios
 
 
         }
+
+        private void Form_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ComunicAR
 {
     static class Program
@@ -18,6 +19,7 @@ namespace ComunicAR
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
         }
     }
 }
