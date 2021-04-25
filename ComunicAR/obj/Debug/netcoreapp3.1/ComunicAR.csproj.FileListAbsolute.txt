@@ -1,0 +1,16 @@
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\netcoreapp3.1\ComunicAR.exe
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\netcoreapp3.1\ComunicAR.deps.json
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\netcoreapp3.1\ComunicAR.runtimeconfig.json
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\netcoreapp3.1\ComunicAR.runtimeconfig.dev.json
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\netcoreapp3.1\ComunicAR.dll
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\netcoreapp3.1\ComunicAR.pdb
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.csprojAssemblyReference.cache
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.Form1.resources
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.csproj.GenerateResource.cache
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.AssemblyInfoInputs.cache
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.AssemblyInfo.cs
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.csproj.CoreCompileInputs.cache
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.dll
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.pdb
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.genruntimeconfig.cache
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\netcoreapp3.1\ComunicAR.Formularios.Form_Menu.resources
