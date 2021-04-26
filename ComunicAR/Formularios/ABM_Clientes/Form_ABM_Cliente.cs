@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using ComunicAR.Clases;
 using ComunicAR.Negocio;
 using System.Data.SqlClient;
+using ComunicAR.Formularios.ABM_Clientes;
+using ComunicAR;
 
 namespace ComunicAR.Formularios.ABM_Clientes
 {
@@ -22,7 +24,8 @@ namespace ComunicAR.Formularios.ABM_Clientes
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           Form_Altas_Clientes MenuAltas = new Form_Altas_Clientes();
+           MenuAltas.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -38,7 +41,7 @@ namespace ComunicAR.Formularios.ABM_Clientes
         private void Form_ABM_Cliente_Load(object sender, EventArgs e)
         {
             //LLENAR EL GRIDBOX CON LOS DATOS DE LA TABLA CLIENTES APENAS CARGUE EL FORMULARIO
-            Clientes usuario = new Clientes();
+            Negocio.Clientes usuario = new Negocio.Clientes();
             DataTable tabla = new DataTable();
             tabla = usuario.ClientesCompletos();
             for (int i = 0; i < tabla.Rows.Count; i++)

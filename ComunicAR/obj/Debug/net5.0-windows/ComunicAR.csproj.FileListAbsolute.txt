@@ -1,4 +1,3 @@
-C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.csprojAssemblyReference.cache
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.Formularios.ABM_Clientes.Form_ABM_Cliente.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.Form1.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.Formularios.Form_Menu.resources
@@ -25,3 +24,5 @@ C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.dl
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ref\ComunicAR.dll
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.pdb
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.genruntimeconfig.cache
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.Formularios.ABM_Clientes.Form_Altas_Clientes.resources
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.csprojAssemblyReference.cache

@@ -36,7 +36,14 @@ namespace ComunicAR.Clases
 
         }
 
-        
+        public void Insertar(string sql_comandI)
+        {
+            conectar();
+            cmd.CommandText = sql_comandI;
+            cmd.ExecuteNonQuery();
+            desconectar();
+
+        }
         
         
            
