@@ -8,13 +8,14 @@ namespace ComunicAR.Clases
 {
     class Acceso_BD
     {
+        
         public SqlConnection conexion = new SqlConnection();
         public SqlCommand cmd = new SqlCommand();
         
 
         private void conectar() //CONECTAR A BD
         {
-            conexion.ConnectionString = ""; //ACA VA LA CADENA DE CONECCION A BD
+            conexion.ConnectionString = "Data Source=DESKTOP-RAMDSGS;Initial Catalog=ComunicAR;Integrated Security=True"; //ACA VA LA CADENA DE CONECCION A BD
             conexion.Open();
             cmd.Connection = conexion;
             cmd.CommandType = CommandType.Text;

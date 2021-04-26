@@ -66,6 +66,8 @@ namespace ComunicAR.Formularios
             this.comboBox1.TabIndex = 1;
             this.comboBox1.Text = "Actualizar Datos";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // comboBox2
             // 

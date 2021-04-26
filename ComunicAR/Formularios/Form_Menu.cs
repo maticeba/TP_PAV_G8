@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using ComunicAR.Formularios.ABM_Clientes;
 
 namespace ComunicAR.Formularios
 {
@@ -30,6 +31,22 @@ namespace ComunicAR.Formularios
         private void Form_Menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+              
+                Formularios.ABM_Clientes.Form_ABM_Cliente Form_Cliente = new Formularios.ABM_Clientes.Form_ABM_Cliente();
+                Form_Cliente.ShowDialog();
+
+            }
         }
     }
 }
