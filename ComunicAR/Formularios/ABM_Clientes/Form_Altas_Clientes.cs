@@ -52,9 +52,9 @@ namespace ComunicAR.Formularios.ABM_Clientes
                 Negocio.Clientes cliente = new Negocio.Clientes();
 
                 cliente.Pp_nombre = textBox11.Text;
-                cliente.Pp_calle = textBox14.Text;
+                cliente.Pp_calle = textBox12.Text;
                 cliente.Pp_nro = textBox13.Text;
-                cliente.Pp_piso = textBox12.Text;
+                cliente.Pp_piso = textBox14.Text;
                 cliente.Pp_barrio = cb_Barrio.SelectedValue.ToString();
 
                 cliente.Insertar();

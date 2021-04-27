@@ -25,6 +25,7 @@ namespace ComunicAR.Negocio
 
         public void Insertar()
         {
+
             string sqlInsertar = @"INSERT INTO clientes (nombre_razonSocial, calle, nro, piso, cod_barrio"
                                   + "VALUES ("
                                   + Pp_nombre

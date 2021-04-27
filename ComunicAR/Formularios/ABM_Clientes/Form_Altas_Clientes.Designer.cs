@@ -121,7 +121,7 @@ namespace ComunicAR.Formularios.ABM_Clientes
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(140, 170);
+            this.textBox12.Location = new System.Drawing.Point(140, 91);
             this.textBox12.Name = "textBox12";
             this.textBox12.Pp_Campo = null;
             this.textBox12.Pp_MensajeError = "Falta cargar el piso";
@@ -143,7 +143,7 @@ namespace ComunicAR.Formularios.ABM_Clientes
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(140, 91);
+            this.textBox14.Location = new System.Drawing.Point(140, 170);
             this.textBox14.Name = "textBox14";
             this.textBox14.Pp_Campo = null;
             this.textBox14.Pp_MensajeError = "Falta cargar la calle";
