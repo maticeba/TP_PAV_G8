@@ -15,7 +15,8 @@ namespace ComunicAR.Clases
 
         private void conectar() //CONECTAR A BD
         {
-            conexion.ConnectionString = "Data Source=DESKTOP-RAMDSGS;Initial Catalog=ComunicAR;Integrated Security=True"; //ACA VA LA CADENA DE CONECCION A BD
+            //conexion.ConnectionString = "Data Source = LAPTOP - 17DLPH1G\\SQLEXPRESS; Initial Catalog = ComunicAR; Integrated Security = True"; //ACA VA LA CADENA DE CONECCION A BD
+            conexion.ConnectionString = "Data Source=LAPTOP-17DLPH1G\\SQLEXPRESS;Initial Catalog=ComunicAR;Integrated Security=True";
             conexion.Open();
             cmd.Connection = conexion;
             cmd.CommandType = CommandType.Text;

@@ -21,15 +21,15 @@ namespace ComunicAR.Clases
         public bool Pp_Validable { get; set; }
         public string Pp_MensajeError { get; set; }
 
-        //Acceso_BD BD = new Acceso_BD();
+        Acceso_BD BD = new Acceso_BD();
 
-        /*public void CargarCombo()
+        public void CargarCombo()
         {
             string sql = "SELECT " + Pp_PK + ", " + Pp_Descripcion + " FROM " + Pp_Tabla;
             this.DisplayMember = Pp_Descripcion;
             this.ValueMember = Pp_PK;
             this.DataSource = BD.EjecutarSelect(sql);
 
-        }*/
+        }
     }
 }

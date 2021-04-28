@@ -29,7 +29,24 @@ namespace ComunicAR
         /// </summary>
         private void InitializeComponent()
         {
+            this.comboBox021 = new ComunicAR.Clases.ComboBox02();
             this.SuspendLayout();
+            // 
+            // comboBox021
+            // 
+            this.comboBox021.FormattingEnabled = true;
+            this.comboBox021.Location = new System.Drawing.Point(155, 79);
+            this.comboBox021.Name = "comboBox021";
+            this.comboBox021.Pp_Conseleccion = false;
+            this.comboBox021.Pp_Descripcion = null;
+            this.comboBox021.Pp_MensajeError = null;
+            this.comboBox021.Pp_NombreCampo = null;
+            this.comboBox021.Pp_NombreTabla = null;
+            this.comboBox021.Pp_PK = null;
+            this.comboBox021.Pp_Tabla = null;
+            this.comboBox021.Pp_Validable = false;
+            this.comboBox021.Size = new System.Drawing.Size(121, 23);
+            this.comboBox021.TabIndex = 0;
             // 
             // Form1
             // 
@@ -37,6 +54,7 @@ namespace ComunicAR
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox021);
             this.Name = "Form1";
             this.Text = "ComunicAR";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -46,6 +64,8 @@ namespace ComunicAR
         }
 
         #endregion
+
+        private Clases.ComboBox02 comboBox021;
     }
 }
 
