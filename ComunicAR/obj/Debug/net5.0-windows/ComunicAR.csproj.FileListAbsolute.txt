@@ -40,3 +40,4 @@ C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\net5.0-windows\Microsoft.Ex
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\matic\Desktop\TP_PAV_G8\ComunicAR\obj\Debug\net5.0-windows\ComunicAR.csprojAssemblyReference.cache
