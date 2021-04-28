@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj": {}
+    "C:\\Users\\joaco\\Documents\\GitHub\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj": {
+    "C:\\Users\\joaco\\Documents\\GitHub\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
+        "projectUniqueName": "C:\\Users\\joaco\\Documents\\GitHub\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
         "projectName": "ComunicAR",
-        "projectPath": "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
-        "packagesPath": "C:\\Users\\matic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\obj\\",
+        "projectPath": "C:\\Users\\joaco\\Documents\\GitHub\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
+        "packagesPath": "C:\\Users\\joaco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaco\\Documents\\GitHub\\TP_PAV_G8\\ComunicAR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matic\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\joaco\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
