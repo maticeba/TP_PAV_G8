@@ -41,6 +41,7 @@ namespace ComunicAR.Formularios.ABM_Clientes
 
         private void button2_Click(object sender, EventArgs e)
         {
+ 
             this.Close();
         }
 

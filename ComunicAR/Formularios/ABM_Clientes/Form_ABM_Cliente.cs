@@ -61,5 +61,23 @@ namespace ComunicAR.Formularios.ABM_Clientes
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Negocio.Clientes usuario = new Negocio.Clientes();
+            DataTable tabla = new DataTable();
+            tabla = usuario.ClientesCompletos();
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                dataGridView1.Rows.Add();
+                dataGridView1.Rows[i].Cells[0].Value = tabla.Rows[i]["nro_cliente"].ToString();
+                dataGridView1.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_razonSocial"].ToString();
+                dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["cod_barrio"].ToString();
+                dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["calle"].ToString();
+                dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["nro"].ToString();
+                dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["piso"].ToString();
+
+            }
+        }
     }
 }

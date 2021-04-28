@@ -1164,24 +1164,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nico\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\matic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nico\\Documents\\Proyectos VS\\PAV1\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
+      "projectUniqueName": "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
       "projectName": "ComunicAR",
-      "projectPath": "C:\\Users\\Nico\\Documents\\Proyectos VS\\PAV1\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
-      "packagesPath": "C:\\Users\\Nico\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nico\\Documents\\Proyectos VS\\PAV1\\TP_PAV_G8\\ComunicAR\\obj\\",
+      "projectPath": "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\ComunicAR.csproj",
+      "packagesPath": "C:\\Users\\matic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matic\\Desktop\\TP_PAV_G8\\ComunicAR\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Nico\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\matic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
