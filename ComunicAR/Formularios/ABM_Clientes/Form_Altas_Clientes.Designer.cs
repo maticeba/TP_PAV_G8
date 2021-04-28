@@ -107,12 +107,13 @@ namespace ComunicAR.Formularios.ABM_Clientes
             this.cb_Barrio.Name = "cb_Barrio";
             this.cb_Barrio.Size = new System.Drawing.Size(171, 23);
             this.cb_Barrio.TabIndex = 6;
+            this.cb_Barrio.SelectedIndexChanged += new System.EventHandler(this.cb_Barrio_SelectedIndexChanged);
             // 
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(140, 54);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Pp_Campo = null;
+            this.textBox11.Pp_Campo = "nombre_razonSocial";
             this.textBox11.Pp_MensajeError = "Falta cargar el nombre";
             this.textBox11.Pp_Tabla = null;
             this.textBox11.Pp_Validable = true;
@@ -123,8 +124,8 @@ namespace ComunicAR.Formularios.ABM_Clientes
             // 
             this.textBox12.Location = new System.Drawing.Point(140, 91);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Pp_Campo = null;
-            this.textBox12.Pp_MensajeError = "Falta cargar el piso";
+            this.textBox12.Pp_Campo = "calle";
+            this.textBox12.Pp_MensajeError = "Falta cargar la calle";
             this.textBox12.Pp_Tabla = null;
             this.textBox12.Pp_Validable = true;
             this.textBox12.Size = new System.Drawing.Size(171, 23);
@@ -134,7 +135,7 @@ namespace ComunicAR.Formularios.ABM_Clientes
             // 
             this.textBox13.Location = new System.Drawing.Point(140, 131);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Pp_Campo = null;
+            this.textBox13.Pp_Campo = "nro";
             this.textBox13.Pp_MensajeError = "Falta cargar el numero de calle";
             this.textBox13.Pp_Tabla = null;
             this.textBox13.Pp_Validable = true;
@@ -145,12 +146,13 @@ namespace ComunicAR.Formularios.ABM_Clientes
             // 
             this.textBox14.Location = new System.Drawing.Point(140, 170);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Pp_Campo = null;
-            this.textBox14.Pp_MensajeError = "Falta cargar la calle";
+            this.textBox14.Pp_Campo = "piso";
+            this.textBox14.Pp_MensajeError = "Falta cargar el piso";
             this.textBox14.Pp_Tabla = null;
             this.textBox14.Pp_Validable = true;
             this.textBox14.Size = new System.Drawing.Size(171, 23);
             this.textBox14.TabIndex = 10;
+            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
             // button1
             // 

@@ -64,5 +64,15 @@ namespace ComunicAR.Formularios.ABM_Clientes
                 return;
             }
         }
+
+        private void cb_Barrio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

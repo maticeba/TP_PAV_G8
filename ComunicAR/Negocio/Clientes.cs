@@ -27,12 +27,14 @@ namespace ComunicAR.Negocio
         {
 
             string sqlInsertar = @"INSERT INTO clientes (nombre_razonSocial, calle, nro, piso, cod_barrio"
-                                  + "VALUES ("
-                                  + Pp_nombre
+                                  + "VALUES ('" + Pp_nombre + "', '" + Pp_calle + "' , " + Pp_nro + ", " + Pp_piso + ", " + Pp_barrio + ")";
+                                 /* + "'"+Pp_nombre+ "'"
                                   + ", '" + Pp_calle + "'"
-                                  + ", '" + Pp_nro + "'"
-                                  + ", '" + Pp_piso + "'"
+                                  + "," + Pp_nro 
+                                  + "," + Pp_piso 
                                   + "," + Pp_barrio + ")";
+            string sqlInsertar = @"INSERT INTO clientes(nombre_razonSocial, calle, nro, piso, cod_barrio)
+                                    VALUES('Ivan artime', 'Arroabarrena', 85, 2, 4)";*/
             BD.Insertar(sqlInsertar);
             MessageBox.Show("Cliente cargado exitosamente");
                                  
