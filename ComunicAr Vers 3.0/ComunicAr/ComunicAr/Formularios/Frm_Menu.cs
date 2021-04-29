@@ -31,5 +31,10 @@ namespace ComunicAr.Formularios
                 Frm_Cliente.ShowDialog();
             }
         }
+
+        private void cmb_Gen_Listas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

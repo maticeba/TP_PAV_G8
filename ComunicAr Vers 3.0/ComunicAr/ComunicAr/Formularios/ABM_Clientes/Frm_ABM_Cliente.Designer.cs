@@ -33,14 +33,14 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.btn_modificar_cliente = new System.Windows.Forms.Button();
             this.btn_eliminar_cliente = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_salir_cliente = new System.Windows.Forms.Button();
-            this.btn_refresh_client = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_salir_cliente = new System.Windows.Forms.Button();
+            this.btn_refresh_client = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,28 +87,9 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.dataGridView1.Location = new System.Drawing.Point(29, 69);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(693, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(665, 252);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // btn_salir_cliente
-            // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(618, 327);
-            this.btn_salir_cliente.Name = "btn_salir_cliente";
-            this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
-            this.btn_salir_cliente.TabIndex = 0;
-            this.btn_salir_cliente.Text = "Salir";
-            this.btn_salir_cliente.UseVisualStyleBackColor = true;
-            this.btn_salir_cliente.Click += new System.EventHandler(this.btn_salir_cliente_Click);
-            // 
-            // btn_refresh_client
-            // 
-            this.btn_refresh_client.Location = new System.Drawing.Point(29, 327);
-            this.btn_refresh_client.Name = "btn_refresh_client";
-            this.btn_refresh_client.Size = new System.Drawing.Size(104, 34);
-            this.btn_refresh_client.TabIndex = 0;
-            this.btn_refresh_client.Text = "Refrescar";
-            this.btn_refresh_client.UseVisualStyleBackColor = true;
-            this.btn_refresh_client.Click += new System.EventHandler(this.btn_refresh_client_Click);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -151,6 +132,26 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             this.Column6.Width = 50;
+            // 
+            // btn_salir_cliente
+            // 
+            this.btn_salir_cliente.Location = new System.Drawing.Point(618, 327);
+            this.btn_salir_cliente.Name = "btn_salir_cliente";
+            this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
+            this.btn_salir_cliente.TabIndex = 0;
+            this.btn_salir_cliente.Text = "Salir";
+            this.btn_salir_cliente.UseVisualStyleBackColor = true;
+            this.btn_salir_cliente.Click += new System.EventHandler(this.btn_salir_cliente_Click);
+            // 
+            // btn_refresh_client
+            // 
+            this.btn_refresh_client.Location = new System.Drawing.Point(29, 327);
+            this.btn_refresh_client.Name = "btn_refresh_client";
+            this.btn_refresh_client.Size = new System.Drawing.Size(104, 34);
+            this.btn_refresh_client.TabIndex = 0;
+            this.btn_refresh_client.Text = "Refrescar";
+            this.btn_refresh_client.UseVisualStyleBackColor = true;
+            this.btn_refresh_client.Click += new System.EventHandler(this.btn_refresh_client_Click);
             // 
             // Frm_ABM_Cliente
             // 

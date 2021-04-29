@@ -88,6 +88,7 @@ namespace ComunicAr.Formularios
             this.cmb_Gen_Listas.Size = new System.Drawing.Size(203, 23);
             this.cmb_Gen_Listas.TabIndex = 1;
             this.cmb_Gen_Listas.Text = "Generar Listas";
+            this.cmb_Gen_Listas.SelectedIndexChanged += new System.EventHandler(this.cmb_Gen_Listas_SelectedIndexChanged);
             // 
             // cmb_Actual_Datos
             // 
@@ -123,7 +124,7 @@ namespace ComunicAr.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 246);
+            this.ClientSize = new System.Drawing.Size(221, 242);
             this.ControlBox = false;
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_emitir_factura);
