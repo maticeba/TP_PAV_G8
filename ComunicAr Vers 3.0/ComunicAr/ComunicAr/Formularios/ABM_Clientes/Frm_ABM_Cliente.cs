@@ -66,5 +66,10 @@ namespace ComunicAr.Formularios.ABM_Clientes
             Frm_Alta_Cliente MenuAltas = new Frm_Alta_Cliente();
             MenuAltas.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
