@@ -118,13 +118,14 @@ namespace ComunicAr.Formularios
             this.cmb_Actual_Datos.Size = new System.Drawing.Size(203, 23);
             this.cmb_Actual_Datos.TabIndex = 0;
             this.cmb_Actual_Datos.Text = "Actualizar Datos";
+            this.cmb_Actual_Datos.SelectedIndexChanged += new System.EventHandler(this.cmb_Actual_Datos_SelectedIndexChanged);
             this.cmb_Actual_Datos.SelectedValueChanged += new System.EventHandler(this.cmb_Actual_Datos_SelectedValueChanged);
             // 
             // Frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(221, 242);
+            this.ClientSize = new System.Drawing.Size(217, 238);
             this.ControlBox = false;
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_emitir_factura);
@@ -140,6 +141,7 @@ namespace ComunicAr.Formularios
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Frm_Menu_Load);
             this.ResumeLayout(false);
 
         }

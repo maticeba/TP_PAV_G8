@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComunicAr.Formularios.ABM_Clientes;
+using ComunicAr.Formularios.Servicios;
 
 namespace ComunicAr.Formularios
 {
@@ -30,9 +31,25 @@ namespace ComunicAr.Formularios
                 Frm_ABM_Cliente Frm_Cliente = new Frm_ABM_Cliente();
                 Frm_Cliente.ShowDialog();
             }
+
+            if (cmb_Actual_Datos.SelectedIndex == 4)
+            {
+                Frm_ABM_Servicios Frm_Servicios = new Servicios.Frm_ABM_Servicios();
+                Frm_Servicios.ShowDialog();
+            }
         }
 
         private void cmb_Gen_Listas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Frm_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_Actual_Datos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
