@@ -79,16 +79,16 @@
     <Compile Include="Formularios\Frm_Menu.Designer.cs">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Servicios\Frm_ABM_Servicios.cs">
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Servicios\Frm_ABM_Servicios.Designer.cs">
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.Designer.cs">
       <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Clientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\Servicios\Frm_ABM_Servicios.resx">
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.resx">
       <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_ABM_Cliente.resx">
@@ -125,8 +125,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ABM_Servicios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
