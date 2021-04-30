@@ -61,7 +61,6 @@ namespace ComunicAr.Clases
                 }
             }
             sql += paqueteColumnas + ") VALUES (" + paqueteValores + ")";
-            MessageBox.Show(sql);
             return sql;
         }
 
