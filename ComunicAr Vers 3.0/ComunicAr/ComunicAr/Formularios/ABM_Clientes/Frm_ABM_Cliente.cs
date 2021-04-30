@@ -63,7 +63,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
 
         private void btn_crear_cliente_Click(object sender, EventArgs e)
         {
-            
+            Frm_Alta_Cliente Altas = new Frm_Alta_Cliente();
+            Altas.ShowDialog();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
