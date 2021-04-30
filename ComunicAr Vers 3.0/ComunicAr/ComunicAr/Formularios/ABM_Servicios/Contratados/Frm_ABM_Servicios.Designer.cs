@@ -32,12 +32,11 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios = new System.Windows.Forms.DataGridView();
             this.Tipo_Servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre_Servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo_Nacional = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo_Area = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Numero_Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_Desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_Hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_salir_cliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridServicios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,16 +48,14 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Tipo_Servicio,
             this.Nombre_Servicio,
-            this.Codigo_Nacional,
-            this.Codigo_Area,
-            this.Numero_Telefono,
             this.Codigo_Servicio,
             this.Fecha_Desde,
-            this.Fecha_Hasta});
+            this.Fecha_Hasta,
+            this.id_numero});
             this.GridServicios.Location = new System.Drawing.Point(12, 44);
             this.GridServicios.Name = "GridServicios";
             this.GridServicios.ReadOnly = true;
-            this.GridServicios.Size = new System.Drawing.Size(735, 262);
+            this.GridServicios.Size = new System.Drawing.Size(644, 262);
             this.GridServicios.TabIndex = 3;
             this.GridServicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridServicios_CellContentClick);
             // 
@@ -73,24 +70,6 @@ namespace ComunicAr.Formularios.Servicios
             this.Nombre_Servicio.HeaderText = "Nombre Servicio";
             this.Nombre_Servicio.Name = "Nombre_Servicio";
             this.Nombre_Servicio.ReadOnly = true;
-            // 
-            // Codigo_Nacional
-            // 
-            this.Codigo_Nacional.HeaderText = "Codigo Nacional";
-            this.Codigo_Nacional.Name = "Codigo_Nacional";
-            this.Codigo_Nacional.ReadOnly = true;
-            // 
-            // Codigo_Area
-            // 
-            this.Codigo_Area.HeaderText = "Codigo Area";
-            this.Codigo_Area.Name = "Codigo_Area";
-            this.Codigo_Area.ReadOnly = true;
-            // 
-            // Numero_Telefono
-            // 
-            this.Numero_Telefono.HeaderText = "Numero Telefono";
-            this.Numero_Telefono.Name = "Numero_Telefono";
-            this.Numero_Telefono.ReadOnly = true;
             // 
             // Codigo_Servicio
             // 
@@ -110,11 +89,28 @@ namespace ComunicAr.Formularios.Servicios
             this.Fecha_Hasta.Name = "Fecha_Hasta";
             this.Fecha_Hasta.ReadOnly = true;
             // 
+            // id_numero
+            // 
+            this.id_numero.HeaderText = "Numero Telefono";
+            this.id_numero.Name = "id_numero";
+            this.id_numero.ReadOnly = true;
+            // 
+            // btn_salir_cliente
+            // 
+            this.btn_salir_cliente.Location = new System.Drawing.Point(552, 315);
+            this.btn_salir_cliente.Name = "btn_salir_cliente";
+            this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
+            this.btn_salir_cliente.TabIndex = 5;
+            this.btn_salir_cliente.Text = "Salir";
+            this.btn_salir_cliente.UseVisualStyleBackColor = true;
+            this.btn_salir_cliente.Click += new System.EventHandler(this.btn_salir_cliente_Click);
+            // 
             // Frm_ABM_Servicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 329);
+            this.ClientSize = new System.Drawing.Size(675, 361);
+            this.Controls.Add(this.btn_salir_cliente);
             this.Controls.Add(this.GridServicios);
             this.Name = "Frm_ABM_Servicios";
             this.Text = "ServiciosContratados";
@@ -129,11 +125,10 @@ namespace ComunicAr.Formularios.Servicios
         private System.Windows.Forms.DataGridView GridServicios;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo_Servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Servicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Nacional;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Area;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Numero_Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Desde;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Hasta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_numero;
+        private System.Windows.Forms.Button btn_salir_cliente;
     }
 }
