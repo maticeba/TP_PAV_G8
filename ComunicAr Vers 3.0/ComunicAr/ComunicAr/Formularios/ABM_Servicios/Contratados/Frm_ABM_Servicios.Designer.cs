@@ -30,11 +30,12 @@ namespace ComunicAr.Formularios.Servicios
         private void InitializeComponent()
         {
             this.GridServicios = new System.Windows.Forms.DataGridView();
+            this.Tipo_Servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_Servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Nacional = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Area = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Numero_Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo_Datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_Desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_Hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridServicios)).BeginInit();
@@ -46,11 +47,12 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.AllowUserToDeleteRows = false;
             this.GridServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridServicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Tipo_Servicio,
+            this.Nombre_Servicio,
             this.Codigo_Nacional,
             this.Codigo_Area,
             this.Numero_Telefono,
             this.Codigo_Servicio,
-            this.Codigo_Datos,
             this.Fecha_Desde,
             this.Fecha_Hasta});
             this.GridServicios.Location = new System.Drawing.Point(12, 44);
@@ -59,6 +61,18 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.Size = new System.Drawing.Size(735, 262);
             this.GridServicios.TabIndex = 3;
             this.GridServicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridServicios_CellContentClick);
+            // 
+            // Tipo_Servicio
+            // 
+            this.Tipo_Servicio.HeaderText = "Tipo Servicio";
+            this.Tipo_Servicio.Name = "Tipo_Servicio";
+            this.Tipo_Servicio.ReadOnly = true;
+            // 
+            // Nombre_Servicio
+            // 
+            this.Nombre_Servicio.HeaderText = "Nombre Servicio";
+            this.Nombre_Servicio.Name = "Nombre_Servicio";
+            this.Nombre_Servicio.ReadOnly = true;
             // 
             // Codigo_Nacional
             // 
@@ -84,12 +98,6 @@ namespace ComunicAr.Formularios.Servicios
             this.Codigo_Servicio.Name = "Codigo_Servicio";
             this.Codigo_Servicio.ReadOnly = true;
             // 
-            // Codigo_Datos
-            // 
-            this.Codigo_Datos.HeaderText = "Codigo Datos";
-            this.Codigo_Datos.Name = "Codigo_Datos";
-            this.Codigo_Datos.ReadOnly = true;
-            // 
             // Fecha_Desde
             // 
             this.Fecha_Desde.HeaderText = "Fecha Desde";
@@ -110,6 +118,7 @@ namespace ComunicAr.Formularios.Servicios
             this.Controls.Add(this.GridServicios);
             this.Name = "Frm_ABM_Servicios";
             this.Text = "ServiciosContratados";
+            this.Load += new System.EventHandler(this.Frm_ABM_Servicios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridServicios)).EndInit();
             this.ResumeLayout(false);
 
@@ -118,11 +127,12 @@ namespace ComunicAr.Formularios.Servicios
         #endregion
 
         private System.Windows.Forms.DataGridView GridServicios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo_Servicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Nacional;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Area;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero_Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Servicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Datos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Desde;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Hasta;
     }

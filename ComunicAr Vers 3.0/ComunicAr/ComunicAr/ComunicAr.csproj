@@ -86,6 +86,7 @@
       <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Clientes.cs" />
+    <Compile Include="Negocio\Servicios_Contratados.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.resx">
