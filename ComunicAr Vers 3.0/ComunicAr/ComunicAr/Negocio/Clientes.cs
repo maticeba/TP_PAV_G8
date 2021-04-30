@@ -23,19 +23,19 @@ namespace ComunicAr.Negocio
             string sql = "SELECT * FROM clientes";
             return BD.EjecutarSelect(sql);
         }
-        public void Insertar()
+        /*public void Insertar()
         {
 
             string sqlInsertar = @"INSERT INTO clientes (nombre_razonSocial, calle, nro, piso, cod_barrio)"
                                   + "VALUES ('" + Pp_nombre + "', '" + Pp_calle + "' , " + Pp_nro + ", " + Pp_piso + ", " + Pp_barrio + ")";
-                                /* + "'"+Pp_nombre+ "'"
-                                   + ", '" + Pp_calle + "'"
-                                   + "," + Pp_nro 
-                                   + "," + Pp_piso 
-                                   + "," + Pp_barrio + ")";
-            string sqlInsertar = @"INSERT INTO clientes(nombre_razonSocial, calle, nro, piso, cod_barrio)
-                                    VALUES('Ivan artime', 'Arroabarrena', 85, 2, 4)";*/
+
             BD.Insertar(sqlInsertar);
+            MessageBox.Show("Cliente cargado exitosamente");
+        }*/
+        public void Insertar(Control.ControlCollection controles)
+        {
+            TratamientosEspeciales tratamientos = new TratamientosEspeciales();
+            BD.Insertar(tratamientos.ConstructorInsert("Clientes", controles));
             MessageBox.Show("Cliente cargado exitosamente");
         }
     }
