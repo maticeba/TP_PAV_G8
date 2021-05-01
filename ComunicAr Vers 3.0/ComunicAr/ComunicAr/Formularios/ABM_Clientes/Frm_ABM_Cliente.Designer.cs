@@ -41,12 +41,19 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.filtroNombre = new ComunicAr.Clases.TextBox01();
+            this.filtroNro = new ComunicAr.Clases.TextBox01();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_crear_cliente
             // 
-            this.btn_crear_cliente.Location = new System.Drawing.Point(29, 12);
+            this.btn_crear_cliente.Location = new System.Drawing.Point(12, 131);
             this.btn_crear_cliente.Name = "btn_crear_cliente";
             this.btn_crear_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_crear_cliente.TabIndex = 0;
@@ -56,7 +63,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_modificar_cliente
             // 
-            this.btn_modificar_cliente.Location = new System.Drawing.Point(152, 12);
+            this.btn_modificar_cliente.Location = new System.Drawing.Point(136, 131);
             this.btn_modificar_cliente.Name = "btn_modificar_cliente";
             this.btn_modificar_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_modificar_cliente.TabIndex = 0;
@@ -65,7 +72,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_eliminar_cliente
             // 
-            this.btn_eliminar_cliente.Location = new System.Drawing.Point(275, 12);
+            this.btn_eliminar_cliente.Location = new System.Drawing.Point(265, 131);
             this.btn_eliminar_cliente.Name = "btn_eliminar_cliente";
             this.btn_eliminar_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_eliminar_cliente.TabIndex = 0;
@@ -74,7 +81,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_salir_cliente
             // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(618, 327);
+            this.btn_salir_cliente.Location = new System.Drawing.Point(577, 450);
             this.btn_salir_cliente.Name = "btn_salir_cliente";
             this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_cliente.TabIndex = 0;
@@ -84,7 +91,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_refresh_client
             // 
-            this.btn_refresh_client.Location = new System.Drawing.Point(29, 327);
+            this.btn_refresh_client.Location = new System.Drawing.Point(12, 450);
             this.btn_refresh_client.Name = "btn_refresh_client";
             this.btn_refresh_client.Size = new System.Drawing.Size(104, 34);
             this.btn_refresh_client.TabIndex = 0;
@@ -146,18 +153,83 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 180);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(665, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(669, 252);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnConsulta);
+            this.groupBox1.Controls.Add(this.filtroNombre);
+            this.groupBox1.Controls.Add(this.filtroNro);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(669, 113);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filtros";
+            // 
+            // btnConsulta
+            // 
+            this.btnConsulta.Location = new System.Drawing.Point(385, 69);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(75, 23);
+            this.btnConsulta.TabIndex = 3;
+            this.btnConsulta.Text = "Consulta";
+            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
+            // 
+            // filtroNombre
+            // 
+            this.filtroNombre.Location = new System.Drawing.Point(173, 69);
+            this.filtroNombre.Name = "filtroNombre";
+            this.filtroNombre.Pp_Campo = null;
+            this.filtroNombre.Pp_MensajeError = null;
+            this.filtroNombre.Pp_Tabla = null;
+            this.filtroNombre.Pp_Validable = false;
+            this.filtroNombre.Size = new System.Drawing.Size(183, 23);
+            this.filtroNombre.TabIndex = 3;
+            // 
+            // filtroNro
+            // 
+            this.filtroNro.Location = new System.Drawing.Point(173, 33);
+            this.filtroNro.Name = "filtroNro";
+            this.filtroNro.Pp_Campo = null;
+            this.filtroNro.Pp_MensajeError = null;
+            this.filtroNro.Pp_Tabla = null;
+            this.filtroNro.Pp_Validable = false;
+            this.filtroNro.Size = new System.Drawing.Size(183, 23);
+            this.filtroNro.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombre/Razon Social";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Numero de Cliente";
             // 
             // Frm_ABM_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 373);
+            this.ClientSize = new System.Drawing.Size(705, 488);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_refresh_client);
             this.Controls.Add(this.btn_salir_cliente);
@@ -169,6 +241,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.Text = "ABM Cliente";
             this.Load += new System.EventHandler(this.Frm_ABM_Cliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -187,5 +261,11 @@ namespace ComunicAr.Formularios.ABM_Clientes
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnConsulta;
+        private Clases.TextBox01 filtroNombre;
+        private Clases.TextBox01 filtroNro;
     }
 }

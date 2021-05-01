@@ -23,13 +23,9 @@ namespace ComunicAr.Formularios.ABM_Clientes
         {
             this.Close();
         }
-
-        private void Frm_ABM_Cliente_Load(object sender, EventArgs e)
+        private void CargarGrilla(DataTable tabla)
         {
-            //LLENAR EL GRIDBOX CON LOS DATOS DE LA TABLA CLIENTES APENAS CARGUE EL FORMULARIO
-            Clientes usuario = new Clientes();
-            DataTable tabla = new DataTable();
-            tabla = usuario.ClientesCompletos();
+            //LLenar Grilla
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 dataGridView1.Rows.Add();
@@ -41,6 +37,14 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["piso"].ToString();
 
             }
+        }
+        private void Frm_ABM_Cliente_Load(object sender, EventArgs e)
+        {
+            
+            Clientes usuario = new Clientes();
+            DataTable tabla = new DataTable();
+            tabla = usuario.ClientesCompletos();
+            CargarGrilla(tabla);
         }
 
         private void btn_refresh_client_Click(object sender, EventArgs e)
@@ -49,16 +53,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             DataTable tabla = new DataTable();
             tabla = usuario.ClientesCompletos();
             dataGridView1.Rows.Clear();
-            for (int i = 0; i < tabla.Rows.Count; i++)
-            {
-                dataGridView1.Rows.Add();
-                dataGridView1.Rows[i].Cells[0].Value = tabla.Rows[i]["nro_cliente"].ToString();
-                dataGridView1.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_razonSocial"].ToString();
-                dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["cod_barrio"].ToString();
-                dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["calle"].ToString();
-                dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["nro"].ToString();
-                dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["piso"].ToString();
-            }
+            CargarGrilla(tabla);
         }
 
         private void btn_crear_cliente_Click(object sender, EventArgs e)
@@ -67,9 +62,33 @@ namespace ComunicAr.Formularios.ABM_Clientes
             Altas.ShowDialog();
         }
 
+        private void filtrosGrilla(DataTable tabla)
+        {
+
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            Clientes clientes = new Clientes();
+            if (filtroNro.Text != "" )
+            {
+                dataGridView1.Rows.Clear();
+                CargarGrilla(clientes.Clientes_por_Numero(filtroNro.Text));
+                filtroNro.Clear();
+                return;
+            }
+            if (filtroNombre.Text != "")
+            {
+                dataGridView1.Rows.Clear();
+                CargarGrilla(clientes.Clientes_por_Nombre(filtroNombre.Text));
+                filtroNombre.Clear();
+            }
+            
         }
     }
 }

@@ -21,17 +21,23 @@ namespace ComunicAr.Negocio
         public DataTable ClientesCompletos()
         {
             string sql = "SELECT * FROM clientes";
+            /*string sql = @"SELECT c.*, b.nombre_barrio as cod_barrio"
+                         + "from clientes c join barrios b"
+                         + "on c.cod_barrio = b.cod_barrio";*/
             return BD.EjecutarSelect(sql);
         }
-        /*public void Insertar()
+        public DataTable Clientes_por_Numero(string nro_cliente)
         {
-
-            string sqlInsertar = @"INSERT INTO clientes (nombre_razonSocial, calle, nro, piso, cod_barrio)"
-                                  + "VALUES ('" + Pp_nombre + "', '" + Pp_calle + "' , " + Pp_nro + ", " + Pp_piso + ", " + Pp_barrio + ")";
-
-            BD.Insertar(sqlInsertar);
-            MessageBox.Show("Cliente cargado exitosamente");
-        }*/
+            string sql = @"SELECT c.* FROM clientes c "
+                        + "WHERE c.nro_cliente =" + nro_cliente;
+            return BD.EjecutarSelect(sql);
+        }
+        public DataTable Clientes_por_Nombre(string nombre)
+        {
+            string sql = @"SELECT c.* FROM clientes c "
+                        + "WHERE c.nombre_razonSocial like '%" + nombre.Trim() + "%'";
+            return BD.EjecutarSelect(sql);
+        }
         public void Insertar(Control.ControlCollection controles)
         {
             TratamientosEspeciales tratamientos = new TratamientosEspeciales();
