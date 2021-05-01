@@ -37,7 +37,7 @@ namespace ComunicAr.Formularios
                 Frm_ABM_Servicios Frm_Servicios = new Servicios.Frm_ABM_Servicios();
                 Frm_Servicios.ShowDialog();
             }
-            cmb_Actual_Datos.SelectedIndex = Text;
+            
         }
 
         private void cmb_Gen_Listas_SelectedIndexChanged(object sender, EventArgs e)

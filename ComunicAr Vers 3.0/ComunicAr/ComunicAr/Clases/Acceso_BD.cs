@@ -26,6 +26,16 @@ namespace ComunicAr.Clases
             conexion.Close();
         }
 
+        public DataTable EjecutarModificar(string sql_command)
+        {
+            conectar();
+            cmd.CommandText = sql_command;
+            DataTable tabla = new DataTable();
+            tabla.Load(cmd.ExecuteReader());
+            desconectar();
+            return tabla;
+
+        }
         public DataTable EjecutarSelect(string sql_command)
         {
             conectar();

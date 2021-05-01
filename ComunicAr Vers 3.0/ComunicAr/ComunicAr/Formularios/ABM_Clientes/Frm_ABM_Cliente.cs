@@ -14,6 +14,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
 {
     public partial class Frm_ABM_Cliente : Form
     {
+
+        public string nro_Cliente { get; set; }
         public Frm_ABM_Cliente()
         {
             InitializeComponent();
@@ -69,7 +71,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            nro_Cliente = dataGridView1.CurrentRow.Cells["Column1"].Value.ToString();
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
@@ -89,6 +91,13 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 filtroNombre.Clear();
             }
             
+        }
+
+        private void btn_modificar_cliente_Click(object sender, EventArgs e)
+        {
+            Frm_Mod_Cliente Frm_Mod = new Frm_Mod_Cliente();
+            Frm_Mod.nro_Cliente = nro_Cliente;
+            Frm_Mod.ShowDialog();
         }
     }
 }

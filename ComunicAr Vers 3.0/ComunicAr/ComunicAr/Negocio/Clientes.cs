@@ -16,6 +16,7 @@ namespace ComunicAr.Negocio
         public string Pp_nro { get; set; }
         public string Pp_piso { get; set; }
         public string Pp_barrio { get; set; }
+        public string Pp_nroCliente { get; set; }
 
         Acceso_BD BD = new Acceso_BD();
         public DataTable ClientesCompletos()
@@ -26,10 +27,10 @@ namespace ComunicAr.Negocio
                          + "on c.cod_barrio = b.cod_barrio";*/
             return BD.EjecutarSelect(sql);
         }
-        public DataTable Clientes_por_Numero(string nro_cliente)
+        public DataTable Clientes_por_Numero(string nro_Cliente)
         {
             string sql = @"SELECT c.* FROM clientes c "
-                        + "WHERE c.nro_cliente =" + nro_cliente;
+                        + "WHERE c.nro_cliente = " + nro_Cliente;
             return BD.EjecutarSelect(sql);
         }
         public DataTable Clientes_por_Nombre(string nombre)
@@ -43,6 +44,11 @@ namespace ComunicAr.Negocio
             TratamientosEspeciales tratamientos = new TratamientosEspeciales();
             BD.Insertar(tratamientos.ConstructorInsert("Clientes", controles));
             MessageBox.Show("Cliente cargado exitosamente");
+        }
+
+        public void Modificar()
+        {
+
         }
     }
 }

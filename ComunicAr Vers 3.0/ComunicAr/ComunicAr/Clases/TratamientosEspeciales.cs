@@ -27,6 +27,7 @@ namespace ComunicAr.Clases
             }
             return Resultado.correcto;
         }
+        //FUNCION PARA CONSTRUIR INSERT
         public string ConstructorInsert(string NombreTabla, Control.ControlCollection controles)
         {
             string sql = "INSERT INTO " + NombreTabla + " (";
@@ -106,6 +107,8 @@ namespace ComunicAr.Clases
                     return valorColumna;
             }
         }
+        //FUNCION PARA CONSTRUIR MODIFICAR
+
     }
 
 }

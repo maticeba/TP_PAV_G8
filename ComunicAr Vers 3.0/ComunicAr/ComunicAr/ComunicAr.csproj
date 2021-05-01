@@ -67,6 +67,12 @@
     <Compile Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.Designer.cs">
       <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,14 +95,17 @@
     <Compile Include="Negocio\Servicios_Contratados.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.resx">
+      <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.resx">
+      <DependentUpon>Frm_Modificacion_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.resx">
       <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_ABM_Cliente.resx">
       <DependentUpon>Frm_ABM_Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.resx">
-      <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>
