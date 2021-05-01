@@ -38,6 +38,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 cliente.Pp_piso = txt_cliente_alta_piso.Text;
                 cliente.Pp_barrio = cmb_cliente_alta_barrio.SelectedValue.ToString();
                 cliente.Pp_nroCliente = nro_Cliente;
+
+                cliente.Modificar();
                 
             }
             else
