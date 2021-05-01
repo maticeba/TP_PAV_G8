@@ -79,6 +79,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.btn_eliminar_cliente.TabIndex = 0;
             this.btn_eliminar_cliente.Text = "Eliminar";
             this.btn_eliminar_cliente.UseVisualStyleBackColor = true;
+            this.btn_eliminar_cliente.Click += new System.EventHandler(this.btn_eliminar_cliente_Click);
             // 
             // btn_salir_cliente
             // 

@@ -58,5 +58,11 @@ namespace ComunicAr.Negocio
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion realizada con exito");
         }
+
+        public void Borrar()
+        {
+            string sqlBorrar = "DELETE FROM clientes WHERE nro_cliente = " + Pp_nroCliente;
+            BD.Borrar(sqlBorrar);
+        }
     }
 }

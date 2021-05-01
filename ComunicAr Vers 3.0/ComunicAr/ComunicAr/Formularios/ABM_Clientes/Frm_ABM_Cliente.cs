@@ -99,5 +99,13 @@ namespace ComunicAr.Formularios.ABM_Clientes
             Frm_Mod.nro_Cliente = nro_Cliente;
             Frm_Mod.ShowDialog();
         }
+
+        private void btn_eliminar_cliente_Click(object sender, EventArgs e)
+        {
+            Clientes clientes = new Clientes() { Pp_nroCliente = nro_Cliente };
+            clientes.Borrar();
+            MessageBox.Show("Cliente borrado");
+
+        }
     }
 }

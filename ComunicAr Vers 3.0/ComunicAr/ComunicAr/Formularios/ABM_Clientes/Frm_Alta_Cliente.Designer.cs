@@ -178,6 +178,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.cmb_cliente_alta_barrio.Pp_Validable = true;
             this.cmb_cliente_alta_barrio.Size = new System.Drawing.Size(164, 23);
             this.cmb_cliente_alta_barrio.TabIndex = 10;
+            this.cmb_cliente_alta_barrio.Text = "Barrio";
             // 
             // Frm_Alta_Cliente
             // 

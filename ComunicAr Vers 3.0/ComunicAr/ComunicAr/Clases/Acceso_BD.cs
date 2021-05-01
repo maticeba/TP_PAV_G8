@@ -55,5 +55,14 @@ namespace ComunicAr.Clases
             desconectar();
 
         }
+
+        public void Borrar(string sql_comand)
+        {
+            conectar();
+            cmd.CommandText = sql_comand;
+            cmd.ExecuteNonQuery();
+            desconectar();
+
+        }
     }
 }
