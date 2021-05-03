@@ -67,6 +67,12 @@
     <Compile Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.Designer.cs">
       <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Clientes\Frm_Baja_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Clientes\Frm_Baja_Cliente.Designer.cs">
+      <DependentUpon>Frm_Baja_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.resx">
       <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Baja_Cliente.resx">
+      <DependentUpon>Frm_Baja_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.resx">
       <DependentUpon>Frm_Modificacion_Cliente.cs</DependentUpon>

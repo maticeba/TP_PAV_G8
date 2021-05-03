@@ -1,7 +1,7 @@
 ﻿
 namespace ComunicAr.Formularios.ABM_Clientes
 {
-    partial class Frm_Alta_Cliente
+    partial class Frm_Baja_Cliente
     {
         /// <summary>
         /// Required designer variable.
@@ -50,9 +50,10 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 32);
+            this.label1.Size = new System.Drawing.Size(174, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Altas Clientes";
+            this.label1.Text = "Borrar Cliente";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -121,6 +122,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // txt_cliente_alta_piso
             // 
+            this.txt_cliente_alta_piso.Enabled = false;
             this.txt_cliente_alta_piso.Location = new System.Drawing.Point(143, 152);
             this.txt_cliente_alta_piso.Name = "txt_cliente_alta_piso";
             this.txt_cliente_alta_piso.Pp_Campo = "piso";
@@ -132,6 +134,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // txt_cliente_alta_nro
             // 
+            this.txt_cliente_alta_nro.Enabled = false;
             this.txt_cliente_alta_nro.Location = new System.Drawing.Point(143, 123);
             this.txt_cliente_alta_nro.Name = "txt_cliente_alta_nro";
             this.txt_cliente_alta_nro.Pp_Campo = "nro";
@@ -143,6 +146,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // txt_cliente_alta_calle
             // 
+            this.txt_cliente_alta_calle.Enabled = false;
             this.txt_cliente_alta_calle.Location = new System.Drawing.Point(143, 94);
             this.txt_cliente_alta_calle.Name = "txt_cliente_alta_calle";
             this.txt_cliente_alta_calle.Pp_Campo = "calle";
@@ -154,6 +158,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // txt_cliente_alta_nombre
             // 
+            this.txt_cliente_alta_nombre.Enabled = false;
             this.txt_cliente_alta_nombre.Location = new System.Drawing.Point(143, 65);
             this.txt_cliente_alta_nombre.Name = "txt_cliente_alta_nombre";
             this.txt_cliente_alta_nombre.Pp_Campo = "nombre_razonSocial";
@@ -165,6 +170,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // cmb_cliente_alta_barrio
             // 
+            this.cmb_cliente_alta_barrio.Enabled = false;
             this.cmb_cliente_alta_barrio.FormattingEnabled = true;
             this.cmb_cliente_alta_barrio.Location = new System.Drawing.Point(143, 181);
             this.cmb_cliente_alta_barrio.Name = "cmb_cliente_alta_barrio";
@@ -178,10 +184,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.cmb_cliente_alta_barrio.Pp_Validable = true;
             this.cmb_cliente_alta_barrio.Size = new System.Drawing.Size(164, 23);
             this.cmb_cliente_alta_barrio.TabIndex = 10;
-            this.cmb_cliente_alta_barrio.Text = "Barrio";
-            this.cmb_cliente_alta_barrio.SelectedIndexChanged += new System.EventHandler(this.cmb_cliente_alta_barrio_SelectedIndexChanged);
             // 
-            // Frm_Alta_Cliente
+            // Frm_Modificacion_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,10 +207,10 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Frm_Alta_Cliente";
+            this.Name = "Frm_Modificacion_Cliente";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.Frm_Alta_Cliente_Load);
+            this.Load += new System.EventHandler(this.Frm_Mod_Cliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -68,3 +68,4 @@ C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debu
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.pdb
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Mod_Cliente.resources
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csprojAssemblyReference.cache
+C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Baja_Cliente.resources

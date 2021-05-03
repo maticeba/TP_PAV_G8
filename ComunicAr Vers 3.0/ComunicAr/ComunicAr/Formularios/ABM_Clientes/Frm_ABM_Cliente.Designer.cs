@@ -43,10 +43,10 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnConsulta = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.filtroNombre = new ComunicAr.Clases.TextBox01();
             this.filtroNro = new ComunicAr.Clases.TextBox01();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -186,24 +186,6 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.btnConsulta.UseVisualStyleBackColor = true;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre/Razon Social";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Numero de Cliente";
-            // 
             // filtroNombre
             // 
             this.filtroNombre.Location = new System.Drawing.Point(173, 69);
@@ -225,6 +207,24 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.filtroNro.Pp_Validable = false;
             this.filtroNro.Size = new System.Drawing.Size(183, 23);
             this.filtroNro.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombre/Razon Social";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Numero de Cliente";
             // 
             // Frm_ABM_Cliente
             // 

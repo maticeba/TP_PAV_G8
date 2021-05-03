@@ -12,10 +12,10 @@ using ComunicAr.Negocio;
 
 namespace ComunicAr.Formularios.ABM_Clientes
 {
-    public partial class Frm_Mod_Cliente : Form
+    public partial class Frm_Baja_Cliente : Form
     {
         public string nro_Cliente { get; set; }
-        public Frm_Mod_Cliente()
+        public Frm_Baja_Cliente()
         {
             InitializeComponent();
         }
@@ -27,24 +27,11 @@ namespace ComunicAr.Formularios.ABM_Clientes
 
         private void btn_cliente_alta_aceptar_Click(object sender, EventArgs e)
         {
-            TratamientosEspeciales Tratamiento = new TratamientosEspeciales();
-            if (Tratamiento.Validar(Controls) == TratamientosEspeciales.Resultado.correcto)
+            Clientes clientes = new Clientes() { Pp_nroCliente = nro_Cliente };
+            if (MessageBox.Show("¿Esta seguro de Borrar?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                Negocio.Clientes cliente = new Negocio.Clientes();
-
-                cliente.Pp_nombre = txt_cliente_alta_nombre.Text;
-                cliente.Pp_calle = txt_cliente_alta_calle.Text;
-                cliente.Pp_nro = txt_cliente_alta_nro.Text;
-                cliente.Pp_piso = txt_cliente_alta_piso.Text;
-                cliente.Pp_barrio = cmb_cliente_alta_barrio.SelectedValue.ToString();
-                cliente.Pp_nroCliente = nro_Cliente;
-
-                cliente.Modificar();
-                
-            }
-            else
-            {
-                return;
+                clientes.Borrar();
+                MessageBox.Show("Se borró correctamente el cliente");
             }
         }
 
@@ -65,6 +52,11 @@ namespace ComunicAr.Formularios.ABM_Clientes
             txt_cliente_alta_piso.Text = tabla.Rows[0]["piso"].ToString();
             cmb_cliente_alta_barrio.SelectedValue = int.Parse(tabla.Rows[0]["cod_barrio"].ToString());
 
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

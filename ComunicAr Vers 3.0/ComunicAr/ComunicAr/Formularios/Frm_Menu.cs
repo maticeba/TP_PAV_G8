@@ -30,12 +30,14 @@ namespace ComunicAr.Formularios
             {
                 Frm_ABM_Cliente Frm_Cliente = new Frm_ABM_Cliente();
                 Frm_Cliente.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
             }
 
             if (cmb_Actual_Datos.SelectedIndex == 4)
             {
                 Frm_ABM_Servicios Frm_Servicios = new Servicios.Frm_ABM_Servicios();
                 Frm_Servicios.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
             }
             
         }

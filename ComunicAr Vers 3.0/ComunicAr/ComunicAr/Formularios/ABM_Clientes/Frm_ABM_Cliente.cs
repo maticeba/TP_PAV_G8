@@ -102,9 +102,10 @@ namespace ComunicAr.Formularios.ABM_Clientes
 
         private void btn_eliminar_cliente_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes() { Pp_nroCliente = nro_Cliente };
-            clientes.Borrar();
-            MessageBox.Show("Cliente borrado");
+            Frm_Baja_Cliente Frm_Baja = new Frm_Baja_Cliente();
+            Frm_Baja.nro_Cliente = nro_Cliente;
+            Frm_Baja.ShowDialog();
+
 
         }
     }

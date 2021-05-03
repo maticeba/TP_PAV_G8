@@ -36,7 +36,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 cliente.Pp_piso = txt_cliente_alta_piso.Text;
                 cliente.Pp_barrio = cmb_cliente_alta_barrio.SelectedValue.ToString();
 
-                cliente.Insertar(this.Controls);
+                //cliente.Insertar(this.Controls);
+                cliente.Insertar();
             }
             else
             {
@@ -46,7 +47,13 @@ namespace ComunicAr.Formularios.ABM_Clientes
 
         private void Frm_Alta_Cliente_Load(object sender, EventArgs e)
         {
-            cmb_cliente_alta_barrio.CargarCombo(); 
+            cmb_cliente_alta_barrio.CargarCombo();
+            cmb_cliente_alta_barrio.SelectedIndex = -1; 
+        }
+
+        private void cmb_cliente_alta_barrio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

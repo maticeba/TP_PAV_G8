@@ -42,10 +42,20 @@ namespace ComunicAr.Negocio
         public void Insertar(Control.ControlCollection controles)
         {
             TratamientosEspeciales tratamientos = new TratamientosEspeciales();
-            BD.Insertar(tratamientos.ConstructorInsert("Clientes", controles));
+            BD.Insertar(tratamientos.ConstructorInsert("clientes", controles));
             MessageBox.Show("Cliente cargado exitosamente");
         }
-
+        public void Insertar()
+        {
+            string sqlIN = @"INSERT INTO clientes (nombre_razonSocial, calle, nro, piso, cod_barrio) "
+                            +" VALUES ('" + Pp_nombre +"',"
+                            +"'" + Pp_calle + "',"
+                            + Pp_nro + ","
+                            + Pp_piso + ","
+                            +Pp_barrio +" )";
+            BD.Insertar(sqlIN);
+            MessageBox.Show("Cliente cargado exitosamente");
+        }
         public void Modificar()
         {
             string sqlMod = @"UPDATE clientes SET "

@@ -24,6 +24,15 @@ namespace ComunicAr.Clases
                         return Resultado.error;
                     }
                 }
+                if (item.GetType().Name == "ComboBox01")
+                {
+                    if (((ComboBox01)item).SelectedIndex == -1)
+                    {
+                        MessageBox.Show(((ComboBox01)item).Pp_MensajeError);
+                        ((ComboBox01)item).Focus();
+                        return Resultado.error;
+                    }          
+                }
             }
             return Resultado.correcto;
         }
