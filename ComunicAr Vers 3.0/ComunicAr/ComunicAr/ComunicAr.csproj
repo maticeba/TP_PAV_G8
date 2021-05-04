@@ -79,6 +79,12 @@
     <Compile Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.Designer.cs">
       <DependentUpon>Frm_Modificacion_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Servicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_ABM_Cliente.resx">
       <DependentUpon>Frm_ABM_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.resx">
+      <DependentUpon>Frm_Modificacion_Servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>
