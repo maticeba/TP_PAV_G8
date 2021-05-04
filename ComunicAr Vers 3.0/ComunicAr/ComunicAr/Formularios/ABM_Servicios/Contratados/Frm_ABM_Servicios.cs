@@ -38,7 +38,6 @@ namespace ComunicAr.Formularios.Servicios
                 GridServicios.Rows[i].Cells[3].Value = tabla.Rows[i]["fecha_desde"].ToString();
                 GridServicios.Rows[i].Cells[4].Value = tabla.Rows[i]["fecha_hasta"].ToString();
                 GridServicios.Rows[i].Cells[5].Value = tabla.Rows[i]["id_numero"].ToString();
-
             }
            
         }

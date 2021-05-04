@@ -11,7 +11,7 @@ namespace ComunicAr.Negocio
 {
     class Servicios_Contratados
     {
-        public string Pp_cod_servicio{ get; set; }
+        public string Pp_cod_servicio { get; set; }
         public string Pp_nombre_servicio { get; set; }
         public string Pp_tipo_servicio { get; set; }
         public string Pp_fecha_desde { get; set; }
@@ -50,8 +50,8 @@ namespace ComunicAr.Negocio
             string sqlMod = @"UPDATE servicios_contratados SET "
                             + " nombre_Servicio = '" + Pp_nombre_servicio + "'"
                             + ", tipo_servicio = " + Pp_tipo_servicio 
-                            + ", fecha_desde = '" + Pp_fecha_desde + "'"
-                            + ", fecha_hasta = '" + Pp_fecha_hasta + "'"
+                            + ", fecha_desde = (CONVERT(DATE,'" + Pp_fecha_desde + "',23))"
+                            + ", fecha_hasta = (CONVERT(DATE,'" + Pp_fecha_hasta + "',23))"
                             + ", id_numero = " + Pp_id_numero
                             + "WHERE cod_servicio = " + Pp_cod_servicio;
             
