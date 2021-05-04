@@ -32,7 +32,7 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios = new System.Windows.Forms.DataGridView();
             this.btn_salir_cliente = new System.Windows.Forms.Button();
             this.bttn_modificar_servicios = new System.Windows.Forms.Button();
-            this.codi_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codigo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,13 +47,13 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.AllowUserToDeleteRows = false;
             this.GridServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridServicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codi_servicio,
+            this.codigo_servicio,
             this.nombre_servicio,
             this.tipo_servicio,
             this.fecha_desde,
             this.fecha_hasta,
             this.id_numero});
-            this.GridServicios.Location = new System.Drawing.Point(12, 70);
+            this.GridServicios.Location = new System.Drawing.Point(12, 103);
             this.GridServicios.Name = "GridServicios";
             this.GridServicios.ReadOnly = true;
             this.GridServicios.Size = new System.Drawing.Size(644, 262);
@@ -62,7 +62,7 @@ namespace ComunicAr.Formularios.Servicios
             // 
             // btn_salir_cliente
             // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(552, 362);
+            this.btn_salir_cliente.Location = new System.Drawing.Point(552, 371);
             this.btn_salir_cliente.Name = "btn_salir_cliente";
             this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_cliente.TabIndex = 5;
@@ -73,7 +73,7 @@ namespace ComunicAr.Formularios.Servicios
             // bttn_modificar_servicios
             // 
             this.bttn_modificar_servicios.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_modificar_servicios.Location = new System.Drawing.Point(12, 365);
+            this.bttn_modificar_servicios.Location = new System.Drawing.Point(12, 68);
             this.bttn_modificar_servicios.Name = "bttn_modificar_servicios";
             this.bttn_modificar_servicios.Size = new System.Drawing.Size(92, 29);
             this.bttn_modificar_servicios.TabIndex = 6;
@@ -81,11 +81,11 @@ namespace ComunicAr.Formularios.Servicios
             this.bttn_modificar_servicios.UseVisualStyleBackColor = true;
             this.bttn_modificar_servicios.Click += new System.EventHandler(this.bttn_modificar_servicios_Click);
             // 
-            // cod_servicio
+            // codigo_servicio
             // 
-            this.codi_servicio.HeaderText = "Codigo Servicio";
-            this.codi_servicio.Name = "cod_servicio";
-            this.codi_servicio.ReadOnly = true;
+            this.codigo_servicio.HeaderText = "Codigo Servicio";
+            this.codigo_servicio.Name = "codigo_servicio";
+            this.codigo_servicio.ReadOnly = true;
             // 
             // nombre_servicio
             // 
@@ -139,6 +139,7 @@ namespace ComunicAr.Formularios.Servicios
         private System.Windows.Forms.Button btn_salir_cliente;
         private System.Windows.Forms.Button bttn_modificar_servicios;
         private System.Windows.Forms.DataGridViewTextBoxColumn codi_servicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo_servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre_servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipo_servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_desde;

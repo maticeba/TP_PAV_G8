@@ -29,7 +29,7 @@ namespace ComunicAr.Negocio
 
         public DataTable Servicios_contratados_por_codigo(string cod_servicio)
         {
-            string sql = @"SELECT s.* FROM servicios_contratados s"
+            string sql = @"SELECT s.* FROM servicios_contratados s "
                        + "WHERE s.cod_servicio = " + cod_servicio;
             return BD.EjecutarSelect(sql);
         }
