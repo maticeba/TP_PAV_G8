@@ -59,7 +59,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
                 servicio.Pp_fecha_desde = txt_fecha_desde.Text;
                 servicio.Pp_fecha_hasta = txt_fecha_hasta.Text;
                 servicio.Pp_id_numero = txt_id_numero.Text;
-
+                servicio.Pp_cod_servicio = cod_servicio;
 
                 servicio.Modificar();
 

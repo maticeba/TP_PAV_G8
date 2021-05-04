@@ -50,10 +50,10 @@ namespace ComunicAr.Negocio
             string sqlMod = @"UPDATE servicios_contratados SET "
                             + " nombre_Servicio = '" + Pp_nombre_servicio + "'"
                             + ", tipo_servicio = " + Pp_tipo_servicio 
-                            + ", fecha_desde = (CONVERT(DATE,'" + Pp_fecha_desde + "',23))"
-                            + ", fecha_hasta = (CONVERT(DATE,'" + Pp_fecha_hasta + "',23))"
+                            + ", fecha_desde = (CONVERT(DATETIME, '" + Pp_fecha_desde + "',103))"
+                            + ", fecha_hasta = (CONVERT(DATETIME, '" + Pp_fecha_hasta + "',103))"
                             + ", id_numero = " + Pp_id_numero
-                            + "WHERE cod_servicio = " + Pp_cod_servicio;
+                            + " WHERE cod_servicio = " + Pp_cod_servicio;
             
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion realizada con exito");
