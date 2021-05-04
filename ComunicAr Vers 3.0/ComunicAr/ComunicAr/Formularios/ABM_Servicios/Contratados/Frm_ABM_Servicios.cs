@@ -40,9 +40,8 @@ namespace ComunicAr.Formularios.Servicios
                 GridServicios.Rows[i].Cells[5].Value = tabla.Rows[i]["id_numero"].ToString();
 
             }
-
+           
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -64,7 +63,6 @@ namespace ComunicAr.Formularios.Servicios
         private void GridServicios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             cod_servicio = GridServicios.CurrentRow.Cells["codigo_servicio"].Value.ToString();
-
         }
     }
 }
