@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComunicAr.Formularios.ABM_Clientes;
 using ComunicAr.Formularios.Servicios;
+using ComunicAr.Formularios.ABM_Servicios.Datos;
 
 namespace ComunicAr.Formularios
 {
@@ -38,6 +39,13 @@ namespace ComunicAr.Formularios
                 Frm_ABM_Servicios Frm_Servicios = new Servicios.Frm_ABM_Servicios();
                 Frm_Servicios.ShowDialog();
                 cmb_Actual_Datos.SelectedIndex = -1;
+            }
+            if(cmb_Actual_Datos.SelectedIndex == 7)
+            {
+                Frm_ABM_Datos Frm_Datos = new Frm_ABM_Datos();
+                Frm_Datos.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
+
             }
             
         }

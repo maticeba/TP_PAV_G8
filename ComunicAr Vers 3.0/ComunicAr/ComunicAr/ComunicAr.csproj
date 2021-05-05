@@ -97,6 +97,30 @@
     <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.Designer.cs">
       <DependentUpon>Frm_Modificacion_Servicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos.designer.cs">
+      <DependentUpon>Frm_ABM_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos_Modificar.designer.cs">
+      <DependentUpon>Frm_ABM_Datos_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_Alta_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_Alta_Datos.designer.cs">
+      <DependentUpon>Frm_Alta_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_Baja_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Datos\Frm_Baja_Datos.designer.cs">
+      <DependentUpon>Frm_Baja_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +141,7 @@
     </Compile>
     <Compile Include="Negocio\Clientes.cs" />
     <Compile Include="Negocio\Servicios_Contratados.cs" />
+    <Compile Include="Negocio\Servicios_Datos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.resx">
@@ -142,6 +167,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.resx">
       <DependentUpon>Frm_Modificacion_Servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos.resx">
+      <DependentUpon>Frm_ABM_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos_Modificar.resx">
+      <DependentUpon>Frm_ABM_Datos_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Datos\Frm_Alta_Datos.resx">
+      <DependentUpon>Frm_Alta_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Datos\Frm_Baja_Datos.resx">
+      <DependentUpon>Frm_Baja_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>
