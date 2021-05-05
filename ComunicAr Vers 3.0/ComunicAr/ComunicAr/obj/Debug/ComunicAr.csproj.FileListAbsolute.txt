@@ -106,3 +106,7 @@ C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Datos.Frm_ABM_Datos_Modificar.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Datos.Frm_Alta_Datos.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Datos.Frm_Baja_Datos.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Fijos.Frm_ABM_ServicioFijo.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Fijos.Frm_ABM_ServicioFijo_Alta.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Fijos.Frm_ABM_ServicioFIjo_Baja.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Fijos.Frm_ABM_ServicioFIjo_Modificacion.resources

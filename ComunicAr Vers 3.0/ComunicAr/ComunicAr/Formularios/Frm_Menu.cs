@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ComunicAr.Formularios.ABM_Clientes;
 using ComunicAr.Formularios.Servicios;
 using ComunicAr.Formularios.ABM_Servicios.Datos;
+using ComunicAr.Formularios.ABM_Servicios.Fijos;
 
 namespace ComunicAr.Formularios
 {
@@ -19,12 +20,10 @@ namespace ComunicAr.Formularios
         {
             InitializeComponent();
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void cmb_Actual_Datos_SelectedValueChanged(object sender, EventArgs e)
         {
             if (cmb_Actual_Datos.SelectedIndex == 0)
@@ -40,7 +39,16 @@ namespace ComunicAr.Formularios
                 Frm_Servicios.ShowDialog();
                 cmb_Actual_Datos.SelectedIndex = -1;
             }
-            if(cmb_Actual_Datos.SelectedIndex == 7)
+
+            if (cmb_Actual_Datos.SelectedIndex == 6)
+            {
+                Frm_ABM_ServicioFijo Frm_Fijo = new Frm_ABM_ServicioFijo();
+                Frm_Fijo.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
+
+            }
+
+            if (cmb_Actual_Datos.SelectedIndex == 7)
             {
                 Frm_ABM_Datos Frm_Datos = new Frm_ABM_Datos();
                 Frm_Datos.ShowDialog();
@@ -48,21 +56,6 @@ namespace ComunicAr.Formularios
 
             }
             
-        }
-
-        private void cmb_Gen_Listas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Frm_Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_Actual_Datos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
