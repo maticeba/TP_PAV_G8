@@ -112,6 +112,7 @@ namespace ComunicAr.Clases
                 case "Int 32":
                 case "Int 64":
                     return valorColumna;
+                
                 default:
                     return valorColumna;
             }

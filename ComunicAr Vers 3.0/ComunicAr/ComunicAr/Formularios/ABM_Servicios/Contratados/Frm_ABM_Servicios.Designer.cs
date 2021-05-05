@@ -30,14 +30,16 @@ namespace ComunicAr.Formularios.Servicios
         private void InitializeComponent()
         {
             this.GridServicios = new System.Windows.Forms.DataGridView();
-            this.btn_salir_cliente = new System.Windows.Forms.Button();
-            this.bttn_modificar_servicios = new System.Windows.Forms.Button();
             this.codigo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_salir_cliente = new System.Windows.Forms.Button();
+            this.bttn_modificar_servicios = new System.Windows.Forms.Button();
+            this.bttn_alta_servicio = new System.Windows.Forms.Button();
+            this.bttn_baja = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridServicios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,27 +61,6 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.Size = new System.Drawing.Size(644, 262);
             this.GridServicios.TabIndex = 3;
             this.GridServicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridServicios_CellContentClick);
-            // 
-            // btn_salir_cliente
-            // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(552, 371);
-            this.btn_salir_cliente.Name = "btn_salir_cliente";
-            this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
-            this.btn_salir_cliente.TabIndex = 5;
-            this.btn_salir_cliente.Text = "Salir";
-            this.btn_salir_cliente.UseVisualStyleBackColor = true;
-            this.btn_salir_cliente.Click += new System.EventHandler(this.btn_salir_cliente_Click);
-            // 
-            // bttn_modificar_servicios
-            // 
-            this.bttn_modificar_servicios.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_modificar_servicios.Location = new System.Drawing.Point(12, 68);
-            this.bttn_modificar_servicios.Name = "bttn_modificar_servicios";
-            this.bttn_modificar_servicios.Size = new System.Drawing.Size(92, 29);
-            this.bttn_modificar_servicios.TabIndex = 6;
-            this.bttn_modificar_servicios.Text = "Modificar";
-            this.bttn_modificar_servicios.UseVisualStyleBackColor = true;
-            this.bttn_modificar_servicios.Click += new System.EventHandler(this.bttn_modificar_servicios_Click);
             // 
             // codigo_servicio
             // 
@@ -117,11 +98,56 @@ namespace ComunicAr.Formularios.Servicios
             this.id_numero.Name = "id_numero";
             this.id_numero.ReadOnly = true;
             // 
+            // btn_salir_cliente
+            // 
+            this.btn_salir_cliente.Location = new System.Drawing.Point(552, 371);
+            this.btn_salir_cliente.Name = "btn_salir_cliente";
+            this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
+            this.btn_salir_cliente.TabIndex = 5;
+            this.btn_salir_cliente.Text = "Salir";
+            this.btn_salir_cliente.UseVisualStyleBackColor = true;
+            this.btn_salir_cliente.Click += new System.EventHandler(this.btn_salir_cliente_Click);
+            // 
+            // bttn_modificar_servicios
+            // 
+            this.bttn_modificar_servicios.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bttn_modificar_servicios.Location = new System.Drawing.Point(12, 68);
+            this.bttn_modificar_servicios.Name = "bttn_modificar_servicios";
+            this.bttn_modificar_servicios.Size = new System.Drawing.Size(92, 29);
+            this.bttn_modificar_servicios.TabIndex = 6;
+            this.bttn_modificar_servicios.Text = "Modificar";
+            this.bttn_modificar_servicios.UseVisualStyleBackColor = true;
+            this.bttn_modificar_servicios.Click += new System.EventHandler(this.bttn_modificar_servicios_Click);
+            // 
+            // bttn_alta_servicio
+            // 
+            this.bttn_alta_servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bttn_alta_servicio.Location = new System.Drawing.Point(133, 68);
+            this.bttn_alta_servicio.Name = "bttn_alta_servicio";
+            this.bttn_alta_servicio.Size = new System.Drawing.Size(92, 29);
+            this.bttn_alta_servicio.TabIndex = 7;
+            this.bttn_alta_servicio.Text = "Alta";
+            this.bttn_alta_servicio.UseVisualStyleBackColor = true;
+            this.bttn_alta_servicio.Click += new System.EventHandler(this.bttn_alta_servicio_Click);
+            // 
+            // bttn_baja
+            // 
+            this.bttn_baja.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bttn_baja.Location = new System.Drawing.Point(251, 68);
+            this.bttn_baja.Name = "bttn_baja";
+            this.bttn_baja.Size = new System.Drawing.Size(92, 29);
+            this.bttn_baja.TabIndex = 8;
+            this.bttn_baja.Text = "Baja";
+            this.bttn_baja.UseVisualStyleBackColor = true;
+            this.bttn_baja.Click += new System.EventHandler(this.bttn_baja_Click);
+            // 
             // Frm_ABM_Servicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(675, 417);
+            this.Controls.Add(this.bttn_baja);
+            this.Controls.Add(this.bttn_alta_servicio);
             this.Controls.Add(this.bttn_modificar_servicios);
             this.Controls.Add(this.btn_salir_cliente);
             this.Controls.Add(this.GridServicios);
@@ -145,5 +171,7 @@ namespace ComunicAr.Formularios.Servicios
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_desde;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_hasta;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_numero;
+        private System.Windows.Forms.Button bttn_alta_servicio;
+        private System.Windows.Forms.Button bttn_baja;
     }
 }

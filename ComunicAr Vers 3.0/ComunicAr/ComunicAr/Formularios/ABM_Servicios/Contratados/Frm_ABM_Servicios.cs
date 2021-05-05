@@ -63,5 +63,17 @@ namespace ComunicAr.Formularios.Servicios
         {
             cod_servicio = GridServicios.CurrentRow.Cells["codigo_servicio"].Value.ToString();
         }
+
+        private void bttn_alta_servicio_Click(object sender, EventArgs e)
+        {
+            Frm_Alta_Servicios Altas = new Frm_Alta_Servicios();
+            Altas.ShowDialog();
+        }
+
+        private void bttn_baja_Click(object sender, EventArgs e)
+        {
+            Frm_baja_servicio Bajas = new Frm_baja_servicio();
+            Bajas.ShowDialog();
+        }
     }
 }

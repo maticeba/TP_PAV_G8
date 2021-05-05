@@ -36,6 +36,18 @@ namespace ComunicAr.Negocio
 
         public void Insertar()
         {
+            string sqlIN = @"INSERT INTO servicios_contratados (nombre_Servicio, tipo_servicio, fecha_desde, fecha_hasta, id_numero)"
+                            + " VALUES ('" + Pp_nombre_servicio + "',"
+                            + Pp_tipo_servicio + ","
+                            + "'" + Pp_fecha_desde + "',"
+                            + "'" + Pp_fecha_hasta + "',"
+                            + Pp_id_numero + " )";
+
+            BD.Insertar(sqlIN);
+            MessageBox.Show("Servicio agregado exitosamente");
+
+
+
 
             /*string sqlInsertar = @"INSERT INTO servicios_c (nombre_razonSocial, calle, nro, piso, cod_barrio)"
                                   + "VALUES ('" + Pp_Tipo_Servicio + "','" + Pp_Nombre_Servicio + "','" + Pp_Cod_Nacional + "', '" + Pp_Cod_Area + "' , " + Pp_Nro_Telefono + ", " + Pp_Cod_Servicio + ", " +
@@ -57,6 +69,12 @@ namespace ComunicAr.Negocio
             
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion realizada con exito");
+        }
+
+        public void Borrar()
+        {
+             string sqlBorrar = "DELETE FROM servicios_contratados WHERE cod_servicio = " + Pp_cod_servicio;
+            BD.Borrar(sqlBorrar);
         }
     }
 }
