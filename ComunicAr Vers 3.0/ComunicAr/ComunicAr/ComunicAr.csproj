@@ -169,6 +169,30 @@
     <Compile Include="Formularios\ABM_Servicios\Fijos\Frm_ABM_ServicioFIjo_Modificacion.designer.cs">
       <DependentUpon>Frm_ABM_ServicioFIjo_Modificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Barrio\Frm_ABM_Barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_ABM_Barrio.Designer.cs">
+      <DependentUpon>Frm_ABM_Barrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Alta_Barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Alta_Barrio.Designer.cs">
+      <DependentUpon>Frm_Alta_Barrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Baja_Barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Baja_Barrio.Designer.cs">
+      <DependentUpon>Frm_Baja_Barrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_mod_barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_mod_barrio.Designer.cs">
+      <DependentUpon>Frm_mod_barrio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +211,7 @@
     <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.Designer.cs">
       <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocio\Barrios.cs" />
     <Compile Include="Negocio\Clientes.cs" />
     <Compile Include="Negocio\Provincia.cs" />
     <Compile Include="Negocio\ServicioFijo.cs" />
@@ -253,6 +278,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Servicios\Fijos\Frm_ABM_ServicioFIjo_Modificacion.resx">
       <DependentUpon>Frm_ABM_ServicioFIjo_Modificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_ABM_Barrio.resx">
+      <DependentUpon>Frm_ABM_Barrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_Alta_Barrio.resx">
+      <DependentUpon>Frm_Alta_Barrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_Baja_Barrio.resx">
+      <DependentUpon>Frm_Baja_Barrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_mod_barrio.resx">
+      <DependentUpon>Frm_mod_barrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>
