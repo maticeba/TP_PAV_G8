@@ -26,9 +26,12 @@ namespace ComunicAr.Formularios.Servicios
             Servicios_Contratados servicio = new Servicios_Contratados();
             DataTable tabla = new DataTable();
             tabla = servicio.ServiciosCompletos();
+            CargarGrilla(tabla);
+           
+        }
 
-
-            GridServicios.Rows.Clear();
+        private void CargarGrilla(DataTable tabla)
+        {
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 GridServicios.Rows.Add();
@@ -39,7 +42,6 @@ namespace ComunicAr.Formularios.Servicios
                 GridServicios.Rows[i].Cells[4].Value = tabla.Rows[i]["fecha_hasta"].ToString();
                 GridServicios.Rows[i].Cells[5].Value = tabla.Rows[i]["id_numero"].ToString();
             }
-           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,7 +75,30 @@ namespace ComunicAr.Formularios.Servicios
         private void bttn_baja_Click(object sender, EventArgs e)
         {
             Frm_baja_servicio Bajas = new Frm_baja_servicio();
+            Bajas.cod_servicio = cod_servicio;
             Bajas.ShowDialog();
+        }
+
+        private void bttn_refrescar_Click(object sender, EventArgs e)
+        {
+            Servicios_Contratados servicios = new Servicios_Contratados();
+            DataTable tabla = new DataTable();
+            tabla = servicios.ServiciosCompletos();
+            GridServicios.Rows.Clear();
+            CargarGrilla(tabla);
+
+        }
+
+        private void btn_Consulta_Click(object sender, EventArgs e)
+        {
+            Servicios_Contratados servicios = new Servicios_Contratados();
+            if (txt_filtro_cod_servicio.Text != "")
+            {
+                GridServicios.Rows.Clear();
+                CargarGrilla(servicios.Servicios_contratados_por_codigo(txt_filtro_cod_servicio.Text));
+                txt_filtro_cod_servicio.Clear();
+                return;
+            }
         }
     }
 }

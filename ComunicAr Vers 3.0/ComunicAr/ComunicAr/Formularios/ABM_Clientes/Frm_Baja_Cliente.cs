@@ -51,8 +51,6 @@ namespace ComunicAr.Formularios.ABM_Clientes
             txt_cliente_alta_nro.Text = tabla.Rows[0]["nro"].ToString();
             txt_cliente_alta_piso.Text = tabla.Rows[0]["piso"].ToString();
             cmb_cliente_alta_barrio.SelectedValue = int.Parse(tabla.Rows[0]["cod_barrio"].ToString());
-
-
         }
 
         private void label1_Click(object sender, EventArgs e)

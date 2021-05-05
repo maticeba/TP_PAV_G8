@@ -73,7 +73,7 @@ namespace ComunicAr.Negocio
 
         public void Borrar()
         {
-             string sqlBorrar = "DELETE FROM servicios_contratados WHERE cod_servicio = " + Pp_cod_servicio;
+            string sqlBorrar = "DELETE FROM servicios_contratados WHERE cod_servicio = " + Pp_cod_servicio;
             BD.Borrar(sqlBorrar);
         }
     }
