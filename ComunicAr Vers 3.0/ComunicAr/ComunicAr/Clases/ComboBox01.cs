@@ -24,7 +24,7 @@ namespace ComunicAr.Clases
 
         public void CargarCombo()
         {
-            string sql = "SELECT " + Pp_PK + ", " + Pp_Descripcion + " FROM " + Pp_Tabla;
+            string sql = "SELECT DISTINCT" + Pp_PK + ", " + Pp_Descripcion + " FROM " + Pp_Tabla;
             this.DisplayMember = Pp_Descripcion;
             this.ValueMember = Pp_PK;
             this.DataSource = _BD.EjecutarSelect(sql);
