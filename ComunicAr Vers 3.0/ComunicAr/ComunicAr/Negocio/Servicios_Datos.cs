@@ -48,9 +48,9 @@ namespace ComunicAr.Negocio
 
             string sqlIN = @"INSERT INTO servicios_datos (cod_datos, limite_datos, descripcion, costo_fijo, recargo,tipo_servicio) "
                             + " VALUES (" + Pp_codDatos + "," + Pp_limite + ",'"
-                            + Pp_descripcion + "',$"
-                            + Pp_costofijo + ",$"
-                            + Pp_recargo + ","
+                            + Pp_descripcion + "', "
+                            + "REPLACE('" + Pp_costofijo + "', ',', '.'), "
+                            + "REPLACE('" + Pp_recargo + "', ',', '.'), "
                             + Pp_tipoServicio + " )";
             BD.Insertar(sqlIN);
             MessageBox.Show("Servicio de datos cargado exitosamente!");
@@ -68,10 +68,10 @@ namespace ComunicAr.Negocio
             string sqlMod = @"UPDATE servicios_datos SET "
                             + "cod_datos = "+ Pp_codDatos+ ", limite_datos = " + Pp_limite 
                             + ", descripcion = '" + Pp_descripcion + "'"
-                            + ", costo_fijo = $" + Pp_costofijo
-                            + ", recargo = $" + Pp_recargo
+                            + ", costo_fijo = REPLACE('" + Pp_costofijo + "', ',', '.')"
+                            + ", recargo = REPLACE('" + Pp_recargo + "', ',', '.')"
                             + ", tipo_servicio = " + Pp_tipoServicio
-                            + "WHERE cod_datos = " + Pp_codDatos;
+                            + " WHERE cod_datos = " + Pp_codDatos;
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion realizada con exito");
         }
