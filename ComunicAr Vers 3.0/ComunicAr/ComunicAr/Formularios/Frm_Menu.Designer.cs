@@ -117,14 +117,13 @@ namespace ComunicAr.Formularios
             this.cmb_Actual_Datos.Size = new System.Drawing.Size(203, 23);
             this.cmb_Actual_Datos.TabIndex = 0;
             this.cmb_Actual_Datos.Text = "Actualizar Datos";
-            this.cmb_Actual_Datos.SelectedIndexChanged += new System.EventHandler(this.cmb_Actual_Datos_SelectedIndexChanged);
             this.cmb_Actual_Datos.SelectedValueChanged += new System.EventHandler(this.cmb_Actual_Datos_SelectedValueChanged);
             // 
             // Frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 245);
+            this.ClientSize = new System.Drawing.Size(218, 240);
             this.ControlBox = false;
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_emitir_factura);

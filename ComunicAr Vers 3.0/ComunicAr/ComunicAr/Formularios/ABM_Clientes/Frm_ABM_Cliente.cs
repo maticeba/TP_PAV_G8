@@ -47,6 +47,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             DataTable tabla = new DataTable();
             tabla = usuario.ClientesCompletos();
             CargarGrilla(tabla);
+            //Comentario
         }
 
         private void btn_refresh_client_Click(object sender, EventArgs e)
