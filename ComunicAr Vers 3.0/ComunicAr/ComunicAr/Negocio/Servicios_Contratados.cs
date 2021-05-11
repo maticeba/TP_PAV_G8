@@ -12,7 +12,7 @@ namespace ComunicAr.Negocio
     class Servicios_Contratados
     {
         public string Pp_cod_servicio { get; set; }
-        public string Pp_nombre_servicio { get; set; }
+        public string Pp_id_servicio { get; set; }
         public string Pp_tipo_servicio { get; set; }
         public string Pp_fecha_desde { get; set; }
         public string Pp_fecha_hasta { get; set; }
@@ -36,9 +36,9 @@ namespace ComunicAr.Negocio
 
         public void Insertar()
         {
-            string sqlIN = @"INSERT INTO servicios_contratados (nombre_Servicio, tipo_servicio, fecha_desde, fecha_hasta, id_numero)"
-                            + " VALUES ('" + Pp_nombre_servicio + "',"
-                            + Pp_tipo_servicio + ","
+            string sqlIN = @"INSERT INTO servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero)"
+                            + " VALUES ('" + Pp_tipo_servicio + "',"
+                            + Pp_id_servicio + ","
                             + "'" + Pp_fecha_desde + "',"
                             + "'" + Pp_fecha_hasta + "',"
                             + Pp_id_numero + " )";
@@ -60,8 +60,8 @@ namespace ComunicAr.Negocio
         public void Modificar()
         {
             string sqlMod = @"UPDATE servicios_contratados SET "
-                            + " nombre_Servicio = '" + Pp_nombre_servicio + "'"
-                            + ", tipo_servicio = " + Pp_tipo_servicio 
+                            + " tipo_servicio = '" + Pp_tipo_servicio + "'"
+                            + ", id_servicio = " + Pp_id_servicio 
                             + ", fecha_desde = (CONVERT(DATETIME, '" + Pp_fecha_desde + "',103))"
                             + ", fecha_hasta = (CONVERT(DATETIME, '" + Pp_fecha_hasta + "',103))"
                             + ", id_numero = " + Pp_id_numero

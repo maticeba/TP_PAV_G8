@@ -36,8 +36,8 @@ namespace ComunicAr.Formularios.Servicios
             {
                 GridServicios.Rows.Add();
                 GridServicios.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_servicio"].ToString();
-                GridServicios.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_servicio"].ToString();
-                GridServicios.Rows[i].Cells[2].Value = tabla.Rows[i]["tipo_servicio"].ToString();
+                GridServicios.Rows[i].Cells[1].Value = tabla.Rows[i]["tipo_servicio"].ToString();
+                GridServicios.Rows[i].Cells[2].Value = tabla.Rows[i]["id_servicio"].ToString();
                 GridServicios.Rows[i].Cells[3].Value = tabla.Rows[i]["fecha_desde"].ToString();
                 GridServicios.Rows[i].Cells[4].Value = tabla.Rows[i]["fecha_hasta"].ToString();
                 GridServicios.Rows[i].Cells[5].Value = tabla.Rows[i]["id_numero"].ToString();

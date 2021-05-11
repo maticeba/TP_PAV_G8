@@ -26,7 +26,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
 
         private void MostrarDatos(DataTable tabla)
         {
-            txt_nombre_servicio.Text = tabla.Rows[0]["nombre_servicio"].ToString();
+            txt_id_Servicio.Text = tabla.Rows[0]["id_servicio"].ToString();
             txt_tipo_servicio.Text = tabla.Rows[0]["tipo_servicio"].ToString();
             txt_fecha_desde.Text = tabla.Rows[0]["fecha_desde"].ToString();
             txt_fecha_hasta.Text = tabla.Rows[0]["fecha_hasta"].ToString();
@@ -52,6 +52,11 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
                 servicios.Borrar();
                 MessageBox.Show("Se borró correctamente el servicio");
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,7 +40,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.txt_id_numero = new ComunicAr.Clases.TextBox01();
             this.txt_tipo_servicio = new ComunicAr.Clases.TextBox01();
             this.txt_fecha_desde = new ComunicAr.Clases.TextBox01();
-            this.txt_nombre_servicio = new ComunicAr.Clases.TextBox01();
+            this.txt_id_Servicio = new ComunicAr.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -70,11 +70,12 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label7.Location = new System.Drawing.Point(56, 139);
+            this.label7.Location = new System.Drawing.Point(89, 139);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 15);
+            this.label7.Size = new System.Drawing.Size(62, 15);
             this.label7.TabIndex = 36;
-            this.label7.Text = "Nombre Servicio";
+            this.label7.Text = "ID Servicio";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -166,17 +167,17 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.txt_fecha_desde.TabIndex = 28;
             this.txt_fecha_desde.Text = "DD/MM/YYYY";
             // 
-            // txt_nombre_servicio
+            // txt_id_Servicio
             // 
-            this.txt_nombre_servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_nombre_servicio.Location = new System.Drawing.Point(176, 136);
-            this.txt_nombre_servicio.Name = "txt_nombre_servicio";
-            this.txt_nombre_servicio.Pp_Campo = null;
-            this.txt_nombre_servicio.Pp_MensajeError = null;
-            this.txt_nombre_servicio.Pp_Tabla = null;
-            this.txt_nombre_servicio.Pp_Validable = false;
-            this.txt_nombre_servicio.Size = new System.Drawing.Size(181, 23);
-            this.txt_nombre_servicio.TabIndex = 27;
+            this.txt_id_Servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_id_Servicio.Location = new System.Drawing.Point(176, 136);
+            this.txt_id_Servicio.Name = "txt_id_Servicio";
+            this.txt_id_Servicio.Pp_Campo = null;
+            this.txt_id_Servicio.Pp_MensajeError = null;
+            this.txt_id_Servicio.Pp_Tabla = null;
+            this.txt_id_Servicio.Pp_Validable = false;
+            this.txt_id_Servicio.Size = new System.Drawing.Size(181, 23);
+            this.txt_id_Servicio.TabIndex = 27;
             // 
             // label1
             // 
@@ -205,7 +206,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.Controls.Add(this.txt_id_numero);
             this.Controls.Add(this.txt_tipo_servicio);
             this.Controls.Add(this.txt_fecha_desde);
-            this.Controls.Add(this.txt_nombre_servicio);
+            this.Controls.Add(this.txt_id_Servicio);
             this.Controls.Add(this.label1);
             this.Name = "Frm_baja_servicio";
             this.Text = "Frm_baja_servicio";
@@ -228,7 +229,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
         private Clases.TextBox01 txt_id_numero;
         private Clases.TextBox01 txt_tipo_servicio;
         private Clases.TextBox01 txt_fecha_desde;
-        private Clases.TextBox01 txt_nombre_servicio;
+        private Clases.TextBox01 txt_id_Servicio;
         private System.Windows.Forms.Label label1;
     }
 }

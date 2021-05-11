@@ -30,12 +30,6 @@ namespace ComunicAr.Formularios.Servicios
         private void InitializeComponent()
         {
             this.GridServicios = new System.Windows.Forms.DataGridView();
-            this.codigo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_salir_cliente = new System.Windows.Forms.Button();
             this.bttn_modificar_servicios = new System.Windows.Forms.Button();
             this.bttn_alta_servicio = new System.Windows.Forms.Button();
@@ -43,8 +37,14 @@ namespace ComunicAr.Formularios.Servicios
             this.bttn_refrescar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Consulta = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.txt_filtro_cod_servicio = new ComunicAr.Clases.TextBox01();
+            this.label1 = new System.Windows.Forms.Label();
+            this.codigo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridServicios)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -56,8 +56,8 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridServicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigo_servicio,
-            this.nombre_servicio,
             this.tipo_servicio,
+            this.id_servicio,
             this.fecha_desde,
             this.fecha_hasta,
             this.id_numero});
@@ -67,42 +67,6 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.Size = new System.Drawing.Size(642, 262);
             this.GridServicios.TabIndex = 3;
             this.GridServicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridServicios_CellContentClick);
-            // 
-            // codigo_servicio
-            // 
-            this.codigo_servicio.HeaderText = "Codigo Servicio";
-            this.codigo_servicio.Name = "codigo_servicio";
-            this.codigo_servicio.ReadOnly = true;
-            // 
-            // nombre_servicio
-            // 
-            this.nombre_servicio.HeaderText = "Nombre Servicio";
-            this.nombre_servicio.Name = "nombre_servicio";
-            this.nombre_servicio.ReadOnly = true;
-            // 
-            // tipo_servicio
-            // 
-            this.tipo_servicio.HeaderText = "Tipo Servicio";
-            this.tipo_servicio.Name = "tipo_servicio";
-            this.tipo_servicio.ReadOnly = true;
-            // 
-            // fecha_desde
-            // 
-            this.fecha_desde.HeaderText = "Fecha Desde";
-            this.fecha_desde.Name = "fecha_desde";
-            this.fecha_desde.ReadOnly = true;
-            // 
-            // fecha_hasta
-            // 
-            this.fecha_hasta.HeaderText = "Fecha Hasta";
-            this.fecha_hasta.Name = "fecha_hasta";
-            this.fecha_hasta.ReadOnly = true;
-            // 
-            // id_numero
-            // 
-            this.id_numero.HeaderText = "Id Numero";
-            this.id_numero.Name = "id_numero";
-            this.id_numero.ReadOnly = true;
             // 
             // btn_salir_cliente
             // 
@@ -180,15 +144,6 @@ namespace ComunicAr.Formularios.Servicios
             this.btn_Consulta.UseVisualStyleBackColor = true;
             this.btn_Consulta.Click += new System.EventHandler(this.btn_Consulta_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Codigo Servicio";
-            // 
             // txt_filtro_cod_servicio
             // 
             this.txt_filtro_cod_servicio.Location = new System.Drawing.Point(173, 33);
@@ -199,6 +154,51 @@ namespace ComunicAr.Formularios.Servicios
             this.txt_filtro_cod_servicio.Pp_Validable = false;
             this.txt_filtro_cod_servicio.Size = new System.Drawing.Size(183, 20);
             this.txt_filtro_cod_servicio.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Codigo Servicio";
+            // 
+            // codigo_servicio
+            // 
+            this.codigo_servicio.HeaderText = "Codigo Servicio";
+            this.codigo_servicio.Name = "codigo_servicio";
+            this.codigo_servicio.ReadOnly = true;
+            // 
+            // tipo_servicio
+            // 
+            this.tipo_servicio.HeaderText = "Tipo Servicio";
+            this.tipo_servicio.Name = "tipo_servicio";
+            this.tipo_servicio.ReadOnly = true;
+            // 
+            // id_servicio
+            // 
+            this.id_servicio.HeaderText = "Id servicio";
+            this.id_servicio.Name = "id_servicio";
+            this.id_servicio.ReadOnly = true;
+            // 
+            // fecha_desde
+            // 
+            this.fecha_desde.HeaderText = "Fecha Desde";
+            this.fecha_desde.Name = "fecha_desde";
+            this.fecha_desde.ReadOnly = true;
+            // 
+            // fecha_hasta
+            // 
+            this.fecha_hasta.HeaderText = "Fecha Hasta";
+            this.fecha_hasta.Name = "fecha_hasta";
+            this.fecha_hasta.ReadOnly = true;
+            // 
+            // id_numero
+            // 
+            this.id_numero.HeaderText = "Id Numero";
+            this.id_numero.Name = "id_numero";
+            this.id_numero.ReadOnly = true;
             // 
             // Frm_ABM_Servicios
             // 
@@ -228,12 +228,6 @@ namespace ComunicAr.Formularios.Servicios
         private System.Windows.Forms.Button btn_salir_cliente;
         private System.Windows.Forms.Button bttn_modificar_servicios;
         private System.Windows.Forms.DataGridViewTextBoxColumn codi_servicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigo_servicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre_servicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipo_servicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_desde;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_hasta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_numero;
         private System.Windows.Forms.Button bttn_alta_servicio;
         private System.Windows.Forms.Button bttn_baja;
         private System.Windows.Forms.Button bttn_refrescar;
@@ -241,5 +235,11 @@ namespace ComunicAr.Formularios.Servicios
         private System.Windows.Forms.Button btn_Consulta;
         private Clases.TextBox01 txt_filtro_cod_servicio;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo_servicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipo_servicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_servicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_desde;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_hasta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_numero;
     }
 }

@@ -35,8 +35,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
 
         private void MostrarDatos(DataTable tabla)
         {
-            txt_nombre_servicio.Text = tabla.Rows[0]["nombre_servicio"].ToString();
+           
             txt_tipo_servicio.Text = tabla.Rows[0]["tipo_servicio"].ToString();
+            txt_id_Servicio.Text = tabla.Rows[0]["id_servicio"].ToString();
             txt_fecha_desde.Text = tabla.Rows[0]["fecha_desde"].ToString();
             txt_fecha_hasta.Text = tabla.Rows[0]["fecha_hasta"].ToString();
             txt_id_numero.Text = tabla.Rows[0]["id_numero"].ToString();
@@ -54,8 +55,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             {
                 Servicios_Contratados servicio = new Servicios_Contratados();
 
-                servicio.Pp_nombre_servicio = txt_nombre_servicio.Text;
+               
                 servicio.Pp_tipo_servicio = txt_tipo_servicio.Text;
+                servicio.Pp_id_servicio = txt_id_Servicio.Text;
                 servicio.Pp_fecha_desde = txt_fecha_desde.Text;
                 servicio.Pp_fecha_hasta = txt_fecha_hasta.Text;
                 servicio.Pp_id_numero = txt_id_numero.Text;
