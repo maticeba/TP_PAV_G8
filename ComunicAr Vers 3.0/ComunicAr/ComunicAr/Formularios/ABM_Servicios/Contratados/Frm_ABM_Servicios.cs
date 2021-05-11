@@ -16,6 +16,7 @@ namespace ComunicAr.Formularios.Servicios
     {
 
         public string cod_servicio { get; set; }
+        public bool flag { get; set; }
         public Frm_ABM_Servicios()
         {
             InitializeComponent();
@@ -27,7 +28,8 @@ namespace ComunicAr.Formularios.Servicios
             DataTable tabla = new DataTable();
             tabla = servicio.ServiciosCompletos();
             CargarGrilla(tabla);
-           
+
+            flag = false;
         }
 
         private void CargarGrilla(DataTable tabla)
@@ -56,27 +58,48 @@ namespace ComunicAr.Formularios.Servicios
 
         private void bttn_modificar_servicios_Click(object sender, EventArgs e)
         {
-            Frm_Modificacion_Servicios Frm_Mod = new Frm_Modificacion_Servicios();
-            Frm_Mod.cod_servicio = cod_servicio;
-            Frm_Mod.ShowDialog();
+            if (flag == false)
+            {
+                MessageBox.Show("No se ha seleccionado ninguna llamada para modificar");
+            }
+            else
+            {
+                Frm_Modificacion_Servicios Frm_Mod = new Frm_Modificacion_Servicios();
+                Frm_Mod.cod_servicio = cod_servicio;
+                Frm_Mod.ShowDialog();
+            }
         }  
         
         private void GridServicios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             cod_servicio = GridServicios.CurrentRow.Cells["codigo_servicio"].Value.ToString();
+            flag = true;
         }
 
         private void bttn_alta_servicio_Click(object sender, EventArgs e)
         {
             Frm_Alta_Servicios Altas = new Frm_Alta_Servicios();
             Altas.ShowDialog();
+
+            flag = false;
         }
 
         private void bttn_baja_Click(object sender, EventArgs e)
         {
-            Frm_baja_servicio Bajas = new Frm_baja_servicio();
-            Bajas.cod_servicio = cod_servicio;
-            Bajas.ShowDialog();
+            if (flag == false)
+            {
+                MessageBox.Show("No se ha seleccionado una llamada para eliminar");
+            }
+            else
+            {
+
+                Frm_baja_servicio Bajas = new Frm_baja_servicio();
+                Bajas.cod_servicio = cod_servicio;
+                Bajas.ShowDialog();
+
+            }
+
+            flag = false;
         }
 
         private void bttn_refrescar_Click(object sender, EventArgs e)
@@ -87,6 +110,7 @@ namespace ComunicAr.Formularios.Servicios
             GridServicios.Rows.Clear();
             CargarGrilla(tabla);
 
+            flag = false;
         }
 
         private void btn_Consulta_Click(object sender, EventArgs e)

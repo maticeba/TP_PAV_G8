@@ -27,25 +27,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             Llamadas llamadas = new Llamadas();
             DataTable tabla = new DataTable();
             tabla = llamadas.LlamadasCompletas();
-            for (int i = 0; i < tabla.Rows.Count; i++)
-            {
-                dataGridView1.Rows.Add();
-                string cod_nac_emisor = tabla.Rows[i]["nac_emisor"].ToString();
-                string cod_area_emisor = tabla.Rows[i]["area_emisor"].ToString();
-                string nro_emisor = tabla.Rows[i]["tel_emisor"].ToString();
-                string emisor = "+" + cod_nac_emisor + " " + cod_area_emisor + " " + nro_emisor;
-                dataGridView1.Rows[i].Cells[0].Value = emisor;
-                string cod_nac_receptor = tabla.Rows[i]["nac_recept"].ToString();
-                string cod_area_receptor = tabla.Rows[i]["area_recept"].ToString();
-                string nro_receptor = tabla.Rows[i]["tel_recept"].ToString();
-                string receptor = "+" + cod_nac_receptor + " " + cod_area_receptor + " " + nro_receptor;
-                dataGridView1.Rows[i].Cells[1].Value = receptor;
-                dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["fecha_hora_inicio"].ToString();
-                dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["duracion"].ToString();
-                dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["Tipo_com"].ToString();
-                dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["Banda_horaria"].ToString();
-                dataGridView1.Rows[i].Cells[6].Value = tabla.Rows[i]["identificador"].ToString();
-            }
+            CargarGrilla(tabla);
             flag = false;
         }
 
@@ -55,25 +37,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             DataTable tabla = new DataTable();
             tabla = llamadas.LlamadasCompletas();
             dataGridView1.Rows.Clear();
-            for (int i = 0; i < tabla.Rows.Count; i++)
-            {
-                dataGridView1.Rows.Add();
-                string cod_nac_emisor = tabla.Rows[i]["nac_emisor"].ToString();
-                string cod_area_emisor = tabla.Rows[i]["area_emisor"].ToString();
-                string nro_emisor = tabla.Rows[i]["tel_emisor"].ToString();
-                string emisor = "+" + cod_nac_emisor + " " + cod_area_emisor + " " + nro_emisor;
-                dataGridView1.Rows[i].Cells[0].Value = emisor;
-                string cod_nac_receptor = tabla.Rows[i]["nac_recept"].ToString();
-                string cod_area_receptor = tabla.Rows[i]["area_recept"].ToString();
-                string nro_receptor = tabla.Rows[i]["tel_recept"].ToString();
-                string receptor = "+" + cod_nac_receptor + " " + cod_area_receptor + " " + nro_receptor;
-                dataGridView1.Rows[i].Cells[1].Value = receptor;
-                dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["fecha_hora_inicio"].ToString();
-                dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["duracion"].ToString();
-                dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["Tipo_com"].ToString();
-                dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["Banda_horaria"].ToString();
-                dataGridView1.Rows[i].Cells[6].Value = tabla.Rows[i]["identificador"].ToString();
-            }
+            CargarGrilla(tabla);
             flag = false;
         }
 
@@ -86,6 +50,11 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             DataTable tabla = new DataTable();
             tabla = llamadas.LlamadasCompletas();
             dataGridView1.Rows.Clear();
+            CargarGrilla(tabla);
+            flag = false;
+        }
+        private void CargarGrilla(DataTable tabla)
+        {
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 dataGridView1.Rows.Add();
@@ -105,9 +74,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
                 dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["Banda_horaria"].ToString();
                 dataGridView1.Rows[i].Cells[6].Value = tabla.Rows[i]["identificador"].ToString();
             }
-            flag = false;
-        }
-
+        } 
         private void btn_salir_ABM_llamadas_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -135,25 +102,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
                 DataTable tabla = new DataTable();
                 tabla = llamadas.LlamadasCompletas();
                 dataGridView1.Rows.Clear();
-                for (int i = 0; i < tabla.Rows.Count; i++)
-                {
-                    dataGridView1.Rows.Add();
-                    string cod_nac_emisor = tabla.Rows[i]["nac_emisor"].ToString();
-                    string cod_area_emisor = tabla.Rows[i]["area_emisor"].ToString();
-                    string nro_emisor = tabla.Rows[i]["tel_emisor"].ToString();
-                    string emisor = "+" + cod_nac_emisor + " " + cod_area_emisor + " " + nro_emisor;
-                    dataGridView1.Rows[i].Cells[0].Value = emisor;
-                    string cod_nac_receptor = tabla.Rows[i]["nac_recept"].ToString();
-                    string cod_area_receptor = tabla.Rows[i]["area_recept"].ToString();
-                    string nro_receptor = tabla.Rows[i]["tel_recept"].ToString();
-                    string receptor = "+" + cod_nac_receptor + " " + cod_area_receptor + " " + nro_receptor;
-                    dataGridView1.Rows[i].Cells[1].Value = receptor;
-                    dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["fecha_hora_inicio"].ToString();
-                    dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["duracion"].ToString();
-                    dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["Tipo_com"].ToString();
-                    dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["Banda_horaria"].ToString();
-                    dataGridView1.Rows[i].Cells[6].Value = tabla.Rows[i]["identificador"].ToString();
-                }
+                CargarGrilla(tabla);
             }
         }
 
@@ -173,25 +122,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
                 DataTable tabla = new DataTable();
                 tabla = llamadas.LlamadasCompletas();
                 dataGridView1.Rows.Clear();
-                for (int i = 0; i < tabla.Rows.Count; i++)
-                {
-                    dataGridView1.Rows.Add();
-                    string cod_nac_emisor = tabla.Rows[i]["nac_emisor"].ToString();
-                    string cod_area_emisor = tabla.Rows[i]["area_emisor"].ToString();
-                    string nro_emisor = tabla.Rows[i]["tel_emisor"].ToString();
-                    string emisor = "+" + cod_nac_emisor + " " + cod_area_emisor + " " + nro_emisor;
-                    dataGridView1.Rows[i].Cells[0].Value = emisor;
-                    string cod_nac_receptor = tabla.Rows[i]["nac_recept"].ToString();
-                    string cod_area_receptor = tabla.Rows[i]["area_recept"].ToString();
-                    string nro_receptor = tabla.Rows[i]["tel_recept"].ToString();
-                    string receptor = "+" + cod_nac_receptor + " " + cod_area_receptor + " " + nro_receptor;
-                    dataGridView1.Rows[i].Cells[1].Value = receptor;
-                    dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["fecha_hora_inicio"].ToString();
-                    dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["duracion"].ToString();
-                    dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["Tipo_com"].ToString();
-                    dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["Banda_horaria"].ToString();
-                    dataGridView1.Rows[i].Cells[6].Value = tabla.Rows[i]["identificador"].ToString();
-                }
+                CargarGrilla(tabla);
                 flag = false;
             }
         }
