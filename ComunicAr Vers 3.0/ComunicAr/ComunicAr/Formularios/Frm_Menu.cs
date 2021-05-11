@@ -11,6 +11,7 @@ using ComunicAr.Formularios.ABM_Clientes;
 using ComunicAr.Formularios.Servicios;
 using ComunicAr.Formularios.ABM_Servicios.Datos;
 using ComunicAr.Formularios.ABM_Servicios.Fijos;
+using ComunicAr.Formularios.ABM_Llamadas;
 
 namespace ComunicAr.Formularios
 {
@@ -30,6 +31,13 @@ namespace ComunicAr.Formularios
             {
                 Frm_ABM_Cliente Frm_Cliente = new Frm_ABM_Cliente();
                 Frm_Cliente.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
+            }
+
+            if (cmb_Actual_Datos.SelectedIndex == 2)
+            {
+                Frm_ABM_Llamadas Frm_Llamada = new Frm_ABM_Llamadas();
+                Frm_Llamada.ShowDialog();
                 cmb_Actual_Datos.SelectedIndex = -1;
             }
 

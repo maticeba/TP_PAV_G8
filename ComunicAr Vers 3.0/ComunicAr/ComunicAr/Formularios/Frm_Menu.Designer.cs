@@ -123,7 +123,7 @@ namespace ComunicAr.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(218, 240);
+            this.ClientSize = new System.Drawing.Size(231, 251);
             this.ControlBox = false;
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_emitir_factura);
