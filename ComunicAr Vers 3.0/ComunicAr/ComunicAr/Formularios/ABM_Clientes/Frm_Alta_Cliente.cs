@@ -50,10 +50,5 @@ namespace ComunicAr.Formularios.ABM_Clientes
             cmb_cliente_alta_barrio.CargarCombo();
             cmb_cliente_alta_barrio.SelectedIndex = -1; 
         }
-
-        private void cmb_cliente_alta_barrio_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

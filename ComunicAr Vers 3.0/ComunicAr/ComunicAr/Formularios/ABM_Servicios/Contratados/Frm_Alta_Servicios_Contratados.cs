@@ -26,11 +26,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
         {
             this.Close();
         } 
-        
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void bttn_aceptar_Click(object sender, EventArgs e)
         {
@@ -55,21 +50,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             {
                 return;
             }
-        }
-
-        private void txt_fecha_hasta_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_nombre_servicio_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

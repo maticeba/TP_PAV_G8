@@ -46,11 +46,6 @@ namespace ComunicAr.Formularios.Servicios
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_salir_cliente_Click(object sender, EventArgs e)
         {
             this.Close();

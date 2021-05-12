@@ -83,7 +83,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_salir_cliente
             // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(577, 450);
+            this.btn_salir_cliente.Location = new System.Drawing.Point(596, 450);
             this.btn_salir_cliente.Name = "btn_salir_cliente";
             this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_cliente.TabIndex = 0;
@@ -158,7 +158,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.dataGridView1.Location = new System.Drawing.Point(12, 180);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(669, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(688, 252);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -171,7 +171,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(669, 113);
+            this.groupBox1.Size = new System.Drawing.Size(688, 113);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -230,7 +230,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 488);
+            this.ClientSize = new System.Drawing.Size(712, 488);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
@@ -240,8 +240,9 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.Controls.Add(this.btn_modificar_cliente);
             this.Controls.Add(this.btn_crear_cliente);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_ABM_Cliente";
-            this.Text = "ABM Cliente";
+            this.Text = "Cliente";
             this.Load += new System.EventHandler(this.Frm_ABM_Cliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

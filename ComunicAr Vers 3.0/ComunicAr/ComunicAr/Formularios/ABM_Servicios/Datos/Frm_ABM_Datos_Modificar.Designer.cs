@@ -50,7 +50,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(36, 181);
+            this.label7.Location = new System.Drawing.Point(43, 177);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 13);
             this.label7.TabIndex = 41;
@@ -59,7 +59,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(42, 181);
+            this.label6.Location = new System.Drawing.Point(49, 178);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 40;
@@ -67,7 +67,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(42, 155);
+            this.label5.Location = new System.Drawing.Point(79, 151);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 13);
             this.label5.TabIndex = 39;
@@ -76,7 +76,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 129);
+            this.label4.Location = new System.Drawing.Point(74, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 38;
@@ -85,7 +85,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 103);
+            this.label3.Location = new System.Drawing.Point(64, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 37;
@@ -94,7 +94,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 76);
+            this.label2.Location = new System.Drawing.Point(49, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 36;
@@ -176,7 +176,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // txt_Tipo
             // 
-            this.txt_Tipo.Location = new System.Drawing.Point(133, 178);
+            this.txt_Tipo.Location = new System.Drawing.Point(133, 174);
             this.txt_Tipo.Name = "txt_Tipo";
             this.txt_Tipo.Pp_Campo = null;
             this.txt_Tipo.Pp_MensajeError = null;
@@ -188,7 +188,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(42, 47);
+            this.label8.Location = new System.Drawing.Point(87, 47);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 44;
@@ -227,6 +227,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.Controls.Add(this.txt_recargo_M);
             this.Controls.Add(this.txt_limite_M);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_ABM_Datos_Modificar";
             this.Text = "Frm_ABM_Datos_Modificar";
             this.Load += new System.EventHandler(this.Frm_ABM_Datos_Modificar_Load);

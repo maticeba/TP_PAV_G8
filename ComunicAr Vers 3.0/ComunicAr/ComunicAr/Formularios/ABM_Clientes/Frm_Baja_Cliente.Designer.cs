@@ -48,17 +48,18 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(66, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Borrar Cliente";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 68);
+            this.label2.Location = new System.Drawing.Point(12, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 15);
             this.label2.TabIndex = 1;
@@ -67,7 +68,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(104, 97);
+            this.label3.Location = new System.Drawing.Point(101, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 15);
             this.label3.TabIndex = 2;
@@ -76,7 +77,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 126);
+            this.label4.Location = new System.Drawing.Point(59, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 15);
             this.label4.TabIndex = 3;
@@ -85,7 +86,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(108, 155);
+            this.label5.Location = new System.Drawing.Point(105, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 15);
             this.label5.TabIndex = 4;
@@ -94,7 +95,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(99, 184);
+            this.label6.Location = new System.Drawing.Point(96, 163);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 15);
             this.label6.TabIndex = 5;
@@ -102,7 +103,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_cliente_alta_aceptar
             // 
-            this.btn_cliente_alta_aceptar.Location = new System.Drawing.Point(143, 210);
+            this.btn_cliente_alta_aceptar.Location = new System.Drawing.Point(71, 189);
             this.btn_cliente_alta_aceptar.Name = "btn_cliente_alta_aceptar";
             this.btn_cliente_alta_aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_cliente_alta_aceptar.TabIndex = 15;
@@ -112,7 +113,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_cliente_alta_cancelar
             // 
-            this.btn_cliente_alta_cancelar.Location = new System.Drawing.Point(232, 210);
+            this.btn_cliente_alta_cancelar.Location = new System.Drawing.Point(160, 189);
             this.btn_cliente_alta_cancelar.Name = "btn_cliente_alta_cancelar";
             this.btn_cliente_alta_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cliente_alta_cancelar.TabIndex = 16;
@@ -123,7 +124,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // txt_cliente_alta_piso
             // 
             this.txt_cliente_alta_piso.Enabled = false;
-            this.txt_cliente_alta_piso.Location = new System.Drawing.Point(143, 152);
+            this.txt_cliente_alta_piso.Location = new System.Drawing.Point(140, 131);
             this.txt_cliente_alta_piso.Name = "txt_cliente_alta_piso";
             this.txt_cliente_alta_piso.Pp_Campo = "piso";
             this.txt_cliente_alta_piso.Pp_MensajeError = "Falta cargar el piso del cliente";
@@ -135,7 +136,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // txt_cliente_alta_nro
             // 
             this.txt_cliente_alta_nro.Enabled = false;
-            this.txt_cliente_alta_nro.Location = new System.Drawing.Point(143, 123);
+            this.txt_cliente_alta_nro.Location = new System.Drawing.Point(140, 102);
             this.txt_cliente_alta_nro.Name = "txt_cliente_alta_nro";
             this.txt_cliente_alta_nro.Pp_Campo = "nro";
             this.txt_cliente_alta_nro.Pp_MensajeError = "Falta cargar el número de la calle";
@@ -147,7 +148,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // txt_cliente_alta_calle
             // 
             this.txt_cliente_alta_calle.Enabled = false;
-            this.txt_cliente_alta_calle.Location = new System.Drawing.Point(143, 94);
+            this.txt_cliente_alta_calle.Location = new System.Drawing.Point(140, 73);
             this.txt_cliente_alta_calle.Name = "txt_cliente_alta_calle";
             this.txt_cliente_alta_calle.Pp_Campo = "calle";
             this.txt_cliente_alta_calle.Pp_MensajeError = "Falta cargar la calle del cliente";
@@ -159,7 +160,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // txt_cliente_alta_nombre
             // 
             this.txt_cliente_alta_nombre.Enabled = false;
-            this.txt_cliente_alta_nombre.Location = new System.Drawing.Point(143, 65);
+            this.txt_cliente_alta_nombre.Location = new System.Drawing.Point(140, 44);
             this.txt_cliente_alta_nombre.Name = "txt_cliente_alta_nombre";
             this.txt_cliente_alta_nombre.Pp_Campo = "nombre_razonSocial";
             this.txt_cliente_alta_nombre.Pp_MensajeError = "Falta cargar el nombre del cliente";
@@ -172,7 +173,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             this.cmb_cliente_alta_barrio.Enabled = false;
             this.cmb_cliente_alta_barrio.FormattingEnabled = true;
-            this.cmb_cliente_alta_barrio.Location = new System.Drawing.Point(143, 181);
+            this.cmb_cliente_alta_barrio.Location = new System.Drawing.Point(140, 160);
             this.cmb_cliente_alta_barrio.Name = "cmb_cliente_alta_barrio";
             this.cmb_cliente_alta_barrio.Pp_Conseleccion = false;
             this.cmb_cliente_alta_barrio.Pp_Descripcion = "nombre_barrio";
@@ -185,11 +186,11 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.cmb_cliente_alta_barrio.Size = new System.Drawing.Size(164, 23);
             this.cmb_cliente_alta_barrio.TabIndex = 10;
             // 
-            // Frm_Modificacion_Cliente
+            // Frm_Baja_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 257);
+            this.ClientSize = new System.Drawing.Size(320, 225);
             this.Controls.Add(this.btn_cliente_alta_cancelar);
             this.Controls.Add(this.btn_cliente_alta_aceptar);
             this.Controls.Add(this.txt_cliente_alta_piso);
@@ -204,10 +205,10 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Frm_Modificacion_Cliente";
+            this.Name = "Frm_Baja_Cliente";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Frm_Mod_Cliente_Load);

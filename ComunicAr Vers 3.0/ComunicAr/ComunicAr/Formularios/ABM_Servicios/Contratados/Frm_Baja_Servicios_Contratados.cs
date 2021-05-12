@@ -19,11 +19,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MostrarDatos(DataTable tabla)
         {
             txt_id_Servicio.Text = tabla.Rows[0]["id_servicio"].ToString();
@@ -52,11 +47,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
                 servicios.Borrar();
                 MessageBox.Show("Se borró correctamente el servicio");
             }
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

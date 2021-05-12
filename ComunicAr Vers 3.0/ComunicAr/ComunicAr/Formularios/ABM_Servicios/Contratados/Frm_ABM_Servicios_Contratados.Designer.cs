@@ -61,10 +61,10 @@ namespace ComunicAr.Formularios.Servicios
             this.fecha_desde,
             this.fecha_hasta,
             this.id_numero});
-            this.GridServicios.Location = new System.Drawing.Point(12, 160);
+            this.GridServicios.Location = new System.Drawing.Point(12, 143);
             this.GridServicios.Name = "GridServicios";
             this.GridServicios.ReadOnly = true;
-            this.GridServicios.Size = new System.Drawing.Size(668, 262);
+            this.GridServicios.Size = new System.Drawing.Size(671, 252);
             this.GridServicios.TabIndex = 3;
             this.GridServicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridServicios_CellContentClick);
             // 
@@ -106,7 +106,7 @@ namespace ComunicAr.Formularios.Servicios
             // 
             // btn_salir_cliente
             // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(550, 428);
+            this.btn_salir_cliente.Location = new System.Drawing.Point(579, 414);
             this.btn_salir_cliente.Name = "btn_salir_cliente";
             this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_cliente.TabIndex = 5;
@@ -117,9 +117,9 @@ namespace ComunicAr.Formularios.Servicios
             // bttn_modificar_servicios
             // 
             this.bttn_modificar_servicios.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_modificar_servicios.Location = new System.Drawing.Point(110, 125);
+            this.bttn_modificar_servicios.Location = new System.Drawing.Point(140, 102);
             this.bttn_modificar_servicios.Name = "bttn_modificar_servicios";
-            this.bttn_modificar_servicios.Size = new System.Drawing.Size(92, 29);
+            this.bttn_modificar_servicios.Size = new System.Drawing.Size(104, 34);
             this.bttn_modificar_servicios.TabIndex = 6;
             this.bttn_modificar_servicios.Text = "Modificar";
             this.bttn_modificar_servicios.UseVisualStyleBackColor = true;
@@ -128,9 +128,9 @@ namespace ComunicAr.Formularios.Servicios
             // bttn_alta_servicio
             // 
             this.bttn_alta_servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_alta_servicio.Location = new System.Drawing.Point(12, 125);
+            this.bttn_alta_servicio.Location = new System.Drawing.Point(12, 102);
             this.bttn_alta_servicio.Name = "bttn_alta_servicio";
-            this.bttn_alta_servicio.Size = new System.Drawing.Size(92, 29);
+            this.bttn_alta_servicio.Size = new System.Drawing.Size(104, 34);
             this.bttn_alta_servicio.TabIndex = 7;
             this.bttn_alta_servicio.Text = "Alta";
             this.bttn_alta_servicio.UseVisualStyleBackColor = true;
@@ -139,9 +139,9 @@ namespace ComunicAr.Formularios.Servicios
             // bttn_baja
             // 
             this.bttn_baja.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_baja.Location = new System.Drawing.Point(208, 125);
+            this.bttn_baja.Location = new System.Drawing.Point(268, 102);
             this.bttn_baja.Name = "bttn_baja";
-            this.bttn_baja.Size = new System.Drawing.Size(92, 29);
+            this.bttn_baja.Size = new System.Drawing.Size(104, 34);
             this.bttn_baja.TabIndex = 8;
             this.bttn_baja.Text = "Baja";
             this.bttn_baja.UseVisualStyleBackColor = true;
@@ -150,9 +150,9 @@ namespace ComunicAr.Formularios.Servicios
             // bttn_refrescar
             // 
             this.bttn_refrescar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_refrescar.Location = new System.Drawing.Point(11, 431);
+            this.bttn_refrescar.Location = new System.Drawing.Point(12, 414);
             this.bttn_refrescar.Name = "bttn_refrescar";
-            this.bttn_refrescar.Size = new System.Drawing.Size(92, 29);
+            this.bttn_refrescar.Size = new System.Drawing.Size(104, 34);
             this.bttn_refrescar.TabIndex = 9;
             this.bttn_refrescar.Text = "Refrescar";
             this.bttn_refrescar.UseVisualStyleBackColor = true;
@@ -163,16 +163,16 @@ namespace ComunicAr.Formularios.Servicios
             this.groupBox1.Controls.Add(this.btn_Consulta);
             this.groupBox1.Controls.Add(this.txt_filtro_cod_servicio);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(11, 25);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(669, 77);
+            this.groupBox1.Size = new System.Drawing.Size(671, 75);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
             // btn_Consulta
             // 
-            this.btn_Consulta.Location = new System.Drawing.Point(390, 31);
+            this.btn_Consulta.Location = new System.Drawing.Point(388, 33);
             this.btn_Consulta.Name = "btn_Consulta";
             this.btn_Consulta.Size = new System.Drawing.Size(75, 23);
             this.btn_Consulta.TabIndex = 3;
@@ -188,23 +188,24 @@ namespace ComunicAr.Formularios.Servicios
             this.txt_filtro_cod_servicio.Pp_MensajeError = null;
             this.txt_filtro_cod_servicio.Pp_Tabla = null;
             this.txt_filtro_cod_servicio.Pp_Validable = false;
-            this.txt_filtro_cod_servicio.Size = new System.Drawing.Size(183, 20);
+            this.txt_filtro_cod_servicio.Size = new System.Drawing.Size(183, 23);
             this.txt_filtro_cod_servicio.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Location = new System.Drawing.Point(77, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(90, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo Servicio";
             // 
-            // Frm_ABM_Servicios
+            // Frm_ABM_Servicios_Contratados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 484);
+            this.ClientSize = new System.Drawing.Size(695, 460);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bttn_refrescar);
             this.Controls.Add(this.bttn_baja);
@@ -212,8 +213,10 @@ namespace ComunicAr.Formularios.Servicios
             this.Controls.Add(this.bttn_modificar_servicios);
             this.Controls.Add(this.btn_salir_cliente);
             this.Controls.Add(this.GridServicios);
-            this.Name = "Frm_ABM_Servicios";
-            this.Text = "ServiciosContratados";
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "Frm_ABM_Servicios_Contratados";
+            this.Text = "Servicios Contratados";
             this.Load += new System.EventHandler(this.Frm_ABM_Servicios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridServicios)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -14,7 +14,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
 {
     public partial class Frm_ABM_Cliente : Form
     {
-
+        public bool flag { get; set; }
         public string nro_Cliente { get; set; }
         public Frm_ABM_Cliente()
         {
@@ -37,17 +37,17 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["calle"].ToString();
                 dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["nro"].ToString();
                 dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["piso"].ToString();
-
             }
+            flag = false;
         }
         private void Frm_ABM_Cliente_Load(object sender, EventArgs e)
         {
-            
             Clientes usuario = new Clientes();
             DataTable tabla = new DataTable();
             tabla = usuario.ClientesCompletos();
             CargarGrilla(tabla);
             //Comentario
+            flag = false;
         }
 
         private void btn_refresh_client_Click(object sender, EventArgs e)
@@ -63,20 +63,18 @@ namespace ComunicAr.Formularios.ABM_Clientes
         {
             Frm_Alta_Cliente Altas = new Frm_Alta_Cliente();
             Altas.ShowDialog();
-        }
-
-        private void filtrosGrilla(DataTable tabla)
-        {
-
+            flag = false;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             nro_Cliente = dataGridView1.CurrentRow.Cells["Column1"].Value.ToString();
+            flag = true;
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
+            flag = false;
             Clientes clientes = new Clientes();
             if (filtroNro.Text != "" )
             {
@@ -91,23 +89,34 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 CargarGrilla(clientes.Clientes_por_Nombre(filtroNombre.Text));
                 filtroNombre.Clear();
             }
-            
         }
 
         private void btn_modificar_cliente_Click(object sender, EventArgs e)
         {
-            Frm_Mod_Cliente Frm_Mod = new Frm_Mod_Cliente();
-            Frm_Mod.nro_Cliente = nro_Cliente;
-            Frm_Mod.ShowDialog();
+            if (flag == false)
+            {
+                MessageBox.Show("Seleccione un Servicio de datos para eliminar");
+            }
+            else
+            {
+                Frm_Mod_Cliente Frm_Mod = new Frm_Mod_Cliente();
+                Frm_Mod.nro_Cliente = nro_Cliente;
+                Frm_Mod.ShowDialog();
+            }
         }
 
         private void btn_eliminar_cliente_Click(object sender, EventArgs e)
         {
-            Frm_Baja_Cliente Frm_Baja = new Frm_Baja_Cliente();
-            Frm_Baja.nro_Cliente = nro_Cliente;
-            Frm_Baja.ShowDialog();
-
-
+            if (flag == false)
+            {
+                MessageBox.Show("Seleccione un Servicio de datos para eliminar");
+            }
+            else
+            {
+                Frm_Baja_Cliente Frm_Baja = new Frm_Baja_Cliente();
+                Frm_Baja.nro_Cliente = nro_Cliente;
+                Frm_Baja.ShowDialog();
+            }
         }
     }
 }
