@@ -52,7 +52,8 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             // btn_crear_cliente
             // 
-            this.btn_crear_cliente.Location = new System.Drawing.Point(12, 152);
+            this.btn_crear_cliente.Location = new System.Drawing.Point(12, 140);
+            this.btn_crear_cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_crear_cliente.Name = "btn_crear_cliente";
             this.btn_crear_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_crear_cliente.TabIndex = 1;
@@ -62,7 +63,8 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             // btn_modificar_ciud
             // 
-            this.btn_modificar_ciud.Location = new System.Drawing.Point(122, 152);
+            this.btn_modificar_ciud.Location = new System.Drawing.Point(140, 140);
+            this.btn_modificar_ciud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_modificar_ciud.Name = "btn_modificar_ciud";
             this.btn_modificar_ciud.Size = new System.Drawing.Size(104, 34);
             this.btn_modificar_ciud.TabIndex = 2;
@@ -72,7 +74,8 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             // btn_eliminar_ciud
             // 
-            this.btn_eliminar_ciud.Location = new System.Drawing.Point(232, 152);
+            this.btn_eliminar_ciud.Location = new System.Drawing.Point(268, 140);
+            this.btn_eliminar_ciud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_eliminar_ciud.Name = "btn_eliminar_ciud";
             this.btn_eliminar_ciud.Size = new System.Drawing.Size(104, 34);
             this.btn_eliminar_ciud.TabIndex = 3;
@@ -89,11 +92,12 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGrid_Ciudad.Location = new System.Drawing.Point(12, 192);
+            this.dataGrid_Ciudad.Location = new System.Drawing.Point(12, 178);
+            this.dataGrid_Ciudad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGrid_Ciudad.Name = "dataGrid_Ciudad";
             this.dataGrid_Ciudad.ReadOnly = true;
             this.dataGrid_Ciudad.RowHeadersWidth = 62;
-            this.dataGrid_Ciudad.Size = new System.Drawing.Size(722, 252);
+            this.dataGrid_Ciudad.Size = new System.Drawing.Size(541, 252);
             this.dataGrid_Ciudad.TabIndex = 4;
             this.dataGrid_Ciudad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -123,7 +127,8 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             // btn_refresh_client
             // 
-            this.btn_refresh_client.Location = new System.Drawing.Point(12, 450);
+            this.btn_refresh_client.Location = new System.Drawing.Point(12, 444);
+            this.btn_refresh_client.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_refresh_client.Name = "btn_refresh_client";
             this.btn_refresh_client.Size = new System.Drawing.Size(104, 34);
             this.btn_refresh_client.TabIndex = 5;
@@ -133,7 +138,8 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             // btn_salir_cliente
             // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(630, 450);
+            this.btn_salir_cliente.Location = new System.Drawing.Point(449, 444);
+            this.btn_salir_cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_salir_cliente.Name = "btn_salir_cliente";
             this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_cliente.TabIndex = 6;
@@ -151,17 +157,20 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.Filtro.Controls.Add(this.label2);
             this.Filtro.Controls.Add(this.label1);
             this.Filtro.Location = new System.Drawing.Point(12, 12);
+            this.Filtro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Filtro.Name = "Filtro";
-            this.Filtro.Size = new System.Drawing.Size(722, 134);
+            this.Filtro.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Filtro.Size = new System.Drawing.Size(541, 114);
             this.Filtro.TabIndex = 7;
             this.Filtro.TabStop = false;
             this.Filtro.Text = "Filtro";
             // 
             // btn_consultar
             // 
-            this.btn_consultar.Location = new System.Drawing.Point(604, 91);
+            this.btn_consultar.Location = new System.Drawing.Point(388, 85);
+            this.btn_consultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_consultar.Name = "btn_consultar";
-            this.btn_consultar.Size = new System.Drawing.Size(112, 34);
+            this.btn_consultar.Size = new System.Drawing.Size(75, 23);
             this.btn_consultar.TabIndex = 2;
             this.btn_consultar.Text = "Filtrar";
             this.btn_consultar.UseVisualStyleBackColor = true;
@@ -169,69 +178,76 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             // txt_cod_prov
             // 
-            this.txt_cod_prov.Location = new System.Drawing.Point(165, 95);
+            this.txt_cod_prov.Location = new System.Drawing.Point(173, 87);
+            this.txt_cod_prov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_cod_prov.Name = "txt_cod_prov";
             this.txt_cod_prov.Pp_Campo = null;
             this.txt_cod_prov.Pp_MensajeError = null;
             this.txt_cod_prov.Pp_Tabla = null;
             this.txt_cod_prov.Pp_Validable = false;
-            this.txt_cod_prov.Size = new System.Drawing.Size(131, 26);
+            this.txt_cod_prov.Size = new System.Drawing.Size(135, 23);
             this.txt_cod_prov.TabIndex = 1;
             // 
             // txt_nomb_ciud
             // 
-            this.txt_nomb_ciud.Location = new System.Drawing.Point(165, 63);
+            this.txt_nomb_ciud.Location = new System.Drawing.Point(173, 60);
+            this.txt_nomb_ciud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_nomb_ciud.Name = "txt_nomb_ciud";
             this.txt_nomb_ciud.Pp_Campo = null;
             this.txt_nomb_ciud.Pp_MensajeError = null;
             this.txt_nomb_ciud.Pp_Tabla = null;
             this.txt_nomb_ciud.Pp_Validable = false;
-            this.txt_nomb_ciud.Size = new System.Drawing.Size(172, 26);
+            this.txt_nomb_ciud.Size = new System.Drawing.Size(135, 23);
             this.txt_nomb_ciud.TabIndex = 1;
             // 
             // txt_cod_ciud
             // 
-            this.txt_cod_ciud.Location = new System.Drawing.Point(165, 31);
+            this.txt_cod_ciud.Location = new System.Drawing.Point(173, 33);
+            this.txt_cod_ciud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_cod_ciud.Name = "txt_cod_ciud";
             this.txt_cod_ciud.Pp_Campo = null;
             this.txt_cod_ciud.Pp_MensajeError = null;
             this.txt_cod_ciud.Pp_Tabla = null;
             this.txt_cod_ciud.Pp_Validable = false;
-            this.txt_cod_ciud.Size = new System.Drawing.Size(131, 26);
+            this.txt_cod_ciud.Size = new System.Drawing.Size(135, 23);
             this.txt_cod_ciud.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 98);
+            this.label3.Location = new System.Drawing.Point(55, 90);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 20);
+            this.label3.Size = new System.Drawing.Size(114, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Codigo de Provincia";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 66);
+            this.label2.Location = new System.Drawing.Point(61, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 20);
+            this.label2.Size = new System.Drawing.Size(108, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre de Ciudad";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 34);
+            this.label1.Location = new System.Drawing.Point(66, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 20);
+            this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo de Ciudad";
             // 
             // Frm_ABM_Ciudad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 500);
+            this.ClientSize = new System.Drawing.Size(567, 489);
+            this.ControlBox = false;
             this.Controls.Add(this.Filtro);
             this.Controls.Add(this.btn_salir_cliente);
             this.Controls.Add(this.btn_refresh_client);
@@ -239,6 +255,9 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.Controls.Add(this.btn_eliminar_ciud);
             this.Controls.Add(this.btn_modificar_ciud);
             this.Controls.Add(this.btn_crear_cliente);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_ABM_Ciudad";
             this.Text = "ABM Ciudades";
             this.Load += new System.EventHandler(this.Frm_ABM_Ciudad_Load);
