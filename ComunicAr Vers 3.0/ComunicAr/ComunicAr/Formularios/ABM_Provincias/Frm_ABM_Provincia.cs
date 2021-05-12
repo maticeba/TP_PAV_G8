@@ -40,13 +40,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             Provincia provincia = new Provincia();
             DataTable tabla = new DataTable();
             tabla = provincia.ProvinciasCompletas();
-            for (int i = 0; i < tabla.Rows.Count; i++)
-            {
-                dataGrid_Provincia.Rows.Add();
-                dataGrid_Provincia.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_prov"].ToString();
-                dataGrid_Provincia.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_prov"].ToString();
-
-            }
+            CargarGrilla(tabla);
+            flag = false;
         }
         private void btn_refrescar_Click(object sender, EventArgs e)
         {

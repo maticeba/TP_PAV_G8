@@ -58,6 +58,30 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\ABM_Ciudad\Frm_ABM_Ciudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Ciudad\Frm_ABM_Ciudad.Designer.cs">
+      <DependentUpon>Frm_ABM_Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Ciudad\Frm_Alta_Ciudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Ciudad\Frm_Alta_Ciudad.Designer.cs">
+      <DependentUpon>Frm_Alta_Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Ciudad\Frm_Baja_Ciudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Ciudad\Frm_Baja_Ciudad.Designer.cs">
+      <DependentUpon>Frm_Baja_Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Ciudad\Frm_Mod_Ciudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Ciudad\Frm_Mod_Ciudad.Designer.cs">
+      <DependentUpon>Frm_Mod_Ciudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM_Clientes\Frm_ABM_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +311,7 @@
       <DependentUpon>Frm_ABM_Servicios_Contratados.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Barrios.cs" />
+    <Compile Include="Negocio\Ciudad.cs" />
     <Compile Include="Negocio\Clientes.cs" />
     <Compile Include="Negocio\Dispositivos.cs" />
     <Compile Include="Negocio\Llamadas.cs" />
@@ -297,6 +322,18 @@
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ABM_Ciudad\Frm_ABM_Ciudad.resx">
+      <DependentUpon>Frm_ABM_Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Ciudad\Frm_Alta_Ciudad.resx">
+      <DependentUpon>Frm_Alta_Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Ciudad\Frm_Baja_Ciudad.resx">
+      <DependentUpon>Frm_Baja_Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Ciudad\Frm_Mod_Ciudad.resx">
+      <DependentUpon>Frm_Mod_Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.resx">
       <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
     </EmbeddedResource>
