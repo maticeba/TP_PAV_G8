@@ -130,6 +130,30 @@
     <Compile Include="Formularios\ABM_Llamadas\Frm_Modificar_Llamada.designer.cs">
       <DependentUpon>Frm_Modificar_Llamada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_ABM_Provincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_ABM_Provincia.designer.cs">
+      <DependentUpon>Frm_ABM_Provincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_Alta_Provincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_Alta_Provincia.designer.cs">
+      <DependentUpon>Frm_Alta_Provincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_Baja_Prov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_Baja_Prov.designer.cs">
+      <DependentUpon>Frm_Baja_Prov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_Mod_Provincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Provincias\Frm_Mod_Provincia.designer.cs">
+      <DependentUpon>Frm_Mod_Provincia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Alta_Servicios_Contratados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +220,54 @@
     <Compile Include="Formularios\ABM_Servicios\Fijos\Frm_ABM_ServicioFIjo_Modificacion.designer.cs">
       <DependentUpon>Frm_ABM_ServicioFIjo_Modificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_ABM_Prepagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_ABM_Prepagos.Designer.cs">
+      <DependentUpon>Frm_ABM_Prepagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_Alta_prepago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_Alta_prepago.Designer.cs">
+      <DependentUpon>Frm_Alta_prepago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_Baja_prepago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_Baja_prepago.Designer.cs">
+      <DependentUpon>Frm_Baja_prepago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_Modificar_prepagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Servicios\Prepagos\Frm_Modificar_prepagos.Designer.cs">
+      <DependentUpon>Frm_Modificar_prepagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_ABM_Barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_ABM_Barrio.Designer.cs">
+      <DependentUpon>Frm_ABM_Barrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Alta_Barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Alta_Barrio.Designer.cs">
+      <DependentUpon>Frm_Alta_Barrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Baja_Barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_Baja_Barrio.Designer.cs">
+      <DependentUpon>Frm_Baja_Barrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_mod_barrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio\Frm_mod_barrio.Designer.cs">
+      <DependentUpon>Frm_mod_barrio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,12 +286,15 @@
     <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios_Contratados.Designer.cs">
       <DependentUpon>Frm_ABM_Servicios_Contratados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocio\Barrios.cs" />
     <Compile Include="Negocio\Clientes.cs" />
     <Compile Include="Negocio\Dispositivos.cs" />
     <Compile Include="Negocio\Llamadas.cs" />
+    <Compile Include="Negocio\Provincia.cs" />
     <Compile Include="Negocio\ServicioFijo.cs" />
     <Compile Include="Negocio\Servicios_Contratados.cs" />
     <Compile Include="Negocio\Servicios_Datos.cs" />
+    <Compile Include="Negocio\Servicios_Prepagos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Alta_Cliente.resx">
@@ -254,6 +329,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Llamadas\Frm_Modificar_Llamada.resx">
       <DependentUpon>Frm_Modificar_Llamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Provincias\Frm_ABM_Provincia.resx">
+      <DependentUpon>Frm_ABM_Provincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Provincias\Frm_Alta_Provincia.resx">
+      <DependentUpon>Frm_Alta_Provincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Provincias\Frm_Baja_Prov.resx">
+      <DependentUpon>Frm_Baja_Prov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Provincias\Frm_Mod_Provincia.resx">
+      <DependentUpon>Frm_Mod_Provincia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios_Contratados.resx">
       <DependentUpon>Frm_ABM_Servicios_Contratados.cs</DependentUpon>
@@ -293,6 +380,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Servicios\Fijos\Frm_ABM_ServicioFIjo_Modificacion.resx">
       <DependentUpon>Frm_ABM_ServicioFIjo_Modificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Prepagos\Frm_ABM_Prepagos.resx">
+      <DependentUpon>Frm_ABM_Prepagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Prepagos\Frm_Alta_prepago.resx">
+      <DependentUpon>Frm_Alta_prepago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Prepagos\Frm_Baja_prepago.resx">
+      <DependentUpon>Frm_Baja_prepago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Prepagos\Frm_Modificar_prepagos.resx">
+      <DependentUpon>Frm_Modificar_prepagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_ABM_Barrio.resx">
+      <DependentUpon>Frm_ABM_Barrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_Alta_Barrio.resx">
+      <DependentUpon>Frm_Alta_Barrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_Baja_Barrio.resx">
+      <DependentUpon>Frm_Baja_Barrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Barrio\Frm_mod_barrio.resx">
+      <DependentUpon>Frm_mod_barrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>

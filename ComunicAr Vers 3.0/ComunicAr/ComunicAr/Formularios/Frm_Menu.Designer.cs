@@ -123,7 +123,7 @@ namespace ComunicAr.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 251);
+            this.ClientSize = new System.Drawing.Size(227, 247);
             this.ControlBox = false;
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_emitir_factura);
@@ -139,6 +139,7 @@ namespace ComunicAr.Formularios
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Frm_Menu_Load);
             this.ResumeLayout(false);
 
         }

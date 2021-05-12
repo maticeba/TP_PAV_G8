@@ -169,6 +169,7 @@ namespace ComunicAr.Formularios.Servicios
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_Consulta
             // 
@@ -190,6 +191,7 @@ namespace ComunicAr.Formularios.Servicios
             this.txt_filtro_cod_servicio.Pp_Validable = false;
             this.txt_filtro_cod_servicio.Size = new System.Drawing.Size(183, 23);
             this.txt_filtro_cod_servicio.TabIndex = 2;
+            this.txt_filtro_cod_servicio.TextChanged += new System.EventHandler(this.txt_filtro_cod_servicio_TextChanged);
             // 
             // label1
             // 
@@ -199,6 +201,7 @@ namespace ComunicAr.Formularios.Servicios
             this.label1.Size = new System.Drawing.Size(90, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo Servicio";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Frm_ABM_Servicios_Contratados
             // 

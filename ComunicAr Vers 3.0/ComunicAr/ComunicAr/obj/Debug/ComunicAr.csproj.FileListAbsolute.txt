@@ -36,7 +36,6 @@ C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\Comuni
 C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.CoreCompileInputs.cache
 C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.exe
 C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.pdb
-C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Servicios.Frm_ABM_Servicios.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.exe.config
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.exe
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.pdb
@@ -69,12 +68,9 @@ C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debu
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Baja_Cliente.resources
 C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Baja_Cliente.resources
 C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Mod_Cliente.resources
-C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Contratados.Frm_Modificacion_Servicios.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Baja_Cliente.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Mod_Cliente.resources
 C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csprojAssemblyReference.cache
-C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Contratados.Frm_Alta_Servicios.resources
-C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Contratados.Frm_baja_servicio.resources
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.exe.config
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.exe
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.pdb
@@ -130,3 +126,23 @@ C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Dispositivos.Frm_ABM_Baja_Dispositivo.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Dispositivos.Frm_ABM_Dispositivos.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Dispositivos.Frm_ABM_Modificar_Dispositivo.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Dispositivos.Frm_ABM_Alta_Dispositivo.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Dispositivos.Frm_ABM_Baja_Dispositivo.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Dispositivos.Frm_ABM_Dispositivos.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Dispositivos.Frm_ABM_Modificar_Dispositivo.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Provincia.Frm_ABM_Provincia.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Provincia.Frm_Alta_Provincia.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Provincia.Frm_Baja_Prov.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Provincia.Frm_Mod_Provincia.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Servicios.Frm_ABM_Servicios_Contratados.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Contratados.Frm_Alta_Servicios_Contratados.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Contratados.Frm_Baja_Servicios_Contratados.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Contratados.Frm_Modificacion_Servicios_Contratados.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Prepagos.Frm_ABM_Prepagos.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Prepagos.Frm_Alta_prepago.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Prepagos.Frm_Baja_prepago.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Servicios.Prepagos.Frm_Modificar_prepagos.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_ABM_Barrio.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_Alta_Barrio.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_Baja_Barrio.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_mod_barrio.resources

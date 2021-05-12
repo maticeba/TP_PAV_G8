@@ -13,6 +13,8 @@ using ComunicAr.Formularios.ABM_Servicios.Datos;
 using ComunicAr.Formularios.ABM_Servicios.Fijos;
 using ComunicAr.Formularios.ABM_Llamadas;
 using ComunicAr.Formularios.ABM_Dispositivos;
+using ComunicAr.Formularios.ABM_Servicios.Prepagos;
+using ComunicAr.Formularios.Barrio;
 
 namespace ComunicAr.Formularios
 {
@@ -56,6 +58,13 @@ namespace ComunicAr.Formularios
                 cmb_Actual_Datos.SelectedIndex = -1;
             }
 
+            if (cmb_Actual_Datos.SelectedIndex == 5)
+            {
+                Frm_ABM_Prepagos Frm_Servicios = new Frm_ABM_Prepagos();
+                Frm_Servicios.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
+            }
+
             if (cmb_Actual_Datos.SelectedIndex == 6)
             {
                 Frm_ABM_ServicioFijo Frm_Fijo = new Frm_ABM_ServicioFijo();
@@ -71,7 +80,20 @@ namespace ComunicAr.Formularios
                 cmb_Actual_Datos.SelectedIndex = -1;
 
             }
-            
+
+            if (cmb_Actual_Datos.SelectedIndex == 8)
+            {
+                Frm_ABM_Barrio Frm_Datos = new Frm_ABM_Barrio();
+                Frm_Datos.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
+
+            }
+
+        }
+
+        private void Frm_Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
