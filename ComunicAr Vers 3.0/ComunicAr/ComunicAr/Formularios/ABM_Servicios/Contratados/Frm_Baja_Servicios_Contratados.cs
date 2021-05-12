@@ -11,10 +11,10 @@ using ComunicAr.Negocio;
 
 namespace ComunicAr.Formularios.ABM_Servicios.Contratados
 {
-    public partial class Frm_baja_servicio : Form
+    public partial class Frm_Baja_Servicios_Contratados : Form
     {
         public string cod_servicio { get; set; }
-        public Frm_baja_servicio()
+        public Frm_Baja_Servicios_Contratados()
         {
             InitializeComponent();
         }

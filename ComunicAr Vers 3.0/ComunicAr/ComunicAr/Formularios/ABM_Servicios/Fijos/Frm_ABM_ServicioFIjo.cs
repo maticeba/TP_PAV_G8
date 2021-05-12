@@ -14,6 +14,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
     public partial class Frm_ABM_ServicioFijo : Form
 
     {
+        public bool flag { get; set; }
         public string cod_servicio { get; set; }
         public Frm_ABM_ServicioFijo()
         {
@@ -25,15 +26,17 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
 
             {
                 dataGridView_ServicioFijo1.Rows.Add();
-                dataGridView_ServicioFijo1.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_servicio"].ToString();
-                dataGridView_ServicioFijo1.Rows[i].Cells[1].Value = tabla.Rows[i]["descripcion"].ToString();
-                dataGridView_ServicioFijo1.Rows[i].Cells[2].Value = tabla.Rows[i]["costo_mensual"].ToString();
-                dataGridView_ServicioFijo1.Rows[i].Cells[3].Value = tabla.Rows[i]["tipo_servicio"].ToString();
+                dataGridView_ServicioFijo1.Rows[i].Cells[0].Value = tabla.Rows[i]["tipo_servicio"].ToString();
+                dataGridView_ServicioFijo1.Rows[i].Cells[1].Value = tabla.Rows[i]["cod_servicio"].ToString();
+                dataGridView_ServicioFijo1.Rows[i].Cells[2].Value = tabla.Rows[i]["descripcion"].ToString();
+                dataGridView_ServicioFijo1.Rows[i].Cells[3].Value = tabla.Rows[i]["costo_mensual"].ToString();
+                
             }
         }
         private void dataGridView_ServicioFijo1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             cod_servicio = dataGridView_ServicioFijo1.CurrentRow.Cells["Column1"].Value.ToString();
+            flag = true;
         }
         private void btn_ServicioFijo_Consultar_Click(object sender, EventArgs e)
 
@@ -64,16 +67,24 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             tabla = usuarioSF.ServicioFijoCompleto();
             dataGridView_ServicioFijo1.Rows.Clear();
             CargarGrillaServicioFijo(tabla);
+            flag = false;
         }
         private void btn_ServicioFijo_Eliminar(object sender, EventArgs e)
         {
-            Frm_ABM_ServicioFIjo_Baja Baja = new Frm_ABM_ServicioFIjo_Baja();
-            Baja.cod_servicio = cod_servicio;
-            Baja.ShowDialog();
+            if (flag == false)
+            {
+                MessageBox.Show("No se ha seleccionado un servicio para eliminar");
+            }
+            else
+            {
+                Frm_ABM_ServicioFIjo_Baja Baja = new Frm_ABM_ServicioFIjo_Baja();
+                Baja.cod_servicio = cod_servicio;
+                Baja.ShowDialog();
 
-            /*ServicioFijo serviciofijo = new ServicioFijo() { cod_servicio = cod_servicio };
-            serviciofijo.borrarServicioFIjo();
-            MessageBox.Show("Cliente borrado");*/
+                /*ServicioFijo serviciofijo = new ServicioFijo() { cod_servicio = cod_servicio };
+                serviciofijo.borrarServicioFIjo();
+                MessageBox.Show("Cliente borrado");*/
+            }
         }
         private void btn_ServicioFijo_Crear_Click(object sender, EventArgs e)
         {
@@ -82,9 +93,16 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
         }
         private void btn_ServicioFijo_Modificar_Click(object sender, EventArgs e)
         {
-            Frm_ABM_ServicioFIjo_Modificacion frmserviciomodif = new Frm_ABM_ServicioFIjo_Modificacion();
-            frmserviciomodif.cod_servicio = cod_servicio;
-            frmserviciomodif.ShowDialog();
+            if (flag == false)
+            {
+                MessageBox.Show("No se ha seleccionado un servicio para modificar");
+            }
+            else
+            {
+                Frm_ABM_ServicioFIjo_Modificacion frmserviciomodif = new Frm_ABM_ServicioFIjo_Modificacion();
+                frmserviciomodif.cod_servicio = cod_servicio;
+                frmserviciomodif.ShowDialog();
+            }
         }
         private void Frm_ABM_ServicioFijo_Load_1(object sender, EventArgs e)
         {
@@ -92,6 +110,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             DataTable tabla = new DataTable();
             tabla = usuarioSF.ServicioFijoCompleto();
             CargarGrillaServicioFijo(tabla);
+            flag = false;
         }
     }
 }

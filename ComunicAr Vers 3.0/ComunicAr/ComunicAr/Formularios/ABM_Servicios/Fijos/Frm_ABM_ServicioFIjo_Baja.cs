@@ -13,8 +13,10 @@ using ComunicAr.Negocio;
 namespace ComunicAr.Formularios.ABM_Servicios.Fijos
 {
     public partial class Frm_ABM_ServicioFIjo_Baja : Form
-    {
+    { 
         public string cod_servicio { get; set; }
+    
+     
         public Frm_ABM_ServicioFIjo_Baja()
         {
             InitializeComponent();
@@ -40,7 +42,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
         {
             txt_ServicioFijo_Baja_descripcion.Text = tabla.Rows[0]["descripcion"].ToString();
             txt_ServicioFijo_Baja_CostoMensual.Text = tabla.Rows[0]["costo_mensual"].ToString();
-            txt_ServicioFijo_Baja_TipoServicio.Text = tabla.Rows[0]["tipo_servicio"].ToString();
+            txt_ServicioFijo_Baja_IdServicio.Text = tabla.Rows[0]["cod_servicio"].ToString();
+           
         }
 
         private void Frm_ABM_ServicioFIjo_Baja_Load(object sender, EventArgs e)
@@ -48,7 +51,5 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             ServicioFijo Fijos = new ServicioFijo();
             MostrarDatosServicioFijos(Fijos.ServicioFijoPorCodigo(cod_servicio));
         }
-
-        
     }
 }

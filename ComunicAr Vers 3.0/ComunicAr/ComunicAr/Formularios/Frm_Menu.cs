@@ -12,6 +12,7 @@ using ComunicAr.Formularios.Servicios;
 using ComunicAr.Formularios.ABM_Servicios.Datos;
 using ComunicAr.Formularios.ABM_Servicios.Fijos;
 using ComunicAr.Formularios.ABM_Llamadas;
+using ComunicAr.Formularios.ABM_Dispositivos;
 
 namespace ComunicAr.Formularios
 {
@@ -41,9 +42,16 @@ namespace ComunicAr.Formularios
                 cmb_Actual_Datos.SelectedIndex = -1;
             }
 
+            if (cmb_Actual_Datos.SelectedIndex == 3)
+            {
+                Frm_ABM_Dispositivos Frm_Dispositivo = new Frm_ABM_Dispositivos();
+                Frm_Dispositivo.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
+            }
+
             if (cmb_Actual_Datos.SelectedIndex == 4)
             {
-                Frm_ABM_Servicios Frm_Servicios = new Servicios.Frm_ABM_Servicios();
+                Frm_ABM_Servicios_Contratados Frm_Servicios = new Servicios.Frm_ABM_Servicios_Contratados();
                 Frm_Servicios.ShowDialog();
                 cmb_Actual_Datos.SelectedIndex = -1;
             }

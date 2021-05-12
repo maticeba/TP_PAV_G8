@@ -32,7 +32,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
 
                 serviciofijo.descripcion = txt_ServicioFijo_Modificacion_descripcion.Text;
                 serviciofijo.costo_mensual = txt_ServicioFijo_Modificacion_CostoMensual.Text;
-                serviciofijo.tipo_servicio = txt_ServicioFijo_Modificacion_TipoServicio.Text;
                 serviciofijo.cod_servicio = cod_servicio;
 
                 serviciofijo.ModificarServicioFijo();
@@ -46,7 +45,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
         {
             txt_ServicioFijo_Modificacion_descripcion.Text = tabla.Rows[0]["descripcion"].ToString();
             txt_ServicioFijo_Modificacion_CostoMensual.Text = tabla.Rows[0]["costo_mensual"].ToString();
-            txt_ServicioFijo_Modificacion_TipoServicio.Text = tabla.Rows[0]["tipo_servicio"].ToString();
+            txt_ServicioFijo_Modificacion_TipoServicio.Text = tabla.Rows[0]["cod_servicio"].ToString();
         }
         private void Frm_ABM_ServicioFIjo_Modificacion_Load(object sender, EventArgs e)
         {

@@ -1,7 +1,7 @@
 ﻿
 namespace ComunicAr.Formularios.ABM_Servicios.Contratados
 {
-    partial class Frm_Alta_Servicios
+    partial class Frm_Alta_Servicios_Contratados
     {
         /// <summary>
         /// Required designer variable.

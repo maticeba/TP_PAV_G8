@@ -29,17 +29,18 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             {
                 ServicioFijo serviciofijo = new ServicioFijo();
 
-                serviciofijo.cod_servicio = txt_ServicioFijo_Alta_CodigoServicio.Text;
+
                 serviciofijo.descripcion = txt_ServicioFijo_Alta_Descripcion.Text;
                 serviciofijo.costo_mensual = txt_ServicioFijo_Alta_CostoMensual.Text;
-                serviciofijo.tipo_servicio = txt_ServicioFijo_Alta_TipoServicio.Text;
+                serviciofijo.tipo_servicio = "B";
 
-                serviciofijo.insertarServicioFijo(this.Controls);
+                serviciofijo.insertarServicioFijo();
             }
             else
             {
                 return;
             }
+            this.Close();
         }
     }
 }

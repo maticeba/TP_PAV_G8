@@ -37,16 +37,16 @@ namespace ComunicAr.Negocio
         }
         public void borrarServicioFIjo()
         {
-            string sqlBorrarSF = " DELETE FROM servicio_fijo WHERE cod_servicio = " + cod_servicio;
+            string sqlBorrarSF = " DELETE FROM servicio_fijo WHERE cod_servicio = " + cod_servicio ;
             BD.Borrar(sqlBorrarSF);
         }
-        public void insertarServicioFijo(Control.ControlCollection controles)
+        public void insertarServicioFijo()
         {
-            string sqlIN = @"INSERT INTO servicio_fijo (cod_servicio, descripcion, costo_mensual, tipo_servicio)"
-                            + " VALUES (" + cod_servicio + ", '"
+            string sqlIN = @"INSERT INTO servicio_fijo (descripcion, costo_mensual, tipo_servicio)"
+                            + " VALUES ('"
                             + descripcion + "', "
-                            + "REPLACE('" + costo_mensual + "', ',', '.'), "
-                            + tipo_servicio + " )";
+                            + "REPLACE('" + costo_mensual + "', ',', '.'), '"
+                            + tipo_servicio + "')";
 
             BD.Insertar(sqlIN);
             MessageBox.Show("Servicio Fijo agregado exitosamente");
@@ -56,7 +56,6 @@ namespace ComunicAr.Negocio
             string sqlMod = @"UPDATE servicio_fijo SET "
                             + " descripcion = '" + descripcion + "'"
                             + ", costo_mensual = REPLACE('" + costo_mensual + "', ',', '.')"
-                            + ", tipo_servicio = " + tipo_servicio
                             + " WHERE cod_servicio = " + cod_servicio;
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion completada");

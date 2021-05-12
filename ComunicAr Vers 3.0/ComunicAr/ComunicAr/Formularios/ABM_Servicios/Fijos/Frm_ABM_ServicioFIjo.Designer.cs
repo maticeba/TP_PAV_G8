@@ -36,10 +36,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             this.lbl_ServicioFijo_descripcion = new System.Windows.Forms.Label();
             this.lbl_ServicioFijo_cod_servicio = new System.Windows.Forms.Label();
             this.dataGridView_ServicioFijo1 = new System.Windows.Forms.DataGridView();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ServicioFijo_Crear = new System.Windows.Forms.Button();
             this.btn_ServicioFijo_Modificar = new System.Windows.Forms.Button();
             this.btn_ServcioFijo_Eliminar = new System.Windows.Forms.Button();
@@ -58,14 +58,14 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             this.groupBox_ServicioFijo1.Controls.Add(this.lbl_ServicioFijo_cod_servicio);
             this.groupBox_ServicioFijo1.Location = new System.Drawing.Point(12, 12);
             this.groupBox_ServicioFijo1.Name = "groupBox_ServicioFijo1";
-            this.groupBox_ServicioFijo1.Size = new System.Drawing.Size(669, 113);
+            this.groupBox_ServicioFijo1.Size = new System.Drawing.Size(530, 113);
             this.groupBox_ServicioFijo1.TabIndex = 2;
             this.groupBox_ServicioFijo1.TabStop = false;
             this.groupBox_ServicioFijo1.Text = "Filtro";
             // 
             // btn_ServicioFijo_Consultar
             // 
-            this.btn_ServicioFijo_Consultar.Location = new System.Drawing.Point(392, 72);
+            this.btn_ServicioFijo_Consultar.Location = new System.Drawing.Point(386, 62);
             this.btn_ServicioFijo_Consultar.Name = "btn_ServicioFijo_Consultar";
             this.btn_ServicioFijo_Consultar.Size = new System.Drawing.Size(138, 35);
             this.btn_ServicioFijo_Consultar.TabIndex = 4;
@@ -111,16 +111,25 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             this.dataGridView_ServicioFijo1.AllowUserToDeleteRows = false;
             this.dataGridView_ServicioFijo1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_ServicioFijo1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column4,
             this.Column1,
             this.Column2,
-            this.Column3,
-            this.Column4});
+            this.Column3});
             this.dataGridView_ServicioFijo1.Location = new System.Drawing.Point(24, 186);
             this.dataGridView_ServicioFijo1.Name = "dataGridView_ServicioFijo1";
             this.dataGridView_ServicioFijo1.ReadOnly = true;
-            this.dataGridView_ServicioFijo1.Size = new System.Drawing.Size(642, 247);
+            this.dataGridView_ServicioFijo1.Size = new System.Drawing.Size(518, 247);
             this.dataGridView_ServicioFijo1.TabIndex = 1;
             this.dataGridView_ServicioFijo1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ServicioFijo1_CellContentClick);
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 300F;
+            this.Column4.HeaderText = "tipo_servicio";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Visible = false;
+            this.Column4.Width = 110;
             // 
             // Column1
             // 
@@ -144,14 +153,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 300F;
-            this.Column4.HeaderText = "tipo_servicio";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 150;
             // 
             // btn_ServicioFijo_Crear
             // 
@@ -196,7 +197,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(591, 453);
+            this.button5.Location = new System.Drawing.Point(467, 453);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 7;
@@ -208,7 +209,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 488);
+            this.ClientSize = new System.Drawing.Size(567, 488);
+            this.ControlBox = false;
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btn_ServicioFijo_Refrescar1);
             this.Controls.Add(this.btn_ServcioFijo_Eliminar);
@@ -217,6 +219,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             this.Controls.Add(this.dataGridView_ServicioFijo1);
             this.Controls.Add(this.groupBox_ServicioFijo1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_ABM_ServicioFijo";
             this.Text = "ABM Servicio Fijo";
@@ -242,9 +245,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
         private System.Windows.Forms.Button btn_ServcioFijo_Eliminar;
         private System.Windows.Forms.Button btn_ServicioFijo_Refrescar1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

@@ -53,7 +53,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_crear_cliente
             // 
-            this.btn_crear_cliente.Location = new System.Drawing.Point(12, 131);
+            this.btn_crear_cliente.Location = new System.Drawing.Point(12, 140);
             this.btn_crear_cliente.Name = "btn_crear_cliente";
             this.btn_crear_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_crear_cliente.TabIndex = 0;
@@ -63,7 +63,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_modificar_cliente
             // 
-            this.btn_modificar_cliente.Location = new System.Drawing.Point(136, 131);
+            this.btn_modificar_cliente.Location = new System.Drawing.Point(140, 140);
             this.btn_modificar_cliente.Name = "btn_modificar_cliente";
             this.btn_modificar_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_modificar_cliente.TabIndex = 0;
@@ -73,7 +73,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btn_eliminar_cliente
             // 
-            this.btn_eliminar_cliente.Location = new System.Drawing.Point(265, 131);
+            this.btn_eliminar_cliente.Location = new System.Drawing.Point(268, 140);
             this.btn_eliminar_cliente.Name = "btn_eliminar_cliente";
             this.btn_eliminar_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_eliminar_cliente.TabIndex = 0;
@@ -178,7 +178,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(385, 69);
+            this.btnConsulta.Location = new System.Drawing.Point(388, 69);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(75, 23);
             this.btnConsulta.TabIndex = 3;
@@ -211,7 +211,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 77);
+            this.label2.Location = new System.Drawing.Point(45, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 15);
             this.label2.TabIndex = 1;
@@ -220,7 +220,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Location = new System.Drawing.Point(60, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 15);
             this.label1.TabIndex = 0;
@@ -230,7 +230,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 488);
+            this.ClientSize = new System.Drawing.Size(695, 488);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_refresh_client);

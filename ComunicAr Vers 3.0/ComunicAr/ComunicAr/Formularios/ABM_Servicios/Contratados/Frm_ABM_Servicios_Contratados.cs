@@ -12,12 +12,12 @@ using ComunicAr.Formularios.ABM_Servicios.Contratados;
 
 namespace ComunicAr.Formularios.Servicios
 {
-    public partial class Frm_ABM_Servicios : Form
+    public partial class Frm_ABM_Servicios_Contratados : Form
     {
 
         public string cod_servicio { get; set; }
         public bool flag { get; set; }
-        public Frm_ABM_Servicios()
+        public Frm_ABM_Servicios_Contratados()
         {
             InitializeComponent();
         }
@@ -64,7 +64,7 @@ namespace ComunicAr.Formularios.Servicios
             }
             else
             {
-                Frm_Modificacion_Servicios Frm_Mod = new Frm_Modificacion_Servicios();
+                Frm_Modificacion_Servicios_Contratados Frm_Mod = new Frm_Modificacion_Servicios_Contratados();
                 Frm_Mod.cod_servicio = cod_servicio;
                 Frm_Mod.ShowDialog();
             }
@@ -78,7 +78,7 @@ namespace ComunicAr.Formularios.Servicios
 
         private void bttn_alta_servicio_Click(object sender, EventArgs e)
         {
-            Frm_Alta_Servicios Altas = new Frm_Alta_Servicios();
+            Frm_Alta_Servicios_Contratados Altas = new Frm_Alta_Servicios_Contratados();
             Altas.ShowDialog();
 
             flag = false;
@@ -93,7 +93,7 @@ namespace ComunicAr.Formularios.Servicios
             else
             {
 
-                Frm_baja_servicio Bajas = new Frm_baja_servicio();
+                Frm_Baja_Servicios_Contratados Bajas = new Frm_Baja_Servicios_Contratados();
                 Bajas.cod_servicio = cod_servicio;
                 Bajas.ShowDialog();
 

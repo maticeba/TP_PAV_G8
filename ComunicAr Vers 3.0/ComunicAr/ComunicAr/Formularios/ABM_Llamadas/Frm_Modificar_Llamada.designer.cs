@@ -73,7 +73,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(86, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(239, 32);
             this.label1.TabIndex = 0;
@@ -511,7 +511,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 425);
+            this.ClientSize = new System.Drawing.Size(417, 421);
             this.ControlBox = false;
             this.Controls.Add(this.cmb_llamada_mod_fin_hs);
             this.Controls.Add(this.cmb_llamada_mod_fin_segs);

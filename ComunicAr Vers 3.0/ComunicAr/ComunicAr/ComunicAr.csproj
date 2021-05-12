@@ -82,6 +82,30 @@
     <Compile Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.Designer.cs">
       <DependentUpon>Frm_Modificacion_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Alta_Dispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Alta_Dispositivo.designer.cs">
+      <DependentUpon>Frm_ABM_Alta_Dispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Baja_Dispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Baja_Dispositivo.designer.cs">
+      <DependentUpon>Frm_ABM_Baja_Dispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Dispositivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Dispositivos.designer.cs">
+      <DependentUpon>Frm_ABM_Dispositivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Modificar_Dispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dispositivos\Frm_ABM_Modificar_Dispositivo.designer.cs">
+      <DependentUpon>Frm_ABM_Modificar_Dispositivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM_Llamadas\Frm_ABM_Llamadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,23 +130,23 @@
     <Compile Include="Formularios\ABM_Llamadas\Frm_Modificar_Llamada.designer.cs">
       <DependentUpon>Frm_Modificar_Llamada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Alta_Servicios.cs">
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Alta_Servicios_Contratados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Alta_Servicios.Designer.cs">
-      <DependentUpon>Frm_Alta_Servicios.cs</DependentUpon>
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Alta_Servicios_Contratados.Designer.cs">
+      <DependentUpon>Frm_Alta_Servicios_Contratados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_baja_servicio.cs">
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Baja_Servicios_Contratados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_baja_servicio.Designer.cs">
-      <DependentUpon>Frm_baja_servicio.cs</DependentUpon>
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Baja_Servicios_Contratados.Designer.cs">
+      <DependentUpon>Frm_Baja_Servicios_Contratados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.cs">
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios_Contratados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.Designer.cs">
-      <DependentUpon>Frm_Modificacion_Servicios.cs</DependentUpon>
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios_Contratados.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Servicios_Contratados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos.cs">
       <SubType>Form</SubType>
@@ -184,13 +208,14 @@
     <Compile Include="Formularios\Frm_Menu.Designer.cs">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.cs">
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios_Contratados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.Designer.cs">
-      <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
+    <Compile Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios_Contratados.Designer.cs">
+      <DependentUpon>Frm_ABM_Servicios_Contratados.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Clientes.cs" />
+    <Compile Include="Negocio\Dispositivos.cs" />
     <Compile Include="Negocio\Llamadas.cs" />
     <Compile Include="Negocio\ServicioFijo.cs" />
     <Compile Include="Negocio\Servicios_Contratados.cs" />
@@ -206,6 +231,18 @@
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_Modificacion_Cliente.resx">
       <DependentUpon>Frm_Modificacion_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Dispositivos\Frm_ABM_Alta_Dispositivo.resx">
+      <DependentUpon>Frm_ABM_Alta_Dispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Dispositivos\Frm_ABM_Baja_Dispositivo.resx">
+      <DependentUpon>Frm_ABM_Baja_Dispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Dispositivos\Frm_ABM_Dispositivos.resx">
+      <DependentUpon>Frm_ABM_Dispositivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Dispositivos\Frm_ABM_Modificar_Dispositivo.resx">
+      <DependentUpon>Frm_ABM_Modificar_Dispositivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Llamadas\Frm_ABM_Llamadas.resx">
       <DependentUpon>Frm_ABM_Llamadas.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,20 +255,20 @@
     <EmbeddedResource Include="Formularios\ABM_Llamadas\Frm_Modificar_Llamada.resx">
       <DependentUpon>Frm_Modificar_Llamada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios.resx">
-      <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_ABM_Servicios_Contratados.resx">
+      <DependentUpon>Frm_ABM_Servicios_Contratados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Clientes\Frm_ABM_Cliente.resx">
       <DependentUpon>Frm_ABM_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_Alta_Servicios.resx">
-      <DependentUpon>Frm_Alta_Servicios.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_Alta_Servicios_Contratados.resx">
+      <DependentUpon>Frm_Alta_Servicios_Contratados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_baja_servicio.resx">
-      <DependentUpon>Frm_baja_servicio.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_Baja_Servicios_Contratados.resx">
+      <DependentUpon>Frm_Baja_Servicios_Contratados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios.resx">
-      <DependentUpon>Frm_Modificacion_Servicios.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_Servicios\Contratados\Frm_Modificacion_Servicios_Contratados.resx">
+      <DependentUpon>Frm_Modificacion_Servicios_Contratados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Servicios\Datos\Frm_ABM_Datos.resx">
       <DependentUpon>Frm_ABM_Datos.cs</DependentUpon>

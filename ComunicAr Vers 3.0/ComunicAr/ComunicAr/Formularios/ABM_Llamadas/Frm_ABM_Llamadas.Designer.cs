@@ -47,7 +47,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // btn_crear_ABM_llamadas
             // 
-            this.btn_crear_ABM_llamadas.Location = new System.Drawing.Point(29, 12);
+            this.btn_crear_ABM_llamadas.Location = new System.Drawing.Point(12, 11);
             this.btn_crear_ABM_llamadas.Name = "btn_crear_ABM_llamadas";
             this.btn_crear_ABM_llamadas.Size = new System.Drawing.Size(104, 34);
             this.btn_crear_ABM_llamadas.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // btn_modificar_ABM_llamadas
             // 
-            this.btn_modificar_ABM_llamadas.Location = new System.Drawing.Point(152, 12);
+            this.btn_modificar_ABM_llamadas.Location = new System.Drawing.Point(135, 11);
             this.btn_modificar_ABM_llamadas.Name = "btn_modificar_ABM_llamadas";
             this.btn_modificar_ABM_llamadas.Size = new System.Drawing.Size(104, 34);
             this.btn_modificar_ABM_llamadas.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // btn_eliminar_ABM_llamadas
             // 
-            this.btn_eliminar_ABM_llamadas.Location = new System.Drawing.Point(275, 12);
+            this.btn_eliminar_ABM_llamadas.Location = new System.Drawing.Point(258, 11);
             this.btn_eliminar_ABM_llamadas.Name = "btn_eliminar_ABM_llamadas";
             this.btn_eliminar_ABM_llamadas.Size = new System.Drawing.Size(104, 34);
             this.btn_eliminar_ABM_llamadas.TabIndex = 0;
@@ -77,7 +77,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // btn_salir_ABM_llamadas
             // 
-            this.btn_salir_ABM_llamadas.Location = new System.Drawing.Point(686, 327);
+            this.btn_salir_ABM_llamadas.Location = new System.Drawing.Point(669, 326);
             this.btn_salir_ABM_llamadas.Name = "btn_salir_ABM_llamadas";
             this.btn_salir_ABM_llamadas.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_ABM_llamadas.TabIndex = 0;
@@ -87,7 +87,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // btn_refresh_ABM_llamadas
             // 
-            this.btn_refresh_ABM_llamadas.Location = new System.Drawing.Point(29, 327);
+            this.btn_refresh_ABM_llamadas.Location = new System.Drawing.Point(12, 326);
             this.btn_refresh_ABM_llamadas.Name = "btn_refresh_ABM_llamadas";
             this.btn_refresh_ABM_llamadas.Size = new System.Drawing.Size(104, 34);
             this.btn_refresh_ABM_llamadas.TabIndex = 0;
@@ -108,7 +108,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             this.Column5,
             this.Column6,
             this.identificador});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 68);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(761, 240);
@@ -167,7 +167,8 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 373);
+            this.ClientSize = new System.Drawing.Size(788, 373);
+            this.ControlBox = false;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_refresh_ABM_llamadas);
             this.Controls.Add(this.btn_salir_ABM_llamadas);
@@ -175,6 +176,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             this.Controls.Add(this.btn_modificar_ABM_llamadas);
             this.Controls.Add(this.btn_crear_ABM_llamadas);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_ABM_Llamadas";
             this.Text = "ABM Llamadas";
             this.Load += new System.EventHandler(this.Frm_ABM_Llamadas_Load);
