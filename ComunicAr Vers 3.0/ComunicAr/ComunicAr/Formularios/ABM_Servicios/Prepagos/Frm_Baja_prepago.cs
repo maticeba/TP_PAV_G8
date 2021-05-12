@@ -59,5 +59,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
                 MessageBox.Show("Se borró correctamente el servicio");
             }
         }
+
+        private void bttn_cancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

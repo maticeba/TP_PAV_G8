@@ -48,5 +48,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
         {
             
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

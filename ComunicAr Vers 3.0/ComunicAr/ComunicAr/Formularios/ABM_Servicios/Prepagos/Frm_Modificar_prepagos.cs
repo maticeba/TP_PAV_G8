@@ -66,5 +66,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
                 return;
             }
         }
+
+        private void bttn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

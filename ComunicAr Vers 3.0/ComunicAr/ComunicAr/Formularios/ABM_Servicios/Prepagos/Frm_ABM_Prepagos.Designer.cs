@@ -101,6 +101,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.btn_salir.TabIndex = 11;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click_1);
             // 
             // GridPrepago
             // 

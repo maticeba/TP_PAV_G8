@@ -258,6 +258,7 @@ namespace ComunicAr.Formularios.ABM_Dispositivos
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Frm_ABM_Dispositivos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ABM_Dispositivos";
             this.Load += new System.EventHandler(this.Frm_ABM_Dispositivos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_Dispo)).EndInit();

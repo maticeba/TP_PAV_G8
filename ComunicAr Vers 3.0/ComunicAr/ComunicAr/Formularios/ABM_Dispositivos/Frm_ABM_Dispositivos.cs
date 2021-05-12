@@ -51,7 +51,7 @@ namespace ComunicAr.Formularios.ABM_Dispositivos
                 grid_Dispo.Rows[i].Cells[3].Value = tabla.Rows[i]["modelo"].ToString();
                 grid_Dispo.Rows[i].Cells[4].Value = tabla.Rows[i]["caracteristicas"].ToString();
                 grid_Dispo.Rows[i].Cells[5].Value = tabla.Rows[i]["precio"].ToString();
-                grid_Dispo.Rows[i].Cells[6].Value = tabla.Rows[i]["nombre_tipo"].ToString();
+                grid_Dispo.Rows[i].Cells[6].Value = tabla.Rows[i]["id_tipo_dispositivo"].ToString();
             }
         }
 

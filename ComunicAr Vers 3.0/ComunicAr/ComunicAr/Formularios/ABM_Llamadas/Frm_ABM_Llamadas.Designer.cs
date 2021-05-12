@@ -178,6 +178,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_ABM_Llamadas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM Llamadas";
             this.Load += new System.EventHandler(this.Frm_ABM_Llamadas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

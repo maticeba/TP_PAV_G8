@@ -233,6 +233,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.Controls.Add(this.txt_limite_B);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Baja_Datos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Frm_Baja_Datos";
             this.Load += new System.EventHandler(this.Frm_Baja_Datos_Load);
             this.ResumeLayout(false);

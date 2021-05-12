@@ -181,6 +181,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_ABM_Datos_Modificar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ABM_Datos_Modificar";
             this.Load += new System.EventHandler(this.Frm_ABM_Datos_Modificar_Load);
             this.ResumeLayout(false);

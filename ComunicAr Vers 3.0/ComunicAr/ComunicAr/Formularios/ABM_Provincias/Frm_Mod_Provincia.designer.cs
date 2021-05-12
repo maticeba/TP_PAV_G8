@@ -64,7 +64,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // txt_nom_prov
             // 
             this.txt_nom_prov.Location = new System.Drawing.Point(117, 73);
-            this.txt_nom_prov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nom_prov.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nom_prov.Name = "txt_nom_prov";
             this.txt_nom_prov.Pp_Campo = null;
             this.txt_nom_prov.Pp_MensajeError = null;
@@ -76,7 +76,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // btn_aceptar
             // 
             this.btn_aceptar.Location = new System.Drawing.Point(13, 109);
-            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(73, 25);
             this.btn_aceptar.TabIndex = 7;
@@ -87,7 +87,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // btn_cancelar
             // 
             this.btn_cancelar.Location = new System.Drawing.Point(171, 109);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(73, 25);
             this.btn_cancelar.TabIndex = 7;
@@ -111,7 +111,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.cmb_cod_prov.Enabled = false;
             this.cmb_cod_prov.FormattingEnabled = true;
             this.cmb_cod_prov.Location = new System.Drawing.Point(117, 46);
-            this.cmb_cod_prov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_cod_prov.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_cod_prov.Name = "cmb_cod_prov";
             this.cmb_cod_prov.Pp_Conseleccion = false;
             this.cmb_cod_prov.Pp_Descripcion = "cod_prov";
@@ -137,8 +137,9 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Mod_Provincia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Mod_Provincia";
             this.Load += new System.EventHandler(this.Frm_Mod_Provincia_Load);
             this.ResumeLayout(false);
