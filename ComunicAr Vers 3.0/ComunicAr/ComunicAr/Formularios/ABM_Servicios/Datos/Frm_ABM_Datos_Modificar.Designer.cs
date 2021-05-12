@@ -54,7 +54,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 125);
+            this.label4.Location = new System.Drawing.Point(56, 119);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 38;
@@ -63,7 +63,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 99);
+            this.label3.Location = new System.Drawing.Point(46, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 37;
@@ -72,7 +72,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 73);
+            this.label2.Location = new System.Drawing.Point(31, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 36;
@@ -80,7 +80,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(211, 168);
+            this.btn_Cancelar.Location = new System.Drawing.Point(156, 142);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_Cancelar.TabIndex = 35;
@@ -90,7 +90,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(115, 168);
+            this.btn_Aceptar.Location = new System.Drawing.Point(60, 142);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_Aceptar.TabIndex = 34;
@@ -100,7 +100,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // txt_descripcion_M
             // 
-            this.txt_descripcion_M.Location = new System.Drawing.Point(133, 96);
+            this.txt_descripcion_M.Location = new System.Drawing.Point(115, 90);
             this.txt_descripcion_M.Name = "txt_descripcion_M";
             this.txt_descripcion_M.Pp_Campo = "descripcion";
             this.txt_descripcion_M.Pp_MensajeError = "Falta cargar la descripcion";
@@ -111,7 +111,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // txt_costoFijo_M
             // 
-            this.txt_costoFijo_M.Location = new System.Drawing.Point(133, 122);
+            this.txt_costoFijo_M.Location = new System.Drawing.Point(115, 116);
             this.txt_costoFijo_M.Name = "txt_costoFijo_M";
             this.txt_costoFijo_M.Pp_Campo = "costo_fijo";
             this.txt_costoFijo_M.Pp_MensajeError = "Falta cargar el costo fijo";
@@ -122,7 +122,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // txt_limite_M
             // 
-            this.txt_limite_M.Location = new System.Drawing.Point(133, 70);
+            this.txt_limite_M.Location = new System.Drawing.Point(115, 64);
             this.txt_limite_M.Name = "txt_limite_M";
             this.txt_limite_M.Pp_Campo = "limite_datos";
             this.txt_limite_M.Pp_MensajeError = "Falta cargar el limite de datos";
@@ -135,7 +135,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(14, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(274, 24);
             this.label1.TabIndex = 29;
@@ -144,7 +144,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(87, 47);
+            this.label8.Location = new System.Drawing.Point(69, 41);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 44;
@@ -153,7 +153,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // txt_Cod
             // 
             this.txt_Cod.Enabled = false;
-            this.txt_Cod.Location = new System.Drawing.Point(133, 44);
+            this.txt_Cod.Location = new System.Drawing.Point(115, 38);
             this.txt_Cod.Name = "txt_Cod";
             this.txt_Cod.Pp_Campo = "limite_datos";
             this.txt_Cod.Pp_MensajeError = "Falta cargar el limite de datos";
@@ -166,7 +166,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 202);
+            this.ClientSize = new System.Drawing.Size(293, 177);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_Cod);
             this.Controls.Add(this.label6);

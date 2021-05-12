@@ -34,15 +34,15 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.filtro_Cod = new ComunicAr.Clases.TextBox01();
             this.Codigo = new System.Windows.Forms.Label();
             this.grid_Datos = new System.Windows.Forms.DataGridView();
+            this.cod_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.limite_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costo_fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_refrescar_dato = new System.Windows.Forms.Button();
             this.btn_salir_cliente = new System.Windows.Forms.Button();
             this.btn_crear_Datos = new System.Windows.Forms.Button();
             this.btn_eliminar_cliente = new System.Windows.Forms.Button();
             this.btn_modificar_Datos = new System.Windows.Forms.Button();
-            this.cod_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.limite_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costo_fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Datos)).BeginInit();
             this.SuspendLayout();
@@ -52,10 +52,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.groupBox1.Controls.Add(this.btm_Consulta);
             this.groupBox1.Controls.Add(this.filtro_Cod);
             this.groupBox1.Controls.Add(this.Codigo);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(671, 113);
+            this.groupBox1.Size = new System.Drawing.Size(458, 82);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtro";
@@ -63,9 +63,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // btm_Consulta
             // 
             this.btm_Consulta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btm_Consulta.Location = new System.Drawing.Point(273, 42);
+            this.btm_Consulta.Location = new System.Drawing.Point(370, 33);
             this.btm_Consulta.Name = "btm_Consulta";
-            this.btm_Consulta.Size = new System.Drawing.Size(87, 27);
+            this.btm_Consulta.Size = new System.Drawing.Size(75, 23);
             this.btm_Consulta.TabIndex = 4;
             this.btm_Consulta.Text = "Consulta";
             this.btm_Consulta.UseVisualStyleBackColor = true;
@@ -73,20 +73,20 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // filtro_Cod
             // 
-            this.filtro_Cod.Location = new System.Drawing.Point(69, 38);
+            this.filtro_Cod.Location = new System.Drawing.Point(173, 33);
             this.filtro_Cod.Name = "filtro_Cod";
             this.filtro_Cod.Pp_Campo = null;
             this.filtro_Cod.Pp_MensajeError = null;
             this.filtro_Cod.Pp_Tabla = null;
             this.filtro_Cod.Pp_Validable = false;
-            this.filtro_Cod.Size = new System.Drawing.Size(163, 22);
+            this.filtro_Cod.Size = new System.Drawing.Size(163, 23);
             this.filtro_Cod.TabIndex = 3;
             // 
             // Codigo
             // 
             this.Codigo.AutoSize = true;
             this.Codigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Codigo.Location = new System.Drawing.Point(17, 42);
+            this.Codigo.Location = new System.Drawing.Point(121, 36);
             this.Codigo.Name = "Codigo";
             this.Codigo.Size = new System.Drawing.Size(46, 15);
             this.Codigo.TabIndex = 0;
@@ -102,62 +102,12 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.limite_datos,
             this.descripcion,
             this.costo_fijo});
-            this.grid_Datos.Location = new System.Drawing.Point(12, 181);
+            this.grid_Datos.Location = new System.Drawing.Point(12, 165);
             this.grid_Datos.Name = "grid_Datos";
             this.grid_Datos.ReadOnly = true;
-            this.grid_Datos.Size = new System.Drawing.Size(445, 252);
+            this.grid_Datos.Size = new System.Drawing.Size(458, 252);
             this.grid_Datos.TabIndex = 1;
             this.grid_Datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Datos_CellContentClick);
-            // 
-            // btn_refrescar_dato
-            // 
-            this.btn_refrescar_dato.Location = new System.Drawing.Point(12, 450);
-            this.btn_refrescar_dato.Name = "btn_refrescar_dato";
-            this.btn_refrescar_dato.Size = new System.Drawing.Size(104, 34);
-            this.btn_refrescar_dato.TabIndex = 5;
-            this.btn_refrescar_dato.Text = "Refrescar";
-            this.btn_refrescar_dato.UseVisualStyleBackColor = true;
-            this.btn_refrescar_dato.Click += new System.EventHandler(this.btn_refrescar_dato_Click);
-            // 
-            // btn_salir_cliente
-            // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(353, 450);
-            this.btn_salir_cliente.Name = "btn_salir_cliente";
-            this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
-            this.btn_salir_cliente.TabIndex = 6;
-            this.btn_salir_cliente.Text = "Salir";
-            this.btn_salir_cliente.UseVisualStyleBackColor = true;
-            this.btn_salir_cliente.Click += new System.EventHandler(this.btn_salir_cliente_Click);
-            // 
-            // btn_crear_Datos
-            // 
-            this.btn_crear_Datos.Location = new System.Drawing.Point(12, 140);
-            this.btn_crear_Datos.Name = "btn_crear_Datos";
-            this.btn_crear_Datos.Size = new System.Drawing.Size(104, 34);
-            this.btn_crear_Datos.TabIndex = 7;
-            this.btn_crear_Datos.Text = "Crear";
-            this.btn_crear_Datos.UseVisualStyleBackColor = true;
-            this.btn_crear_Datos.Click += new System.EventHandler(this.btn_crear_Datos_Click);
-            // 
-            // btn_eliminar_cliente
-            // 
-            this.btn_eliminar_cliente.Location = new System.Drawing.Point(268, 140);
-            this.btn_eliminar_cliente.Name = "btn_eliminar_cliente";
-            this.btn_eliminar_cliente.Size = new System.Drawing.Size(104, 34);
-            this.btn_eliminar_cliente.TabIndex = 8;
-            this.btn_eliminar_cliente.Text = "Eliminar";
-            this.btn_eliminar_cliente.UseVisualStyleBackColor = true;
-            this.btn_eliminar_cliente.Click += new System.EventHandler(this.btn_eliminar_cliente_Click);
-            // 
-            // btn_modificar_Datos
-            // 
-            this.btn_modificar_Datos.Location = new System.Drawing.Point(140, 140);
-            this.btn_modificar_Datos.Name = "btn_modificar_Datos";
-            this.btn_modificar_Datos.Size = new System.Drawing.Size(104, 34);
-            this.btn_modificar_Datos.TabIndex = 9;
-            this.btn_modificar_Datos.Text = "Modificar";
-            this.btn_modificar_Datos.UseVisualStyleBackColor = true;
-            this.btn_modificar_Datos.Click += new System.EventHandler(this.btn_modificar_Datos_Click);
             // 
             // cod_datos
             // 
@@ -183,11 +133,61 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.costo_fijo.Name = "costo_fijo";
             this.costo_fijo.ReadOnly = true;
             // 
+            // btn_refrescar_dato
+            // 
+            this.btn_refrescar_dato.Location = new System.Drawing.Point(12, 442);
+            this.btn_refrescar_dato.Name = "btn_refrescar_dato";
+            this.btn_refrescar_dato.Size = new System.Drawing.Size(104, 34);
+            this.btn_refrescar_dato.TabIndex = 5;
+            this.btn_refrescar_dato.Text = "Refrescar";
+            this.btn_refrescar_dato.UseVisualStyleBackColor = true;
+            this.btn_refrescar_dato.Click += new System.EventHandler(this.btn_refrescar_dato_Click);
+            // 
+            // btn_salir_cliente
+            // 
+            this.btn_salir_cliente.Location = new System.Drawing.Point(366, 442);
+            this.btn_salir_cliente.Name = "btn_salir_cliente";
+            this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
+            this.btn_salir_cliente.TabIndex = 6;
+            this.btn_salir_cliente.Text = "Salir";
+            this.btn_salir_cliente.UseVisualStyleBackColor = true;
+            this.btn_salir_cliente.Click += new System.EventHandler(this.btn_salir_cliente_Click);
+            // 
+            // btn_crear_Datos
+            // 
+            this.btn_crear_Datos.Location = new System.Drawing.Point(12, 125);
+            this.btn_crear_Datos.Name = "btn_crear_Datos";
+            this.btn_crear_Datos.Size = new System.Drawing.Size(104, 34);
+            this.btn_crear_Datos.TabIndex = 7;
+            this.btn_crear_Datos.Text = "Crear";
+            this.btn_crear_Datos.UseVisualStyleBackColor = true;
+            this.btn_crear_Datos.Click += new System.EventHandler(this.btn_crear_Datos_Click);
+            // 
+            // btn_eliminar_cliente
+            // 
+            this.btn_eliminar_cliente.Location = new System.Drawing.Point(268, 125);
+            this.btn_eliminar_cliente.Name = "btn_eliminar_cliente";
+            this.btn_eliminar_cliente.Size = new System.Drawing.Size(104, 34);
+            this.btn_eliminar_cliente.TabIndex = 8;
+            this.btn_eliminar_cliente.Text = "Eliminar";
+            this.btn_eliminar_cliente.UseVisualStyleBackColor = true;
+            this.btn_eliminar_cliente.Click += new System.EventHandler(this.btn_eliminar_cliente_Click);
+            // 
+            // btn_modificar_Datos
+            // 
+            this.btn_modificar_Datos.Location = new System.Drawing.Point(140, 125);
+            this.btn_modificar_Datos.Name = "btn_modificar_Datos";
+            this.btn_modificar_Datos.Size = new System.Drawing.Size(104, 34);
+            this.btn_modificar_Datos.TabIndex = 9;
+            this.btn_modificar_Datos.Text = "Modificar";
+            this.btn_modificar_Datos.UseVisualStyleBackColor = true;
+            this.btn_modificar_Datos.Click += new System.EventHandler(this.btn_modificar_Datos_Click);
+            // 
             // Frm_ABM_Datos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 485);
+            this.ClientSize = new System.Drawing.Size(492, 488);
             this.ControlBox = false;
             this.Controls.Add(this.btn_modificar_Datos);
             this.Controls.Add(this.btn_eliminar_cliente);
