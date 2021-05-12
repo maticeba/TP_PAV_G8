@@ -15,6 +15,7 @@ using ComunicAr.Formularios.ABM_Llamadas;
 using ComunicAr.Formularios.ABM_Dispositivos;
 using ComunicAr.Formularios.ABM_Servicios.Prepagos;
 using ComunicAr.Formularios.Barrio;
+using ComunicAr.Formularios.ABM_Provincia;
 
 namespace ComunicAr.Formularios
 {
@@ -87,6 +88,12 @@ namespace ComunicAr.Formularios
                 Frm_Datos.ShowDialog();
                 cmb_Actual_Datos.SelectedIndex = -1;
 
+            }
+            if (cmb_Actual_Datos.SelectedIndex == 10)
+            {
+                Frm_ABM_Provincia Frm_Provincia = new Frm_ABM_Provincia();
+                Frm_Provincia.ShowDialog();
+                cmb_Actual_Datos.SelectedIndex = -1;
             }
 
         }

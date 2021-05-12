@@ -16,6 +16,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
     {
         public string nro_Provincia { get; set; }
         public string Pp_codigoProvincia { get; set; }
+        public bool flag { get; set; }
         public Frm_ABM_Provincia()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
         {
             Frm_Alta_Provincia MenuAltas = new Frm_Alta_Provincia();
             MenuAltas.ShowDialog();
+            flag = false;
         }
 
         private void Frm_ABM_Provincia_Load(object sender, EventArgs e)
@@ -48,37 +50,49 @@ namespace ComunicAr.Formularios.ABM_Provincia
         }
         private void btn_refrescar_Click(object sender, EventArgs e)
         {
+
             Provincia provincia = new Provincia();
             DataTable tabla = new DataTable();
             tabla = provincia.ProvinciasCompletas();
             dataGrid_Provincia.Rows.Clear();
-            for (int i = 0; i < tabla.Rows.Count; i++)
-            {
-                dataGrid_Provincia.Rows.Add();
-                dataGrid_Provincia.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_prov"].ToString();
-                dataGrid_Provincia.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_prov"].ToString();
-
-            }
+            CargarGrilla(tabla);
+            flag = false;
 
         }
 
         private void btn_modificar_provinciaClick(object sender, EventArgs e)
         {
-            Frm_Mod_Provincia Frm_Mod = new Frm_Mod_Provincia();
-            Frm_Mod.Pp_codigoProvincia = Pp_codigoProvincia;
-            Frm_Mod.ShowDialog();
+            if (flag == false)
+            {
+                MessageBox.Show("No se ha seleccionado ninguna provincia para modificar");
+            }
+            else
+            {
+                Frm_Mod_Provincia Frm_Mod = new Frm_Mod_Provincia();
+                Frm_Mod.Pp_codigoProvincia = Pp_codigoProvincia;
+                Frm_Mod.ShowDialog();
+            }
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
-            Frm_Baja_Prov Frm_Baja = new Frm_Baja_Prov();
-            Frm_Baja.Pp_codigoProvincia = Pp_codigoProvincia;
-            Frm_Baja.ShowDialog();
+            if (flag == false)
+            {
+                MessageBox.Show("No se ha seleccionado una Provincia para eliminar");
+            }
+            else
+            {
+                Frm_Baja_Prov Frm_Baja = new Frm_Baja_Prov();
+                Frm_Baja.Pp_codigoProvincia = Pp_codigoProvincia;
+                Frm_Baja.ShowDialog();
+                flag = false;
+            }
         }
 
         private void dataGrid_Provincia_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             Pp_codigoProvincia = dataGrid_Provincia.CurrentRow.Cells["Column1"].Value.ToString();
+            flag = true;
         }
 
         private void btn_filtrar_Click(object sender, EventArgs e)

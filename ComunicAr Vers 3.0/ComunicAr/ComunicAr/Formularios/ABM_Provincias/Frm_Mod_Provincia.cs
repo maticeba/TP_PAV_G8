@@ -52,24 +52,19 @@ namespace ComunicAr.Formularios.ABM_Provincia
             if (Tratamiento.Validar(Controls) == TratamientosEspeciales.Resultado.correcto)
             {
                 Provincia provincia = new Provincia();
-
                 provincia.Pp_nombreProvincia = txt_nom_prov.Text;
                 provincia.Pp_codigoProvincia = cmb_cod_prov.SelectedValue.ToString();
-
                 provincia.Modificar();
-
             }
             else
             {
                 return;
             }
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void cmb_cod_prov_SelectedIndexChanged(object sender, EventArgs e)
         {
 
