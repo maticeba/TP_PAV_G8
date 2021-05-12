@@ -33,11 +33,11 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_cod_ciud = new ComunicAr.Clases.TextBox01();
-            this.txt_nom_ciud = new ComunicAr.Clases.TextBox01();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.cmb_baja_ciud = new ComunicAr.Clases.ComboBox01();
+            this.txt_nom_ciud = new ComunicAr.Clases.TextBox01();
+            this.txt_cod_ciud = new ComunicAr.Clases.TextBox01();
             this.SuspendLayout();
             // 
             // label1
@@ -77,28 +77,6 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.label2.TabIndex = 6;
             this.label2.Text = "Codigo de Provincia";
             // 
-            // txt_cod_ciud
-            // 
-            this.txt_cod_ciud.Location = new System.Drawing.Point(178, 63);
-            this.txt_cod_ciud.Name = "txt_cod_ciud";
-            this.txt_cod_ciud.Pp_Campo = null;
-            this.txt_cod_ciud.Pp_MensajeError = null;
-            this.txt_cod_ciud.Pp_Tabla = null;
-            this.txt_cod_ciud.Pp_Validable = false;
-            this.txt_cod_ciud.Size = new System.Drawing.Size(140, 26);
-            this.txt_cod_ciud.TabIndex = 7;
-            // 
-            // txt_nom_ciud
-            // 
-            this.txt_nom_ciud.Location = new System.Drawing.Point(178, 96);
-            this.txt_nom_ciud.Name = "txt_nom_ciud";
-            this.txt_nom_ciud.Pp_Campo = null;
-            this.txt_nom_ciud.Pp_MensajeError = null;
-            this.txt_nom_ciud.Pp_Tabla = null;
-            this.txt_nom_ciud.Pp_Validable = false;
-            this.txt_nom_ciud.Size = new System.Drawing.Size(140, 26);
-            this.txt_nom_ciud.TabIndex = 8;
-            // 
             // btn_aceptar
             // 
             this.btn_aceptar.Location = new System.Drawing.Point(20, 175);
@@ -107,6 +85,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.btn_aceptar.TabIndex = 10;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // btn_cancelar
             // 
@@ -134,6 +113,30 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.cmb_baja_ciud.Pp_Validable = false;
             this.cmb_baja_ciud.Size = new System.Drawing.Size(140, 28);
             this.cmb_baja_ciud.TabIndex = 12;
+            // 
+            // txt_nom_ciud
+            // 
+            this.txt_nom_ciud.Enabled = false;
+            this.txt_nom_ciud.Location = new System.Drawing.Point(178, 96);
+            this.txt_nom_ciud.Name = "txt_nom_ciud";
+            this.txt_nom_ciud.Pp_Campo = null;
+            this.txt_nom_ciud.Pp_MensajeError = null;
+            this.txt_nom_ciud.Pp_Tabla = null;
+            this.txt_nom_ciud.Pp_Validable = false;
+            this.txt_nom_ciud.Size = new System.Drawing.Size(140, 26);
+            this.txt_nom_ciud.TabIndex = 8;
+            // 
+            // txt_cod_ciud
+            // 
+            this.txt_cod_ciud.Enabled = false;
+            this.txt_cod_ciud.Location = new System.Drawing.Point(178, 63);
+            this.txt_cod_ciud.Name = "txt_cod_ciud";
+            this.txt_cod_ciud.Pp_Campo = null;
+            this.txt_cod_ciud.Pp_MensajeError = null;
+            this.txt_cod_ciud.Pp_Tabla = null;
+            this.txt_cod_ciud.Pp_Validable = false;
+            this.txt_cod_ciud.Size = new System.Drawing.Size(140, 26);
+            this.txt_cod_ciud.TabIndex = 7;
             // 
             // Frm_Baja_Ciudad
             // 

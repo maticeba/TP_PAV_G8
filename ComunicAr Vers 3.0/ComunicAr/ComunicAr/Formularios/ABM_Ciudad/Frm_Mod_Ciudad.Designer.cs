@@ -52,6 +52,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             // txt_cod_ciud
             // 
+            this.txt_cod_ciud.Enabled = false;
             this.txt_cod_ciud.Location = new System.Drawing.Point(172, 64);
             this.txt_cod_ciud.Name = "txt_cod_ciud";
             this.txt_cod_ciud.Pp_Campo = null;

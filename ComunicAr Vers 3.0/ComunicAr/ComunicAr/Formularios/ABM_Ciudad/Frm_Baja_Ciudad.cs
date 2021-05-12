@@ -33,7 +33,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
         {
             txt_cod_ciud.Text = tabla.Rows[0]["cod_ciudad"].ToString();
             txt_nom_ciud.Text = tabla.Rows[0]["nombre_ciudad"].ToString();
-            cmb_baja_ciud.SelectedValue = int.Parse(tabla.Rows[0]["cod_prov"].ToString());
+            cmb_baja_ciud.SelectedText = tabla.Rows[0]["cod_prov"].ToString();
 
         }
 
@@ -41,5 +41,20 @@ namespace ComunicAr.Formularios.ABM_Ciudad
         {
             this.Close();
         }
+
+        private void btn_aceptar_Click(object sender, EventArgs e)
+        {
+            Ciudad ciudad = new Ciudad() { Pp_codCiudad = Pp_codigoCiudad };
+            if (MessageBox.Show("¿Esta seguro de eliminar?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                ciudad.Pp_codProvincia = txt_cod_ciud.Text;
+                ciudad.Pp_nombreCiudad = txt_nom_ciud.Text;
+
+                ciudad.Borrar();
+                MessageBox.Show("Ciudad borrada con exito");
+
+            }
+        }
+    
     }
 }

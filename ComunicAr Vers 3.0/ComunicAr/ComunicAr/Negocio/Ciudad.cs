@@ -44,8 +44,8 @@ namespace ComunicAr.Negocio
         public DataTable Ciudad_por_nombre(string nombre)
         {
             string sql = @"SELECT c.* FROM ciudades c "
-                        + "WHERE c.nombre_ciudad '" + nombre + "'";
-                        //+ "WHERE c.nombre_ciudad like '%" + nombre.Trim() + "%'";
+                        //+ "WHERE c.nombre_ciudad '" + nombre + "'";
+                        + "WHERE c.nombre_ciudad like '%" + nombre.Trim() + "%'";
             return BD.EjecutarSelect(sql);
         }
         public DataTable Ciudad_por_cod_prov(string codigo)
@@ -57,9 +57,9 @@ namespace ComunicAr.Negocio
         public void Modificar()
         {
             string sqlMod = @"UPDATE ciudades SET "
-                            + " cod_ciudad = '" + Pp_codCiudad + "'"
-                            + " nombre_ciudad = '" + Pp_nombreCiudad + "'"
-                            + " WHERE cod_prov = " + Pp_codProvincia;
+                            + " cod_prov = " + Pp_codProvincia 
+                            + ", nombre_ciudad = '" + Pp_nombreCiudad + "'"
+                            + " WHERE cod_ciudad = " + Pp_codCiudad;
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion realizada con exito");
         }

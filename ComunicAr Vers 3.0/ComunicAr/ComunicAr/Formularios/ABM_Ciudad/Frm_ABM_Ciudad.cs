@@ -23,7 +23,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            nro_Ciudad = dataGrid_Ciudad.CurrentRow.Cells["Column1"].Value.ToString();
+            Pp_codigoCiudad = dataGrid_Ciudad.CurrentRow.Cells["Column1"].Value.ToString();
             flag = true;
         }
 

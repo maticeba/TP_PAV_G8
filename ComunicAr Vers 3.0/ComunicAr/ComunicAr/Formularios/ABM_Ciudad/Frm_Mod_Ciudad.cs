@@ -13,7 +13,6 @@ namespace ComunicAr.Formularios.ABM_Ciudad
 {
     public partial class Frm_Mod_Ciudad : Form
     {
-        public string nro_Ciudad { get; set; }
         
         public string Pp_codigoCiudad { get; set; }
         public Frm_Mod_Ciudad()
@@ -29,7 +28,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
         private void Frm_Mod_Ciudad_Load(object sender, EventArgs e)
         {
             Ciudad ciudad = new Ciudad();
-            MostrarDatos(ciudad.Ciudad_por_nombre(Pp_codigoCiudad));
+            MostrarDatos(ciudad.Ciudad_por_codigo(Pp_codigoCiudad));
         }
         private void MostrarDatos(DataTable tabla)
         {
@@ -41,11 +40,13 @@ namespace ComunicAr.Formularios.ABM_Ciudad
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            Ciudad ciudad = new Ciudad() { Pp_codCiudad = nro_Ciudad };
-            if (MessageBox.Show("¿Esta seguro de Borrar?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            Ciudad ciudad = new Ciudad() { Pp_codCiudad = Pp_codigoCiudad };
+            if (MessageBox.Show("¿Esta seguro de modificar?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                ciudad.Borrar();
-                MessageBox.Show("Se borró correctamente la Ciudad");
+                ciudad.Pp_codProvincia = txt_cod_prov.Text;
+                ciudad.Pp_nombreCiudad = txt_nom_ciud.Text;
+                ciudad.Modificar();
+
             }
         }
     }
