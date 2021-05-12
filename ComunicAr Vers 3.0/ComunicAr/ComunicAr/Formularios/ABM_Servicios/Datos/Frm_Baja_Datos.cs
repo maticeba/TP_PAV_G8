@@ -54,7 +54,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             txt_limite_B.Text = tabla.Rows[0]["limite_datos"].ToString();
             txt_descripcion_B.Text = tabla.Rows[0]["descripcion"].ToString();
             txt_costoFijo_B.Text = tabla.Rows[0]["costo_fijo"].ToString();
-            txt_recargo_B.Text = tabla.Rows[0]["recargo"].ToString();
             txt_tipo.Text = tabla.Rows[0]["tipo_servicio"].ToString();
 
 

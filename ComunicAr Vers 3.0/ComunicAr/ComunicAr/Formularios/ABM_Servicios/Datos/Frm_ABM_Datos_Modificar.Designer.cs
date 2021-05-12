@@ -29,9 +29,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,22 +37,11 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.btn_Aceptar = new System.Windows.Forms.Button();
             this.txt_descripcion_M = new ComunicAr.Clases.TextBox01();
             this.txt_costoFijo_M = new ComunicAr.Clases.TextBox01();
-            this.txt_recargo_M = new ComunicAr.Clases.TextBox01();
             this.txt_limite_M = new ComunicAr.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_Tipo = new ComunicAr.Clases.TextBox01();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_Cod = new ComunicAr.Clases.TextBox01();
             this.SuspendLayout();
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 177);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
-            this.label7.TabIndex = 41;
-            this.label7.Text = "Tipo de Servicio";
             // 
             // label6
             // 
@@ -63,15 +50,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 40;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(79, 151);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "Recargo";
             // 
             // label4
             // 
@@ -102,7 +80,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(211, 222);
+            this.btn_Cancelar.Location = new System.Drawing.Point(211, 168);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_Cancelar.TabIndex = 35;
@@ -112,7 +90,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(115, 222);
+            this.btn_Aceptar.Location = new System.Drawing.Point(115, 168);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_Aceptar.TabIndex = 34;
@@ -142,17 +120,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.txt_costoFijo_M.Size = new System.Drawing.Size(153, 20);
             this.txt_costoFijo_M.TabIndex = 32;
             // 
-            // txt_recargo_M
-            // 
-            this.txt_recargo_M.Location = new System.Drawing.Point(133, 148);
-            this.txt_recargo_M.Name = "txt_recargo_M";
-            this.txt_recargo_M.Pp_Campo = "recargo";
-            this.txt_recargo_M.Pp_MensajeError = "Falta cargar el recargo";
-            this.txt_recargo_M.Pp_Tabla = null;
-            this.txt_recargo_M.Pp_Validable = false;
-            this.txt_recargo_M.Size = new System.Drawing.Size(153, 20);
-            this.txt_recargo_M.TabIndex = 31;
-            // 
             // txt_limite_M
             // 
             this.txt_limite_M.Location = new System.Drawing.Point(133, 70);
@@ -173,17 +140,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.label1.Size = new System.Drawing.Size(274, 24);
             this.label1.TabIndex = 29;
             this.label1.Text = "Modificar Servicios de Datos";
-            // 
-            // txt_Tipo
-            // 
-            this.txt_Tipo.Location = new System.Drawing.Point(133, 174);
-            this.txt_Tipo.Name = "txt_Tipo";
-            this.txt_Tipo.Pp_Campo = null;
-            this.txt_Tipo.Pp_MensajeError = null;
-            this.txt_Tipo.Pp_Tabla = null;
-            this.txt_Tipo.Pp_Validable = false;
-            this.txt_Tipo.Size = new System.Drawing.Size(153, 20);
-            this.txt_Tipo.TabIndex = 42;
             // 
             // label8
             // 
@@ -210,13 +166,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 257);
+            this.ClientSize = new System.Drawing.Size(300, 202);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_Cod);
-            this.Controls.Add(this.txt_Tipo);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -224,7 +177,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.Controls.Add(this.btn_Aceptar);
             this.Controls.Add(this.txt_descripcion_M);
             this.Controls.Add(this.txt_costoFijo_M);
-            this.Controls.Add(this.txt_recargo_M);
             this.Controls.Add(this.txt_limite_M);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -237,9 +189,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
         }
 
         #endregion
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -247,10 +197,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
         private System.Windows.Forms.Button btn_Aceptar;
         private Clases.TextBox01 txt_descripcion_M;
         private Clases.TextBox01 txt_costoFijo_M;
-        private Clases.TextBox01 txt_recargo_M;
         private Clases.TextBox01 txt_limite_M;
         private System.Windows.Forms.Label label1;
-        private Clases.TextBox01 txt_Tipo;
         private System.Windows.Forms.Label label8;
         private Clases.TextBox01 txt_Cod;
     }

@@ -33,17 +33,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             if (Tratamiento.Validar(Controls) == TratamientosEspeciales.Resultado.correcto)
             {
                 Negocio.Servicios_Datos datos = new Negocio.Servicios_Datos();
-
+                datos.Pp_codDatos = txt_Cod.Text;
                 datos.Pp_limite = txt_limite_M.Text;
                 datos.Pp_descripcion = txt_descripcion_M.Text;
                 datos.Pp_costofijo = txt_costoFijo_M.Text;
-                datos.Pp_recargo = txt_recargo_M.Text;
-                datos.Pp_tipoServicio = txt_Tipo.Text;
-                datos.Pp_codDatos = cod_Datos;
-
-
-
-                //cliente.Insertar(this.Controls);
                 datos.Modificar();
             }
             else
@@ -65,8 +58,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             txt_limite_M.Text = tabla.Rows[0]["limite_datos"].ToString();
             txt_descripcion_M.Text = tabla.Rows[0]["descripcion"].ToString();
             txt_costoFijo_M.Text = tabla.Rows[0]["costo_fijo"].ToString();
-            txt_recargo_M.Text = tabla.Rows[0]["recargo"].ToString();
-            txt_Tipo.Text = tabla.Rows[0]["tipo_servicio"].ToString();
 
 
         }

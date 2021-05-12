@@ -16,7 +16,6 @@ namespace ComunicAr.Negocio
         public string Pp_limite { get; set; }
         public string Pp_descripcion { get; set; }
         public string Pp_costofijo { get; set; }
-        public string Pp_recargo { get; set; }
         public string Pp_tipoServicio { get; set; }
         Acceso_BD BD = new Acceso_BD();
 
@@ -46,12 +45,11 @@ namespace ComunicAr.Negocio
         public void Insertar()
         {
 
-            string sqlIN = @"INSERT INTO servicios_datos (cod_datos, limite_datos, descripcion, costo_fijo, recargo,tipo_servicio) "
-                            + " VALUES (" + Pp_codDatos + "," + Pp_limite + ",'"
+            string sqlIN = @"INSERT INTO servicios_datos ( limite_datos, descripcion, costo_fijo,tipo_servicio) "
+                            + " VALUES (" + Pp_limite + ",'"
                             + Pp_descripcion + "', "
-                            + "REPLACE('" + Pp_costofijo + "', ',', '.'), "
-                            + "REPLACE('" + Pp_recargo + "', ',', '.'), "
-                            + Pp_tipoServicio + " )";
+                            + "REPLACE('" + Pp_costofijo + "', ',', '.'), '"
+                            + 'A' + "' )";
             BD.Insertar(sqlIN);
             MessageBox.Show("Servicio de datos cargado exitosamente!");
         }
@@ -62,20 +60,18 @@ namespace ComunicAr.Negocio
             BD.Borrar(sqlDelete);
         }
 
-        
+
         public void Modificar()
         {
             string sqlMod = @"UPDATE servicios_datos SET "
-                            + "cod_datos = "+ Pp_codDatos+ ", limite_datos = " + Pp_limite 
-                            + ", descripcion = '" + Pp_descripcion + "'"
+                            + " limite_datos = " + Pp_limite
+                            + ", descripcion = '" + Pp_descripcion +"'"
                             + ", costo_fijo = REPLACE('" + Pp_costofijo + "', ',', '.')"
-                            + ", recargo = REPLACE('" + Pp_recargo + "', ',', '.')"
-                            + ", tipo_servicio = " + Pp_tipoServicio
                             + " WHERE cod_datos = " + Pp_codDatos;
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion realizada con exito");
         }
 
-    }
 
+    }
 }

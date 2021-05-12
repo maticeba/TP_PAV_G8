@@ -25,15 +25,11 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             if (Tratamiento.Validar(Controls) == TratamientosEspeciales.Resultado.correcto)
             {
                 Negocio.Servicios_Datos datos = new Negocio.Servicios_Datos();
-                datos.Pp_codDatos = txt_Cod.Text;
                 datos.Pp_limite = txt_limite.Text;
                 datos.Pp_descripcion = txt_descripcion.Text;
                 datos.Pp_costofijo = txt_costoFijo.Text;
-                datos.Pp_recargo = txt_recargo.Text;
-                datos.Pp_tipoServicio = txt_Tipo.Text;
 
 
-                //cliente.Insertar(this.Controls);
                 datos.Insertar();
             }
             else

@@ -32,21 +32,17 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btm_Consulta = new System.Windows.Forms.Button();
             this.filtro_Cod = new ComunicAr.Clases.TextBox01();
-            this.cmb_FiltroTipo = new ComunicAr.Clases.ComboBox01();
-            this.label1 = new System.Windows.Forms.Label();
             this.Codigo = new System.Windows.Forms.Label();
             this.grid_Datos = new System.Windows.Forms.DataGridView();
-            this.cod_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.limite_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costo_fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_refrescar_dato = new System.Windows.Forms.Button();
             this.btn_salir_cliente = new System.Windows.Forms.Button();
             this.btn_crear_Datos = new System.Windows.Forms.Button();
             this.btn_eliminar_cliente = new System.Windows.Forms.Button();
             this.btn_modificar_Datos = new System.Windows.Forms.Button();
+            this.cod_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.limite_datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costo_fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Datos)).BeginInit();
             this.SuspendLayout();
@@ -55,8 +51,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             this.groupBox1.Controls.Add(this.btm_Consulta);
             this.groupBox1.Controls.Add(this.filtro_Cod);
-            this.groupBox1.Controls.Add(this.cmb_FiltroTipo);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.Codigo);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -69,7 +63,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // btm_Consulta
             // 
             this.btm_Consulta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btm_Consulta.Location = new System.Drawing.Point(385, 67);
+            this.btm_Consulta.Location = new System.Drawing.Point(273, 42);
             this.btm_Consulta.Name = "btm_Consulta";
             this.btm_Consulta.Size = new System.Drawing.Size(87, 27);
             this.btm_Consulta.TabIndex = 4;
@@ -79,7 +73,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // filtro_Cod
             // 
-            this.filtro_Cod.Location = new System.Drawing.Point(173, 33);
+            this.filtro_Cod.Location = new System.Drawing.Point(69, 38);
             this.filtro_Cod.Name = "filtro_Cod";
             this.filtro_Cod.Pp_Campo = null;
             this.filtro_Cod.Pp_MensajeError = null;
@@ -88,37 +82,11 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.filtro_Cod.Size = new System.Drawing.Size(163, 22);
             this.filtro_Cod.TabIndex = 3;
             // 
-            // cmb_FiltroTipo
-            // 
-            this.cmb_FiltroTipo.FormattingEnabled = true;
-            this.cmb_FiltroTipo.Location = new System.Drawing.Point(173, 69);
-            this.cmb_FiltroTipo.Name = "cmb_FiltroTipo";
-            this.cmb_FiltroTipo.Pp_Conseleccion = false;
-            this.cmb_FiltroTipo.Pp_Descripcion = "tipo_servicio";
-            this.cmb_FiltroTipo.Pp_MensajeError = null;
-            this.cmb_FiltroTipo.Pp_NombreCampo = null;
-            this.cmb_FiltroTipo.Pp_NombreTabla = null;
-            this.cmb_FiltroTipo.Pp_PK = "tipo_servicio";
-            this.cmb_FiltroTipo.Pp_Tabla = "servicios_datos";
-            this.cmb_FiltroTipo.Pp_Validable = false;
-            this.cmb_FiltroTipo.Size = new System.Drawing.Size(163, 24);
-            this.cmb_FiltroTipo.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tipo de Servicio";
-            // 
             // Codigo
             // 
             this.Codigo.AutoSize = true;
             this.Codigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Codigo.Location = new System.Drawing.Point(121, 37);
+            this.Codigo.Location = new System.Drawing.Point(17, 42);
             this.Codigo.Name = "Codigo";
             this.Codigo.Size = new System.Drawing.Size(46, 15);
             this.Codigo.TabIndex = 0;
@@ -133,51 +101,13 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.cod_datos,
             this.limite_datos,
             this.descripcion,
-            this.costo_fijo,
-            this.recargo,
-            this.tipo_servicio});
+            this.costo_fijo});
             this.grid_Datos.Location = new System.Drawing.Point(12, 181);
             this.grid_Datos.Name = "grid_Datos";
             this.grid_Datos.ReadOnly = true;
-            this.grid_Datos.Size = new System.Drawing.Size(671, 252);
+            this.grid_Datos.Size = new System.Drawing.Size(445, 252);
             this.grid_Datos.TabIndex = 1;
             this.grid_Datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Datos_CellContentClick);
-            // 
-            // cod_datos
-            // 
-            this.cod_datos.HeaderText = "Codigo";
-            this.cod_datos.Name = "cod_datos";
-            this.cod_datos.ReadOnly = true;
-            // 
-            // limite_datos
-            // 
-            this.limite_datos.HeaderText = "Limite de datos";
-            this.limite_datos.Name = "limite_datos";
-            this.limite_datos.ReadOnly = true;
-            // 
-            // descripcion
-            // 
-            this.descripcion.HeaderText = "Descripcion";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
-            // 
-            // costo_fijo
-            // 
-            this.costo_fijo.HeaderText = "Costo Fijo";
-            this.costo_fijo.Name = "costo_fijo";
-            this.costo_fijo.ReadOnly = true;
-            // 
-            // recargo
-            // 
-            this.recargo.HeaderText = "Recargo";
-            this.recargo.Name = "recargo";
-            this.recargo.ReadOnly = true;
-            // 
-            // tipo_servicio
-            // 
-            this.tipo_servicio.HeaderText = "Tipo de Servicio";
-            this.tipo_servicio.Name = "tipo_servicio";
-            this.tipo_servicio.ReadOnly = true;
             // 
             // btn_refrescar_dato
             // 
@@ -191,7 +121,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             // 
             // btn_salir_cliente
             // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(579, 450);
+            this.btn_salir_cliente.Location = new System.Drawing.Point(353, 450);
             this.btn_salir_cliente.Name = "btn_salir_cliente";
             this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_cliente.TabIndex = 6;
@@ -229,11 +159,35 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             this.btn_modificar_Datos.UseVisualStyleBackColor = true;
             this.btn_modificar_Datos.Click += new System.EventHandler(this.btn_modificar_Datos_Click);
             // 
+            // cod_datos
+            // 
+            this.cod_datos.HeaderText = "Codigo";
+            this.cod_datos.Name = "cod_datos";
+            this.cod_datos.ReadOnly = true;
+            // 
+            // limite_datos
+            // 
+            this.limite_datos.HeaderText = "Limite de datos";
+            this.limite_datos.Name = "limite_datos";
+            this.limite_datos.ReadOnly = true;
+            // 
+            // descripcion
+            // 
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
+            // 
+            // costo_fijo
+            // 
+            this.costo_fijo.HeaderText = "Costo Fijo";
+            this.costo_fijo.Name = "costo_fijo";
+            this.costo_fijo.ReadOnly = true;
+            // 
             // Frm_ABM_Datos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 488);
+            this.ClientSize = new System.Drawing.Size(492, 485);
             this.ControlBox = false;
             this.Controls.Add(this.btn_modificar_Datos);
             this.Controls.Add(this.btn_eliminar_cliente);
@@ -258,21 +212,17 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label Codigo;
-        private System.Windows.Forms.Label label1;
         private Clases.TextBox01 filtro_Cod;
-        private Clases.ComboBox01 cmb_FiltroTipo;
         private System.Windows.Forms.Button btm_Consulta;
         private System.Windows.Forms.DataGridView grid_Datos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cod_datos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn limite_datos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn costo_fijo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recargo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipo_servicio;
         private System.Windows.Forms.Button btn_refrescar_dato;
         private System.Windows.Forms.Button btn_salir_cliente;
         private System.Windows.Forms.Button btn_crear_Datos;
         private System.Windows.Forms.Button btn_eliminar_cliente;
         private System.Windows.Forms.Button btn_modificar_Datos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cod_datos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn limite_datos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn costo_fijo;
     }
 }

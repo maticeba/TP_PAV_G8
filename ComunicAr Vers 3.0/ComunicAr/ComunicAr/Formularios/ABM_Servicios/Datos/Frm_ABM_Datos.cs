@@ -30,12 +30,11 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 grid_Datos.Rows.Add();
+                grid_Datos.Rows[i].Cells[0].Value = tabla.Rows[i]["tipo_servicio"].ToString();
                 grid_Datos.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_datos"].ToString();
                 grid_Datos.Rows[i].Cells[1].Value = tabla.Rows[i]["limite_datos"].ToString();
                 grid_Datos.Rows[i].Cells[2].Value = tabla.Rows[i]["descripcion"].ToString();
                 grid_Datos.Rows[i].Cells[3].Value = tabla.Rows[i]["costo_fijo"].ToString();
-                grid_Datos.Rows[i].Cells[4].Value = tabla.Rows[i]["recargo"].ToString();
-                grid_Datos.Rows[i].Cells[5].Value = tabla.Rows[i]["tipo_servicio"].ToString();
 
             }
             flag = false;
@@ -48,8 +47,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             DataTable tabla = new DataTable();
             tabla = datos.ServDatos_Completos();
             CargarGrilla(tabla);
-            cmb_FiltroTipo.CargarCombo();
-            cmb_FiltroTipo.SelectedIndex = -1;
             flag = false;
         }
      
@@ -65,12 +62,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
                 return;
 
             }
-            if (cmb_FiltroTipo.SelectedIndex != -1)
-            {
-                grid_Datos.Rows.Clear();
-                CargarGrilla(datos.DatosxTipoServicio(cmb_FiltroTipo.SelectedValue.ToString()));
-                return;
-            }
         }
         private void grid_Datos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -81,6 +72,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
         {
             Frm_Alta_Datos Altas = new Frm_Alta_Datos();
             Altas.ShowDialog();
+            flag = false;
+
         }
 
         private void btn_eliminar_cliente_Click(object sender, EventArgs e)
@@ -94,6 +87,13 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
                 Frm_Baja_Datos Frm_Baja = new Frm_Baja_Datos();
                 Frm_Baja.cod_Datos = cod_Datos;
                 Frm_Baja.ShowDialog();
+
+                Servicios_Datos datos = new Servicios_Datos();
+                DataTable tabla = new DataTable();
+                tabla = datos.ServDatos_Completos();
+                grid_Datos.Rows.Clear();
+                CargarGrilla(tabla);
+
             }
         }
 
@@ -108,6 +108,12 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
                 Frm_ABM_Datos_Modificar Frm_Mod = new Frm_ABM_Datos_Modificar();
                 Frm_Mod.cod_Datos = cod_Datos;
                 Frm_Mod.ShowDialog();
+
+                Servicios_Datos datos = new Servicios_Datos();
+                DataTable tabla = new DataTable();
+                tabla = datos.ServDatos_Completos();
+                grid_Datos.Rows.Clear();
+                CargarGrilla(tabla);
             }
         }
 
@@ -118,6 +124,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Datos
             tabla = datos.ServDatos_Completos();
             grid_Datos.Rows.Clear();
             CargarGrilla(tabla);
+            flag = false;
+
         }
     }
 }
