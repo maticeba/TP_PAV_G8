@@ -42,7 +42,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 6);
+            this.label1.Location = new System.Drawing.Point(19, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 32);
@@ -53,8 +53,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             this.cmb_baja_prov.Enabled = false;
             this.cmb_baja_prov.FormattingEnabled = true;
-            this.cmb_baja_prov.Location = new System.Drawing.Point(121, 39);
-            this.cmb_baja_prov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_baja_prov.Location = new System.Drawing.Point(121, 49);
+            this.cmb_baja_prov.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_baja_prov.Name = "cmb_baja_prov";
             this.cmb_baja_prov.Pp_Conseleccion = false;
             this.cmb_baja_prov.Pp_Descripcion = "cod_prov";
@@ -69,8 +69,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // txt_nom_prov
             // 
-            this.txt_nom_prov.Location = new System.Drawing.Point(121, 67);
-            this.txt_nom_prov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nom_prov.Location = new System.Drawing.Point(121, 77);
+            this.txt_nom_prov.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nom_prov.Name = "txt_nom_prov";
             this.txt_nom_prov.Pp_Campo = null;
             this.txt_nom_prov.Pp_MensajeError = null;
@@ -82,7 +82,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 41);
+            this.label2.Location = new System.Drawing.Point(11, 51);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 13);
@@ -92,7 +92,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 67);
+            this.label3.Location = new System.Drawing.Point(11, 77);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 13);
@@ -101,8 +101,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(13, 100);
-            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_aceptar.Location = new System.Drawing.Point(43, 100);
+            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(70, 21);
             this.btn_aceptar.TabIndex = 5;
@@ -112,8 +112,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(157, 100);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancelar.Location = new System.Drawing.Point(140, 100);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(70, 21);
             this.btn_cancelar.TabIndex = 5;
@@ -133,7 +133,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.Controls.Add(this.txt_nom_prov);
             this.Controls.Add(this.cmb_baja_prov);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Baja_Prov";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Baja_Prov";

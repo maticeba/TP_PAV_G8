@@ -53,7 +53,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 73);
+            this.label1.Location = new System.Drawing.Point(7, 76);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
@@ -75,10 +75,10 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(13, 109);
+            this.btn_aceptar.Location = new System.Drawing.Point(38, 109);
             this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(73, 25);
+            this.btn_aceptar.Size = new System.Drawing.Size(75, 21);
             this.btn_aceptar.TabIndex = 7;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
@@ -86,10 +86,10 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(171, 109);
+            this.btn_cancelar.Location = new System.Drawing.Point(141, 109);
             this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(73, 25);
+            this.btn_cancelar.Size = new System.Drawing.Size(75, 21);
             this.btn_cancelar.TabIndex = 7;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 48);
+            this.label3.Location = new System.Drawing.Point(26, 49);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
@@ -137,6 +137,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Mod_Provincia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

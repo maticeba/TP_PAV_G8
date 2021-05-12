@@ -39,20 +39,20 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_filtrar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txt_filtro_nomb = new ComunicAr.Clases.TextBox01();
             this.txt_filtro_cod = new ComunicAr.Clases.TextBox01();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Provincia)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_crear_provincia
             // 
-            this.btn_crear_provincia.Location = new System.Drawing.Point(8, 81);
+            this.btn_crear_provincia.Location = new System.Drawing.Point(12, 140);
             this.btn_crear_provincia.Margin = new System.Windows.Forms.Padding(2);
             this.btn_crear_provincia.Name = "btn_crear_provincia";
-            this.btn_crear_provincia.Size = new System.Drawing.Size(65, 23);
+            this.btn_crear_provincia.Size = new System.Drawing.Size(104, 34);
             this.btn_crear_provincia.TabIndex = 0;
             this.btn_crear_provincia.Text = "Crear";
             this.btn_crear_provincia.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_modificar_provincia
             // 
-            this.btn_modificar_provincia.Location = new System.Drawing.Point(142, 81);
+            this.btn_modificar_provincia.Location = new System.Drawing.Point(140, 140);
             this.btn_modificar_provincia.Margin = new System.Windows.Forms.Padding(2);
             this.btn_modificar_provincia.Name = "btn_modificar_provincia";
-            this.btn_modificar_provincia.Size = new System.Drawing.Size(65, 23);
+            this.btn_modificar_provincia.Size = new System.Drawing.Size(104, 34);
             this.btn_modificar_provincia.TabIndex = 0;
             this.btn_modificar_provincia.Text = "Modificar";
             this.btn_modificar_provincia.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(254, 81);
+            this.btn_eliminar.Location = new System.Drawing.Point(268, 140);
             this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(65, 23);
+            this.btn_eliminar.Size = new System.Drawing.Size(104, 34);
             this.btn_eliminar.TabIndex = 0;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_refrescar
             // 
-            this.btn_refrescar.Location = new System.Drawing.Point(8, 276);
+            this.btn_refrescar.Location = new System.Drawing.Point(12, 443);
             this.btn_refrescar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_refrescar.Name = "btn_refrescar";
-            this.btn_refrescar.Size = new System.Drawing.Size(65, 23);
+            this.btn_refrescar.Size = new System.Drawing.Size(104, 34);
             this.btn_refrescar.TabIndex = 0;
             this.btn_refrescar.Text = "Refrescar";
             this.btn_refrescar.UseVisualStyleBackColor = true;
@@ -93,10 +93,10 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(264, 276);
+            this.btn_salir.Location = new System.Drawing.Point(311, 443);
             this.btn_salir.Margin = new System.Windows.Forms.Padding(2);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(65, 23);
+            this.btn_salir.Size = new System.Drawing.Size(104, 34);
             this.btn_salir.TabIndex = 0;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -110,12 +110,12 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.dataGrid_Provincia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGrid_Provincia.Location = new System.Drawing.Point(8, 108);
+            this.dataGrid_Provincia.Location = new System.Drawing.Point(12, 183);
             this.dataGrid_Provincia.Margin = new System.Windows.Forms.Padding(2);
             this.dataGrid_Provincia.Name = "dataGrid_Provincia";
             this.dataGrid_Provincia.ReadOnly = true;
             this.dataGrid_Provincia.RowHeadersWidth = 62;
-            this.dataGrid_Provincia.Size = new System.Drawing.Size(321, 164);
+            this.dataGrid_Provincia.Size = new System.Drawing.Size(403, 252);
             this.dataGrid_Provincia.TabIndex = 5;
             this.dataGrid_Provincia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_Provincia_CellContentClick);
             // 
@@ -142,75 +142,76 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.groupBox1.Controls.Add(this.txt_filtro_cod);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(8, 8);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(321, 69);
+            this.groupBox1.Size = new System.Drawing.Size(403, 113);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtro";
             // 
             // btn_filtrar
             // 
-            this.btn_filtrar.Location = new System.Drawing.Point(256, 38);
+            this.btn_filtrar.Location = new System.Drawing.Point(316, 69);
             this.btn_filtrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_filtrar.Name = "btn_filtrar";
-            this.btn_filtrar.Size = new System.Drawing.Size(55, 23);
+            this.btn_filtrar.Size = new System.Drawing.Size(75, 23);
             this.btn_filtrar.TabIndex = 8;
             this.btn_filtrar.Text = "Filtrar";
             this.btn_filtrar.UseVisualStyleBackColor = true;
             this.btn_filtrar.Click += new System.EventHandler(this.btn_filtrar_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 22);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Codigo de Provincia";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Nombre de Provincia";
-            // 
             // txt_filtro_nomb
             // 
-            this.txt_filtro_nomb.Location = new System.Drawing.Point(114, 41);
+            this.txt_filtro_nomb.Location = new System.Drawing.Point(128, 69);
             this.txt_filtro_nomb.Margin = new System.Windows.Forms.Padding(2);
             this.txt_filtro_nomb.Name = "txt_filtro_nomb";
             this.txt_filtro_nomb.Pp_Campo = null;
             this.txt_filtro_nomb.Pp_MensajeError = null;
             this.txt_filtro_nomb.Pp_Tabla = null;
             this.txt_filtro_nomb.Pp_Validable = false;
-            this.txt_filtro_nomb.Size = new System.Drawing.Size(138, 20);
+            this.txt_filtro_nomb.Size = new System.Drawing.Size(183, 23);
             this.txt_filtro_nomb.TabIndex = 7;
             // 
             // txt_filtro_cod
             // 
-            this.txt_filtro_cod.Location = new System.Drawing.Point(114, 20);
+            this.txt_filtro_cod.Location = new System.Drawing.Point(128, 33);
             this.txt_filtro_cod.Margin = new System.Windows.Forms.Padding(2);
             this.txt_filtro_cod.Name = "txt_filtro_cod";
             this.txt_filtro_cod.Pp_Campo = null;
             this.txt_filtro_cod.Pp_MensajeError = null;
             this.txt_filtro_cod.Pp_Tabla = null;
             this.txt_filtro_cod.Pp_Validable = false;
-            this.txt_filtro_cod.Size = new System.Drawing.Size(138, 20);
+            this.txt_filtro_cod.Size = new System.Drawing.Size(183, 23);
             this.txt_filtro_cod.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 15);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Codigo de Provincia";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 15);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Nombre de Provincia";
             // 
             // Frm_ABM_Provincia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 320);
+            this.ClientSize = new System.Drawing.Size(428, 488);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGrid_Provincia);
             this.Controls.Add(this.btn_salir);
@@ -218,10 +219,12 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_modificar_provincia);
             this.Controls.Add(this.btn_crear_provincia);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_ABM_Provincia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ABM Provincia";
+            this.Text = "Provincias";
             this.Load += new System.EventHandler(this.Frm_ABM_Provincia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Provincia)).EndInit();
             this.groupBox1.ResumeLayout(false);

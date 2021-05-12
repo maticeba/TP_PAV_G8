@@ -40,7 +40,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 6);
+            this.label2.Location = new System.Drawing.Point(30, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 32);
@@ -49,8 +49,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // txt_nomProvincia
             // 
-            this.txt_nomProvincia.Location = new System.Drawing.Point(120, 44);
-            this.txt_nomProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nomProvincia.Location = new System.Drawing.Point(118, 49);
+            this.txt_nomProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nomProvincia.Name = "txt_nomProvincia";
             this.txt_nomProvincia.Pp_Campo = null;
             this.txt_nomProvincia.Pp_MensajeError = "Falta el nombre de Provincia.";
@@ -62,7 +62,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 45);
+            this.label1.Location = new System.Drawing.Point(8, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
@@ -71,8 +71,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(13, 75);
-            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_aceptar.Location = new System.Drawing.Point(37, 80);
+            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 21);
             this.btn_aceptar.TabIndex = 5;
@@ -82,8 +82,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(153, 75);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancelar.Location = new System.Drawing.Point(132, 80);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 21);
             this.btn_cancelar.TabIndex = 5;
@@ -95,13 +95,14 @@ namespace ComunicAr.Formularios.ABM_Provincia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 122);
+            this.ClientSize = new System.Drawing.Size(249, 110);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_nomProvincia);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Alta_Provincia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta Provincias";
