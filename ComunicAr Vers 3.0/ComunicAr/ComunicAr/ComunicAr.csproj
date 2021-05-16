@@ -154,6 +154,30 @@
     <Compile Include="Formularios\ABM_Llamadas\Frm_Modificar_Llamada.designer.cs">
       <DependentUpon>Frm_Modificar_Llamada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_ABM_Numeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_ABM_Numeros.Designer.cs">
+      <DependentUpon>Frm_ABM_Numeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_Alta_Numeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_Alta_Numeros.Designer.cs">
+      <DependentUpon>Frm_Alta_Numeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_Baja_Numeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_Baja_Numeros.Designer.cs">
+      <DependentUpon>Frm_Baja_Numeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_Mod_Numero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Numeros\Frm_Mod_Numero.Designer.cs">
+      <DependentUpon>Frm_Mod_Numero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM_Provincias\Frm_ABM_Provincia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +339,7 @@
     <Compile Include="Negocio\Clientes.cs" />
     <Compile Include="Negocio\Dispositivos.cs" />
     <Compile Include="Negocio\Llamadas.cs" />
+    <Compile Include="Negocio\Numeros.cs" />
     <Compile Include="Negocio\Provincia.cs" />
     <Compile Include="Negocio\ServicioFijo.cs" />
     <Compile Include="Negocio\Servicios_Contratados.cs" />
@@ -366,6 +391,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Llamadas\Frm_Modificar_Llamada.resx">
       <DependentUpon>Frm_Modificar_Llamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Numeros\Frm_ABM_Numeros.resx">
+      <DependentUpon>Frm_ABM_Numeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Numeros\Frm_Alta_Numeros.resx">
+      <DependentUpon>Frm_Alta_Numeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Numeros\Frm_Baja_Numeros.resx">
+      <DependentUpon>Frm_Baja_Numeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM_Numeros\Frm_Mod_Numero.resx">
+      <DependentUpon>Frm_Mod_Numero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM_Provincias\Frm_ABM_Provincia.resx">
       <DependentUpon>Frm_ABM_Provincia.cs</DependentUpon>

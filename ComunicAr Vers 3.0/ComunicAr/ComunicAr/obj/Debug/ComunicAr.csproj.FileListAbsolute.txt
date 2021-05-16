@@ -14,7 +14,6 @@ C:\Users\Nico\Documents\Proyectos VS\PAV1\ComunicAr\ComunicAr\ComunicAr\obj\Debu
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.exe.config
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.exe
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\ComunicAr.pdb
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csprojAssemblyReference.cache
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_ABM_Cliente.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Clientes.Frm_Alta_Cliente.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Escritorio.resources

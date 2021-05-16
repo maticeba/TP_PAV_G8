@@ -22,7 +22,7 @@ namespace ComunicAr.Negocio
         public DataTable ClientesCompletos()
         {
             string sql = @"SELECT c.*, b.nombre_barrio " +
-                            "FROM Cliente c, barrios b " +
+                            "FROM Cliente c, barrio b " +
                             "WHERE c.cod_barrio = b.cod_barrio";
             /*string sql = @"SELECT c.*, b.nombre_barrio as cod_barrio"
                          + "from clientes c join barrios b"
