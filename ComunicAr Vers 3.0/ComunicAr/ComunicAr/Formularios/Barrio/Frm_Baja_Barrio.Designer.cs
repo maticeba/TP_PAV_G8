@@ -40,7 +40,7 @@ namespace ComunicAr.Formularios.Barrio
             // 
             // bttn_cancelar_baja_barrios
             // 
-            this.bttn_cancelar_baja_barrios.Location = new System.Drawing.Point(187, 117);
+            this.bttn_cancelar_baja_barrios.Location = new System.Drawing.Point(132, 97);
             this.bttn_cancelar_baja_barrios.Name = "bttn_cancelar_baja_barrios";
             this.bttn_cancelar_baja_barrios.Size = new System.Drawing.Size(75, 23);
             this.bttn_cancelar_baja_barrios.TabIndex = 29;
@@ -50,7 +50,7 @@ namespace ComunicAr.Formularios.Barrio
             // 
             // bttn_aceptar_baja_barrio
             // 
-            this.bttn_aceptar_baja_barrio.Location = new System.Drawing.Point(102, 117);
+            this.bttn_aceptar_baja_barrio.Location = new System.Drawing.Point(32, 97);
             this.bttn_aceptar_baja_barrio.Name = "bttn_aceptar_baja_barrio";
             this.bttn_aceptar_baja_barrio.Size = new System.Drawing.Size(75, 23);
             this.bttn_aceptar_baja_barrio.TabIndex = 28;
@@ -61,7 +61,7 @@ namespace ComunicAr.Formularios.Barrio
             // txt_nombre_barrio
             // 
             this.txt_nombre_barrio.Enabled = false;
-            this.txt_nombre_barrio.Location = new System.Drawing.Point(98, 54);
+            this.txt_nombre_barrio.Location = new System.Drawing.Point(58, 44);
             this.txt_nombre_barrio.Name = "txt_nombre_barrio";
             this.txt_nombre_barrio.Pp_Campo = "nombre_razonSocial";
             this.txt_nombre_barrio.Pp_MensajeError = "Falta cargar el nombre del cliente";
@@ -74,15 +74,15 @@ namespace ComunicAr.Formularios.Barrio
             // 
             this.cmb_codigo_ciudad.Enabled = false;
             this.cmb_codigo_ciudad.FormattingEnabled = true;
-            this.cmb_codigo_ciudad.Location = new System.Drawing.Point(98, 80);
+            this.cmb_codigo_ciudad.Location = new System.Drawing.Point(58, 70);
             this.cmb_codigo_ciudad.Name = "cmb_codigo_ciudad";
             this.cmb_codigo_ciudad.Pp_Conseleccion = false;
-            this.cmb_codigo_ciudad.Pp_Descripcion = "nombre_barrio";
+            this.cmb_codigo_ciudad.Pp_Descripcion = "nombre_ciudad";
             this.cmb_codigo_ciudad.Pp_MensajeError = null;
             this.cmb_codigo_ciudad.Pp_NombreCampo = null;
             this.cmb_codigo_ciudad.Pp_NombreTabla = "";
-            this.cmb_codigo_ciudad.Pp_PK = "cod_barrio";
-            this.cmb_codigo_ciudad.Pp_Tabla = "barrios";
+            this.cmb_codigo_ciudad.Pp_PK = "cod_ciudad";
+            this.cmb_codigo_ciudad.Pp_Tabla = "Ciudad";
             this.cmb_codigo_ciudad.Pp_Validable = true;
             this.cmb_codigo_ciudad.Size = new System.Drawing.Size(164, 21);
             this.cmb_codigo_ciudad.TabIndex = 23;
@@ -91,27 +91,27 @@ namespace ComunicAr.Formularios.Barrio
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 80);
+            this.label6.Location = new System.Drawing.Point(12, 73);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
+            this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 22;
-            this.label6.Text = "Codigo Ciudad";
+            this.label6.Text = "Ciudad";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 57);
+            this.label2.Location = new System.Drawing.Point(18, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Nombre Barrio";
+            this.label2.Text = "Barrio";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 32);
             this.label1.TabIndex = 17;
@@ -121,7 +121,7 @@ namespace ComunicAr.Formularios.Barrio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(291, 161);
+            this.ClientSize = new System.Drawing.Size(238, 129);
             this.Controls.Add(this.bttn_cancelar_baja_barrios);
             this.Controls.Add(this.bttn_aceptar_baja_barrio);
             this.Controls.Add(this.txt_nombre_barrio);
@@ -129,6 +129,7 @@ namespace ComunicAr.Formularios.Barrio
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Baja_Barrio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Baja_Barrio";

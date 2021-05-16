@@ -21,7 +21,9 @@ namespace ComunicAr.Negocio
         Acceso_BD BD = new Acceso_BD();
         public DataTable ClientesCompletos()
         {
-            string sql = "SELECT * FROM clientes";
+            string sql = @"SELECT c.*, b.nombre_barrio " +
+                            "FROM Cliente c, barrios b " +
+                            "WHERE c.cod_barrio = b.cod_barrio";
             /*string sql = @"SELECT c.*, b.nombre_barrio as cod_barrio"
                          + "from clientes c join barrios b"
                          + "on c.cod_barrio = b.cod_barrio";*/
@@ -29,13 +31,13 @@ namespace ComunicAr.Negocio
         }
         public DataTable Clientes_por_Numero(string nro_Cliente)
         {
-            string sql = @"SELECT c.* FROM clientes c "
+            string sql = @"SELECT c.* FROM Cliente "
                         + "WHERE c.nro_cliente = " + nro_Cliente;
             return BD.EjecutarSelect(sql);
         }
         public DataTable Clientes_por_Nombre(string nombre)
         {
-            string sql = @"SELECT c.* FROM clientes c "
+            string sql = @"SELECT c.* FROM Cliente c "
                         + "WHERE c.nombre_razonSocial like '%" + nombre.Trim() + "%'";
             return BD.EjecutarSelect(sql);
         }
@@ -47,7 +49,7 @@ namespace ComunicAr.Negocio
         }
         public void Insertar()
         {
-            string sqlIN = @"INSERT INTO clientes (nombre_razonSocial, calle, nro, piso, cod_barrio) "
+            string sqlIN = @"INSERT INTO Cliente (nombre_razonSocial, calle, nro, piso, cod_barrio) "
                             +" VALUES ('" + Pp_nombre +"',"
                             +"'" + Pp_calle + "',"
                             + Pp_nro + ","
@@ -58,7 +60,7 @@ namespace ComunicAr.Negocio
         }
         public void Modificar()
         {
-            string sqlMod = @"UPDATE clientes SET "
+            string sqlMod = @"UPDATE Cliente SET "
                             + " nombre_razonSocial = '" + Pp_nombre + "'"
                             + ", calle = '" + Pp_calle + "'"
                             + ", nro = " + Pp_nro
@@ -71,7 +73,7 @@ namespace ComunicAr.Negocio
 
         public void Borrar()
         {
-            string sqlBorrar = "DELETE FROM clientes WHERE nro_cliente = " + Pp_nroCliente;
+            string sqlBorrar = "DELETE FROM Cliente WHERE nro_cliente = " + Pp_nroCliente;
             BD.Borrar(sqlBorrar);
         }
     }

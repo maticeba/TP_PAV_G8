@@ -62,7 +62,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // btn_Cancelar
             // 
             this.btn_Cancelar.Location = new System.Drawing.Point(131, 102);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(69, 23);
             this.btn_Cancelar.TabIndex = 5;
@@ -73,7 +73,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // btn_Aceptar
             // 
             this.btn_Aceptar.Location = new System.Drawing.Point(39, 102);
-            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(69, 23);
             this.btn_Aceptar.TabIndex = 5;
@@ -84,7 +84,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // txt_Nom_Ciud
             // 
             this.txt_Nom_Ciud.Location = new System.Drawing.Point(111, 47);
-            this.txt_Nom_Ciud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Nom_Ciud.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Nom_Ciud.Name = "txt_Nom_Ciud";
             this.txt_Nom_Ciud.Pp_Campo = null;
             this.txt_Nom_Ciud.Pp_MensajeError = "Falta el nombre de Ciudad.";
@@ -98,7 +98,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             this.cmb_alta_ciudad.FormattingEnabled = true;
             this.cmb_alta_ciudad.Location = new System.Drawing.Point(111, 71);
-            this.cmb_alta_ciudad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_alta_ciudad.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_alta_ciudad.Name = "cmb_alta_ciudad";
             this.cmb_alta_ciudad.Pp_Conseleccion = false;
             this.cmb_alta_ciudad.Pp_Descripcion = "nombre_prov";
@@ -106,7 +106,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.cmb_alta_ciudad.Pp_NombreCampo = null;
             this.cmb_alta_ciudad.Pp_NombreTabla = null;
             this.cmb_alta_ciudad.Pp_PK = "cod_prov";
-            this.cmb_alta_ciudad.Pp_Tabla = "provincias";
+            this.cmb_alta_ciudad.Pp_Tabla = "Provincia";
             this.cmb_alta_ciudad.Pp_Validable = false;
             this.cmb_alta_ciudad.Size = new System.Drawing.Size(121, 21);
             this.cmb_alta_ciudad.TabIndex = 6;
@@ -135,7 +135,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.Controls.Add(this.txt_Nom_Ciud);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Alta_Ciudad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta Ciudades";

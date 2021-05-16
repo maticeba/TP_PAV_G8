@@ -33,7 +33,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
         {
             txt_cod_ciud.Text = tabla.Rows[0]["cod_ciudad"].ToString();
             txt_nom_ciud.Text = tabla.Rows[0]["nombre_ciudad"].ToString();
-            cmb_baja_ciud.SelectedText = tabla.Rows[0]["cod_prov"].ToString();
+            cmb_baja_ciud.SelectedText = tabla.Rows[0]["nombre_prov"].ToString();
 
         }
 

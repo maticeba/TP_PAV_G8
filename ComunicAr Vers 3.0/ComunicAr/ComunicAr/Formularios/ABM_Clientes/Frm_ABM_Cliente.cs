@@ -33,7 +33,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = tabla.Rows[i]["nro_cliente"].ToString();
                 dataGridView1.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_razonSocial"].ToString();
-                dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["cod_barrio"].ToString();
+                dataGridView1.Rows[i].Cells[2].Value = tabla.Rows[i]["nombre_barrio"].ToString();
                 dataGridView1.Rows[i].Cells[3].Value = tabla.Rows[i]["calle"].ToString();
                 dataGridView1.Rows[i].Cells[4].Value = tabla.Rows[i]["nro"].ToString();
                 dataGridView1.Rows[i].Cells[5].Value = tabla.Rows[i]["piso"].ToString();

@@ -19,44 +19,50 @@ namespace ComunicAr.Negocio
         Acceso_BD BD = new Acceso_BD();
         public DataTable CiudadesCompletas()
         {
-            string sql = "SELECT * FROM ciudades";
+            string sql = "SELECT c.*, p.nombre_prov " +
+                            "FROM Ciudad c, Provincia p " +
+                            "WHERE c.id_prov = p.cod_prov";
             return BD.EjecutarSelect(sql);
         }
         public void Insertar()
         {
 
-            string sqlInsertar = @"INSERT INTO ciudades (nombre_ciudad, cod_prov)"
+            string sqlInsertar = @"INSERT INTO Ciudad (nombre_ciudad, ida_prov)"
                                   + "VALUES ('" + Pp_nombreCiudad + "' , " + Pp_codProvincia + ")";
             BD.Insertar(sqlInsertar);
             MessageBox.Show("Ciudad cargada exitosamente");
         }
         public void Borrar()
         {
-            string sqlBorrar = "DELETE FROM ciudades WHERE cod_ciudad = " + Pp_codCiudad;
+            string sqlBorrar = "DELETE FROM Ciudad WHERE cod_ciudad = " + Pp_codCiudad;
             BD.Borrar(sqlBorrar);
         }
         public DataTable Ciudad_por_codigo(string codigo)
         {
-            string sql = @"SELECT c.* FROM ciudades c "
-                        + "WHERE c.cod_ciudad = " + codigo;
+            string sql = @"SELECT c.*, p.nombre_prov " +
+                          "FROM Ciudad c , Provincia p "
+                        + "WHERE c.id_prov = p.cod_prov " +
+                            "AND c.cod_ciudad = " + codigo;
             return BD.EjecutarSelect(sql);
         }
         public DataTable Ciudad_por_nombre(string nombre)
         {
-            string sql = @"SELECT c.* FROM ciudades c "
+            string sql = @"SELECT c.*, p.nombre_prov " +
+                          "FROM Ciudad c, Provincia p "
                         //+ "WHERE c.nombre_ciudad '" + nombre + "'";
-                        + "WHERE c.nombre_ciudad like '%" + nombre.Trim() + "%'";
+                        + "WHERE c.id_prov = p.cod_prov " +
+                        "AND c.nombre_ciudad like '%" + nombre.Trim() + "%'";
             return BD.EjecutarSelect(sql);
         }
         public DataTable Ciudad_por_cod_prov(string codigo)
         {
-            string sql = @"SELECT c.* FROM ciudades c "
-                        + "WHERE c.cod_prov = " + codigo;
+            string sql = @"SELECT c.*, p.nombre_prov FROM Ciudad c, Provincia p "
+                        + "WHERE c.id_prov = p.cod_prov AND c.id_prov = " + codigo;
             return BD.EjecutarSelect(sql);
         }
         public void Modificar()
         {
-            string sqlMod = @"UPDATE ciudades SET "
+            string sqlMod = @"UPDATE Ciudad SET "
                             + " cod_prov = " + Pp_codProvincia 
                             + ", nombre_ciudad = '" + Pp_nombreCiudad + "'"
                             + " WHERE cod_ciudad = " + Pp_codCiudad;

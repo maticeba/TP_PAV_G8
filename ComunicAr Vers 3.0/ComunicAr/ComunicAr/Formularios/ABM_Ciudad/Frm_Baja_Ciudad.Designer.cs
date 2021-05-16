@@ -54,7 +54,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 47);
+            this.label3.Location = new System.Drawing.Point(26, 48);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 13);
@@ -64,7 +64,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 68);
+            this.label4.Location = new System.Drawing.Point(22, 72);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 13);
@@ -74,12 +74,12 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 89);
+            this.label2.Location = new System.Drawing.Point(15, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Codigo de Provincia";
+            this.label2.Text = "Provincia";
             // 
             // btn_aceptar
             // 
@@ -111,14 +111,14 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.cmb_baja_ciud.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_baja_ciud.Name = "cmb_baja_ciud";
             this.cmb_baja_ciud.Pp_Conseleccion = false;
-            this.cmb_baja_ciud.Pp_Descripcion = "cod_prov";
-            this.cmb_baja_ciud.Pp_MensajeError = null;
+            this.cmb_baja_ciud.Pp_Descripcion = "nombre_prov";
+            this.cmb_baja_ciud.Pp_MensajeError = "Falta seleccionar la provincia correspondiente";
             this.cmb_baja_ciud.Pp_NombreCampo = null;
             this.cmb_baja_ciud.Pp_NombreTabla = null;
-            this.cmb_baja_ciud.Pp_PK = "cod_ciudad";
-            this.cmb_baja_ciud.Pp_Tabla = "ciudades";
+            this.cmb_baja_ciud.Pp_PK = "cod_prov";
+            this.cmb_baja_ciud.Pp_Tabla = "Provincia";
             this.cmb_baja_ciud.Pp_Validable = false;
-            this.cmb_baja_ciud.Size = new System.Drawing.Size(120, 21);
+            this.cmb_baja_ciud.Size = new System.Drawing.Size(121, 21);
             this.cmb_baja_ciud.TabIndex = 12;
             // 
             // txt_nom_ciud

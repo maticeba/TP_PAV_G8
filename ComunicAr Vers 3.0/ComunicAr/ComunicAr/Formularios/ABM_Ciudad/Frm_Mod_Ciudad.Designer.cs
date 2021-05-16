@@ -33,11 +33,11 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.txt_cod_ciud = new ComunicAr.Clases.TextBox01();
             this.txt_nom_ciud = new ComunicAr.Clases.TextBox01();
             this.txt_cod_prov = new ComunicAr.Clases.TextBox01();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +55,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             this.txt_cod_ciud.Enabled = false;
             this.txt_cod_ciud.Location = new System.Drawing.Point(121, 45);
-            this.txt_cod_ciud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_cod_ciud.Margin = new System.Windows.Forms.Padding(2);
             this.txt_cod_ciud.Name = "txt_cod_ciud";
             this.txt_cod_ciud.Pp_Campo = null;
             this.txt_cod_ciud.Pp_MensajeError = null;
@@ -67,7 +67,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // txt_nom_ciud
             // 
             this.txt_nom_ciud.Location = new System.Drawing.Point(121, 69);
-            this.txt_nom_ciud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nom_ciud.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nom_ciud.Name = "txt_nom_ciud";
             this.txt_nom_ciud.Pp_Campo = null;
             this.txt_nom_ciud.Pp_MensajeError = null;
@@ -80,7 +80,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // 
             this.txt_cod_prov.Enabled = false;
             this.txt_cod_prov.Location = new System.Drawing.Point(121, 93);
-            this.txt_cod_prov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_cod_prov.Margin = new System.Windows.Forms.Padding(2);
             this.txt_cod_prov.Name = "txt_cod_prov";
             this.txt_cod_prov.Pp_Campo = null;
             this.txt_cod_prov.Pp_MensajeError = "Cargar codigo de Provincia";
@@ -88,16 +88,6 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.txt_cod_prov.Pp_Validable = false;
             this.txt_cod_prov.Size = new System.Drawing.Size(121, 20);
             this.txt_cod_prov.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 96);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Codigo de Provincia";
             // 
             // label3
             // 
@@ -122,7 +112,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // btn_cancelar
             // 
             this.btn_cancelar.Location = new System.Drawing.Point(143, 122);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(65, 22);
             this.btn_cancelar.TabIndex = 4;
@@ -133,13 +123,23 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // btn_aceptar
             // 
             this.btn_aceptar.Location = new System.Drawing.Point(57, 122);
-            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(58, 21);
             this.btn_aceptar.TabIndex = 4;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Codigo de Provincia";
             // 
             // Frm_Mod_Ciudad
             // 
@@ -156,7 +156,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.Controls.Add(this.txt_cod_ciud);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Mod_Ciudad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Mod_Ciudad";
@@ -172,10 +172,10 @@ namespace ComunicAr.Formularios.ABM_Ciudad
         private Clases.TextBox01 txt_cod_ciud;
         private Clases.TextBox01 txt_nom_ciud;
         private Clases.TextBox01 txt_cod_prov;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_aceptar;
+        private System.Windows.Forms.Label label2;
     }
 }

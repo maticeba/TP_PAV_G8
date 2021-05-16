@@ -52,9 +52,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // bttn_refrescar
             // 
             this.bttn_refrescar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_refrescar.Location = new System.Drawing.Point(11, 392);
+            this.bttn_refrescar.Location = new System.Drawing.Point(12, 425);
             this.bttn_refrescar.Name = "bttn_refrescar";
-            this.bttn_refrescar.Size = new System.Drawing.Size(92, 29);
+            this.bttn_refrescar.Size = new System.Drawing.Size(104, 34);
             this.bttn_refrescar.TabIndex = 15;
             this.bttn_refrescar.Text = "Refrescar";
             this.bttn_refrescar.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // bttn_baja
             // 
             this.bttn_baja.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_baja.Location = new System.Drawing.Point(208, 86);
+            this.bttn_baja.Location = new System.Drawing.Point(268, 115);
             this.bttn_baja.Name = "bttn_baja";
-            this.bttn_baja.Size = new System.Drawing.Size(92, 29);
+            this.bttn_baja.Size = new System.Drawing.Size(104, 34);
             this.bttn_baja.TabIndex = 14;
             this.bttn_baja.Text = "Baja";
             this.bttn_baja.UseVisualStyleBackColor = true;
@@ -74,9 +74,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // bttn_alta_prepago
             // 
             this.bttn_alta_prepago.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_alta_prepago.Location = new System.Drawing.Point(12, 86);
+            this.bttn_alta_prepago.Location = new System.Drawing.Point(12, 115);
             this.bttn_alta_prepago.Name = "bttn_alta_prepago";
-            this.bttn_alta_prepago.Size = new System.Drawing.Size(92, 29);
+            this.bttn_alta_prepago.Size = new System.Drawing.Size(104, 34);
             this.bttn_alta_prepago.TabIndex = 13;
             this.bttn_alta_prepago.Text = "Alta";
             this.bttn_alta_prepago.UseVisualStyleBackColor = true;
@@ -85,9 +85,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // bttn_modificar_prepago
             // 
             this.bttn_modificar_prepago.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_modificar_prepago.Location = new System.Drawing.Point(110, 86);
+            this.bttn_modificar_prepago.Location = new System.Drawing.Point(140, 115);
             this.bttn_modificar_prepago.Name = "bttn_modificar_prepago";
-            this.bttn_modificar_prepago.Size = new System.Drawing.Size(92, 29);
+            this.bttn_modificar_prepago.Size = new System.Drawing.Size(104, 34);
             this.bttn_modificar_prepago.TabIndex = 12;
             this.bttn_modificar_prepago.Text = "Modificar";
             this.bttn_modificar_prepago.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(550, 389);
+            this.btn_salir.Location = new System.Drawing.Point(570, 425);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(104, 34);
             this.btn_salir.TabIndex = 11;
@@ -115,10 +115,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.descripcion,
             this.costo,
             this.id_region});
-            this.GridPrepago.Location = new System.Drawing.Point(12, 121);
+            this.GridPrepago.Location = new System.Drawing.Point(12, 155);
             this.GridPrepago.Name = "GridPrepago";
             this.GridPrepago.ReadOnly = true;
-            this.GridPrepago.Size = new System.Drawing.Size(665, 262);
+            this.GridPrepago.Size = new System.Drawing.Size(662, 252);
             this.GridPrepago.TabIndex = 10;
             this.GridPrepago.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridPrepago_CellContentClick);
             // 
@@ -163,9 +163,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.groupBox1.Controls.Add(this.btn_Consulta);
             this.groupBox1.Controls.Add(this.txt_filtro_id_pack);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 5);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(671, 75);
+            this.groupBox1.Size = new System.Drawing.Size(662, 88);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -188,23 +188,24 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.txt_filtro_id_pack.Pp_MensajeError = null;
             this.txt_filtro_id_pack.Pp_Tabla = null;
             this.txt_filtro_id_pack.Pp_Validable = false;
-            this.txt_filtro_id_pack.Size = new System.Drawing.Size(183, 20);
+            this.txt_filtro_id_pack.Size = new System.Drawing.Size(183, 23);
             this.txt_filtro_id_pack.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(77, 36);
+            this.label1.Location = new System.Drawing.Point(121, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID pack";
             // 
             // Frm_ABM_Prepagos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 450);
+            this.ClientSize = new System.Drawing.Size(686, 463);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bttn_refrescar);
             this.Controls.Add(this.bttn_baja);
@@ -212,8 +213,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.Controls.Add(this.bttn_modificar_prepago);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.GridPrepago);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_ABM_Prepagos";
-            this.Text = "Frm_ABM_Prepagos";
+            this.Text = "Servicios Prepagos";
             this.Load += new System.EventHandler(this.Frm_ABM_Prepagos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridPrepago)).EndInit();
             this.groupBox1.ResumeLayout(false);

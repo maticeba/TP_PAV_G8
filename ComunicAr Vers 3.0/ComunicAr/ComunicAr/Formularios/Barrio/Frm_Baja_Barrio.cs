@@ -43,7 +43,7 @@ namespace ComunicAr.Formularios.Barrio
         private void MostrarDatos(DataTable tabla)
         {
             txt_nombre_barrio.Text = tabla.Rows[0]["nombre_barrio"].ToString();
-            cmb_codigo_ciudad.SelectedValue = tabla.Rows[0]["cod_ciudad"].ToString();
+            cmb_codigo_ciudad.SelectedValue = tabla.Rows[0]["id_ciudad"].ToString();
         }
 
         private void bttn_aceptar_baja_barrios(object sender, EventArgs e)
@@ -53,6 +53,7 @@ namespace ComunicAr.Formularios.Barrio
             {
                 barrio.Borrar();
                 MessageBox.Show("Se borró correctamente el cliente");
+                this.Close();
             }
         }
 

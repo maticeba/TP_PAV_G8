@@ -17,13 +17,13 @@ namespace ComunicAr.Negocio
         Acceso_BD BD = new Acceso_BD();
         public DataTable ProvinciasCompletas()
         {
-            string sql = "SELECT * FROM provincias";
+            string sql = "SELECT * FROM Provincia";
             return BD.EjecutarSelect(sql);
         }
         public void Insertar()
         {
 
-            string sqlInsertar = @"INSERT INTO provincias (nombre_prov)"
+            string sqlInsertar = @"INSERT INTO Provincia (nombre_prov)"
                                   + "VALUES ('" + Pp_nombreProvincia + "')";
             BD.Insertar(sqlInsertar);
             MessageBox.Show("Provincia cargada exitosamente");
@@ -31,7 +31,7 @@ namespace ComunicAr.Negocio
 
         public void Modificar()
         {
-            string sqlMod = @"UPDATE provincias SET "
+            string sqlMod = @"UPDATE Provincia SET "
                             + " nombre_prov = '" + Pp_nombreProvincia + "'"
                             + " WHERE cod_prov = " + Pp_codigoProvincia;
             BD.EjecutarModificar(sqlMod);
@@ -40,19 +40,19 @@ namespace ComunicAr.Negocio
 
         public DataTable cod_prov(string nro_prov)
         {
-            string sql = @"SELECT c.* FROM provincias c "
+            string sql = @"SELECT c.* FROM Provincia c "
                         + "WHERE c.cod_prov = " + nro_prov;
             return BD.EjecutarSelect(sql);
         }
         public DataTable Cod_prov_nombre(string nombre)
         {
-            string sql = @"SELECT c.* FROM provincias c "
+            string sql = @"SELECT c.* FROM Provincia c "
                         + "WHERE c.nombre_prov like '%" + nombre.Trim() + "%'";
             return BD.EjecutarSelect(sql);
         }
         public void Borrar()
         {
-            string sqlBorrar = "DELETE FROM provincias WHERE cod_prov = " + Pp_codigoProvincia;
+            string sqlBorrar = "DELETE FROM Provincia WHERE cod_prov = " + Pp_codigoProvincia;
             BD.Borrar(sqlBorrar);
         }
     }

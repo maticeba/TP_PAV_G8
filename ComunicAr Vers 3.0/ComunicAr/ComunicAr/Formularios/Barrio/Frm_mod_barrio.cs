@@ -21,11 +21,6 @@ namespace ComunicAr.Formularios.Barrio
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_cliente_mod_aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales Tratamiento = new TratamientosEspeciales();
@@ -49,7 +44,7 @@ namespace ComunicAr.Formularios.Barrio
         private void MostrarDatos(DataTable tabla)
         {
             txt_nombre_barrio.Text = tabla.Rows[0]["nombre_barrio"].ToString();
-            cmb_codigo_ciudad.SelectedValue = tabla.Rows[0]["cod_ciudad"].ToString();
+            cmb_codigo_ciudad.SelectedValue = tabla.Rows[0]["id_ciudad"].ToString();
             
         }
 
@@ -65,11 +60,6 @@ namespace ComunicAr.Formularios.Barrio
         private void btn_cliente_alta_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-       
-        private void comobox_codigo_ciudad_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -175,7 +175,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.cmb_cliente_alta_barrio.Pp_NombreCampo = null;
             this.cmb_cliente_alta_barrio.Pp_NombreTabla = "";
             this.cmb_cliente_alta_barrio.Pp_PK = "cod_barrio";
-            this.cmb_cliente_alta_barrio.Pp_Tabla = "barrios";
+            this.cmb_cliente_alta_barrio.Pp_Tabla = "Barrio";
             this.cmb_cliente_alta_barrio.Pp_Validable = true;
             this.cmb_cliente_alta_barrio.Size = new System.Drawing.Size(164, 23);
             this.cmb_cliente_alta_barrio.TabIndex = 10;

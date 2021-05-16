@@ -47,7 +47,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // bttn_cancelar
             // 
             this.bttn_cancelar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_cancelar.Location = new System.Drawing.Point(208, 224);
+            this.bttn_cancelar.Location = new System.Drawing.Point(168, 194);
             this.bttn_cancelar.Name = "bttn_cancelar";
             this.bttn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.bttn_cancelar.TabIndex = 52;
@@ -58,7 +58,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // bttn_aceptar
             // 
             this.bttn_aceptar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_aceptar.Location = new System.Drawing.Point(102, 224);
+            this.bttn_aceptar.Location = new System.Drawing.Point(62, 194);
             this.bttn_aceptar.Name = "bttn_aceptar";
             this.bttn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.bttn_aceptar.TabIndex = 51;
@@ -70,7 +70,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label7.Location = new System.Drawing.Point(31, 85);
+            this.label7.Location = new System.Drawing.Point(43, 54);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 15);
             this.label7.TabIndex = 50;
@@ -80,7 +80,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label6.Location = new System.Drawing.Point(8, 137);
+            this.label6.Location = new System.Drawing.Point(20, 112);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 15);
             this.label6.TabIndex = 49;
@@ -90,7 +90,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label5.Location = new System.Drawing.Point(39, 163);
+            this.label5.Location = new System.Drawing.Point(51, 141);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 15);
             this.label5.TabIndex = 48;
@@ -100,7 +100,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label4.Location = new System.Drawing.Point(22, 111);
+            this.label4.Location = new System.Drawing.Point(34, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 15);
             this.label4.TabIndex = 47;
@@ -110,16 +110,16 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label3.Location = new System.Drawing.Point(13, 189);
+            this.label3.Location = new System.Drawing.Point(45, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 15);
+            this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 46;
-            this.label3.Text = "ID Prepago";
+            this.label3.Text = "Región";
             // 
             // txt_costo
             // 
             this.txt_costo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_costo.Location = new System.Drawing.Point(102, 160);
+            this.txt_costo.Location = new System.Drawing.Point(95, 138);
             this.txt_costo.Name = "txt_costo";
             this.txt_costo.Pp_Campo = null;
             this.txt_costo.Pp_MensajeError = null;
@@ -131,7 +131,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // txt_duracion
             // 
             this.txt_duracion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_duracion.Location = new System.Drawing.Point(102, 108);
+            this.txt_duracion.Location = new System.Drawing.Point(95, 80);
             this.txt_duracion.Name = "txt_duracion";
             this.txt_duracion.Pp_Campo = null;
             this.txt_duracion.Pp_MensajeError = null;
@@ -143,7 +143,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // txt_descripcion
             // 
             this.txt_descripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_descripcion.Location = new System.Drawing.Point(102, 134);
+            this.txt_descripcion.Location = new System.Drawing.Point(95, 109);
             this.txt_descripcion.Name = "txt_descripcion";
             this.txt_descripcion.Pp_Campo = null;
             this.txt_descripcion.Pp_MensajeError = null;
@@ -155,7 +155,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // txt_id_pack
             // 
             this.txt_id_pack.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_id_pack.Location = new System.Drawing.Point(102, 82);
+            this.txt_id_pack.Location = new System.Drawing.Point(95, 51);
             this.txt_id_pack.Name = "txt_id_pack";
             this.txt_id_pack.Pp_Campo = null;
             this.txt_id_pack.Pp_MensajeError = null;
@@ -168,7 +168,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 16);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 32);
             this.label1.TabIndex = 41;
@@ -177,10 +177,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // cmb_id_region
             // 
             this.cmb_id_region.FormattingEnabled = true;
-            this.cmb_id_region.Location = new System.Drawing.Point(102, 187);
+            this.cmb_id_region.Location = new System.Drawing.Point(95, 167);
             this.cmb_id_region.Name = "cmb_id_region";
             this.cmb_id_region.Pp_Conseleccion = false;
-            this.cmb_id_region.Pp_Descripcion = "id_region";
+            this.cmb_id_region.Pp_Descripcion = "descripcion";
             this.cmb_id_region.Pp_MensajeError = null;
             this.cmb_id_region.Pp_NombreCampo = null;
             this.cmb_id_region.Pp_NombreTabla = null;
@@ -194,7 +194,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 266);
+            this.ClientSize = new System.Drawing.Size(303, 227);
             this.Controls.Add(this.cmb_id_region);
             this.Controls.Add(this.bttn_cancelar);
             this.Controls.Add(this.bttn_aceptar);
@@ -208,6 +208,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.Controls.Add(this.txt_descripcion);
             this.Controls.Add(this.txt_id_pack);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Baja_prepago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Baja_prepago";

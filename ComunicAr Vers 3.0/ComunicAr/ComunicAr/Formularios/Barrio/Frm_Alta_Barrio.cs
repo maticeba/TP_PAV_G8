@@ -18,11 +18,6 @@ namespace ComunicAr.Formularios.Barrio
             InitializeComponent();
         }
 
-        private void txt_nombre_barrio_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_cliente_alta_aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales Tratamiento = new TratamientosEspeciales();

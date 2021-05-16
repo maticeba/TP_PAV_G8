@@ -55,10 +55,10 @@ namespace ComunicAr.Formularios.Barrio
             this.cod_barrio,
             this.nombre_barrio,
             this.cod_ciudad});
-            this.GridBarrio.Location = new System.Drawing.Point(61, 145);
+            this.GridBarrio.Location = new System.Drawing.Point(12, 147);
             this.GridBarrio.Name = "GridBarrio";
             this.GridBarrio.ReadOnly = true;
-            this.GridBarrio.Size = new System.Drawing.Size(342, 262);
+            this.GridBarrio.Size = new System.Drawing.Size(417, 252);
             this.GridBarrio.TabIndex = 4;
             this.GridBarrio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridBarrio_CellContentClick);
             // 
@@ -67,16 +67,16 @@ namespace ComunicAr.Formularios.Barrio
             this.groupBox1.Controls.Add(this.btn_Consulta);
             this.groupBox1.Controls.Add(this.txt_filtro_cod_servicio);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(25, 26);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(402, 77);
+            this.groupBox1.Size = new System.Drawing.Size(417, 79);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
             // btn_Consulta
             // 
-            this.btn_Consulta.Location = new System.Drawing.Point(315, 32);
+            this.btn_Consulta.Location = new System.Drawing.Point(292, 34);
             this.btn_Consulta.Name = "btn_Consulta";
             this.btn_Consulta.Size = new System.Drawing.Size(75, 23);
             this.btn_Consulta.TabIndex = 3;
@@ -86,30 +86,30 @@ namespace ComunicAr.Formularios.Barrio
             // 
             // txt_filtro_cod_servicio
             // 
-            this.txt_filtro_cod_servicio.Location = new System.Drawing.Point(110, 34);
+            this.txt_filtro_cod_servicio.Location = new System.Drawing.Point(134, 34);
             this.txt_filtro_cod_servicio.Name = "txt_filtro_cod_servicio";
             this.txt_filtro_cod_servicio.Pp_Campo = null;
             this.txt_filtro_cod_servicio.Pp_MensajeError = null;
             this.txt_filtro_cod_servicio.Pp_Tabla = null;
             this.txt_filtro_cod_servicio.Pp_Validable = false;
-            this.txt_filtro_cod_servicio.Size = new System.Drawing.Size(183, 20);
+            this.txt_filtro_cod_servicio.Size = new System.Drawing.Size(137, 23);
             this.txt_filtro_cod_servicio.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Location = new System.Drawing.Point(48, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(80, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo Barrio";
             // 
             // bttn_baja_barrio
             // 
             this.bttn_baja_barrio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_baja_barrio.Location = new System.Drawing.Point(221, 109);
+            this.bttn_baja_barrio.Location = new System.Drawing.Point(268, 108);
             this.bttn_baja_barrio.Name = "bttn_baja_barrio";
-            this.bttn_baja_barrio.Size = new System.Drawing.Size(92, 29);
+            this.bttn_baja_barrio.Size = new System.Drawing.Size(104, 34);
             this.bttn_baja_barrio.TabIndex = 14;
             this.bttn_baja_barrio.Text = "Baja";
             this.bttn_baja_barrio.UseVisualStyleBackColor = true;
@@ -118,9 +118,9 @@ namespace ComunicAr.Formularios.Barrio
             // bttn_alta_barrio
             // 
             this.bttn_alta_barrio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_alta_barrio.Location = new System.Drawing.Point(25, 109);
+            this.bttn_alta_barrio.Location = new System.Drawing.Point(12, 108);
             this.bttn_alta_barrio.Name = "bttn_alta_barrio";
-            this.bttn_alta_barrio.Size = new System.Drawing.Size(92, 29);
+            this.bttn_alta_barrio.Size = new System.Drawing.Size(104, 34);
             this.bttn_alta_barrio.TabIndex = 13;
             this.bttn_alta_barrio.Text = "Alta";
             this.bttn_alta_barrio.UseVisualStyleBackColor = true;
@@ -129,9 +129,9 @@ namespace ComunicAr.Formularios.Barrio
             // bttn_modificar_barrio
             // 
             this.bttn_modificar_barrio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_modificar_barrio.Location = new System.Drawing.Point(123, 109);
+            this.bttn_modificar_barrio.Location = new System.Drawing.Point(140, 108);
             this.bttn_modificar_barrio.Name = "bttn_modificar_barrio";
-            this.bttn_modificar_barrio.Size = new System.Drawing.Size(92, 29);
+            this.bttn_modificar_barrio.Size = new System.Drawing.Size(104, 34);
             this.bttn_modificar_barrio.TabIndex = 12;
             this.bttn_modificar_barrio.Text = "Modificar";
             this.bttn_modificar_barrio.UseVisualStyleBackColor = true;
@@ -140,9 +140,9 @@ namespace ComunicAr.Formularios.Barrio
             // bttn_salir
             // 
             this.bttn_salir.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_salir.Location = new System.Drawing.Point(362, 413);
+            this.bttn_salir.Location = new System.Drawing.Point(325, 415);
             this.bttn_salir.Name = "bttn_salir";
-            this.bttn_salir.Size = new System.Drawing.Size(92, 29);
+            this.bttn_salir.Size = new System.Drawing.Size(104, 34);
             this.bttn_salir.TabIndex = 15;
             this.bttn_salir.Text = "Salir";
             this.bttn_salir.UseVisualStyleBackColor = true;
@@ -151,9 +151,9 @@ namespace ComunicAr.Formularios.Barrio
             // bttn_resfrecar
             // 
             this.bttn_resfrecar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_resfrecar.Location = new System.Drawing.Point(12, 413);
+            this.bttn_resfrecar.Location = new System.Drawing.Point(12, 415);
             this.bttn_resfrecar.Name = "bttn_resfrecar";
-            this.bttn_resfrecar.Size = new System.Drawing.Size(92, 29);
+            this.bttn_resfrecar.Size = new System.Drawing.Size(104, 34);
             this.bttn_resfrecar.TabIndex = 16;
             this.bttn_resfrecar.Text = "Resfrescar";
             this.bttn_resfrecar.UseVisualStyleBackColor = true;
@@ -164,24 +164,28 @@ namespace ComunicAr.Formularios.Barrio
             this.cod_barrio.HeaderText = "Codigo Barrio";
             this.cod_barrio.Name = "cod_barrio";
             this.cod_barrio.ReadOnly = true;
+            this.cod_barrio.Visible = false;
             // 
             // nombre_barrio
             // 
             this.nombre_barrio.HeaderText = "Nombre Barrio";
             this.nombre_barrio.Name = "nombre_barrio";
             this.nombre_barrio.ReadOnly = true;
+            this.nombre_barrio.Width = 200;
             // 
             // cod_ciudad
             // 
             this.cod_ciudad.HeaderText = "Codigo Ciudad";
             this.cod_ciudad.Name = "cod_ciudad";
             this.cod_ciudad.ReadOnly = true;
+            this.cod_ciudad.Width = 150;
             // 
             // Frm_ABM_Barrio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 450);
+            this.ClientSize = new System.Drawing.Size(445, 457);
+            this.ControlBox = false;
             this.Controls.Add(this.bttn_resfrecar);
             this.Controls.Add(this.bttn_salir);
             this.Controls.Add(this.bttn_baja_barrio);
@@ -189,6 +193,8 @@ namespace ComunicAr.Formularios.Barrio
             this.Controls.Add(this.bttn_modificar_barrio);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GridBarrio);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_ABM_Barrio";
             this.Text = "Frm_ABM_Barrio";
             this.Load += new System.EventHandler(this.Frm_ABM_Barrio_Load);
