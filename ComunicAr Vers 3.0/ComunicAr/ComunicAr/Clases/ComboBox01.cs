@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace ComunicAr.Clases
 {
@@ -30,5 +31,65 @@ namespace ComunicAr.Clases
             this.DataSource = _BD.EjecutarSelect(sql);
 
         }
+
+        public void CargarComboxTipo()
+        {
+            DataTable table2 = new DataTable();
+            DataColumn[] cols =
+            {
+                    new DataColumn("id", typeof(Int32)),
+                    new DataColumn("tipo", typeof(string))
+            };
+            table2.Columns.AddRange(cols);
+            table2.Rows.Add(0, "Datos");
+            table2.Rows.Add(1, "Fijos");
+            table2.Rows.Add(2, "Prepagos");
+            this.DisplayMember = "tipo";
+            this.ValueMember = "id";
+            this.DataSource = table2;
+        }
+
+        public void CargarComboServicio(string tipo)
+        {
+            
+            if (tipo == "0")
+            {
+                string sql = "SELECT DISTINCT cod_datos as cod , descripcion FROM servicios_datos " ;
+                DataTable tabla = new DataTable();
+                tabla = _BD.EjecutarSelect(sql);
+                this.DisplayMember = "descripcion";
+                this.ValueMember = "cod";
+                this.DataSource = tabla;
+
+            }
+            else if (tipo == "1")
+            {
+                string sql = "SELECT DISTINCT cod_servicio as cod, descripcion FROM servicio_fijo ";
+                DataTable tabla = new DataTable();
+                tabla = _BD.EjecutarSelect(sql);
+                this.DisplayMember = "descripcion";
+                this.ValueMember = "cod";
+                this.DataSource = tabla;
+            }
+
+            else if (tipo == "2")
+            {
+                string sql = "SELECT DISTINCT id_pack as cod, descripcion FROM servicios_prepago ";
+                DataTable tabla = new DataTable();
+                tabla = _BD.EjecutarSelect(sql);
+                this.DisplayMember = "descripcion";
+                this.ValueMember = "cod";
+                this.DataSource = tabla;
+            }
+            else
+            {
+                MessageBox.Show("aca hay un problema " + tipo);
+            }
+
+
+
+
+        }
+
     }
 }

@@ -37,11 +37,15 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.label3 = new System.Windows.Forms.Label();
             this.bttn_cancelar = new System.Windows.Forms.Button();
             this.bttn_aceptar = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_cliente = new System.Windows.Forms.Button();
+            this.cmb_Numero = new ComunicAr.Clases.ComboBox02();
+            this.textBox011 = new ComunicAr.Clases.TextBox01();
+            this.cmb_Servicio = new ComunicAr.Clases.ComboBox01();
+            this.cmb_Tipo = new ComunicAr.Clases.ComboBox01();
             this.txt_fecha_hasta = new ComunicAr.Clases.TextBox01();
-            this.txt_id_numero = new ComunicAr.Clases.TextBox01();
-            this.txt_tipo_servicio = new ComunicAr.Clases.TextBox01();
             this.txt_fecha_desde = new ComunicAr.Clases.TextBox01();
-            this.txt_id_Servicio = new ComunicAr.Clases.TextBox01();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +62,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label7.Location = new System.Drawing.Point(41, 53);
+            this.label7.Location = new System.Drawing.Point(30, 87);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 15);
             this.label7.TabIndex = 23;
@@ -68,7 +72,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label6.Location = new System.Drawing.Point(30, 111);
+            this.label6.Location = new System.Drawing.Point(30, 181);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 22;
@@ -78,7 +82,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label5.Location = new System.Drawing.Point(32, 140);
+            this.label5.Location = new System.Drawing.Point(28, 214);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 15);
             this.label5.TabIndex = 21;
@@ -88,7 +92,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label4.Location = new System.Drawing.Point(29, 82);
+            this.label4.Location = new System.Drawing.Point(29, 58);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 15);
             this.label4.TabIndex = 20;
@@ -98,7 +102,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label3.Location = new System.Drawing.Point(39, 169);
+            this.label3.Location = new System.Drawing.Point(28, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 15);
             this.label3.TabIndex = 19;
@@ -107,7 +111,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // bttn_cancelar
             // 
             this.bttn_cancelar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_cancelar.Location = new System.Drawing.Point(176, 201);
+            this.bttn_cancelar.Location = new System.Drawing.Point(215, 258);
             this.bttn_cancelar.Name = "bttn_cancelar";
             this.bttn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.bttn_cancelar.TabIndex = 25;
@@ -118,7 +122,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // bttn_aceptar
             // 
             this.bttn_aceptar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_aceptar.Location = new System.Drawing.Point(70, 201);
+            this.bttn_aceptar.Location = new System.Drawing.Point(134, 258);
             this.bttn_aceptar.Name = "bttn_aceptar";
             this.bttn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.bttn_aceptar.TabIndex = 24;
@@ -126,10 +130,102 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.bttn_aceptar.UseVisualStyleBackColor = true;
             this.bttn_aceptar.Click += new System.EventHandler(this.bttn_aceptar_Click);
             // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Location = new System.Drawing.Point(298, 52);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(75, 21);
+            this.btn_buscar.TabIndex = 28;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 118);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Id Cliente";
+            // 
+            // btn_cliente
+            // 
+            this.btn_cliente.Location = new System.Drawing.Point(298, 110);
+            this.btn_cliente.Name = "btn_cliente";
+            this.btn_cliente.Size = new System.Drawing.Size(75, 21);
+            this.btn_cliente.TabIndex = 28;
+            this.btn_cliente.Text = "Buscar";
+            this.btn_cliente.UseVisualStyleBackColor = true;
+            this.btn_cliente.Click += new System.EventHandler(this.btn_cliente_Click);
+            // 
+            // cmb_Numero
+            // 
+            this.cmb_Numero.Enable = false;
+            this.cmb_Numero.FormattingEnabled = true;
+            this.cmb_Numero.Location = new System.Drawing.Point(109, 146);
+            this.cmb_Numero.Name = "cmb_Numero";
+            this.cmb_Numero.Pp_Conseleccion = false;
+            this.cmb_Numero.Pp_Descripcion1 = "cod_nacional";
+            this.cmb_Numero.Pp_Descripcion2 = "cod_area";
+            this.cmb_Numero.Pp_Descripcion3 = "nro_telefono";
+            this.cmb_Numero.Pp_MensajeError = null;
+            this.cmb_Numero.Pp_NombreCampo = null;
+            this.cmb_Numero.Pp_NombreTabla = null;
+            this.cmb_Numero.Pp_PK1 = "id_numero";
+            this.cmb_Numero.Pp_Tabla = "Numero";
+            this.cmb_Numero.Pp_Validable = false;
+            this.cmb_Numero.Size = new System.Drawing.Size(181, 21);
+            this.cmb_Numero.TabIndex = 32;
+            // 
+            // textBox011
+            // 
+            this.textBox011.Location = new System.Drawing.Point(109, 111);
+            this.textBox011.Name = "textBox011";
+            this.textBox011.Pp_Campo = null;
+            this.textBox011.Pp_MensajeError = null;
+            this.textBox011.Pp_Tabla = null;
+            this.textBox011.Pp_Validable = false;
+            this.textBox011.Size = new System.Drawing.Size(181, 20);
+            this.textBox011.TabIndex = 31;
+            // 
+            // cmb_Servicio
+            // 
+            this.cmb_Servicio.FormattingEnabled = true;
+            this.cmb_Servicio.Location = new System.Drawing.Point(109, 81);
+            this.cmb_Servicio.Name = "cmb_Servicio";
+            this.cmb_Servicio.Pp_Conseleccion = false;
+            this.cmb_Servicio.Pp_Descripcion = null;
+            this.cmb_Servicio.Pp_MensajeError = null;
+            this.cmb_Servicio.Pp_NombreCampo = null;
+            this.cmb_Servicio.Pp_NombreTabla = null;
+            this.cmb_Servicio.Pp_PK = null;
+            this.cmb_Servicio.Pp_Tabla = null;
+            this.cmb_Servicio.Pp_Validable = false;
+            this.cmb_Servicio.Size = new System.Drawing.Size(181, 21);
+            this.cmb_Servicio.TabIndex = 27;
+            // 
+            // cmb_Tipo
+            // 
+            this.cmb_Tipo.FormattingEnabled = true;
+            this.cmb_Tipo.Location = new System.Drawing.Point(109, 52);
+            this.cmb_Tipo.Name = "cmb_Tipo";
+            this.cmb_Tipo.Pp_Conseleccion = false;
+            this.cmb_Tipo.Pp_Descripcion = null;
+            this.cmb_Tipo.Pp_MensajeError = null;
+            this.cmb_Tipo.Pp_NombreCampo = null;
+            this.cmb_Tipo.Pp_NombreTabla = null;
+            this.cmb_Tipo.Pp_PK = null;
+            this.cmb_Tipo.Pp_Tabla = null;
+            this.cmb_Tipo.Pp_Validable = false;
+            this.cmb_Tipo.Size = new System.Drawing.Size(181, 21);
+            this.cmb_Tipo.TabIndex = 26;
+            this.cmb_Tipo.SelectedIndexChanged += new System.EventHandler(this.comboBox011_SelectedIndexChanged);
+            // 
             // txt_fecha_hasta
             // 
             this.txt_fecha_hasta.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_fecha_hasta.Location = new System.Drawing.Point(109, 137);
+            this.txt_fecha_hasta.Location = new System.Drawing.Point(109, 211);
             this.txt_fecha_hasta.Name = "txt_fecha_hasta";
             this.txt_fecha_hasta.Pp_Campo = null;
             this.txt_fecha_hasta.Pp_MensajeError = null;
@@ -139,34 +235,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.txt_fecha_hasta.TabIndex = 18;
             this.txt_fecha_hasta.Text = "DD/MM/YYYY";
             // 
-            // txt_id_numero
-            // 
-            this.txt_id_numero.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_id_numero.Location = new System.Drawing.Point(109, 166);
-            this.txt_id_numero.Name = "txt_id_numero";
-            this.txt_id_numero.Pp_Campo = null;
-            this.txt_id_numero.Pp_MensajeError = null;
-            this.txt_id_numero.Pp_Tabla = null;
-            this.txt_id_numero.Pp_Validable = false;
-            this.txt_id_numero.Size = new System.Drawing.Size(181, 23);
-            this.txt_id_numero.TabIndex = 17;
-            // 
-            // txt_tipo_servicio
-            // 
-            this.txt_tipo_servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_tipo_servicio.Location = new System.Drawing.Point(109, 79);
-            this.txt_tipo_servicio.Name = "txt_tipo_servicio";
-            this.txt_tipo_servicio.Pp_Campo = null;
-            this.txt_tipo_servicio.Pp_MensajeError = null;
-            this.txt_tipo_servicio.Pp_Tabla = null;
-            this.txt_tipo_servicio.Pp_Validable = false;
-            this.txt_tipo_servicio.Size = new System.Drawing.Size(181, 23);
-            this.txt_tipo_servicio.TabIndex = 16;
-            // 
             // txt_fecha_desde
             // 
             this.txt_fecha_desde.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_fecha_desde.Location = new System.Drawing.Point(109, 108);
+            this.txt_fecha_desde.Location = new System.Drawing.Point(109, 178);
             this.txt_fecha_desde.Name = "txt_fecha_desde";
             this.txt_fecha_desde.Pp_Campo = null;
             this.txt_fecha_desde.Pp_MensajeError = null;
@@ -176,23 +248,18 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.txt_fecha_desde.TabIndex = 15;
             this.txt_fecha_desde.Text = "DD/MM/YYYY";
             // 
-            // txt_id_Servicio
-            // 
-            this.txt_id_Servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_id_Servicio.Location = new System.Drawing.Point(109, 50);
-            this.txt_id_Servicio.Name = "txt_id_Servicio";
-            this.txt_id_Servicio.Pp_Campo = null;
-            this.txt_id_Servicio.Pp_MensajeError = null;
-            this.txt_id_Servicio.Pp_Tabla = null;
-            this.txt_id_Servicio.Pp_Validable = false;
-            this.txt_id_Servicio.Size = new System.Drawing.Size(181, 23);
-            this.txt_id_Servicio.TabIndex = 14;
-            // 
             // Frm_Alta_Servicios_Contratados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 236);
+            this.ClientSize = new System.Drawing.Size(386, 293);
+            this.Controls.Add(this.cmb_Numero);
+            this.Controls.Add(this.textBox011);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_cliente);
+            this.Controls.Add(this.btn_buscar);
+            this.Controls.Add(this.cmb_Servicio);
+            this.Controls.Add(this.cmb_Tipo);
             this.Controls.Add(this.bttn_cancelar);
             this.Controls.Add(this.bttn_aceptar);
             this.Controls.Add(this.label7);
@@ -201,15 +268,13 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_fecha_hasta);
-            this.Controls.Add(this.txt_id_numero);
-            this.Controls.Add(this.txt_tipo_servicio);
             this.Controls.Add(this.txt_fecha_desde);
-            this.Controls.Add(this.txt_id_Servicio);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Alta_Servicios_Contratados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Alta_Servicios";
+            this.Load += new System.EventHandler(this.Frm_Alta_Servicios_Contratados_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,11 +289,15 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private Clases.TextBox01 txt_fecha_hasta;
-        private Clases.TextBox01 txt_id_numero;
-        private Clases.TextBox01 txt_tipo_servicio;
         private Clases.TextBox01 txt_fecha_desde;
-        private Clases.TextBox01 txt_id_Servicio;
         private System.Windows.Forms.Button bttn_cancelar;
         private System.Windows.Forms.Button bttn_aceptar;
+        private Clases.ComboBox01 cmb_Tipo;
+        private Clases.ComboBox01 cmb_Servicio;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Label label2;
+        private Clases.TextBox01 textBox011;
+        private Clases.ComboBox02 cmb_Numero;
+        private System.Windows.Forms.Button btn_cliente;
     }
 }
