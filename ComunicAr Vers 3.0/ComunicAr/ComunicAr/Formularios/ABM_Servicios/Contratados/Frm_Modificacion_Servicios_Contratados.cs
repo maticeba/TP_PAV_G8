@@ -21,26 +21,79 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             InitializeComponent();
         }
 
-        private void textBox014_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Frm_Modificacion_Servicios_Load(object sender, EventArgs e)
         {
             Servicios_Contratados servicios = new Servicios_Contratados();
             MostrarDatos(servicios.Servicios_contratados_por_codigo(cod_servicio));
+            cmb_tipo_servicio.CargarComboxTipo();
 
         }
 
         private void MostrarDatos(DataTable tabla)
         {
-           
-            txt_tipo_servicio.Text = tabla.Rows[0]["tipo_servicio"].ToString();
-            txt_id_Servicio.Text = tabla.Rows[0]["id_servicio"].ToString();
-            txt_fecha_desde.Text = tabla.Rows[0]["fecha_desde"].ToString();
-            txt_fecha_hasta.Text = tabla.Rows[0]["fecha_hasta"].ToString();
-            txt_id_numero.Text = tabla.Rows[0]["id_numero"].ToString();
+            cmb_tipo_servicio.CargarComboxTipo();
+            cmb_tipo_servicio.SelectedIndex = -1;
+            string tipo = tabla.Rows[0]["tipo_servicio"].ToString();
+            MessageBox.Show(tipo);
+            if (tipo == "A")
+            {
+                MessageBox.Show("Estoy pasando por A");
+                cmb_tipo_servicio.SelectedIndex = 0;
+            }
+            else if (tipo == "B")
+            {
+                MessageBox.Show("Estoy pasando por B");
+                cmb_tipo_servicio.SelectedIndex = 1;
+            }
+            else
+            {
+                MessageBox.Show("Estoy pasando por B");
+                cmb_tipo_servicio.SelectedIndex = 2;
+            }
+
+            cmb_servicio_ofrecido.CargarComboServicio(tipo);
+
+            DataTable tabla1 = new DataTable();
+            Servicios_Contratados servicio = new Servicios_Contratados();
+            tabla1 = servicio.Search_servicio(tipo);
+
+            for (int i = 0; i < tabla1.Rows.Count; i++)
+            {
+                if (tabla1.Rows[i][0].ToString() == tabla.Rows[0]["id_servicio"].ToString())
+                {
+                    cmb_servicio_ofrecido.SelectedIndex = i;
+                }
+            }
+
+            Llamadas llamada = new Llamadas();
+            DataTable tabla2 = new DataTable();
+            string id_nro = tabla.Rows[0]["id_numero"].ToString();
+            tabla2 = llamada.Search_datosNroXidNro(id_nro);
+
+            string nro_cliente = tabla2.Rows[0]["nro_cliente"].ToString();
+
+            cmb_numero.CargarComboXcliente(nro_cliente, tabla2.Rows[0]["nombre_cliente"].ToString());
+
+            DataTable tabla3 = new DataTable();
+            tabla3 = llamada.Search_numero(nro_cliente);
+
+            for (int i = 0; i < tabla3.Rows.Count; i++)
+            {
+                if (tabla3.Rows[i]["id_numero"].ToString() == tabla2.Rows[0]["id_numero"].ToString())
+                {
+                    cmb_numero.SelectedIndex = i;
+                }
+            }
+
+            string dia_desde = tabla.Rows[0]["dia_desde"].ToString();
+            string mes_desde = tabla.Rows[0]["mes_desde"].ToString();
+            string año_desde = tabla.Rows[0]["año_desde"].ToString();
+            txt_fecha_desde.Text = dia_desde + "/" + mes_desde + "/" + año_desde;
+
+            string dia_hasta = tabla.Rows[0]["dia_hasta"].ToString();
+            string mes_hasta = tabla.Rows[0]["mes_hasta"].ToString();
+            string año_hasta = tabla.Rows[0]["año_hasta"].ToString();
+            txt_fecha_hasta.Text = dia_hasta + "/" + mes_hasta + "/" + año_hasta;
         }
 
         private void bttn_cancelar_Click(object sender, EventArgs e)
@@ -56,11 +109,11 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
                 Servicios_Contratados servicio = new Servicios_Contratados();
 
                
-                servicio.Pp_tipo_servicio = txt_tipo_servicio.Text;
-                servicio.Pp_id_servicio = txt_id_Servicio.Text;
+                servicio.Pp_tipo_servicio = cmb_tipo_servicio.SelectedValue.ToString();
+                servicio.Pp_id_servicio = cmb_servicio_ofrecido.SelectedValue.ToString();
                 servicio.Pp_fecha_desde = txt_fecha_desde.Text;
                 servicio.Pp_fecha_hasta = txt_fecha_hasta.Text;
-                servicio.Pp_id_numero = txt_id_numero.Text;
+                servicio.Pp_id_numero = cmb_numero.SelectedValue.ToString();
                 servicio.Pp_cod_servicio = cod_servicio;
 
                 servicio.Modificar();

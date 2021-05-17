@@ -23,14 +23,59 @@ namespace ComunicAr.Negocio
         Acceso_BD BD = new Acceso_BD();
         public DataTable ServiciosCompletos()
         {
-            string sql = "SELECT * FROM servicios_contratados";
+            string sql = @"SELECT s.cod_servicio, s.tipo_servicio, s.id_servicio, " +
+                            "DATEPART(DAY, s.fecha_desde) AS dia_desde, " +
+                            "DATEPART(MONTH, s.fecha_desde) AS mes_desde, " +
+                            "DATEPART(YEAR, s.fecha_desde) AS año_desde, " +
+                            "DATEPART(DAY, s.fecha_hasta) AS dia_hasta, " +
+                            "DATEPART(MONTH, s.fecha_hasta) AS mes_hasta, " +
+                            "DATEPART(YEAR, s.fecha_hasta) AS año_hasta, " +
+                            "n.cod_nacional, n.cod_area, n.nro_telefono " +
+                            "FROM servicios_contratados s, Numero n " +
+                            "WHERE s.id_numero = n.id_numero";
             return BD.EjecutarSelect(sql);
+        }
+
+        public string servicio_ofrecido(string tipo, string id)
+        {
+            DataTable tabla = new DataTable();
+            if (tipo == "A")
+            {
+                string sql = "SELECT descripcion FROM Servicios_datos WHERE cod_datos = " + id;
+                tabla = BD.EjecutarSelect(sql);
+
+                return tabla.Rows[0]["descripcion"].ToString();
+            }
+            else if (tipo == "B")
+            {
+                string sql = "SELECT descripcion FROM Servicio_fijo WHERE cod_servicio = " + id;
+                tabla = BD.EjecutarSelect(sql);
+
+                return tabla.Rows[0]["descripcion"].ToString();
+            }
+            else
+            {
+                string sql = "SELECT descripcion FROM Servicios_prepago WHERE id_pack = " + id;
+                tabla = BD.EjecutarSelect(sql);
+
+                return tabla.Rows[0]["descripcion"].ToString();
+            }
         }
 
         public DataTable Servicios_contratados_por_codigo(string cod_servicio)
         {
-            string sql = @"SELECT s.* FROM servicios_contratados s "
-                       + "WHERE s.cod_servicio = " + cod_servicio;
+            string sql = @"SELECT s.id_servicio, s.tipo_servicio, s.id_numero, " +
+                       " n.cod_nacional, n.cod_area, n.nro_telefono, " +
+                       " DATEPART(DAY, s.fecha_desde) AS dia_desde, " +
+                       " DATEPART(DAY, s.fecha_desde) AS dia_desde, " +
+                       " DATEPART(MONTH, s.fecha_desde) AS mes_desde, " +
+                       " DATEPART(YEAR, s.fecha_desde) AS año_desde, " +
+                       " DATEPART(DAY, s.fecha_hasta) AS dia_hasta, " +
+                       " DATEPART(MONTH, s.fecha_hasta) AS mes_hasta, " +
+                       " DATEPART(YEAR, s.fecha_hasta) AS año_hasta " +
+                       " FROM servicios_contratados s, Numero n " +
+                       " WHERE s.id_numero = n.id_numero " +
+                            " AND s.cod_servicio = " + cod_servicio;
             return BD.EjecutarSelect(sql);
         }
 
@@ -75,6 +120,27 @@ namespace ComunicAr.Negocio
         {
             string sqlBorrar = "DELETE FROM servicios_contratados WHERE cod_servicio = " + Pp_cod_servicio;
             BD.Borrar(sqlBorrar);
+        }
+
+        public DataTable Search_servicio(string tipo)
+        {
+            if (tipo == "A")
+            {
+                string sql = "SELECT DISTINCT cod_datos as cod FROM servicios_datos ";
+                return BD.EjecutarSelect(sql);
+
+            }
+            else if (tipo == "B")
+            {
+                string sql = "SELECT DISTINCT cod_servicio as cod FROM servicio_fijo ";
+                return BD.EjecutarSelect(sql);
+            }
+
+            else
+            {
+                string sql = "SELECT DISTINCT id_pack as cod FROM servicios_prepago ";
+                return BD.EjecutarSelect(sql);
+            }
         }
     }
 }

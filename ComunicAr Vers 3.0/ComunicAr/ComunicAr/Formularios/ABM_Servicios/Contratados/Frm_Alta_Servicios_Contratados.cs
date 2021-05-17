@@ -81,7 +81,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             }
             else
             {
-                cmb_Servicio.CargarComboServicio(cmb_Tipo.SelectedIndex.ToString());
+                cmb_Servicio.CargarComboServicio(cmb_Tipo.SelectedValue.ToString());
                
             }
             //MessageBox.Show(cmb_Tipo.SelectedIndex.ToString());

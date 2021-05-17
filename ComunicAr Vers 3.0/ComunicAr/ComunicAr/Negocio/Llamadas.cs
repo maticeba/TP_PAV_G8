@@ -69,10 +69,27 @@ namespace ComunicAr.Negocio
 
         public DataTable Search_cliente(string id_cliente)
         {
-            string sql = "SELECT nombre_razonSocial FROM clientes WHERE nro_cliente = " + id_cliente;
+            string sql = "SELECT nombre_razonSocial FROM cliente WHERE nro_cliente = " + id_cliente;
 
             return BD.EjecutarSelect(sql);
         }
+
+        public DataTable Search_datosNroXidNro(string id_nro)
+        {
+            string sql = @"SELECT n.nro_cliente, c.nombre_razonSocial as nombre_cliente, id_numero " +
+                            "FROM Numero n, cliente c " +
+                            "WHERE n.nro_cliente = c.nro_cliente " +
+                                "AND id_numero = " + id_nro;
+
+            return BD.EjecutarSelect(sql);
+        }
+        public DataTable Search_numero(string id_cliente)
+        {
+            string sql = "SELECT id_numero FROM Numero WHERE nro_cliente = " + id_cliente;
+
+            return BD.EjecutarSelect(sql);
+        }
+
         public string GetTypeCom (string id_emisor, string id_receptor)
         {
             string sql_emisor_nac = @"SELECT n.cod_nacional AS nac, n.cod_area AS area, " + 
@@ -217,5 +234,6 @@ namespace ComunicAr.Negocio
             }
             return -1;
         }
+        
     }
 }

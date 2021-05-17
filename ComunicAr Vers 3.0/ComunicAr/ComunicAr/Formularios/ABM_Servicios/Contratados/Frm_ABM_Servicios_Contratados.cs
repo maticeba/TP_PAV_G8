@@ -37,12 +37,43 @@ namespace ComunicAr.Formularios.Servicios
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 GridServicios.Rows.Add();
+
                 GridServicios.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_servicio"].ToString();
-                GridServicios.Rows[i].Cells[1].Value = tabla.Rows[i]["tipo_servicio"].ToString();
-                GridServicios.Rows[i].Cells[2].Value = tabla.Rows[i]["id_servicio"].ToString();
-                GridServicios.Rows[i].Cells[3].Value = tabla.Rows[i]["fecha_desde"].ToString();
-                GridServicios.Rows[i].Cells[4].Value = tabla.Rows[i]["fecha_hasta"].ToString();
-                GridServicios.Rows[i].Cells[5].Value = tabla.Rows[i]["id_numero"].ToString();
+
+                string tipo = tabla.Rows[i]["tipo_servicio"].ToString();
+                if (tipo == "A")
+                {
+                    GridServicios.Rows[i].Cells[1].Value = "Servicio de Datos";
+                }
+                else if (tipo == "B")
+                {
+                    GridServicios.Rows[i].Cells[1].Value = "Servicio Fijo";
+                }
+                else
+                {
+                    GridServicios.Rows[i].Cells[1].Value = "Servicio Prepago";
+                }
+
+                string id = tabla.Rows[i]["id_servicio"].ToString();
+                Servicios_Contratados serv_contratado = new Servicios_Contratados();
+                string servicio_ofrec = serv_contratado.servicio_ofrecido(tipo, id);
+                GridServicios.Rows[i].Cells[2].Value = servicio_ofrec;
+
+                string dia_desde = tabla.Rows[i]["dia_desde"].ToString();
+                string mes_desde = tabla.Rows[i]["mes_desde"].ToString();
+                string año_desde = tabla.Rows[i]["año_desde"].ToString();
+                GridServicios.Rows[i].Cells[3].Value = dia_desde + "/" + mes_desde + "/" + año_desde;
+
+                string dia_hasta = tabla.Rows[i]["dia_hasta"].ToString();
+                string mes_hasta = tabla.Rows[i]["mes_hasta"].ToString();
+                string año_hasta = tabla.Rows[i]["año_hasta"].ToString();
+                GridServicios.Rows[i].Cells[4].Value = dia_hasta + "/" + mes_hasta + "/" + año_hasta;
+
+                string cod_nacional = tabla.Rows[i]["cod_nacional"].ToString();
+                string cod_area = tabla.Rows[i]["cod_area"].ToString();
+                string nro_tel = tabla.Rows[i]["nro_telefono"].ToString();
+                GridServicios.Rows[i].Cells[5].Value = "+" + cod_nacional + " " + cod_area + " " + nro_tel;
+
             }
         }
 

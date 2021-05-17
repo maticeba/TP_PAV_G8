@@ -30,12 +30,6 @@ namespace ComunicAr.Formularios.Servicios
         private void InitializeComponent()
         {
             this.GridServicios = new System.Windows.Forms.DataGridView();
-            this.codigo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_salir_cliente = new System.Windows.Forms.Button();
             this.bttn_modificar_servicios = new System.Windows.Forms.Button();
             this.bttn_alta_servicio = new System.Windows.Forms.Button();
@@ -45,6 +39,12 @@ namespace ComunicAr.Formularios.Servicios
             this.btn_Consulta = new System.Windows.Forms.Button();
             this.txt_filtro_cod_servicio = new ComunicAr.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
+            this.codigo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridServicios)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,49 +64,13 @@ namespace ComunicAr.Formularios.Servicios
             this.GridServicios.Location = new System.Drawing.Point(12, 143);
             this.GridServicios.Name = "GridServicios";
             this.GridServicios.ReadOnly = true;
-            this.GridServicios.Size = new System.Drawing.Size(671, 252);
+            this.GridServicios.Size = new System.Drawing.Size(606, 252);
             this.GridServicios.TabIndex = 3;
             this.GridServicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridServicios_CellContentClick);
             // 
-            // codigo_servicio
-            // 
-            this.codigo_servicio.HeaderText = "Codigo Servicio";
-            this.codigo_servicio.Name = "codigo_servicio";
-            this.codigo_servicio.ReadOnly = true;
-            // 
-            // tipo_servicio
-            // 
-            this.tipo_servicio.HeaderText = "Tipo Servicio";
-            this.tipo_servicio.Name = "tipo_servicio";
-            this.tipo_servicio.ReadOnly = true;
-            // 
-            // id_servicio
-            // 
-            this.id_servicio.HeaderText = "Id servicio";
-            this.id_servicio.Name = "id_servicio";
-            this.id_servicio.ReadOnly = true;
-            // 
-            // fecha_desde
-            // 
-            this.fecha_desde.HeaderText = "Fecha Desde";
-            this.fecha_desde.Name = "fecha_desde";
-            this.fecha_desde.ReadOnly = true;
-            // 
-            // fecha_hasta
-            // 
-            this.fecha_hasta.HeaderText = "Fecha Hasta";
-            this.fecha_hasta.Name = "fecha_hasta";
-            this.fecha_hasta.ReadOnly = true;
-            // 
-            // id_numero
-            // 
-            this.id_numero.HeaderText = "Id Numero";
-            this.id_numero.Name = "id_numero";
-            this.id_numero.ReadOnly = true;
-            // 
             // btn_salir_cliente
             // 
-            this.btn_salir_cliente.Location = new System.Drawing.Point(579, 414);
+            this.btn_salir_cliente.Location = new System.Drawing.Point(514, 414);
             this.btn_salir_cliente.Name = "btn_salir_cliente";
             this.btn_salir_cliente.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_cliente.TabIndex = 5;
@@ -165,7 +129,7 @@ namespace ComunicAr.Formularios.Servicios
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(671, 75);
+            this.groupBox1.Size = new System.Drawing.Size(606, 75);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -203,11 +167,52 @@ namespace ComunicAr.Formularios.Servicios
             this.label1.Text = "Codigo Servicio";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // codigo_servicio
+            // 
+            this.codigo_servicio.HeaderText = "Id Serv.";
+            this.codigo_servicio.Name = "codigo_servicio";
+            this.codigo_servicio.ReadOnly = true;
+            this.codigo_servicio.Width = 50;
+            // 
+            // tipo_servicio
+            // 
+            this.tipo_servicio.HeaderText = "Tipo Servicio";
+            this.tipo_servicio.Name = "tipo_servicio";
+            this.tipo_servicio.ReadOnly = true;
+            // 
+            // id_servicio
+            // 
+            this.id_servicio.HeaderText = "Nomb. de Serv.";
+            this.id_servicio.Name = "id_servicio";
+            this.id_servicio.ReadOnly = true;
+            this.id_servicio.Width = 150;
+            // 
+            // fecha_desde
+            // 
+            this.fecha_desde.HeaderText = "Fecha Desde";
+            this.fecha_desde.Name = "fecha_desde";
+            this.fecha_desde.ReadOnly = true;
+            this.fecha_desde.Width = 60;
+            // 
+            // fecha_hasta
+            // 
+            this.fecha_hasta.HeaderText = "Fecha Hasta";
+            this.fecha_hasta.Name = "fecha_hasta";
+            this.fecha_hasta.ReadOnly = true;
+            this.fecha_hasta.Width = 60;
+            // 
+            // id_numero
+            // 
+            this.id_numero.HeaderText = "Nro. de Teléfono";
+            this.id_numero.Name = "id_numero";
+            this.id_numero.ReadOnly = true;
+            this.id_numero.Width = 125;
+            // 
             // Frm_ABM_Servicios_Contratados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 460);
+            this.ClientSize = new System.Drawing.Size(630, 460);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bttn_refrescar);

@@ -47,7 +47,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // bttn_cancelar
             // 
             this.bttn_cancelar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_cancelar.Location = new System.Drawing.Point(176, 201);
+            this.bttn_cancelar.Location = new System.Drawing.Point(215, 195);
             this.bttn_cancelar.Name = "bttn_cancelar";
             this.bttn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.bttn_cancelar.TabIndex = 38;
@@ -58,7 +58,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // bttn_aceptar
             // 
             this.bttn_aceptar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_aceptar.Location = new System.Drawing.Point(70, 201);
+            this.bttn_aceptar.Location = new System.Drawing.Point(109, 195);
             this.bttn_aceptar.Name = "bttn_aceptar";
             this.bttn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.bttn_aceptar.TabIndex = 37;
@@ -80,7 +80,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label6.Location = new System.Drawing.Point(30, 111);
+            this.label6.Location = new System.Drawing.Point(30, 140);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 35;
@@ -90,7 +90,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label5.Location = new System.Drawing.Point(32, 140);
+            this.label5.Location = new System.Drawing.Point(32, 169);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 15);
             this.label5.TabIndex = 34;
@@ -110,16 +110,17 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label3.Location = new System.Drawing.Point(39, 169);
+            this.label3.Location = new System.Drawing.Point(9, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.Size = new System.Drawing.Size(94, 15);
             this.label3.TabIndex = 32;
-            this.label3.Text = "Id Numero";
+            this.label3.Text = "Nro. de Teléfono";
             // 
             // txt_fecha_hasta
             // 
+            this.txt_fecha_hasta.Enabled = false;
             this.txt_fecha_hasta.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_fecha_hasta.Location = new System.Drawing.Point(109, 137);
+            this.txt_fecha_hasta.Location = new System.Drawing.Point(109, 166);
             this.txt_fecha_hasta.Name = "txt_fecha_hasta";
             this.txt_fecha_hasta.Pp_Campo = null;
             this.txt_fecha_hasta.Pp_MensajeError = null;
@@ -131,8 +132,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // txt_id_numero
             // 
+            this.txt_id_numero.Enabled = false;
             this.txt_id_numero.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_id_numero.Location = new System.Drawing.Point(109, 166);
+            this.txt_id_numero.Location = new System.Drawing.Point(109, 108);
             this.txt_id_numero.Name = "txt_id_numero";
             this.txt_id_numero.Pp_Campo = null;
             this.txt_id_numero.Pp_MensajeError = null;
@@ -143,6 +145,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // txt_tipo_servicio
             // 
+            this.txt_tipo_servicio.Enabled = false;
             this.txt_tipo_servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_tipo_servicio.Location = new System.Drawing.Point(109, 79);
             this.txt_tipo_servicio.Name = "txt_tipo_servicio";
@@ -155,8 +158,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // txt_fecha_desde
             // 
+            this.txt_fecha_desde.Enabled = false;
             this.txt_fecha_desde.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_fecha_desde.Location = new System.Drawing.Point(109, 108);
+            this.txt_fecha_desde.Location = new System.Drawing.Point(109, 137);
             this.txt_fecha_desde.Name = "txt_fecha_desde";
             this.txt_fecha_desde.Pp_Campo = null;
             this.txt_fecha_desde.Pp_MensajeError = null;
@@ -168,6 +172,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // txt_id_Servicio
             // 
+            this.txt_id_Servicio.Enabled = false;
             this.txt_id_Servicio.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_id_Servicio.Location = new System.Drawing.Point(109, 50);
             this.txt_id_Servicio.Name = "txt_id_Servicio";
@@ -192,7 +197,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 233);
+            this.ClientSize = new System.Drawing.Size(334, 225);
             this.Controls.Add(this.bttn_cancelar);
             this.Controls.Add(this.bttn_aceptar);
             this.Controls.Add(this.label7);

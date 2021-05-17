@@ -52,7 +52,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 10);
+            this.label1.Location = new System.Drawing.Point(36, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(317, 32);
             this.label1.TabIndex = 2;
@@ -61,18 +61,18 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label7.Location = new System.Drawing.Point(30, 87);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(55, 84);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 15);
+            this.label7.Size = new System.Drawing.Size(48, 15);
             this.label7.TabIndex = 23;
-            this.label7.Text = "ID Servicio";
+            this.label7.Text = "Servicio";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label6.Location = new System.Drawing.Point(30, 181);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(30, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 22;
@@ -81,8 +81,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label5.Location = new System.Drawing.Point(28, 214);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(32, 200);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 15);
             this.label5.TabIndex = 21;
@@ -91,7 +91,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(29, 58);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 15);
@@ -101,17 +101,17 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label3.Location = new System.Drawing.Point(28, 144);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.Size = new System.Drawing.Size(94, 15);
             this.label3.TabIndex = 19;
-            this.label3.Text = "Id Numero";
+            this.label3.Text = "Nro. de Teléfono";
             // 
             // bttn_cancelar
             // 
             this.bttn_cancelar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_cancelar.Location = new System.Drawing.Point(215, 258);
+            this.bttn_cancelar.Location = new System.Drawing.Point(215, 226);
             this.bttn_cancelar.Name = "bttn_cancelar";
             this.bttn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.bttn_cancelar.TabIndex = 25;
@@ -122,7 +122,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // bttn_aceptar
             // 
             this.bttn_aceptar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bttn_aceptar.Location = new System.Drawing.Point(134, 258);
+            this.bttn_aceptar.Location = new System.Drawing.Point(109, 226);
             this.bttn_aceptar.Name = "bttn_aceptar";
             this.bttn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.bttn_aceptar.TabIndex = 24;
@@ -132,7 +132,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(298, 52);
+            this.btn_buscar.Location = new System.Drawing.Point(296, 52);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(75, 21);
             this.btn_buscar.TabIndex = 28;
@@ -143,15 +143,16 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 118);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(46, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(57, 15);
             this.label2.TabIndex = 30;
             this.label2.Text = "Id Cliente";
             // 
             // btn_cliente
             // 
-            this.btn_cliente.Location = new System.Drawing.Point(298, 110);
+            this.btn_cliente.Location = new System.Drawing.Point(296, 110);
             this.btn_cliente.Name = "btn_cliente";
             this.btn_cliente.Size = new System.Drawing.Size(75, 21);
             this.btn_cliente.TabIndex = 28;
@@ -162,8 +163,9 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // cmb_Numero
             // 
             this.cmb_Numero.Enable = false;
+            this.cmb_Numero.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Numero.FormattingEnabled = true;
-            this.cmb_Numero.Location = new System.Drawing.Point(109, 146);
+            this.cmb_Numero.Location = new System.Drawing.Point(109, 139);
             this.cmb_Numero.Name = "cmb_Numero";
             this.cmb_Numero.Pp_Conseleccion = false;
             this.cmb_Numero.Pp_Descripcion1 = "cod_nacional";
@@ -175,22 +177,24 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.cmb_Numero.Pp_PK1 = "id_numero";
             this.cmb_Numero.Pp_Tabla = "Numero";
             this.cmb_Numero.Pp_Validable = false;
-            this.cmb_Numero.Size = new System.Drawing.Size(181, 21);
+            this.cmb_Numero.Size = new System.Drawing.Size(181, 23);
             this.cmb_Numero.TabIndex = 32;
             // 
             // textBox011
             // 
-            this.textBox011.Location = new System.Drawing.Point(109, 111);
+            this.textBox011.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox011.Location = new System.Drawing.Point(109, 110);
             this.textBox011.Name = "textBox011";
             this.textBox011.Pp_Campo = null;
             this.textBox011.Pp_MensajeError = null;
             this.textBox011.Pp_Tabla = null;
             this.textBox011.Pp_Validable = false;
-            this.textBox011.Size = new System.Drawing.Size(181, 20);
+            this.textBox011.Size = new System.Drawing.Size(181, 23);
             this.textBox011.TabIndex = 31;
             // 
             // cmb_Servicio
             // 
+            this.cmb_Servicio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Servicio.FormattingEnabled = true;
             this.cmb_Servicio.Location = new System.Drawing.Point(109, 81);
             this.cmb_Servicio.Name = "cmb_Servicio";
@@ -202,11 +206,12 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.cmb_Servicio.Pp_PK = null;
             this.cmb_Servicio.Pp_Tabla = null;
             this.cmb_Servicio.Pp_Validable = false;
-            this.cmb_Servicio.Size = new System.Drawing.Size(181, 21);
+            this.cmb_Servicio.Size = new System.Drawing.Size(181, 23);
             this.cmb_Servicio.TabIndex = 27;
             // 
             // cmb_Tipo
             // 
+            this.cmb_Tipo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Tipo.FormattingEnabled = true;
             this.cmb_Tipo.Location = new System.Drawing.Point(109, 52);
             this.cmb_Tipo.Name = "cmb_Tipo";
@@ -218,14 +223,14 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.cmb_Tipo.Pp_PK = null;
             this.cmb_Tipo.Pp_Tabla = null;
             this.cmb_Tipo.Pp_Validable = false;
-            this.cmb_Tipo.Size = new System.Drawing.Size(181, 21);
+            this.cmb_Tipo.Size = new System.Drawing.Size(181, 23);
             this.cmb_Tipo.TabIndex = 26;
             this.cmb_Tipo.SelectedIndexChanged += new System.EventHandler(this.comboBox011_SelectedIndexChanged);
             // 
             // txt_fecha_hasta
             // 
-            this.txt_fecha_hasta.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_fecha_hasta.Location = new System.Drawing.Point(109, 211);
+            this.txt_fecha_hasta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fecha_hasta.Location = new System.Drawing.Point(109, 197);
             this.txt_fecha_hasta.Name = "txt_fecha_hasta";
             this.txt_fecha_hasta.Pp_Campo = null;
             this.txt_fecha_hasta.Pp_MensajeError = null;
@@ -237,8 +242,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // txt_fecha_desde
             // 
-            this.txt_fecha_desde.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_fecha_desde.Location = new System.Drawing.Point(109, 178);
+            this.txt_fecha_desde.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fecha_desde.Location = new System.Drawing.Point(109, 168);
             this.txt_fecha_desde.Name = "txt_fecha_desde";
             this.txt_fecha_desde.Pp_Campo = null;
             this.txt_fecha_desde.Pp_MensajeError = null;
@@ -252,7 +257,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 293);
+            this.ClientSize = new System.Drawing.Size(386, 264);
             this.Controls.Add(this.cmb_Numero);
             this.Controls.Add(this.textBox011);
             this.Controls.Add(this.label2);
