@@ -64,7 +64,7 @@ namespace ComunicAr.Negocio
 
         public DataTable Servicios_contratados_por_codigo(string cod_servicio)
         {
-            string sql = @"SELECT s.id_servicio, s.tipo_servicio, s.id_numero, " +
+            string sql = @"SELECT s.cod_servicio, s.id_servicio, s.tipo_servicio, s.id_numero, " +
                        " n.cod_nacional, n.cod_area, n.nro_telefono, " +
                        " DATEPART(DAY, s.fecha_desde) AS dia_desde, " +
                        " DATEPART(DAY, s.fecha_desde) AS dia_desde, " +

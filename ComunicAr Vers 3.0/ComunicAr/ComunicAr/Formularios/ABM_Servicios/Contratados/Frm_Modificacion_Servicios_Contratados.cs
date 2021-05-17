@@ -23,9 +23,10 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
 
         private void Frm_Modificacion_Servicios_Load(object sender, EventArgs e)
         {
+            //cmb_tipo_servicio.CargarComboxTipo();
             Servicios_Contratados servicios = new Servicios_Contratados();
             MostrarDatos(servicios.Servicios_contratados_por_codigo(cod_servicio));
-            cmb_tipo_servicio.CargarComboxTipo();
+            //cmb_tipo_servicio.CargarComboxTipo();
 
         }
 
@@ -72,6 +73,8 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
 
             string nro_cliente = tabla2.Rows[0]["nro_cliente"].ToString();
 
+            txt_id_cliente.Text = tabla2.Rows[0]["nro_cliente"].ToString();
+
             cmb_numero.CargarComboXcliente(nro_cliente, tabla2.Rows[0]["nombre_cliente"].ToString());
 
             DataTable tabla3 = new DataTable();
@@ -95,6 +98,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             string año_hasta = tabla.Rows[0]["año_hasta"].ToString();
             txt_fecha_hasta.Text = dia_hasta + "/" + mes_hasta + "/" + año_hasta;
         }
+
 
         private void bttn_cancelar_Click(object sender, EventArgs e)
         {
@@ -129,6 +133,19 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
         private void txt_nombre_servicio_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_buscar_tipo_serv_Click(object sender, EventArgs e)
+        {
+            if (cmb_tipo_servicio.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione un tipo de servicio");
+            }
+            else
+            {
+                cmb_servicio_ofrecido.CargarComboServicio(cmb_tipo_servicio.SelectedValue.ToString());
+
+            }
         }
     }
 }

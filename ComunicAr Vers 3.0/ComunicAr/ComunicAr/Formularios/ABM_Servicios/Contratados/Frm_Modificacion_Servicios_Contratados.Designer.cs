@@ -44,7 +44,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.cmb_servicio_ofrecido = new ComunicAr.Clases.ComboBox01();
             this.cmb_numero = new ComunicAr.Clases.ComboBox02();
             this.btn_buscar_tipo_serv = new System.Windows.Forms.Button();
-            this.btn_buscar_nroXcliente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -144,6 +143,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // txt_id_cliente
             // 
+            this.txt_id_cliente.Enabled = false;
             this.txt_id_cliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_cliente.Location = new System.Drawing.Point(118, 104);
             this.txt_id_cliente.Name = "txt_id_cliente";
@@ -202,7 +202,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // cmb_numero
             // 
-            this.cmb_numero.Enable = false;
+            this.cmb_numero.Enable = true;
             this.cmb_numero.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_numero.FormattingEnabled = true;
             this.cmb_numero.Location = new System.Drawing.Point(118, 133);
@@ -229,16 +229,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.btn_buscar_tipo_serv.TabIndex = 19;
             this.btn_buscar_tipo_serv.Text = "Buscar";
             this.btn_buscar_tipo_serv.UseVisualStyleBackColor = true;
-            // 
-            // btn_buscar_nroXcliente
-            // 
-            this.btn_buscar_nroXcliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_buscar_nroXcliente.Location = new System.Drawing.Point(315, 104);
-            this.btn_buscar_nroXcliente.Name = "btn_buscar_nroXcliente";
-            this.btn_buscar_nroXcliente.Size = new System.Drawing.Size(75, 23);
-            this.btn_buscar_nroXcliente.TabIndex = 19;
-            this.btn_buscar_nroXcliente.Text = "Buscar";
-            this.btn_buscar_nroXcliente.UseVisualStyleBackColor = true;
+            this.btn_buscar_tipo_serv.Click += new System.EventHandler(this.btn_buscar_tipo_serv_Click);
             // 
             // label2
             // 
@@ -256,7 +247,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 260);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btn_buscar_nroXcliente);
             this.Controls.Add(this.btn_buscar_tipo_serv);
             this.Controls.Add(this.cmb_numero);
             this.Controls.Add(this.cmb_servicio_ofrecido);
@@ -299,7 +289,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
         private Clases.ComboBox01 cmb_servicio_ofrecido;
         private Clases.ComboBox02 cmb_numero;
         private System.Windows.Forms.Button btn_buscar_tipo_serv;
-        private System.Windows.Forms.Button btn_buscar_nroXcliente;
         private System.Windows.Forms.Label label2;
     }
 }
