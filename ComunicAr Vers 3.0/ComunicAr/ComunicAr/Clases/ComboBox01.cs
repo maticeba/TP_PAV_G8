@@ -64,7 +64,7 @@ namespace ComunicAr.Clases
             }
             else if (tipo == "B")
             {
-                string sql = "SELECT DISTINCT cod_servicio as cod, descripcion FROM servicio_fijo ";
+                string sql = "SELECT DISTINCT cod_servicio as cod, descripcion FROM servicios_fijos ";
                 DataTable tabla = new DataTable();
                 tabla = _BD.EjecutarSelect(sql);
                 this.DisplayMember = "descripcion";

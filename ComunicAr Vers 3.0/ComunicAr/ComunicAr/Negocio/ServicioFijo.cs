@@ -20,29 +20,29 @@ namespace ComunicAr.Negocio
         Acceso_BD BD = new Acceso_BD();
         public DataTable ServicioFijoCompleto()
         {
-            string sql = "SELECT * FROM servicio_fijo";
+            string sql = "SELECT * FROM servicios_fijos";
             return BD.EjecutarSelect(sql);
         }
         public DataTable ServicioFijoPorCodigo(string cod_servicio)
         {
-            string sql = @"SELECT s.* FROM servicio_fijo s "
+            string sql = @"SELECT s.* FROM servicios_fijos s "
                         + "WHERE s.cod_servicio = " + cod_servicio;
             return BD.EjecutarSelect(sql);
         }
         public DataTable ServicioFijoPorDescripcion(string descripcion)
         {
-            string sql = @"SELECT s.* FROM servicio_fijo s "
+            string sql = @"SELECT s.* FROM servicios_fijos s "
                         + "WHERE s.descripcion like '%" + descripcion.Trim() + "%'";
             return BD.EjecutarSelect(sql);
         }
         public void borrarServicioFIjo()
         {
-            string sqlBorrarSF = " DELETE FROM servicio_fijo WHERE cod_servicio = " + cod_servicio ;
+            string sqlBorrarSF = " DELETE FROM servicios_fijos WHERE cod_servicio = " + cod_servicio ;
             BD.Borrar(sqlBorrarSF);
         }
         public void insertarServicioFijo()
         {
-            string sqlIN = @"INSERT INTO servicio_fijo (descripcion, costo_mensual, tipo_servicio)"
+            string sqlIN = @"INSERT INTO servicios_fijos (descripcion, costo_mensual, tipo_servicio)"
                             + " VALUES ('"
                             + descripcion + "', "
                             + "REPLACE('" + costo_mensual + "', ',', '.'), '"
@@ -53,7 +53,7 @@ namespace ComunicAr.Negocio
         }
         public void ModificarServicioFijo()
        {
-            string sqlMod = @"UPDATE servicio_fijo SET "
+            string sqlMod = @"UPDATE servicios_fijos SET "
                             + " descripcion = '" + descripcion + "'"
                             + ", costo_mensual = REPLACE('" + costo_mensual + "', ',', '.')"
                             + " WHERE cod_servicio = " + cod_servicio;

@@ -137,7 +137,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.cmb_id_region.Pp_NombreCampo = null;
             this.cmb_id_region.Pp_NombreTabla = null;
             this.cmb_id_region.Pp_PK = "id_region";
-            this.cmb_id_region.Pp_Tabla = "regiones";
+            this.cmb_id_region.Pp_Tabla = "region";
             this.cmb_id_region.Pp_Validable = false;
             this.cmb_id_region.Size = new System.Drawing.Size(181, 21);
             this.cmb_id_region.TabIndex = 42;

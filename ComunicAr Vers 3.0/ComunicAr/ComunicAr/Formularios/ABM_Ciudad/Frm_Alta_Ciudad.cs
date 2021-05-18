@@ -24,11 +24,6 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             cmb_alta_ciudad.SelectedIndex = -1;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -50,21 +45,6 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             {
                 return;
             }
-        }
-
-        private void txt_Cod_Ciud_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_Nom_Ciud_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_alta_ciudad_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

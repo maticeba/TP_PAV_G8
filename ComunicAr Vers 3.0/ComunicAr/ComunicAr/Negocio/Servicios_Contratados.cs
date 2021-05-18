@@ -48,7 +48,7 @@ namespace ComunicAr.Negocio
             }
             else if (tipo == "B")
             {
-                string sql = "SELECT descripcion FROM Servicio_fijo WHERE cod_servicio = " + id;
+                string sql = "SELECT descripcion FROM Servicios_fijos WHERE cod_servicio = " + id;
                 tabla = BD.EjecutarSelect(sql);
 
                 return tabla.Rows[0]["descripcion"].ToString();
@@ -132,7 +132,7 @@ namespace ComunicAr.Negocio
             }
             else if (tipo == "B")
             {
-                string sql = "SELECT DISTINCT cod_servicio as cod FROM servicio_fijo ";
+                string sql = "SELECT DISTINCT cod_servicio as cod FROM servicios_fijos ";
                 return BD.EjecutarSelect(sql);
             }
 

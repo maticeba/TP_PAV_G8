@@ -29,13 +29,13 @@ namespace ComunicAr.Negocio
                                         "c2.Nro_Telefono AS tel_recept, " +
                                         "l.fecha_hora_inicio, " +
 		                                "CONVERT(int, (Cast((l.fecha_hora_fin - l.fecha_hora_inicio) as float) * 1440)) as duracion, " +
-		                                "t.deser_comunicacion as Tipo_com, b.descripcion as Banda_horaria, " +
+		                                "t.descripcion as Tipo_com, b.descripcion as Banda_horaria, " +
                                         "l.id_llamada as identificador " +
-                               "FROM Llamadas l, Numero c1, Numero c2, tiposComunicacion t, bandasHoraria b " +
+                               "FROM Llamadas l, Numero c1, Numero c2, Tipo_comunicacion t, Banda_horaria b " +
                                "WHERE	l.id_nro_emisor = c1.id_numero " +
 	                               "AND l.id_nro_receptor = c2.id_numero " +
-	                               "AND t.cod_tipo_comunic = l.id_tipo_comun " +
-	                               "AND b.cod_bandaHoraria = l.id_band_horar";
+	                               "AND t.id_tipo_com = l.id_tipo_comun " +
+	                               "AND b.id_banda = l.id_band_horar";
             return BD.EjecutarSelect(sql);
         }
         /*public void Insertar()
