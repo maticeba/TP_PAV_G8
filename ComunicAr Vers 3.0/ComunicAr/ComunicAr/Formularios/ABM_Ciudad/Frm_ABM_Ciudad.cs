@@ -113,9 +113,9 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 dataGrid_Ciudad.Rows.Add();
-                dataGrid_Ciudad.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_ciudad"].ToString();
+                dataGrid_Ciudad.Rows[i].Cells[0].Value = tabla.Rows[i]["codigo_ciudad"].ToString();
                 dataGrid_Ciudad.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_ciudad"].ToString();
-                dataGrid_Ciudad.Rows[i].Cells[2].Value = tabla.Rows[i]["nombre_prov"].ToString();
+                dataGrid_Ciudad.Rows[i].Cells[2].Value = tabla.Rows[i]["nombre_provincia"].ToString();
             }
         }
     }

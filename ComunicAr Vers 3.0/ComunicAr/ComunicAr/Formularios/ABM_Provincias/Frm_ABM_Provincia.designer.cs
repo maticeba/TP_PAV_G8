@@ -35,14 +35,14 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.btn_refrescar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.dataGrid_Provincia = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_filtrar = new System.Windows.Forms.Button();
             this.txt_filtro_nomb = new ComunicAr.Clases.TextBox01();
             this.txt_filtro_cod = new ComunicAr.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Provincia)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -119,22 +119,6 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.dataGrid_Provincia.TabIndex = 5;
             this.dataGrid_Provincia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_Provincia_CellContentClick);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Cod_Prov";
-            this.Column1.MinimumWidth = 15;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre_Prov";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 165;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_filtrar);
@@ -171,7 +155,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.txt_filtro_nomb.Pp_MensajeError = null;
             this.txt_filtro_nomb.Pp_Tabla = null;
             this.txt_filtro_nomb.Pp_Validable = false;
-            this.txt_filtro_nomb.Size = new System.Drawing.Size(183, 23);
+            this.txt_filtro_nomb.Size = new System.Drawing.Size(183, 31);
             this.txt_filtro_nomb.TabIndex = 7;
             // 
             // txt_filtro_cod
@@ -183,7 +167,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.txt_filtro_cod.Pp_MensajeError = null;
             this.txt_filtro_cod.Pp_Tabla = null;
             this.txt_filtro_cod.Pp_Validable = false;
-            this.txt_filtro_cod.Size = new System.Drawing.Size(183, 23);
+            this.txt_filtro_cod.Size = new System.Drawing.Size(183, 31);
             this.txt_filtro_cod.TabIndex = 7;
             // 
             // label2
@@ -192,7 +176,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.label2.Location = new System.Drawing.Point(10, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 15);
+            this.label2.Size = new System.Drawing.Size(172, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Codigo de Provincia";
             // 
@@ -202,13 +186,29 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.label1.Location = new System.Drawing.Point(5, 72);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 15);
+            this.label1.Size = new System.Drawing.Size(179, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "Nombre de Provincia";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo_Provincia";
+            this.Column1.MinimumWidth = 15;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre_Provincia";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 165;
+            // 
             // Frm_ABM_Provincia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 488);
             this.ControlBox = false;
@@ -241,13 +241,13 @@ namespace ComunicAr.Formularios.ABM_Provincia
         private System.Windows.Forms.Button btn_refrescar;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.DataGridView dataGrid_Provincia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_filtrar;
         private Clases.TextBox01 txt_filtro_nomb;
         private Clases.TextBox01 txt_filtro_cod;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

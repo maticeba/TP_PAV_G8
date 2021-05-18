@@ -31,8 +31,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
         }
         private void MostrarDatos(DataTable tabla)
         {
-            cmb_cod_prov.SelectedValue = int.Parse(tabla.Rows[0]["cod_prov"].ToString());
-            txt_nom_prov.Text = tabla.Rows[0]["nombre_prov"].ToString();
+            cmb_cod_prov.SelectedValue = int.Parse(tabla.Rows[0]["codigo_provincia"].ToString());
+            txt_nom_prov.Text = tabla.Rows[0]["nombre_provincia"].ToString();
             
         }
 
