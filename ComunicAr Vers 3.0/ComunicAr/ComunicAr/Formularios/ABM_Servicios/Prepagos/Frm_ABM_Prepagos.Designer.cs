@@ -35,16 +35,16 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.bttn_modificar_prepago = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.GridPrepago = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Consulta = new System.Windows.Forms.Button();
+            this.txt_filtro_id_pack = new ComunicAr.Clases.TextBox01();
+            this.label1 = new System.Windows.Forms.Label();
             this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_packs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_region = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_Consulta = new System.Windows.Forms.Button();
-            this.txt_filtro_id_pack = new ComunicAr.Clases.TextBox01();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GridPrepago)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -122,42 +122,6 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.GridPrepago.TabIndex = 10;
             this.GridPrepago.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridPrepago_CellContentClick);
             // 
-            // tipo_servicio
-            // 
-            this.tipo_servicio.HeaderText = "Tipo Servicio";
-            this.tipo_servicio.Name = "tipo_servicio";
-            this.tipo_servicio.ReadOnly = true;
-            // 
-            // id_packs
-            // 
-            this.id_packs.HeaderText = "ID pack";
-            this.id_packs.Name = "id_packs";
-            this.id_packs.ReadOnly = true;
-            // 
-            // duracion
-            // 
-            this.duracion.HeaderText = "Duracion";
-            this.duracion.Name = "duracion";
-            this.duracion.ReadOnly = true;
-            // 
-            // descripcion
-            // 
-            this.descripcion.HeaderText = "Descripcion";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
-            // 
-            // costo
-            // 
-            this.costo.HeaderText = "Costo";
-            this.costo.Name = "costo";
-            this.costo.ReadOnly = true;
-            // 
-            // id_region
-            // 
-            this.id_region.HeaderText = "ID region";
-            this.id_region.Name = "id_region";
-            this.id_region.ReadOnly = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_Consulta);
@@ -200,6 +164,42 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.label1.TabIndex = 0;
             this.label1.Text = "ID pack";
             // 
+            // tipo_servicio
+            // 
+            this.tipo_servicio.HeaderText = "Tipo Servicio";
+            this.tipo_servicio.Name = "tipo_servicio";
+            this.tipo_servicio.ReadOnly = true;
+            // 
+            // id_packs
+            // 
+            this.id_packs.HeaderText = "ID pack";
+            this.id_packs.Name = "id_packs";
+            this.id_packs.ReadOnly = true;
+            // 
+            // duracion
+            // 
+            this.duracion.HeaderText = "Duracion";
+            this.duracion.Name = "duracion";
+            this.duracion.ReadOnly = true;
+            // 
+            // descripcion
+            // 
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
+            // 
+            // costo
+            // 
+            this.costo.HeaderText = "Costo";
+            this.costo.Name = "costo";
+            this.costo.ReadOnly = true;
+            // 
+            // id_region
+            // 
+            this.id_region.HeaderText = "Region";
+            this.id_region.Name = "id_region";
+            this.id_region.ReadOnly = true;
+            // 
             // Frm_ABM_Prepagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -233,15 +233,15 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
         private System.Windows.Forms.Button bttn_modificar_prepago;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.DataGridView GridPrepago;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_Consulta;
+        private Clases.TextBox01 txt_filtro_id_pack;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipo_servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_packs;
         private System.Windows.Forms.DataGridViewTextBoxColumn duracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn costo;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_region;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_Consulta;
-        private Clases.TextBox01 txt_filtro_id_pack;
-        private System.Windows.Forms.Label label1;
     }
 }

@@ -41,7 +41,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
                 GridPrepago.Rows[i].Cells[2].Value = tabla.Rows[i]["duracion"].ToString();
                 GridPrepago.Rows[i].Cells[3].Value = tabla.Rows[i]["descripcion"].ToString();
                 GridPrepago.Rows[i].Cells[4].Value = tabla.Rows[i]["costo"].ToString();
-                GridPrepago.Rows[i].Cells[5].Value = tabla.Rows[i]["id_region"].ToString();
+                GridPrepago.Rows[i].Cells[5].Value = tabla.Rows[i]["descripcion_region"].ToString();
             }
         }
 

@@ -22,7 +22,10 @@ namespace ComunicAr.Negocio
         Acceso_BD BD = new Acceso_BD();
         public DataTable ServiciosCompletos()
         {
-            string sql = "SELECT * FROM servicios_prepago";
+           
+            string sql = "SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r " +
+                "WHERE s.id_region = r.id_region";
+
             return BD.EjecutarSelect(sql);
         }
 
