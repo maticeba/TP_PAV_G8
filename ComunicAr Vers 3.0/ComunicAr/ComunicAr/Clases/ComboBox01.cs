@@ -89,7 +89,7 @@ namespace ComunicAr.Clases
 
         public void Cargar_Combo_Ciudad(string Prov)
         {
-            string sql = "SELECT DISTINCT cod_ciudad, nombre_ciudad FROM Ciudad WHERE id_prov = " + Prov;
+            string sql = "SELECT DISTINCT cod_ciudad, nombre_ciudad FROM Ciudad WHERE id_provincia = " + Prov;
             DataTable tabla = new DataTable();
             tabla = _BD.EjecutarSelect(sql);
             this.DisplayMember = "nombre_ciudad";

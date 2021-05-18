@@ -78,9 +78,9 @@ namespace ComunicAr.Negocio
         }
         public DataTable Obtener_ubicacion(string cod_barrio)
         {
-            string sql = @"SELECT DISTINCT b.cod_barrio, b.id_ciudad, c.cod_ciudad, c.id_prov, p.cod_prov " +
+            string sql = @"SELECT DISTINCT b.cod_barrio, b.id_ciudad, c.cod_ciudad, c.id_provincia, p.cod_prov " +
                           "FROM Barrio b, Ciudad c, Provincia p " +
-                          "WHERE b.cod_barrio = " + cod_barrio + " AND b.id_ciudad = c.cod_ciudad AND c.id_prov = p.cod_prov";
+                          "WHERE b.cod_barrio = " + cod_barrio + " AND b.id_ciudad = c.cod_ciudad AND c.id_provincia = p.cod_prov";
             return BD.EjecutarSelect(sql);
         }
     }
