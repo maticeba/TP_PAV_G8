@@ -31,14 +31,14 @@ namespace ComunicAr.Negocio
         }
         public DataTable Clientes_por_Numero(string nro_Cliente)
         {
-            string sql = @"SELECT * FROM Cliente "
-                        + "WHERE nro_cliente = " + nro_Cliente;
+            string sql = @"SELECT c.*, b.nombre_barrio FROM Cliente c, Barrio b "
+                        + "WHERE nro_cliente = " + nro_Cliente + " AND c.cod_barrio = b.cod_barrio" ;
             return BD.EjecutarSelect(sql);
         }
         public DataTable Clientes_por_Nombre(string nombre)
         {
-            string sql = @"SELECT c.* FROM Cliente c "
-                        + "WHERE c.nombre_razonSocial like '%" + nombre.Trim() + "%'";
+            string sql = @"SELECT c.*, b.nombre_barrio FROM Cliente c, Barrio b "
+                        + "WHERE c.nombre_razonSocial like '%" + nombre.Trim() + "%' AND c.cod_barrio = b.cod_barrio";
             return BD.EjecutarSelect(sql);
         }
         public void Insertar(Control.ControlCollection controles)
