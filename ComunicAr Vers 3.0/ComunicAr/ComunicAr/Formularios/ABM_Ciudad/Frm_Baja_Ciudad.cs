@@ -31,9 +31,9 @@ namespace ComunicAr.Formularios.ABM_Ciudad
         }
         private void MostrarDatos(DataTable tabla)
         {
-            txt_cod_ciud.Text = tabla.Rows[0]["codigo_ciudad"].ToString();
+            txt_cod_ciud.Text = tabla.Rows[0]["cod_ciudad"].ToString();
             txt_nom_ciud.Text = tabla.Rows[0]["nombre_ciudad"].ToString();
-            cmb_baja_ciud.SelectedText = tabla.Rows[0]["nombre_provincia"].ToString();
+            cmb_baja_ciud.SelectedText = tabla.Rows[0]["nombre_prov"].ToString();
 
         }
 

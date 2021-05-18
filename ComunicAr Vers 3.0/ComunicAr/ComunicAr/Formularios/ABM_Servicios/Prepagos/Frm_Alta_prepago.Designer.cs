@@ -156,7 +156,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             this.cmb_id_region.Location = new System.Drawing.Point(95, 138);
             this.cmb_id_region.Name = "cmb_id_region";
             this.cmb_id_region.Pp_Conseleccion = false;
-            this.cmb_id_region.Pp_Descripcion = "descripcion";
+            this.cmb_id_region.Pp_Descripcion = "descripcion_region";
             this.cmb_id_region.Pp_MensajeError = null;
             this.cmb_id_region.Pp_NombreCampo = null;
             this.cmb_id_region.Pp_NombreTabla = null;

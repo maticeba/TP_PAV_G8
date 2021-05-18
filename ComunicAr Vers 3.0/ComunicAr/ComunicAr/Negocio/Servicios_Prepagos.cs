@@ -31,8 +31,9 @@ namespace ComunicAr.Negocio
 
         public DataTable Servicios_prepagos_por_id(string id_pack)
         {
-            string sql = @"SELECT s.* FROM servicios_prepago s "
-                        + "WHERE s.id_pack = " + id_pack;
+            string sql = @"SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r " 
+                            
+                        + "WHERE s.id_pack = " + id_pack + "AND s.id_region = r.id_region";
             return BD.EjecutarSelect(sql);
         }
         

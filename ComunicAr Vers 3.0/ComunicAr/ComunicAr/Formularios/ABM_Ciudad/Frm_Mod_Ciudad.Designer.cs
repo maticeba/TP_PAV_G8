@@ -32,12 +32,12 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.label1 = new System.Windows.Forms.Label();
             this.txt_cod_ciud = new ComunicAr.Clases.TextBox01();
             this.txt_nom_ciud = new ComunicAr.Clases.TextBox01();
-            this.txt_cod_prov = new ComunicAr.Clases.TextBox01();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.cmb_mod_ciudad = new ComunicAr.Clases.ComboBox01();
             this.SuspendLayout();
             // 
             // label1
@@ -75,19 +75,6 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             this.txt_nom_ciud.Pp_Validable = false;
             this.txt_nom_ciud.Size = new System.Drawing.Size(121, 20);
             this.txt_nom_ciud.TabIndex = 2;
-            // 
-            // txt_cod_prov
-            // 
-            this.txt_cod_prov.Enabled = false;
-            this.txt_cod_prov.Location = new System.Drawing.Point(121, 93);
-            this.txt_cod_prov.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_cod_prov.Name = "txt_cod_prov";
-            this.txt_cod_prov.Pp_Campo = null;
-            this.txt_cod_prov.Pp_MensajeError = "Cargar codigo de Provincia";
-            this.txt_cod_prov.Pp_Tabla = null;
-            this.txt_cod_prov.Pp_Validable = false;
-            this.txt_cod_prov.Size = new System.Drawing.Size(121, 20);
-            this.txt_cod_prov.TabIndex = 2;
             // 
             // label3
             // 
@@ -134,24 +121,40 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 96);
+            this.label2.Location = new System.Drawing.Point(64, 97);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Codigo de Provincia";
+            this.label2.Text = "Provincia";
+            // 
+            // cmb_mod_ciudad
+            // 
+            this.cmb_mod_ciudad.FormattingEnabled = true;
+            this.cmb_mod_ciudad.Location = new System.Drawing.Point(121, 94);
+            this.cmb_mod_ciudad.Name = "cmb_mod_ciudad";
+            this.cmb_mod_ciudad.Pp_Conseleccion = false;
+            this.cmb_mod_ciudad.Pp_Descripcion = "nombre_prov";
+            this.cmb_mod_ciudad.Pp_MensajeError = null;
+            this.cmb_mod_ciudad.Pp_NombreCampo = null;
+            this.cmb_mod_ciudad.Pp_NombreTabla = null;
+            this.cmb_mod_ciudad.Pp_PK = "cod_prov";
+            this.cmb_mod_ciudad.Pp_Tabla = "Provincia";
+            this.cmb_mod_ciudad.Pp_Validable = false;
+            this.cmb_mod_ciudad.Size = new System.Drawing.Size(121, 21);
+            this.cmb_mod_ciudad.TabIndex = 5;
             // 
             // Frm_Mod_Ciudad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(253, 154);
+            this.Controls.Add(this.cmb_mod_ciudad);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_cod_prov);
             this.Controls.Add(this.txt_nom_ciud);
             this.Controls.Add(this.txt_cod_ciud);
             this.Controls.Add(this.label1);
@@ -171,11 +174,11 @@ namespace ComunicAr.Formularios.ABM_Ciudad
         private System.Windows.Forms.Label label1;
         private Clases.TextBox01 txt_cod_ciud;
         private Clases.TextBox01 txt_nom_ciud;
-        private Clases.TextBox01 txt_cod_prov;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Label label2;
+        private Clases.ComboBox01 cmb_mod_ciudad;
     }
 }

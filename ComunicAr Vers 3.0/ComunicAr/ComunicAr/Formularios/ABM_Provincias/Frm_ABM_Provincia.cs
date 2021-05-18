@@ -113,8 +113,8 @@ namespace ComunicAr.Formularios.ABM_Provincia
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 dataGrid_Provincia.Rows.Add();
-                dataGrid_Provincia.Rows[i].Cells[0].Value = tabla.Rows[i]["codigo_provincia"].ToString();
-                dataGrid_Provincia.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_provincia"].ToString();
+                dataGrid_Provincia.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_prov"].ToString();
+                dataGrid_Provincia.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre_prov"].ToString();
 
             }
         }

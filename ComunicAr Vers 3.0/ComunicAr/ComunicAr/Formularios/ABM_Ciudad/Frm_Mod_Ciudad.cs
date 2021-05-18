@@ -27,14 +27,16 @@ namespace ComunicAr.Formularios.ABM_Ciudad
 
         private void Frm_Mod_Ciudad_Load(object sender, EventArgs e)
         {
+            cmb_mod_ciudad.CargarCombo();
+            cmb_mod_ciudad.SelectedIndex = -1;
             Ciudad ciudad = new Ciudad();
             MostrarDatos(ciudad.Ciudad_por_codigo(Pp_codigoCiudad));
         }
         private void MostrarDatos(DataTable tabla)
         {
-            txt_cod_ciud.Text = tabla.Rows[0]["codigo_ciudad"].ToString();
+            txt_cod_ciud.Text = tabla.Rows[0]["cod_ciudad"].ToString();
             txt_nom_ciud.Text = tabla.Rows[0]["nombre_ciudad"].ToString();
-            txt_cod_prov.Text = tabla.Rows[0]["nombre_provincia"].ToString();
+            cmb_mod_ciudad.Text = tabla.Rows[0]["nombre_prov"].ToString();
 
         }
 
@@ -43,7 +45,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
             Ciudad ciudad = new Ciudad() { Pp_codCiudad = Pp_codigoCiudad };
             if (MessageBox.Show("¿Esta seguro de modificar?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                ciudad.Pp_codProvincia = txt_cod_prov.Text;
+                ciudad.Pp_codProvincia = cmb_mod_ciudad.SelectedValue.ToString();
                 ciudad.Pp_nombreCiudad = txt_nom_ciud.Text;
                 ciudad.Modificar();
 

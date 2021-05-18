@@ -118,6 +118,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             // txt_costo
             // 
+            this.txt_costo.Enabled = false;
             this.txt_costo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_costo.Location = new System.Drawing.Point(95, 138);
             this.txt_costo.Name = "txt_costo";
@@ -130,6 +131,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             // txt_duracion
             // 
+            this.txt_duracion.Enabled = false;
             this.txt_duracion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_duracion.Location = new System.Drawing.Point(95, 80);
             this.txt_duracion.Name = "txt_duracion";
@@ -142,6 +144,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             // txt_descripcion
             // 
+            this.txt_descripcion.Enabled = false;
             this.txt_descripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_descripcion.Location = new System.Drawing.Point(95, 109);
             this.txt_descripcion.Name = "txt_descripcion";
@@ -154,6 +157,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             // txt_id_pack
             // 
+            this.txt_id_pack.Enabled = false;
             this.txt_id_pack.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_id_pack.Location = new System.Drawing.Point(95, 51);
             this.txt_id_pack.Name = "txt_id_pack";
@@ -176,11 +180,12 @@ namespace ComunicAr.Formularios.ABM_Servicios.Prepagos
             // 
             // cmb_id_region
             // 
+            this.cmb_id_region.Enabled = false;
             this.cmb_id_region.FormattingEnabled = true;
             this.cmb_id_region.Location = new System.Drawing.Point(95, 167);
             this.cmb_id_region.Name = "cmb_id_region";
             this.cmb_id_region.Pp_Conseleccion = false;
-            this.cmb_id_region.Pp_Descripcion = "descripcion";
+            this.cmb_id_region.Pp_Descripcion = "descripcion_region";
             this.cmb_id_region.Pp_MensajeError = null;
             this.cmb_id_region.Pp_NombreCampo = null;
             this.cmb_id_region.Pp_NombreTabla = null;

@@ -62,13 +62,14 @@ namespace ComunicAr.Formularios.ABM_Provincia
             this.cmb_baja_prov.Pp_NombreCampo = null;
             this.cmb_baja_prov.Pp_NombreTabla = null;
             this.cmb_baja_prov.Pp_PK = "cod_prov";
-            this.cmb_baja_prov.Pp_Tabla = "provincias";
+            this.cmb_baja_prov.Pp_Tabla = "provincia";
             this.cmb_baja_prov.Pp_Validable = false;
             this.cmb_baja_prov.Size = new System.Drawing.Size(107, 21);
             this.cmb_baja_prov.TabIndex = 2;
             // 
             // txt_nom_prov
             // 
+            this.txt_nom_prov.Enabled = false;
             this.txt_nom_prov.Location = new System.Drawing.Point(121, 77);
             this.txt_nom_prov.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nom_prov.Name = "txt_nom_prov";
