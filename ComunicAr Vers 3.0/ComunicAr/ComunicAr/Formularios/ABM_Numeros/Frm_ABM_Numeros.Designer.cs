@@ -30,6 +30,10 @@ namespace ComunicAr.Formularios.ABM_Numeros
         private void InitializeComponent()
         {
             this.GridNumero = new System.Windows.Forms.DataGridView();
+            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_dispositivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_refrescar_numero = new System.Windows.Forms.Button();
             this.btn_salir_numero = new System.Windows.Forms.Button();
             this.btn_eliminar_numero = new System.Windows.Forms.Button();
@@ -39,10 +43,6 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.btnConsulta = new System.Windows.Forms.Button();
             this.filtro_id_numero = new ComunicAr.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
-            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nro_telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nro_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_dispositivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridNumero)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,9 +60,35 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.GridNumero.Location = new System.Drawing.Point(35, 178);
             this.GridNumero.Name = "GridNumero";
             this.GridNumero.ReadOnly = true;
-            this.GridNumero.Size = new System.Drawing.Size(582, 252);
+            this.GridNumero.Size = new System.Drawing.Size(541, 252);
             this.GridNumero.TabIndex = 7;
             this.GridNumero.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridNumero_CellContentClick_1);
+            // 
+            // id_numero
+            // 
+            this.id_numero.HeaderText = "ID numero";
+            this.id_numero.Name = "id_numero";
+            this.id_numero.ReadOnly = true;
+            // 
+            // nro_telefono
+            // 
+            this.nro_telefono.HeaderText = "Numero Telefono";
+            this.nro_telefono.Name = "nro_telefono";
+            this.nro_telefono.ReadOnly = true;
+            this.nro_telefono.Width = 130;
+            // 
+            // nro_cliente
+            // 
+            this.nro_cliente.HeaderText = "Cliente";
+            this.nro_cliente.Name = "nro_cliente";
+            this.nro_cliente.ReadOnly = true;
+            this.nro_cliente.Width = 140;
+            // 
+            // id_dispositivo
+            // 
+            this.id_dispositivo.HeaderText = "ID dispositivo";
+            this.id_dispositivo.Name = "id_dispositivo";
+            this.id_dispositivo.ReadOnly = true;
             // 
             // btn_refrescar_numero
             // 
@@ -76,7 +102,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_salir_numero
             // 
-            this.btn_salir_numero.Location = new System.Drawing.Point(559, 461);
+            this.btn_salir_numero.Location = new System.Drawing.Point(472, 461);
             this.btn_salir_numero.Name = "btn_salir_numero";
             this.btn_salir_numero.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_numero.TabIndex = 3;
@@ -156,37 +182,11 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.label1.TabIndex = 0;
             this.label1.Text = "ID numero";
             // 
-            // id_numero
-            // 
-            this.id_numero.HeaderText = "ID numero";
-            this.id_numero.Name = "id_numero";
-            this.id_numero.ReadOnly = true;
-            // 
-            // nro_telefono
-            // 
-            this.nro_telefono.HeaderText = "Numero Telefono";
-            this.nro_telefono.Name = "nro_telefono";
-            this.nro_telefono.ReadOnly = true;
-            this.nro_telefono.Width = 130;
-            // 
-            // nro_cliente
-            // 
-            this.nro_cliente.HeaderText = "Cliente";
-            this.nro_cliente.Name = "nro_cliente";
-            this.nro_cliente.ReadOnly = true;
-            this.nro_cliente.Width = 140;
-            // 
-            // id_dispositivo
-            // 
-            this.id_dispositivo.HeaderText = "ID dispositivo";
-            this.id_dispositivo.Name = "id_dispositivo";
-            this.id_dispositivo.ReadOnly = true;
-            // 
             // Frm_ABM_Numeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 505);
+            this.ClientSize = new System.Drawing.Size(621, 505);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GridNumero);
             this.Controls.Add(this.btn_refrescar_numero);

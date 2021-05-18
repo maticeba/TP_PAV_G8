@@ -23,8 +23,8 @@ namespace ComunicAr.Negocio
 
         public DataTable Dispositivos_Completos()
         {
-            string sql = "SELECT d.*, t.nombre_tipo FROM dispositivos d, Tipo_dispositivo t " +
-                         "WHERE d.id_tipo_dispositivo = t.id_tipo_dispositivo";
+            string sql = @"SELECT d.* , c.nombre_tipo FROM Dispositivos d, Tipo_Dispositivo c " +
+                         "WHERE d.id_tipo_dispositivo = c.id_tipo_dispositivo";
             return BD.EjecutarSelect(sql);
         }
         public DataTable FiltroXid(string id_dispositivo)

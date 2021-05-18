@@ -43,7 +43,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
                 GridNumero.Rows[i].Cells[0].Value = tabla.Rows[i]["id_numero"].ToString();
                 GridNumero.Rows[i].Cells[1].Value = numero.ToString();
                 GridNumero.Rows[i].Cells[2].Value = tabla.Rows[i]["nombre_razonSocial"].ToString();
-                GridNumero.Rows[i].Cells[3].Value = tabla.Rows[i]["id_dispositivo"].ToString();
+                GridNumero.Rows[i].Cells[3].Value = tabla.Rows[i]["modelo"].ToString();
             }
         }
 
