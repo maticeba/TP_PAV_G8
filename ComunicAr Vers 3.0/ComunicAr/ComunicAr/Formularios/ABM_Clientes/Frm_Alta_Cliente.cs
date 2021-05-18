@@ -47,8 +47,35 @@ namespace ComunicAr.Formularios.ABM_Clientes
 
         private void Frm_Alta_Cliente_Load(object sender, EventArgs e)
         {
-            cmb_cliente_alta_barrio.CargarCombo();
-            cmb_cliente_alta_barrio.SelectedIndex = -1; 
+            cmb_Provincias.CargarCombo();
+            cmb_Provincias.SelectedIndex = -1;
+            /*cmb_cliente_alta_barrio.CargarCombo();
+            cmb_cliente_alta_barrio.SelectedIndex = -1; */
+        }
+
+        private void cmb_Provincias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_Provincias.SelectedIndex == -1)
+            {
+                cmb_Ciudades.SelectedIndex = -1;
+            }
+            else
+            {
+                cmb_Ciudades.Cargar_Combo_Ciudad(cmb_Provincias.SelectedValue.ToString());
+               
+            }
+        }
+
+        private void cmb_Ciudades_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_Ciudades.SelectedIndex == -1)
+            {
+                cmb_cliente_alta_barrio.SelectedIndex = -1;
+            }
+            else
+            {
+                cmb_cliente_alta_barrio.Cargar_Combo_Barrio(cmb_Ciudades.SelectedValue.ToString());
+            }
         }
     }
 }

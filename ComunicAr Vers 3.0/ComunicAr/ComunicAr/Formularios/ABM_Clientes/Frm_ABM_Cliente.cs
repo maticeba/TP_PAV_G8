@@ -95,7 +95,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
         {
             if (flag == false)
             {
-                MessageBox.Show("Seleccione un Servicio de datos para eliminar");
+                MessageBox.Show("Seleccione un cliente para modificar");
             }
             else
             {
@@ -109,7 +109,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
         {
             if (flag == false)
             {
-                MessageBox.Show("Seleccione un Servicio de datos para eliminar");
+                MessageBox.Show("Seleccione un cliente para eliminar");
             }
             else
             {

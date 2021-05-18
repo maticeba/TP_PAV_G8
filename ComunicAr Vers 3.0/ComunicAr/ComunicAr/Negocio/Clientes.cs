@@ -31,8 +31,8 @@ namespace ComunicAr.Negocio
         }
         public DataTable Clientes_por_Numero(string nro_Cliente)
         {
-            string sql = @"SELECT c.* FROM Cliente "
-                        + "WHERE c.nro_cliente = " + nro_Cliente;
+            string sql = @"SELECT * FROM Cliente "
+                        + "WHERE nro_cliente = " + nro_Cliente;
             return BD.EjecutarSelect(sql);
         }
         public DataTable Clientes_por_Nombre(string nombre)
@@ -75,6 +75,13 @@ namespace ComunicAr.Negocio
         {
             string sqlBorrar = "DELETE FROM Cliente WHERE nro_cliente = " + Pp_nroCliente;
             BD.Borrar(sqlBorrar);
+        }
+        public DataTable Obtener_ubicacion(string cod_barrio)
+        {
+            string sql = @"SELECT DISTINCT b.cod_barrio, b.id_ciudad, c.cod_ciudad, c.id_prov, p.cod_prov " +
+                          "FROM Barrio b, Ciudad c, Provincia p " +
+                          "WHERE b.cod_barrio = " + cod_barrio + " AND b.id_ciudad = c.cod_ciudad AND c.id_prov = p.cod_prov";
+            return BD.EjecutarSelect(sql);
         }
     }
 }

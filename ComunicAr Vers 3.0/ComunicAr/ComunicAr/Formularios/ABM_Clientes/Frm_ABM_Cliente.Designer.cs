@@ -34,12 +34,6 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.btn_eliminar_cliente = new System.Windows.Forms.Button();
             this.btn_salir_cliente = new System.Windows.Forms.Button();
             this.btn_refresh_client = new System.Windows.Forms.Button();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnConsulta = new System.Windows.Forms.Button();
@@ -47,6 +41,12 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.filtroNro = new ComunicAr.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -100,48 +100,6 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.btn_refresh_client.Text = "Refrescar";
             this.btn_refresh_client.UseVisualStyleBackColor = true;
             this.btn_refresh_client.Click += new System.EventHandler(this.btn_refresh_client_Click);
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Piso";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 50;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Nro Calle";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 75;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Calle";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Cod_Barrio";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 75;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 150;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nro";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 75;
             // 
             // dataGridView1
             // 
@@ -226,6 +184,48 @@ namespace ComunicAr.Formularios.ABM_Clientes
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero de Cliente";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nro";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 75;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Barrio";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 75;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Calle";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 200;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Nro Calle";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 75;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Piso";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 50;
+            // 
             // Frm_ABM_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -258,12 +258,6 @@ namespace ComunicAr.Formularios.ABM_Clientes
         private System.Windows.Forms.Button btn_eliminar_cliente;
         private System.Windows.Forms.Button btn_salir_cliente;
         private System.Windows.Forms.Button btn_refresh_client;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
@@ -271,5 +265,11 @@ namespace ComunicAr.Formularios.ABM_Clientes
         private System.Windows.Forms.Button btnConsulta;
         private Clases.TextBox01 filtroNombre;
         private Clases.TextBox01 filtroNro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

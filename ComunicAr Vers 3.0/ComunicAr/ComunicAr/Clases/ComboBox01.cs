@@ -64,7 +64,7 @@ namespace ComunicAr.Clases
             }
             else if (tipo == "B")
             {
-                string sql = "SELECT DISTINCT cod_servicio as cod, descripcion FROM servicios_fijos ";
+                string sql = "SELECT DISTINCT cod_servicio as cod, descripcion FROM servicio_fijo ";
                 DataTable tabla = new DataTable();
                 tabla = _BD.EjecutarSelect(sql);
                 this.DisplayMember = "descripcion";
@@ -85,11 +85,47 @@ namespace ComunicAr.Clases
             {
                 MessageBox.Show("aca hay un problema " + tipo);
             }
-
-
-
-
         }
 
+        public void Cargar_Combo_Ciudad(string Prov)
+        {
+            string sql = "SELECT DISTINCT cod_ciudad, nombre_ciudad FROM Ciudad WHERE id_prov = " + Prov;
+            DataTable tabla = new DataTable();
+            tabla = _BD.EjecutarSelect(sql);
+            this.DisplayMember = "nombre_ciudad";
+            this.ValueMember = "cod_ciudad";
+            this.DataSource = tabla;
+            this.SelectedIndex = -1;
+        }
+
+        public void Cargar_Combo_Barrio(string Ciudad)
+        {
+            string sql = "SELECT DISTINCT cod_barrio, nombre_barrio FROM Barrio WHERE id_ciudad = " + Ciudad;
+            DataTable tabla = new DataTable();
+            tabla = _BD.EjecutarSelect(sql);
+            this.DisplayMember = "nombre_barrio";
+            this.ValueMember = "cod_barrio";
+            this.DataSource = tabla;
+        }
+
+        public void Ciudad_Combo_Cargar(string cod_ciudad)
+        {
+            string sql = "SELECT DISTINCT cod_ciudad, nombre_ciudad FROM Ciudad WHERE cod_ciudad = " + cod_ciudad;
+            DataTable tabla = new DataTable();
+            tabla = _BD.EjecutarSelect(sql);
+            this.DisplayMember = "nombre_ciudad";
+            this.ValueMember = "cod_ciudad";
+            this.DataSource = tabla;
+            
+        }
+        public void Provincia_Combo_Cargar(string cod_prov)
+        {
+            string sql = "SELECT DISTINCT cod_prov, nombre_prov FROM Provincia WHERE cod_prov = " + cod_prov;
+            DataTable tabla = new DataTable();
+            tabla = _BD.EjecutarSelect(sql);
+            this.DisplayMember = "nombre_prov";
+            this.ValueMember = "cod_prov";
+            this.DataSource = tabla;
+        }
     }
 }
