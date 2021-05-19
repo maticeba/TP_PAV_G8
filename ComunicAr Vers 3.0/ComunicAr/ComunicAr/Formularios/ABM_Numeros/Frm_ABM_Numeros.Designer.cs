@@ -30,10 +30,6 @@ namespace ComunicAr.Formularios.ABM_Numeros
         private void InitializeComponent()
         {
             this.GridNumero = new System.Windows.Forms.DataGridView();
-            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nro_telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nro_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_dispositivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_refrescar_numero = new System.Windows.Forms.Button();
             this.btn_salir_numero = new System.Windows.Forms.Button();
             this.btn_eliminar_numero = new System.Windows.Forms.Button();
@@ -43,6 +39,10 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.btnConsulta = new System.Windows.Forms.Button();
             this.filtro_id_numero = new ComunicAr.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
+            this.id_numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_dispositivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridNumero)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,42 +57,16 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.nro_telefono,
             this.nro_cliente,
             this.id_dispositivo});
-            this.GridNumero.Location = new System.Drawing.Point(35, 178);
+            this.GridNumero.Location = new System.Drawing.Point(12, 160);
             this.GridNumero.Name = "GridNumero";
             this.GridNumero.ReadOnly = true;
-            this.GridNumero.Size = new System.Drawing.Size(541, 252);
+            this.GridNumero.Size = new System.Drawing.Size(607, 291);
             this.GridNumero.TabIndex = 7;
             this.GridNumero.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridNumero_CellContentClick_1);
             // 
-            // id_numero
-            // 
-            this.id_numero.HeaderText = "ID numero";
-            this.id_numero.Name = "id_numero";
-            this.id_numero.ReadOnly = true;
-            // 
-            // nro_telefono
-            // 
-            this.nro_telefono.HeaderText = "Numero Telefono";
-            this.nro_telefono.Name = "nro_telefono";
-            this.nro_telefono.ReadOnly = true;
-            this.nro_telefono.Width = 130;
-            // 
-            // nro_cliente
-            // 
-            this.nro_cliente.HeaderText = "Cliente";
-            this.nro_cliente.Name = "nro_cliente";
-            this.nro_cliente.ReadOnly = true;
-            this.nro_cliente.Width = 140;
-            // 
-            // id_dispositivo
-            // 
-            this.id_dispositivo.HeaderText = "ID dispositivo";
-            this.id_dispositivo.Name = "id_dispositivo";
-            this.id_dispositivo.ReadOnly = true;
-            // 
             // btn_refrescar_numero
             // 
-            this.btn_refrescar_numero.Location = new System.Drawing.Point(22, 461);
+            this.btn_refrescar_numero.Location = new System.Drawing.Point(12, 471);
             this.btn_refrescar_numero.Name = "btn_refrescar_numero";
             this.btn_refrescar_numero.Size = new System.Drawing.Size(104, 34);
             this.btn_refrescar_numero.TabIndex = 2;
@@ -102,7 +76,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_salir_numero
             // 
-            this.btn_salir_numero.Location = new System.Drawing.Point(472, 461);
+            this.btn_salir_numero.Location = new System.Drawing.Point(515, 471);
             this.btn_salir_numero.Name = "btn_salir_numero";
             this.btn_salir_numero.Size = new System.Drawing.Size(104, 34);
             this.btn_salir_numero.TabIndex = 3;
@@ -112,7 +86,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_eliminar_numero
             // 
-            this.btn_eliminar_numero.Location = new System.Drawing.Point(278, 115);
+            this.btn_eliminar_numero.Location = new System.Drawing.Point(310, 120);
             this.btn_eliminar_numero.Name = "btn_eliminar_numero";
             this.btn_eliminar_numero.Size = new System.Drawing.Size(104, 34);
             this.btn_eliminar_numero.TabIndex = 4;
@@ -122,7 +96,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_modificar_numero
             // 
-            this.btn_modificar_numero.Location = new System.Drawing.Point(150, 115);
+            this.btn_modificar_numero.Location = new System.Drawing.Point(161, 120);
             this.btn_modificar_numero.Name = "btn_modificar_numero";
             this.btn_modificar_numero.Size = new System.Drawing.Size(104, 34);
             this.btn_modificar_numero.TabIndex = 5;
@@ -132,7 +106,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_crear_numero
             // 
-            this.btn_crear_numero.Location = new System.Drawing.Point(22, 115);
+            this.btn_crear_numero.Location = new System.Drawing.Point(12, 120);
             this.btn_crear_numero.Name = "btn_crear_numero";
             this.btn_crear_numero.Size = new System.Drawing.Size(104, 34);
             this.btn_crear_numero.TabIndex = 6;
@@ -145,18 +119,18 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.groupBox1.Controls.Add(this.btnConsulta);
             this.groupBox1.Controls.Add(this.filtro_id_numero);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(22, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(595, 75);
+            this.groupBox1.Size = new System.Drawing.Size(607, 87);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(435, 31);
+            this.btnConsulta.Location = new System.Drawing.Point(361, 36);
             this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(75, 23);
+            this.btnConsulta.Size = new System.Drawing.Size(87, 27);
             this.btnConsulta.TabIndex = 3;
             this.btnConsulta.Text = "Consulta";
             this.btnConsulta.UseVisualStyleBackColor = true;
@@ -164,29 +138,57 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // filtro_id_numero
             // 
-            this.filtro_id_numero.Location = new System.Drawing.Point(173, 33);
+            this.filtro_id_numero.Location = new System.Drawing.Point(124, 36);
             this.filtro_id_numero.Name = "filtro_id_numero";
             this.filtro_id_numero.Pp_Campo = null;
             this.filtro_id_numero.Pp_MensajeError = null;
             this.filtro_id_numero.Pp_Tabla = null;
             this.filtro_id_numero.Pp_Validable = false;
-            this.filtro_id_numero.Size = new System.Drawing.Size(183, 20);
+            this.filtro_id_numero.Size = new System.Drawing.Size(213, 23);
             this.filtro_id_numero.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 36);
+            this.label1.Location = new System.Drawing.Point(55, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(63, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID numero";
             // 
+            // id_numero
+            // 
+            this.id_numero.HeaderText = "ID numero";
+            this.id_numero.Name = "id_numero";
+            this.id_numero.ReadOnly = true;
+            // 
+            // nro_telefono
+            // 
+            this.nro_telefono.HeaderText = "Numero Telefono";
+            this.nro_telefono.Name = "nro_telefono";
+            this.nro_telefono.ReadOnly = true;
+            this.nro_telefono.Width = 150;
+            // 
+            // nro_cliente
+            // 
+            this.nro_cliente.HeaderText = "Cliente";
+            this.nro_cliente.Name = "nro_cliente";
+            this.nro_cliente.ReadOnly = true;
+            this.nro_cliente.Width = 140;
+            // 
+            // id_dispositivo
+            // 
+            this.id_dispositivo.HeaderText = "Dispositivo";
+            this.id_dispositivo.Name = "id_dispositivo";
+            this.id_dispositivo.ReadOnly = true;
+            this.id_dispositivo.Width = 150;
+            // 
             // Frm_ABM_Numeros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 505);
+            this.ClientSize = new System.Drawing.Size(639, 514);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GridNumero);
             this.Controls.Add(this.btn_refrescar_numero);
@@ -194,6 +196,8 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.Controls.Add(this.btn_eliminar_numero);
             this.Controls.Add(this.btn_modificar_numero);
             this.Controls.Add(this.btn_crear_numero);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_ABM_Numeros";
             this.Text = "Frm_ABM_Numeros";
             this.Load += new System.EventHandler(this.Frm_ABM_Numeros_Load);

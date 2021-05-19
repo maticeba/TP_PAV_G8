@@ -50,7 +50,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             this.cmb_nro_cliente.Enabled = false;
             this.cmb_nro_cliente.FormattingEnabled = true;
-            this.cmb_nro_cliente.Location = new System.Drawing.Point(148, 175);
+            this.cmb_nro_cliente.Location = new System.Drawing.Point(101, 148);
             this.cmb_nro_cliente.Name = "cmb_nro_cliente";
             this.cmb_nro_cliente.Pp_Conseleccion = false;
             this.cmb_nro_cliente.Pp_Descripcion = "nombre_razonSocial";
@@ -65,7 +65,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(202, 233);
+            this.btn_cancelar.Location = new System.Drawing.Point(170, 202);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 42;
@@ -75,7 +75,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(79, 233);
+            this.btn_aceptar.Location = new System.Drawing.Point(47, 202);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_aceptar.TabIndex = 41;
@@ -86,7 +86,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // txt_nro_telefono
             // 
             this.txt_nro_telefono.Enabled = false;
-            this.txt_nro_telefono.Location = new System.Drawing.Point(148, 146);
+            this.txt_nro_telefono.Location = new System.Drawing.Point(101, 122);
             this.txt_nro_telefono.Name = "txt_nro_telefono";
             this.txt_nro_telefono.Pp_Campo = "nro";
             this.txt_nro_telefono.Pp_MensajeError = "Falta cargar el número de telefono";
@@ -98,7 +98,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // txt_cod_area
             // 
             this.txt_cod_area.Enabled = false;
-            this.txt_cod_area.Location = new System.Drawing.Point(148, 117);
+            this.txt_cod_area.Location = new System.Drawing.Point(101, 96);
             this.txt_cod_area.Name = "txt_cod_area";
             this.txt_cod_area.Pp_Campo = "cod_area";
             this.txt_cod_area.Pp_MensajeError = "Falta cargar codigo area";
@@ -110,7 +110,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // txt_cod_nacional
             // 
             this.txt_cod_nacional.Enabled = false;
-            this.txt_cod_nacional.Location = new System.Drawing.Point(148, 88);
+            this.txt_cod_nacional.Location = new System.Drawing.Point(101, 70);
             this.txt_cod_nacional.Name = "txt_cod_nacional";
             this.txt_cod_nacional.Pp_Campo = "codigo nacional";
             this.txt_cod_nacional.Pp_MensajeError = "Falta cargar codigo nacional";
@@ -123,10 +123,10 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             this.cmb_id_disp.Enabled = false;
             this.cmb_id_disp.FormattingEnabled = true;
-            this.cmb_id_disp.Location = new System.Drawing.Point(148, 204);
+            this.cmb_id_disp.Location = new System.Drawing.Point(101, 175);
             this.cmb_id_disp.Name = "cmb_id_disp";
             this.cmb_id_disp.Pp_Conseleccion = false;
-            this.cmb_id_disp.Pp_Descripcion = "id_dispositivo";
+            this.cmb_id_disp.Pp_Descripcion = "modelo";
             this.cmb_id_disp.Pp_MensajeError = null;
             this.cmb_id_disp.Pp_NombreCampo = null;
             this.cmb_id_disp.Pp_NombreTabla = "";
@@ -139,25 +139,25 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(70, 207);
+            this.label6.Location = new System.Drawing.Point(37, 178);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.Size = new System.Drawing.Size(58, 13);
             this.label6.TabIndex = 36;
-            this.label6.Text = "Id dispositivo";
+            this.label6.Text = "Dispositivo";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(63, 178);
+            this.label5.Location = new System.Drawing.Point(56, 151);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
+            this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 35;
-            this.label5.Text = "Numero Cliente";
+            this.label5.Text = "Cliente";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(73, 149);
+            this.label4.Location = new System.Drawing.Point(30, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 34;
@@ -166,7 +166,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(74, 120);
+            this.label3.Location = new System.Drawing.Point(31, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 33;
@@ -175,7 +175,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 91);
+            this.label2.Location = new System.Drawing.Point(12, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 32;
@@ -185,7 +185,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(100, 9);
+            this.label1.Location = new System.Drawing.Point(69, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 32);
             this.label1.TabIndex = 31;
@@ -195,7 +195,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // txt_id_numero
             // 
             this.txt_id_numero.Enabled = false;
-            this.txt_id_numero.Location = new System.Drawing.Point(148, 62);
+            this.txt_id_numero.Location = new System.Drawing.Point(101, 44);
             this.txt_id_numero.Name = "txt_id_numero";
             this.txt_id_numero.Pp_Campo = "codigo nacional";
             this.txt_id_numero.Pp_MensajeError = "Falta cargar codigo nacional";
@@ -207,7 +207,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(82, 65);
+            this.label7.Location = new System.Drawing.Point(39, 47);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 45;
@@ -217,7 +217,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 266);
+            this.ClientSize = new System.Drawing.Size(287, 233);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_id_numero);
             this.Controls.Add(this.cmb_nro_cliente);
@@ -233,7 +233,9 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Baja_Numeros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Baja_Numeros";
             this.Load += new System.EventHandler(this.Frm_Baja_Numeros_Load);
             this.ResumeLayout(false);

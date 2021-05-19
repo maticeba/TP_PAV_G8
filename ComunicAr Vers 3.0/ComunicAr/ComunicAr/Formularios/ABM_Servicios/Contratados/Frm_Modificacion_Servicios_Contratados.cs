@@ -35,20 +35,16 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             cmb_tipo_servicio.CargarComboxTipo();
             cmb_tipo_servicio.SelectedIndex = -1;
             string tipo = tabla.Rows[0]["tipo_servicio"].ToString();
-            MessageBox.Show(tipo);
             if (tipo == "A")
             {
-                MessageBox.Show("Estoy pasando por A");
                 cmb_tipo_servicio.SelectedIndex = 0;
             }
             else if (tipo == "B")
             {
-                MessageBox.Show("Estoy pasando por B");
                 cmb_tipo_servicio.SelectedIndex = 1;
             }
             else
             {
-                MessageBox.Show("Estoy pasando por B");
                 cmb_tipo_servicio.SelectedIndex = 2;
             }
 

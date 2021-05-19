@@ -46,7 +46,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(191, 231);
+            this.btn_cancelar.Location = new System.Drawing.Point(172, 187);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 29;
@@ -56,7 +56,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(68, 231);
+            this.btn_aceptar.Location = new System.Drawing.Point(49, 187);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_aceptar.TabIndex = 28;
@@ -66,7 +66,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // txt_nro_telefono
             // 
-            this.txt_nro_telefono.Location = new System.Drawing.Point(137, 144);
+            this.txt_nro_telefono.Location = new System.Drawing.Point(101, 102);
             this.txt_nro_telefono.Name = "txt_nro_telefono";
             this.txt_nro_telefono.Pp_Campo = "nro";
             this.txt_nro_telefono.Pp_MensajeError = "Falta cargar el número de la calle";
@@ -77,7 +77,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // txt_cod_area
             // 
-            this.txt_cod_area.Location = new System.Drawing.Point(137, 115);
+            this.txt_cod_area.Location = new System.Drawing.Point(101, 73);
             this.txt_cod_area.Name = "txt_cod_area";
             this.txt_cod_area.Pp_Campo = "calle";
             this.txt_cod_area.Pp_MensajeError = "Falta cargar la calle del cliente";
@@ -88,7 +88,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             // txt_cod_nacional
             // 
-            this.txt_cod_nacional.Location = new System.Drawing.Point(137, 86);
+            this.txt_cod_nacional.Location = new System.Drawing.Point(101, 44);
             this.txt_cod_nacional.Name = "txt_cod_nacional";
             this.txt_cod_nacional.Pp_Campo = "nombre_razonSocial";
             this.txt_cod_nacional.Pp_MensajeError = "Falta cargar el nombre del cliente";
@@ -100,10 +100,10 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // cmb_id_disp
             // 
             this.cmb_id_disp.FormattingEnabled = true;
-            this.cmb_id_disp.Location = new System.Drawing.Point(137, 202);
+            this.cmb_id_disp.Location = new System.Drawing.Point(101, 160);
             this.cmb_id_disp.Name = "cmb_id_disp";
             this.cmb_id_disp.Pp_Conseleccion = false;
-            this.cmb_id_disp.Pp_Descripcion = "id_dispositivo";
+            this.cmb_id_disp.Pp_Descripcion = "modelo";
             this.cmb_id_disp.Pp_MensajeError = null;
             this.cmb_id_disp.Pp_NombreCampo = null;
             this.cmb_id_disp.Pp_NombreTabla = "";
@@ -116,25 +116,25 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 205);
+            this.label6.Location = new System.Drawing.Point(37, 163);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.Size = new System.Drawing.Size(58, 13);
             this.label6.TabIndex = 22;
-            this.label6.Text = "Id dispositivo";
+            this.label6.Text = "Dispositivo";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(52, 176);
+            this.label5.Location = new System.Drawing.Point(56, 134);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
+            this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 21;
-            this.label5.Text = "Numero Cliente";
+            this.label5.Text = "Cliente";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 147);
+            this.label4.Location = new System.Drawing.Point(30, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 20;
@@ -143,7 +143,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(63, 118);
+            this.label3.Location = new System.Drawing.Point(31, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 19;
@@ -152,7 +152,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 89);
+            this.label2.Location = new System.Drawing.Point(12, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 18;
@@ -162,7 +162,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 9);
+            this.label1.Location = new System.Drawing.Point(54, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 32);
             this.label1.TabIndex = 17;
@@ -172,7 +172,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // cmb_nro_cliente
             // 
             this.cmb_nro_cliente.FormattingEnabled = true;
-            this.cmb_nro_cliente.Location = new System.Drawing.Point(137, 173);
+            this.cmb_nro_cliente.Location = new System.Drawing.Point(101, 131);
             this.cmb_nro_cliente.Name = "cmb_nro_cliente";
             this.cmb_nro_cliente.Pp_Conseleccion = false;
             this.cmb_nro_cliente.Pp_Descripcion = "nombre_razonSocial";
@@ -189,7 +189,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 280);
+            this.ClientSize = new System.Drawing.Size(285, 221);
             this.Controls.Add(this.cmb_nro_cliente);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
@@ -203,7 +203,9 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Alta_Numeros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Alta_Numeros";
             this.Load += new System.EventHandler(this.Frm_Alta_Numeros_Load);
             this.ResumeLayout(false);
