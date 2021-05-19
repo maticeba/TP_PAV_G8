@@ -35,13 +35,15 @@ namespace ComunicAr.Formularios.ABM_Numeros
         {
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
+                string cod_nac = tabla.Rows[i]["cod_nacional"].ToString();
+                string area_cod = tabla.Rows[i]["cod_area"].ToString();
+                string nro_tel = tabla.Rows[i]["nro_telefono"].ToString();
+                string numero = "+" + cod_nac + " " + area_cod + " " + nro_tel;
                 GridNumero.Rows.Add();
                 GridNumero.Rows[i].Cells[0].Value = tabla.Rows[i]["id_numero"].ToString();
-                GridNumero.Rows[i].Cells[1].Value = tabla.Rows[i]["cod_nacional"].ToString();
-                GridNumero.Rows[i].Cells[2].Value = tabla.Rows[i]["cod_area"].ToString();
-                GridNumero.Rows[i].Cells[3].Value = tabla.Rows[i]["nro_telefono"].ToString();
-                GridNumero.Rows[i].Cells[4].Value = tabla.Rows[i]["nro_cliente"].ToString();
-                GridNumero.Rows[i].Cells[5].Value = tabla.Rows[i]["id_dispositivo"].ToString();
+                GridNumero.Rows[i].Cells[1].Value = numero.ToString();
+                GridNumero.Rows[i].Cells[2].Value = tabla.Rows[i]["nombre_razonSocial"].ToString();
+                GridNumero.Rows[i].Cells[3].Value = tabla.Rows[i]["id_dispositivo"].ToString();
             }
         }
 
