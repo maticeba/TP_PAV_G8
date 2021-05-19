@@ -1,19 +1,1 @@
-Prueba para GitHub
 
-hola leen esto?
-
-si
-
-hola soy nico
-
-listo chicos ya funciona
-
-se lee ? soy eze
-
-si eze
-hola por finnnn sil
-hola joaco
-
-renzo padilla 
-
-gente. Estoy haciendo una prueba de como funciona esto
