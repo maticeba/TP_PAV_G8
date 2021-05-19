@@ -58,6 +58,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Detalle_Llamadas\Form_prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalle_Llamadas\Form_prueba.Designer.cs">
+      <DependentUpon>Form_prueba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM_Ciudad\Frm_ABM_Ciudad.cs">
       <SubType>Form</SubType>
     </Compile>
