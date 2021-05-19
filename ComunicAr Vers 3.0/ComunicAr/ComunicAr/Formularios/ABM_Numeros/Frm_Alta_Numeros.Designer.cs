@@ -179,7 +179,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.cmb_nro_cliente.Pp_NombreCampo = null;
             this.cmb_nro_cliente.Pp_NombreTabla = "";
             this.cmb_nro_cliente.Pp_PK = "nro_cliente";
-            this.cmb_nro_cliente.Pp_Tabla = "clientes";
+            this.cmb_nro_cliente.Pp_Tabla = "cliente";
             this.cmb_nro_cliente.Pp_Validable = true;
             this.cmb_nro_cliente.Size = new System.Drawing.Size(164, 21);
             this.cmb_nro_cliente.TabIndex = 30;
