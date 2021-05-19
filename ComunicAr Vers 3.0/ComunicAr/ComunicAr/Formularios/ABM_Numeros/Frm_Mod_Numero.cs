@@ -54,6 +54,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             {
                 return;
             }
+            this.Close();
         }
 
 
@@ -65,6 +66,11 @@ namespace ComunicAr.Formularios.ABM_Numeros
             cmb_nro_cliente.SelectedValue = int.Parse(tabla.Rows[0]["nro_cliente"].ToString());
             cmb_id_disp.SelectedValue = int.Parse(tabla.Rows[0]["id_dispositivo"].ToString());
 
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
