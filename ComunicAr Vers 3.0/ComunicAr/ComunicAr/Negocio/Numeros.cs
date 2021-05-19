@@ -30,8 +30,9 @@ namespace ComunicAr.Negocio
 
         public DataTable Numeros_por_id(string id_numero)
         {
-            string sql = @"SELECT n.* FROM numero n "
-                       + "WHERE n.id_numero = " + id_numero;
+            string sql = @"SELECT n.*, c.nombre_razonSocial, d.modelo "
+                       + "FROM numero n, Cliente c, Dispositivos d  "
+                       + "WHERE n.id_numero = " + id_numero + "AND n.nro_cliente = c.nro_cliente AND n.id_dispositivo = d.id_dispositivo";
             return BD.EjecutarSelect(sql);
         }
 
