@@ -60,6 +60,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             {
                 return;
             }
+            this.Close();
         }
         private void label1_Click(object sender, EventArgs e)
         {

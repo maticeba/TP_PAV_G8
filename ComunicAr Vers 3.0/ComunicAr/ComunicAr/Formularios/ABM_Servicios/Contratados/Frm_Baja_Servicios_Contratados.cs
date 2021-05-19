@@ -72,6 +72,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
                 servicios.Borrar();
                 MessageBox.Show("Se borró correctamente el servicio");
             }
+            this.Close();
         }
     }
 }

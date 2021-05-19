@@ -39,6 +39,7 @@ namespace ComunicAr.Formularios.Barrio
             {
                 return;
             }
+            this.Close();
         }
 
         private void MostrarDatos(DataTable tabla)

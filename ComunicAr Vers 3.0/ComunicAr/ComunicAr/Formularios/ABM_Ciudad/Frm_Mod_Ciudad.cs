@@ -48,7 +48,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
                 ciudad.Pp_codProvincia = cmb_mod_ciudad.SelectedValue.ToString();
                 ciudad.Pp_nombreCiudad = txt_nom_ciud.Text;
                 ciudad.Modificar();
-
+                this.Close();
             }
         }
     }

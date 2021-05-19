@@ -50,6 +50,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             {
                 return;
             }
+            this.Close();
         }
 
         private void txt_tipo_servicio_TextChanged(object sender, EventArgs e)

@@ -38,6 +38,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
 
                 //cliente.Insertar(this.Controls);
                 cliente.Insertar();
+                this.Close();
             }
             else
             {

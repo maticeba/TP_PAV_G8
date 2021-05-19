@@ -36,6 +36,7 @@ namespace ComunicAr.Formularios.Barrio
             {
                 return;
             }
+            this.Close();
         }
 
         private void btn_cliente_alta_cancelar_Click(object sender, EventArgs e)

@@ -52,6 +52,7 @@ namespace ComunicAr.Formularios.ABM_Ciudad
 
                 ciudad.Borrar();
                 MessageBox.Show("Ciudad borrada con exito");
+                this.Close();
 
             }
         }

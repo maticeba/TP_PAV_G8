@@ -40,6 +40,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
             {
                 return;
             }
+            this.Close();
         }
         private void MostrarDatosServicioFijos(DataTable tabla)
         {

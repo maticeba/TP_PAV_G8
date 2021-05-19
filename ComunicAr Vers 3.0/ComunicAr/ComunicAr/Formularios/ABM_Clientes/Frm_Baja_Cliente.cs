@@ -32,6 +32,7 @@ namespace ComunicAr.Formularios.ABM_Clientes
             {
                 clientes.Borrar();
                 MessageBox.Show("Se borró correctamente el cliente");
+                this.Close();
             }
         }
 

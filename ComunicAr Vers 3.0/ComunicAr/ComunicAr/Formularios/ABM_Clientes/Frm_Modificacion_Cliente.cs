@@ -40,7 +40,8 @@ namespace ComunicAr.Formularios.ABM_Clientes
                 cliente.Pp_nroCliente = nro_Cliente;
 
                 cliente.Modificar();
-                
+                this.Close();
+
             }
             else
             {

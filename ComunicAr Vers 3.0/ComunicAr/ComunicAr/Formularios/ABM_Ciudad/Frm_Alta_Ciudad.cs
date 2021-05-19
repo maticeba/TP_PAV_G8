@@ -40,11 +40,13 @@ namespace ComunicAr.Formularios.ABM_Ciudad
                 ciudad.Pp_codProvincia = cmb_alta_ciudad.SelectedValue.ToString();
 
                 ciudad.Insertar();
+                this.Close();
             }
             else
             {
                 return;
             }
+            
         }
     }
 }

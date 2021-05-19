@@ -42,6 +42,7 @@ namespace ComunicAr.Formularios.ABM_Provincia
             {
                 return;
             }
+            this.Close();
         }
     }
 }

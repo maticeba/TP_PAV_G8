@@ -63,6 +63,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             {
                 return;
             }
+            this.Close();
         }
 
         private void btn_llamada_mod_buscar_receptor_Click(object sender, EventArgs e)

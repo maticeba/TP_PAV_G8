@@ -29,7 +29,9 @@ namespace ComunicAr.Formularios.ABM_Provincia
                 {
                     provincia.Borrar();
                     MessageBox.Show("Se borró correctamente la Provincia");
+                    this.Close();
                 }
+               
         }
 
         private void Frm_Baja_Prov_Load(object sender, EventArgs e)

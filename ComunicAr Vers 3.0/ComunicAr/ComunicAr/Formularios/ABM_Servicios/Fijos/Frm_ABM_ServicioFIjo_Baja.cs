@@ -36,6 +36,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Fijos
                 serviciofijo.borrarServicioFIjo();
                 MessageBox.Show("Se borró correctamente el cliente");
             }
+            this.Close();
         }
 
         private void MostrarDatosServicioFijos(DataTable tabla)

@@ -62,6 +62,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             {
                 return;
             }
+            this.Close();
         }
 
         private void btn_llamada_alta_buscar_emisor_Click(object sender, EventArgs e)
