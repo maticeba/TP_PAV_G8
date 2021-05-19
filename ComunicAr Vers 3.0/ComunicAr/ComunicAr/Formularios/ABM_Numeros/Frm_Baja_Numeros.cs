@@ -51,7 +51,9 @@ namespace ComunicAr.Formularios.ABM_Numeros
                 numero.Borrar();
                 MessageBox.Show("Se borró correctamente el numero");
             }
+            this.Close();
         }
+
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {

@@ -54,6 +54,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             {
                 return;
             }
+            this.Close();
         }
 
 
