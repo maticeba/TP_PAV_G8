@@ -37,9 +37,8 @@ namespace ComunicAr.Negocio
         }
         public DataTable FiltroXmarca(string marca)
         {
-            string sql = @"SELECT  d.* , t.nombre_tipo " +
-                        "FROM dispositivos d, Tipo_dispositivo t "
-                       + "WHERE marca = '" + marca + "' AND d.id_tipo_dispositivo = t.id_tipo_dispositivo";
+            string sql = @"SELECT * FROM dispositivos "
+                       + "WHERE marca = '" + marca + "'";
             return BD.EjecutarSelect(sql);
         }
         public void Insertar(Control.ControlCollection controles)

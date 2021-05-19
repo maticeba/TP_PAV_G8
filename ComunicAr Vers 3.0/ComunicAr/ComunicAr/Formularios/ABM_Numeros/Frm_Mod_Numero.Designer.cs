@@ -55,7 +55,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.cmb_nro_cliente.Pp_NombreCampo = null;
             this.cmb_nro_cliente.Pp_NombreTabla = "";
             this.cmb_nro_cliente.Pp_PK = "nro_cliente";
-            this.cmb_nro_cliente.Pp_Tabla = "cliente";
+            this.cmb_nro_cliente.Pp_Tabla = "clientes";
             this.cmb_nro_cliente.Pp_Validable = true;
             this.cmb_nro_cliente.Size = new System.Drawing.Size(164, 21);
             this.cmb_nro_cliente.TabIndex = 45;
@@ -68,7 +68,6 @@ namespace ComunicAr.Formularios.ABM_Numeros
             this.btn_cancelar.TabIndex = 44;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_aceptar
             // 
