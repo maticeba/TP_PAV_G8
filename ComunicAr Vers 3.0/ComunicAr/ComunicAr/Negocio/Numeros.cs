@@ -22,7 +22,7 @@ namespace ComunicAr.Negocio
         Acceso_BD BD = new Acceso_BD();
         public DataTable NumerosCompletos()
         {
-            string sql = @"SELECT n.*, c.nombre_razonSocial,d.modelo " +
+            string sql = @"SELECT n.*, c.nombre_razonSocial, d.modelo " +
                             "FROM Numero n, Cliente c, Dispositivos d " +
                             "WHERE n.nro_cliente = c.nro_cliente AND n.id_dispositivo = d.id_dispositivo";
             return BD.EjecutarSelect(sql);
