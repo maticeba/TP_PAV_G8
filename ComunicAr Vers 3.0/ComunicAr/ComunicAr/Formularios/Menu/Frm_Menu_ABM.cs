@@ -8,58 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComunicAr.Formularios.ABM_Clientes;
-using ComunicAr.Formularios.Servicios;
-using ComunicAr.Formularios.ABM_Servicios.Datos;
-using ComunicAr.Formularios.ABM_Servicios.Fijos;
 using ComunicAr.Formularios.ABM_Llamadas;
 using ComunicAr.Formularios.ABM_Dispositivos;
-using ComunicAr.Formularios.ABM_Servicios.Prepagos;
-using ComunicAr.Formularios.Barrio;
-using ComunicAr.Formularios.ABM_Provincia;
-using ComunicAr.Formularios.ABM_Ciudad;
 using ComunicAr.Formularios.ABM_Numeros;
+using ComunicAr.Formularios.Menu;
 
 namespace ComunicAr.Formularios
 {
-    public partial class Frm_Menu : Form
+    public partial class Frm_Menu_ABM : Form
     {
-        public Frm_Menu()
+        public Frm_Menu_ABM()
         {
             InitializeComponent();
         }
         private void btn_salir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
-        private void cmb_Actual_Datos_SelectedValueChanged(object sender, EventArgs e)
-        {
-            if (cmb_Actual_Datos.SelectedIndex == 0)
-            {
-                Frm_ABM_Cliente Frm_Cliente = new Frm_ABM_Cliente();
-                Frm_Cliente.ShowDialog();
-                cmb_Actual_Datos.SelectedIndex = -1;
-            }
+        /*
 
-            if (cmb_Actual_Datos.SelectedIndex == 1)
-            {
-                Frm_ABM_Numeros Frm_Numero = new Frm_ABM_Numeros();
-                Frm_Numero.ShowDialog();
-                cmb_Actual_Datos.SelectedIndex = -1;
-            }
-
-            if (cmb_Actual_Datos.SelectedIndex == 2)
-            {
-                Frm_ABM_Llamadas Frm_Llamada = new Frm_ABM_Llamadas();
-                Frm_Llamada.ShowDialog();
-                cmb_Actual_Datos.SelectedIndex = -1;
-            }
-
-            if (cmb_Actual_Datos.SelectedIndex == 3)
-            {
-                Frm_ABM_Dispositivos Frm_Dispositivo = new Frm_ABM_Dispositivos();
-                Frm_Dispositivo.ShowDialog();
-                cmb_Actual_Datos.SelectedIndex = -1;
-            }
 
             if (cmb_Actual_Datos.SelectedIndex == 4)
             {
@@ -111,11 +78,43 @@ namespace ComunicAr.Formularios
                 cmb_Actual_Datos.SelectedIndex = -1;
             }
 
+        }*/
+
+
+        private void btn_menu_datos_cliente_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Cliente Clientes = new Frm_ABM_Cliente();
+            Clientes.ShowDialog();
         }
 
-        private void Frm_Menu_Load(object sender, EventArgs e)
+        private void btn_menu_datos_nro_Click(object sender, EventArgs e)
         {
+            Frm_ABM_Numeros Numeros = new Frm_ABM_Numeros();
+            Numeros.ShowDialog();
+        }
 
+        private void btn_menu_datos_llamada_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Llamadas llamadas = new Frm_ABM_Llamadas();
+            llamadas.ShowDialog();
+        }
+
+        private void btn_menu_datos_dispositivos_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Dispositivos dispositivos = new Frm_ABM_Dispositivos();
+            dispositivos.ShowDialog();
+        }
+
+        private void btn_menu_datos_servicios_Click(object sender, EventArgs e)
+        {
+            Menu_Servicios servicios = new Menu_Servicios();
+            servicios.ShowDialog();
+        }
+
+        private void btn_menu_datos_ubicación_Click(object sender, EventArgs e)
+        {
+            Menu_Ubicacion ubicacion = new Menu_Ubicacion();
+            ubicacion.ShowDialog();
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComunicAr.Formularios;
+using ComunicAr.Formularios.Menu;
 
 namespace ComunicAr
 {
@@ -20,7 +20,7 @@ namespace ComunicAr
 
         private void Escritorio_Load(object sender, EventArgs e)
         {
-            Frm_Menu Menu = new Frm_Menu();
+            Frm_MenuGral Menu = new Frm_MenuGral();
             Menu.ShowDialog();
         }
     }
