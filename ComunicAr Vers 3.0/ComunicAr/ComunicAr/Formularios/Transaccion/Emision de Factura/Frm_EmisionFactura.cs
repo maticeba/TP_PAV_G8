@@ -16,5 +16,11 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Frm_Detalle_Llamada Llamadas = new Frm_Detalle_Llamada();
+            Llamadas.ShowDialog();
+        }
     }
 }

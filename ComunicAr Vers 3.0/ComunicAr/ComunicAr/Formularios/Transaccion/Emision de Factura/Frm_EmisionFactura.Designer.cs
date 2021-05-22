@@ -29,13 +29,10 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox011 = new ComunicAr.Clases.TextBox01();
             this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox012 = new ComunicAr.Clases.TextBox01();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox013 = new ComunicAr.Clases.TextBox01();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -49,22 +46,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox014 = new ComunicAr.Clases.TextBox01();
-            this.textBox015 = new ComunicAr.Clases.TextBox01();
-            this.textBox016 = new ComunicAr.Clases.TextBox01();
-            this.textBox017 = new ComunicAr.Clases.TextBox01();
             this.SuspendLayout();
-            // 
-            // textBox011
-            // 
-            this.textBox011.Location = new System.Drawing.Point(411, 25);
-            this.textBox011.Name = "textBox011";
-            this.textBox011.Pp_Campo = null;
-            this.textBox011.Pp_MensajeError = null;
-            this.textBox011.Pp_Tabla = null;
-            this.textBox011.Pp_Validable = false;
-            this.textBox011.Size = new System.Drawing.Size(126, 23);
-            this.textBox011.TabIndex = 2;
             // 
             // button6
             // 
@@ -84,17 +66,6 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label2.TabIndex = 6;
             this.label2.Text = "ID Cliente";
             // 
-            // textBox012
-            // 
-            this.textBox012.Location = new System.Drawing.Point(131, 25);
-            this.textBox012.Name = "textBox012";
-            this.textBox012.Pp_Campo = null;
-            this.textBox012.Pp_MensajeError = null;
-            this.textBox012.Pp_Tabla = null;
-            this.textBox012.Pp_Validable = false;
-            this.textBox012.Size = new System.Drawing.Size(100, 23);
-            this.textBox012.TabIndex = 7;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(237, 25);
@@ -112,17 +83,6 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label3.Size = new System.Drawing.Size(91, 15);
             this.label3.TabIndex = 9;
             this.label3.Text = "Nombre Cliente";
-            // 
-            // textBox013
-            // 
-            this.textBox013.Location = new System.Drawing.Point(130, 54);
-            this.textBox013.Name = "textBox013";
-            this.textBox013.Pp_Campo = null;
-            this.textBox013.Pp_MensajeError = null;
-            this.textBox013.Pp_Tabla = null;
-            this.textBox013.Pp_Validable = false;
-            this.textBox013.Size = new System.Drawing.Size(147, 23);
-            this.textBox013.TabIndex = 10;
             // 
             // button1
             // 
@@ -159,6 +119,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.button5.TabIndex = 11;
             this.button5.Text = "Llamadas";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
@@ -242,59 +203,11 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label9.TabIndex = 18;
             this.label9.Text = "Fecha 3º Vencimiento";
             // 
-            // textBox014
-            // 
-            this.textBox014.Location = new System.Drawing.Point(411, 102);
-            this.textBox014.Name = "textBox014";
-            this.textBox014.Pp_Campo = null;
-            this.textBox014.Pp_MensajeError = null;
-            this.textBox014.Pp_Tabla = null;
-            this.textBox014.Pp_Validable = false;
-            this.textBox014.Size = new System.Drawing.Size(126, 23);
-            this.textBox014.TabIndex = 19;
-            // 
-            // textBox015
-            // 
-            this.textBox015.Location = new System.Drawing.Point(411, 131);
-            this.textBox015.Name = "textBox015";
-            this.textBox015.Pp_Campo = null;
-            this.textBox015.Pp_MensajeError = null;
-            this.textBox015.Pp_Tabla = null;
-            this.textBox015.Pp_Validable = false;
-            this.textBox015.Size = new System.Drawing.Size(126, 23);
-            this.textBox015.TabIndex = 19;
-            // 
-            // textBox016
-            // 
-            this.textBox016.Location = new System.Drawing.Point(411, 160);
-            this.textBox016.Name = "textBox016";
-            this.textBox016.Pp_Campo = null;
-            this.textBox016.Pp_MensajeError = null;
-            this.textBox016.Pp_Tabla = null;
-            this.textBox016.Pp_Validable = false;
-            this.textBox016.Size = new System.Drawing.Size(126, 23);
-            this.textBox016.TabIndex = 19;
-            // 
-            // textBox017
-            // 
-            this.textBox017.Location = new System.Drawing.Point(411, 189);
-            this.textBox017.Name = "textBox017";
-            this.textBox017.Pp_Campo = null;
-            this.textBox017.Pp_MensajeError = null;
-            this.textBox017.Pp_Tabla = null;
-            this.textBox017.Pp_Validable = false;
-            this.textBox017.Size = new System.Drawing.Size(126, 23);
-            this.textBox017.TabIndex = 19;
-            // 
             // Frm_EmisionFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 293);
-            this.Controls.Add(this.textBox017);
-            this.Controls.Add(this.textBox016);
-            this.Controls.Add(this.textBox015);
-            this.Controls.Add(this.textBox014);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -307,13 +220,10 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox013);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox012);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox011);
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_EmisionFactura";

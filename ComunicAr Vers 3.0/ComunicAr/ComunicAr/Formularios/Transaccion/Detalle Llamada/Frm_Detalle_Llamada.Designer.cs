@@ -31,21 +31,26 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox011 = new ComunicAr.Clases.TextBox01();
+            this.txt_subtotal = new ComunicAr.Clases.TextBox01();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Txt_Nombre_DLlamadas = new ComunicAr.Clases.TextBox01();
+            this.Txt_ID_DLlamadas = new ComunicAr.Clases.TextBox01();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Txt_NroFac_DLlamadas = new ComunicAr.Clases.TextBox01();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -57,45 +62,51 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Column4,
             this.Column5,
             this.Column6,
-            this.Column3,
-            this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(51, 97);
+            this.Column3});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 89);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(818, 266);
+            this.dataGridView1.Size = new System.Drawing.Size(743, 266);
             this.dataGridView1.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(712, 372);
+            this.label6.Location = new System.Drawing.Point(598, 364);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 15);
             this.label6.TabIndex = 1;
             this.label6.Text = "Subtotal";
             // 
-            // textBox011
+            // txt_subtotal
             // 
-            this.textBox011.Location = new System.Drawing.Point(769, 369);
-            this.textBox011.Name = "textBox011";
-            this.textBox011.Pp_Campo = null;
-            this.textBox011.Pp_MensajeError = null;
-            this.textBox011.Pp_Tabla = null;
-            this.textBox011.Pp_Validable = false;
-            this.textBox011.Size = new System.Drawing.Size(100, 23);
-            this.textBox011.TabIndex = 2;
+            this.txt_subtotal.Enabled = false;
+            this.txt_subtotal.Location = new System.Drawing.Point(655, 361);
+            this.txt_subtotal.Name = "txt_subtotal";
+            this.txt_subtotal.Pp_Campo = null;
+            this.txt_subtotal.Pp_MensajeError = null;
+            this.txt_subtotal.Pp_Tabla = null;
+            this.txt_subtotal.Pp_Validable = false;
+            this.txt_subtotal.Size = new System.Drawing.Size(100, 23);
+            this.txt_subtotal.TabIndex = 2;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(51, 13);
+            this.groupBox1.Controls.Add(this.Txt_ID_DLlamadas);
+            this.groupBox1.Controls.Add(this.Txt_NroFac_DLlamadas);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.Txt_Nombre_DLlamadas);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(818, 64);
+            this.groupBox1.Size = new System.Drawing.Size(751, 67);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ubicación Datos Clientes";
+            this.groupBox1.Text = "Datos del Clientes";
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(564, 418);
+            this.button6.Location = new System.Drawing.Point(450, 410);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(142, 23);
             this.button6.TabIndex = 5;
@@ -104,7 +115,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(51, 418);
+            this.button1.Location = new System.Drawing.Point(12, 410);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -113,7 +124,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(150, 418);
+            this.button2.Location = new System.Drawing.Point(111, 410);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -122,21 +133,76 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(727, 418);
+            this.button3.Location = new System.Drawing.Point(613, 410);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(142, 23);
             this.button3.TabIndex = 5;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // label1
             // 
-            this.button4.Location = new System.Drawing.Point(244, 418);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Insertar Descuento";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(41, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID Cliente";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(219, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nombre Cliente";
+            // 
+            // Txt_Nombre_DLlamadas
+            // 
+            this.Txt_Nombre_DLlamadas.Enabled = false;
+            this.Txt_Nombre_DLlamadas.Location = new System.Drawing.Point(317, 22);
+            this.Txt_Nombre_DLlamadas.Name = "Txt_Nombre_DLlamadas";
+            this.Txt_Nombre_DLlamadas.Pp_Campo = null;
+            this.Txt_Nombre_DLlamadas.Pp_MensajeError = null;
+            this.Txt_Nombre_DLlamadas.Pp_Tabla = null;
+            this.Txt_Nombre_DLlamadas.Pp_Validable = false;
+            this.Txt_Nombre_DLlamadas.Size = new System.Drawing.Size(165, 23);
+            this.Txt_Nombre_DLlamadas.TabIndex = 1;
+            // 
+            // Txt_ID_DLlamadas
+            // 
+            this.Txt_ID_DLlamadas.Enabled = false;
+            this.Txt_ID_DLlamadas.Location = new System.Drawing.Point(105, 23);
+            this.Txt_ID_DLlamadas.Name = "Txt_ID_DLlamadas";
+            this.Txt_ID_DLlamadas.Pp_Campo = null;
+            this.Txt_ID_DLlamadas.Pp_MensajeError = null;
+            this.Txt_ID_DLlamadas.Pp_Tabla = null;
+            this.Txt_ID_DLlamadas.Pp_Validable = false;
+            this.Txt_ID_DLlamadas.Size = new System.Drawing.Size(95, 23);
+            this.Txt_ID_DLlamadas.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(502, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Nro Factura";
+            // 
+            // Txt_NroFac_DLlamadas
+            // 
+            this.Txt_NroFac_DLlamadas.Enabled = false;
+            this.Txt_NroFac_DLlamadas.Location = new System.Drawing.Point(578, 22);
+            this.Txt_NroFac_DLlamadas.Name = "Txt_NroFac_DLlamadas";
+            this.Txt_NroFac_DLlamadas.Pp_Campo = null;
+            this.Txt_NroFac_DLlamadas.Pp_MensajeError = null;
+            this.Txt_NroFac_DLlamadas.Pp_Tabla = null;
+            this.Txt_NroFac_DLlamadas.Pp_Validable = false;
+            this.Txt_NroFac_DLlamadas.Size = new System.Drawing.Size(165, 23);
+            this.Txt_NroFac_DLlamadas.TabIndex = 1;
             // 
             // Column1
             // 
@@ -169,29 +235,26 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Column3.HeaderText = "Costo";
             this.Column3.Name = "Column3";
             // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Descuento";
-            this.Column7.Name = "Column7";
-            // 
             // Frm_Detalle_Llamada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 453);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(775, 441);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox011);
+            this.Controls.Add(this.txt_subtotal);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_Detalle_Llamada";
             this.Text = "Frm_EmisionFactura";
+            this.Load += new System.EventHandler(this.Frm_Detalle_Llamada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,19 +264,23 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
-        private Clases.TextBox01 textBox011;
+        private Clases.TextBox01 txt_subtotal;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private Clases.TextBox01 Txt_ID_DLlamadas;
+        private Clases.TextBox01 Txt_NroFac_DLlamadas;
+        private System.Windows.Forms.Label label3;
+        private Clases.TextBox01 Txt_Nombre_DLlamadas;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.Button button4;
     }
 }

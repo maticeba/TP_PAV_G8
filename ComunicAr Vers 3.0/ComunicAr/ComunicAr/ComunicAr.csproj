@@ -59,12 +59,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
-    <Compile Include="Detalle_Llamadas\Form_prueba.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Detalle_Llamadas\Form_prueba.Designer.cs">
-      <DependentUpon>Form_prueba.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ABM\ABM_Ciudad\Frm_ABM_Ciudad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -370,6 +364,7 @@
     <Compile Include="Negocio\Servicios_Contratados.cs" />
     <Compile Include="Negocio\Servicios_Datos.cs" />
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
+    <Compile Include="Negocio_Transacciones\Detalle_Llamadas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Formularios\Transaccion\Detalle Llamada\Frm_Detalle_Llamada.cs">
