@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using ComunicAr.Negocio_Transacciones;
 using ComunicAr.Formularios;
+using ComunicAr.Negocio;
 
 
 
@@ -17,8 +18,10 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
 {
     public partial class Frm_Detalle_Llamada : Form
     {
-        public string Pp_NroFac;
-        public string Pp_NroCliente;
+        public string Pp_NroFac { get; set; }
+        public string Pp_NroCliente { get; set; }
+        public string Pp_idLlamada { get; set; }
+        public bool flag { get; set; }
         public Frm_Detalle_Llamada()
         {
             InitializeComponent();
@@ -26,8 +29,9 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
 
         private void Frm_Detalle_Llamada_Load(object sender, EventArgs e)
         {
-            Pp_NroFac = "1";
-            Pp_NroCliente = "1";
+            Pp_NroFac = "2";
+            Pp_NroCliente = "2";
+            flag = false;
             DataTable tabla = new DataTable();
             Detalle_Llamadas Detalle = new Detalle_Llamadas();
             tabla = Detalle.CargarCliente(Pp_NroFac);
@@ -74,6 +78,56 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
 
             }
             txt_subtotal.Text = subtotal.ToString();
+            flag = false;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Pp_idLlamada = dataGridView1.CurrentRow.Cells["Column1"].Value.ToString();
+            flag = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (flag == false)
+            {
+                MessageBox.Show("Seleccione una llamada para modificar");
+            }
+            else
+            {
+                Formularios.ABM_Llamadas.Frm_Modificar_Llamadas Mod_lla = new Formularios.ABM_Llamadas.Frm_Modificar_Llamadas();
+                Mod_lla.id_llamada = Pp_idLlamada;
+                //Mod_lla.txtBox_llamadas_mod_idEmisor.Enable = false;
+                Mod_lla.ShowDialog();
+
+                dataGridView1.Rows.Clear();
+                DataTable tabla2 = new DataTable();
+                Detalle_Llamadas Detalle2 = new Detalle_Llamadas();
+                tabla2 = Detalle2.RecoleccionDatos(Pp_NroCliente);
+                CargarDatos(tabla2);
+                flag = false;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (flag == false)
+            {
+                MessageBox.Show("Seleccione una llamada para eliminar");
+            }
+            else
+            {
+                Formularios.ABM_Llamadas.Frm_Baja_Llamadas baja_lla = new Formularios.ABM_Llamadas.Frm_Baja_Llamadas();
+                baja_lla.id_llamada = Pp_idLlamada;
+                baja_lla.ShowDialog();
+
+                dataGridView1.Rows.Clear();
+                DataTable tabla2 = new DataTable();
+                Detalle_Llamadas Detalle2 = new Detalle_Llamadas();
+                tabla2 = Detalle2.RecoleccionDatos(Pp_NroCliente);
+                CargarDatos(tabla2);
+                flag = false;
+            }
         }
     }
 }
