@@ -15,6 +15,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
     public partial class Frm_Modificar_Llamadas : Form
     {
         public string id_llamada { get; set; }
+        public bool Deshabilidator { get; set; }
         public Frm_Modificar_Llamadas()
         {
             InitializeComponent();
@@ -95,6 +96,18 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             Llamadas llamada = new Llamadas();
             llamada.Pp_id_llamada = id_llamada;
             MostrarDatos(llamada.LlamadasPresent());
+            if (Deshabilidator == true)
+            {
+                txtBox_llamadas_mod_idEmisor.Enabled = false;
+                btn_llamada_mod_buscar_emisor.Visible = false;
+                txtBox_llamadas_mod_idReceptor.Enabled = false;
+                cmb_llamada_mod_tel_receptor.Enabled = false;
+                btn_llamada_mod_buscar_receptor.Visible = false;
+                cmb_llamada_mod_tel_emisor.Enable = false;
+
+
+
+            }
         }
 
         private void MostrarDatos(DataTable tabla)
@@ -194,6 +207,11 @@ namespace ComunicAr.Formularios.ABM_Llamadas
                     cmb_llamada_mod_tel_emisor.CargarComboXcliente(txtBox_llamadas_mod_idEmisor.Text, nombre);
                 }
             }
+        }
+
+        private void cmb_llamada_mod_tel_emisor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

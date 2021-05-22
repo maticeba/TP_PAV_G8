@@ -65,7 +65,6 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Column3});
             this.dataGridView1.Location = new System.Drawing.Point(12, 89);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(743, 266);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -73,51 +72,40 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             // Column1
             // 
             this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Nro. Emisor";
-            this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.Width = 150;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Nro. Receptor";
-            this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Fecha";
-            this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Duración";
-            this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 150;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Costo";
-            this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(598, 364);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 25);
+            this.label6.Size = new System.Drawing.Size(51, 15);
             this.label6.TabIndex = 1;
             this.label6.Text = "Subtotal";
             // 
@@ -145,7 +133,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Txt_ID_DLlamadas.Pp_MensajeError = null;
             this.Txt_ID_DLlamadas.Pp_Tabla = null;
             this.Txt_ID_DLlamadas.Pp_Validable = false;
-            this.Txt_ID_DLlamadas.Size = new System.Drawing.Size(95, 31);
+            this.Txt_ID_DLlamadas.Size = new System.Drawing.Size(95, 23);
             this.Txt_ID_DLlamadas.TabIndex = 1;
             // 
             // Txt_NroFac_DLlamadas
@@ -157,7 +145,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Txt_NroFac_DLlamadas.Pp_MensajeError = null;
             this.Txt_NroFac_DLlamadas.Pp_Tabla = null;
             this.Txt_NroFac_DLlamadas.Pp_Validable = false;
-            this.Txt_NroFac_DLlamadas.Size = new System.Drawing.Size(165, 31);
+            this.Txt_NroFac_DLlamadas.Size = new System.Drawing.Size(165, 23);
             this.Txt_NroFac_DLlamadas.TabIndex = 1;
             // 
             // label3
@@ -165,7 +153,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(502, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 25);
+            this.label3.Size = new System.Drawing.Size(69, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Nro Factura";
             // 
@@ -178,7 +166,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Txt_Nombre_DLlamadas.Pp_MensajeError = null;
             this.Txt_Nombre_DLlamadas.Pp_Tabla = null;
             this.Txt_Nombre_DLlamadas.Pp_Validable = false;
-            this.Txt_Nombre_DLlamadas.Size = new System.Drawing.Size(165, 31);
+            this.Txt_Nombre_DLlamadas.Size = new System.Drawing.Size(165, 23);
             this.Txt_Nombre_DLlamadas.TabIndex = 1;
             // 
             // label2
@@ -186,7 +174,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(219, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 25);
+            this.label2.Size = new System.Drawing.Size(91, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre Cliente";
             // 
@@ -195,7 +183,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(41, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 25);
+            this.label1.Size = new System.Drawing.Size(58, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Cliente";
             // 
@@ -248,12 +236,12 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.txt_subtotal.Pp_MensajeError = null;
             this.txt_subtotal.Pp_Tabla = null;
             this.txt_subtotal.Pp_Validable = false;
-            this.txt_subtotal.Size = new System.Drawing.Size(100, 31);
+            this.txt_subtotal.Size = new System.Drawing.Size(100, 23);
             this.txt_subtotal.TabIndex = 2;
             // 
             // Frm_Detalle_Llamada
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 441);
             this.Controls.Add(this.button2);
@@ -266,7 +254,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_Detalle_Llamada";
-            this.Text = "Frm_DetalleLlamadas";
+            this.Text = "Frm_EmisionFactura";
             this.Load += new System.EventHandler(this.Frm_Detalle_Llamada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

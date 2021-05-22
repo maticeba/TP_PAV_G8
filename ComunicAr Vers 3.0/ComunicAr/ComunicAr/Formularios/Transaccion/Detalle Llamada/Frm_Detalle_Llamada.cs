@@ -105,6 +105,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             {
                 Formularios.ABM_Llamadas.Frm_Modificar_Llamadas Mod_lla = new Formularios.ABM_Llamadas.Frm_Modificar_Llamadas();
                 Mod_lla.id_llamada = Pp_idLlamada;
+                Mod_lla.Deshabilidator = true;
                 //Mod_lla.txtBox_llamadas_mod_idEmisor.Enable = false;
                 Mod_lla.ShowDialog();
 

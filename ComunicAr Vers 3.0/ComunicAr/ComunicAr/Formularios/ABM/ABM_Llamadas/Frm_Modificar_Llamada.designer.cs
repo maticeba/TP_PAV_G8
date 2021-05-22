@@ -506,12 +506,13 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             this.cmb_llamada_mod_tel_emisor.Pp_Validable = false;
             this.cmb_llamada_mod_tel_emisor.Size = new System.Drawing.Size(164, 23);
             this.cmb_llamada_mod_tel_emisor.TabIndex = 1;
+            this.cmb_llamada_mod_tel_emisor.SelectedIndexChanged += new System.EventHandler(this.cmb_llamada_mod_tel_emisor_SelectedIndexChanged);
             // 
             // Frm_Modificar_Llamadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 421);
+            this.ClientSize = new System.Drawing.Size(413, 417);
             this.ControlBox = false;
             this.Controls.Add(this.cmb_llamada_mod_fin_hs);
             this.Controls.Add(this.cmb_llamada_mod_fin_segs);
