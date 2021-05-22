@@ -38,16 +38,16 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Txt_ID_DLlamadas = new ComunicAr.Clases.TextBox01();
+            this.Txt_NroFac_DLlamadas = new ComunicAr.Clases.TextBox01();
             this.label3 = new System.Windows.Forms.Label();
+            this.Txt_Nombre_DLlamadas = new ComunicAr.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.Txt_ID_DLlamadas = new ComunicAr.Clases.TextBox01();
-            this.Txt_NroFac_DLlamadas = new ComunicAr.Clases.TextBox01();
-            this.Txt_Nombre_DLlamadas = new ComunicAr.Clases.TextBox01();
             this.txt_subtotal = new ComunicAr.Clases.TextBox01();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -124,6 +124,30 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Clientes";
             // 
+            // Txt_ID_DLlamadas
+            // 
+            this.Txt_ID_DLlamadas.Enabled = false;
+            this.Txt_ID_DLlamadas.Location = new System.Drawing.Point(105, 23);
+            this.Txt_ID_DLlamadas.Name = "Txt_ID_DLlamadas";
+            this.Txt_ID_DLlamadas.Pp_Campo = null;
+            this.Txt_ID_DLlamadas.Pp_MensajeError = null;
+            this.Txt_ID_DLlamadas.Pp_Tabla = null;
+            this.Txt_ID_DLlamadas.Pp_Validable = false;
+            this.Txt_ID_DLlamadas.Size = new System.Drawing.Size(95, 23);
+            this.Txt_ID_DLlamadas.TabIndex = 1;
+            // 
+            // Txt_NroFac_DLlamadas
+            // 
+            this.Txt_NroFac_DLlamadas.Enabled = false;
+            this.Txt_NroFac_DLlamadas.Location = new System.Drawing.Point(578, 22);
+            this.Txt_NroFac_DLlamadas.Name = "Txt_NroFac_DLlamadas";
+            this.Txt_NroFac_DLlamadas.Pp_Campo = null;
+            this.Txt_NroFac_DLlamadas.Pp_MensajeError = null;
+            this.Txt_NroFac_DLlamadas.Pp_Tabla = null;
+            this.Txt_NroFac_DLlamadas.Pp_Validable = false;
+            this.Txt_NroFac_DLlamadas.Size = new System.Drawing.Size(165, 23);
+            this.Txt_NroFac_DLlamadas.TabIndex = 1;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -132,6 +156,18 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.label3.Size = new System.Drawing.Size(69, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Nro Factura";
+            // 
+            // Txt_Nombre_DLlamadas
+            // 
+            this.Txt_Nombre_DLlamadas.Enabled = false;
+            this.Txt_Nombre_DLlamadas.Location = new System.Drawing.Point(317, 22);
+            this.Txt_Nombre_DLlamadas.Name = "Txt_Nombre_DLlamadas";
+            this.Txt_Nombre_DLlamadas.Pp_Campo = null;
+            this.Txt_Nombre_DLlamadas.Pp_MensajeError = null;
+            this.Txt_Nombre_DLlamadas.Pp_Tabla = null;
+            this.Txt_Nombre_DLlamadas.Pp_Validable = false;
+            this.Txt_Nombre_DLlamadas.Size = new System.Drawing.Size(165, 23);
+            this.Txt_Nombre_DLlamadas.TabIndex = 1;
             // 
             // label2
             // 
@@ -159,6 +195,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.button6.TabIndex = 5;
             this.button6.Text = "Generar Detalle";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button1
             // 
@@ -189,42 +226,6 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // Txt_ID_DLlamadas
-            // 
-            this.Txt_ID_DLlamadas.Enabled = false;
-            this.Txt_ID_DLlamadas.Location = new System.Drawing.Point(105, 23);
-            this.Txt_ID_DLlamadas.Name = "Txt_ID_DLlamadas";
-            this.Txt_ID_DLlamadas.Pp_Campo = null;
-            this.Txt_ID_DLlamadas.Pp_MensajeError = null;
-            this.Txt_ID_DLlamadas.Pp_Tabla = null;
-            this.Txt_ID_DLlamadas.Pp_Validable = false;
-            this.Txt_ID_DLlamadas.Size = new System.Drawing.Size(95, 23);
-            this.Txt_ID_DLlamadas.TabIndex = 1;
-            // 
-            // Txt_NroFac_DLlamadas
-            // 
-            this.Txt_NroFac_DLlamadas.Enabled = false;
-            this.Txt_NroFac_DLlamadas.Location = new System.Drawing.Point(578, 22);
-            this.Txt_NroFac_DLlamadas.Name = "Txt_NroFac_DLlamadas";
-            this.Txt_NroFac_DLlamadas.Pp_Campo = null;
-            this.Txt_NroFac_DLlamadas.Pp_MensajeError = null;
-            this.Txt_NroFac_DLlamadas.Pp_Tabla = null;
-            this.Txt_NroFac_DLlamadas.Pp_Validable = false;
-            this.Txt_NroFac_DLlamadas.Size = new System.Drawing.Size(165, 23);
-            this.Txt_NroFac_DLlamadas.TabIndex = 1;
-            // 
-            // Txt_Nombre_DLlamadas
-            // 
-            this.Txt_Nombre_DLlamadas.Enabled = false;
-            this.Txt_Nombre_DLlamadas.Location = new System.Drawing.Point(317, 22);
-            this.Txt_Nombre_DLlamadas.Name = "Txt_Nombre_DLlamadas";
-            this.Txt_Nombre_DLlamadas.Pp_Campo = null;
-            this.Txt_Nombre_DLlamadas.Pp_MensajeError = null;
-            this.Txt_Nombre_DLlamadas.Pp_Tabla = null;
-            this.Txt_Nombre_DLlamadas.Pp_Validable = false;
-            this.Txt_Nombre_DLlamadas.Size = new System.Drawing.Size(165, 23);
-            this.Txt_Nombre_DLlamadas.TabIndex = 1;
             // 
             // txt_subtotal
             // 

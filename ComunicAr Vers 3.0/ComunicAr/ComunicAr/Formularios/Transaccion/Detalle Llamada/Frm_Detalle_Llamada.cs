@@ -29,7 +29,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
 
         private void Frm_Detalle_Llamada_Load(object sender, EventArgs e)
         {
-            Pp_NroFac = "2";
+            Pp_NroFac = "1";
             Pp_NroCliente = "2";
             flag = false;
             DataTable tabla = new DataTable();
@@ -129,5 +129,26 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
                 flag = false;
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Detalle_Llamadas Detalle = new Detalle_Llamadas();
+            Pp_NroFac = "1";
+            if (MessageBox.Show("¿Desea cargar el detalle de llamada?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    MessageBox.Show(Pp_NroFac);
+                    MessageBox.Show(dataGridView1.Rows[i].Cells[0].Value.ToString());
+                    MessageBox.Show(txt_subtotal.Text.ToString());
+                    Detalle.Pp_NroFac = Pp_NroFac;
+                    Detalle.Pp_IdLlamada = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                    Detalle.Pp_Subtotal = txt_subtotal.Text.ToString();
+                    Detalle.insertarDetalleLlamada();
+                }
+            }
+        }
     }
 }
+

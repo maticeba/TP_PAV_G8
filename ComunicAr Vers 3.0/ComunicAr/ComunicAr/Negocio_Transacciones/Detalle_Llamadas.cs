@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using ComunicAr.Clases;
+using System.Windows.Forms;
 
 namespace ComunicAr.Negocio_Transacciones
 {
     class Detalle_Llamadas
     {
         public string Pp_NroFac { get; set; }
+        public string Pp_IdLlamada { get; set; }
+        public string Pp_Subtotal { get; set; }
         Acceso_BD BD = new Acceso_BD();
         public DataTable CargarCliente(string NroFac)
         {
@@ -28,6 +31,17 @@ namespace ComunicAr.Negocio_Transacciones
                         + "WHERE nE.nro_cliente = " + nro_cliente + " AND nE.id_numero = l.id_nro_emisor AND l.id_band_horar = b.id_banda " +
                         "AND nR.id_numero = l.id_nro_receptor ";
             return BD.EjecutarSelect(sql);
+        }
+        public void insertarDetalleLlamada()
+        {
+            string sql = @"INSERT INTO Detalle_fact_llamada (nro_factura, id_llamada, costo_final) VALUES( " +
+                        Pp_NroFac + ", " +
+                        Pp_IdLlamada + ", " +
+                        Pp_Subtotal + ") ";
+            BD.Insertar(sql);
+            MessageBox.Show("Detalle cargado exitosamente");
+
+
         }
     }
 }
