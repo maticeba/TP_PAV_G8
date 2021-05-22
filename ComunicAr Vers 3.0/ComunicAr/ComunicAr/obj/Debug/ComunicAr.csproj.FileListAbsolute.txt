@@ -204,7 +204,6 @@ C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_Baja_Barrio.resources
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_mod_barrio.resources
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Escritorio.resources
-C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Frm_Menu.resources
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Properties.Resources.resources
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.GenerateResource.cache
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.CoreCompileInputs.cache
@@ -402,3 +401,14 @@ C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debu
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Menu_Ubicacion.resources
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Transaccion.Emision_de_Factura.Frm_Detalle_Llamada.resources
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Transaccion.Emision_de_Factura.Frm_EmisionFactura.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Numeros.Frm_ABM_Numeros.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Numeros.Frm_Alta_Numeros.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Numeros.Frm_Baja_Numeros.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Numeros.Frm_Mod_Numero.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Frm_Menu_ABM.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Frm_MenuGral.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Menu_Servicios.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Menu_Ubicacion.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Transaccion.Emision_de_Factura.Frm_Detalle_Llamada.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Transaccion.Emision_de_Factura.Frm_EmisionFactura.resources
+C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Generar_Venta.Frm_Generar_Venta.resources

@@ -353,6 +353,18 @@
     <Compile Include="Formularios\Menu\Menu_Ubicación.Designer.cs">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.Designer.cs">
+      <DependentUpon>Frm_Detalle_Dispositivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Venta.Designer.cs">
+      <DependentUpon>Frm_Generar_Venta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Negocio\Barrios.cs" />
     <Compile Include="Negocio\Ciudad.cs" />
     <Compile Include="Negocio\Clientes.cs" />
@@ -526,6 +538,9 @@
     <EmbeddedResource Include="Formularios\Menu\Menu_Ubicación.resx">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Venta.resx">
+      <DependentUpon>Frm_Generar_Venta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -554,6 +569,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Formularios\Transaccion\Detalle_Servicios_Datos\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
