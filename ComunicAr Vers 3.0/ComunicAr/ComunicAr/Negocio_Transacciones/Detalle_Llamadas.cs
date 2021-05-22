@@ -37,9 +37,9 @@ namespace ComunicAr.Negocio_Transacciones
             string sql = @"INSERT INTO Detalle_fact_llamada (nro_factura, id_llamada, costo_final) VALUES( " +
                         Pp_NroFac + ", " +
                         Pp_IdLlamada + ", " +
-                        Pp_Subtotal + ") ";
+                         "REPLACE('" + Pp_Subtotal + "', ',', '.'))";
             BD.Insertar(sql);
-            MessageBox.Show("Detalle cargado exitosamente");
+
 
 
         }
