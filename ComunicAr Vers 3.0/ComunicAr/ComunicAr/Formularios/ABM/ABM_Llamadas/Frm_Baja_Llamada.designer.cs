@@ -288,7 +288,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_fin_hs
             // 
-            this.cmb_llamada_baja_fin_hs.Enable = false;
+            this.cmb_llamada_baja_fin_hs.Enabled = false;
             this.cmb_llamada_baja_fin_hs.Enabled = false;
             this.cmb_llamada_baja_fin_hs.FormattingEnabled = true;
             this.cmb_llamada_baja_fin_hs.Location = new System.Drawing.Point(124, 358);
@@ -308,7 +308,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_fin_segs
             // 
-            this.cmb_llamada_baja_fin_segs.Enable = false;
+            this.cmb_llamada_baja_fin_segs.Enabled = false;
             this.cmb_llamada_baja_fin_segs.Enabled = false;
             this.cmb_llamada_baja_fin_segs.FormattingEnabled = true;
             this.cmb_llamada_baja_fin_segs.Location = new System.Drawing.Point(285, 358);
@@ -328,7 +328,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_fin_mins
             // 
-            this.cmb_llamada_baja_fin_mins.Enable = false;
+            this.cmb_llamada_baja_fin_mins.Enabled = false;
             this.cmb_llamada_baja_fin_mins.Enabled = false;
             this.cmb_llamada_baja_fin_mins.FormattingEnabled = true;
             this.cmb_llamada_baja_fin_mins.Location = new System.Drawing.Point(200, 358);
@@ -348,7 +348,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_inicio_seg
             // 
-            this.cmb_llamada_baja_inicio_seg.Enable = false;
+            this.cmb_llamada_baja_inicio_seg.Enabled = false;
             this.cmb_llamada_baja_inicio_seg.Enabled = false;
             this.cmb_llamada_baja_inicio_seg.FormattingEnabled = true;
             this.cmb_llamada_baja_inicio_seg.Location = new System.Drawing.Point(285, 277);
@@ -368,7 +368,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_inicio_mins
             // 
-            this.cmb_llamada_baja_inicio_mins.Enable = false;
+            this.cmb_llamada_baja_inicio_mins.Enabled = false;
             this.cmb_llamada_baja_inicio_mins.Enabled = false;
             this.cmb_llamada_baja_inicio_mins.FormattingEnabled = true;
             this.cmb_llamada_baja_inicio_mins.Location = new System.Drawing.Point(200, 277);
@@ -388,7 +388,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_inicio_hs
             // 
-            this.cmb_llamada_baja_inicio_hs.Enable = false;
+            this.cmb_llamada_baja_inicio_hs.Enabled = false;
             this.cmb_llamada_baja_inicio_hs.Enabled = false;
             this.cmb_llamada_baja_inicio_hs.FormattingEnabled = true;
             this.cmb_llamada_baja_inicio_hs.Location = new System.Drawing.Point(124, 277);
@@ -433,7 +433,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_tel_receptor
             // 
-            this.cmb_llamada_baja_tel_receptor.Enable = false;
+            this.cmb_llamada_baja_tel_receptor.Enabled = false;
             this.cmb_llamada_baja_tel_receptor.Enabled = false;
             this.cmb_llamada_baja_tel_receptor.FormattingEnabled = true;
             this.cmb_llamada_baja_tel_receptor.Location = new System.Drawing.Point(124, 193);
@@ -478,7 +478,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
             // 
             // cmb_llamada_baja_tel_emisor
             // 
-            this.cmb_llamada_baja_tel_emisor.Enable = false;
+            this.cmb_llamada_baja_tel_emisor.Enabled = false;
             this.cmb_llamada_baja_tel_emisor.Enabled = false;
             this.cmb_llamada_baja_tel_emisor.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmb_llamada_baja_tel_emisor.FormattingEnabled = true;

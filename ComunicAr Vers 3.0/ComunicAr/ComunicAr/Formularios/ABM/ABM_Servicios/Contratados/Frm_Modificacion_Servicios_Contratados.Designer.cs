@@ -202,7 +202,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
             // 
             // cmb_numero
             // 
-            this.cmb_numero.Enable = true;
+            this.cmb_numero.Enabled = true;
             this.cmb_numero.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_numero.FormattingEnabled = true;
             this.cmb_numero.Location = new System.Drawing.Point(118, 133);

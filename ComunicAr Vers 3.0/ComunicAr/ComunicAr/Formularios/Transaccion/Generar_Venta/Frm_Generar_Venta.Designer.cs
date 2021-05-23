@@ -220,7 +220,7 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
             // 
             // comboBox021
             // 
-            this.comboBox021.Enable = false;
+            this.comboBox021.Enabled = false;
             this.comboBox021.FormattingEnabled = true;
             this.comboBox021.Location = new System.Drawing.Point(152, 82);
             this.comboBox021.Name = "comboBox021";
