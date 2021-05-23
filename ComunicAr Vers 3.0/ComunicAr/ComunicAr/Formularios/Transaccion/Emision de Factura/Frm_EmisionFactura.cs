@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos;
 
 namespace ComunicAr.Transaccion.Emision_de_Factura
 {
@@ -21,6 +22,12 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
         {
             Frm_Detalle_Llamada Llamadas = new Frm_Detalle_Llamada();
             Llamadas.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Frm_Detalle_Servicios_Fijos Servicios_Fijos = new Frm_Detalle_Servicios_Fijos();
+            Servicios_Fijos.ShowDialog();
         }
     }
 }
