@@ -25,14 +25,24 @@ namespace ComunicAr.Formularios.Menu
 
         private void btn_menu_gral_lista_Click(object sender, EventArgs e)
         {
-            Frm_EmisionFactura Frm_Emision = new Frm_EmisionFactura();
-            Frm_Emision.ShowDialog();
+
         }
 
         private void btn_menu_gral_datos_Click(object sender, EventArgs e)
         {
             Frm_Menu_ABM Frm_menu_ABM = new Frm_Menu_ABM();
             Frm_menu_ABM.Show();
+        }
+
+        private void Frm_MenuGral_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_gral_factura_Click(object sender, EventArgs e)
+        {
+            Frm_EmisionFactura Frm_Emision = new Frm_EmisionFactura();
+            Frm_Emision.ShowDialog();
         }
     }
 }

@@ -55,6 +55,8 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -65,6 +67,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             this.Column3});
             this.dataGridView1.Location = new System.Drawing.Point(12, 89);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(743, 266);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -73,32 +76,38 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             // 
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Nro. Emisor";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 150;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Nro. Receptor";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Fecha";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Duración";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Costo";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // label6
             // 

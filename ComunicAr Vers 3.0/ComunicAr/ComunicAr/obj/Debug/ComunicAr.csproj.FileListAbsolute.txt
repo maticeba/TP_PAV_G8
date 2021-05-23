@@ -412,3 +412,4 @@ C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Transaccion.Emision_de_Factura.Frm_Detalle_Llamada.resources
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Transaccion.Emision_de_Factura.Frm_EmisionFactura.resources
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Generar_Venta.Frm_Generar_Venta.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Generar_Venta.Frm_Generar_Venta.resources

@@ -146,7 +146,7 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             if (MessageBox.Show("¿Desea cargar el detalle de llamada?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
 
-                for (int i = 0; i < dataGridView1.Rows.Count -1; i++)
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 {
 
                     Detalle.Pp_NroFac = Pp_NroFac;
