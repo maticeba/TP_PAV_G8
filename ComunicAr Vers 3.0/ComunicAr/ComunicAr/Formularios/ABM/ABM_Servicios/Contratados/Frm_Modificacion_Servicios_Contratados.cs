@@ -16,6 +16,7 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
     public partial class Frm_Modificacion_Servicios_Contratados : Form
     {
         public string cod_servicio { get; set; }
+        public bool flag { get; set; }
         public Frm_Modificacion_Servicios_Contratados()
         {
             InitializeComponent();
@@ -23,6 +24,12 @@ namespace ComunicAr.Formularios.ABM_Servicios.Contratados
 
         private void Frm_Modificacion_Servicios_Load(object sender, EventArgs e)
         {
+            if (flag == true)
+            {
+                cmb_tipo_servicio.Enabled = false;
+                txt_fecha_desde.Enabled = false;
+                btn_buscar_tipo_serv.Visible = false;
+            }
             //cmb_tipo_servicio.CargarComboxTipo();
             Servicios_Contratados servicios = new Servicios_Contratados();
             MostrarDatos(servicios.Servicios_contratados_por_codigo(cod_servicio));

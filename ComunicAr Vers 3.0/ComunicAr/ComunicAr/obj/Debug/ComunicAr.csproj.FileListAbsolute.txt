@@ -430,3 +430,7 @@ C:\Users\joaco\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\joaco\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos.Frm_Detalle_Servicios_Fijos.resources
 C:\Users\joaco\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos.Frm_Descuento_Prepago.resources
 C:\Users\joaco\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos.Frm_Detalle_Servicio_Prepago.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos.Frm_desc.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos.Frm_Detalle_Servicios_Fijos.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos.Frm_Descuento_Prepago.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos.Frm_Detalle_Servicio_Prepago.resources

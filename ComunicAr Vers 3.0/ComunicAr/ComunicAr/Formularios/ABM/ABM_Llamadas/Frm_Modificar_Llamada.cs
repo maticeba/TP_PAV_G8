@@ -103,7 +103,7 @@ namespace ComunicAr.Formularios.ABM_Llamadas
                 txtBox_llamadas_mod_idReceptor.Enabled = false;
                 cmb_llamada_mod_tel_receptor.Enabled = false;
                 btn_llamada_mod_buscar_receptor.Visible = false;
-                cmb_llamada_mod_tel_emisor.Enabled= = false;
+                cmb_llamada_mod_tel_emisor.Enabled = false;
 
 
 
