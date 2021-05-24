@@ -28,7 +28,8 @@ namespace ComunicAr.Negocio_Transacciones
         }
         public DataTable RecoleccionDatos(string nro_cliente)
         {
-            string sql = @"SELECT f.costo_mensual,f.tipo_servicio,f.descripcion,c.cod_servicio,c.id_numero,n.id_numero,n.nro_cliente,c.descuento "
+            string sql = @"SELECT DISTINCT  c.fecha_desde, c.fecha_hasta, DATEDIFF(month,c.fecha_desde,convert(date,GETDATE())) as diferencia,DATEDIFF (month, c.fecha_desde, c.fecha_hasta) as duracion, "
+                        + "f.costo_mensual,f.tipo_servicio,f.descripcion,c.cod_servicio,c.id_numero,n.id_numero,n.nro_cliente,c.descuento "
                         + "FROM Servicios_fijos f,Servicios_Contratados c, Numero n "
                         + "WHERE c.tipo_servicio= f.tipo_servicio AND c.id_servicio= f.cod_servicio " +
                         "AND n.nro_cliente = " + nro_cliente + " AND c.id_numero = n.id_numero ";

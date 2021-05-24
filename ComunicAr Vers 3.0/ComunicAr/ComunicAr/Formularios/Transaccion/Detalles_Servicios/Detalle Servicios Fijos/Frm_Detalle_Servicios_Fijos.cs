@@ -67,6 +67,8 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
                 grid_Serv_Fijos.Rows[i].Cells[0].Value = tabla.Rows[i]["cod_servicio"].ToString();
                 grid_Serv_Fijos.Rows[i].Cells[1].Value = tabla.Rows[i]["tipo_servicio"].ToString();
                 grid_Serv_Fijos.Rows[i].Cells[2].Value = tabla.Rows[i]["descripcion"].ToString();
+                string cuota = tabla.Rows[i]["diferencia"].ToString() + "/" + tabla.Rows[i]["duracion"].ToString();
+                grid_Serv_Fijos.Rows[i].Cells[4].Value = cuota;
                 string costo = tabla.Rows[i]["costo_mensual"].ToString();
                 grid_Serv_Fijos.Rows[i].Cells[3].Value = costo;
                 string descuento = tabla.Rows[i]["descuento"].ToString();
