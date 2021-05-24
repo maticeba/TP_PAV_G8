@@ -198,15 +198,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
 
         }
 
-        private void btn_refrescar_Click(object sender, EventArgs e)
-        {
-            DataTable tabla_datos = new DataTable();
-            Detalle_Servicio_Fijo detalle_f = new Detalle_Servicio_Fijo();
-            tabla_datos = detalle_f.RecoleccionDatos(Pp_NroCliente);
-            grid_Serv_Fijos.Rows.Clear();
-            CargarDatos(tabla_datos);
-            txt_subtotla_SF.Text = precio.ToString();
-        }
+    
     }
 }
 
