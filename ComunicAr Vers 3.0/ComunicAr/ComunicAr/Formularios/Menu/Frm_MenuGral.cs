@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComunicAr.Transaccion.Emision_de_Factura;
-
+using ComunicAr.Formularios.Transaccion.Generar_Venta;
 namespace ComunicAr.Formularios.Menu
 {
     public partial class Frm_MenuGral : Form
@@ -43,6 +43,12 @@ namespace ComunicAr.Formularios.Menu
         {
             Frm_EmisionFactura Frm_Emision = new Frm_EmisionFactura();
             Frm_Emision.ShowDialog();
+        }
+
+        private void btn_gral_vta_dispo_Click(object sender, EventArgs e)
+        {
+            Frm_Generar_Ventas Frm_venta = new Frm_Generar_Ventas();
+            Frm_venta.ShowDialog();
         }
     }
 }

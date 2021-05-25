@@ -118,6 +118,7 @@ namespace ComunicAr.Formularios.Menu
             this.btn_gral_vta_dispo.Text = "Venta Dispositivo";
             this.btn_gral_vta_dispo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_gral_vta_dispo.UseVisualStyleBackColor = true;
+            this.btn_gral_vta_dispo.Click += new System.EventHandler(this.btn_gral_vta_dispo_Click);
             // 
             // btn_gral_factura
             // 

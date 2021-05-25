@@ -41,6 +41,13 @@ namespace ComunicAr.Negocio
                         + "WHERE c.nombre_razonSocial like '%" + nombre.Trim() + "%' AND c.cod_barrio = b.cod_barrio";
             return BD.EjecutarSelect(sql);
         }
+
+        public DataTable Clientes_por_solo_Numero(string id_cliente)
+        {
+            string sql = @"SELECT c.* FROM Cliente c "
+                        + "WHERE c.nro_cliente = '" + id_cliente + "'";
+            return BD.EjecutarSelect(sql);
+        }
         public void Insertar(Control.ControlCollection controles)
         {
             TratamientosEspeciales tratamientos = new TratamientosEspeciales();

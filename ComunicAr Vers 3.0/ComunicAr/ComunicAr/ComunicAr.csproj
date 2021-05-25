@@ -383,11 +383,11 @@
     <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.Designer.cs">
       <DependentUpon>Frm_Detalle_Dispositivos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Venta.cs">
+    <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Venta.Designer.cs">
-      <DependentUpon>Frm_Generar_Venta.cs</DependentUpon>
+    <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Ventas.Designer.cs">
+      <DependentUpon>Frm_Generar_Ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Barrios.cs" />
     <Compile Include="Negocio\Ciudad.cs" />
@@ -576,8 +576,8 @@
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_Servicio_Prepago.resx">
       <DependentUpon>Frm_Detalle_Servicio_Prepago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Venta.resx">
-      <DependentUpon>Frm_Generar_Venta.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Ventas.resx">
+      <DependentUpon>Frm_Generar_Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

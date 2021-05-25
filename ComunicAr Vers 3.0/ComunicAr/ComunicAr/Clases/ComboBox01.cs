@@ -32,6 +32,28 @@ namespace ComunicAr.Clases
 
         }
 
+        public void CargarComboDisp(int tipo)
+        {
+            if (tipo == 1)
+            {
+                string sql = "SELECT DISTINCT " + Pp_PK + ", " + Pp_Descripcion + " FROM " + Pp_Tabla + " WHERE id_tipo_dispositivo = '" + 1 + "'";
+                
+                this.DisplayMember = Pp_Descripcion;
+                this.ValueMember = Pp_PK;
+                this.DataSource = _BD.EjecutarSelect(sql);
+            }
+
+            if (tipo == 2)
+            {
+                string sql = "SELECT DISTINCT " + Pp_PK + ", " + Pp_Descripcion + " FROM " + Pp_Tabla + " WHERE id_tipo_dispositivo = '" + 2 + "'";
+
+                this.DisplayMember = Pp_Descripcion;
+                this.ValueMember = Pp_PK;
+                this.DataSource = _BD.EjecutarSelect(sql);
+            }
+
+        }
+
         public void CargarComboxTipo()
         {
             DataTable table2 = new DataTable();
@@ -126,6 +148,23 @@ namespace ComunicAr.Clases
             this.DisplayMember = "nombre_prov";
             this.ValueMember = "cod_prov";
             this.DataSource = tabla;
+        }
+
+        public void Cuotas_Combo_Cargar()
+        {
+            DataTable table = new DataTable();
+            DataColumn[] cols =
+            {
+                    new DataColumn("cantidad", typeof(string))
+            };
+            table.Columns.AddRange(cols);
+            table.Rows.Add("1");
+            table.Rows.Add("3");
+            table.Rows.Add("6");
+            table.Rows.Add("12");
+            this.DisplayMember = "cantidad";
+            this.ValueMember = "cantidad";
+            this.DataSource = table;
         }
     }
 }

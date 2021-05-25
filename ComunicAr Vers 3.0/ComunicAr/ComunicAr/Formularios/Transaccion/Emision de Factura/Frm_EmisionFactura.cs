@@ -29,5 +29,10 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
             Frm_Detalle_Servicios_Fijos Servicios_Fijos = new Frm_Detalle_Servicios_Fijos();
             Servicios_Fijos.ShowDialog();
         }
+
+        private void Frm_EmisionFactura_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
