@@ -26,13 +26,11 @@ namespace ComunicAr.Negocio_Transacciones
         }
         public DataTable RecoleccionDatos(string nro_cliente)
         {
-            string sql = @"DECLARE @hoy as datetime = GetDate()" +
-                          "DECLARE @1roMes as datetime = DateAdd( day, 1 - Day( @hoy ), @hoy )" +
-                          "DECLARE @finmes as datetime = DateAdd( day, -1, DateAdd( month, 1, @1roMes ) )" +
+            string sql = @"DECLARE @1roMes as datetime = DateAdd( day, 1 - Day( Convert(date, GETDATE()) ), Convert(date, getdate()) )" +
                          "SELECT l.*, nE.*, b.costo,nR.id_numero, nR.cod_nacional as Rcod_nac, nR.cod_area as Rcod_area, nR.nro_telefono as Rnro, DATEDIFF (minute, l.fecha_hora_inicio, l.fecha_hora_fin) as duracion "
                         + "FROM Llamadas l, Numero nE, Banda_horaria b, Numero nR "
                         + "WHERE nE.nro_cliente = " + nro_cliente + " AND nE.id_numero = l.id_nro_emisor AND l.id_band_horar = b.id_banda " +
-                        "AND nR.id_numero = l.id_nro_receptor AND @1roMes <= l.fecha_hora_inicio AND L.fecha_hora_inicio <= @finmes ";
+                        "AND nR.id_numero = l.id_nro_receptor AND l.fecha_hora_inicio BETWEEN DATEADD(month, -1, @1roMes ) AND @1roMes ";
             return BD.EjecutarSelect(sql);
         }
         public void insertarDetalleLlamada()
