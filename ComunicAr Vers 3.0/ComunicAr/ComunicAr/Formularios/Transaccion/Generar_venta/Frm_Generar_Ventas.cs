@@ -75,7 +75,16 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
                             + " WHERE id_numero = " + ((num.Numeros_por_id(cmb_nmro_telefono.SelectedValue.ToString())).Rows[0]["id_numero"].ToString());
 
                 BD.EjecutarModificar(sqlMod);
+
+                string sqlIN = @"INSERT INTO venta_dispositivo (fecha_Venta, id_dispositivo, cant_cuotas, descuento) "
+                                + " VALUES (" + "'" + txt_fecha.Text.ToString() + "',"
+                                              + cmb_disp.SelectedValue.ToString() + ","
+                                              + "'" + cmb_cantCuota.SelectedValue.ToString() + "',"
+                                              + txt_Descuento.Text + ")";
+                BD.Insertar(sqlIN);
                 MessageBox.Show("Modificacion realizada con exito");
+
+                
             }
             else
             {
@@ -90,6 +99,9 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
                 
                 cmb_disp.Enabled = true;
                 cmb_tipoDisp.Enabled = true;
+                cmb_cantCuota.Enabled = true;
+                txt_fecha.Enabled = true;
+                txt_Descuento.Enabled = true;
                 System.Console.WriteLine(cmb_tipoDisp.SelectedIndex);
                 cmb_tipoDisp.CargarCombo();
                 cmb_cantCuota.Cuotas_Combo_Cargar();
