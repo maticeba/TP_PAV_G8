@@ -35,7 +35,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
 
         private void Frm_Detalle_Servicios_Fijos_Load(object sender, EventArgs e)
         {
-            Pp_NroFac = "1";
+            Pp_NroFac = "2";
             Pp_NroCliente = "2";
             flag = false;
             Pp_descuento = 0;
@@ -148,20 +148,21 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
 
         private void button6_Click(object sender, EventArgs e)
         {
+            DataTable tabla_datos = new DataTable();
             Detalle_Servicio_Fijo Detalle = new Detalle_Servicio_Fijo();
+            tabla_datos = Detalle.RecoleccionDatos(Pp_NroCliente);
             Pp_NroFac = "1";
             if (MessageBox.Show("¿Desea cargar el detalle de llamada?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
 
-                for (int i = 0; i < grid_Serv_Fijos.Rows.Count - 1; i++)
+                for (int i = 0; i < grid_Serv_Fijos.Rows.Count ; i++)
                 {
 
                     Detalle.Pp_NroFac = Pp_NroFac;
                     Detalle.Pp_serv_contratados = grid_Serv_Fijos.Rows[i].Cells[0].Value.ToString();
                     Detalle.Pp_Final = txt_subtotla_SF.Text.ToString();
-                    Detalle.Pp_nro_cuota =
-                    Detalle.Pp_descuento = Pp_descuento;
-
+                    Detalle.Pp_descuento = grid_Serv_Fijos.Rows[i].Cells[5].Value.ToString();
+                    Detalle.Pp_nro_cuota = tabla_datos.Rows[i]["diferencia"].ToString();
                     Detalle.insertarDetalleServicioFijo();
                 }
                 MessageBox.Show("Detalle cargado exitosamente");

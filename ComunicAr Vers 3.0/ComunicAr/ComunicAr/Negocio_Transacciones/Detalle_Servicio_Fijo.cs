@@ -13,8 +13,8 @@ namespace ComunicAr.Negocio_Transacciones
         public string Pp_NroFac { get; set; }
         public string Pp_serv_contratados { get; set; }
         public string Pp_Final { get; set; }
-        public float Pp_nro_cuota { get; set; }
-        public float Pp_descuento { get; set; }
+        public string Pp_nro_cuota { get; set; }
+        public string Pp_descuento { get; set; }
 
         Acceso_BD BD = new Acceso_BD();
 
@@ -38,7 +38,7 @@ namespace ComunicAr.Negocio_Transacciones
 
         public void insertarDetalleServicioFijo()
         {
-            string sql = @"INSERT INTO Detalle_fact_fijos (nro_factura, cod_serv_contratado, costo_final, descuento, nro_cuota) VALUES (" + Pp_NroFac + ", " + Pp_serv_contratados + ", " + Pp_Final + ", CONVERT(FLOAT," + Pp_descuento + "), " + Pp_nro_cuota + " ) ";
+            string sql = @"INSERT INTO Detalle_fact_fijos (nro_factura, cod_serv_contratado, costo_final, descuento, nro_cuota) VALUES (" + Pp_NroFac + ", " + Pp_serv_contratados + ", CONVERT(FLOAT, "+ Pp_Final + "), CONVERT(FLOAT," + Pp_descuento + "), " + Pp_nro_cuota + " ) ";
             BD.Insertar(sql);
 
 
