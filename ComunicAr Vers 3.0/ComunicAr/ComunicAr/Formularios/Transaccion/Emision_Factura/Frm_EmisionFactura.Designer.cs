@@ -1,5 +1,5 @@
 ﻿
-namespace ComunicAr.Transaccion.Emision_de_Factura
+namespace ComunicAr.Formularios.Transaccion.Emision_Factura
 {
     partial class Frm_EmisionFactura
     {

@@ -14,7 +14,7 @@ using ComunicAr.Negocio;
 
 
 
-namespace ComunicAr.Transaccion.Emision_de_Factura
+namespace ComunicAr.Formularios.Transaccion.Detalle_Llamada
 {
     public partial class Frm_Detalle_Llamada : Form
     {
@@ -29,8 +29,6 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
 
         private void Frm_Detalle_Llamada_Load(object sender, EventArgs e)
         {
-            Pp_NroFac = "1";
-            Pp_NroCliente = "2";
             flag = false;
             
             DataTable tabla = new DataTable();
@@ -142,7 +140,6 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
         private void button6_Click(object sender, EventArgs e)
         {
             Detalle_Llamadas Detalle = new Detalle_Llamadas();
-            Pp_NroFac = "1";
             if (MessageBox.Show("¿Desea cargar el detalle de llamada?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
 

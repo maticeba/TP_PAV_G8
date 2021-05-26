@@ -11,7 +11,6 @@ using ComunicAr.Negocio_Transacciones;
 using ComunicAr.Negocio;
 using ComunicAr.Formularios.ABM_Llamadas;
 using ComunicAr.Formularios.ABM_Numeros;
-using System.Data;
 using ComunicAr.Clases;
 
 namespace ComunicAr.Formularios.Transaccion.Generar_Venta

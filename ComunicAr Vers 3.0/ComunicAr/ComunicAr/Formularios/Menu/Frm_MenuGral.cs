@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComunicAr.Transaccion.Emision_de_Factura;
+using ComunicAr.Formularios.Transaccion.Emision_Factura;
 using ComunicAr.Formularios.Transaccion.Generar_Venta;
 namespace ComunicAr.Formularios.Menu
 {

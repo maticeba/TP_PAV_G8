@@ -1,5 +1,5 @@
 ﻿
-namespace ComunicAr.Transaccion.Emision_de_Factura
+namespace ComunicAr.Formularios.Transaccion.Detalle_Llamada
 {
     partial class Frm_Detalle_Llamada
     {

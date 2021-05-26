@@ -419,6 +419,7 @@
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Fijo.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Prepago.cs" />
     <Compile Include="Negocio_Transacciones\Emitir_Factura.cs" />
+    <Compile Include="Negocio_Transacciones\Text.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\ABM\ABM_Ciudad\Frm_ABM_Ciudad.resx">

@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using ComunicAr.Clases;
 using ComunicAr.Negocio_Transacciones;
 using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos;
+using ComunicAr.Formularios.Transaccion.Detalle_Llamada;
 using System.IO;
 using System.Diagnostics;
 using System.Security.Principal;
 
 
-namespace ComunicAr.Transaccion.Emision_de_Factura
+namespace ComunicAr.Formularios.Transaccion.Emision_Factura
 {
     public partial class Frm_EmisionFactura : Form
     {
@@ -141,96 +142,17 @@ namespace ComunicAr.Transaccion.Emision_de_Factura
                 TratamientosEspeciales Tratamiento = new TratamientosEspeciales();
                 if (Tratamiento.Validar(Controls) == TratamientosEspeciales.Resultado.correcto)
                 {
-                    //Tratamiento de obtención del usuario del sistema que utiliza el sistema
-                    WindowsIdentity Usuario = WindowsIdentity.GetCurrent();
-                    string nombreCompleto = Usuario.Name.ToString();
-                    string[] user = nombreCompleto.Split('\\');
-
-                    //ubicación donde se guardan las facturas
-                    string path = @"C:\\Users\\" + user[1] + "\\Desktop\\Facturas_ComunicAr";
-
-                    //Creación del directorio por si no existe en el Escritorio\Facturas_Comunicar
-                    if (Directory.Exists(path) == false)
-                    {
-                        Directory.CreateDirectory(path);
-                    }
-
-                    //Crea la factura en el directorio anterior mente mensionado. Su nombre contiene: 
-                    //          [año]_[mes]_[tipoFactura][nroFactura]_[idCliente]
-                    string name_arch = DateTime.Now.Year.ToString() + "_" + DateTime.Now.Month.ToString() + "_" +
-                                       cmb_emision_tipo_factura.Text.ToString() + Txt_nroFac.Text + "_" + Txt_Cliente.Text;
-                    File.Create(path + "\\" + name_arch + ".txt").Dispose();
-
-                    //Escribir en el archivo
-                    using (TextWriter tw = new StreamWriter(path + "\\" + name_arch + ".txt", true)) // El true es mucho muy importante sino reescribe el archivo en vez de agregar
-                    {
-                        float subtotal = 0;
-                        tw.WriteLine("*****************************************************************************");
-                        tw.WriteLine("                                COMUNIC-AR");
-                        tw.WriteLine("*****************************************************************************");
-                        tw.WriteLine("");
-                        tw.WriteLine("CUIT: 33-71548658-9  -  Responsable Inscripto");
-                        tw.WriteLine("Av. Hipólito Yrigoyen 146, Córdoba Capital, Córdoba, Argentina");
-                        tw.WriteLine("Tel: 0800-9998967 - info@comunicar.com.ar - www.comunicar.com.ar");
-                        tw.WriteLine("_____________________________________________________________________________");
-                        tw.WriteLine("                                  FACTURA");
-                        tw.WriteLine("");
-                        tw.WriteLine("- Tipo: " + cmb_emision_tipo_factura.Text.ToString());
-                        tw.WriteLine("- Nro. Factura: " + Txt_nroFac.Text);
-                        tw.WriteLine("- Fecha: " + DateTime.Now.ToString());
-                        MessageBox.Show(DateTime.Now.ToString());
-                        tw.WriteLine("_____________________________________________________________________________");
-                        tw.WriteLine("                                  CLIENTE");
-                        tw.WriteLine("");
-                        tw.WriteLine("Nro. Cliente: " + Txt_Cliente.Text);
-                        tw.WriteLine("Nombre: " + Txt_NombreCliente.Text);
-                        tw.WriteLine("DNI: " + " - Consumidor Final");
-                        tw.WriteLine("_____________________________________________________________________________");
-                        tw.WriteLine("Item\tTipo Servicio\t\tDetalle\t\t\t\tImporte");
-                        int count = 0;
-                        float descuento = 0;
-                        if (Flag_llamadas == true)
-                        {
-                            DataTable tabla = det_llamada.Factura_llamada(Txt_nroFac.Text, Txt_Cliente.Text);
-                            count += 1;
-                            string cant = tabla.Rows[0][0].ToString();
-                            string total = tabla.Rows[0][1].ToString();
-                            string tiempo_tot = tabla.Rows[0][2].ToString();
-                            tw.WriteLine(count.ToString() + "\tLlamadas\t\t" + "Cant.: "+ cant + " / Tiempo: " + tiempo_tot + "\t\t$" + total);
-                            subtotal = float.Parse(total.ToString());
-                        }
-                        if (Flag_serv_fijos == true)
-                        {
-
-                        }
-                        if (Flag_serv_datos == true)
-                        {
-
-                        }
-                        if (Flag_serv_prepago == true)
-                        {
-
-                        }
-                        if (Flag_vta_dispo == true)
-                        {
-
-                        }
-                        //tw.WriteLine("*****************************************************************************");
-                        tw.WriteLine("_____________________________________________________________________________");
-                        tw.WriteLine("Subtotal: \t\t\t$" + subtotal.ToString());
-                        tw.WriteLine("Descuento: \t\t\t$" + descuento.ToString());
-                        tw.WriteLine("Total: \t\t\t\t$" + (subtotal-descuento).ToString());
-                    }
-
-                    Process p = new Process();
-                    ProcessStartInfo ps = new ProcessStartInfo(path + "\\" + name_arch + ".txt");
-                    ps.FileName = name_arch + ".txt";
-                    ps.Arguments = path + "\\" + name_arch + ".txt";
-                    ps.UseShellExecute = false;
-                    ps.RedirectStandardInput = true;
-
-                    p.StartInfo = ps;
-                    Process.Start("notepad.exe", path + "\\" + name_arch + ".txt");
+                    Text Texto = new Text();
+                    Texto.Pb_Flag_Llamadas = Flag_llamadas;
+                    Texto.Pb_Flag_Serv_Datos = Flag_serv_datos;
+                    Texto.Pb_Flag_Serv_Fijos = Flag_serv_fijos;
+                    Texto.Pb_Flag_Serv_Prepago = Flag_serv_prepago;
+                    Texto.Pb_Flag_Vta_Dispo = Flag_vta_dispo;
+                    Texto.Ps_Nombre_Cliente = Txt_NombreCliente.Text;
+                    Texto.Ps_Nro_Cliente = Txt_Cliente.Text;
+                    Texto.Ps_Nro_Factura = Txt_nroFac.Text;
+                    Texto.Ps_Tipo_Factura = cmb_emision_tipo_factura.Text.ToString();
+                    Texto.CreateFactura();
                 }
             }
         }
