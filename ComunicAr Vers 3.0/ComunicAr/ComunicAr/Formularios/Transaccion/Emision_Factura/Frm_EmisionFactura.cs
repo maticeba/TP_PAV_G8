@@ -11,7 +11,7 @@ using ComunicAr.Clases;
 using ComunicAr.Negocio_Transacciones;
 using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos;
 using ComunicAr.Formularios.Transaccion.Detalle_Llamada;
-using ComunicAr.Formularios.Transaccion.Detalle_Dispositivos;
+using ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos;
 using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos;
 
 
@@ -154,8 +154,8 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
 
         private void bnt_emision_servicio_datos_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("No hay servicios datos de este cliente para agregar en la factura");
-            MessageBox.Show("Mantenimiento");
+            MessageBox.Show("No hay servicios datos de este cliente para agregar en la factura");
+            //MessageBox.Show("Mantenimiento");
             chk_emision_serv_datos.Checked = true;
             btn_emision_servicio_datos.Enabled = false;
         }
@@ -189,10 +189,15 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
         private void bnt_emision_vta_dispo_Click(object sender, EventArgs e)
         {
             //Detalle de Servicio Prepago
-            Detalle_Servicio_Prepago det_vta_dispo = new Detalle_Servicio_Prepago();
+            Detalle_Venta_Dispositivo det_vta_dispo = new Detalle_Venta_Dispositivo();
             DataTable tabla = det_vta_dispo.RecoleccionDatos(Txt_Cliente.Text);
 
-            if (tabla.Rows.Count != 0)
+            MessageBox.Show("No hay venta de dispostivos de este cliente para agregar en la factura");
+            chk_emision_vta_dispo.Checked = true;
+            btn_emision_vta_dispo.Enabled = false;
+            Flag_vta_dispo = false;
+
+            /*if (tabla.Rows.Count != 0)
             {
                 Frm_Detalle_VtaDispo vta_dispo = new Frm_Detalle_VtaDispo();
                 vta_dispo.Pp_NroFac = Txt_nroFac.Text;
@@ -208,7 +213,7 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
                 chk_emision_vta_dispo.Checked = true;
                 btn_emision_vta_dispo.Enabled = false;
                 Flag_vta_dispo = false;
-            }
+            }*/
 
         }
     }

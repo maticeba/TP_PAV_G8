@@ -307,7 +307,6 @@ C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debu
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_Alta_Barrio.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_Baja_Barrio.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Barrio.Frm_mod_barrio.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csprojAssemblyReference.cache
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Numeros.Frm_ABM_Numeros.resources
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Numeros.Frm_Alta_Numeros.resources
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.ABM_Numeros.Frm_Baja_Numeros.resources
@@ -424,7 +423,6 @@ C:\Users\joaco\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos.Frm_desc.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos.Frm_Detalle_Servicios_Fijos.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos.Frm_Descuento_Prepago.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos.Frm_Detalle_Servicio_Prepago.resources
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Frm_Menu_ABM.resources
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Frm_MenuGral.resources
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Menu_Servicios.resources
@@ -529,3 +527,7 @@ C:\Users\Nico\Documents\Proyectos VS\PAV1\Versionado Personal\ComunicAr Vers 16\
 C:\Users\Nico\Documents\Proyectos VS\PAV1\Versionado Personal\ComunicAr Vers 16\ComunicAr\ComunicAr\bin\Debug\ComunicAr.pdb
 C:\Users\Nico\Documents\Proyectos VS\PAV1\Versionado Personal\ComunicAr Vers 16\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalle_Dispositivos.Descuento_Venta.Frm_Descuento_VtaDisp.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\Versionado Personal\ComunicAr Vers 16\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalle_Dispositivos.Frm_Detalle_VtaDispo.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos.Frm_Detalle_SPrepago.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalle_Dispositivos.Descuento_Venta.Frm_Descuento_VtaDisp.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos.Frm_Detalle_VtaDispo.resources
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csprojAssemblyReference.cache

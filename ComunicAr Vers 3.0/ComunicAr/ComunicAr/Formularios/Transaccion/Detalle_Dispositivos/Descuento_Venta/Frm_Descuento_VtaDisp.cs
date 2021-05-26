@@ -24,7 +24,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dispositivos.Descuento_Venta
             string desc = txt_Descuento_VtaDispo.Text;
             Acceso_BD BD = new Acceso_BD();
             string sql = @"UPDATE Venta_Dispositivo SET descuento = " + desc +
-                " WHERE cod_servicio = " + Pp_venta_dispositivo;
+                " WHERE id_venta_dispo = " + Pp_venta_dispositivo;
             BD.Insertar(sql);
             this.Close();
         }

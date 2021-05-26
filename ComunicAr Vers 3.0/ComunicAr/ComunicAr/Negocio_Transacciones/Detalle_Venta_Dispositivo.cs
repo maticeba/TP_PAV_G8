@@ -37,24 +37,37 @@ namespace ComunicAr.Negocio_Transacciones
 
         public DataTable RecoleccionDatos(string nro_cliente)
         {
-            string sql = @"select v.id_venta_dispo, v.fecha_venta,d.marca, d.modelo, v.cant_cuotas, d.precio, v.descuento "
-                         + "from Dispositivos d , venta_dispositivo v, numero n"
-                         + "where n.nro_cliente =  " + nro_cliente + " and v.id_dispositivo = d.id_dispositivo and n.id_dispositivo = d.id_dispositivo";
+            string sql = @"select v.id_venta_dispo, v.fecha_venta,d.marca, d.modelo, v.cant_cuotas, d.precio, v.descuento, DATEDIFF(MONTH,v.fecha_venta,GETDATE ()) as diferencia "
+                         + " from Dispositivos d , venta_dispositivo v, numero n"
+                         + " where n.nro_cliente =  " + nro_cliente + " and v.id_dispositivo = d.id_dispositivo and n.id_dispositivo = d.id_dispositivo " +
+                         "and v.cant_cuotas >= DATEDIFF(MONTH,v.fecha_venta,GETDATE ()) ";
             return BD.EjecutarSelect(sql);
 
 
         }
-
-
         public void insertarDetalleVentaDispositivo()
         {
             string sql = @"insert into Detalle_fact_dispositivo (nro_factura,id_venta_dispo, marca,modelo,precio_venta,descuento,nro_cuota) values ( " +
-                Pp_NroFac + ", " + Pp_venta_dispositivo + ", " + pp_marca + "," + pp_modelo + "," + Pp_precioVta + "," + pp_descuento + ", " + pp_nroCuota + " ) ";
+                Pp_NroFac + ", " + Pp_venta_dispositivo + ",'" + pp_marca + "','" + pp_modelo + "'," + "REPLACE('" + Pp_precioVta + "', ',', '.')" + ", " + pp_descuento + ", " + pp_nroCuota + " )";
             BD.Insertar(sql);
-
         }
-
-
-
+        public DataTable Factura_Dispositivo(string nro_factura, string nro_cliente)
+        {
+            string sql = @"SELECT  d.marca AS marca, " + 
+                                  "d.modelo AS modelo, " +
+                                  "dd.precio_venta AS importe, " +
+                                  "dd.nro_cuota AS cuota, " +
+                                  "dd.descuento, " +
+                                  "d.precio " +
+                          "FROM Detalle_fact_dispositivo dd, Venta_dispositivo vd, Facturas f, Dispositivos d, Numero n " +
+                          "WHERE dd.id_venta_dispo = vd.id_venta_dispo " +
+                          "AND f.nro_factura = dd.nro_factura " +
+                          "AND vd.id_dispositivo = d.id_dispositivo " +
+                          "AND d.id_dispositivo = n.id_dispositivo " +
+                          "AND n.nro_cliente = " + nro_cliente + " " +
+                          "AND dd.nro_factura = " + nro_factura + " " +
+                          "AND vd.cant_cuotas >= DATEDIFF(MONTH,vd.fecha_venta,GETDATE ())";
+            return BD.EjecutarSelect(sql);
+        }
     }
 }

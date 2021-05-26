@@ -102,10 +102,10 @@ namespace ComunicAr.Negocio_Transacciones
                     for (int i = 0; i < tabla.Rows.Count; i++)
                     {
                         count += 1;
-                        string descripcion = tabla.Rows[0][0].ToString();
-                        string total = tabla.Rows[0][1].ToString();
-                        string cuota = tabla.Rows[0][2].ToString();
-                        string cuota_tot = tabla.Rows[0][3].ToString();
+                        string descripcion = tabla.Rows[0][i].ToString();
+                        string total = tabla.Rows[i][1].ToString();
+                        string cuota = tabla.Rows[i][2].ToString();
+                        string cuota_tot = tabla.Rows[i][3].ToString();
                         tw.WriteLine(count.ToString() + "\tServicio Fijo\t\t" + descripcion + " / Cuota: " + cuota + "/" + cuota_tot + "\t\t$" + total);
                         subtotal += float.Parse(total.ToString());
                     }
@@ -122,23 +122,37 @@ namespace ComunicAr.Negocio_Transacciones
                     for (int i = 0; i < tabla.Rows.Count; i++)
                     {
                         count += 1;
-                        string descripcion = tabla.Rows[0][0].ToString();
-                        string importe = tabla.Rows[0][1].ToString();
-                        string desc = tabla.Rows[0][2].ToString();
-                        string total = tabla.Rows[0][3].ToString();
+                        string descripcion = tabla.Rows[i][0].ToString();
+                        string importe = tabla.Rows[i][1].ToString();
+                        string desc = tabla.Rows[i][2].ToString();
+                        string total = tabla.Rows[i][3].ToString();
                         tw.WriteLine(count.ToString() + "\tServicio Prepago\t\t" + descripcion + " / Descuento: " + desc + "%\t\t$" + importe);
                         subtotal += float.Parse(importe.ToString());
                         descuentoPrepago = +(float.Parse(total) * float.Parse(desc));
                     }
                 }
+                float descuentoVta_dispo = 0;
                 if (Pb_Flag_Vta_Dispo == true)
                 {
-
+                    Detalle_Venta_Dispositivo det_dispo = new Detalle_Venta_Dispositivo() ;
+                    DataTable tabla = det_dispo.Factura_Dispositivo(Ps_Nro_Factura, Ps_Nro_Cliente);
+                    for (int i = 0; i < tabla.Rows.Count; i++)
+                    {
+                        count += 1;
+                        string descripcion = tabla.Rows[i][0].ToString() + "/" + tabla.Rows[i][1].ToString();
+                        float importe = float.Parse(tabla.Rows[i][2].ToString()) / float.Parse(tabla.Rows[i][3].ToString());
+                        string desc = tabla.Rows[0][4].ToString();
+                        string total = tabla.Rows[0][5].ToString();
+                        tw.WriteLine(count.ToString() + "\tServicio Prepago\t\t" + descripcion + " / Descuento: " + desc + "%\t\t$" + importe.ToString());
+                        subtotal += importe;
+                        descuentoVta_dispo = +(float.Parse(total) * float.Parse(desc));
+                    }
                 }
                 //tw.WriteLine("*****************************************************************************");
                 tw.WriteLine("_____________________________________________________________________________");
                 tw.WriteLine("Subtotal: \t\t\t$" + subtotal.ToString());
                 tw.WriteLine("Descuento prepago: \t\t\t$" + descuentoPrepago.ToString());
+                tw.WriteLine("Descuento prepago: \t\t\t$" + descuentoVta_dispo.ToString());
                 tw.WriteLine("Descuento: \t\t\t$" + descuento.ToString());
                 tw.WriteLine("Total: \t\t\t\t$" + (subtotal - descuento).ToString());
             }
