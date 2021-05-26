@@ -8,7 +8,7 @@ using System.Data;
 
 namespace ComunicAr.Clases
 {
-    class ComboBox01 : ComboBox
+    public class ComboBox01 : ComboBox
     {
         public string Pp_PK { get; set; }
         public string Pp_Descripcion { get; set; }

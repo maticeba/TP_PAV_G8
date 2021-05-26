@@ -11,6 +11,7 @@ using ComunicAr.Negocio_Transacciones;
 using ComunicAr.Negocio;
 using ComunicAr.Formularios.ABM_Llamadas;
 using ComunicAr.Formularios.ABM_Numeros;
+using System.Data;
 using ComunicAr.Clases;
 
 namespace ComunicAr.Formularios.Transaccion.Generar_Venta
@@ -18,14 +19,22 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
 
     public partial class Frm_Generar_Ventas : Form
     {
-        public string id_cliente { get; set; }
+        public int id_cliente { get; set; }
         public int id_Numero { get; set; }
         public string modelo { get; set; }
 
         public bool flag { get; set; }
         public bool flag2 { get; set; }
 
+        
+
         public string codigo { get; set; }
+
+        public int Pp_nro_telefono { get; set; }
+
+        public int Pp_id_dispositivo { get; set; }
+
+     
 
         Acceso_BD BD = new Acceso_BD();
         public Frm_Generar_Ventas()
@@ -50,14 +59,27 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
         {
             flag = true;
             txt_nombre_cliente.Text = tabla.Rows[0]["nombre_razonSocial"].ToString();
+            id_cliente = Convert.ToInt32(tabla.Rows[0]["nro_cliente"].ToString());
             cmb_nmro_telefono.CargarComboXcliente(txt_id_cliente.Text, txt_nombre_cliente.Text);
+            
             /*cmb_tipoDisp.CargarCombo();
             cmb_disp.CargarCombo();*/
         }
         private void bttn_CrearNuevo(object sender, EventArgs e)
         {
+
             Frm_Alta_Numeros Altas = new Frm_Alta_Numeros();
+            Altas.id_cliente = id_cliente;
+            Altas.flag = true;
+            Altas.txt_aviso.Visible = true;
             Altas.ShowDialog();
+            
+            cmb_nmro_telefono.CargarComboXcliente(txt_id_cliente.Text, txt_nombre_cliente.Text);
+            cmb_nmro_telefono.SelectedIndex = cmb_nmro_telefono.Items.Count-1;
+
+            cmb_nmro_telefono.Enable = false;
+            crearsoloDisp();
+            
         } 
         
         private void button3_Click(object sender, EventArgs e)
@@ -90,12 +112,29 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
                 MessageBox.Show("No se ha seleccionado plan de cuotas, por favor ingrese las cuotas");
             }
         }
+        public void Modificar_Venta()
+        {
+            string sqlMod = @"INSERT INTO venta_dispositivo (fecha_Venta, id_dispositivo, cant_cuotas, descuento) "
+                                + " VALUES (" + "'" + txt_fecha.Text.ToString() + "',"
+                                              + cmb_disp.SelectedValue.ToString() + ","
+                                              + "'" + cmb_cantCuota.SelectedValue.ToString() + "',"
+                                              + txt_Descuento.Text + ")";
+
+
+
+            BD.EjecutarModificar(sqlMod);
+            MessageBox.Show("Modificacion realizada con exito");
+        }
         private void bttn_crearSoloDisp_Click(object sender, EventArgs e)
+        {
+            crearsoloDisp();
+        }
+
+        public void crearsoloDisp()
         {
             if (flag)
             {
 
-                
                 cmb_disp.Enabled = true;
                 cmb_tipoDisp.Enabled = true;
                 cmb_cantCuota.Enabled = true;
@@ -105,12 +144,15 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
                 cmb_tipoDisp.CargarCombo();
                 cmb_cantCuota.Cuotas_Combo_Cargar();
                 flag2 = true;
+                
+                
 
             }
             else
             {
                 MessageBox.Show("No se ha seleccionado un numero, por favor ingrse el id de cliente");
             }
+
         }
         private void cmb_tipoDisp_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -142,10 +184,8 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
         }
         private void cmb_nmro_telefono_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string idNumero = cmb_nmro_telefono.SelectedValue.ToString();
-            string[] id_numero = idNumero.Split(' ');
+            /*string idNumero = cmb_nmro_telefono.SelectedValue.ToString();*/
             
-           
 
         }
         private void btn_buscar_Click(object sender, EventArgs e)

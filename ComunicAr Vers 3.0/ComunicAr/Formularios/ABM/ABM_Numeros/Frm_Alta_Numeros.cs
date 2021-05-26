@@ -18,7 +18,6 @@ namespace ComunicAr.Formularios.ABM_Numeros
 
         public bool flag { get; set; }
         public string Pp_nro_telefono { get; set; }
-        public int Pp_id_dispositivo { get; set; }
 
         public int id_cliente { get; set; }
         public Frm_Alta_Numeros()
@@ -75,7 +74,6 @@ namespace ComunicAr.Formularios.ABM_Numeros
             if(flag)
             {
                 Pp_nro_telefono = txt_nro_telefono.Text;
-                Pp_id_dispositivo = Convert.ToInt32(cmb_id_disp.SelectedValue);
             }
             this.Close();
         }
