@@ -40,9 +40,23 @@ namespace ComunicAr.Negocio_Transacciones
         {
             string sql = @"INSERT INTO Detalle_fact_fijos (nro_factura, cod_serv_contratado, costo_final, descuento, nro_cuota) VALUES (" + Pp_NroFac + ", " + Pp_serv_contratados + ", CONVERT(FLOAT, "+ Pp_Final + "), CONVERT(FLOAT," + Pp_descuento + "), " + Pp_nro_cuota + " ) ";
             BD.Insertar(sql);
-
-
-
+        }
+        public DataTable Factura_fijo(string nro_factura, string nro_cliente)
+        {
+            string sql = @"SELECT   sf.descripcion AS detalle, " +
+                                   "df.costo_final AS importe, " +
+                                   "df.nro_cuota AS cuota, " +
+                                   "DATEDIFF(MONTH, c.fecha_desde, c.fecha_hasta) AS tot_cuotas " +
+                          "FROM Detalle_fact_fijos df, Servicios_contratados c, Facturas f, Servicios_fijos sf, Numero n " +
+                          "WHERE df.cod_serv_contratado = c.cod_servicio " +
+                            "AND f.nro_factura = df.nro_factura	" +
+                            "AND c.id_servicio = sf.cod_servicio " +
+                            "AND c.tipo_servicio = 'B' " +
+                            "AND c.id_numero = n.id_numero " +
+                            "AND n.nro_cliente = " + nro_cliente + " " +
+                            "AND df.nro_factura = " + nro_factura + " " +
+                            "AND df.nro_cuota <= DATEDIFF(MONTH, c.fecha_desde, c.fecha_hasta)";
+            return BD.EjecutarSelect(sql);
         }
     }
 }

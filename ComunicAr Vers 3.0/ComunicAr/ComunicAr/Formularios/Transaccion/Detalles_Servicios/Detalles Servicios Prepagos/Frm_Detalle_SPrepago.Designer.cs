@@ -30,10 +30,10 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
         private void InitializeComponent()
         {
             this.descuento_ = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_det_prepago_borrar = new System.Windows.Forms.Button();
+            this.btn_det_prepago_modificar = new System.Windows.Forms.Button();
+            this.btn_det_prepago_cancelar = new System.Windows.Forms.Button();
+            this.btn_det_prepago_generar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Txt_ID_SPrepagos = new ComunicAr.Clases.TextBox01();
             this.Txt_NroFac_SPrepagos = new ComunicAr.Clases.TextBox01();
@@ -41,16 +41,15 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.Txt_Nombre_SPrepagos = new ComunicAr.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_subtotla_SP = new ComunicAr.Clases.TextBox01();
             this.label6 = new System.Windows.Forms.Label();
             this.grid_Serv_Prepagos = new System.Windows.Forms.DataGridView();
             this.cod_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo_servicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cuota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costo_final = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_subtotla_SP = new ComunicAr.Clases.TextBox01();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Serv_Prepagos)).BeginInit();
             this.SuspendLayout();
@@ -65,45 +64,45 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.descuento_.UseVisualStyleBackColor = true;
             this.descuento_.Click += new System.EventHandler(this.descuento_Click);
             // 
-            // button2
+            // btn_det_prepago_borrar
             // 
-            this.button2.Location = new System.Drawing.Point(108, 411);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_det_prepago_borrar.Location = new System.Drawing.Point(108, 411);
+            this.btn_det_prepago_borrar.Name = "btn_det_prepago_borrar";
+            this.btn_det_prepago_borrar.Size = new System.Drawing.Size(75, 23);
+            this.btn_det_prepago_borrar.TabIndex = 24;
+            this.btn_det_prepago_borrar.Text = "Borrar";
+            this.btn_det_prepago_borrar.UseVisualStyleBackColor = true;
+            this.btn_det_prepago_borrar.Click += new System.EventHandler(this.btn_det_prepago_borrar_Click);
             // 
-            // button1
+            // btn_det_prepago_modificar
             // 
-            this.button1.Location = new System.Drawing.Point(13, 411);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_det_prepago_modificar.Location = new System.Drawing.Point(13, 411);
+            this.btn_det_prepago_modificar.Name = "btn_det_prepago_modificar";
+            this.btn_det_prepago_modificar.Size = new System.Drawing.Size(75, 23);
+            this.btn_det_prepago_modificar.TabIndex = 23;
+            this.btn_det_prepago_modificar.Text = "Modificar";
+            this.btn_det_prepago_modificar.UseVisualStyleBackColor = true;
+            this.btn_det_prepago_modificar.Click += new System.EventHandler(this.btn_det_prepago_modificar_Click);
             // 
-            // button3
+            // btn_det_prepago_cancelar
             // 
-            this.button3.Location = new System.Drawing.Point(738, 411);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 23);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_det_prepago_cancelar.Location = new System.Drawing.Point(632, 411);
+            this.btn_det_prepago_cancelar.Name = "btn_det_prepago_cancelar";
+            this.btn_det_prepago_cancelar.Size = new System.Drawing.Size(142, 23);
+            this.btn_det_prepago_cancelar.TabIndex = 21;
+            this.btn_det_prepago_cancelar.Text = "Cancelar";
+            this.btn_det_prepago_cancelar.UseVisualStyleBackColor = true;
+            this.btn_det_prepago_cancelar.Click += new System.EventHandler(this.btn_det_prepago_cancelar_Click);
             // 
-            // button6
+            // btn_det_prepago_generar
             // 
-            this.button6.Location = new System.Drawing.Point(586, 411);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(142, 23);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "Generar Detalle";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btn_det_prepago_generar.Location = new System.Drawing.Point(480, 411);
+            this.btn_det_prepago_generar.Name = "btn_det_prepago_generar";
+            this.btn_det_prepago_generar.Size = new System.Drawing.Size(142, 23);
+            this.btn_det_prepago_generar.TabIndex = 22;
+            this.btn_det_prepago_generar.Text = "Generar Detalle";
+            this.btn_det_prepago_generar.UseVisualStyleBackColor = true;
+            this.btn_det_prepago_generar.Click += new System.EventHandler(this.btn_det_prepago_generar_Click);
             // 
             // groupBox1
             // 
@@ -113,9 +112,9 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.groupBox1.Controls.Add(this.Txt_Nombre_SPrepagos);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(-36, 17);
+            this.groupBox1.Location = new System.Drawing.Point(8, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(751, 67);
+            this.groupBox1.Size = new System.Drawing.Size(766, 67);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Clientes";
@@ -183,23 +182,10 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Cliente";
             // 
-            // txt_subtotla_SP
-            // 
-            this.txt_subtotla_SP.Enabled = false;
-            this.txt_subtotla_SP.Location = new System.Drawing.Point(780, 362);
-            this.txt_subtotla_SP.Name = "txt_subtotla_SP";
-            this.txt_subtotla_SP.Pp_Campo = null;
-            this.txt_subtotla_SP.Pp_MensajeError = null;
-            this.txt_subtotla_SP.Pp_Tabla = null;
-            this.txt_subtotla_SP.Pp_Validable = false;
-            this.txt_subtotla_SP.Size = new System.Drawing.Size(100, 20);
-            this.txt_subtotla_SP.TabIndex = 19;
-            this.txt_subtotla_SP.TextChanged += new System.EventHandler(this.txt_subtotla_SP_TextChanged);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(728, 365);
+            this.label6.Location = new System.Drawing.Point(622, 365);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 13);
             this.label6.TabIndex = 18;
@@ -215,13 +201,12 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.tipo_servicio,
             this.descripcion,
             this.costo,
-            this.Cuota,
             this.descuento,
             this.costo_final});
             this.grid_Serv_Prepagos.Location = new System.Drawing.Point(8, 90);
             this.grid_Serv_Prepagos.Name = "grid_Serv_Prepagos";
             this.grid_Serv_Prepagos.ReadOnly = true;
-            this.grid_Serv_Prepagos.Size = new System.Drawing.Size(872, 266);
+            this.grid_Serv_Prepagos.Size = new System.Drawing.Size(766, 266);
             this.grid_Serv_Prepagos.TabIndex = 17;
             this.grid_Serv_Prepagos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Serv_Prepagos_CellContentClick);
             // 
@@ -251,12 +236,6 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.costo.ReadOnly = true;
             this.costo.Width = 150;
             // 
-            // Cuota
-            // 
-            this.Cuota.HeaderText = "Nro de Cuota";
-            this.Cuota.Name = "Cuota";
-            this.Cuota.ReadOnly = true;
-            // 
             // descuento
             // 
             this.descuento.HeaderText = "Descuento";
@@ -269,16 +248,29 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.costo_final.Name = "costo_final";
             this.costo_final.ReadOnly = true;
             // 
+            // txt_subtotla_SP
+            // 
+            this.txt_subtotla_SP.Enabled = false;
+            this.txt_subtotla_SP.Location = new System.Drawing.Point(674, 362);
+            this.txt_subtotla_SP.Name = "txt_subtotla_SP";
+            this.txt_subtotla_SP.Pp_Campo = null;
+            this.txt_subtotla_SP.Pp_MensajeError = null;
+            this.txt_subtotla_SP.Pp_Tabla = null;
+            this.txt_subtotla_SP.Pp_Validable = false;
+            this.txt_subtotla_SP.Size = new System.Drawing.Size(100, 20);
+            this.txt_subtotla_SP.TabIndex = 19;
+            this.txt_subtotla_SP.TextChanged += new System.EventHandler(this.txt_subtotla_SP_TextChanged);
+            // 
             // Frm_Detalle_SPrepago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 455);
+            this.ClientSize = new System.Drawing.Size(798, 455);
             this.Controls.Add(this.descuento_);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btn_det_prepago_borrar);
+            this.Controls.Add(this.btn_det_prepago_modificar);
+            this.Controls.Add(this.btn_det_prepago_cancelar);
+            this.Controls.Add(this.btn_det_prepago_generar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_subtotla_SP);
             this.Controls.Add(this.label6);
@@ -297,10 +289,10 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
         #endregion
 
         private System.Windows.Forms.Button descuento_;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_det_prepago_borrar;
+        private System.Windows.Forms.Button btn_det_prepago_modificar;
+        private System.Windows.Forms.Button btn_det_prepago_cancelar;
+        private System.Windows.Forms.Button btn_det_prepago_generar;
         private System.Windows.Forms.GroupBox groupBox1;
         private Clases.TextBox01 Txt_ID_SPrepagos;
         private Clases.TextBox01 Txt_NroFac_SPrepagos;
@@ -315,7 +307,6 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
         private System.Windows.Forms.DataGridViewTextBoxColumn tipo_servicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn costo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cuota;
         private System.Windows.Forms.DataGridViewTextBoxColumn descuento;
         private System.Windows.Forms.DataGridViewTextBoxColumn costo_final;
     }

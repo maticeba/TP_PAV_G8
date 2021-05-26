@@ -41,11 +41,28 @@ namespace ComunicAr.Negocio_Transacciones
 
         public void InsertarDetalleServicioPrepago()
         {
-            string sql = @"INSERT INTO Detalle_fact_prepago (nro_factura, cod_servicio_contratado, costo_final, descuento, nro_cuota) VALUES (" + Pp_NroFac + ", " + Pp_cod_serv_contratados + ", " + Pp_Final + ", CONVERT(FLOAT," + Pp_descuento + "), " + Pp_nro_cuota + " ) ";
+            string sql = @"INSERT INTO Detalle_fact_prepago (nro_factura, cod_servicio_contratado, costo_final, descuento) " +
+                                 "VALUES (" + Pp_NroFac + ", " + Pp_cod_serv_contratados + ", " + Pp_Final + ", " +
+                                 "CONVERT(FLOAT," + Pp_descuento + ") ) ";
             BD.Insertar(sql);
-
-
-
+        }
+        public DataTable Factura_prepago(string nro_factura, string nro_cliente)
+        {
+            string sql = @"SELECT  sp.descripcion AS detalle, " +
+                                    "dp.costo_final AS importe, " +
+                                    "dp.descuento," +
+                                    "sp.costo " +
+                          "FROM Detalle_fact_prepago dp, Servicios_contratados c, Facturas f, Servicios_prepago sp, Numero n " +
+                          "WHERE dp.cod_servicio_contratado = c.cod_servicio " +
+                                "AND f.nro_factura = dp.nro_factura " +
+                                "AND c.id_servicio = sp.id_pack " +
+                                "AND c.tipo_servicio = 'C' " +
+                                "AND c.id_numero = n.id_numero " +
+                                "AND n.nro_cliente = " + nro_cliente + " "+
+                                "AND dp.nro_factura = " + nro_factura + " " +
+                                "AND MONTH(c.fecha_desde) = MONTH(DATEADD(MM, -1, GETDATE())) " +
+                                "AND YEAR(c.fecha_desde) = YEAR(DATEADD(MM, -1, GETDATE()))";
+            return BD.EjecutarSelect(sql);
         }
     }
 }

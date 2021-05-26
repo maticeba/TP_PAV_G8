@@ -35,8 +35,6 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
 
         private void Frm_Detalle_Servicios_Fijos_Load(object sender, EventArgs e)
         {
-            Pp_NroFac = "2";
-            Pp_NroCliente = "2";
             flag = false;
             Pp_descuento = 0;
             //Frm_desc desc = new Frm_desc();
@@ -151,7 +149,6 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
             DataTable tabla_datos = new DataTable();
             Detalle_Servicio_Fijo Detalle = new Detalle_Servicio_Fijo();
             tabla_datos = Detalle.RecoleccionDatos(Pp_NroCliente);
-            Pp_NroFac = "1";
             if (MessageBox.Show("¿Desea cargar el detalle de llamada?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
 

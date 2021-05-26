@@ -398,6 +398,12 @@
     <Compile Include="Formularios\Transaccion\Emision_Factura\Frm_EmisionFactura.Designer.cs">
       <DependentUpon>Frm_EmisionFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Transaccion\Generar_Venta\Descuento_Venta\Frm_Descuento_VtaDisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Generar_Venta\Descuento_Venta\Frm_Descuento_VtaDisp.Designer.cs">
+      <DependentUpon>Frm_Descuento_VtaDisp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -418,6 +424,7 @@
     <Compile Include="Negocio_Transacciones\Detalle_Llamadas.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Fijo.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Prepago.cs" />
+    <Compile Include="Negocio_Transacciones\Detalle_Venta_Dispositivo.cs" />
     <Compile Include="Negocio_Transacciones\Emitir_Factura.cs" />
     <Compile Include="Negocio_Transacciones\Text.cs" />
     <Compile Include="Program.cs" />
@@ -581,11 +588,17 @@
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.resx">
       <DependentUpon>Frm_Detalle_SPrepago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.resx">
+      <DependentUpon>Frm_Detalle_Dispositivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Detalle_Llamada\Frm_Detalle_Llamada.resx">
       <DependentUpon>Frm_Detalle_Llamada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Emision_Factura\Frm_EmisionFactura.resx">
       <DependentUpon>Frm_EmisionFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transaccion\Generar_Venta\Descuento_Venta\Frm_Descuento_VtaDisp.resx">
+      <DependentUpon>Frm_Descuento_VtaDisp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Ventas.resx">
       <DependentUpon>Frm_Generar_Ventas.cs</DependentUpon>

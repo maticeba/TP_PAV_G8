@@ -11,9 +11,8 @@ using ComunicAr.Clases;
 using ComunicAr.Negocio_Transacciones;
 using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fijos;
 using ComunicAr.Formularios.Transaccion.Detalle_Llamada;
-using System.IO;
-using System.Diagnostics;
-using System.Security.Principal;
+using ComunicAr.Formularios.Transaccion.Detalle_Dispositivos;
+using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos;
 
 
 namespace ComunicAr.Formularios.Transaccion.Emision_Factura
@@ -26,9 +25,6 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
         public bool Flag_llamadas { get; set; }
         public bool Flag_vta_dispo { get; set; }
 
-        Detalle_Llamadas det_llamada = new Detalle_Llamadas();
-        Frm_Detalle_Llamada Llamadas = new Frm_Detalle_Llamada();
-
         public Frm_EmisionFactura()
         {
             InitializeComponent();
@@ -37,10 +33,12 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
         private void btn_emision_llamadas_Click(object sender, EventArgs e)
         {
             //Detalle de Llamada
-
+            Detalle_Llamadas det_llamada = new Detalle_Llamadas();
             DataTable tabla = det_llamada.RecoleccionDatos(Txt_Cliente.Text);
+
             if (tabla.Rows.Count != 0)
             {
+                Frm_Detalle_Llamada Llamadas = new Frm_Detalle_Llamada();
                 Llamadas.Pp_NroFac = Txt_nroFac.Text;
                 Llamadas.Pp_NroCliente = Txt_Cliente.Text;
                 Llamadas.ShowDialog();
@@ -104,15 +102,11 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
             }
         }
 
-        private void Frm_EmisionFactura_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void bnt_emision_servicio_fijo_Click(object sender, EventArgs e)
         {
             Detalle_Servicio_Fijo det_fijo = new Detalle_Servicio_Fijo();
             DataTable tabla = det_fijo.RecoleccionDatos(Txt_Cliente.Text);
+
             if (tabla.Rows.Count != 0)
             {
                 Frm_Detalle_Servicios_Fijos Frm_det_fijo = new Frm_Detalle_Servicios_Fijos();
@@ -121,6 +115,7 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
                 Frm_det_fijo.ShowDialog();
                 chk_emision_serv_fijo.Checked = true;
                 btn_emision_servicio_fijo.Enabled = false;
+                Flag_serv_fijos = true;
             }
             else
             {
@@ -167,18 +162,54 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
 
         private void bnt_emision_servicio_prepago_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("No hay servicios prepagos de este cliente para agregar en la factura");
-            MessageBox.Show("Mantenimiento");
-            chk_emision_serv_prepago.Checked = true;
-            btn_emision_servicio_prepago.Enabled = false;
+            //Detalle de Servicio Prepago
+            Detalle_Servicio_Prepago det_prepago = new Detalle_Servicio_Prepago() ;
+            DataTable tabla = det_prepago.RecoleccionDatos(Txt_Cliente.Text);
+
+            if (tabla.Rows.Count != 0)
+            {
+                Frm_Detalle_SPrepago Prepago = new Frm_Detalle_SPrepago();
+                Prepago.Pp_NroFac = Txt_nroFac.Text;
+                Prepago.Pp_NroCliente = Txt_Cliente.Text;
+                Prepago.ShowDialog();
+                chk_emision_serv_prepago.Checked = true;
+                btn_emision_servicio_prepago.Enabled = false;
+                Flag_serv_prepago = true;
+            }
+            else
+            {
+                MessageBox.Show("No hay servicios prepagos de este cliente para agregar en la factura");
+                chk_emision_serv_prepago.Checked = true;
+                btn_emision_servicio_prepago.Enabled = false;
+                Flag_serv_prepago = false;
+            }
+
         }
 
         private void bnt_emision_vta_dispo_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("No hay venta de dispostivos de este cliente para agregar en la factura");
-            MessageBox.Show("Mantenimiento");
-            chk_emision_vta_dispo.Checked = true;
-            btn_emision_vta_dispo.Enabled = false;
+            //Detalle de Servicio Prepago
+            Detalle_Servicio_Prepago det_vta_dispo = new Detalle_Servicio_Prepago();
+            DataTable tabla = det_vta_dispo.RecoleccionDatos(Txt_Cliente.Text);
+
+            if (tabla.Rows.Count != 0)
+            {
+                Frm_Detalle_VtaDispo vta_dispo = new Frm_Detalle_VtaDispo();
+                vta_dispo.Pp_NroFac = Txt_nroFac.Text;
+                vta_dispo.Pp_NroCliente = Txt_Cliente.Text;
+                vta_dispo.ShowDialog();
+                chk_emision_vta_dispo.Checked = true;
+                btn_emision_vta_dispo.Enabled = false;
+                Flag_vta_dispo = true;
+            }
+            else
+            {
+                MessageBox.Show("No hay venta de dispostivos de este cliente para agregar en la factura");
+                chk_emision_vta_dispo.Checked = true;
+                btn_emision_vta_dispo.Enabled = false;
+                Flag_vta_dispo = false;
+            }
+
         }
     }
 }
