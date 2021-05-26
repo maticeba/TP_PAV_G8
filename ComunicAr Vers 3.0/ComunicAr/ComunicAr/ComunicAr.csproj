@@ -380,12 +380,6 @@
     <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.Designer.cs">
       <DependentUpon>Frm_Detalle_SPrepago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.Designer.cs">
-      <DependentUpon>Frm_Detalle_Dispositivos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Transaccion\Detalle_Llamada\Frm_Detalle_Llamada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -587,9 +581,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.resx">
       <DependentUpon>Frm_Detalle_SPrepago.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.resx">
-      <DependentUpon>Frm_Detalle_Dispositivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Detalle_Llamada\Frm_Detalle_Llamada.resx">
       <DependentUpon>Frm_Detalle_Llamada.cs</DependentUpon>
