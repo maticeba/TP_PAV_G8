@@ -26,11 +26,13 @@ namespace ComunicAr.Negocio_Transacciones
         }
         public DataTable RecoleccionDatos(string nro_cliente)
         {
-            string sql = @"DECLARE @1roMes as datetime = DateAdd( day, 1 - Day( Convert(date, GETDATE()) ), Convert(date, getdate()) )" +
+            string sql = @"DECLARE @hoy as datetime = GetDate()" +
+                          "DECLARE @1roMes as datetime = DateAdd( day, 1 - Day( @hoy ), @hoy )" +
+                          "DECLARE @finmes as datetime = DateAdd( day, -1, DateAdd( month, 1, @1roMes ) )" +
                          "SELECT l.*, nE.*, b.costo,nR.id_numero, nR.cod_nacional as Rcod_nac, nR.cod_area as Rcod_area, nR.nro_telefono as Rnro, DATEDIFF (minute, l.fecha_hora_inicio, l.fecha_hora_fin) as duracion "
                         + "FROM Llamadas l, Numero nE, Banda_horaria b, Numero nR "
                         + "WHERE nE.nro_cliente = " + nro_cliente + " AND nE.id_numero = l.id_nro_emisor AND l.id_band_horar = b.id_banda " +
-                        "AND nR.id_numero = l.id_nro_receptor AND l.fecha_hora_inicio BETWEEN DATEADD(month, -1, @1roMes ) AND @1roMes ";
+                        "AND nR.id_numero = l.id_nro_receptor AND @1roMes <= l.fecha_hora_inicio AND L.fecha_hora_inicio <= @finmes ";
             return BD.EjecutarSelect(sql);
         }
         public void insertarDetalleLlamada()
@@ -41,8 +43,19 @@ namespace ComunicAr.Negocio_Transacciones
                          "REPLACE('" + Pp_Subtotal + "', ',', '.'))";
             BD.Insertar(sql);
 
-
-
+        }
+        public DataTable Factura_llamada(string nro_factura, string nro_cliente)
+        {
+            string sql = @"SELECT   COUNT(df.id_detalleLlamada) AS cant_llamadas, " +
+                                   "SUM(df.costo_final) AS total, " +
+                                   "SUM(CONVERT(int, (Cast((l.fecha_hora_fin - l.fecha_hora_inicio) as float) * 1440))) AS tiempo_total " +
+                          "FROM Detalle_fact_llamada df, Llamadas l, Facturas f, Numero n " +
+                          "WHERE df.id_llamada = l.id_llamada " +
+                             "AND f.nro_factura = df.nro_factura " +
+                             "AND n.id_numero = l.id_nro_emisor " +
+                             "AND n.nro_cliente = " + nro_cliente +
+                             "AND df.nro_factura = " + nro_factura;
+            return BD.EjecutarSelect(sql);
         }
     }
 }

@@ -49,6 +49,9 @@
   <ItemGroup>
     <Compile Include="Clases\Acceso_BD.cs" />
     <Compile Include="Clases\BE_Acceso_Datos_T.cs" />
+    <Compile Include="Clases\CheckBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Clases\ComboBox01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -383,6 +386,18 @@
     <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.Designer.cs">
       <DependentUpon>Frm_Detalle_Dispositivos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Transaccion\Detalle_Llamada\Frm_Detalle_Llamada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Detalle_Llamada\Frm_Detalle_Llamada.Designer.cs">
+      <DependentUpon>Frm_Detalle_Llamada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Emision_Factura\Frm_EmisionFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Emision_Factura\Frm_EmisionFactura.Designer.cs">
+      <DependentUpon>Frm_EmisionFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -403,20 +418,9 @@
     <Compile Include="Negocio_Transacciones\Detalle_Llamadas.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Fijo.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Prepago.cs" />
+    <Compile Include="Negocio_Transacciones\Emitir_Factura.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Formularios\Transaccion\Detalle Llamada\Frm_Detalle_Llamada.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Transaccion\Detalle Llamada\Frm_Detalle_Llamada.Designer.cs">
-      <DependentUpon>Frm_Detalle_Llamada.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Transaccion\Emision de Factura\Frm_EmisionFactura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Transaccion\Emision de Factura\Frm_EmisionFactura.Designer.cs">
-      <DependentUpon>Frm_EmisionFactura.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Formularios\ABM\ABM_Ciudad\Frm_ABM_Ciudad.resx">
       <DependentUpon>Frm_ABM_Ciudad.cs</DependentUpon>
     </EmbeddedResource>
@@ -576,6 +580,12 @@
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_Servicio_Prepago.resx">
       <DependentUpon>Frm_Detalle_Servicio_Prepago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transaccion\Detalle_Llamada\Frm_Detalle_Llamada.resx">
+      <DependentUpon>Frm_Detalle_Llamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transaccion\Emision_Factura\Frm_EmisionFactura.resx">
+      <DependentUpon>Frm_EmisionFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Generar_Venta\Frm_Generar_Ventas.resx">
       <DependentUpon>Frm_Generar_Ventas.cs</DependentUpon>
     </EmbeddedResource>
@@ -588,12 +598,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Formularios\Transaccion\Detalle Llamada\Frm_Detalle_Llamada.resx">
-      <DependentUpon>Frm_Detalle_Llamada.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Transaccion\Emision de Factura\Frm_EmisionFactura.resx">
-      <DependentUpon>Frm_EmisionFactura.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
