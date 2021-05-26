@@ -14,34 +14,34 @@ namespace ComunicAr.Negocio_Transacciones
         public string Pp_NroFac { get; set; }
         public string Pp_cod_serv_contratados { get; set; }
         public string Pp_Final { get; set; }
-        public float Pp_nro_cuota { get; set; }
-        public float Pp_descuento { get; set; }
+        public string Pp_nro_cuota { get; set; }
+        public string Pp_descuento { get; set; }
 
         Acceso_BD BD = new Acceso_BD();
 
         public DataTable CargarCliente(string NroFac)
         {
-            string sql = @"SELECT f.nro_factura, f.cod_serv_contratado, c.nombre_razonSocial, c.nro_cliente "
-                          + "FROM Facturas f, Cliente c"
+            string sql = @"SELECT f.nro_factura, c.nombre_razonSocial, c.nro_cliente "
+                          + "FROM Facturas f, Cliente c "
                           + " WHERE f.nro_factura = " + NroFac + " AND f.nro_cliente = c.nro_cliente ";
             return BD.EjecutarSelect(sql);
-            // reveer
+           
 
         }
-        public DataTable RecoleccionDatos(string id_pack)
+        public DataTable RecoleccionDatos(string nro_cliente)
         {
-            string sql = @"SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r "
-
-                       + "WHERE s.id_pack = " + id_pack + "AND s.id_region = r.id_region";
+            string sql = @"SELECT DISTINCT  c.fecha_desde, c.fecha_hasta, DATEDIFF(month,c.fecha_desde,convert(date,GETDATE())) as diferencia,DATEDIFF (month, c.fecha_desde, c.fecha_hasta) as duracion, "
+                        + "p.costo,p.tipo_servicio,p.descripcion,r.descripcion_region, n.id_numero ,c.cod_servicio, c.id_numero ,n.nro_cliente,c.descuento, p.id_pack "
+                        + "FROM Servicios_prepago p,Servicios_Contratados c, Numero n ,Region r "
+                        + "WHERE c.tipo_servicio= p.tipo_servicio AND c.id_servicio = p.id_pack  AND p.id_region = r.id_region " +
+                        "AND n.nro_cliente = " + nro_cliente  +" AND c.id_numero = n.id_numero " ;
+        
             return BD.EjecutarSelect(sql);
         }
 
-        public void insertarDetalleServicioPrepago()
+        public void InsertarDetalleServicioPrepago()
         {
-            string sql = @"INSERT INTO Detalle_fact_prepago (nro_factura, cod_serv_contratados, costo_final,descuento,nro_cuota) VALUES( " +
-                        Pp_NroFac + ", " +
-                        Pp_cod_serv_contratados + ", " +
-                         Pp_Final+", "+ ", " + Pp_descuento + ", "+ 4 + " ) ";
+            string sql = @"INSERT INTO Detalle_fact_prepago (nro_factura, cod_servicio_contratado, costo_final, descuento, nro_cuota) VALUES (" + Pp_NroFac + ", " + Pp_cod_serv_contratados + ", " + Pp_Final + ", CONVERT(FLOAT," + Pp_descuento + "), " + Pp_nro_cuota + " ) ";
             BD.Insertar(sql);
 
 

@@ -374,11 +374,11 @@
     <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Descuento_Prepago.Designer.cs">
       <DependentUpon>Frm_Descuento_Prepago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_Servicio_Prepago.cs">
+    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_Servicio_Prepago.Designer.cs">
-      <DependentUpon>Frm_Detalle_Servicio_Prepago.cs</DependentUpon>
+    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.Designer.cs">
+      <DependentUpon>Frm_Detalle_SPrepago.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Frm_Detalle_Dispositivos.cs">
       <SubType>Form</SubType>
@@ -578,8 +578,8 @@
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Descuento_Prepago.resx">
       <DependentUpon>Frm_Descuento_Prepago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_Servicio_Prepago.resx">
-      <DependentUpon>Frm_Detalle_Servicio_Prepago.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.resx">
+      <DependentUpon>Frm_Detalle_SPrepago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Detalle_Llamada\Frm_Detalle_Llamada.resx">
       <DependentUpon>Frm_Detalle_Llamada.cs</DependentUpon>

@@ -110,6 +110,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Descuento_Prepago";
             this.Text = "Frm_Descuento_Prepago";
+            this.Load += new System.EventHandler(this.Frm_Descuento_Prepago_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
