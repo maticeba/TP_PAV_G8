@@ -65,7 +65,6 @@ namespace ComunicAr.Negocio_Transacciones
                 tw.WriteLine("- Tipo: " + Ps_Tipo_Factura);
                 tw.WriteLine("- Nro. Factura: " + Ps_Nro_Factura);
                 tw.WriteLine("- Fecha: " + DateTime.Now.ToString());
-                MessageBox.Show(DateTime.Now.ToString());
                 tw.WriteLine("___________________________________________________________________________________");
                 tw.WriteLine("                                  CLIENTE");
                 tw.WriteLine("");
@@ -102,7 +101,7 @@ namespace ComunicAr.Negocio_Transacciones
                     for (int i = 0; i < tabla.Rows.Count; i++)
                     {
                         count += 1;
-                        string descripcion = tabla.Rows[0][i].ToString();
+                        string descripcion = tabla.Rows[i][0].ToString();
                         string total = tabla.Rows[i][1].ToString();
                         string cuota = tabla.Rows[i][2].ToString();
                         string cuota_tot = tabla.Rows[i][3].ToString();

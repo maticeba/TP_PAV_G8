@@ -117,7 +117,7 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
             string sqlMod = @"INSERT INTO venta_dispositivo (fecha_Venta, id_dispositivo, cant_cuotas, descuento) "
                                 + " VALUES (" + "'" + txt_fecha.Text.ToString() + "',"
                                               + cmb_disp.SelectedValue.ToString() + ","
-                                              + "'" + cmb_cantCuota.SelectedValue.ToString() + "',"
+                                              + "'" + cmb_cantCuota.SelectedValue.ToString() + "', "
                                               + txt_Descuento.Text + ")";
 
 

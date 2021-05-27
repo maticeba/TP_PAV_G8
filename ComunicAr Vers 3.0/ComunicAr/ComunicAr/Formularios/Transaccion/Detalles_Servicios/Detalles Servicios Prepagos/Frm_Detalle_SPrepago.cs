@@ -175,7 +175,6 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicio
 
                 for (int i = 0; i < grid_Serv_Prepagos.Rows.Count; i++)
                 {
-                    MessageBox.Show(grid_Serv_Prepagos.Rows[i].Cells[4].Value.ToString());
                     Detalle.Pp_NroFac = Pp_NroFac;
                     Detalle.Pp_cod_serv_contratados = grid_Serv_Prepagos.Rows[i].Cells[0].Value.ToString();
                     Detalle.Pp_Final = txt_subtotla_SP.Text.ToString();
