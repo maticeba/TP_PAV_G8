@@ -99,6 +99,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
 
                 }
                 MessageBox.Show("Detalle cargado exitosamente");
+                this.Close();
             }
         }
 

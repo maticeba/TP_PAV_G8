@@ -192,12 +192,12 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
             Detalle_Venta_Dispositivo det_vta_dispo = new Detalle_Venta_Dispositivo();
             DataTable tabla = det_vta_dispo.RecoleccionDatos(Txt_Cliente.Text);
 
-            MessageBox.Show("No hay venta de dispostivos de este cliente para agregar en la factura");
+            //MessageBox.Show("No hay venta de dispostivos de este cliente para agregar en la factura");
             chk_emision_vta_dispo.Checked = true;
             btn_emision_vta_dispo.Enabled = false;
             Flag_vta_dispo = false;
 
-            /*if (tabla.Rows.Count != 0)
+            if (tabla.Rows.Count != 0)
             {
                 Frm_Detalle_VtaDispo vta_dispo = new Frm_Detalle_VtaDispo();
                 vta_dispo.Pp_NroFac = Txt_nroFac.Text;
@@ -213,7 +213,7 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
                 chk_emision_vta_dispo.Checked = true;
                 btn_emision_vta_dispo.Enabled = false;
                 Flag_vta_dispo = false;
-            }*/
+            }
 
         }
     }

@@ -163,6 +163,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
                     Detalle.insertarDetalleServicioFijo();
                 }
                 MessageBox.Show("Detalle cargado exitosamente");
+                this.Close();
             }
         }
 

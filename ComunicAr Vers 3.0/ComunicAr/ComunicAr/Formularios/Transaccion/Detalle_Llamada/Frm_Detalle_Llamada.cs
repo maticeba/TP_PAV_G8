@@ -152,6 +152,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Llamada
                     Detalle.insertarDetalleLlamada();
                 }
                 MessageBox.Show("Detalle cargado exitosamente");
+                this.Close();
             }
         }
     }

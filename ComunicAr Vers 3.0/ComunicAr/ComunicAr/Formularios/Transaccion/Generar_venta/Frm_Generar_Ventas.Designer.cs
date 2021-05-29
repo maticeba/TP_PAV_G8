@@ -321,6 +321,7 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
             this.txt_fecha.Size = new System.Drawing.Size(182, 23);
             this.txt_fecha.TabIndex = 23;
             this.txt_fecha.Text = "DD/MM/YYYY";
+            this.txt_fecha.TextChanged += new System.EventHandler(this.txt_fecha_TextChanged);
             // 
             // txt_Descuento
             // 

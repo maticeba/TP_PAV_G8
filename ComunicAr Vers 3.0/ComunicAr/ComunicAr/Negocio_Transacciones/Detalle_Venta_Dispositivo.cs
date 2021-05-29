@@ -47,8 +47,12 @@ namespace ComunicAr.Negocio_Transacciones
         }
         public void insertarDetalleVentaDispositivo()
         {
+            if (pp_descuento == "")
+            {
+                pp_descuento = "0";
+            }
             string sql = @"insert into Detalle_fact_dispositivo (nro_factura,id_venta_dispo, marca,modelo,precio_venta,descuento,nro_cuota) values ( " +
-                Pp_NroFac + ", " + Pp_venta_dispositivo + ",'" + pp_marca + "','" + pp_modelo + "'," + "REPLACE('" + Pp_precioVta + "', ',', '.')" + ", " + pp_descuento + ", " + pp_nroCuota + " )";
+                Pp_NroFac + ", " + Pp_venta_dispositivo + ",'" + pp_marca + "','" + pp_modelo + "'," + "REPLACE('" + Pp_precioVta + "', ',', '.')" + ", " + "REPLACE('" + pp_descuento + "', ',', '.')" + ", " + pp_nroCuota + " )";
             BD.Insertar(sql);
         }
         public DataTable Factura_Dispositivo(string nro_factura, string nro_cliente)

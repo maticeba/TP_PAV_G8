@@ -51,6 +51,7 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
         private void Frm_Generar_Venta_Load(object sender, EventArgs e)
         {
             flag = false;
+            txt_fecha.Text = DateTime.Now.ToString("dd-MM-yyyy");
             
 
         }
@@ -87,6 +88,10 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
             Numeros num = new Numeros();
             if (flag2)
             {
+                if (txt_Descuento.Text == "")
+                {
+                    txt_Descuento.Text = "0";
+                }
                 string sqlMod = @"UPDATE numero SET  "
                             + " cod_nacional = '" + ((num.Numeros_por_id(cmb_nmro_telefono.SelectedValue.ToString())).Rows[0]["cod_nacional"].ToString()) + "'"
                             + ", cod_area = " + ((num.Numeros_por_id(cmb_nmro_telefono.SelectedValue.ToString())).Rows[0]["cod_area"].ToString())
@@ -111,6 +116,7 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
             {
                 MessageBox.Show("No se ha seleccionado plan de cuotas, por favor ingrese las cuotas");
             }
+            this.Close();
         }
         public void Modificar_Venta()
         {
@@ -138,7 +144,6 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
                 cmb_disp.Enabled = true;
                 cmb_tipoDisp.Enabled = true;
                 cmb_cantCuota.Enabled = true;
-                txt_fecha.Enabled = true;
                 txt_Descuento.Enabled = true;
                 System.Console.WriteLine(cmb_tipoDisp.SelectedIndex);
                 cmb_tipoDisp.CargarCombo();
@@ -204,6 +209,9 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
             this.Close();
         }
 
-        
+        private void txt_fecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
