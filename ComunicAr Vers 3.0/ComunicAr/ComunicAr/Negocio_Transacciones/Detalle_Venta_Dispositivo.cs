@@ -40,7 +40,7 @@ namespace ComunicAr.Negocio_Transacciones
             string sql = @"select v.id_venta_dispo, v.fecha_venta,d.marca, d.modelo, v.cant_cuotas, d.precio, v.descuento, DATEDIFF(MONTH,v.fecha_venta,GETDATE ()) as diferencia "
                          + " from Dispositivos d , venta_dispositivo v, numero n"
                          + " where n.nro_cliente =  " + nro_cliente + " and v.id_dispositivo = d.id_dispositivo and n.id_dispositivo = d.id_dispositivo " +
-                         "and v.cant_cuotas >= DATEDIFF(MONTH,v.fecha_venta,GETDATE ()) ";
+                         "and DATEDIFF(MONTH,v.fecha_venta,GETDATE ()) BETWEEN 1 AND v.cant_cuotas ";
             return BD.EjecutarSelect(sql);
 
 
@@ -61,6 +61,7 @@ namespace ComunicAr.Negocio_Transacciones
                                   "d.modelo AS modelo, " +
                                   "dd.precio_venta AS importe, " +
                                   "dd.nro_cuota AS cuota, " +
+                                  "vd.cant_cuotas, " +
                                   "dd.descuento, " +
                                   "d.precio " +
                           "FROM Detalle_fact_dispositivo dd, Venta_dispositivo vd, Facturas f, Dispositivos d, Numero n " +
@@ -70,7 +71,7 @@ namespace ComunicAr.Negocio_Transacciones
                           "AND d.id_dispositivo = n.id_dispositivo " +
                           "AND n.nro_cliente = " + nro_cliente + " " +
                           "AND dd.nro_factura = " + nro_factura + " " +
-                          "AND vd.cant_cuotas >= DATEDIFF(MONTH,vd.fecha_venta,GETDATE ())";
+                          "AND DATEDIFF(MONTH,vd.fecha_venta,GETDATE ()) BETWEEN 1 AND vd.cant_cuotas";
             return BD.EjecutarSelect(sql);
         }
     }

@@ -139,10 +139,12 @@ namespace ComunicAr.Negocio_Transacciones
                     {
                         count += 1;
                         string descripcion = tabla.Rows[i][0].ToString() + "/" + tabla.Rows[i][1].ToString();
-                        float importe = float.Parse(tabla.Rows[i][2].ToString()) / float.Parse(tabla.Rows[i][3].ToString());
-                        string desc = tabla.Rows[0][4].ToString();
-                        string total = tabla.Rows[0][5].ToString();
-                        tw.WriteLine(count.ToString() + "\tServicio Prepago\t\t" + descripcion + " / Descuento: " + desc + "%\t\t$" + importe.ToString());
+                        string cant_cuotas = tabla.Rows[i][4].ToString();
+                        string cuota = tabla.Rows[i][3].ToString();
+                        float importe = float.Parse(tabla.Rows[i][2].ToString()) / float.Parse(cant_cuotas);
+                        string desc = tabla.Rows[i][5].ToString();
+                        string total = (float.Parse(tabla.Rows[i][6].ToString()) / float.Parse(cant_cuotas)).ToString();
+                        tw.WriteLine(count.ToString() + "\tServicio de Venta\t\t" + descripcion + " / Desc: " + desc + "% / Cuota: " + cuota + "/" + cant_cuotas + "\t\t$" + importe.ToString());
                         subtotal += importe;
                         descuentoVta_dispo = +(float.Parse(total) * float.Parse(desc));
                     }
@@ -151,7 +153,7 @@ namespace ComunicAr.Negocio_Transacciones
                 tw.WriteLine("_____________________________________________________________________________");
                 tw.WriteLine("Subtotal: \t\t\t$" + subtotal.ToString());
                 tw.WriteLine("Descuento prepago: \t\t\t$" + descuentoPrepago.ToString());
-                tw.WriteLine("Descuento prepago: \t\t\t$" + descuentoVta_dispo.ToString());
+                tw.WriteLine("Descuento Dispositivo: \t\t\t$" + descuentoVta_dispo.ToString());
                 tw.WriteLine("Descuento: \t\t\t$" + descuento.ToString());
                 tw.WriteLine("Total: \t\t\t\t$" + (subtotal - descuento).ToString());
             }

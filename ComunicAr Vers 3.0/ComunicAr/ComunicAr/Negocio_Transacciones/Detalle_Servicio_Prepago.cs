@@ -47,7 +47,7 @@ namespace ComunicAr.Negocio_Transacciones
             }
             string sql = @"INSERT INTO Detalle_fact_prepago (nro_factura, cod_servicio_contratado, costo_final, descuento) " +
                                  "VALUES (" + Pp_NroFac + ", " + Pp_cod_serv_contratados + ", " + Pp_Final + ", " +
-                                 "REPLACE(" + Pp_descuento + ", ',', '.'))";
+                                 "REPLACE('" + Pp_descuento + "', ',', '.'))";
             BD.Insertar(sql);
         }
         public DataTable Factura_prepago(string nro_factura, string nro_cliente)

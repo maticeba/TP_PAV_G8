@@ -50,6 +50,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
             this.txt_DetVtaDisp_NroFactura = new ComunicAr.Clases.TextBox01();
             this.txt_DetVtaDisp_IdCliente = new ComunicAr.Clases.TextBox01();
             this.txt_DetVtaDisp_NombCliente = new ComunicAr.Clases.TextBox01();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_DetVtaDisp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DetVtaDisp)).BeginInit();
             this.SuspendLayout();
@@ -110,7 +111,8 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
             this.NroCuota,
             this.Precio,
             this.Descuento,
-            this.PrecioDescuento});
+            this.PrecioDescuento,
+            this.Column1});
             this.dataGridView_DetVtaDisp.Location = new System.Drawing.Point(12, 128);
             this.dataGridView_DetVtaDisp.Name = "dataGridView_DetVtaDisp";
             this.dataGridView_DetVtaDisp.ReadOnly = true;
@@ -261,6 +263,12 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
             this.txt_DetVtaDisp_NombCliente.Size = new System.Drawing.Size(137, 20);
             this.txt_DetVtaDisp_NombCliente.TabIndex = 1;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ubic_cuota";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // Frm_Detalle_VtaDispo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,5 +315,6 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descuento;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioDescuento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

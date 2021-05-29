@@ -50,6 +50,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
                 dataGridView_DetVtaDisp.Rows[i].Cells[3].Value = tabla.Rows[i]["modelo"].ToString();
                 string cuota = tabla.Rows[i]["diferencia"].ToString() + "/" + tabla.Rows[i]["cant_cuotas"].ToString();
                 dataGridView_DetVtaDisp.Rows[i].Cells[4].Value = cuota;
+                dataGridView_DetVtaDisp.Rows[i].Cells[8].Value = tabla.Rows[i]["diferencia"].ToString();
                 string costo = tabla.Rows[i]["precio"].ToString();
                 dataGridView_DetVtaDisp.Rows[i].Cells[5].Value = costo;
                 string descuento = tabla.Rows[i]["descuento"].ToString();
@@ -92,7 +93,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
                     detalle.pp_modelo = dataGridView_DetVtaDisp.Rows[i].Cells[3].Value.ToString();
                     detalle.Pp_precioVta = dataGridView_DetVtaDisp.Rows[i].Cells[5].Value.ToString();
                     detalle.pp_descuento = dataGridView_DetVtaDisp.Rows[i].Cells[6].Value.ToString();
-                    detalle.pp_nroCuota =  dataGridView_DetVtaDisp.Rows[i].Cells[4].Value.ToString();
+                    detalle.pp_nroCuota =  dataGridView_DetVtaDisp.Rows[i].Cells[8].Value.ToString();
 
                     detalle.insertarDetalleVentaDispositivo();
 
