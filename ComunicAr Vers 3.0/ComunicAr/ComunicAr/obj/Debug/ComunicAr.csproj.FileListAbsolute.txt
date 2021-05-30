@@ -535,3 +535,5 @@ C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debu
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalle_Llamada.Frm_Detalle_Llamada.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Emision_Factura.Frm_EmisionFactura.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.AssemblyReference.cache
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Datos.Frm_Descuento_Datos.resources
+C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Datos.Frm_Detalle_Servicios_Datos.resources

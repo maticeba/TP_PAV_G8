@@ -13,6 +13,7 @@ using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Fij
 using ComunicAr.Formularios.Transaccion.Detalle_Llamada;
 using ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos;
 using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalles_Servicios_Prepagos;
+using ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios_Datos;
 
 
 namespace ComunicAr.Formularios.Transaccion.Emision_Factura
@@ -154,7 +155,10 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
 
         private void bnt_emision_servicio_datos_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("No hay servicios datos de este cliente para agregar en la factura");
+            Frm_Detalle_Servicios_Datos datos = new Frm_Detalle_Servicios_Datos();
+            datos.ShowDialog();
+
+            
             //MessageBox.Show("Mantenimiento");
             chk_emision_serv_datos.Checked = true;
             btn_emision_servicio_datos.Enabled = false;
@@ -214,6 +218,11 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
                 btn_emision_vta_dispo.Enabled = false;
                 Flag_vta_dispo = false;
             }
+
+        }
+
+        private void Frm_EmisionFactura_Load(object sender, EventArgs e)
+        {
 
         }
     }

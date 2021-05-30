@@ -388,6 +388,7 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_EmisionFactura";
             this.Text = "Frm_EmisionFactura";
+            this.Load += new System.EventHandler(this.Frm_EmisionFactura_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

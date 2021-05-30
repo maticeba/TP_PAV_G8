@@ -380,6 +380,18 @@
     <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.Designer.cs">
       <DependentUpon>Frm_Detalle_SPrepago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalle_Servicios_Datos\Frm_Descuento_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalle_Servicios_Datos\Frm_Descuento_Datos.Designer.cs">
+      <DependentUpon>Frm_Descuento_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalle_Servicios_Datos\Frm_Detalle_Servicios_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalle_Servicios_Datos\Frm_Detalle_Servicios_Datos.Designer.cs">
+      <DependentUpon>Frm_Detalle_Servicios_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Transaccion\Detalle_Dispositivos\Descuento_Venta\Frm_Descuento_VtaDisp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -422,6 +434,7 @@
     <Compile Include="Negocio\Servicios_Datos.cs" />
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Llamadas.cs" />
+    <Compile Include="Negocio_Transacciones\Detalle_Servicios_Datos.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Fijo.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Prepago.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Venta_Dispositivo.cs" />
@@ -588,6 +601,12 @@
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalles Servicios Prepagos\Frm_Detalle_SPrepago.resx">
       <DependentUpon>Frm_Detalle_SPrepago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalle_Servicios_Datos\Frm_Descuento_Datos.resx">
+      <DependentUpon>Frm_Descuento_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalle_Servicios_Datos\Frm_Detalle_Servicios_Datos.resx">
+      <DependentUpon>Frm_Detalle_Servicios_Datos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Transaccion\Detalle_Dispositivos\Descuento_Venta\Frm_Descuento_VtaDisp.resx">
       <DependentUpon>Frm_Descuento_VtaDisp.cs</DependentUpon>
     </EmbeddedResource>
@@ -625,8 +644,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\Transaccion\Detalle_Servicios_Datos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
