@@ -44,8 +44,12 @@ namespace ComunicAr.Negocio_Transacciones
         }
         public void insertarDetalleServicioDato()
         {
+            if (Pp_descuento == "")
+            {
+                Pp_descuento = "0";
+            }
             string sql = @"INSERT INTO Detalle_fact_datos (nro_factura, cod_serv_contratado, costo_final, descuento, nro_cuota)"
-                        + " VALUES (" + Pp_NroFac + ", " + Pp_serv_contratados + ", REPLACE('" + Pp_Final + "', ',', '.')), REPLACE('" + Pp_descuento + "', ',', '.')), "  + Pp_nro_cuota + " ) ";
+                        + " VALUES (" + Pp_NroFac + ", " + Pp_serv_contratados + ", REPLACE('" + Pp_Final + "', ',', '.'), REPLACE('" + Pp_descuento + "', ',', '.'), "  + Pp_nro_cuota + " ) ";
             BD.Insertar(sql);
         }
     }
