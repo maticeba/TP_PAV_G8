@@ -50,5 +50,11 @@ namespace ComunicAr.Formularios.Menu
             Frm_Generar_Ventas Frm_venta = new Frm_Generar_Ventas();
             Frm_venta.ShowDialog();
         }
+
+        private void btn_menu_gral_lista_Click_1(object sender, EventArgs e)
+        {
+            Frm_Menu_Listas Frm_listas = new Frm_Menu_Listas();
+            Frm_listas.ShowDialog();
+        }
     }
 }

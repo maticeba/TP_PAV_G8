@@ -344,6 +344,12 @@
     <Compile Include="Formularios\Menu\Frm_MenuGral.Designer.cs">
       <DependentUpon>Frm_MenuGral.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Menu\Frm_Menu_Listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu\Frm_Menu_Listas.Designer.cs">
+      <DependentUpon>Frm_Menu_Listas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Menu\Menu_Servicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -582,6 +588,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Menu\Frm_MenuGral.resx">
       <DependentUpon>Frm_MenuGral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu\Frm_Menu_Listas.resx">
+      <DependentUpon>Frm_Menu_Listas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Menu\Menu_Servicios.resx">
       <DependentUpon>Menu_Servicios.cs</DependentUpon>

@@ -7,19 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace ComunicAR
+
+namespace ComunicAr.Formularios.Menu
 {
-    public partial class Form1 : Form
+    public partial class Frm_Menu_Listas : Form
     {
-        public Form1()
+        public Frm_Menu_Listas()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void bnt_menu_lista_cancelar_Click(object sender, EventArgs e)
         {
-            Formularios.Form_Menu Menu = new Formularios.Form_Menu();
-            Menu.ShowDialog();
+            this.Close();
         }
     }
 }

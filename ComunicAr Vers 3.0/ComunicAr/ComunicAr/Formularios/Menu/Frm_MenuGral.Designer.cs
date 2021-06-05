@@ -78,6 +78,7 @@ namespace ComunicAr.Formularios.Menu
             this.btn_menu_gral_lista.Text = "Generar Listas";
             this.btn_menu_gral_lista.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_menu_gral_lista.UseVisualStyleBackColor = true;
+            this.btn_menu_gral_lista.Click += new System.EventHandler(this.btn_menu_gral_lista_Click_1);
             // 
             // button3
             // 
