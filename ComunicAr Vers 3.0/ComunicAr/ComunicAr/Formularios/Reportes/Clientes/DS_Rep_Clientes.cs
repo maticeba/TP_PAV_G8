@@ -2,5 +2,8 @@
 {
     partial class DS_Rep_Clientes
     {
+        partial class RepClienteXmodeloDataTable
+        {
+        }
     }
 }

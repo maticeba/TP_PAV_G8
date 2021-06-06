@@ -35,5 +35,18 @@ namespace ComunicAr.Negocio_Reportes
                           "AND c.nombre_razonSocial LIKE '%" + letra.Trim() + "%'";
             return BD.EjecutarSelect(sql);
         }
+        public DataTable SearchClientesXmodeloDispositivo(string modelo)
+        {
+            string sql = @"SELECT c.nro_cliente, c.nombre_razonSocial, " +
+                                 "('+' + n.cod_nacional + ' ' + n.cod_area + ' ' + n.nro_telefono) AS nro_telefono, " +
+                                 "p.nombre_prov " +
+                          "FROM Cliente c, Numero n, Barrio b, Ciudad ci, Provincia p " +
+                          "WHERE c.nro_cliente = n.nro_cliente " +
+                            "AND c.cod_barrio = b.cod_barrio " +
+                            "AND b.id_ciudad = ci.cod_ciudad " +
+                            "AND ci.id_provincia = p.cod_prov " +
+                            "AND n.id_dispositivo = " + modelo;
+            return BD.EjecutarSelect(sql);
+        }
     }
 }

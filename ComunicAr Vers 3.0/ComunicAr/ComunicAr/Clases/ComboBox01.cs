@@ -51,7 +51,27 @@ namespace ComunicAr.Clases
                 this.ValueMember = Pp_PK;
                 this.DataSource = _BD.EjecutarSelect(sql);
             }
+        }
 
+        public void CargarComboDispMej(int tipo, string marca)
+        {
+            if (tipo == 1)
+            {
+                string sql = "SELECT DISTINCT " + Pp_PK + ", " + Pp_Descripcion + " FROM " + Pp_Tabla + " WHERE id_tipo_dispositivo = '" + 1 + "' AND marca = '" + marca + "'";
+
+                this.DisplayMember = Pp_Descripcion;
+                this.ValueMember = Pp_PK;
+                this.DataSource = _BD.EjecutarSelect(sql);
+            }
+
+            if (tipo == 2)
+            {
+                string sql = "SELECT DISTINCT " + Pp_PK + ", " + Pp_Descripcion + " FROM " + Pp_Tabla + " WHERE id_tipo_dispositivo = '" + 2 + "' AND marca = '" + marca + "'";
+
+                this.DisplayMember = Pp_Descripcion;
+                this.ValueMember = Pp_PK;
+                this.DataSource = _BD.EjecutarSelect(sql);
+            }
         }
 
         public void CargarComboxTipo()
