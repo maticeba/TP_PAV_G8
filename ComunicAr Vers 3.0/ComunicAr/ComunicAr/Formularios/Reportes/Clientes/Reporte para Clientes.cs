@@ -51,7 +51,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes
         }
         private void ArmarReporteClientes()
         {
-            ReportDataSource Datos = new ReportDataSource("DS_List_clienteXmodelo", table);
+            ReportDataSource Datos = new ReportDataSource("DS_Rep_Clientes", table);
             rv_cliente_clientes.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Clientes.ReportCliente.rdlc";
             rv_cliente_clientes.LocalReport.DataSources.Clear();
             rv_cliente_clientes.LocalReport.DataSources.Add(Datos);
