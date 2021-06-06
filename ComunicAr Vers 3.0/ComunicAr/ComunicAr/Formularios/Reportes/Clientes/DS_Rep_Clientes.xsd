@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Rep_Clientes" targetNamespace="http://tempuri.org/DS_Rep_Clientes.xsd" xmlns:mstns="http://tempuri.org/DS_Rep_Clientes.xsd" xmlns="http://tempuri.org/DS_Rep_Clientes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Rep_Clientes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Rep_Clientes" msprop:Generator_UserDSName="DS_Rep_Clientes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RepCliente" msprop:Generator_TableClassName="RepClienteDataTable" msprop:Generator_TableVarName="tableRepCliente" msprop:Generator_TablePropName="RepCliente" msprop:Generator_RowDeletingName="RepClienteRowDeleting" msprop:Generator_RowChangingName="RepClienteRowChanging" msprop:Generator_RowEvHandlerName="RepClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="RepClienteRowDeleted" msprop:Generator_UserTableName="RepCliente" msprop:Generator_RowChangedName="RepClienteRowChanged" msprop:Generator_RowEvArgName="RepClienteRowChangeEvent" msprop:Generator_RowClassName="RepClienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nro_cliente" msprop:Generator_ColumnVarNameInTable="columnnro_cliente" msprop:Generator_ColumnPropNameInRow="nro_cliente" msprop:Generator_ColumnPropNameInTable="nro_clienteColumn" msprop:Generator_UserColumnName="nro_cliente" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre_razonSocial" msprop:Generator_ColumnVarNameInTable="columnnombre_razonSocial" msprop:Generator_ColumnPropNameInRow="nombre_razonSocial" msprop:Generator_ColumnPropNameInTable="nombre_razonSocialColumn" msprop:Generator_UserColumnName="nombre_razonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="calle" msprop:Generator_ColumnVarNameInTable="columncalle" msprop:Generator_ColumnPropNameInRow="calle" msprop:Generator_ColumnPropNameInTable="calleColumn" msprop:Generator_UserColumnName="calle" type="xs:string" minOccurs="0" />
+              <xs:element name="nro" msprop:Generator_ColumnVarNameInTable="columnnro" msprop:Generator_ColumnPropNameInRow="nro" msprop:Generator_ColumnPropNameInTable="nroColumn" msprop:Generator_UserColumnName="nro" type="xs:string" minOccurs="0" />
+              <xs:element name="piso" msprop:Generator_ColumnVarNameInTable="columnpiso" msprop:Generator_ColumnPropNameInRow="piso" msprop:Generator_ColumnPropNameInTable="pisoColumn" msprop:Generator_UserColumnName="piso" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre_barrio" msprop:Generator_ColumnVarNameInTable="columnnombre_barrio" msprop:Generator_ColumnPropNameInRow="nombre_barrio" msprop:Generator_ColumnPropNameInTable="nombre_barrioColumn" msprop:Generator_UserColumnName="nombre_barrio" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_ciudad" msprop:Generator_ColumnVarNameInTable="columnnombre_ciudad" msprop:Generator_ColumnPropNameInRow="nombre_ciudad" msprop:Generator_ColumnPropNameInTable="nombre_ciudadColumn" msprop:Generator_UserColumnName="nombre_ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_prov" msprop:Generator_ColumnVarNameInTable="columnnombre_prov" msprop:Generator_ColumnPropNameInRow="nombre_prov" msprop:Generator_ColumnPropNameInTable="nombre_provColumn" msprop:Generator_UserColumnName="nombre_prov" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

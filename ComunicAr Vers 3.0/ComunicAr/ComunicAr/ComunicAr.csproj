@@ -34,6 +34,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -362,6 +380,14 @@
     <Compile Include="Formularios\Menu\Menu_Ubicación.Designer.cs">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.cs">
+      <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalle Servicios Fijos\Frm_desc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -439,6 +465,7 @@
     <Compile Include="Negocio\Servicios_Contratados.cs" />
     <Compile Include="Negocio\Servicios_Datos.cs" />
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
+    <Compile Include="Negocio_Reportes\ReporteCliente.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Llamadas.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicios_Datos.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Fijo.cs" />
@@ -448,6 +475,13 @@
     <Compile Include="Negocio_Transacciones\Text.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Formularios\Reportes\Clientes\Reporte para Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes\Reporte para Clientes.Designer.cs">
+      <DependentUpon>Reporte para Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Formularios\ABM\ABM_Ciudad\Frm_ABM_Ciudad.resx">
       <DependentUpon>Frm_ABM_Ciudad.cs</DependentUpon>
     </EmbeddedResource>
@@ -640,6 +674,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportCliente.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Clientes\Reporte para Clientes.resx">
+      <DependentUpon>Reporte para Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xsc">
+      <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Rep_Clientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xss">
+      <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -653,6 +703,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

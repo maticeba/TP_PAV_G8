@@ -56,6 +56,7 @@ namespace ComunicAr.Formularios.Menu
             this.bnt_menu_lista_cliente.TabIndex = 1;
             this.bnt_menu_lista_cliente.Text = "Listas de Clientes";
             this.bnt_menu_lista_cliente.UseVisualStyleBackColor = true;
+            this.bnt_menu_lista_cliente.Click += new System.EventHandler(this.bnt_menu_lista_cliente_Click);
             // 
             // bnt_menu_lista_dispositivos
             // 
