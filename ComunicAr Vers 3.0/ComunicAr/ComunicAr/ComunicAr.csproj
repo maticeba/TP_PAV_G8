@@ -719,12 +719,5 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\Reportes\Dispositivos\" />
-    <Folder Include="Formularios\Reportes\Facturas\" />
-    <Folder Include="Formularios\Reportes\Llamadas\" />
-    <Folder Include="Formularios\Reportes\Numeros\" />
-    <Folder Include="Formularios\Reportes\Servicios\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
