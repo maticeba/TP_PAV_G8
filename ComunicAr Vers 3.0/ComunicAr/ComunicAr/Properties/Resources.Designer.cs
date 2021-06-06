@@ -59,5 +59,26 @@ namespace ComunicAr.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3_37761_htc_hd_wallpapers_1080p_abstract_orange_and_blue {
+            get {
+                object obj = ResourceManager.GetObject("3-37761_htc-hd-wallpapers-1080p-abstract-orange-and-blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_telephone_computer_icons_smartphone_phone_portrait_smartphone_telephone_icon_5ab125de762f86_4600409415215590064841 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-i" +
+                        "con-5ab125de762f86.4600409415215590064841", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -36,11 +36,12 @@ namespace ComunicAr.Formularios.Menu
             this.bnt_menu_lista_llamadas = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bnt_menu_lista_cancelar
             // 
-            this.bnt_menu_lista_cancelar.Location = new System.Drawing.Point(80, 223);
+            this.bnt_menu_lista_cancelar.Location = new System.Drawing.Point(80, 269);
             this.bnt_menu_lista_cancelar.Name = "bnt_menu_lista_cancelar";
             this.bnt_menu_lista_cancelar.Size = new System.Drawing.Size(75, 23);
             this.bnt_menu_lista_cancelar.TabIndex = 0;
@@ -66,6 +67,7 @@ namespace ComunicAr.Formularios.Menu
             this.bnt_menu_lista_dispositivos.TabIndex = 1;
             this.bnt_menu_lista_dispositivos.Text = "Listas de Dispositivos";
             this.bnt_menu_lista_dispositivos.UseVisualStyleBackColor = true;
+            this.bnt_menu_lista_dispositivos.Click += new System.EventHandler(this.bnt_menu_lista_dispositivos_Click);
             // 
             // bnt_menu_lista_numero
             // 
@@ -87,7 +89,7 @@ namespace ComunicAr.Formularios.Menu
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(45, 165);
+            this.button2.Location = new System.Drawing.Point(45, 211);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 23);
             this.button2.TabIndex = 1;
@@ -96,18 +98,29 @@ namespace ComunicAr.Formularios.Menu
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(45, 194);
+            this.button3.Location = new System.Drawing.Point(45, 240);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(140, 23);
             this.button3.TabIndex = 1;
             this.button3.Text = "Listas de Servicios";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(45, 165);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 40);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Listas de Dispositivos Vendidos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Frm_Menu_Listas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(222, 258);
+            this.ClientSize = new System.Drawing.Size(222, 337);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bnt_menu_lista_llamadas);
             this.Controls.Add(this.bnt_menu_lista_numero);
             this.Controls.Add(this.button3);
@@ -131,5 +144,6 @@ namespace ComunicAr.Formularios.Menu
         private System.Windows.Forms.Button bnt_menu_lista_llamadas;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
     }
 }
