@@ -61,7 +61,8 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             }
             if (rB2.Checked)
             {
-                tabla = disp.ReporteDispositivos_Marca(comboBox011.SelectedText.ToString());
+                MessageBox.Show(comboBox011.Text.ToString());
+                tabla = disp.ReporteDispositivos_Marca(comboBox011.Text.ToString());
                 ArmarReporteDispositivosNuevos(tabla);
             }
 
