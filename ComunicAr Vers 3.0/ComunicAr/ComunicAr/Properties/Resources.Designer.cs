@@ -73,6 +73,16 @@ namespace ComunicAr.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_telephone_clip_art_5af63efd332c02_4684402915260874212096 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_telephone_computer_icons_smartphone_phone_portrait_smartphone_telephone_icon_5ab125de762f86_4600409415215590064841 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-i" +

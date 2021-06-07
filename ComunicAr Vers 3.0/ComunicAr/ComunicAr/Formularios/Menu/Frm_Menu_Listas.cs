@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ComunicAr.Formularios.Reportes.Clientes;
 using ComunicAr.Formularios.Reportes.Dispositivos;
 using ComunicAr.Formularios.Reportes.DispVendidos;
+using ComunicAr.Formularios.Reportes.Numeros;
 
 namespace ComunicAr.Formularios.Menu
 {
@@ -41,6 +42,12 @@ namespace ComunicAr.Formularios.Menu
         {
             Frm_Reporte_Disp_Vendidos frm_Reporte_Disp_Vendidos = new Frm_Reporte_Disp_Vendidos();
             frm_Reporte_Disp_Vendidos.ShowDialog();
+        }
+
+        private void bnt_menu_lista_numero_Click(object sender, EventArgs e)
+        {
+            Reporte_para_Numeros reporte_numero = new Reporte_para_Numeros();
+            reporte_numero.ShowDialog();
         }
     }
 }

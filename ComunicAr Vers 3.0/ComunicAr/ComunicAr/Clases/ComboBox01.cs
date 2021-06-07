@@ -31,6 +31,13 @@ namespace ComunicAr.Clases
             this.DataSource = _BD.EjecutarSelect(sql);
 
         }
+        public void Cargar_con_Ref(string referencia)
+        {
+            string sql = "SELECT DISTINCT " + Pp_Descripcion + " FROM " + Pp_Tabla + " WHERE cod_nacional =" + referencia  ;
+            this.DisplayMember = Pp_Descripcion;
+            this.ValueMember = Pp_Descripcion;
+            this.DataSource = _BD.EjecutarSelect(sql);
+        }
 
         public void CargarComboDisp(int tipo)
         {

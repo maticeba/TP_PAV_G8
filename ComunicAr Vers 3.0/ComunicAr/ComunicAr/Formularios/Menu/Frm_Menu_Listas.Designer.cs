@@ -77,6 +77,7 @@ namespace ComunicAr.Formularios.Menu
             this.bnt_menu_lista_numero.TabIndex = 1;
             this.bnt_menu_lista_numero.Text = "Listas de Números";
             this.bnt_menu_lista_numero.UseVisualStyleBackColor = true;
+            this.bnt_menu_lista_numero.Click += new System.EventHandler(this.bnt_menu_lista_numero_Click);
             // 
             // bnt_menu_lista_llamadas
             // 

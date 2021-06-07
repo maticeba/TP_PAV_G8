@@ -410,6 +410,17 @@
     <Compile Include="Formularios\Reportes\DispVendidos\Frm_Reporte_Disp_Vendidos.Designer.cs">
       <DependentUpon>Frm_Reporte_Disp_Vendidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\Numeros\DS_Rep_Numeros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Rep_Numeros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Numeros\Reporte_para_Numeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Numeros\Reporte_para_Numeros.Designer.cs">
+      <DependentUpon>Reporte_para_Numeros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalle Servicios Fijos\Frm_desc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -490,6 +501,7 @@
     <Compile Include="Negocio_Listados\Dispositivos.cs" />
     <Compile Include="Negocio_Listados\Dispositivos1.cs" />
     <Compile Include="Negocio_Reportes\ReporteCliente.cs" />
+    <Compile Include="Negocio_Reportes\ReporteNumero.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Llamadas.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicios_Datos.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Servicio_Fijo.cs" />
@@ -665,6 +677,10 @@
       <DependentUpon>Frm_Reporte_Disp_Vendidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\DispVendidos\Reporte_DispVend.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Numeros\Reporte_para_Numeros.resx">
+      <DependentUpon>Reporte_para_Numeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Numeros\ReportNumeros.rdlc" />
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalle Servicios Fijos\Frm_desc.resx">
       <DependentUpon>Frm_desc.cs</DependentUpon>
     </EmbeddedResource>
@@ -745,6 +761,17 @@
     <None Include="Formularios\Reportes\DispVendidos\DS_ReporteDispVendidos.xss">
       <DependentUpon>DS_ReporteDispVendidos.xsd</DependentUpon>
     </None>
+    <None Include="Formularios\Reportes\Numeros\DS_Rep_Numeros.xsc">
+      <DependentUpon>DS_Rep_Numeros.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Numeros\DS_Rep_Numeros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Rep_Numeros.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Reportes\Numeros\DS_Rep_Numeros.xss">
+      <DependentUpon>DS_Rep_Numeros.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -762,6 +789,7 @@
   <ItemGroup>
     <None Include="Resources\kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841.png" />
     <None Include="Resources\3-37761_htc-hd-wallpapers-1080p-abstract-orange-and-blue.jpg" />
+    <None Include="Resources\kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -779,7 +807,6 @@
   <ItemGroup>
     <Folder Include="Formularios\Reportes\Facturas\" />
     <Folder Include="Formularios\Reportes\Llamadas\" />
-    <Folder Include="Formularios\Reportes\Numeros\" />
     <Folder Include="Formularios\Reportes\Servicios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

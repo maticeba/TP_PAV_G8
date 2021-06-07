@@ -117,14 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3-37761_htc-hd-wallpapers-1080p-abstract-orange-and-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3-37761_htc-hd-wallpapers-1080p-abstract-orange-and-blue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
