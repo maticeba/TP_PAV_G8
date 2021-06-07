@@ -28,6 +28,20 @@ namespace ComunicAr.Negocio
 
             return BD.EjecutarSelect(sql);
         }
+        public DataTable ServiciosPrepagosMMCosto(int numero, string signo)
+        {
+            string sql = @"SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r "
+                         + "WHERE s.id_region = r.id_region "
+                         + "AND s.costo " + signo + numero;
+            return BD.EjecutarSelect(sql);
+        }
+        public DataTable ServicioPrepagoMMDuracion(int numero, string signo)
+        {
+            string sql = @"SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r "
+                         + "WHERE s.id_region = r.id_region "
+                         + "AND s.duracion " + signo + numero;
+            return BD.EjecutarSelect(sql);
+        }
 
         public DataTable Servicios_prepagos_por_id(string id_pack)
         {

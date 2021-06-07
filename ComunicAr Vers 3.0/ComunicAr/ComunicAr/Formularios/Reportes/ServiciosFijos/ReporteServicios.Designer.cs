@@ -55,22 +55,54 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_limite = new System.Windows.Forms.RadioButton();
             this.rb_Costo = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_Calcular_Fijos = new System.Windows.Forms.Button();
+            this.gr_tipo = new System.Windows.Forms.GroupBox();
+            this.rb03_Fijos = new System.Windows.Forms.RadioButton();
+            this.rb02_Fijos = new System.Windows.Forms.RadioButton();
+            this.rb01_Fijos = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNumero_Fijo = new ComunicAr.Clases.TextBox01();
+            this.rv01_Fijos = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rb02_Prepagos_Tipo = new System.Windows.Forms.RadioButton();
+            this.rb01_Prepagos_Tipo = new System.Windows.Forms.RadioButton();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btn_calcular_prepago = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.rb03_Prepagos = new System.Windows.Forms.RadioButton();
+            this.rb02_Prepagos = new System.Windows.Forms.RadioButton();
+            this.rb01_Prepagos = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_num_prepago = new ComunicAr.Clases.TextBox01();
+            this.rv02 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.gr_tipo.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(3, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(774, 449);
+            this.tabControl1.Size = new System.Drawing.Size(764, 449);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -87,7 +119,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(766, 423);
+            this.tabPage1.Size = new System.Drawing.Size(756, 423);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Servicios Fijos";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -243,7 +275,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(766, 423);
+            this.tabPage2.Size = new System.Drawing.Size(756, 423);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Servicios Datos";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -371,6 +403,254 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox3);
+            this.tabPage3.Controls.Add(this.rv01_Fijos);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(756, 423);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Servicios Fijos Ofrecidos";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btn_Calcular_Fijos);
+            this.groupBox3.Controls.Add(this.gr_tipo);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.txtNumero_Fijo);
+            this.groupBox3.Location = new System.Drawing.Point(6, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(412, 129);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            // 
+            // btn_Calcular_Fijos
+            // 
+            this.btn_Calcular_Fijos.Location = new System.Drawing.Point(318, 59);
+            this.btn_Calcular_Fijos.Name = "btn_Calcular_Fijos";
+            this.btn_Calcular_Fijos.Size = new System.Drawing.Size(75, 23);
+            this.btn_Calcular_Fijos.TabIndex = 3;
+            this.btn_Calcular_Fijos.Text = "Calcular";
+            this.btn_Calcular_Fijos.UseVisualStyleBackColor = true;
+            this.btn_Calcular_Fijos.Click += new System.EventHandler(this.btn_Calcular_Fijos_Click);
+            // 
+            // gr_tipo
+            // 
+            this.gr_tipo.Controls.Add(this.rb03_Fijos);
+            this.gr_tipo.Controls.Add(this.rb02_Fijos);
+            this.gr_tipo.Controls.Add(this.rb01_Fijos);
+            this.gr_tipo.Location = new System.Drawing.Point(188, 11);
+            this.gr_tipo.Name = "gr_tipo";
+            this.gr_tipo.Size = new System.Drawing.Size(100, 100);
+            this.gr_tipo.TabIndex = 2;
+            this.gr_tipo.TabStop = false;
+            this.gr_tipo.Text = "Tipo de Calculo";
+            // 
+            // rb03_Fijos
+            // 
+            this.rb03_Fijos.AutoSize = true;
+            this.rb03_Fijos.Checked = true;
+            this.rb03_Fijos.Location = new System.Drawing.Point(6, 77);
+            this.rb03_Fijos.Name = "rb03_Fijos";
+            this.rb03_Fijos.Size = new System.Drawing.Size(75, 17);
+            this.rb03_Fijos.TabIndex = 2;
+            this.rb03_Fijos.TabStop = true;
+            this.rb03_Fijos.Text = "Indiferente";
+            this.rb03_Fijos.UseVisualStyleBackColor = true;
+            // 
+            // rb02_Fijos
+            // 
+            this.rb02_Fijos.AutoSize = true;
+            this.rb02_Fijos.Location = new System.Drawing.Point(6, 54);
+            this.rb02_Fijos.Name = "rb02_Fijos";
+            this.rb02_Fijos.Size = new System.Drawing.Size(66, 17);
+            this.rb02_Fijos.TabIndex = 1;
+            this.rb02_Fijos.Text = "Mayor a ";
+            this.rb02_Fijos.UseVisualStyleBackColor = true;
+            // 
+            // rb01_Fijos
+            // 
+            this.rb01_Fijos.AutoSize = true;
+            this.rb01_Fijos.Location = new System.Drawing.Point(6, 27);
+            this.rb01_Fijos.Name = "rb01_Fijos";
+            this.rb01_Fijos.Size = new System.Drawing.Size(67, 17);
+            this.rb01_Fijos.TabIndex = 0;
+            this.rb01_Fijos.Text = "Menor a ";
+            this.rb01_Fijos.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Leelawadee UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Monto $";
+            // 
+            // txtNumero_Fijo
+            // 
+            this.txtNumero_Fijo.Location = new System.Drawing.Point(68, 19);
+            this.txtNumero_Fijo.Name = "txtNumero_Fijo";
+            this.txtNumero_Fijo.Pp_Campo = null;
+            this.txtNumero_Fijo.Pp_MensajeError = null;
+            this.txtNumero_Fijo.Pp_Tabla = null;
+            this.txtNumero_Fijo.Pp_Validable = false;
+            this.txtNumero_Fijo.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero_Fijo.TabIndex = 0;
+            // 
+            // rv01_Fijos
+            // 
+            this.rv01_Fijos.Location = new System.Drawing.Point(-5, 152);
+            this.rv01_Fijos.Name = "rv01_Fijos";
+            this.rv01_Fijos.ServerReport.BearerToken = null;
+            this.rv01_Fijos.Size = new System.Drawing.Size(776, 265);
+            this.rv01_Fijos.TabIndex = 4;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox4);
+            this.tabPage4.Controls.Add(this.groupBox5);
+            this.tabPage4.Controls.Add(this.rv02);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(756, 423);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Servicios Prepagos Ofrecidos";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.rb02_Prepagos_Tipo);
+            this.groupBox4.Controls.Add(this.rb01_Prepagos_Tipo);
+            this.groupBox4.Location = new System.Drawing.Point(453, 25);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(112, 77);
+            this.groupBox4.TabIndex = 10;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Tipo de filtro";
+            // 
+            // rb02_Prepagos_Tipo
+            // 
+            this.rb02_Prepagos_Tipo.AutoSize = true;
+            this.rb02_Prepagos_Tipo.Location = new System.Drawing.Point(6, 43);
+            this.rb02_Prepagos_Tipo.Name = "rb02_Prepagos_Tipo";
+            this.rb02_Prepagos_Tipo.Size = new System.Drawing.Size(109, 17);
+            this.rb02_Prepagos_Tipo.TabIndex = 1;
+            this.rb02_Prepagos_Tipo.Text = "Filtro por duracion";
+            this.rb02_Prepagos_Tipo.UseVisualStyleBackColor = true;
+            // 
+            // rb01_Prepagos_Tipo
+            // 
+            this.rb01_Prepagos_Tipo.AutoSize = true;
+            this.rb01_Prepagos_Tipo.Checked = true;
+            this.rb01_Prepagos_Tipo.Location = new System.Drawing.Point(7, 20);
+            this.rb01_Prepagos_Tipo.Name = "rb01_Prepagos_Tipo";
+            this.rb01_Prepagos_Tipo.Size = new System.Drawing.Size(97, 17);
+            this.rb01_Prepagos_Tipo.TabIndex = 0;
+            this.rb01_Prepagos_Tipo.TabStop = true;
+            this.rb01_Prepagos_Tipo.Text = "Filtro por precio";
+            this.rb01_Prepagos_Tipo.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btn_calcular_prepago);
+            this.groupBox5.Controls.Add(this.groupBox6);
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.txt_num_prepago);
+            this.groupBox5.Location = new System.Drawing.Point(6, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(412, 144);
+            this.groupBox5.TabIndex = 9;
+            this.groupBox5.TabStop = false;
+            // 
+            // btn_calcular_prepago
+            // 
+            this.btn_calcular_prepago.Location = new System.Drawing.Point(318, 96);
+            this.btn_calcular_prepago.Name = "btn_calcular_prepago";
+            this.btn_calcular_prepago.Size = new System.Drawing.Size(75, 23);
+            this.btn_calcular_prepago.TabIndex = 3;
+            this.btn_calcular_prepago.Text = "Calcular";
+            this.btn_calcular_prepago.UseVisualStyleBackColor = true;
+            this.btn_calcular_prepago.Click += new System.EventHandler(this.btn_calcular_prepago_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.rb03_Prepagos);
+            this.groupBox6.Controls.Add(this.rb02_Prepagos);
+            this.groupBox6.Controls.Add(this.rb01_Prepagos);
+            this.groupBox6.Location = new System.Drawing.Point(184, 38);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(100, 100);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Tipo de Calculo";
+            // 
+            // rb03_Prepagos
+            // 
+            this.rb03_Prepagos.AutoSize = true;
+            this.rb03_Prepagos.Checked = true;
+            this.rb03_Prepagos.Location = new System.Drawing.Point(6, 77);
+            this.rb03_Prepagos.Name = "rb03_Prepagos";
+            this.rb03_Prepagos.Size = new System.Drawing.Size(75, 17);
+            this.rb03_Prepagos.TabIndex = 2;
+            this.rb03_Prepagos.TabStop = true;
+            this.rb03_Prepagos.Text = "Indiferente";
+            this.rb03_Prepagos.UseVisualStyleBackColor = true;
+            // 
+            // rb02_Prepagos
+            // 
+            this.rb02_Prepagos.AutoSize = true;
+            this.rb02_Prepagos.Location = new System.Drawing.Point(6, 54);
+            this.rb02_Prepagos.Name = "rb02_Prepagos";
+            this.rb02_Prepagos.Size = new System.Drawing.Size(66, 17);
+            this.rb02_Prepagos.TabIndex = 1;
+            this.rb02_Prepagos.Text = "Mayor a ";
+            this.rb02_Prepagos.UseVisualStyleBackColor = true;
+            // 
+            // rb01_Prepagos
+            // 
+            this.rb01_Prepagos.AutoSize = true;
+            this.rb01_Prepagos.Location = new System.Drawing.Point(6, 27);
+            this.rb01_Prepagos.Name = "rb01_Prepagos";
+            this.rb01_Prepagos.Size = new System.Drawing.Size(67, 17);
+            this.rb01_Prepagos.TabIndex = 0;
+            this.rb01_Prepagos.Text = "Menor a ";
+            this.rb01_Prepagos.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Leelawadee UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 17);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Numero";
+            // 
+            // txt_num_prepago
+            // 
+            this.txt_num_prepago.Location = new System.Drawing.Point(68, 19);
+            this.txt_num_prepago.Name = "txt_num_prepago";
+            this.txt_num_prepago.Pp_Campo = null;
+            this.txt_num_prepago.Pp_MensajeError = null;
+            this.txt_num_prepago.Pp_Tabla = null;
+            this.txt_num_prepago.Pp_Validable = false;
+            this.txt_num_prepago.Size = new System.Drawing.Size(100, 20);
+            this.txt_num_prepago.TabIndex = 0;
+            // 
+            // rv02
+            // 
+            this.rv02.Location = new System.Drawing.Point(0, 163);
+            this.rv02.Name = "rv02";
+            this.rv02.ServerReport.BearerToken = null;
+            this.rv02.Size = new System.Drawing.Size(750, 257);
+            this.rv02.TabIndex = 8;
+            // 
             // ReporteServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,6 +671,18 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.gr_tipo.ResumeLayout(false);
+            this.gr_tipo.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -423,5 +715,28 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private System.Windows.Forms.RadioButton rb_todos1;
         private System.Windows.Forms.RadioButton rb_limite;
         private System.Windows.Forms.RadioButton rb_Costo;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btn_Calcular_Fijos;
+        private System.Windows.Forms.GroupBox gr_tipo;
+        private System.Windows.Forms.RadioButton rb03_Fijos;
+        private System.Windows.Forms.RadioButton rb02_Fijos;
+        private System.Windows.Forms.RadioButton rb01_Fijos;
+        private System.Windows.Forms.Label label5;
+        private Clases.TextBox01 txtNumero_Fijo;
+        private Microsoft.Reporting.WinForms.ReportViewer rv01_Fijos;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton rb02_Prepagos_Tipo;
+        private System.Windows.Forms.RadioButton rb01_Prepagos_Tipo;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button btn_calcular_prepago;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.RadioButton rb03_Prepagos;
+        private System.Windows.Forms.RadioButton rb02_Prepagos;
+        private System.Windows.Forms.RadioButton rb01_Prepagos;
+        private System.Windows.Forms.Label label6;
+        private Clases.TextBox01 txt_num_prepago;
+        private Microsoft.Reporting.WinForms.ReportViewer rv02;
     }
 }

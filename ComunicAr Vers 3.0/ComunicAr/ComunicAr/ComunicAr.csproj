@@ -451,6 +451,17 @@
     <Compile Include="Formularios\Reportes\ServiciosFijos\ReporteServicios.Designer.cs">
       <DependentUpon>ReporteServicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\Servicios\DS_Rep_Datos.cs">
+      <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Servicios\DS_Rep_Datos.Designer.cs">
+      <DependentUpon>DS_Rep_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Servicios\DS_Rep_Servicio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Rep_Servicio.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\Servicios\Frm_Rep_Servicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -734,7 +745,9 @@
     <EmbeddedResource Include="Formularios\Reportes\Servicios\Frm_Rep_Servicios.resx">
       <DependentUpon>Frm_Rep_Servicios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Servicios\Reporte_Servicios_Fijos.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Servicios\Reporte_Datos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Servicios\Reporte_Servicios_Prepagos.rdlc" />
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalle Servicios Fijos\Frm_desc.resx">
       <DependentUpon>Frm_desc.cs</DependentUpon>
     </EmbeddedResource>
@@ -868,6 +881,17 @@
     <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xsd" />
     <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xss">
       <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Servicios\DS_Rep_Servicio.xsc">
+      <DependentUpon>DS_Rep_Servicio.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Servicios\DS_Rep_Servicio.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Rep_Servicio.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\Servicios\DS_Rep_Servicio.xss">
+      <DependentUpon>DS_Rep_Servicio.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

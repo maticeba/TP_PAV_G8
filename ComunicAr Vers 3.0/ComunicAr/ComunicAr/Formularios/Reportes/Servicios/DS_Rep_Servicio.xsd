@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Rep_Servicio" targetNamespace="http://tempuri.org/DS_Rep_Servicio.xsd" xmlns:mstns="http://tempuri.org/DS_Rep_Servicio.xsd" xmlns="http://tempuri.org/DS_Rep_Servicio.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Rep_Servicio" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Rep_Servicio" msprop:Generator_UserDSName="DS_Rep_Servicio">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Servicio_prepago" msprop:Generator_TableClassName="Servicio_prepagoDataTable" msprop:Generator_TableVarName="tableServicio_prepago" msprop:Generator_TablePropName="Servicio_prepago" msprop:Generator_RowDeletingName="Servicio_prepagoRowDeleting" msprop:Generator_RowChangingName="Servicio_prepagoRowChanging" msprop:Generator_RowEvHandlerName="Servicio_prepagoRowChangeEventHandler" msprop:Generator_RowDeletedName="Servicio_prepagoRowDeleted" msprop:Generator_UserTableName="Servicio_prepago" msprop:Generator_RowChangedName="Servicio_prepagoRowChanged" msprop:Generator_RowEvArgName="Servicio_prepagoRowChangeEvent" msprop:Generator_RowClassName="Servicio_prepagoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_pack" msprop:Generator_ColumnVarNameInTable="columnid_pack" msprop:Generator_ColumnPropNameInRow="id_pack" msprop:Generator_ColumnPropNameInTable="id_packColumn" msprop:Generator_UserColumnName="id_pack" type="xs:int" minOccurs="0" />
+              <xs:element name="duracion" msprop:Generator_ColumnVarNameInTable="columnduracion" msprop:Generator_ColumnPropNameInRow="duracion" msprop:Generator_ColumnPropNameInTable="duracionColumn" msprop:Generator_UserColumnName="duracion" type="xs:int" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="costo" msprop:Generator_ColumnVarNameInTable="columncosto" msprop:Generator_ColumnPropNameInRow="costo" msprop:Generator_ColumnPropNameInTable="costoColumn" msprop:Generator_UserColumnName="costo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="descripcion_region" msprop:Generator_ColumnVarNameInTable="columndescripcion_region" msprop:Generator_ColumnPropNameInRow="descripcion_region" msprop:Generator_ColumnPropNameInTable="descripcion_regionColumn" msprop:Generator_UserColumnName="descripcion_region" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Servicio_Fijo_Ofrecido" msprop:Generator_TableClassName="Servicio_Fijo_OfrecidoDataTable" msprop:Generator_TableVarName="tableServicio_Fijo_Ofrecido" msprop:Generator_TablePropName="Servicio_Fijo_Ofrecido" msprop:Generator_RowDeletingName="Servicio_Fijo_OfrecidoRowDeleting" msprop:Generator_RowChangingName="Servicio_Fijo_OfrecidoRowChanging" msprop:Generator_RowEvHandlerName="Servicio_Fijo_OfrecidoRowChangeEventHandler" msprop:Generator_RowDeletedName="Servicio_Fijo_OfrecidoRowDeleted" msprop:Generator_UserTableName="Servicio_Fijo_Ofrecido" msprop:Generator_RowChangedName="Servicio_Fijo_OfrecidoRowChanged" msprop:Generator_RowEvArgName="Servicio_Fijo_OfrecidoRowChangeEvent" msprop:Generator_RowClassName="Servicio_Fijo_OfrecidoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cod_servicio" msdata:Caption="cos_servicio" msprop:Generator_ColumnVarNameInTable="columncod_servicio" msprop:Generator_ColumnPropNameInRow="cod_servicio" msprop:Generator_ColumnPropNameInTable="cod_servicioColumn" msprop:Generator_UserColumnName="cod_servicio" type="xs:int" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="costo_mensual" msprop:Generator_ColumnVarNameInTable="columncosto_mensual" msprop:Generator_ColumnPropNameInRow="costo_mensual" msprop:Generator_ColumnPropNameInTable="costo_mensualColumn" msprop:Generator_UserColumnName="costo_mensual" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
