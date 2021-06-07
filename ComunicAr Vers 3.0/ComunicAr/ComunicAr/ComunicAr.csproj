@@ -388,6 +388,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.cs">
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.Designer.cs">
+      <DependentUpon>DS_Rep_Clientes_Prepago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.Designer.cs">
+      <DependentUpon>Frm_Rep_Clientes_Prepago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\Datos\DS_Rep_Datos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -684,6 +696,10 @@
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexModDispo.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.resx">
+      <DependentUpon>Frm_Rep_Clientes_Prepago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Clientes_Prepago\Report1.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Datos\Frm_Rep_Datos.resx">
       <DependentUpon>Frm_Rep_Datos.cs</DependentUpon>
     </EmbeddedResource>
@@ -758,6 +774,13 @@
     </None>
     <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xss">
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xsc">
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xsd" />
+    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xss">
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Reportes\Datos\DS_Rep_Datos.xsc">
       <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
