@@ -37,11 +37,13 @@ namespace ComunicAr.Formularios.Menu
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bnt_menu_lista_cancelar
             // 
-            this.bnt_menu_lista_cancelar.Location = new System.Drawing.Point(80, 269);
+            this.bnt_menu_lista_cancelar.Location = new System.Drawing.Point(70, 391);
             this.bnt_menu_lista_cancelar.Name = "bnt_menu_lista_cancelar";
             this.bnt_menu_lista_cancelar.Size = new System.Drawing.Size(75, 23);
             this.bnt_menu_lista_cancelar.TabIndex = 0;
@@ -116,11 +118,33 @@ namespace ComunicAr.Formularios.Menu
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(45, 269);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 26);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Listas de Datos";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(45, 301);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(140, 28);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Listas Clientes con Prepago";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Frm_Menu_Listas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(222, 337);
+            this.ClientSize = new System.Drawing.Size(222, 426);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bnt_menu_lista_llamadas);
             this.Controls.Add(this.bnt_menu_lista_numero);
@@ -146,5 +170,7 @@ namespace ComunicAr.Formularios.Menu
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

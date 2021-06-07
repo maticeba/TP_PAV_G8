@@ -388,6 +388,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.cs">
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.Designer.cs">
+      <DependentUpon>DS_Rep_Clientes_Prepago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.Designer.cs">
+      <DependentUpon>Frm_Rep_Clientes_Prepago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Datos\DS_Rep_Datos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Datos\Frm_Rep_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Datos\Frm_Rep_Datos.Designer.cs">
+      <DependentUpon>Frm_Rep_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\Dispositivos\DS_ReportDisp1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -500,6 +528,8 @@
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
     <Compile Include="Negocio_Listados\Dispositivos.cs" />
     <Compile Include="Negocio_Listados\Dispositivos1.cs" />
+    <Compile Include="Negocio_Listados\Reporte_Clientes_Prepago.cs" />
+    <Compile Include="Negocio_Listados\Reporte_Datos.cs" />
     <Compile Include="Negocio_Reportes\ReporteCliente.cs" />
     <Compile Include="Negocio_Reportes\ReporteNumero.cs" />
     <Compile Include="Negocio_Transacciones\Detalle_Llamadas.cs" />
@@ -669,6 +699,14 @@
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexModDispo.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.resx">
+      <DependentUpon>Frm_Rep_Clientes_Prepago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Clientes_Prepago\Report1.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Datos\Frm_Rep_Datos.resx">
+      <DependentUpon>Frm_Rep_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Datos\Reporte_Datos.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Dispositivos\Frm_Reporte_Disp.resx">
       <DependentUpon>Frm_Reporte_Disp.cs</DependentUpon>
     </EmbeddedResource>
@@ -738,6 +776,28 @@
     </None>
     <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xss">
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xsc">
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Rep_Clientes_Prepago1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xss">
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Datos\DS_Rep_Datos.xsc">
+      <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Datos\DS_Rep_Datos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Rep_Datos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Reportes\Datos\DS_Rep_Datos.xss">
+      <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Reportes\Dispositivos\DS_ReportDisp.xsc">
       <DependentUpon>DS_ReportDisp.xsd</DependentUpon>

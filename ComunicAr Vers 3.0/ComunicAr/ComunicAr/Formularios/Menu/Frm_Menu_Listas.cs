@@ -11,6 +11,8 @@ using ComunicAr.Formularios.Reportes.Clientes;
 using ComunicAr.Formularios.Reportes.Dispositivos;
 using ComunicAr.Formularios.Reportes.DispVendidos;
 using ComunicAr.Formularios.Reportes.Numeros;
+using ComunicAr.Formularios.Reportes.Datos;
+using ComunicAr.Formularios.Reportes.Clientes_Prepago;
 
 namespace ComunicAr.Formularios.Menu
 {
@@ -48,6 +50,18 @@ namespace ComunicAr.Formularios.Menu
         {
             Reporte_para_Numeros reporte_numero = new Reporte_para_Numeros();
             reporte_numero.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Frm_Rep_Datos rep_datos = new Frm_Rep_Datos();
+            rep_datos.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Frm_Rep_Clientes_Prepago rep_clientes = new Frm_Rep_Clientes_Prepago();
+            rep_clientes.ShowDialog();
         }
     }
 }
