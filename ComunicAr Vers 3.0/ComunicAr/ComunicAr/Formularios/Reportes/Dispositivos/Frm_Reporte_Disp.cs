@@ -48,7 +48,15 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             DataTable tabla = new DataTable();
             if (rB1.Checked)
             {
-                tabla = disp.ReporteDispositivos_Todos(textBox01.Text.ToString());
+                if (textBox01.TextLength == 0)
+                {
+                    tabla = disp.ReporteDispositivos_Todos(Convert.ToString(DateTime.Now));
+                    MessageBox.Show("Se uso como parametro la fecha actual para la busqueda");
+                }
+                else
+                {
+                    tabla = disp.ReporteDispositivos_Todos(textBox01.Text.ToString());     
+                }
                 ArmarReporteDispositivosNuevos(tabla);
             }
             if (rB2.Checked)
@@ -220,30 +228,18 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         private void tabPage2_Click(object sender, EventArgs e)
         {
           
-            rB1.Checked = false;
-            rB2.Checked = false;
-            textBox01.Enabled = false;
-            comboBox011.Enabled = false;
-            comboBox011.SelectedIndex = -1;
+            
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            rB3.Checked = false;
-            rB4.Checked = false;
-            rB5.Checked = false;
-            textBox03.Enabled = false;
-            textBox04.Enabled = false;
-            textBox05.Enabled = false;
-            textBox06.Enabled = false;
-            textBox07.Enabled = false;
-            textBox03.Clear();
-            textBox04.Clear();
-            textBox05.Clear();
-            textBox06.Clear();
-            textBox07.Clear();
+            
+          
         }
 
-        
+        private void tabPage1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
