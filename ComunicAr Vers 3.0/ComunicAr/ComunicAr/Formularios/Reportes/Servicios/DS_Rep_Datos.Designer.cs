@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
+namespace ComunicAr.Formularios.Reportes.Servicios {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_Rep_Clientes_Prepago")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_Rep_Datos")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_Rep_Clientes_Prepago : global::System.Data.DataSet {
+    public partial class DS_Rep_Datos : global::System.Data.DataSet {
         
-        private DataTable1DataTable tableDataTable1;
+        private Servicios_datosDataTable tableServicios_datos;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DS_Rep_Clientes_Prepago() {
+        public DS_Rep_Datos() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected DS_Rep_Clientes_Prepago(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_Rep_Datos(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["Servicios_datos"] != null)) {
+                    base.Tables.Add(new Servicios_datosDataTable(ds.Tables["Servicios_datos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DataTable1DataTable DataTable1 {
+        public Servicios_datosDataTable Servicios_datos {
             get {
-                return this.tableDataTable1;
+                return this.tableServicios_datos;
             }
         }
         
@@ -127,7 +127,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_Rep_Clientes_Prepago cln = ((DS_Rep_Clientes_Prepago)(base.Clone()));
+            DS_Rep_Datos cln = ((DS_Rep_Datos)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["Servicios_datos"] != null)) {
+                    base.Tables.Add(new Servicios_datosDataTable(ds.Tables["Servicios_datos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableDataTable1 = ((DataTable1DataTable)(base.Tables["DataTable1"]));
+            this.tableServicios_datos = ((Servicios_datosDataTable)(base.Tables["Servicios_datos"]));
             if ((initTable == true)) {
-                if ((this.tableDataTable1 != null)) {
-                    this.tableDataTable1.InitVars();
+                if ((this.tableServicios_datos != null)) {
+                    this.tableServicios_datos.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_Rep_Clientes_Prepago";
+            this.DataSetName = "DS_Rep_Datos";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_Rep_Clientes_Prepago.xsd";
+            this.Namespace = "http://tempuri.org/DS_Rep_Datos.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableDataTable1 = new DataTable1DataTable();
-            base.Tables.Add(this.tableDataTable1);
+            this.tableServicios_datos = new Servicios_datosDataTable();
+            base.Tables.Add(this.tableServicios_datos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeDataTable1() {
+        private bool ShouldSerializeServicios_datos() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_Rep_Clientes_Prepago ds = new DS_Rep_Clientes_Prepago();
+            DS_Rep_Datos ds = new DS_Rep_Datos();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,27 +270,29 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
+        public delegate void Servicios_datosRowChangeEventHandler(object sender, Servicios_datosRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
+        public partial class Servicios_datosDataTable : global::System.Data.TypedTableBase<Servicios_datosRow> {
             
-            private global::System.Data.DataColumn columnnombre_razonSociall;
+            private global::System.Data.DataColumn columntipo_servicios;
             
-            private global::System.Data.DataColumn columnnro_telefono;
+            private global::System.Data.DataColumn columncod_datos;
+            
+            private global::System.Data.DataColumn columnlimite_datos;
             
             private global::System.Data.DataColumn columndescripcion;
             
-            private global::System.Data.DataColumn columncosto;
+            private global::System.Data.DataColumn columncosto_fijo;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1DataTable() {
-                this.TableName = "DataTable1";
+            public Servicios_datosDataTable() {
+                this.TableName = "Servicios_datos";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +300,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1DataTable(global::System.Data.DataTable table) {
+            internal Servicios_datosDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,24 +317,32 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected DataTable1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Servicios_datosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn nombre_razonSociallColumn {
+            public global::System.Data.DataColumn tipo_serviciosColumn {
                 get {
-                    return this.columnnombre_razonSociall;
+                    return this.columntipo_servicios;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn nro_telefonoColumn {
+            public global::System.Data.DataColumn cod_datosColumn {
                 get {
-                    return this.columnnro_telefono;
+                    return this.columncod_datos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn limite_datosColumn {
+                get {
+                    return this.columnlimite_datos;
                 }
             }
             
@@ -346,9 +356,9 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn costoColumn {
+            public global::System.Data.DataColumn costo_fijoColumn {
                 get {
-                    return this.columncosto;
+                    return this.columncosto_fijo;
                 }
             }
             
@@ -363,48 +373,49 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row this[int index] {
+            public Servicios_datosRow this[int index] {
                 get {
-                    return ((DataTable1Row)(this.Rows[index]));
+                    return ((Servicios_datosRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanging;
+            public event Servicios_datosRowChangeEventHandler Servicios_datosRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanged;
+            public event Servicios_datosRowChangeEventHandler Servicios_datosRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleting;
+            public event Servicios_datosRowChangeEventHandler Servicios_datosRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleted;
+            public event Servicios_datosRowChangeEventHandler Servicios_datosRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddDataTable1Row(DataTable1Row row) {
+            public void AddServicios_datosRow(Servicios_datosRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string nombre_razonSociall, string nro_telefono, string descripcion, string costo) {
-                DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
+            public Servicios_datosRow AddServicios_datosRow(string tipo_servicios, string cod_datos, string limite_datos, string descripcion, string costo_fijo) {
+                Servicios_datosRow rowServicios_datosRow = ((Servicios_datosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        nombre_razonSociall,
-                        nro_telefono,
+                        tipo_servicios,
+                        cod_datos,
+                        limite_datos,
                         descripcion,
-                        costo};
-                rowDataTable1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDataTable1Row);
-                return rowDataTable1Row;
+                        costo_fijo};
+                rowServicios_datosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowServicios_datosRow);
+                return rowServicios_datosRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DataTable1DataTable cln = ((DataTable1DataTable)(base.Clone()));
+                Servicios_datosDataTable cln = ((Servicios_datosDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -412,55 +423,58 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DataTable1DataTable();
+                return new Servicios_datosDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnnombre_razonSociall = base.Columns["nombre_razonSociall"];
-                this.columnnro_telefono = base.Columns["nro_telefono"];
+                this.columntipo_servicios = base.Columns["tipo_servicios"];
+                this.columncod_datos = base.Columns["cod_datos"];
+                this.columnlimite_datos = base.Columns["limite_datos"];
                 this.columndescripcion = base.Columns["descripcion"];
-                this.columncosto = base.Columns["costo"];
+                this.columncosto_fijo = base.Columns["costo_fijo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnnombre_razonSociall = new global::System.Data.DataColumn("nombre_razonSociall", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnombre_razonSociall);
-                this.columnnro_telefono = new global::System.Data.DataColumn("nro_telefono", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnro_telefono);
+                this.columntipo_servicios = new global::System.Data.DataColumn("tipo_servicios", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntipo_servicios);
+                this.columncod_datos = new global::System.Data.DataColumn("cod_datos", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncod_datos);
+                this.columnlimite_datos = new global::System.Data.DataColumn("limite_datos", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlimite_datos);
                 this.columndescripcion = new global::System.Data.DataColumn("descripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndescripcion);
-                this.columncosto = new global::System.Data.DataColumn("costo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncosto);
+                this.columncosto_fijo = new global::System.Data.DataColumn("costo_fijo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncosto_fijo);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row NewDataTable1Row() {
-                return ((DataTable1Row)(this.NewRow()));
+            public Servicios_datosRow NewServicios_datosRow() {
+                return ((Servicios_datosRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DataTable1Row(builder);
+                return new Servicios_datosRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DataTable1Row);
+                return typeof(Servicios_datosRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DataTable1RowChanged != null)) {
-                    this.DataTable1RowChanged(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.Servicios_datosRowChanged != null)) {
+                    this.Servicios_datosRowChanged(this, new Servicios_datosRowChangeEvent(((Servicios_datosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -468,8 +482,8 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DataTable1RowChanging != null)) {
-                    this.DataTable1RowChanging(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.Servicios_datosRowChanging != null)) {
+                    this.Servicios_datosRowChanging(this, new Servicios_datosRowChangeEvent(((Servicios_datosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -477,8 +491,8 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DataTable1RowDeleted != null)) {
-                    this.DataTable1RowDeleted(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.Servicios_datosRowDeleted != null)) {
+                    this.Servicios_datosRowDeleted(this, new Servicios_datosRowChangeEvent(((Servicios_datosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -486,14 +500,14 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DataTable1RowDeleting != null)) {
-                    this.DataTable1RowDeleting(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.Servicios_datosRowDeleting != null)) {
+                    this.Servicios_datosRowDeleting(this, new Servicios_datosRowChangeEvent(((Servicios_datosRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveDataTable1Row(DataTable1Row row) {
+            public void RemoveServicios_datosRow(Servicios_datosRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -502,7 +516,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_Rep_Clientes_Prepago ds = new DS_Rep_Clientes_Prepago();
+                DS_Rep_Datos ds = new DS_Rep_Datos();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -520,7 +534,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DataTable1DataTable";
+                attribute2.FixedValue = "Servicios_datosDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -564,46 +578,62 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DataTable1Row : global::System.Data.DataRow {
+        public partial class Servicios_datosRow : global::System.Data.DataRow {
             
-            private DataTable1DataTable tableDataTable1;
+            private Servicios_datosDataTable tableServicios_datos;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1Row(global::System.Data.DataRowBuilder rb) : 
+            internal Servicios_datosRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDataTable1 = ((DataTable1DataTable)(this.Table));
+                this.tableServicios_datos = ((Servicios_datosDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string nombre_razonSociall {
+            public string tipo_servicios {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.nombre_razonSociallColumn]));
+                        return ((string)(this[this.tableServicios_datos.tipo_serviciosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_razonSociall\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'tipo_servicios\' de la tabla \'Servicios_datos\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.nombre_razonSociallColumn] = value;
+                    this[this.tableServicios_datos.tipo_serviciosColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string nro_telefono {
+            public string cod_datos {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.nro_telefonoColumn]));
+                        return ((string)(this[this.tableServicios_datos.cod_datosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nro_telefono\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'cod_datos\' de la tabla \'Servicios_datos\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.nro_telefonoColumn] = value;
+                    this[this.tableServicios_datos.cod_datosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string limite_datos {
+                get {
+                    try {
+                        return ((string)(this[this.tableServicios_datos.limite_datosColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'limite_datos\' de la tabla \'Servicios_datos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableServicios_datos.limite_datosColumn] = value;
                 }
             }
             
@@ -612,79 +642,91 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
             public string descripcion {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.descripcionColumn]));
+                        return ((string)(this[this.tableServicios_datos.descripcionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'Servicios_datos\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.descripcionColumn] = value;
+                    this[this.tableServicios_datos.descripcionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string costo {
+            public string costo_fijo {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.costoColumn]));
+                        return ((string)(this[this.tableServicios_datos.costo_fijoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'costo\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'costo_fijo\' de la tabla \'Servicios_datos\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.costoColumn] = value;
+                    this[this.tableServicios_datos.costo_fijoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Isnombre_razonSociallNull() {
-                return this.IsNull(this.tableDataTable1.nombre_razonSociallColumn);
+            public bool Istipo_serviciosNull() {
+                return this.IsNull(this.tableServicios_datos.tipo_serviciosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setnombre_razonSociallNull() {
-                this[this.tableDataTable1.nombre_razonSociallColumn] = global::System.Convert.DBNull;
+            public void Settipo_serviciosNull() {
+                this[this.tableServicios_datos.tipo_serviciosColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Isnro_telefonoNull() {
-                return this.IsNull(this.tableDataTable1.nro_telefonoColumn);
+            public bool Iscod_datosNull() {
+                return this.IsNull(this.tableServicios_datos.cod_datosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setnro_telefonoNull() {
-                this[this.tableDataTable1.nro_telefonoColumn] = global::System.Convert.DBNull;
+            public void Setcod_datosNull() {
+                this[this.tableServicios_datos.cod_datosColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Islimite_datosNull() {
+                return this.IsNull(this.tableServicios_datos.limite_datosColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setlimite_datosNull() {
+                this[this.tableServicios_datos.limite_datosColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsdescripcionNull() {
-                return this.IsNull(this.tableDataTable1.descripcionColumn);
+                return this.IsNull(this.tableServicios_datos.descripcionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetdescripcionNull() {
-                this[this.tableDataTable1.descripcionColumn] = global::System.Convert.DBNull;
+                this[this.tableServicios_datos.descripcionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IscostoNull() {
-                return this.IsNull(this.tableDataTable1.costoColumn);
+            public bool Iscosto_fijoNull() {
+                return this.IsNull(this.tableServicios_datos.costo_fijoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetcostoNull() {
-                this[this.tableDataTable1.costoColumn] = global::System.Convert.DBNull;
+            public void Setcosto_fijoNull() {
+                this[this.tableServicios_datos.costo_fijoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -692,22 +734,22 @@ namespace ComunicAr.Formularios.Reportes.Clientes_Prepago {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class DataTable1RowChangeEvent : global::System.EventArgs {
+        public class Servicios_datosRowChangeEvent : global::System.EventArgs {
             
-            private DataTable1Row eventRow;
+            private Servicios_datosRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1RowChangeEvent(DataTable1Row row, global::System.Data.DataRowAction action) {
+            public Servicios_datosRowChangeEvent(Servicios_datosRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row Row {
+            public Servicios_datosRow Row {
                 get {
                     return this.eventRow;
                 }

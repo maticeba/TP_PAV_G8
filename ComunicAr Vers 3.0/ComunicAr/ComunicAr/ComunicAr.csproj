@@ -388,17 +388,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.cs">
+    <Compile Include="Formularios\Reportes\Clientes\DS_Rep_Clientes_Prepago.cs">
       <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.Designer.cs">
+    <Compile Include="Formularios\Reportes\Clientes\DS_Rep_Clientes_Prepago.Designer.cs">
       <DependentUpon>DS_Rep_Clientes_Prepago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.Designer.cs">
-      <DependentUpon>Frm_Rep_Clientes_Prepago.cs</DependentUpon>
+    <Compile Include="Formularios\Reportes\Clientes\DS_Rep_Clientes_Prepago1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Reportes\Datos\DS_Rep_Datos.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -444,6 +443,12 @@
     </Compile>
     <Compile Include="Formularios\Reportes\Numeros\Reporte_para_Numeros.Designer.cs">
       <DependentUpon>Reporte_para_Numeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Servicios\Frm_Rep_Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Servicios\Frm_Rep_Servicios.Designer.cs">
+      <DependentUpon>Frm_Rep_Servicios.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Transaccion\Detalles_Servicios\Detalle Servicios Fijos\Frm_desc.cs">
       <SubType>Form</SubType>
@@ -696,10 +701,7 @@
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexModDispo.rdlc" />
-    <EmbeddedResource Include="Formularios\Reportes\Clientes_Prepago\Frm_Rep_Clientes_Prepago.resx">
-      <DependentUpon>Frm_Rep_Clientes_Prepago.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Reportes\Clientes_Prepago\Report1.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Clientes\Rep_Clientes_Prepago.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Datos\Frm_Rep_Datos.resx">
       <DependentUpon>Frm_Rep_Datos.cs</DependentUpon>
     </EmbeddedResource>
@@ -717,6 +719,10 @@
       <DependentUpon>Reporte_para_Numeros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Numeros\ReportNumeros.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Servicios\Frm_Rep_Servicios.resx">
+      <DependentUpon>Frm_Rep_Servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Servicios\Reporte_Datos.rdlc" />
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalle Servicios Fijos\Frm_desc.resx">
       <DependentUpon>Frm_desc.cs</DependentUpon>
     </EmbeddedResource>
@@ -775,11 +781,15 @@
     <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xss">
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
     </None>
-    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xsc">
+    <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes_Prepago.xsc">
       <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
     </None>
-    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xsd" />
-    <None Include="Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xss">
+    <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes_Prepago.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Rep_Clientes_Prepago1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes_Prepago.xss">
       <DependentUpon>DS_Rep_Clientes_Prepago.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Reportes\Datos\DS_Rep_Datos.xsc">
@@ -833,6 +843,13 @@
     <None Include="Formularios\Reportes\Numeros\DS_Rep_Numeros.xss">
       <DependentUpon>DS_Rep_Numeros.xsd</DependentUpon>
     </None>
+    <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xsc">
+      <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xsd" />
+    <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xss">
+      <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -868,7 +885,6 @@
   <ItemGroup>
     <Folder Include="Formularios\Reportes\Facturas\" />
     <Folder Include="Formularios\Reportes\Llamadas\" />
-    <Folder Include="Formularios\Reportes\Servicios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

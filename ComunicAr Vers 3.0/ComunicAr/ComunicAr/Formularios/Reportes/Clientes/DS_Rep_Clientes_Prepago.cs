@@ -1,4 +1,4 @@
-﻿namespace ComunicAr.Formularios.Reportes.Clientes_Prepago
+﻿namespace ComunicAr.Formularios.Reportes.Clientes
 {
 
 

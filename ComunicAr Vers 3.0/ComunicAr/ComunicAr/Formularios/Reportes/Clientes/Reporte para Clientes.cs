@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComunicAr.Negocio_Reportes;
 using Microsoft.Reporting.WinForms;
+using ComunicAr.Negocio_Listados;
 
 namespace ComunicAr.Formularios.Reportes.Clientes
 {
@@ -16,6 +17,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes
     {
         DataTable table = new DataTable();
         ReporteCliente Rep_Cliente = new ReporteCliente();
+        Reporte_Clientes_Prepago Rep_cliente_prepago = new Reporte_Clientes_Prepago();
         public Reporte_para_Clientes()
         {
             InitializeComponent();
@@ -86,6 +88,43 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             rv_cliente_clientesXtipoDispositivo.LocalReport.DataSources.Clear();
             rv_cliente_clientesXtipoDispositivo.LocalReport.DataSources.Add(clienteXmodelo);
             rv_cliente_clientesXtipoDispositivo.RefreshReport();
+        }
+        
+        // PESTANA CLIENTES PREPAGO
+        private void btn_calcular_prepago_Click(object sender, EventArgs e)
+        {
+            Calcular_datos();
+        }
+        private void Calcular_datos()
+        {
+            DataTable tabla = new DataTable();
+            if (rb_cantidad.Checked == true)
+            {
+                tabla = Rep_cliente_prepago.ReporteDatos_cantidadMayor(txt_cantidad.Text.ToString());
+                ArmarReporte_Cliente_Prepago(tabla);
+            }
+            if (rb_todos.Checked == true)
+            {
+                tabla = Rep_cliente_prepago.ReporteDatos_todos();
+                ArmarReporte_Cliente_Prepago(tabla);
+            }
+            if (rb_cantidad.Checked == false && rb_todos.Checked == false)
+            {
+                MessageBox.Show("Seleccione una opcion para filtrar");
+            }
+        }
+        private void ArmarReporte_Cliente_Prepago(DataTable tabla)
+        {
+            ReportDataSource PaqueteDatos = new ReportDataSource("DS_Rep_Clientes_Prepago", tabla);
+            reportViewer1.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Clientes.Rep_Clientes_Prepago.rdlc";
+            reportViewer1.LocalReport.DataSources.Clear();
+            reportViewer1.LocalReport.DataSources.Add(PaqueteDatos);
+            reportViewer1.RefreshReport();
+        }
+        private void rb_todos_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_cantidad.Enabled = false;
+            txt_cantidad.Clear();
         }
     }
 }
