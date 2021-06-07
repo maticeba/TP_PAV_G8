@@ -90,5 +90,16 @@ namespace ComunicAr.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_wireless_telecommunications_tower_cell_site_mobile_antenna_5aba4dff02eb99_778486621522159103012 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-wireless-telecommunications-tower-cell-site-mobile-antenna-5aba4dff02eb99" +
+                        ".778486621522159103012", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

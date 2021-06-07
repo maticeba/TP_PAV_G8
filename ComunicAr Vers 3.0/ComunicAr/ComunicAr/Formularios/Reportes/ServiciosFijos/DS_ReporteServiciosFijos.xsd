@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_ReporteServiciosFijos" targetNamespace="http://tempuri.org/DS_ReporteServiciosFijos.xsd" xmlns:mstns="http://tempuri.org/DS_ReporteServiciosFijos.xsd" xmlns="http://tempuri.org/DS_ReporteServiciosFijos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_ReporteServiciosFijos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_ReporteServiciosFijos" msprop:Generator_UserDSName="DS_ReporteServiciosFijos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ServiciosFijos" msprop:Generator_TableClassName="ServiciosFijosDataTable" msprop:Generator_TableVarName="tableServiciosFijos" msprop:Generator_RowChangedName="ServiciosFijosRowChanged" msprop:Generator_TablePropName="ServiciosFijos" msprop:Generator_RowDeletingName="ServiciosFijosRowDeleting" msprop:Generator_RowChangingName="ServiciosFijosRowChanging" msprop:Generator_RowEvHandlerName="ServiciosFijosRowChangeEventHandler" msprop:Generator_RowDeletedName="ServiciosFijosRowDeleted" msprop:Generator_RowClassName="ServiciosFijosRow" msprop:Generator_UserTableName="ServiciosFijos" msprop:Generator_RowEvArgName="ServiciosFijosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_razonSocial" msprop:Generator_ColumnVarNameInTable="columnnombre_razonSocial" msprop:Generator_ColumnPropNameInRow="nombre_razonSocial" msprop:Generator_ColumnPropNameInTable="nombre_razonSocialColumn" msprop:Generator_UserColumnName="nombre_razonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="numero" msprop:Generator_ColumnVarNameInTable="columnnumero" msprop:Generator_ColumnPropNameInRow="numero" msprop:Generator_ColumnPropNameInTable="numeroColumn" msprop:Generator_UserColumnName="numero" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="costo_mensual" msprop:Generator_ColumnVarNameInTable="columncosto_mensual" msprop:Generator_ColumnPropNameInRow="costo_mensual" msprop:Generator_ColumnPropNameInTable="costo_mensualColumn" msprop:Generator_UserColumnName="costo_mensual" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -444,6 +444,13 @@
     <Compile Include="Formularios\Reportes\Numeros\Reporte_para_Numeros.Designer.cs">
       <DependentUpon>Reporte_para_Numeros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\ServiciosFijos\DS_ReporteServiciosFijos.Designer.cs" />
+    <Compile Include="Formularios\Reportes\ServiciosFijos\ReporteServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\ServiciosFijos\ReporteServicios.Designer.cs">
+      <DependentUpon>ReporteServicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\Servicios\Frm_Rep_Servicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -531,6 +538,7 @@
     <Compile Include="Negocio_Listados\Dispositivos1.cs" />
     <Compile Include="Negocio_Listados\Reporte_Clientes_Prepago.cs" />
     <Compile Include="Negocio_Listados\Reporte_Datos.cs" />
+    <Compile Include="Negocio_Listados\Reporte_ServiciosFijos.cs" />
     <Compile Include="Negocio_Reportes\Dispositivos2.cs" />
     <Compile Include="Negocio_Reportes\ReporteCliente.cs" />
     <Compile Include="Negocio_Reportes\ReporteNumero.cs" />
@@ -719,6 +727,10 @@
       <DependentUpon>Reporte_para_Numeros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Numeros\ReportNumeros.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\ServiciosFijos\ReporteServicios.resx">
+      <DependentUpon>ReporteServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\ServiciosFijos\Reporte_ServiciosFijos.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Servicios\Frm_Rep_Servicios.resx">
       <DependentUpon>Frm_Rep_Servicios.cs</DependentUpon>
     </EmbeddedResource>
@@ -843,6 +855,13 @@
     <None Include="Formularios\Reportes\Numeros\DS_Rep_Numeros.xss">
       <DependentUpon>DS_Rep_Numeros.xsd</DependentUpon>
     </None>
+    <None Include="Formularios\Reportes\ServiciosFijos\DS_ReporteServiciosFijos.xsc">
+      <DependentUpon>DS_ReporteServiciosFijos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\ServiciosFijos\DS_ReporteServiciosFijos.xsd" />
+    <None Include="Formularios\Reportes\ServiciosFijos\DS_ReporteServiciosFijos.xss">
+      <DependentUpon>DS_ReporteServiciosFijos.xsd</DependentUpon>
+    </None>
     <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xsc">
       <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
     </None>
@@ -868,6 +887,7 @@
     <None Include="Resources\kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841.png" />
     <None Include="Resources\3-37761_htc-hd-wallpapers-1080p-abstract-orange-and-blue.jpg" />
     <None Include="Resources\kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096.png" />
+    <None Include="Resources\kisspng-wireless-telecommunications-tower-cell-site-mobile-antenna-5aba4dff02eb99.778486621522159103012.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
