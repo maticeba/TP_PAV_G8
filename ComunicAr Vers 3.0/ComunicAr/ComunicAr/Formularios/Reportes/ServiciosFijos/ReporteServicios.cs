@@ -11,6 +11,7 @@ using ComunicAr.Negocio;
 using ComunicAr.Negocio_Listados;
 using Microsoft.Reporting.WinForms;
 
+
 namespace ComunicAr.Formularios.Reportes.ServiciosFijos
 {
     public partial class ReporteServicios : Form
@@ -198,6 +199,67 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+        // REPORTE DE SERVICIOS DATOS
+        Reporte_Datos datos = new Reporte_Datos();
+        private void Calcular_datos()
+        {
+            DataTable tabla = new DataTable();
+            if (rb_Costo.Checked == true)
+            {
+                tabla = datos.ReporteDatos_limitecosto(txt_costo.Text.ToString());
+                ArmarReporteDatos(tabla);
+            }
+            if (rb_limite.Checked == true)
+            {
+                tabla = datos.ReporteDatos_limitedatos(txt_limite.Text.ToString());
+                ArmarReporteDatos(tabla);
+            }
+            if (rb_todos1.Checked == true)
+            {
+                tabla = datos.ReporteDatos_todos();
+                ArmarReporteDatos(tabla);
+            }
+            if (rb_Costo.Checked == false && rb_limite.Checked == false && rb_todos1.Checked == false)
+            {
+                MessageBox.Show("Elija un parametro para la busqueda");
+            }
+        }
+        private void ArmarReporteDatos(DataTable tabla)
+        {
+            ReportDataSource PaqueteDatos = new ReportDataSource("DS_Rep_Datos", tabla);
+            reportViewer1.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Datos.rdlc";
+            reportViewer1.LocalReport.DataSources.Clear();
+            reportViewer1.LocalReport.DataSources.Add(PaqueteDatos);
+            reportViewer1.RefreshReport();
+        }
+        private void rb_Costo_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_costo.Enabled = true;
+            txt_limite.Enabled = false;
+            txt_costo.Clear();
+            txt_limite.Clear();
+        }
+
+        private void rb_limite_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_costo.Enabled = false;
+            txt_limite.Enabled = true;
+            txt_limite.Clear();
+            txt_costo.Clear();
+        }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            txt_costo.Enabled = false;
+            txt_limite.Enabled = false;
+            txt_limite.Clear();
+            txt_costo.Clear();
+        }
+
+        private void btn_Calcular_Datos_Click(object sender, EventArgs e)
+        {
+            Calcular_datos();
         }
     }
 }

@@ -40,12 +40,12 @@ namespace ComunicAr.Formularios.Reportes.Datos
                 tabla = datos.ReporteDatos_limitedatos(textBox012.Text.ToString());
                 ArmarReporteDatos(tabla);
             }
-            if (rb_todos.Checked == true)
+            if (rb_todos2.Checked == true)
             {
                 tabla = datos.ReporteDatos_todos();
                 ArmarReporteDatos(tabla);
             }
-            if (rb_Costo.Checked == false && rb_limite.Checked == false && rb_todos.Checked == false)
+            if (rb_Costo.Checked == false && rb_limite.Checked == false && rb_todos2.Checked == false)
             {
                 MessageBox.Show("Elija un parametro para la busqueda");
             }

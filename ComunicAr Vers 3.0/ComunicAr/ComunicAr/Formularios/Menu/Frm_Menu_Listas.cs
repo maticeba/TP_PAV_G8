@@ -11,7 +11,7 @@ using ComunicAr.Formularios.Reportes.Clientes;
 using ComunicAr.Formularios.Reportes.Dispositivos;
 using ComunicAr.Formularios.Reportes.DispVendidos;
 using ComunicAr.Formularios.Reportes.Numeros;
-using ComunicAr.Formularios.Reportes.Servicios;
+using ComunicAr.Formularios.Reportes.ServiciosFijos;
 
 namespace ComunicAr.Formularios.Menu
 {
@@ -57,8 +57,8 @@ namespace ComunicAr.Formularios.Menu
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Frm_Rep_Servicios rep_datos = new Frm_Rep_Servicios();
-            rep_datos.ShowDialog();
+            ReporteServicios report_ser = new ReporteServicios();
+            report_ser.ShowDialog();
         }
 
     }

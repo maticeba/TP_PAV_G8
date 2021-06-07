@@ -42,13 +42,25 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_todos = new System.Windows.Forms.RadioButton();
             this.rb_num = new System.Windows.Forms.RadioButton();
             this.rb_cliente = new System.Windows.Forms.RadioButton();
-            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btn_Calcular_Datos = new System.Windows.Forms.Button();
+            this.txt_limite = new ComunicAr.Clases.TextBox01();
+            this.txt_costo = new ComunicAr.Clases.TextBox01();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rb_todos1 = new System.Windows.Forms.RadioButton();
+            this.rb_limite = new System.Windows.Forms.RadioButton();
+            this.rb_Costo = new System.Windows.Forms.RadioButton();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -209,16 +221,6 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_cliente.UseVisualStyleBackColor = true;
             this.rb_cliente.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(692, 458);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Salir";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::ComunicAr.Properties.Resources.kisspng_wireless_telecommunications_tower_cell_site_mobile_antenna_5aba4dff02eb99_778486621522159103012;
@@ -231,6 +233,13 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.reportViewer1);
+            this.tabPage2.Controls.Add(this.btn_Calcular_Datos);
+            this.tabPage2.Controls.Add(this.txt_limite);
+            this.tabPage2.Controls.Add(this.txt_costo);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -238,6 +247,129 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Servicios Datos";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(15, 118);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(745, 276);
+            this.reportViewer1.TabIndex = 27;
+            // 
+            // btn_Calcular_Datos
+            // 
+            this.btn_Calcular_Datos.Location = new System.Drawing.Point(334, 54);
+            this.btn_Calcular_Datos.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Calcular_Datos.Name = "btn_Calcular_Datos";
+            this.btn_Calcular_Datos.Size = new System.Drawing.Size(55, 18);
+            this.btn_Calcular_Datos.TabIndex = 26;
+            this.btn_Calcular_Datos.Text = "Calcular";
+            this.btn_Calcular_Datos.UseVisualStyleBackColor = true;
+            this.btn_Calcular_Datos.Click += new System.EventHandler(this.btn_Calcular_Datos_Click);
+            // 
+            // txt_limite
+            // 
+            this.txt_limite.Location = new System.Drawing.Point(184, 52);
+            this.txt_limite.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_limite.Name = "txt_limite";
+            this.txt_limite.Pp_Campo = null;
+            this.txt_limite.Pp_MensajeError = null;
+            this.txt_limite.Pp_Tabla = null;
+            this.txt_limite.Pp_Validable = false;
+            this.txt_limite.Size = new System.Drawing.Size(84, 20);
+            this.txt_limite.TabIndex = 25;
+            // 
+            // txt_costo
+            // 
+            this.txt_costo.Location = new System.Drawing.Point(184, 24);
+            this.txt_costo.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_costo.Name = "txt_costo";
+            this.txt_costo.Pp_Campo = null;
+            this.txt_costo.Pp_MensajeError = null;
+            this.txt_costo.Pp_Tabla = null;
+            this.txt_costo.Pp_Validable = false;
+            this.txt_costo.Size = new System.Drawing.Size(85, 20);
+            this.txt_costo.TabIndex = 24;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(271, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Gb";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(271, 26);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "$";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rb_todos1);
+            this.groupBox2.Controls.Add(this.rb_limite);
+            this.groupBox2.Controls.Add(this.rb_Costo);
+            this.groupBox2.Location = new System.Drawing.Point(15, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(149, 93);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Filtros";
+            // 
+            // rb_todos1
+            // 
+            this.rb_todos1.AutoSize = true;
+            this.rb_todos1.Location = new System.Drawing.Point(6, 72);
+            this.rb_todos1.Margin = new System.Windows.Forms.Padding(2);
+            this.rb_todos1.Name = "rb_todos1";
+            this.rb_todos1.Size = new System.Drawing.Size(58, 17);
+            this.rb_todos1.TabIndex = 3;
+            this.rb_todos1.TabStop = true;
+            this.rb_todos1.Text = "Todos ";
+            this.rb_todos1.UseVisualStyleBackColor = true;
+            this.rb_todos1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+            // 
+            // rb_limite
+            // 
+            this.rb_limite.AutoSize = true;
+            this.rb_limite.Location = new System.Drawing.Point(6, 46);
+            this.rb_limite.Name = "rb_limite";
+            this.rb_limite.Size = new System.Drawing.Size(143, 17);
+            this.rb_limite.TabIndex = 2;
+            this.rb_limite.TabStop = true;
+            this.rb_limite.Text = "Por limite de datos hasta:";
+            this.rb_limite.UseVisualStyleBackColor = true;
+            this.rb_limite.CheckedChanged += new System.EventHandler(this.rb_limite_CheckedChanged);
+            // 
+            // rb_Costo
+            // 
+            this.rb_Costo.AutoSize = true;
+            this.rb_Costo.Location = new System.Drawing.Point(6, 18);
+            this.rb_Costo.Name = "rb_Costo";
+            this.rb_Costo.Size = new System.Drawing.Size(102, 17);
+            this.rb_Costo.TabIndex = 1;
+            this.rb_Costo.TabStop = true;
+            this.rb_Costo.Text = "Por costo hasta:";
+            this.rb_Costo.UseVisualStyleBackColor = true;
+            this.rb_Costo.CheckedChanged += new System.EventHandler(this.rb_Costo_CheckedChanged);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(692, 458);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Salir";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ReporteServicios
             // 
@@ -255,6 +387,10 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -277,5 +413,15 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TabPage tabPage2;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.Button btn_Calcular_Datos;
+        private Clases.TextBox01 txt_limite;
+        private Clases.TextBox01 txt_costo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rb_todos1;
+        private System.Windows.Forms.RadioButton rb_limite;
+        private System.Windows.Forms.RadioButton rb_Costo;
     }
 }
