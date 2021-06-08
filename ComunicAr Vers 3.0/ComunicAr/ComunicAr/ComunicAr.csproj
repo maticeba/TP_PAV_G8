@@ -729,6 +729,7 @@
       <DependentUpon>Frm_Reporte_Disp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Dispositivos\Reporte_Disp.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Dispositivos\Reporte_Dispositivos_En_Venta.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Dispositivos\Reporte_DispVend.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\DispVendidos\Frm_Reporte_Disp_Vendidos.resx">
       <DependentUpon>Frm_Reporte_Disp_Vendidos.cs</DependentUpon>

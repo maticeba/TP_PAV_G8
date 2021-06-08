@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Reporting.WinForms;
 using ComunicAr.Negocio_Listados;
+using ComunicAr.Negocio;
 using ComunicAr.Clases;
+
+
 
 namespace ComunicAr.Formularios.Reportes.Dispositivos
 {
@@ -30,9 +33,12 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         {
             comboBox011.CargarCombo();
             comboBox011.SelectedIndex = -1;
+            cmb_xmarca.CargarCombo();
+            cmb_xmarca.SelectedIndex = -1;
             this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
             this.reportViewer2.RefreshReport();
+            this.reportViewer3.RefreshReport();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -239,6 +245,126 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         }
 
         private void tabPage1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Calcular_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Calcular_Dispositivos_En_Venta()
+        {
+            bool flag = true;
+            DataTable tabla = new DataTable();
+            Negocio.Dispositivos precio = new Negocio.Dispositivos();
+
+            if (rb03_Dispo.Checked == true)
+            {
+                tabla = precio.Dispositivos_Completos();
+                ReportDataSource PaqueteDatos = new ReportDataSource("DispenVenta", tabla);
+                reportViewer3.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Dispositivos_En_Venta.rdlc";
+                reportViewer3.LocalReport.DataSources.Clear();
+                reportViewer3.LocalReport.DataSources.Add(PaqueteDatos);
+                reportViewer3.RefreshReport();
+            }
+
+            if (rb02_Dispo.Checked == true)
+            {
+                flag = true;
+                if (rb02_Dispo.Checked == true)
+                {
+
+                    if (btn_xprecio.Checked == true)
+                    {
+                        if (string.IsNullOrEmpty(txt_Disp_Desde.Text) | string.IsNullOrEmpty(txt_Disp_Hasta.Text))
+                        {
+                            MessageBox.Show("Debe completar la informacion");
+                            flag = false;
+
+                        }
+                        if (flag == true)
+                        {
+                            int desde = int.Parse(txt_Disp_Desde.Text);
+                            int hasta = int.Parse(txt_Disp_Hasta.Text);
+                            tabla = precio.Dispo_en_Venta(desde, hasta);
+                            ReportDataSource PaqueteDatos = new ReportDataSource("DispenVenta", tabla);
+                            reportViewer3.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Dispositivos_En_Venta.rdlc";
+                            reportViewer3.LocalReport.DataSources.Clear();
+                            reportViewer3.LocalReport.DataSources.Add(PaqueteDatos);
+                            reportViewer3.RefreshReport();
+                        }
+                    }
+                    else
+                    {
+                        if (cmb_xmarca.SelectedIndex == -1 )
+                        {
+                            MessageBox.Show("Seleccione una marca");
+                            flag = false;
+                        }
+                        if (flag == true)
+                        {
+                            string marca = cmb_xmarca.Text.ToString();
+                            tabla = precio.FiltroXmarca(marca);
+                            ReportDataSource PaqueteDatos = new ReportDataSource("DispenVenta", tabla);
+                            reportViewer3.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Dispositivos_En_Venta.rdlc";
+                            reportViewer3.LocalReport.DataSources.Clear();
+                            reportViewer3.LocalReport.DataSources.Add(PaqueteDatos);
+                            reportViewer3.RefreshReport();
+                        }
+                        
+                    }
+                }
+
+            }
+
+
+        }
+
+
+        private void btn_xprecio_CheckedChanged (object sender, EventArgs e)
+        {
+            cmb_xmarca.Enabled = false;
+            txt_Disp_Desde.Enabled = true;
+            txt_Disp_Hasta.Enabled = true;
+            textBox01.Clear();
+        }
+
+        private void btn_xmarca_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_xmarca.Enabled = true;
+            txt_Disp_Desde.Enabled = false;
+            txt_Disp_Hasta.Enabled = false;
+            cmb_xmarca.SelectedIndex = -1;
+
+        }
+        private void reportViewer3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Calcular_DH_Click(object sender, EventArgs e)
+        {
+            Calcular_Dispositivos_En_Venta();
+
+        }
+
+        private void textBox_xprecio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox01_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox011_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
