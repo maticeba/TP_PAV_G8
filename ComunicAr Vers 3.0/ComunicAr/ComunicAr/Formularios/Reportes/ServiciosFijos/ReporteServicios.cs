@@ -32,7 +32,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             if (txt_cliente.Text == "")
             {
                 MessageBox.Show("Ingrese un número de cliente emisor");
-                cmb_numeros.CargarCombo();
+
             }
             else
             {
@@ -47,8 +47,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                 {
                     string nombre = existEmisor.Rows[0]["nombre_razonSocial"].ToString();
                     MessageBox.Show("El cliente emisor es " + nombre);
-                    cmb_numeros.CargarComboXcliente(txt_cliente.Text, nombre);
-                    cmb_numeros.SelectedIndex = -1;
+
                 }
                 btn_calc.Enabled = true;
             }
@@ -64,40 +63,35 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             txt_cliente.Enabled = true;
             btn_buscar.Visible = true;
             btn_calc.Enabled = false;
-            cmb_numeros.Enabled = false;
+            txt_desde.Enabled = false;
+            txt_hasta.Enabled = false;
+            txt_desde.Clear();
+            txt_hasta.Clear();
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             txt_cliente.Enabled = true;
             btn_buscar.Visible = true;
-            cmb_numeros.Enabled = true;
-            btn_calc.Enabled = false;
-
+            txt_desde.Enabled = true;
+            txt_hasta.Enabled = true;
+            txt_cliente.Enabled = false;
+            btn_calc.Enabled = true;
+            txt_cliente.Clear();
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             txt_cliente.Enabled = false;
             btn_buscar.Visible = false;
-            cmb_numeros.Enabled = false;
             txt_cliente.Clear();
-            cmb_numeros.SelectedIndex = -1;
             btn_calc.Enabled = true;
-
-
-        }
-
-        private void cmb_numeros_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmb_numeros.SelectedIndex == -1)
-            {
-                btn_calc.Enabled = false;
-            }
-            else
-            {
-                btn_calc.Enabled = true;
-            }
+            txt_desde.Enabled = false;
+            txt_hasta.Enabled = false;
+            txt_cliente.Clear();
+            txt_desde.Clear();
+            txt_hasta.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -159,14 +153,14 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             }
             if (rb_num.Checked == true)
             {
-                if (cmb_numeros.SelectedIndex == -1)
+                if (txt_desde.Text == "" || txt_hasta.Text == "")
                 {
-                    MessageBox.Show("Seleccione un numero ");
+                    MessageBox.Show("Introduzca un rango de precios");
                 }
                 else
                 {
                     DataTable tabla = new DataTable();
-                    tabla = rp_sf.ReportNum(txt_cliente.Text, cmb_numeros.SelectedValue.ToString());
+                    tabla = rp_sf.ReportNum(txt_desde.Text, txt_hasta.Text);
                     for (int i = 0; i < tabla.Rows.Count; i++)
                     {
                         string numero = tabla.Rows[i]["cod_nacional"].ToString() + tabla.Rows[i]["cod_area"].ToString() + tabla.Rows[i]["nro_telefono"].ToString();
@@ -180,9 +174,9 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                         string prueba = numero + tabla.Rows[i]["nombre_razonSocial"].ToString() + tabla.Rows[i]["descripcion"].ToString() + tabla.Rows[i]["costo_mensual"].ToString();
                         //MessageBox.Show(prueba);
                     }
-
                     Reporte_fijos(tabla2);
                 }
+
 
             }
         }

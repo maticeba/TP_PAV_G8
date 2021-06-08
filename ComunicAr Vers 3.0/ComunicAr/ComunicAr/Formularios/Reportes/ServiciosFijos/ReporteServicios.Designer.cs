@@ -34,9 +34,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.btn_calc = new System.Windows.Forms.Button();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.rv_Fijos = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.cmb_numeros = new ComunicAr.Clases.ComboBox02();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txt_cliente = new ComunicAr.Clases.TextBox01();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rb_todos = new System.Windows.Forms.RadioButton();
@@ -56,30 +54,34 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_Costo = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_SF_Hasta = new ComunicAr.Clases.TextBox01();
+            this.label5 = new System.Windows.Forms.Label();
             this.btn_Calcular_Fijos = new System.Windows.Forms.Button();
             this.gr_tipo = new System.Windows.Forms.GroupBox();
             this.rb03_Fijos = new System.Windows.Forms.RadioButton();
             this.rb02_Fijos = new System.Windows.Forms.RadioButton();
+            this.txt_SF_Desde = new ComunicAr.Clases.TextBox01();
             this.rv01_Fijos = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.rb02_Prepagos_Tipo = new System.Windows.Forms.RadioButton();
             this.rb01_Prepagos_Tipo = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_SP_hasta = new ComunicAr.Clases.TextBox01();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_SP_desde = new ComunicAr.Clases.TextBox01();
             this.btn_calcular_prepago = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.rb03_Prepagos = new System.Windows.Forms.RadioButton();
             this.rb02_Prepagos = new System.Windows.Forms.RadioButton();
             this.rv02 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.button3 = new System.Windows.Forms.Button();
-            this.txt_SF_Desde = new ComunicAr.Clases.TextBox01();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_SF_Hasta = new ComunicAr.Clases.TextBox01();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_SP_hasta = new ComunicAr.Clases.TextBox01();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_SP_desde = new ComunicAr.Clases.TextBox01();
+            this.txt_desde = new ComunicAr.Clases.TextBox01();
+            this.txt_hasta = new ComunicAr.Clases.TextBox01();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -109,12 +111,14 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.txt_hasta);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Controls.Add(this.txt_desde);
             this.tabPage1.Controls.Add(this.btn_calc);
             this.tabPage1.Controls.Add(this.btn_buscar);
             this.tabPage1.Controls.Add(this.rv_Fijos);
-            this.tabPage1.Controls.Add(this.cmb_numeros);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.txt_cliente);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.pictureBox1);
@@ -130,7 +134,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // btn_calc
             // 
             this.btn_calc.Enabled = false;
-            this.btn_calc.Location = new System.Drawing.Point(685, 87);
+            this.btn_calc.Location = new System.Drawing.Point(676, 87);
             this.btn_calc.Name = "btn_calc";
             this.btn_calc.Size = new System.Drawing.Size(75, 23);
             this.btn_calc.TabIndex = 7;
@@ -140,7 +144,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(584, 27);
+            this.btn_buscar.Location = new System.Drawing.Point(603, 17);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(66, 21);
             this.btn_buscar.TabIndex = 6;
@@ -157,49 +161,19 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rv_Fijos.Size = new System.Drawing.Size(753, 300);
             this.rv_Fijos.TabIndex = 5;
             // 
-            // cmb_numeros
-            // 
-            this.cmb_numeros.Enable = false;
-            this.cmb_numeros.Enabled = false;
-            this.cmb_numeros.FormattingEnabled = true;
-            this.cmb_numeros.Location = new System.Drawing.Point(457, 66);
-            this.cmb_numeros.Name = "cmb_numeros";
-            this.cmb_numeros.Pp_Conseleccion = true;
-            this.cmb_numeros.Pp_Descripcion1 = "cod_nacional";
-            this.cmb_numeros.Pp_Descripcion2 = "cod_area";
-            this.cmb_numeros.Pp_Descripcion3 = "nro_telefono";
-            this.cmb_numeros.Pp_MensajeError = "No has seleccionado ningún teléfono emisor";
-            this.cmb_numeros.Pp_NombreCampo = null;
-            this.cmb_numeros.Pp_NombreTabla = null;
-            this.cmb_numeros.Pp_PK1 = "id_numero";
-            this.cmb_numeros.Pp_Tabla = "Numero";
-            this.cmb_numeros.Pp_Validable = false;
-            this.cmb_numeros.Size = new System.Drawing.Size(121, 21);
-            this.cmb_numeros.TabIndex = 4;
-            this.cmb_numeros.SelectedIndexChanged += new System.EventHandler(this.cmb_numeros_SelectedIndexChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(360, 34);
+            this.label2.Location = new System.Drawing.Point(373, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "ID de Cliente";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(360, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Numero";
-            // 
             // txt_cliente
             // 
             this.txt_cliente.Enabled = false;
-            this.txt_cliente.Location = new System.Drawing.Point(457, 27);
+            this.txt_cliente.Location = new System.Drawing.Point(476, 17);
             this.txt_cliente.Name = "txt_cliente";
             this.txt_cliente.Pp_Campo = null;
             this.txt_cliente.Pp_MensajeError = null;
@@ -215,7 +189,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox1.Controls.Add(this.rb_cliente);
             this.groupBox1.Location = new System.Drawing.Point(169, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(166, 90);
+            this.groupBox1.Size = new System.Drawing.Size(193, 90);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -236,10 +210,10 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_num.AutoSize = true;
             this.rb_num.Location = new System.Drawing.Point(7, 40);
             this.rb_num.Name = "rb_num";
-            this.rb_num.Size = new System.Drawing.Size(157, 17);
+            this.rb_num.Size = new System.Drawing.Size(189, 17);
             this.rb_num.TabIndex = 0;
             this.rb_num.TabStop = true;
-            this.rb_num.Text = "Servicios fijos de un numero";
+            this.rb_num.Text = "Servicios fijos por rango de precios";
             this.rb_num.UseVisualStyleBackColor = true;
             this.rb_num.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
@@ -421,6 +395,35 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(23, 51);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Hasta";
+            // 
+            // txt_SF_Hasta
+            // 
+            this.txt_SF_Hasta.Location = new System.Drawing.Point(68, 45);
+            this.txt_SF_Hasta.Name = "txt_SF_Hasta";
+            this.txt_SF_Hasta.Pp_Campo = null;
+            this.txt_SF_Hasta.Pp_MensajeError = null;
+            this.txt_SF_Hasta.Pp_Tabla = null;
+            this.txt_SF_Hasta.Pp_Validable = false;
+            this.txt_SF_Hasta.Size = new System.Drawing.Size(100, 20);
+            this.txt_SF_Hasta.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Desde";
+            // 
             // btn_Calcular_Fijos
             // 
             this.btn_Calcular_Fijos.Location = new System.Drawing.Point(318, 59);
@@ -463,6 +466,17 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb02_Fijos.TabIndex = 1;
             this.rb02_Fijos.Text = "Filtro";
             this.rb02_Fijos.UseVisualStyleBackColor = true;
+            // 
+            // txt_SF_Desde
+            // 
+            this.txt_SF_Desde.Location = new System.Drawing.Point(68, 19);
+            this.txt_SF_Desde.Name = "txt_SF_Desde";
+            this.txt_SF_Desde.Pp_Campo = null;
+            this.txt_SF_Desde.Pp_MensajeError = null;
+            this.txt_SF_Desde.Pp_Tabla = null;
+            this.txt_SF_Desde.Pp_Validable = false;
+            this.txt_SF_Desde.Size = new System.Drawing.Size(100, 20);
+            this.txt_SF_Desde.TabIndex = 0;
             // 
             // rv01_Fijos
             // 
@@ -532,6 +546,46 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox5.TabIndex = 9;
             this.groupBox5.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Hasta";
+            // 
+            // txt_SP_hasta
+            // 
+            this.txt_SP_hasta.Location = new System.Drawing.Point(51, 58);
+            this.txt_SP_hasta.Name = "txt_SP_hasta";
+            this.txt_SP_hasta.Pp_Campo = null;
+            this.txt_SP_hasta.Pp_MensajeError = null;
+            this.txt_SP_hasta.Pp_Tabla = null;
+            this.txt_SP_hasta.Pp_Validable = false;
+            this.txt_SP_hasta.Size = new System.Drawing.Size(100, 20);
+            this.txt_SP_hasta.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Desde";
+            // 
+            // txt_SP_desde
+            // 
+            this.txt_SP_desde.Location = new System.Drawing.Point(51, 32);
+            this.txt_SP_desde.Name = "txt_SP_desde";
+            this.txt_SP_desde.Pp_Campo = null;
+            this.txt_SP_desde.Pp_MensajeError = null;
+            this.txt_SP_desde.Pp_Tabla = null;
+            this.txt_SP_desde.Pp_Validable = false;
+            this.txt_SP_desde.Size = new System.Drawing.Size(100, 20);
+            this.txt_SP_desde.TabIndex = 7;
+            // 
             // btn_calcular_prepago
             // 
             this.btn_calcular_prepago.Location = new System.Drawing.Point(318, 96);
@@ -593,85 +647,48 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // txt_SF_Desde
+            // txt_desde
             // 
-            this.txt_SF_Desde.Location = new System.Drawing.Point(68, 19);
-            this.txt_SF_Desde.Name = "txt_SF_Desde";
-            this.txt_SF_Desde.Pp_Campo = null;
-            this.txt_SF_Desde.Pp_MensajeError = null;
-            this.txt_SF_Desde.Pp_Tabla = null;
-            this.txt_SF_Desde.Pp_Validable = false;
-            this.txt_SF_Desde.Size = new System.Drawing.Size(100, 20);
-            this.txt_SF_Desde.TabIndex = 0;
+            this.txt_desde.Enabled = false;
+            this.txt_desde.Location = new System.Drawing.Point(476, 47);
+            this.txt_desde.Name = "txt_desde";
+            this.txt_desde.Pp_Campo = null;
+            this.txt_desde.Pp_MensajeError = null;
+            this.txt_desde.Pp_Tabla = null;
+            this.txt_desde.Pp_Validable = false;
+            this.txt_desde.Size = new System.Drawing.Size(50, 20);
+            this.txt_desde.TabIndex = 9;
             // 
-            // label5
+            // txt_hasta
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Desde";
+            this.txt_hasta.Enabled = false;
+            this.txt_hasta.Location = new System.Drawing.Point(547, 47);
+            this.txt_hasta.Name = "txt_hasta";
+            this.txt_hasta.Pp_Campo = null;
+            this.txt_hasta.Pp_MensajeError = null;
+            this.txt_hasta.Pp_Tabla = null;
+            this.txt_hasta.Pp_Validable = false;
+            this.txt_hasta.Size = new System.Drawing.Size(50, 20);
+            this.txt_hasta.TabIndex = 9;
             // 
-            // label7
+            // label9
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 51);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Hasta";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(373, 54);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Rango de precios";
             // 
-            // txt_SF_Hasta
+            // label1
             // 
-            this.txt_SF_Hasta.Location = new System.Drawing.Point(68, 45);
-            this.txt_SF_Hasta.Name = "txt_SF_Hasta";
-            this.txt_SF_Hasta.Pp_Campo = null;
-            this.txt_SF_Hasta.Pp_MensajeError = null;
-            this.txt_SF_Hasta.Pp_Tabla = null;
-            this.txt_SF_Hasta.Pp_Validable = false;
-            this.txt_SF_Hasta.Size = new System.Drawing.Size(100, 20);
-            this.txt_SF_Hasta.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Hasta";
-            // 
-            // txt_SP_hasta
-            // 
-            this.txt_SP_hasta.Location = new System.Drawing.Point(51, 58);
-            this.txt_SP_hasta.Name = "txt_SP_hasta";
-            this.txt_SP_hasta.Pp_Campo = null;
-            this.txt_SP_hasta.Pp_MensajeError = null;
-            this.txt_SP_hasta.Pp_Tabla = null;
-            this.txt_SP_hasta.Pp_Validable = false;
-            this.txt_SP_hasta.Size = new System.Drawing.Size(100, 20);
-            this.txt_SP_hasta.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 38);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Desde";
-            // 
-            // txt_SP_desde
-            // 
-            this.txt_SP_desde.Location = new System.Drawing.Point(51, 32);
-            this.txt_SP_desde.Name = "txt_SP_desde";
-            this.txt_SP_desde.Pp_Campo = null;
-            this.txt_SP_desde.Pp_MensajeError = null;
-            this.txt_SP_desde.Pp_Tabla = null;
-            this.txt_SP_desde.Pp_Validable = false;
-            this.txt_SP_desde.Size = new System.Drawing.Size(100, 20);
-            this.txt_SP_desde.TabIndex = 7;
+            this.label1.AutoSize = true;
+            this.label1.Enabled = false;
+            this.label1.Location = new System.Drawing.Point(532, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(12, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "/";
             // 
             // ReporteServicios
             // 
@@ -714,9 +731,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private Microsoft.Reporting.WinForms.ReportViewer rv_Fijos;
-        private Clases.ComboBox02 cmb_numeros;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private Clases.TextBox01 txt_cliente;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rb_todos;
@@ -762,5 +777,9 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private Clases.TextBox01 txt_SP_hasta;
         private System.Windows.Forms.Label label8;
         private Clases.TextBox01 txt_SP_desde;
+        private Clases.TextBox01 txt_hasta;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private Clases.TextBox01 txt_desde;
     }
 }
