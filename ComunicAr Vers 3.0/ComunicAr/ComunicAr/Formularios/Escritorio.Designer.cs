@@ -29,6 +29,7 @@ namespace ComunicAr
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Escritorio));
             this.SuspendLayout();
             // 
             // Escritorio
@@ -36,7 +37,7 @@ namespace ComunicAr
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BackgroundImage = global::ComunicAr.Properties.Resources._3_37761_htc_hd_wallpapers_1080p_abstract_orange_and_blue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ForeColor = System.Drawing.Color.Chocolate;
