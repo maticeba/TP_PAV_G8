@@ -227,6 +227,7 @@ namespace ComunicAr.Formularios
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Actualizar Datos";
+            this.Load += new System.EventHandler(this.Frm_Menu_ABM_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,13 +17,17 @@ namespace ComunicAr.Formularios
 {
     public partial class Frm_Menu_ABM : Form
     {
+       
+
         public Frm_Menu_ABM()
         {
             InitializeComponent();
         }
         private void btn_salir_Click(object sender, EventArgs e)
         {
+           
             this.Close();
+            
         }
         /*
 
@@ -115,6 +119,11 @@ namespace ComunicAr.Formularios
         {
             Menu_Ubicacion ubicacion = new Menu_Ubicacion();
             ubicacion.ShowDialog();
+        }
+
+        private void Frm_Menu_ABM_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

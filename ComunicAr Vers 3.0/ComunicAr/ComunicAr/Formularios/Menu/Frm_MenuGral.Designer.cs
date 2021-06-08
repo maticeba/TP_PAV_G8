@@ -52,7 +52,6 @@ namespace ComunicAr.Formularios.Menu
             this.btn_menu_gral_datos.TabIndex = 0;
             this.btn_menu_gral_datos.Text = "Actualizar Datos";
             this.btn_menu_gral_datos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_menu_gral_datos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_menu_gral_datos.UseVisualStyleBackColor = false;
             this.btn_menu_gral_datos.Click += new System.EventHandler(this.btn_menu_gral_datos_Click);
             // 
