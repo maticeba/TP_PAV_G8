@@ -17,7 +17,7 @@ namespace ComunicAr.Negocio_Listados
         {
             string sql = @"SELECT n.nro_telefono, n.cod_nacional, n.cod_area, c.nombre_razonSocial, s.descripcion, s.costo_mensual " +
                            " FROM Cliente c, Numero n, Servicios_fijos s, Servicios_contratados p " + 
-                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio";
+                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio AND p.tipo_servicio = 'B'";
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
@@ -25,7 +25,7 @@ namespace ComunicAr.Negocio_Listados
         {
             string sql = @"SELECT n.nro_telefono, n.cod_nacional, n.cod_area, c.nombre_razonSocial, s.descripcion, s.costo_mensual " +
                            " FROM Cliente c, Numero n, Servicios_fijos s, Servicios_contratados p " +
-                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio AND c.nro_cliente = " + nro_cliente;
+                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio AND p.tipo_servicio = 'B' AND c.nro_cliente = " + nro_cliente;
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
@@ -33,7 +33,7 @@ namespace ComunicAr.Negocio_Listados
         {
             string sql = @"SELECT n.nro_telefono, n.cod_nacional, n.cod_area, c.nombre_razonSocial, s.descripcion, s.costo_mensual " +
                            " FROM Cliente c, Numero n, Servicios_fijos s, Servicios_contratados p " +
-                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio AND c.nro_cliente = " + nro_cliente + 
+                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio AND p.tipo_servicio = 'B' AND c.nro_cliente = " + nro_cliente + 
                            "AND n.id_numero = " + id_numero;
             tabla = BD.EjecutarSelect(sql);
             return tabla;
