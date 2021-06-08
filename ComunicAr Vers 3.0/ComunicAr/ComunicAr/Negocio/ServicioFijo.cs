@@ -23,10 +23,10 @@ namespace ComunicAr.Negocio
             string sql = "SELECT * FROM servicios_fijos";
             return BD.EjecutarSelect(sql);
         }
-        public DataTable ServicioFijoMM(int desde, int hasta)
+        public DataTable ServicioFijoMM(int numero, string signo)
         {
             string sql = @"SELECT s.* FROM servicios_fijos s "
-                         + "WHERE " + desde + " < s.costo_mensual AND s.costo_mensual <" + hasta;
+                         + "WHERE s.costo_mensual " + signo + numero;
             return BD.EjecutarSelect(sql);
         }
         public DataTable ServicioFijoPorCodigo(string cod_servicio)
