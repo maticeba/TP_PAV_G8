@@ -115,6 +115,8 @@ namespace ComunicAr.Formularios.Menu
             this.bnt_menu_lista_cliente.Name = "bnt_menu_lista_cliente";
             this.bnt_menu_lista_cliente.Size = new System.Drawing.Size(89, 81);
             this.bnt_menu_lista_cliente.TabIndex = 1;
+            this.bnt_menu_lista_cliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bnt_menu_lista_cliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bnt_menu_lista_cliente.UseVisualStyleBackColor = false;
             this.bnt_menu_lista_cliente.Click += new System.EventHandler(this.bnt_menu_lista_cliente_Click);
             // 

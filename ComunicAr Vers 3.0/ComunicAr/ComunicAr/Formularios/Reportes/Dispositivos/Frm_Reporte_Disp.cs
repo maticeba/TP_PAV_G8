@@ -368,5 +368,28 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void rb03_Dispo_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_Disp_Desde.Enabled = false;
+            txt_Disp_Hasta.Enabled = false;
+            cmb_xmarca.Enabled = false;
+            btn_xmarca.Enabled = false;
+            btn_xprecio.Enabled = false;
+        }
+
+        private void rb02_Dispo_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_Disp_Desde.Enabled = true;
+            txt_Disp_Hasta.Enabled = true;
+            cmb_xmarca.Enabled = true;
+            btn_xmarca.Enabled = true;
+            btn_xprecio.Enabled = true;
+        }
     }
 }

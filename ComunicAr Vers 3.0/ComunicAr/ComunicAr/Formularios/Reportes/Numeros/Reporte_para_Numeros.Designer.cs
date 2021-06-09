@@ -49,6 +49,7 @@ namespace ComunicAr.Formularios.Reportes.Numeros
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_nac = new ComunicAr.Clases.ComboBox01();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -273,11 +274,22 @@ namespace ComunicAr.Formularios.Reportes.Numeros
             this.cmb_nac.TabIndex = 1;
             this.cmb_nac.SelectedIndexChanged += new System.EventHandler(this.cmb_nac_SelectedIndexChanged);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(593, 535);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Salir";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Reporte_para_Numeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 531);
+            this.ClientSize = new System.Drawing.Size(716, 570);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.tabControl1);
             this.Name = "Reporte_para_Numeros";
             this.Text = "Reporte_para_Numeros";
@@ -314,5 +326,6 @@ namespace ComunicAr.Formularios.Reportes.Numeros
         private Clases.ComboBox01 cmb_area;
         private Microsoft.Reporting.WinForms.ReportViewer rv_numeros;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

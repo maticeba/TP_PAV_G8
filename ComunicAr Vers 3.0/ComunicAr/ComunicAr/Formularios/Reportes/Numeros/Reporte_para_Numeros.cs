@@ -129,5 +129,10 @@ namespace ComunicAr.Formularios.Reportes.Numeros
             rv_numeros.LocalReport.DataSources.Add(repoteDatos);
             rv_numeros.RefreshReport();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
