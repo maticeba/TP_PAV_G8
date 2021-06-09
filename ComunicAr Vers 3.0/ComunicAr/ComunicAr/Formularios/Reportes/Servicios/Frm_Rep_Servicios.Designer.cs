@@ -31,17 +31,17 @@ namespace ComunicAr.Formularios.Reportes.Servicios
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btn_Calcular_Datos = new System.Windows.Forms.Button();
+            this.txt_limite = new ComunicAr.Clases.TextBox01();
+            this.txt_costo = new ComunicAr.Clases.TextBox01();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rb_todos = new System.Windows.Forms.RadioButton();
             this.rb_limite = new System.Windows.Forms.RadioButton();
             this.rb_Costo = new System.Windows.Forms.RadioButton();
-            this.txt_costo = new ComunicAr.Clases.TextBox01();
-            this.txt_limite = new ComunicAr.Clases.TextBox01();
-            this.btn_Calcular_Datos = new System.Windows.Forms.Button();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -73,16 +73,47 @@ namespace ComunicAr.Formularios.Reportes.Servicios
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Servicio de Datos";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
+            // reportViewer1
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(994, 572);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.reportViewer1.Location = new System.Drawing.Point(7, 156);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(969, 410);
+            this.reportViewer1.TabIndex = 20;
+            // 
+            // btn_Calcular_Datos
+            // 
+            this.btn_Calcular_Datos.Location = new System.Drawing.Point(894, 16);
+            this.btn_Calcular_Datos.Name = "btn_Calcular_Datos";
+            this.btn_Calcular_Datos.Size = new System.Drawing.Size(82, 27);
+            this.btn_Calcular_Datos.TabIndex = 19;
+            this.btn_Calcular_Datos.Text = "Calcular";
+            this.btn_Calcular_Datos.UseVisualStyleBackColor = true;
+            this.btn_Calcular_Datos.Click += new System.EventHandler(this.btn_Calcular_Datos_Click);
+            // 
+            // txt_limite
+            // 
+            this.txt_limite.Location = new System.Drawing.Point(384, 78);
+            this.txt_limite.Name = "txt_limite";
+            this.txt_limite.Pp_Campo = null;
+            this.txt_limite.Pp_MensajeError = null;
+            this.txt_limite.Pp_Tabla = null;
+            this.txt_limite.Pp_Validable = false;
+            this.txt_limite.Size = new System.Drawing.Size(124, 26);
+            this.txt_limite.TabIndex = 18;
+            // 
+            // txt_costo
+            // 
+            this.txt_costo.Location = new System.Drawing.Point(384, 36);
+            this.txt_costo.Name = "txt_costo";
+            this.txt_costo.Pp_Campo = null;
+            this.txt_costo.Pp_MensajeError = null;
+            this.txt_costo.Pp_Tabla = null;
+            this.txt_costo.Pp_Validable = false;
+            this.txt_costo.Size = new System.Drawing.Size(125, 26);
+            this.txt_costo.TabIndex = 17;
             // 
             // label3
             // 
@@ -154,45 +185,15 @@ namespace ComunicAr.Formularios.Reportes.Servicios
             this.rb_Costo.UseVisualStyleBackColor = true;
             this.rb_Costo.CheckedChanged += new System.EventHandler(this.rb_Costo_CheckedChanged);
             // 
-            // txt_costo
+            // tabPage2
             // 
-            this.txt_costo.Location = new System.Drawing.Point(384, 36);
-            this.txt_costo.Name = "txt_costo";
-            this.txt_costo.Pp_Campo = null;
-            this.txt_costo.Pp_MensajeError = null;
-            this.txt_costo.Pp_Tabla = null;
-            this.txt_costo.Pp_Validable = false;
-            this.txt_costo.Size = new System.Drawing.Size(125, 26);
-            this.txt_costo.TabIndex = 17;
-            // 
-            // txt_limite
-            // 
-            this.txt_limite.Location = new System.Drawing.Point(384, 78);
-            this.txt_limite.Name = "txt_limite";
-            this.txt_limite.Pp_Campo = null;
-            this.txt_limite.Pp_MensajeError = null;
-            this.txt_limite.Pp_Tabla = null;
-            this.txt_limite.Pp_Validable = false;
-            this.txt_limite.Size = new System.Drawing.Size(124, 26);
-            this.txt_limite.TabIndex = 18;
-            // 
-            // btn_Calcular_Datos
-            // 
-            this.btn_Calcular_Datos.Location = new System.Drawing.Point(894, 16);
-            this.btn_Calcular_Datos.Name = "btn_Calcular_Datos";
-            this.btn_Calcular_Datos.Size = new System.Drawing.Size(82, 27);
-            this.btn_Calcular_Datos.TabIndex = 19;
-            this.btn_Calcular_Datos.Text = "Calcular";
-            this.btn_Calcular_Datos.UseVisualStyleBackColor = true;
-            this.btn_Calcular_Datos.Click += new System.EventHandler(this.btn_Calcular_Datos_Click);
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Location = new System.Drawing.Point(7, 156);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(969, 410);
-            this.reportViewer1.TabIndex = 20;
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(994, 572);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Frm_Rep_Servicios
             // 

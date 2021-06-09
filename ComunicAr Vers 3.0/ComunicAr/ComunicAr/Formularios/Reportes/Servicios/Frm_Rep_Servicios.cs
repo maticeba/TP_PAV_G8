@@ -84,5 +84,10 @@ namespace ComunicAr.Formularios.Reportes.Servicios
         {
             Calcular_datos();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

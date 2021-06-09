@@ -46,6 +46,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_cliente = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
             this.txt_costo_hasta = new ComunicAr.Clases.TextBox01();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -139,7 +140,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // txt_hasta
             // 
             this.txt_hasta.Enabled = false;
-            this.txt_hasta.Location = new System.Drawing.Point(820, 72);
+            this.txt_hasta.Location = new System.Drawing.Point(718, 66);
             this.txt_hasta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_hasta.Name = "txt_hasta";
             this.txt_hasta.Pp_Campo = null;
@@ -153,7 +154,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             this.label1.AutoSize = true;
             this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(798, 78);
+            this.label1.Location = new System.Drawing.Point(697, 69);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 20);
@@ -163,7 +164,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(560, 83);
+            this.label9.Location = new System.Drawing.Point(474, 69);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(134, 20);
@@ -173,7 +174,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // txt_desde
             // 
             this.txt_desde.Enabled = false;
-            this.txt_desde.Location = new System.Drawing.Point(714, 72);
+            this.txt_desde.Location = new System.Drawing.Point(616, 66);
             this.txt_desde.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_desde.Name = "txt_desde";
             this.txt_desde.Pp_Campo = null;
@@ -186,7 +187,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // btn_calc
             // 
             this.btn_calc.Enabled = false;
-            this.btn_calc.Location = new System.Drawing.Point(1014, 134);
+            this.btn_calc.Location = new System.Drawing.Point(1018, 108);
             this.btn_calc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_calc.Name = "btn_calc";
             this.btn_calc.Size = new System.Drawing.Size(112, 35);
@@ -197,7 +198,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(904, 26);
+            this.btn_buscar.Location = new System.Drawing.Point(794, 23);
             this.btn_buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(99, 32);
@@ -209,17 +210,17 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // rv_Fijos
             // 
-            this.rv_Fijos.Location = new System.Drawing.Point(10, 178);
+            this.rv_Fijos.Location = new System.Drawing.Point(10, 153);
             this.rv_Fijos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rv_Fijos.Name = "rv_Fijos";
             this.rv_Fijos.ServerReport.BearerToken = null;
-            this.rv_Fijos.Size = new System.Drawing.Size(1128, 460);
+            this.rv_Fijos.Size = new System.Drawing.Size(1128, 485);
             this.rv_Fijos.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(560, 37);
+            this.label2.Location = new System.Drawing.Point(476, 32);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 20);
@@ -229,7 +230,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // txt_cliente
             // 
             this.txt_cliente.Enabled = false;
-            this.txt_cliente.Location = new System.Drawing.Point(714, 26);
+            this.txt_cliente.Location = new System.Drawing.Point(585, 29);
             this.txt_cliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_cliente.Name = "txt_cliente";
             this.txt_cliente.Pp_Campo = null;
@@ -244,13 +245,14 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox1.Controls.Add(this.rb_todos);
             this.groupBox1.Controls.Add(this.rb_num);
             this.groupBox1.Controls.Add(this.rb_cliente);
-            this.groupBox1.Location = new System.Drawing.Point(254, 11);
+            this.groupBox1.Location = new System.Drawing.Point(178, 5);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Size = new System.Drawing.Size(290, 138);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filtros";
             // 
             // rb_todos
             // 
@@ -258,10 +260,10 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_todos.Location = new System.Drawing.Point(10, 97);
             this.rb_todos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rb_todos.Name = "rb_todos";
-            this.rb_todos.Size = new System.Drawing.Size(198, 24);
+            this.rb_todos.Size = new System.Drawing.Size(202, 24);
             this.rb_todos.TabIndex = 0;
             this.rb_todos.TabStop = true;
-            this.rb_todos.Text = "Todos los servicios fijos";
+            this.rb_todos.Text = "Todos los servicios fijos:";
             this.rb_todos.UseVisualStyleBackColor = true;
             this.rb_todos.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
@@ -271,10 +273,10 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_num.Location = new System.Drawing.Point(10, 62);
             this.rb_num.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rb_num.Name = "rb_num";
-            this.rb_num.Size = new System.Drawing.Size(278, 24);
+            this.rb_num.Size = new System.Drawing.Size(282, 24);
             this.rb_num.TabIndex = 0;
             this.rb_num.TabStop = true;
-            this.rb_num.Text = "Servicios fijos por rango de precios";
+            this.rb_num.Text = "Servicios fijos por rango de precios:";
             this.rb_num.UseVisualStyleBackColor = true;
             this.rb_num.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
@@ -284,10 +286,10 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb_cliente.Location = new System.Drawing.Point(10, 26);
             this.rb_cliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rb_cliente.Name = "rb_cliente";
-            this.rb_cliente.Size = new System.Drawing.Size(223, 24);
+            this.rb_cliente.Size = new System.Drawing.Size(227, 24);
             this.rb_cliente.TabIndex = 0;
             this.rb_cliente.TabStop = true;
-            this.rb_cliente.Text = "Servicios fijos de un cliente";
+            this.rb_cliente.Text = "Servicios fijos de un cliente:";
             this.rb_cliente.UseVisualStyleBackColor = true;
             this.rb_cliente.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -295,7 +297,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             this.pictureBox1.BackgroundImage = global::ComunicAr.Properties.Resources.kisspng_wireless_telecommunications_tower_cell_site_mobile_antenna_5aba4dff02eb99_778486621522159103012;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 138);
@@ -304,6 +306,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.txt_costo_hasta);
             this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.reportViewer1);
@@ -323,9 +326,18 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(706, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(18, 20);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "$";
+            // 
             // txt_costo_hasta
             // 
-            this.txt_costo_hasta.Location = new System.Drawing.Point(597, 38);
+            this.txt_costo_hasta.Location = new System.Drawing.Point(580, 35);
             this.txt_costo_hasta.Name = "txt_costo_hasta";
             this.txt_costo_hasta.Pp_Campo = null;
             this.txt_costo_hasta.Pp_MensajeError = null;
@@ -347,15 +359,15 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(22, 182);
+            this.reportViewer1.Location = new System.Drawing.Point(22, 156);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1116, 424);
+            this.reportViewer1.Size = new System.Drawing.Size(1116, 483);
             this.reportViewer1.TabIndex = 27;
             // 
             // btn_Calcular_Datos
             // 
-            this.btn_Calcular_Datos.Location = new System.Drawing.Point(992, 120);
+            this.btn_Calcular_Datos.Location = new System.Drawing.Point(1030, 114);
             this.btn_Calcular_Datos.Name = "btn_Calcular_Datos";
             this.btn_Calcular_Datos.Size = new System.Drawing.Size(95, 34);
             this.btn_Calcular_Datos.TabIndex = 26;
@@ -365,7 +377,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // txt_limite
             // 
-            this.txt_limite.Location = new System.Drawing.Point(446, 78);
+            this.txt_limite.Location = new System.Drawing.Point(425, 72);
             this.txt_limite.Name = "txt_limite";
             this.txt_limite.Pp_Campo = null;
             this.txt_limite.Pp_MensajeError = null;
@@ -376,7 +388,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // txt_costo_desde
             // 
-            this.txt_costo_desde.Location = new System.Drawing.Point(446, 38);
+            this.txt_costo_desde.Location = new System.Drawing.Point(423, 36);
             this.txt_costo_desde.Name = "txt_costo_desde";
             this.txt_costo_desde.Pp_Campo = null;
             this.txt_costo_desde.Pp_MensajeError = null;
@@ -388,7 +400,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(576, 81);
+            this.label3.Location = new System.Drawing.Point(555, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 20);
             this.label3.TabIndex = 23;
@@ -397,7 +409,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(578, 44);
+            this.label4.Location = new System.Drawing.Point(557, 41);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(13, 20);
             this.label4.TabIndex = 22;
@@ -859,5 +871,6 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private Clases.TextBox01 txt_desde;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Clases.TextBox01 txt_costo_hasta;
+        private System.Windows.Forms.Label label10;
     }
 }

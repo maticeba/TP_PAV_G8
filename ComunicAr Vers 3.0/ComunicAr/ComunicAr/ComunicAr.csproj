@@ -440,10 +440,10 @@
     <Compile Include="Formularios\Reportes\ServiciosFijos\ReporteServicios.Designer.cs">
       <DependentUpon>ReporteServicios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reportes\Servicios\DS_Rep_Datos.cs">
+    <Compile Include="Formularios\Reportes\ServiciosFijos\DS_Rep_Datos.cs">
       <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reportes\Servicios\DS_Rep_Datos.Designer.cs">
+    <Compile Include="Formularios\Reportes\ServiciosFijos\DS_Rep_Datos.Designer.cs">
       <DependentUpon>DS_Rep_Datos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Reportes\Servicios\DS_Rep_Servicio.Designer.cs">
@@ -732,8 +732,8 @@
       <DependentUpon>Frm_Rep_Servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Servicios\Reporte_Servicios_Fijos.rdlc" />
-    <EmbeddedResource Include="Formularios\Reportes\Servicios\Reporte_Datos.rdlc" />
-    <EmbeddedResource Include="Formularios\Reportes\Servicios\Reporte_Servicios_Prepagos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\ServiciosFijos\Reporte_Datos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\ServiciosFijos\Reporte_Servicios_Prepagos.rdlc" />
     <EmbeddedResource Include="Formularios\Transaccion\Detalles_Servicios\Detalle Servicios Fijos\Frm_desc.resx">
       <DependentUpon>Frm_desc.cs</DependentUpon>
     </EmbeddedResource>
@@ -850,11 +850,11 @@
     <None Include="Formularios\Reportes\ServiciosFijos\DS_ReporteServiciosFijos.xss">
       <DependentUpon>DS_ReporteServiciosFijos.xsd</DependentUpon>
     </None>
-    <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xsc">
+    <None Include="Formularios\Reportes\ServiciosFijos\DS_Rep_Datos.xsc">
       <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
     </None>
-    <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xsd" />
-    <None Include="Formularios\Reportes\Servicios\DS_Rep_Datos.xss">
+    <None Include="Formularios\Reportes\ServiciosFijos\DS_Rep_Datos.xsd" />
+    <None Include="Formularios\Reportes\ServiciosFijos\DS_Rep_Datos.xss">
       <DependentUpon>DS_Rep_Datos.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Reportes\Servicios\DS_Rep_Servicio.xsc">

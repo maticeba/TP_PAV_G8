@@ -222,7 +222,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private void ArmarReporteDatos(DataTable tabla)
         {
             ReportDataSource PaqueteDatos = new ReportDataSource("DS_Rep_Datos", tabla);
-            reportViewer1.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Datos.rdlc";
+            reportViewer1.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Datos.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(PaqueteDatos);
             reportViewer1.RefreshReport();
@@ -230,6 +230,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private void rb_Costo_CheckedChanged(object sender, EventArgs e)
         {
             txt_costo_desde.Enabled = true;
+            txt_costo_hasta.Enabled = true;
             txt_limite.Enabled = false;
             txt_costo_desde.Clear();
             txt_limite.Clear();
@@ -238,6 +239,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private void rb_limite_CheckedChanged(object sender, EventArgs e)
         {
             txt_costo_desde.Enabled = false;
+            txt_costo_hasta.Enabled = false;
             txt_limite.Enabled = true;
             txt_limite.Clear();
             txt_costo_desde.Clear();
@@ -246,6 +248,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
             txt_costo_desde.Enabled = false;
+            txt_costo_hasta.Enabled = false;
             txt_limite.Enabled = false;
             txt_limite.Clear();
             txt_costo_desde.Clear();
