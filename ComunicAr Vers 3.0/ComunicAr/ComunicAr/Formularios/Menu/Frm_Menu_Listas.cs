@@ -12,6 +12,7 @@ using ComunicAr.Formularios.Reportes.Dispositivos;
 using ComunicAr.Formularios.Reportes.DispVendidos;
 using ComunicAr.Formularios.Reportes.Numeros;
 using ComunicAr.Formularios.Reportes.ServiciosFijos;
+using ComunicAr.Formularios.Reportes.Llamada;
 
 namespace ComunicAr.Formularios.Menu
 {
@@ -63,7 +64,8 @@ namespace ComunicAr.Formularios.Menu
 
         private void bnt_menu_lista_llamadas_Click(object sender, EventArgs e)
         {
-            
+            Frm_Reporte_Llamadas reporte_llamada = new Frm_Reporte_Llamadas();
+            reporte_llamada.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)

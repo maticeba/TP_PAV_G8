@@ -30,7 +30,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             cmb_report_clienteXdispo_tipoDispo.CargarCombo();
             //cmb_report_clienteXdispo_tipoDispo.SelectedIndex = -1;
             //this.reportViewer2.RefreshReport();
-            this.reportViewer2.RefreshReport();
+           // this.reportViewer2.RefreshReport();
         }
 
         private void btn_reporte_cliente_cargar_Click(object sender, EventArgs e)
@@ -92,35 +92,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             rv_cliente_clientesXtipoDispositivo.RefreshReport();
         }
         //PESTANIA CLIENTES X CIERTO TIEMPO DE LLAMADA
-        private void CargarTablaClienteXtiempo()
-        {
-            if (rBD1.Checked)
-            {
-                
-                int tiempo = Convert.ToInt32(txt_duracion.Text.ToString());
-                table = Rep_Cliente.SearchClienteXtiempo(tiempo);
-                ArmarReporteClientesXtiempo(table);
-            }
-            if (rBD2.Checked)
-            {
-               
-                table = Rep_Cliente.SearchClienteTodosxDuracion();
-                ArmarReporteClientesXtiempo(table);
-            }
-        }
-
-        private void ArmarReporteClientesXtiempo(DataTable table)
-        {
-            ReportDataSource parametro = new ReportDataSource("DataSet3", table);
-            reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Clientes.ReportClientexLlamada.rdlc";
-            reportViewer2.LocalReport.DataSources.Clear();
-            reportViewer2.LocalReport.DataSources.Add(parametro);
-            reportViewer2.RefreshReport();
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            CargarTablaClienteXtiempo();
-        }
+    
 
         // PESTANA CLIENTES PREPAGO
         private void btn_calcular_prepago_Click(object sender, EventArgs e)
@@ -171,13 +143,12 @@ namespace ComunicAr.Formularios.Reportes.Clientes
 
         private void rBD1_CheckedChanged(object sender, EventArgs e)
         {
-            txt_duracion.Enabled = true;
+      
         }
 
         private void rBD2_CheckedChanged(object sender, EventArgs e)
         {
-            txt_duracion.Enabled = false;
-            txt_duracion.Clear();
+           
         }
     }
 }

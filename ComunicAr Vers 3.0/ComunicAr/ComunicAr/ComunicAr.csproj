@@ -422,6 +422,12 @@
     <Compile Include="Formularios\Reportes\DispVendidos\Frm_Reporte_Disp_Vendidos.Designer.cs">
       <DependentUpon>Frm_Reporte_Disp_Vendidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\Llamada\Frm_Reporte_Llamadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Llamada\Frm_Reporte_Llamadas.Designer.cs">
+      <DependentUpon>Frm_Reporte_Llamadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\Numeros\DS_Rep_Numeros.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -708,7 +714,7 @@
     <EmbeddedResource Include="Formularios\Menu\Menu_Ubicación.resx">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexLlamada.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Llamada\ReportClientexLlamada.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexModDispo.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Clientes\Rep_Clientes_Prepago.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Dispositivos\Frm_Reporte_Disp.resx">
@@ -721,6 +727,9 @@
       <DependentUpon>Frm_Reporte_Disp_Vendidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\DispVendidos\Reporte_DispVend.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Llamada\Frm_Reporte_Llamadas.resx">
+      <DependentUpon>Frm_Reporte_Llamadas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Numeros\Reporte_para_Numeros.resx">
       <DependentUpon>Reporte_para_Numeros.cs</DependentUpon>
     </EmbeddedResource>
@@ -907,7 +916,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formularios\Reportes\Facturas\" />
-    <Folder Include="Formularios\Reportes\Llamadas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

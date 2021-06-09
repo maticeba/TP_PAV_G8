@@ -41,7 +41,7 @@ namespace ComunicAr.Formularios.Menu
             // 
             // bnt_menu_lista_cancelar
             // 
-            this.bnt_menu_lista_cancelar.Location = new System.Drawing.Point(139, 240);
+            this.bnt_menu_lista_cancelar.Location = new System.Drawing.Point(165, 240);
             this.bnt_menu_lista_cancelar.Name = "bnt_menu_lista_cancelar";
             this.bnt_menu_lista_cancelar.Size = new System.Drawing.Size(89, 23);
             this.bnt_menu_lista_cancelar.TabIndex = 0;
