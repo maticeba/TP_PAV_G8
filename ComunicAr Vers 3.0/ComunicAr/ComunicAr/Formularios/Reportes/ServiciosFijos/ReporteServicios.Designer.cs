@@ -128,7 +128,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(756, 423);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Servicios Fijos";
@@ -301,7 +301,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(756, 423);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Servicios Datos";
@@ -321,7 +321,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // txt_costo_hasta
             // 
             this.txt_costo_hasta.Location = new System.Drawing.Point(387, 23);
-            this.txt_costo_hasta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_costo_hasta.Margin = new System.Windows.Forms.Padding(2);
             this.txt_costo_hasta.Name = "txt_costo_hasta";
             this.txt_costo_hasta.Pp_Campo = null;
             this.txt_costo_hasta.Pp_MensajeError = null;
@@ -343,7 +343,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // reportViewer1
             // 
             this.reportViewer1.Location = new System.Drawing.Point(15, 101);
-            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(745, 315);
@@ -352,7 +352,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // btn_Calcular_Datos
             // 
             this.btn_Calcular_Datos.Location = new System.Drawing.Point(687, 74);
-            this.btn_Calcular_Datos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Calcular_Datos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Calcular_Datos.Name = "btn_Calcular_Datos";
             this.btn_Calcular_Datos.Size = new System.Drawing.Size(63, 22);
             this.btn_Calcular_Datos.TabIndex = 26;
@@ -363,7 +363,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // txt_limite
             // 
             this.txt_limite.Location = new System.Drawing.Point(283, 47);
-            this.txt_limite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_limite.Margin = new System.Windows.Forms.Padding(2);
             this.txt_limite.Name = "txt_limite";
             this.txt_limite.Pp_Campo = null;
             this.txt_limite.Pp_MensajeError = null;
@@ -375,7 +375,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // txt_costo_desde
             // 
             this.txt_costo_desde.Location = new System.Drawing.Point(282, 23);
-            this.txt_costo_desde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_costo_desde.Margin = new System.Windows.Forms.Padding(2);
             this.txt_costo_desde.Name = "txt_costo_desde";
             this.txt_costo_desde.Pp_Campo = null;
             this.txt_costo_desde.Pp_MensajeError = null;
@@ -420,7 +420,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             this.rb_todos1.AutoSize = true;
             this.rb_todos1.Location = new System.Drawing.Point(6, 61);
-            this.rb_todos1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_todos1.Margin = new System.Windows.Forms.Padding(2);
             this.rb_todos1.Name = "rb_todos1";
             this.rb_todos1.Size = new System.Drawing.Size(58, 17);
             this.rb_todos1.TabIndex = 3;
@@ -459,7 +459,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage3.Controls.Add(this.rv01_Fijos);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(756, 423);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Servicios Fijos Ofrecidos";
@@ -579,7 +579,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage4.Controls.Add(this.rv02);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(756, 423);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Servicios Prepagos Ofrecidos";

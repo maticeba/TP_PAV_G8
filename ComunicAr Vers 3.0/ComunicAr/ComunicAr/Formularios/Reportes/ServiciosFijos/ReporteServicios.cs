@@ -355,11 +355,14 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             txt_SF_Desde.Enabled = false;
             txt_SF_Hasta.Enabled = false;
 
+
+
         }
         private void rb02_Fijos_CheckedChanged(object sender, EventArgs e)
         {
             txt_SF_Desde.Enabled = true;
             txt_SF_Hasta.Enabled = true;
+
 
         }
 
@@ -499,13 +502,15 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         {
             txt_SP_desde.Enabled = false;
             txt_SP_hasta.Enabled = false;
-
+            rb01_Prepagos_Tipo.Enabled = false;
+            rb02_Prepagos_Tipo.Enabled = false;
         }
         private void rb02_Prepago_CheckedChanged(object sender, EventArgs e)
         {
             txt_SP_desde.Enabled = true;
             txt_SP_hasta.Enabled = true;
-
+            rb01_Prepagos_Tipo.Enabled = true;
+            rb02_Prepagos_Tipo.Enabled = true;
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
