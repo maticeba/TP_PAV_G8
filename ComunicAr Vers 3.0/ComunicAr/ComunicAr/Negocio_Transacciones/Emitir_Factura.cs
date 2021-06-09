@@ -21,8 +21,8 @@ namespace ComunicAr.Negocio_Transacciones
             if (pos == 0)
             {
                 string sql = @"DECLARE @fechaAct date = CAST(GETDATE() AS DATE) " +
-                "INSERT INTO  Facturas (fecha_emitido, fecha_1er_vto, fecha_2do_vto, nro_cliente) " +
-                       "VALUES (@fechaAct, DATEADD(DAY,10,@fechaAct), DATEADD(DAY,20,@fechaAct), " + Pp_nroCliente + ")";
+                "INSERT INTO  Facturas (fecha_emitido, fecha_1er_vto, fecha_2do_vto, nro_cliente, facturado) " +
+                       "VALUES (@fechaAct, DATEADD(DAY,10,@fechaAct), DATEADD(DAY,20,@fechaAct), " + Pp_nroCliente + ", 1)";
                 BD.Insertar(sql);
             }
             else
@@ -66,7 +66,7 @@ namespace ComunicAr.Negocio_Transacciones
         public DataTable CargarFactura(string Pp_nroCliente)
         {
             string sql = @"SELECT F.* FROM Facturas f " +
-                        "WHERE f.nro_cliente = " + Pp_nroCliente + "AND f.nro_factura = (SELECT MAX(nro_factura) FROM Facturas) ";
+                        "WHERE f.nro_cliente = " + Pp_nroCliente + " AND f.nro_factura = (SELECT MAX(nro_factura) FROM Facturas) ";
             return BD.EjecutarSelect(sql);
         }
 
