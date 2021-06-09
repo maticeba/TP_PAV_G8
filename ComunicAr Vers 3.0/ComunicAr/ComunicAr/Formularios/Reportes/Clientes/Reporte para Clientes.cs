@@ -29,6 +29,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             this.rv_cliente_clientesXtipoDispositivo.RefreshReport();
             cmb_report_clienteXdispo_tipoDispo.CargarCombo();
             //cmb_report_clienteXdispo_tipoDispo.SelectedIndex = -1;
+            //this.reportViewer2.RefreshReport();
         }
 
         private void btn_reporte_cliente_cargar_Click(object sender, EventArgs e)
@@ -125,6 +126,11 @@ namespace ComunicAr.Formularios.Reportes.Clientes
         {
             txt_cantidad.Enabled = false;
             txt_cantidad.Clear();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

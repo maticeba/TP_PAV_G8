@@ -133,16 +133,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.83937cm</Width>
+              <Width>3.85427cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.83937cm</Width>
+              <Width>3.85427cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.83937cm</Width>
+              <Width>3.85427cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.83937cm</Width>
+              <Width>3.79468cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -276,21 +276,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="nombre_razonSociall">
+                    <Textbox Name="nombre_razonSocial">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!nombre_razonSociall.Value</Value>
+                              <Value>=Fields!nombre_razonSocial.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>nombre_razonSociall</rd:DefaultName>
+                      <rd:DefaultName>nombre_razonSocial</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -429,7 +429,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.25939in</Height>
+    <Height>1.40522in</Height>
     <Style />
   </Body>
   <Width>6.81633in</Width>
@@ -567,8 +567,8 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="nombre_razonSociall">
-          <DataField>nombre_razonSociall</DataField>
+        <Field Name="nombre_razonSocial">
+          <DataField>nombre_razonSocial</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="nro_telefono">
@@ -586,7 +586,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DS_Rep_Clientes_Prepago</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Tomas\OneDrive\Escritorio\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\Formularios\Reportes\Clientes_Prepago\DS_Rep_Clientes_Prepago.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Tomas\OneDrive\Escritorio\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\Formularios\Reportes\Clientes\DS_Rep_Clientes_Prepago.xsd</rd:SchemaPath>
         <rd:TableName>DataTable1</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />

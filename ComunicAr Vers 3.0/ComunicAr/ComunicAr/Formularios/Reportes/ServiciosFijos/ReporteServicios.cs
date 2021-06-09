@@ -201,7 +201,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             DataTable tabla = new DataTable();
             if (rb_Costo.Checked == true)
             {
-                tabla = datos.ReporteDatos_limitecosto(txt_costo.Text.ToString());
+                tabla = datos.ReporteDatos_limitecosto(txt_costo_desde.Text.ToString(), txt_costo_hasta.Text.ToString());
                 ArmarReporteDatos(tabla);
             }
             if (rb_limite.Checked == true)
@@ -229,33 +229,33 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         }
         private void rb_Costo_CheckedChanged(object sender, EventArgs e)
         {
-            txt_costo.Enabled = true;
+            txt_costo_desde.Enabled = true;
             txt_limite.Enabled = false;
-            txt_costo.Clear();
+            txt_costo_desde.Clear();
             txt_limite.Clear();
         }
 
         private void rb_limite_CheckedChanged(object sender, EventArgs e)
         {
-            txt_costo.Enabled = false;
+            txt_costo_desde.Enabled = false;
             txt_limite.Enabled = true;
             txt_limite.Clear();
-            txt_costo.Clear();
+            txt_costo_desde.Clear();
         }
 
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
-            txt_costo.Enabled = false;
+            txt_costo_desde.Enabled = false;
             txt_limite.Enabled = false;
             txt_limite.Clear();
-            txt_costo.Clear();
+            txt_costo_desde.Clear();
         }
 
         private void btn_Calcular_Datos_Click(object sender, EventArgs e)
         {
             Calcular_datos();
         }
-
+        //TERMINA DATOS
         private void btn_Calcular_Fijos_Click(object sender, EventArgs e)
         {
 
@@ -379,6 +379,11 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                 }
             }
 
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
 
         }
     }

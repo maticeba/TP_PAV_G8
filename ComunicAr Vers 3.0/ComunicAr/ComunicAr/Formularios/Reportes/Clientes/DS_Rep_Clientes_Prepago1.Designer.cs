@@ -279,7 +279,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
             
-            private global::System.Data.DataColumn columnnombre_razonSociall;
+            private global::System.Data.DataColumn columnnombre_razonSocial;
             
             private global::System.Data.DataColumn columnnro_telefono;
             
@@ -322,9 +322,9 @@ namespace ComunicAr.Formularios.Reportes.Clientes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn nombre_razonSociallColumn {
+            public global::System.Data.DataColumn nombre_razonSocialColumn {
                 get {
-                    return this.columnnombre_razonSociall;
+                    return this.columnnombre_razonSocial;
                 }
             }
             
@@ -389,10 +389,10 @@ namespace ComunicAr.Formularios.Reportes.Clientes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string nombre_razonSociall, string nro_telefono, string descripcion, string costo) {
+            public DataTable1Row AddDataTable1Row(string nombre_razonSocial, string nro_telefono, string descripcion, string costo) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        nombre_razonSociall,
+                        nombre_razonSocial,
                         nro_telefono,
                         descripcion,
                         costo};
@@ -418,7 +418,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnnombre_razonSociall = base.Columns["nombre_razonSociall"];
+                this.columnnombre_razonSocial = base.Columns["nombre_razonSocial"];
                 this.columnnro_telefono = base.Columns["nro_telefono"];
                 this.columndescripcion = base.Columns["descripcion"];
                 this.columncosto = base.Columns["costo"];
@@ -427,8 +427,8 @@ namespace ComunicAr.Formularios.Reportes.Clientes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnnombre_razonSociall = new global::System.Data.DataColumn("nombre_razonSociall", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnombre_razonSociall);
+                this.columnnombre_razonSocial = new global::System.Data.DataColumn("nombre_razonSocial", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnombre_razonSocial);
                 this.columnnro_telefono = new global::System.Data.DataColumn("nro_telefono", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnro_telefono);
                 this.columndescripcion = new global::System.Data.DataColumn("descripcion", typeof(string), null, global::System.Data.MappingType.Element);
@@ -577,17 +577,17 @@ namespace ComunicAr.Formularios.Reportes.Clientes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string nombre_razonSociall {
+            public string nombre_razonSocial {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.nombre_razonSociallColumn]));
+                        return ((string)(this[this.tableDataTable1.nombre_razonSocialColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_razonSociall\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_razonSocial\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.nombre_razonSociallColumn] = value;
+                    this[this.tableDataTable1.nombre_razonSocialColumn] = value;
                 }
             }
             
@@ -641,14 +641,14 @@ namespace ComunicAr.Formularios.Reportes.Clientes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Isnombre_razonSociallNull() {
-                return this.IsNull(this.tableDataTable1.nombre_razonSociallColumn);
+            public bool Isnombre_razonSocialNull() {
+                return this.IsNull(this.tableDataTable1.nombre_razonSocialColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setnombre_razonSociallNull() {
-                this[this.tableDataTable1.nombre_razonSociallColumn] = global::System.Convert.DBNull;
+            public void Setnombre_razonSocialNull() {
+                this[this.tableDataTable1.nombre_razonSocialColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
