@@ -48,5 +48,28 @@ namespace ComunicAr.Negocio_Reportes
                             "AND n.id_dispositivo = " + modelo;
             return BD.EjecutarSelect(sql);
         }
+
+        public DataTable SearchClienteXtiempo(int tiempo)
+        {
+            string sql = @"SELECT l.fecha_hora_inicio, l.fecha_hora_fin, c.nombre_razonSocial, c.nro_cliente FROM Llamadas l, Cliente c, Numero n " +
+                "WHERE c.nro_cliente = n.nro_cliente AND l.id_nro_emisor = c.nro_cliente " +
+                "GROUP BY l.fecha_hora_inicio, l.fecha_hora_fin, c.nombre_razonSocial, c.nro_cliente " +
+                "HAVING DATEDIFF(hour, l.fecha_hora_inicio, l.fecha_hora_fin) > " + tiempo;
+
+            return BD.EjecutarSelect(sql);
+
+        }
+
+      
+
+        public DataTable SearchClienteTodosxDuracion()
+        {
+            string sql = @"SELECT l.fecha_hora_inicio, l.fecha_hora_fin, c.nombre_razonSocial, c.nro_cliente FROM Llamadas l, Cliente c, Numero n " +
+                "WHERE c.nro_cliente = n.nro_cliente AND l.id_nro_emisor = c.nro_cliente "
+                ;
+
+            return BD.EjecutarSelect(sql);
+
+        }
     }
 }

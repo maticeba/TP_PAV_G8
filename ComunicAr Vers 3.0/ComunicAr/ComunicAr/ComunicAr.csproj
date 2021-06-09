@@ -708,6 +708,7 @@
     <EmbeddedResource Include="Formularios\Menu\Menu_Ubicación.resx">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexLlamada.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexModDispo.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Clientes\Rep_Clientes_Prepago.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Dispositivos\Frm_Reporte_Disp.resx">

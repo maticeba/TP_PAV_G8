@@ -29,6 +29,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReporteServicios));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txt_hasta = new ComunicAr.Clases.TextBox01();
@@ -48,7 +49,6 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_costo_hasta = new ComunicAr.Clases.TextBox01();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btn_Calcular_Datos = new System.Windows.Forms.Button();
             this.txt_limite = new ComunicAr.Clases.TextBox01();
@@ -85,12 +85,14 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.rb02_Prepagos = new System.Windows.Forms.RadioButton();
             this.rv02 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -99,6 +101,9 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -279,19 +284,20 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::ComunicAr.Properties.Resources.kisspng_wireless_telecommunications_tower_cell_site_mobile_antenna_5aba4dff02eb99_778486621522159103012;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(23, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(108, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.txt_costo_hasta);
-            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.reportViewer1);
             this.tabPage2.Controls.Add(this.btn_Calcular_Datos);
             this.tabPage2.Controls.Add(this.txt_limite);
@@ -329,16 +335,6 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.txt_costo_hasta.Pp_Validable = false;
             this.txt_costo_hasta.Size = new System.Drawing.Size(81, 20);
             this.txt_costo_hasta.TabIndex = 29;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::ComunicAr.Properties.Resources.kisspng_wireless_telecommunications_tower_cell_site_mobile_antenna_5aba4dff02eb99_778486621522159103012;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 90);
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
             // 
             // reportViewer1
             // 
@@ -455,6 +451,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Controls.Add(this.rv01_Fijos);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -473,7 +470,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox3.Controls.Add(this.btn_Calcular_Fijos);
             this.groupBox3.Controls.Add(this.gr_tipo);
             this.groupBox3.Controls.Add(this.txt_SF_Desde);
-            this.groupBox3.Location = new System.Drawing.Point(6, 6);
+            this.groupBox3.Location = new System.Drawing.Point(139, 6);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(412, 129);
             this.groupBox3.TabIndex = 5;
@@ -574,6 +571,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.pictureBox4);
             this.tabPage4.Controls.Add(this.groupBox4);
             this.tabPage4.Controls.Add(this.groupBox5);
             this.tabPage4.Controls.Add(this.rv02);
@@ -589,7 +587,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             // 
             this.groupBox4.Controls.Add(this.rb02_Prepagos_Tipo);
             this.groupBox4.Controls.Add(this.rb01_Prepagos_Tipo);
-            this.groupBox4.Location = new System.Drawing.Point(424, 10);
+            this.groupBox4.Location = new System.Drawing.Point(559, 10);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(173, 77);
             this.groupBox4.TabIndex = 10;
@@ -626,7 +624,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox5.Controls.Add(this.txt_SP_desde);
             this.groupBox5.Controls.Add(this.btn_calcular_prepago);
             this.groupBox5.Controls.Add(this.groupBox6);
-            this.groupBox5.Location = new System.Drawing.Point(6, 6);
+            this.groupBox5.Location = new System.Drawing.Point(141, 6);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(412, 144);
             this.groupBox5.TabIndex = 9;
@@ -735,6 +733,39 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(15, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(19, 17);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(15, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
+            // 
             // ReporteServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -753,7 +784,6 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -768,6 +798,9 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -827,8 +860,10 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private Clases.TextBox01 txt_desde;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Clases.TextBox01 txt_costo_hasta;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

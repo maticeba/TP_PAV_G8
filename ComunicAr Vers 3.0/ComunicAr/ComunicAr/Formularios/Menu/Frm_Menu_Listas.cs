@@ -61,5 +61,14 @@ namespace ComunicAr.Formularios.Menu
             report_ser.ShowDialog();
         }
 
+        private void bnt_menu_lista_llamadas_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

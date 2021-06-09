@@ -30,10 +30,10 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource10 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Reporte_Disp));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource12 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource11 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.RepDisp02BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DS_ReportDisp = new ComunicAr.Formularios.Reportes.Dispositivos.DS_ReportDisp();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -60,7 +60,6 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.rB4 = new System.Windows.Forms.RadioButton();
             this.rB3 = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btn_xmarca = new System.Windows.Forms.RadioButton();
@@ -75,8 +74,9 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.gr_tipo = new System.Windows.Forms.GroupBox();
             this.rb03_Dispo = new System.Windows.Forms.RadioButton();
             this.rb02_Dispo = new System.Windows.Forms.RadioButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.RepDisp02BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DS_ReportDisp)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -85,10 +85,10 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.gr_tipo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,9 +104,9 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             // 
             // reportViewer1
             // 
-            reportDataSource10.Name = "DataSet2";
-            reportDataSource10.Value = this.RepDisp02BindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource10);
+            reportDataSource1.Name = "DataSet2";
+            reportDataSource1.Value = this.RepDisp02BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Disp.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(26, 135);
             this.reportViewer1.Name = "reportViewer1";
@@ -210,7 +210,7 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = global::ComunicAr.Properties.Resources.kisspng_telephone_computer_icons_smartphone_phone_portrait_smartphone_telephone_icon_5ab125de762f86_4600409415215590064841;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(26, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(126, 94);
@@ -233,6 +233,7 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.reportViewer2);
             this.tabPage2.Controls.Add(this.textBox03);
             this.tabPage2.Controls.Add(this.button3);
@@ -243,7 +244,6 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -255,9 +255,9 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             // 
             // reportViewer2
             // 
-            reportDataSource12.Name = "DataSet2";
-            reportDataSource12.Value = this.RepDisp02BindingSource;
-            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource12);
+            reportDataSource2.Name = "DataSet2";
+            reportDataSource2.Value = this.RepDisp02BindingSource;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Disp.rdlc";
             this.reportViewer2.Location = new System.Drawing.Point(24, 126);
             this.reportViewer2.Name = "reportViewer2";
@@ -380,24 +380,13 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.button2.Text = "Calcular";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
-            this.pictureBox2.Image = global::ComunicAr.Properties.Resources.kisspng_telephone_computer_icons_smartphone_phone_portrait_smartphone_telephone_icon_5ab125de762f86_4600409415215590064841;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(126, 94);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.btn_Calcular_DH);
             this.tabPage3.Controls.Add(this.reportViewer3);
             this.tabPage3.Controls.Add(this.gr_tipo);
-            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -416,7 +405,7 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.groupBox4.Controls.Add(this.txt_Disp_Hasta);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.txt_Disp_Desde);
-            this.groupBox4.Location = new System.Drawing.Point(289, 23);
+            this.groupBox4.Location = new System.Drawing.Point(290, 20);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(328, 91);
             this.groupBox4.TabIndex = 15;
@@ -519,9 +508,9 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             // 
             // reportViewer3
             // 
-            reportDataSource11.Name = "DataSet2";
-            reportDataSource11.Value = this.RepDisp02BindingSource;
-            this.reportViewer3.LocalReport.DataSources.Add(reportDataSource11);
+            reportDataSource3.Name = "DataSet2";
+            reportDataSource3.Value = this.RepDisp02BindingSource;
+            this.reportViewer3.LocalReport.DataSources.Add(reportDataSource3);
             this.reportViewer3.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Disp.rdlc";
             this.reportViewer3.Location = new System.Drawing.Point(24, 155);
             this.reportViewer3.Name = "reportViewer3";
@@ -563,18 +552,6 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.rb02_Dispo.UseVisualStyleBackColor = true;
             this.rb02_Dispo.CheckedChanged += new System.EventHandler(this.rb02_Dispo_CheckedChanged);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
-            this.pictureBox3.Image = global::ComunicAr.Properties.Resources.kisspng_telephone_computer_icons_smartphone_phone_portrait_smartphone_telephone_icon_5ab125de762f86_4600409415215590064841;
-            this.pictureBox3.Location = new System.Drawing.Point(24, 23);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(126, 94);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(642, 563);
@@ -584,6 +561,30 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.button4.Text = "Salir";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(24, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(126, 94);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(24, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(126, 94);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
             // 
             // Frm_Reporte_Disp
             // 
@@ -607,12 +608,12 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
             this.tabPage2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.gr_tipo.ResumeLayout(false);
             this.gr_tipo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -636,7 +637,6 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         private System.Windows.Forms.TextBox textBox05;
         private System.Windows.Forms.TextBox textBox06;
         private System.Windows.Forms.TextBox textBox04;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rB5;
@@ -650,7 +650,6 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.RadioButton btn_xprecio;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer3;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label7;
         private Clases.TextBox01 txt_Disp_Hasta;
@@ -663,5 +662,7 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
         private System.Windows.Forms.RadioButton btn_xmarca;
         private Clases.ComboBox01 cmb_xmarca;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
