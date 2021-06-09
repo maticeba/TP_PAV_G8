@@ -1216,7 +1216,6 @@ C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debu
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Frm_Menu_Listas.resources
-C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Datos.Frm_Rep_Datos.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Dispositivos.Frm_Reporte_Disp.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Frm_Reporte_Disp_Vendidos.resources
 C:\Users\matic\Desktop\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Numeros.Reporte_para_Numeros.resources

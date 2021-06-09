@@ -118,16 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3-37761_htc-hd-wallpapers-1080p-abstract-orange-and-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3-37761_htc-hd-wallpapers-1080p-abstract-orange-and-blue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kisspng-computer-icons-telephone-mobile-phones-telephone-number-5ad9917457e4e7.49120016152420798836" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-computer-icons-telephone-mobile-phones-telephone-number-5ad9917457e4e7.49120016152420798836.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="kisspng-wireless-telecommunications-tower-cell-site-mobile-antenna-5aba4dff02eb99.778486621522159103012" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-wireless-telecommunications-tower-cell-site-mobile-antenna-5aba4dff02eb99.778486621522159103012.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-computer-icons-customer-service-favicon-desktop-wa-icon-customers-drawing-5ab1957e19a495.6958333915215875821051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-computer-icons-customer-service-favicon-desktop-wa-icon-customers-drawing-5ab1957e19a495.6958333915215875821051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-telephone-computer-icons-smartphone-phone-portrait-smartphone-telephone-icon-5ab125de762f86.4600409415215590064841.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-computer-icons-invoice-price-icon-library-invoices-5ab1109a4074e9.562365921521553562264" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-computer-icons-invoice-price-icon-library-invoices-5ab1109a4074e9.562365921521553562264.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

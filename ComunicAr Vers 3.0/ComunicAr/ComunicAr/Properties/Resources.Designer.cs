@@ -73,9 +73,42 @@ namespace ComunicAr.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_customer_service_favicon_desktop_wa_icon_customers_drawing_5ab1957e19a495_6958333915215875821051 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-customer-service-favicon-desktop-wa-icon-customers-drawing" +
+                        "-5ab1957e19a495.6958333915215875821051", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_invoice_price_icon_library_invoices_5ab1109a4074e9_562365921521553562264 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-invoice-price-icon-library-invoices-5ab1109a4074e9.5623659" +
+                        "21521553562264", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_computer_icons_telephone_clip_art_5af63efd332c02_4684402915260874212096 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-computer-icons-telephone-clip-art-5af63efd332c02.4684402915260874212096", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_telephone_mobile_phones_telephone_number_5ad9917457e4e7_49120016152420798836 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-telephone-mobile-phones-telephone-number-5ad9917457e4e7.49" +
+                        "120016152420798836", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
