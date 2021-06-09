@@ -38,5 +38,25 @@ namespace ComunicAr.Negocio_Listados
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
+
+        public DataTable ReportHasta (string hasta)
+        {
+            string sql = @"SELECT n.nro_telefono, n.cod_nacional, n.cod_area, c.nombre_razonSocial, s.descripcion, s.costo_mensual " +
+                           " FROM Cliente c, Numero n, Servicios_fijos s, Servicios_contratados p " +
+                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio AND p.tipo_servicio = 'B'" +
+                            " AND s.costo_mensual < " + hasta;
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        } 
+
+        public DataTable ReprotDesde(string desde)
+        {
+            string sql = @"SELECT n.nro_telefono, n.cod_nacional, n.cod_area, c.nombre_razonSocial, s.descripcion, s.costo_mensual " +
+                           " FROM Cliente c, Numero n, Servicios_fijos s, Servicios_contratados p " +
+                           " WHERE n.id_numero = p.id_numero AND n.nro_cliente = c.nro_cliente AND s.cod_servicio = p.cod_servicio AND p.tipo_servicio = 'B'" +
+                           "AND s.costo_mensual >" + desde;
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
     }
 }

@@ -134,6 +134,7 @@ namespace ComunicAr.Formularios.Menu
             this.Controls.Add(this.bnt_menu_lista_cancelar);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Frm_Menu_Listas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Listas";
             this.Load += new System.EventHandler(this.Frm_Menu_Listas_Load);
             this.ResumeLayout(false);

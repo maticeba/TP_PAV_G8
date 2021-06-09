@@ -58,18 +58,23 @@ namespace ComunicAr.Formularios.Reportes.Numeros
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             cmb_nac.Enabled = true;
+            cmb_area.Enabled = false;
+            cmb_area.SelectedIndex = -1;
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
             cmb_nac.Enabled = true;
            cmb_area.Enabled = true;
+            cmb_nac.SelectedIndex = -1;
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
             cmb_nac.Enabled = false;
             cmb_area.Enabled = false;
+            cmb_area.SelectedIndex = -1;
+            cmb_nac.SelectedIndex = -1;
         }
 
         private void tabPage1_Click(object sender, EventArgs e)

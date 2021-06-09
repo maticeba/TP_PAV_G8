@@ -79,6 +79,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             txt_cliente.Enabled = false;
             btn_calc.Enabled = true;
             txt_cliente.Clear();
+            btn_buscar.Visible = false;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -113,13 +114,8 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                     string numero = tabla.Rows[i]["cod_nacional"].ToString() + tabla.Rows[i]["cod_area"].ToString() + tabla.Rows[i]["nro_telefono"].ToString();
 
                     DataRow row = tabla2.NewRow();
-                    /*row["numero"] = numero;
-                    row["nombre_razonSocial"] = tabla.Rows[i]["nombre_razonSocial"].ToString();
-                    row["descripcion"] = tabla.Rows[i]["descripcion"].ToString();
-                    row["costo_mensual"] = tabla.Rows[i]["costo_mensual"].ToString();*/
                     tabla2.Rows.Add(tabla.Rows[i]["nombre_razonSocial"].ToString(), numero, tabla.Rows[i]["descripcion"].ToString(), tabla.Rows[i]["costo_mensual"].ToString());
                     string prueba = numero + tabla.Rows[i]["nombre_razonSocial"].ToString() + tabla.Rows[i]["descripcion"].ToString() + tabla.Rows[i]["costo_mensual"].ToString();
-                    //MessageBox.Show(prueba);
                 }
                 Reporte_fijos(tabla2);
             }
@@ -138,13 +134,8 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                         string numero = tabla.Rows[i]["cod_nacional"].ToString() + tabla.Rows[i]["cod_area"].ToString() + tabla.Rows[i]["nro_telefono"].ToString();
 
                         DataRow row = tabla2.NewRow();
-                        /*row["numero"] = numero;
-                        row["nombre_razonSocial"] = tabla.Rows[i]["nombre_razonSocial"].ToString();
-                        row["descripcion"] = tabla.Rows[i]["descripcion"].ToString();
-                        row["costo_mensual"] = tabla.Rows[i]["costo_mensual"].ToString();*/
                         tabla2.Rows.Add(tabla.Rows[i]["nombre_razonSocial"].ToString(), numero, tabla.Rows[i]["descripcion"].ToString(), tabla.Rows[i]["costo_mensual"].ToString());
                         string prueba = numero + tabla.Rows[i]["nombre_razonSocial"].ToString() + tabla.Rows[i]["descripcion"].ToString() + tabla.Rows[i]["costo_mensual"].ToString();
-                        //MessageBox.Show(prueba);
                     }
                     Reporte_fijos(tabla2);
 
@@ -153,9 +144,36 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             }
             if (rb_num.Checked == true)
             {
-                if (txt_desde.Text == "" || txt_hasta.Text == "")
+                if (txt_desde.Text == "" && txt_hasta.Text == "")
                 {
                     MessageBox.Show("Introduzca un rango de precios");
+                }
+                else if (txt_desde.Text == "" && txt_hasta.Text != "")
+                {
+                    DataTable tabla = new DataTable();
+                    tabla = rp_sf.ReportHasta(txt_hasta.Text);
+                    for (int i = 0; i < tabla.Rows.Count; i++)
+                    {
+                        string numero = tabla.Rows[i]["cod_nacional"].ToString() + tabla.Rows[i]["cod_area"].ToString() + tabla.Rows[i]["nro_telefono"].ToString();
+                        DataRow row = tabla2.NewRow();
+                        tabla2.Rows.Add(tabla.Rows[i]["nombre_razonSocial"].ToString(), numero, tabla.Rows[i]["descripcion"].ToString(), tabla.Rows[i]["costo_mensual"].ToString());
+                        string prueba = numero + tabla.Rows[i]["nombre_razonSocial"].ToString() + tabla.Rows[i]["descripcion"].ToString() + tabla.Rows[i]["costo_mensual"].ToString();
+                    }
+                    Reporte_fijos(tabla2);
+                }
+                else if (txt_desde.Text != "" && txt_hasta.Text == "")
+                {
+                    DataTable tabla = new DataTable();
+                    tabla = rp_sf.ReprotDesde(txt_desde.Text);
+                    for (int i = 0; i < tabla.Rows.Count; i++)
+                    {
+                        string numero = tabla.Rows[i]["cod_nacional"].ToString() + tabla.Rows[i]["cod_area"].ToString() + tabla.Rows[i]["nro_telefono"].ToString();
+
+                        DataRow row = tabla2.NewRow();
+                        tabla2.Rows.Add(tabla.Rows[i]["nombre_razonSocial"].ToString(), numero, tabla.Rows[i]["descripcion"].ToString(), tabla.Rows[i]["costo_mensual"].ToString());
+                        string prueba = numero + tabla.Rows[i]["nombre_razonSocial"].ToString() + tabla.Rows[i]["descripcion"].ToString() + tabla.Rows[i]["costo_mensual"].ToString();
+                    }
+                    Reporte_fijos(tabla2);
                 }
                 else
                 {
@@ -164,15 +182,10 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                     for (int i = 0; i < tabla.Rows.Count; i++)
                     {
                         string numero = tabla.Rows[i]["cod_nacional"].ToString() + tabla.Rows[i]["cod_area"].ToString() + tabla.Rows[i]["nro_telefono"].ToString();
-
                         DataRow row = tabla2.NewRow();
-                        /*row["numero"] = numero;
-                        row["nombre_razonSocial"] = tabla.Rows[i]["nombre_razonSocial"].ToString();
-                        row["descripcion"] = tabla.Rows[i]["descripcion"].ToString();
-                        row["costo_mensual"] = tabla.Rows[i]["costo_mensual"].ToString();*/
                         tabla2.Rows.Add(tabla.Rows[i]["nombre_razonSocial"].ToString(), numero, tabla.Rows[i]["descripcion"].ToString(), tabla.Rows[i]["costo_mensual"].ToString());
                         string prueba = numero + tabla.Rows[i]["nombre_razonSocial"].ToString() + tabla.Rows[i]["descripcion"].ToString() + tabla.Rows[i]["costo_mensual"].ToString();
-                        //MessageBox.Show(prueba);
+
                     }
                     Reporte_fijos(tabla2);
                 }
@@ -194,7 +207,12 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
         {
 
         }
+        /// <summary>
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// </summary>
         // REPORTE DE SERVICIOS DATOS
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         Reporte_Datos datos = new Reporte_Datos();
         private void Calcular_datos()
         {
