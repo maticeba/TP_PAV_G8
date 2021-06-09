@@ -29,6 +29,12 @@ namespace ComunicAr.Negocio
                          + "WHERE "+ desde + " < s.costo_mensual " + "AND s.costo_mensual < "+ hasta;
             return BD.EjecutarSelect(sql);
         }
+        public DataTable ServicioFijoMayorMenor(int numero, string signo)
+        {
+            string sql = @"SELECT s.* FROM servicios_fijos s "
+                         + "WHERE s.costo_mensual " + signo + numero;
+            return BD.EjecutarSelect(sql);
+        }
         public DataTable ServicioFijoPorCodigo(string cod_servicio)
         {
             string sql = @"SELECT s.* FROM servicios_fijos s "

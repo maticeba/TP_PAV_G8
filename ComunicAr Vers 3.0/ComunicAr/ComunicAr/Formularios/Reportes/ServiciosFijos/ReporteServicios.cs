@@ -302,12 +302,39 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
             if (rb02_Fijos.Checked == true)
             {
                 flag = true;
-                if (string.IsNullOrEmpty(txt_SF_Desde.Text)| string.IsNullOrEmpty(txt_SF_Hasta.Text))
+                if (string.IsNullOrEmpty(txt_SF_Desde.Text) && string.IsNullOrEmpty(txt_SF_Hasta.Text))
                 {
                     MessageBox.Show("Debe completar la informacion");
                     flag = false;
 
                 }
+                else
+                {
+                    if (string.IsNullOrEmpty(txt_SF_Desde.Text))
+                    {
+                        int hasta = int.Parse(txt_SF_Hasta.Text);
+                        tabla = fijo.ServicioFijoMayorMenor(hasta, "<");
+                        ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
+                        rv01_Fijos.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Servicios_Fijos.rdlc";
+                        rv01_Fijos.LocalReport.DataSources.Clear();
+                        rv01_Fijos.LocalReport.DataSources.Add(PaqueteDatos);
+                        rv01_Fijos.RefreshReport();
+                        flag = false;
+                    }
+                    if (string.IsNullOrEmpty(txt_SF_Hasta.Text))
+                    {
+                        int desde = int.Parse(txt_SF_Desde.Text);
+                        tabla = fijo.ServicioFijoMayorMenor(desde, ">");
+                        ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
+                        rv01_Fijos.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Servicios_Fijos.rdlc";
+                        rv01_Fijos.LocalReport.DataSources.Clear();
+                        rv01_Fijos.LocalReport.DataSources.Add(PaqueteDatos);
+                        rv01_Fijos.RefreshReport();
+                        flag = false;
+
+                    }
+                }
+
                 if (flag == true)
                 {
                     int desde = int.Parse(txt_SF_Desde.Text);
@@ -321,6 +348,18 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                 }
 
             }
+
+        }
+        private void rb03_Fijos_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_SF_Desde.Enabled = false;
+            txt_SF_Hasta.Enabled = false;
+
+        }
+        private void rb02_Fijos_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_SF_Desde.Enabled = true;
+            txt_SF_Hasta.Enabled = true;
 
         }
 
@@ -339,25 +378,53 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                 {
                     tabla = prepago.ServiciosCompletos();
                     ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
-                    rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Servicios_Prepagos.rdlc";
+                    rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
                     rv02.LocalReport.DataSources.Clear();
                     rv02.LocalReport.DataSources.Add(PaqueteDatos);
                     rv02.RefreshReport();
-                }                
+                }
+
+
+                flag = true;
+                if (string.IsNullOrEmpty(txt_SP_desde.Text) && string.IsNullOrEmpty(txt_SP_hasta.Text))
                 {
-                    flag = true;
-                    if (string.IsNullOrEmpty(txt_SP_desde.Text)| string.IsNullOrEmpty(txt_SP_hasta.Text))
+                    MessageBox.Show("Debe completar la informacion");
+                    flag = false;
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(txt_SP_desde.Text))
                     {
-                        MessageBox.Show("Debe completar la informacion");
+                        int hasta = int.Parse(txt_SP_hasta.Text);
+                        tabla = prepago.ServiciosPrepagosMayorMenorDuracion(hasta, "<");
+                        ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
+                        rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
+                        rv02.LocalReport.DataSources.Clear();
+                        rv02.LocalReport.DataSources.Add(PaqueteDatos);
+                        rv02.RefreshReport();
                         flag = false;
                     }
+
+                    if (string.IsNullOrEmpty(txt_SP_hasta.Text))
+                    {
+                        int desde = int.Parse(txt_SP_desde.Text);
+                        tabla = prepago.ServiciosPrepagosMayorMenorDuracion(desde, ">");
+                        ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
+                        rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
+                        rv02.LocalReport.DataSources.Clear();
+                        rv02.LocalReport.DataSources.Add(PaqueteDatos);
+                        rv02.RefreshReport();
+                        flag = false;
+
+                    }
+
                     if (flag == true)
                     {
                         int desde = int.Parse(txt_SP_desde.Text);
                         int hasta = int.Parse(txt_SP_hasta.Text);
-                        tabla = prepago.ServicioPrepagoMMDuracion(desde,hasta);
+                        tabla = prepago.ServicioPrepagoMMDuracion(desde, hasta);
                         ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
-                        rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Servicios_Prepagos.rdlc";
+                        rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
                         rv02.LocalReport.DataSources.Clear();
                         rv02.LocalReport.DataSources.Add(PaqueteDatos);
                         rv02.RefreshReport();
@@ -372,7 +439,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                 {
                     tabla = prepago.ServiciosCompletos();
                     ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
-                    rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Servicios_Prepagos.rdlc";
+                    rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
                     rv02.LocalReport.DataSources.Clear();
                     rv02.LocalReport.DataSources.Add(PaqueteDatos);
                     rv02.RefreshReport();
@@ -380,10 +447,36 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                 if (rb02_Prepagos.Checked == true)
                 {
                     flag = true;
-                    if (string.IsNullOrEmpty(txt_SP_desde.Text)| string.IsNullOrEmpty(txt_SP_hasta.Text))
+                    if (string.IsNullOrEmpty(txt_SP_desde.Text) && string.IsNullOrEmpty(txt_SP_hasta.Text))
                     {
                         MessageBox.Show("Debe completar la informacion");
                         flag = false;
+                    }
+                    else
+                    {
+                        if (string.IsNullOrEmpty(txt_SP_desde.Text))
+                        {
+                            int hasta = int.Parse(txt_SP_hasta.Text);
+                            tabla = prepago.ServiciosPrepagosMayorMenor(hasta, "<");
+                            ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
+                            rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
+                            rv02.LocalReport.DataSources.Clear();
+                            rv02.LocalReport.DataSources.Add(PaqueteDatos);
+                            rv02.RefreshReport();
+                            flag = false;
+                        }
+                        if (string.IsNullOrEmpty(txt_SP_hasta.Text))
+                        {
+                            int desde = int.Parse(txt_SP_desde.Text);
+                            tabla = prepago.ServiciosPrepagosMayorMenor(desde, ">");
+                            ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
+                            rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
+                            rv02.LocalReport.DataSources.Clear();
+                            rv02.LocalReport.DataSources.Add(PaqueteDatos);
+                            rv02.RefreshReport();
+                            flag = false;
+
+                        }
                     }
                     if (flag == true)
                     {
@@ -391,7 +484,7 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                         int hasta = int.Parse(txt_SP_hasta.Text);
                         tabla = prepago.ServiciosPrepagosMMCosto(desde,hasta);
                         ReportDataSource PaqueteDatos = new ReportDataSource("DataSet1", tabla);
-                        rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Servicios.Reporte_Servicios_Prepagos.rdlc";
+                        rv02.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.ServiciosFijos.Reporte_Servicios_Prepagos.rdlc";
                         rv02.LocalReport.DataSources.Clear();
                         rv02.LocalReport.DataSources.Add(PaqueteDatos);
                         rv02.RefreshReport();
@@ -400,6 +493,18 @@ namespace ComunicAr.Formularios.Reportes.ServiciosFijos
                 }
             }
 
+
+        }
+        private void rb03_Prepago_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_SP_desde.Enabled = false;
+            txt_SP_hasta.Enabled = false;
+
+        }
+        private void rb02_Prepago_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_SP_desde.Enabled = true;
+            txt_SP_hasta.Enabled = true;
 
         }
 

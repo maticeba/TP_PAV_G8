@@ -35,6 +35,20 @@ namespace ComunicAr.Negocio
                          + "AND  "+ desde + " < s.costo " + "AND s.costo < "+ hasta;
             return BD.EjecutarSelect(sql);
         }
+        public DataTable ServiciosPrepagosMayorMenor(int numero, string signo)
+        {
+            string sql = @"SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r "
+                         + "WHERE s.id_region = r.id_region "
+                         + "AND s.costo " + signo + numero;
+            return BD.EjecutarSelect(sql);
+        }
+        public DataTable ServiciosPrepagosMayorMenorDuracion(int numero, string signo)
+        {
+            string sql = @"SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r "
+                         + "WHERE s.id_region = r.id_region "
+                         + "AND s.duracion " + signo + numero;
+            return BD.EjecutarSelect(sql);
+        }
         public DataTable ServicioPrepagoMMDuracion(int desde, int hasta)
         {
             string sql = @"SELECT s. *, r.descripcion_region " + " FROM servicios_prepago s, region r "
@@ -42,6 +56,7 @@ namespace ComunicAr.Negocio
                          + "AND  " + desde + " < s.duracion " + "AND s.duracion < " + hasta;
             return BD.EjecutarSelect(sql);
         }
+
 
         public DataTable Servicios_prepagos_por_id(string id_pack)
         {

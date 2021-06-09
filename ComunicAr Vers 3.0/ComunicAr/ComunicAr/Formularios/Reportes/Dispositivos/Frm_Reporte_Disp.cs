@@ -277,10 +277,42 @@ namespace ComunicAr.Formularios.Reportes.Dispositivos
 
                     if (btn_xprecio.Checked == true)
                     {
-                        if (string.IsNullOrEmpty(txt_Disp_Desde.Text) | string.IsNullOrEmpty(txt_Disp_Hasta.Text))
+                        if (string.IsNullOrEmpty(txt_Disp_Desde.Text) && string.IsNullOrEmpty(txt_Disp_Hasta.Text))
                         {
                             MessageBox.Show("Debe completar la informacion");
                             flag = false;
+
+                        }
+                        else
+                        {
+                            if (string.IsNullOrEmpty(txt_Disp_Desde.Text))
+                            {
+
+                                int hasta = int.Parse(txt_Disp_Hasta.Text);
+                                tabla = precio.Dispo_en_VentaMM(hasta, "<");
+                                ReportDataSource PaqueteDatos = new ReportDataSource("DispenVenta", tabla);
+                                reportViewer3.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Dispositivos_En_Venta.rdlc";
+                                reportViewer3.LocalReport.DataSources.Clear();
+                                reportViewer3.LocalReport.DataSources.Add(PaqueteDatos);
+                                reportViewer3.RefreshReport();
+                                flag = false;
+
+
+                            }
+
+                            if (string.IsNullOrEmpty(txt_Disp_Hasta.Text))
+                            {
+
+                                int desde = int.Parse(txt_Disp_Desde.Text);
+                                tabla = precio.Dispo_en_VentaMM(desde, ">");
+                                ReportDataSource PaqueteDatos = new ReportDataSource("DispenVenta", tabla);
+                                reportViewer3.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Reportes.Dispositivos.Reporte_Dispositivos_En_Venta.rdlc";
+                                reportViewer3.LocalReport.DataSources.Clear();
+                                reportViewer3.LocalReport.DataSources.Add(PaqueteDatos);
+                                reportViewer3.RefreshReport();
+                                flag = false;
+
+                            }
 
                         }
                         if (flag == true)

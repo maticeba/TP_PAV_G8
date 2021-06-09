@@ -48,6 +48,12 @@ namespace ComunicAr.Negocio
                          + "WHERE " + desde + " < s.precio " + "AND s.precio < " + hasta;
             return BD.EjecutarSelect(sql);
         }
+        public DataTable Dispo_en_VentaMM(int numero, string signo)
+        {
+            string sql = @"SELECT s.* FROM dispositivos s "
+                         + "WHERE   s.precio " + signo + numero ;
+            return BD.EjecutarSelect(sql);
+        }
         public void Insertar(Control.ControlCollection controles)
         {
             TratamientosEspeciales tratamientos = new TratamientosEspeciales();
