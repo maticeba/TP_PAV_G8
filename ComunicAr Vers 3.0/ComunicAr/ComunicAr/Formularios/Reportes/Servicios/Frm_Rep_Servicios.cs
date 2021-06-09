@@ -24,7 +24,7 @@ namespace ComunicAr.Formularios.Reportes.Servicios
             DataTable tabla = new DataTable();
             if (rb_Costo.Checked == true)
             {
-                tabla = datos.ReporteDatos_limitecosto(txt_costo.Text.ToString());
+                //tabla = datos.ReporteDatos_limitecosto(txt.Text.ToString());
                 ArmarReporteDatos(tabla);
             }
             if (rb_limite.Checked == true)

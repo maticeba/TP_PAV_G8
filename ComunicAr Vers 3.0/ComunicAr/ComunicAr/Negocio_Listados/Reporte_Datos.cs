@@ -22,11 +22,11 @@ namespace ComunicAr.Negocio_Listados
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
-        public DataTable ReporteDatos_limitecosto(string tope)
+        public DataTable ReporteDatos_limitecosto(string hasta, string desde)
         {
             string sql = "SELECT d.cod_datos, d.limite_datos, d.descripcion, d.costo_fijo " +
                 "FROM Servicios_datos d " +
-                "WHERE d.costo_fijo <= '" + tope + "' " +
+                "WHERE d.costo_fijo > '" + hasta + "' AND d.costo_fijo < '" + desde + "' " +
                 "ORDER BY d.cod_datos";
             DataTable tabla = new DataTable();
             tabla = BD.EjecutarSelect(sql);
