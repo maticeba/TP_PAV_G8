@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ComunicAr.Formularios.Estadisticas.Llamadas;
 
 namespace ComunicAr
 {
@@ -17,8 +17,8 @@ namespace ComunicAr
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Escritorio());
-            
+            //Application.Run(new Escritorio());
+            Application.Run(new Frm_Llamadas_Estadisticas());
         }
     }
 

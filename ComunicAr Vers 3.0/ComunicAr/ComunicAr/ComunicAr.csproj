@@ -344,6 +344,11 @@
     <Compile Include="Formularios\Escritorio.Designer.cs">
       <DependentUpon>Escritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Llamadas\DS_Llamadas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Llamadas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -546,6 +551,7 @@
     <Compile Include="Negocio\Servicios_Contratados.cs" />
     <Compile Include="Negocio\Servicios_Datos.cs" />
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
+    <Compile Include="Negocio_Estadisticas\Tipo_Llamada.cs" />
     <Compile Include="Negocio_Listados\Dispositivos.cs" />
     <Compile Include="Negocio_Listados\Dispositivos1.cs" />
     <Compile Include="Negocio_Listados\Reporte_Clientes_Prepago.cs" />
@@ -708,7 +714,7 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.resx">
       <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Report1.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_TipoComunicacion.rdlc" />
     <EmbeddedResource Include="Formularios\Menu\Frm_Menu_ABM.resx">
       <DependentUpon>Frm_Menu_ABM.cs</DependentUpon>
     </EmbeddedResource>
@@ -801,6 +807,17 @@
     <EmbeddedResource Include="Formularios\Reportes\Clientes\Reporte para Clientes.resx">
       <DependentUpon>Reporte para Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Formularios\Estadisticas\Llamadas\DS_Llamadas.xsc">
+      <DependentUpon>DS_Llamadas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Llamadas\DS_Llamadas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Llamadas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Estadisticas\Llamadas\DS_Llamadas.xss">
+      <DependentUpon>DS_Llamadas.xsd</DependentUpon>
+    </None>
     <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xsc">
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
     </None>
