@@ -30,7 +30,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             cmb_report_clienteXdispo_tipoDispo.CargarCombo();
             //cmb_report_clienteXdispo_tipoDispo.SelectedIndex = -1;
             //this.reportViewer2.RefreshReport();
-            this.reportViewer2.RefreshReport();
+           // this.reportViewer2.RefreshReport();
         }
 
         private void btn_reporte_cliente_cargar_Click(object sender, EventArgs e)
@@ -91,7 +91,9 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             rv_cliente_clientesXtipoDispositivo.LocalReport.DataSources.Add(clienteXmodelo);
             rv_cliente_clientesXtipoDispositivo.RefreshReport();
         }
-        
+        //PESTANIA CLIENTES X CIERTO TIEMPO DE LLAMADA
+    
+
         // PESTANA CLIENTES PREPAGO
         private void btn_calcular_prepago_Click(object sender, EventArgs e)
         {
@@ -139,9 +141,14 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             this.Close();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void rBD1_CheckedChanged(object sender, EventArgs e)
         {
+      
+        }
 
+        private void rBD2_CheckedChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

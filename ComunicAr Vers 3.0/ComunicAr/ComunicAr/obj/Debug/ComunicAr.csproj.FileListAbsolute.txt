@@ -1302,9 +1302,3 @@ C:\Users\joaco\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csprojAssemblyReference.cache
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.ServiciosFijos.ReporteServicios.resources
 C:\Users\alefo\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Llamada.Frm_Reporte_Llamadas.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Dispositivos.Frm_Reporte_Disp.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Frm_Reporte_Disp_Vendidos.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Llamada.Frm_Reporte_Llamadas.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Numeros.Reporte_para_Numeros.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.ServiciosFijos.ReporteServicios.resources
-C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Servicios.Frm_Rep_Servicios.resources
