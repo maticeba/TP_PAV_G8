@@ -344,6 +344,12 @@
     <Compile Include="Formularios\Escritorio.Designer.cs">
       <DependentUpon>Escritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.Designer.cs">
+      <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Menu\Frm_Menu_ABM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -699,6 +705,10 @@
     <EmbeddedResource Include="Formularios\Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.resx">
+      <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Report1.rdlc" />
     <EmbeddedResource Include="Formularios\Menu\Frm_Menu_ABM.resx">
       <DependentUpon>Frm_Menu_ABM.cs</DependentUpon>
     </EmbeddedResource>
