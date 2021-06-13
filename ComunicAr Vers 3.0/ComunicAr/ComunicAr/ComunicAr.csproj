@@ -433,6 +433,12 @@
     <Compile Include="Formularios\Reportes\DispVendidos\Frm_Reporte_Disp_Vendidos.Designer.cs">
       <DependentUpon>Frm_Reporte_Disp_Vendidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\Facturas\Frm_Reporte_Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Facturas\Frm_Reporte_Facturas.Designer.cs">
+      <DependentUpon>Frm_Reporte_Facturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\Llamada\Frm_Reporte_Llamadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -730,6 +736,10 @@
     <EmbeddedResource Include="Formularios\Menu\Menu_Ubicación.resx">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Facturas\Frm_Reporte_Facturas.resx">
+      <DependentUpon>Frm_Reporte_Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Facturas\Reporte_Fact_Monto.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Llamada\ReportClientexLlamada.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Clientes\ReportClientexModDispo.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Clientes\Rep_Clientes_Prepago.rdlc" />
@@ -941,8 +951,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\Reportes\Facturas\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

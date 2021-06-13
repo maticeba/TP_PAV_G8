@@ -70,7 +70,8 @@ namespace ComunicAr.Formularios.Menu
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Frm_Reporte_Facturas frm_Reporte_Factura = new Frm_Reporte_Facturas();
+            frm_Reporte_Factura.ShowDialog();
         }
     }
 }

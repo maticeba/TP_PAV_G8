@@ -69,6 +69,29 @@ namespace ComunicAr.Negocio_Transacciones
                         "WHERE f.nro_cliente = " + Pp_nroCliente + "AND f.nro_factura = (SELECT MAX(nro_factura) FROM Facturas) ";
             return BD.EjecutarSelect(sql);
         }
+        public DataTable MontoFactura()
+        {
+            string sql = @"SELECT  fac.nro_factura ,fac.nro_cliente, fac.tipo_factura,sum(d.costo_final + f.costo_final + l.costo_final + p.costo_final) as costo   FROM Detalle_fact_datos d, Detalle_fact_fijos f, " +
+                                 "Detalle_fact_llamada l, Detalle_fact_prepago p, Facturas fac WHERE fac.nro_factura = d.nro_factura OR fac.nro_factura = f.nro_factura OR " +
+                                 "fac.nro_factura = l.nro_factura OR fac.nro_factura = p.nro_factura group by fac.nro_factura,fac.nro_cliente, fac.tipo_factura";
+            return BD.EjecutarSelect(sql);
+
+        }
+        public DataTable MontoFacturaMM(int numero, string simbolo)
+        {
+            string sql = @"SELECT  fac.nro_factura ,fac.nro_cliente, fac.tipo_factura,sum(d.costo_final + f.costo_final + l.costo_final + p.costo_final) as costo   FROM Detalle_fact_datos d, Detalle_fact_fijos f, " +
+                                "Detalle_fact_llamada l, Detalle_fact_prepago p, Facturas fac WHERE fac.nro_factura = d.nro_factura OR fac.nro_factura = f.nro_factura OR " +
+                                "fac.nro_factura = l.nro_factura OR fac.nro_factura = p.nro_factura group AND costo " + simbolo + numero + "by fac.nro_factura";
+            return BD.EjecutarSelect(sql);
+        }
+        public DataTable MontoFacturaentre(int desde, int hasta)
+        {
+            string sql = @"SELECT  fac.nro_factura ,fac.nro_cliente, fac.tipo_factura,sum(d.costo_final + f.costo_final + l.costo_final + p.costo_final) as costo   FROM Detalle_fact_datos d, Detalle_fact_fijos f, " +
+                        "Detalle_fact_llamada l, Detalle_fact_prepago p, Facturas fac WHERE fac.nro_factura = d.nro_factura OR fac.nro_factura = f.nro_factura OR " +
+                        "fac.nro_factura = l.nro_factura OR fac.nro_factura = p.nro_factura group AND costo >" + desde + " AND costo <" + hasta + "by fac.nro_factura";
+            return BD.EjecutarSelect(sql);
+
+        }
 
 
     }

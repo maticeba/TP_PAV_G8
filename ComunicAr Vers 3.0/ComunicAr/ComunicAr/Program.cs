@@ -17,8 +17,8 @@ namespace ComunicAr
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Escritorio());
-            Application.Run(new Frm_Llamadas_Estadisticas());
+            Application.Run(new Escritorio());
+            //Application.Run(new Frm_Llamadas_Estadisticas());
         }
     }
 
