@@ -39,16 +39,13 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.rv_tipoLlamadas = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Calcular2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.rb_rango2 = new System.Windows.Forms.RadioButton();
             this.rb_sin = new System.Windows.Forms.RadioButton();
             this.rb_cliente = new System.Windows.Forms.RadioButton();
-            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rv_llamadas = new Microsoft.Reporting.WinForms.ReportViewer();
             this.button1 = new System.Windows.Forms.Button();
             this.txt_año = new ComunicAr.Clases.TextBox01();
             this.txt_mesHasta = new ComunicAr.Clases.TextBox01();
@@ -56,8 +53,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.txt_añoDesde = new ComunicAr.Clases.TextBox01();
             this.txt_mesDesde = new ComunicAr.Clases.TextBox01();
             this.txt_mes = new ComunicAr.Clases.TextBox01();
-            this.txt_mesHasta2 = new ComunicAr.Clases.TextBox01();
-            this.txt_mesDesde2 = new ComunicAr.Clases.TextBox01();
             this.txt_año2 = new ComunicAr.Clases.TextBox01();
             this.txt_cliente2 = new ComunicAr.Clases.TextBox01();
             this.tabControl1.SuspendLayout();
@@ -166,14 +161,11 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.Calcular2);
-            this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.btn_buscar);
             this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.reportViewer2);
-            this.tabPage2.Controls.Add(this.txt_mesHasta2);
-            this.tabPage2.Controls.Add(this.txt_mesDesde2);
+            this.tabPage2.Controls.Add(this.rv_llamadas);
             this.tabPage2.Controls.Add(this.txt_año2);
             this.tabPage2.Controls.Add(this.txt_cliente2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -187,26 +179,19 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             // Calcular2
             // 
-            this.Calcular2.Location = new System.Drawing.Point(593, 103);
+            this.Calcular2.Location = new System.Drawing.Point(593, 90);
             this.Calcular2.Name = "Calcular2";
             this.Calcular2.Size = new System.Drawing.Size(75, 23);
             this.Calcular2.TabIndex = 9;
             this.Calcular2.Text = "Calcular";
             this.Calcular2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(430, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(12, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "/";
+            this.Calcular2.Click += new System.EventHandler(this.Calcular2_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(326, 38);
+            this.label2.Enabled = false;
+            this.label2.Location = new System.Drawing.Point(298, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 8;
@@ -215,7 +200,8 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(356, 13);
+            this.label1.Enabled = false;
+            this.label1.Location = new System.Drawing.Point(328, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 8;
@@ -223,78 +209,56 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(505, 33);
+            this.btn_buscar.Location = new System.Drawing.Point(477, 48);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(67, 20);
             this.btn_buscar.TabIndex = 7;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Visible = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.rb_rango2);
             this.groupBox2.Controls.Add(this.rb_sin);
             this.groupBox2.Controls.Add(this.rb_cliente);
             this.groupBox2.Location = new System.Drawing.Point(150, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(135, 120);
+            this.groupBox2.Size = new System.Drawing.Size(135, 79);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 98);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Combinado";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // rb_rango2
-            // 
-            this.rb_rango2.AutoSize = true;
-            this.rb_rango2.Location = new System.Drawing.Point(7, 69);
-            this.rb_rango2.Name = "rb_rango2";
-            this.rb_rango2.Size = new System.Drawing.Size(119, 17);
-            this.rb_rango2.TabIndex = 0;
-            this.rb_rango2.TabStop = true;
-            this.rb_rango2.Text = "Por rango de meses";
-            this.rb_rango2.UseVisualStyleBackColor = true;
-            this.rb_rango2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // rb_sin
             // 
             this.rb_sin.AutoSize = true;
-            this.rb_sin.Location = new System.Drawing.Point(6, 14);
+            this.rb_sin.Location = new System.Drawing.Point(8, 22);
             this.rb_sin.Name = "rb_sin";
             this.rb_sin.Size = new System.Drawing.Size(65, 17);
             this.rb_sin.TabIndex = 0;
             this.rb_sin.TabStop = true;
             this.rb_sin.Text = "Sin Filtro";
             this.rb_sin.UseVisualStyleBackColor = true;
+            this.rb_sin.CheckedChanged += new System.EventHandler(this.rb_sin_CheckedChanged);
             // 
             // rb_cliente
             // 
             this.rb_cliente.AutoSize = true;
-            this.rb_cliente.Location = new System.Drawing.Point(7, 37);
+            this.rb_cliente.Location = new System.Drawing.Point(9, 45);
             this.rb_cliente.Name = "rb_cliente";
             this.rb_cliente.Size = new System.Drawing.Size(88, 17);
             this.rb_cliente.TabIndex = 0;
             this.rb_cliente.TabStop = true;
             this.rb_cliente.Text = "De un cliente";
             this.rb_cliente.UseVisualStyleBackColor = true;
+            this.rb_cliente.CheckedChanged += new System.EventHandler(this.rb_cliente_CheckedChanged);
             // 
-            // reportViewer2
+            // rv_llamadas
             // 
-            this.reportViewer2.Location = new System.Drawing.Point(0, 132);
-            this.reportViewer2.Name = "reportViewer2";
-            this.reportViewer2.ServerReport.BearerToken = null;
-            this.reportViewer2.Size = new System.Drawing.Size(673, 318);
-            this.reportViewer2.TabIndex = 0;
+            this.rv_llamadas.Location = new System.Drawing.Point(0, 119);
+            this.rv_llamadas.Name = "rv_llamadas";
+            this.rv_llamadas.ServerReport.BearerToken = null;
+            this.rv_llamadas.Size = new System.Drawing.Size(673, 331);
+            this.rv_llamadas.TabIndex = 0;
             // 
             // button1
             // 
@@ -384,33 +348,10 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.txt_mes.TabIndex = 2;
             this.txt_mes.Text = "MM";
             // 
-            // txt_mesHasta2
-            // 
-            this.txt_mesHasta2.Location = new System.Drawing.Point(457, 65);
-            this.txt_mesHasta2.Name = "txt_mesHasta2";
-            this.txt_mesHasta2.Pp_Campo = null;
-            this.txt_mesHasta2.Pp_MensajeError = null;
-            this.txt_mesHasta2.Pp_Tabla = null;
-            this.txt_mesHasta2.Pp_Validable = false;
-            this.txt_mesHasta2.Size = new System.Drawing.Size(31, 20);
-            this.txt_mesHasta2.TabIndex = 3;
-            this.txt_mesHasta2.Text = "MM";
-            // 
-            // txt_mesDesde2
-            // 
-            this.txt_mesDesde2.Location = new System.Drawing.Point(388, 65);
-            this.txt_mesDesde2.Name = "txt_mesDesde2";
-            this.txt_mesDesde2.Pp_Campo = null;
-            this.txt_mesDesde2.Pp_MensajeError = null;
-            this.txt_mesDesde2.Pp_Tabla = null;
-            this.txt_mesDesde2.Pp_Validable = false;
-            this.txt_mesDesde2.Size = new System.Drawing.Size(31, 20);
-            this.txt_mesDesde2.TabIndex = 6;
-            this.txt_mesDesde2.Text = "MM";
-            // 
             // txt_año2
             // 
-            this.txt_año2.Location = new System.Drawing.Point(388, 6);
+            this.txt_año2.Enabled = false;
+            this.txt_año2.Location = new System.Drawing.Point(360, 21);
             this.txt_año2.Name = "txt_año2";
             this.txt_año2.Pp_Campo = null;
             this.txt_año2.Pp_MensajeError = null;
@@ -421,7 +362,8 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             // txt_cliente2
             // 
-            this.txt_cliente2.Location = new System.Drawing.Point(388, 33);
+            this.txt_cliente2.Enabled = false;
+            this.txt_cliente2.Location = new System.Drawing.Point(360, 48);
             this.txt_cliente2.Name = "txt_cliente2";
             this.txt_cliente2.Pp_Campo = null;
             this.txt_cliente2.Pp_MensajeError = null;
@@ -471,15 +413,10 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         private System.Windows.Forms.RadioButton rb_rango;
         private System.Windows.Forms.RadioButton rb_mes;
         private System.Windows.Forms.Button button1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        private Microsoft.Reporting.WinForms.ReportViewer rv_llamadas;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton rb_rango2;
         private System.Windows.Forms.RadioButton rb_cliente;
-        private Clases.TextBox01 txt_mesHasta2;
-        private Clases.TextBox01 txt_mesDesde2;
         private Clases.TextBox01 txt_cliente2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_buscar;

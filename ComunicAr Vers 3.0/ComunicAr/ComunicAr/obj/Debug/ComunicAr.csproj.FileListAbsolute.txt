@@ -1449,3 +1449,4 @@ C:\Users\joaqu\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\joaqu\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\joaqu\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\joaqu\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.CopyComplete
+C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Frm_Reporte_Facturas.resources

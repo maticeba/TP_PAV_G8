@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComunicAr.Negocio_Estadisticas;
 using Microsoft.Reporting.WinForms;
+using ComunicAr.Negocio;
 
 
 namespace ComunicAr.Formularios.Estadisticas.Llamadas
 {
     public partial class Frm_Llamadas_Estadisticas : Form
     {
-        Tipo_Llamada tipo = new Tipo_Llamada();
+        
         public Frm_Llamadas_Estadisticas()
         {
             InitializeComponent();
@@ -24,11 +25,12 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         /// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //LLAMADAS POR TIPO DE COMUNICACION
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        Tipo_Llamada tipo = new Tipo_Llamada();
         private void Frm_Llamadas_Estadisticas_Load(object sender, EventArgs e)
         {
 
             this.rv_tipoLlamadas.RefreshReport();
-            this.reportViewer2.RefreshReport();
+            this.rv_llamadas.RefreshReport();
         }
 
         private void rb_mes_CheckedChanged(object sender, EventArgs e)
@@ -125,11 +127,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         ///TERMINA LLAMADAS POR TIPO DE COMUNICACION
         ///EMPIEZA LLAMADAS POR MES
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tabPage2_Click(object sender, EventArgs e)
         {
 
@@ -138,6 +135,91 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rb_sin_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_cliente2.Enabled = false;
+            txt_año2.Enabled = true;
+            btn_buscar.Visible = false;
+            Calcular2.Enabled = true;
+
+        }
+
+        private void rb_cliente_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_cliente2.Enabled = true;
+            txt_año2.Enabled = true;
+            btn_buscar.Visible = true;
+            Calcular2.Enabled = false;
+        }
+
+
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            if (txt_cliente2.Text == "")
+            {
+                MessageBox.Show("Ingrese un número de cliente emisor");
+
+            }
+            else
+            {
+                Negocio.Llamadas llamadas = new Negocio.Llamadas();
+                DataTable existEmisor = new DataTable();
+                existEmisor = llamadas.Search_cliente(txt_cliente2.Text);
+                if (existEmisor.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se ha encontrado el cliente buscado");
+                }
+                else
+                {
+                    string nombre = existEmisor.Rows[0]["nombre_razonSocial"].ToString();
+                    MessageBox.Show("El cliente emisor es " + nombre);
+                    Calcular2.Enabled = true;
+                }
+                
+            }
+        }
+
+        private void Calcular2_Click(object sender, EventArgs e)
+        {
+            CantidadLlamadas cant_llam = new CantidadLlamadas(); 
+            if (rb_sin.Checked == true)
+            {
+                if (txt_año2.Text != "")
+                {
+                    DataTable tabla = new DataTable();
+                    tabla = cant_llam.Llamadas_sinFiltro(txt_año2.Text);
+                    ReportDataSource dato = new ReportDataSource("DataSet1", tabla);
+                    rv_llamadas.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Llamadas.ReporteLlamadas.rdlc";
+                    rv_llamadas.LocalReport.DataSources.Clear();
+                    rv_llamadas.LocalReport.DataSources.Add(dato);
+                    rv_llamadas.RefreshReport();
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese el año");
+                }
+            }
+            else if (rb_cliente.Checked == true)
+            {
+                if (txt_año2.Text != "")
+                {
+                    DataTable tabla = new DataTable();
+                    tabla = cant_llam.Llamadas_Cliente(txt_año2.Text, txt_cliente2.Text);
+                    ReportDataSource dato = new ReportDataSource("DataSet1", tabla);
+                    rv_llamadas.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Llamadas.ReporteLlamadas.rdlc";
+                    rv_llamadas.LocalReport.DataSources.Clear();
+                    rv_llamadas.LocalReport.DataSources.Add(dato);
+                    rv_llamadas.RefreshReport();
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese el año");
+                }
+
+            }
         }
     }
 }

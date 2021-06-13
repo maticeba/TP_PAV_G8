@@ -557,6 +557,7 @@
     <Compile Include="Negocio\Servicios_Contratados.cs" />
     <Compile Include="Negocio\Servicios_Datos.cs" />
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
+    <Compile Include="Negocio_Estadisticas\CantidadLlamadas.cs" />
     <Compile Include="Negocio_Estadisticas\Tipo_Llamada.cs" />
     <Compile Include="Negocio_Listados\Dispositivos.cs" />
     <Compile Include="Negocio_Listados\Dispositivos1.cs" />
@@ -720,6 +721,7 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.resx">
       <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\ReporteLlamadas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_TipoComunicacion.rdlc" />
     <EmbeddedResource Include="Formularios\Menu\Frm_Menu_ABM.resx">
       <DependentUpon>Frm_Menu_ABM.cs</DependentUpon>
