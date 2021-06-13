@@ -355,6 +355,18 @@
     <Compile Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.Designer.cs">
       <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Servicios\DS_Servicios.cs">
+      <DependentUpon>DS_Servicios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Servicios\DS_Servicios.Designer.cs">
+      <DependentUpon>DS_Servicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Servicios\Frm_Servicios_Estadisiticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Servicios\Frm_Servicios_Estadisiticas.Designer.cs">
+      <DependentUpon>Frm_Servicios_Estadisiticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Menu\Frm_Menu_ABM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -558,6 +570,7 @@
     <Compile Include="Negocio\Servicios_Datos.cs" />
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
     <Compile Include="Negocio_Estadisticas\CantidadLlamadas.cs" />
+    <Compile Include="Negocio_Estadisticas\Packs_Vendidos.cs" />
     <Compile Include="Negocio_Estadisticas\Tipo_Llamada.cs" />
     <Compile Include="Negocio_Listados\Dispositivos.cs" />
     <Compile Include="Negocio_Listados\Dispositivos1.cs" />
@@ -723,6 +736,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\ReporteLlamadas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_TipoComunicacion.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Servicios\Frm_Servicios_Estadisiticas.resx">
+      <DependentUpon>Frm_Servicios_Estadisiticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Servicios\ReporteServiciosXmes.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Servicios\Reporte_Packs.rdlc" />
     <EmbeddedResource Include="Formularios\Menu\Frm_Menu_ABM.resx">
       <DependentUpon>Frm_Menu_ABM.cs</DependentUpon>
     </EmbeddedResource>
@@ -829,6 +847,13 @@
     </None>
     <None Include="Formularios\Estadisticas\Llamadas\DS_Llamadas.xss">
       <DependentUpon>DS_Llamadas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Servicios\DS_Servicios.xsc">
+      <DependentUpon>DS_Servicios.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Servicios\DS_Servicios.xsd" />
+    <None Include="Formularios\Estadisticas\Servicios\DS_Servicios.xss">
+      <DependentUpon>DS_Servicios.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xsc">
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>

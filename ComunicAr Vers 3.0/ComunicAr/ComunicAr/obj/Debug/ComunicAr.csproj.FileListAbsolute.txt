@@ -1137,7 +1137,6 @@ C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bi
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Frm_Menu_Listas.resources
-C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Datos.Frm_Rep_Datos.resources
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Dispositivos.Frm_Reporte_Disp.resources
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Frm_Reporte_Disp_Vendidos.resources
 C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Numeros.Reporte_para_Numeros.resources
@@ -1450,3 +1449,7 @@ C:\Users\joaqu\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\joaqu\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\joaqu\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.CopyComplete
 C:\Users\matic\Desktop\2021\PAV1\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Frm_Reporte_Facturas.resources
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Estadisticas.Llamadas.Frm_Llamadas_Estadisticas.resources
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Estadisticas.Servicios.Frm_Servicios_Estadisiticas.resources
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Frm_Reporte_Facturas.resources
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Llamada.Frm_Reporte_Llamadas.resources

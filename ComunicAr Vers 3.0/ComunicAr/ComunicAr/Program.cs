@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComunicAr.Formularios.Estadisticas.Llamadas;
+using ComunicAr.Formularios.Estadisticas.Servicios;
 
 namespace ComunicAr
 {
@@ -19,6 +20,7 @@ namespace ComunicAr
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Escritorio());
             Application.Run(new Frm_Llamadas_Estadisticas());
+            //Application.Run(new Frm_Servicios_Estadisiticas());
         }
     }
 

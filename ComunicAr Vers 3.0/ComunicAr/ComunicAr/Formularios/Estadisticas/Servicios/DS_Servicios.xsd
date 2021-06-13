@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Servicios" targetNamespace="http://tempuri.org/DS_Servicios.xsd" xmlns:mstns="http://tempuri.org/DS_Servicios.xsd" xmlns="http://tempuri.org/DS_Servicios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Servicios" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Servicios" msprop:Generator_UserDSName="DS_Servicios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="packs_por_mes" msprop:Generator_TableClassName="packs_por_mesDataTable" msprop:Generator_TableVarName="tablepacks_por_mes" msprop:Generator_RowChangedName="packs_por_mesRowChanged" msprop:Generator_TablePropName="packs_por_mes" msprop:Generator_RowDeletingName="packs_por_mesRowDeleting" msprop:Generator_RowChangingName="packs_por_mesRowChanging" msprop:Generator_RowEvHandlerName="packs_por_mesRowChangeEventHandler" msprop:Generator_RowDeletedName="packs_por_mesRowDeleted" msprop:Generator_RowClassName="packs_por_mesRow" msprop:Generator_UserTableName="packs_por_mes" msprop:Generator_RowEvArgName="packs_por_mesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="serviciosXmes" msprop:Generator_TableClassName="serviciosXmesDataTable" msprop:Generator_TableVarName="tableserviciosXmes" msprop:Generator_TablePropName="serviciosXmes" msprop:Generator_RowDeletingName="serviciosXmesRowDeleting" msprop:Generator_RowChangingName="serviciosXmesRowChanging" msprop:Generator_RowEvHandlerName="serviciosXmesRowChangeEventHandler" msprop:Generator_RowDeletedName="serviciosXmesRowDeleted" msprop:Generator_UserTableName="serviciosXmes" msprop:Generator_RowChangedName="serviciosXmesRowChanged" msprop:Generator_RowEvArgName="serviciosXmesRowChangeEvent" msprop:Generator_RowClassName="serviciosXmesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipo_serv" msprop:Generator_ColumnVarNameInTable="columntipo_serv" msprop:Generator_ColumnPropNameInRow="tipo_serv" msprop:Generator_ColumnPropNameInTable="tipo_servColumn" msprop:Generator_UserColumnName="tipo_serv" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
