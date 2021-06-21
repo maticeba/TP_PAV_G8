@@ -24,7 +24,8 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
 
         private void Frm_DispVend_Estadisticas_Load(object sender, EventArgs e)
         {
-
+            cmb_CodNacional.Codigo_Nacional();
+            cmb_CodNacional.SelectedIndex = -1;
             this.reportViewer1.RefreshReport();
             this.reportViewer2.RefreshReport();
             this.reportViewer2.RefreshReport();
@@ -63,15 +64,26 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         {
             DataTable tabla = new DataTable();
             DispVendidos dispv = new DispVendidos();
-           
-                
 
-        tabla = dispv.DispxServicio();
-        ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
-        reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
-        reportViewer2.LocalReport.DataSources.Clear();
-        reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
-        reportViewer2.RefreshReport();
+
+            if (radioButton4.Checked)
+            {
+                tabla = dispv.DispxServicioCodN(Convert.ToInt32(cmb_CodNacional.Text));
+                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                reportViewer2.LocalReport.DataSources.Clear();
+                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                reportViewer2.RefreshReport();
+            }
+            if (radioButton4.Checked)
+            {
+                tabla = dispv.DispxServicio();
+                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                reportViewer2.LocalReport.DataSources.Clear();
+                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                reportViewer2.RefreshReport();
+            }
             
             
         }
@@ -106,6 +118,11 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DispositivosPorServicios_Click(object sender, EventArgs e)
         {
 
         }

@@ -42,14 +42,19 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.txtYear = new ComunicAr.Clases.TextBox01();
             this.txtMes = new ComunicAr.Clases.TextBox01();
+            this.cmb_CodNacional = new ComunicAr.Clases.ComboBox01();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.DispositivosVendidos.SuspendLayout();
             this.DispositivosPorServicios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -87,7 +92,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Location = new System.Drawing.Point(162, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(172, 71);
+            this.groupBox1.Size = new System.Drawing.Size(172, 70);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -123,7 +128,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(652, 591);
+            this.tabControl1.Size = new System.Drawing.Size(659, 589);
             this.tabControl1.TabIndex = 6;
             // 
             // DispositivosVendidos
@@ -137,7 +142,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.DispositivosVendidos.Location = new System.Drawing.Point(4, 22);
             this.DispositivosVendidos.Name = "DispositivosVendidos";
             this.DispositivosVendidos.Padding = new System.Windows.Forms.Padding(3);
-            this.DispositivosVendidos.Size = new System.Drawing.Size(644, 565);
+            this.DispositivosVendidos.Size = new System.Drawing.Size(651, 563);
             this.DispositivosVendidos.TabIndex = 0;
             this.DispositivosVendidos.Text = "DispositivosVendidos";
             this.DispositivosVendidos.UseVisualStyleBackColor = true;
@@ -145,20 +150,23 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // 
             // DispositivosPorServicios
             // 
+            this.DispositivosPorServicios.Controls.Add(this.cmb_CodNacional);
+            this.DispositivosPorServicios.Controls.Add(this.groupBox2);
             this.DispositivosPorServicios.Controls.Add(this.reportViewer2);
             this.DispositivosPorServicios.Controls.Add(this.pictureBox2);
             this.DispositivosPorServicios.Controls.Add(this.button2);
             this.DispositivosPorServicios.Location = new System.Drawing.Point(4, 22);
             this.DispositivosPorServicios.Name = "DispositivosPorServicios";
             this.DispositivosPorServicios.Padding = new System.Windows.Forms.Padding(3);
-            this.DispositivosPorServicios.Size = new System.Drawing.Size(644, 565);
+            this.DispositivosPorServicios.Size = new System.Drawing.Size(651, 563);
             this.DispositivosPorServicios.TabIndex = 1;
             this.DispositivosPorServicios.Text = "DispositivosPorServicios";
             this.DispositivosPorServicios.UseVisualStyleBackColor = true;
+            this.DispositivosPorServicios.Click += new System.EventHandler(this.DispositivosPorServicios_Click);
             // 
             // reportViewer2
             // 
-            this.reportViewer2.Location = new System.Drawing.Point(6, 133);
+            this.reportViewer2.Location = new System.Drawing.Point(12, 136);
             this.reportViewer2.Name = "reportViewer2";
             this.reportViewer2.ServerReport.BearerToken = null;
             this.reportViewer2.Size = new System.Drawing.Size(626, 400);
@@ -167,7 +175,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 26);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 20);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(88, 86);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,13 +184,46 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(557, 26);
+            this.button2.Location = new System.Drawing.Point(550, 20);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
             this.button2.Text = "Calcular";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Controls.Add(this.radioButton4);
+            this.groupBox2.Location = new System.Drawing.Point(162, 20);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(145, 72);
+            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Filtros";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(6, 44);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(55, 17);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Todos";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(6, 19);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(124, 17);
+            this.radioButton4.TabIndex = 1;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Por codigo Nacional:";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // txtYear
             // 
@@ -208,11 +249,27 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.txtMes.Size = new System.Drawing.Size(57, 20);
             this.txtMes.TabIndex = 4;
             // 
+            // cmb_CodNacional
+            // 
+            this.cmb_CodNacional.FormattingEnabled = true;
+            this.cmb_CodNacional.Location = new System.Drawing.Point(322, 38);
+            this.cmb_CodNacional.Name = "cmb_CodNacional";
+            this.cmb_CodNacional.Pp_Conseleccion = false;
+            this.cmb_CodNacional.Pp_Descripcion = "cod_nacional";
+            this.cmb_CodNacional.Pp_MensajeError = null;
+            this.cmb_CodNacional.Pp_NombreCampo = null;
+            this.cmb_CodNacional.Pp_NombreTabla = null;
+            this.cmb_CodNacional.Pp_PK = "id_numero";
+            this.cmb_CodNacional.Pp_Tabla = "Numero";
+            this.cmb_CodNacional.Pp_Validable = false;
+            this.cmb_CodNacional.Size = new System.Drawing.Size(84, 21);
+            this.cmb_CodNacional.TabIndex = 13;
+            // 
             // Frm_DispVend_Estadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 627);
+            this.ClientSize = new System.Drawing.Size(686, 612);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_DispVend_Estadisticas";
             this.Text = "Frm_DispVend_Estadisticas";
@@ -225,6 +282,8 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.DispositivosVendidos.PerformLayout();
             this.DispositivosPorServicios.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -245,5 +304,9 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private Clases.ComboBox01 cmb_CodNacional;
     }
 }

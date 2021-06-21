@@ -193,5 +193,14 @@ namespace ComunicAr.Clases
             this.ValueMember = "cantidad";
             this.DataSource = table;
         }
+
+        public void Codigo_Nacional()
+        {
+            string sql = "SELECT " + Pp_Descripcion + " FROM " + Pp_Tabla + " GROUP BY " + Pp_Descripcion + " ORDER BY " + Pp_Descripcion + " DESC ";
+            this.DisplayMember = Pp_Descripcion;
+            this.ValueMember = Pp_PK;
+            this.DataSource = _BD.EjecutarSelect(sql);
+
+        }
     }
 }
