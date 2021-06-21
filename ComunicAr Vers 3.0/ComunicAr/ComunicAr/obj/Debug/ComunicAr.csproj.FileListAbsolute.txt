@@ -1606,3 +1606,4 @@ C:\Users\Renzo Padilla\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\C
 C:\Users\Renzo Padilla\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.CopyComplete
 C:\Users\Renzo Padilla\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.exe
 C:\Users\Renzo Padilla\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.pdb
+C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Estadisticas.Numeros.Frm_Estadisticas_Numeros.resources

@@ -889,6 +889,56 @@ VALUES('C', '11', '2020-4-26', '2021-11-6', 22, NULL)
 INSERT INTO Servicios_contratados
 VALUES('B', '18', '2020-1-10', '2021-6-7', 7, NULL)
 
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 23, '2013-6-8', '2014-2-20', 36);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 12, '2016-3-17', '2019-9-5', 23);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 19, '2011-5-13', '2013-7-14', 23);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 10, '2011-9-25', '2015-6-11', 19);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2012-4-10', '2018-5-16', 8);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 4, '2015-5-7', '2016-2-24', 23);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 7, '2019-4-17', '2019-11-15', 38);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 2, '2017-11-17', '2017-11-1', 38);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 1, '2013-8-11', '2018-4-13', 39);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2011-4-4', '2013-9-20', 12);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 19, '2015-11-2', '2019-6-24', 38);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 7, '2014-9-25', '2014-10-14', 21);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2013-11-1', '2016-2-16', 11);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 1, '2012-2-6', '2017-8-19', 14);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 4, '2016-3-17', '2017-3-7', 4);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 1, '2017-10-2', '2018-5-18', 43);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2016-8-23', '2019-7-12', 11);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 12, '2013-2-27', '2016-6-8', 38);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 6, '2015-3-18', '2018-7-21', 4);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 6, '2018-2-15', '2019-4-5', 4);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2017-6-25', '2018-4-11', 23);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 20, '2011-9-4', '2011-11-20', 14);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 1, '2018-6-5', '2018-7-15', 4);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 7, '2014-7-7', '2019-2-1', 11);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 5, '2019-11-12', '2019-11-20', 19);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 4, '2017-10-16', '2017-11-7', 45);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 22, '2016-11-19', '2017-4-14', 45);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2013-2-26', '2019-7-1', 12);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 10, '2019-10-20', '2019-10-10', 21);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 1, '2016-7-23', '2016-8-24', 4);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 10, '2018-4-13', '2019-2-25', 45);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 6, '2011-6-17', '2017-3-7', 38);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2017-7-14', '2019-10-24', 14);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 1, '2016-11-19', '2017-3-7', 11);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 1, '2016-3-1', '2019-7-4', 12);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 5, '2010-3-17', '2015-3-27', 36);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2011-11-23', '2018-6-23', 23);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 8, '2018-5-3', '2019-10-11', 38);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 2, '2017-6-13', '2018-1-15', 12);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 9, '2012-2-9', '2012-11-14', 43);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 19, '2014-3-4', '2016-4-2', 14);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 7, '2016-5-26', '2019-3-19', 38);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 11, '2013-9-18', '2018-5-16', 43);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('C', 7, '2014-11-9', '2017-7-1', 14);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 2, '2012-10-17', '2015-2-14', 14);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('A', 1, '2011-7-13', '2018-6-17', 39);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 21, '2014-11-6', '2015-10-6', 12);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 6, '2019-9-13', '2019-11-17', 36);
+INSERT INTO Servicios_contratados (tipo_servicio, id_servicio, fecha_desde, fecha_hasta, id_numero) VALUES('B', 14, '2017-10-22', '2019-5-18', 39);
+
 	-- Llamadas
 
 INSERT INTO Llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, 

@@ -379,6 +379,18 @@
     <Compile Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.Designer.cs">
       <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Numeros\DS_Estadistica_Nros.cs" />
+    <Compile Include="Formularios\Estadisticas\Numeros\DS_Estadistica_Nros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Estadistica_Nros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Numeros\Frm_Estadisticas_Numeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Numeros\Frm_Estadisticas_Numeros.designer.cs">
+      <DependentUpon>Frm_Estadisticas_Numeros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Servicios\DS_Servicios.cs">
       <DependentUpon>DS_Servicios.xsd</DependentUpon>
     </Compile>
@@ -607,6 +619,7 @@
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
     <Compile Include="Negocio_Estadisticas\CantidadLlamadas.cs" />
     <Compile Include="Negocio_Estadisticas\DispVendidos.cs" />
+    <Compile Include="Negocio_Estadisticas\Estadistica Nros.cs" />
     <Compile Include="Negocio_Estadisticas\Estadistica_cliente.cs" />
     <Compile Include="Negocio_Estadisticas\Packs_Vendidos.cs" />
     <Compile Include="Negocio_Estadisticas\Tipo_Llamada.cs" />
@@ -784,6 +797,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\ReporteLlamadas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_TipoComunicacion.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Numeros\Estadistica_Numeros_bajas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Numeros\Frm_Estadisticas_Numeros.resx">
+      <DependentUpon>Frm_Estadisticas_Numeros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Servicios\Frm_Servicios_Estadisiticas.resx">
       <DependentUpon>Frm_Servicios_Estadisiticas.cs</DependentUpon>
     </EmbeddedResource>
@@ -917,6 +934,17 @@
     </None>
     <None Include="Formularios\Estadisticas\Llamadas\DS_Llamadas.xss">
       <DependentUpon>DS_Llamadas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Numeros\DS_Estadistica_Nros.xsc">
+      <DependentUpon>DS_Estadistica_Nros.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Numeros\DS_Estadistica_Nros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Estadistica_Nros.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Estadisticas\Numeros\DS_Estadistica_Nros.xss">
+      <DependentUpon>DS_Estadistica_Nros.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Estadisticas\Servicios\DS_Servicios.xsc">
       <DependentUpon>DS_Servicios.xsd</DependentUpon>

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using ComunicAr.Formularios.Estadisticas.Clientes;
 //using ComunicAr.Formularios.Estadisticas.Dispositivos;
 //using ComunicAr.Formularios.Estadisticas.DispVendidos;
-//using ComunicAr.Formularios.Estadisticas.Numeros;
+using ComunicAr.Formularios.Estadisticas.Numeros;
 //using ComunicAr.Formularios.Estadisticas.ServiciosFijos;
 //using ComunicAr.Formularios.Estadisticas.Llamada;
 
@@ -41,7 +41,8 @@ namespace ComunicAr.Formularios.Menu
 
         private void bnt_menu_esta_numero_Click(object sender, EventArgs e)
         {
-            
+            Frm_Estadisticas_Numeros nros = new Frm_Estadisticas_Numeros();
+            nros.ShowDialog();
         }
 
         private void bnt_menu_esta_servicios_Click(object sender, EventArgs e)
