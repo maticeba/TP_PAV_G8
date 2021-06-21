@@ -84,6 +84,8 @@ CREATE TABLE Cliente	(	nro_cliente INTEGER			NOT NULL PRIMARY KEY IDENTITY,
 							piso INTEGER				NULL,
 							cod_barrio INTEGER			NULL,
 							borrado	BIT					DEFAULT 0,
+							fecha_alta DATE			    DEFAULT GETDATE(),
+							fecha_baja DATE				NULL,
 
 						CONSTRAINT barrioXcliente
 							FOREIGN KEY (cod_barrio)
@@ -118,14 +120,15 @@ CREATE TABLE Numero (	id_numero INTEGER		NOT NULL PRIMARY KEY IDENTITY,
 						cod_nacional NCHAR(3)	NOT NULL,
 						cod_area NCHAR(3)		NOT NULL,
 						nro_telefono NCHAR(8)	NOT NULL,
-						nro_cliente	INTEGER		NOT NULL,
+						nro_cliente	INTEGER		NULL,
 						id_dispositivo INTEGER	NULL, 
 						borrado BIT				DEFAULT 0,
+						fecha_baja DATE			NULL,
 
 					CONSTRAINT clienteXnumero
 						FOREIGN KEY (nro_cliente)
 						REFERENCES Cliente
-						ON DELETE CASCADE,
+						ON DELETE SET NULL,
 					CONSTRAINT dispositivoXnumero
 						FOREIGN KEY (id_dispositivo)
 						REFERENCES Dispositivos
