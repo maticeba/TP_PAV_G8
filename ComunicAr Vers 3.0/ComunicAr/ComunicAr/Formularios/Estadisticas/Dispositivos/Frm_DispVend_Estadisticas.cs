@@ -26,8 +26,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         {
             cmb_CodNacional.Codigo_Nacional();
             cmb_CodNacional.SelectedIndex = -1;
-            cmb_Cliente.CargarCombo();
-            cmb_Cliente.SelectedIndex = -1;
+            
             cmb_tipoDisp.CargarCombo();
             cmb_tipoDisp.SelectedIndex = -1;
             cmb_Marca.Marca();
@@ -107,13 +106,13 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             }
             if (radioButton5.Checked)
             {
-                if (cmb_Cliente.SelectedIndex == -1)
+                if (txt_cliente.Text.Length == 0)
                 {
                     MessageBox.Show("Rellene los campos Correctamente");
                 }
                 else
                 {
-                    tabla = dispv.DispxServicioCliente(cmb_Cliente.SelectedIndex + 1);
+                    tabla = dispv.DispxServicioCliente(Convert.ToInt32(txt_cliente.Text));
                     ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
                     reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
                     reportViewer2.LocalReport.DataSources.Clear();
@@ -205,11 +204,11 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
             cmb_CodNacional.Enabled = true;
-            cmb_Cliente.Enabled = false;
+            txt_cliente.Enabled = false;
             cmb_Marca.Enabled = false;
             cmb_tipoDisp.Enabled = false;
 
-            cmb_Cliente.SelectedIndex = -1;
+            txt_cliente.Clear();
             cmb_Marca.SelectedIndex = -1;
             cmb_tipoDisp.SelectedIndex = -1;
         }
@@ -217,7 +216,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
             cmb_CodNacional.Enabled = false;
-            cmb_Cliente.Enabled = true;
+            txt_cliente.Enabled = true;
             cmb_Marca.Enabled = false;
             cmb_tipoDisp.Enabled = false;
 
@@ -229,38 +228,38 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
             cmb_CodNacional.Enabled = false;
-            cmb_Cliente.Enabled = false;
+            txt_cliente.Enabled = false;
             cmb_Marca.Enabled = false;
             cmb_tipoDisp.Enabled = true;
 
             cmb_CodNacional.SelectedIndex = -1;
             cmb_Marca.SelectedIndex = -1;
-            cmb_Cliente.SelectedIndex = -1;
+            txt_cliente.Clear();
         }
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
             cmb_CodNacional.Enabled = false;
-            cmb_Cliente.Enabled = false;
+            txt_cliente.Enabled = false;
             cmb_Marca.Enabled = true;
             cmb_tipoDisp.Enabled = false;
 
             cmb_CodNacional.SelectedIndex = -1;
             cmb_tipoDisp.SelectedIndex = -1;
-            cmb_Cliente.SelectedIndex = -1;
+            txt_cliente.Clear();
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             cmb_CodNacional.Enabled = false;
-            cmb_Cliente.Enabled = false;
+            txt_cliente.Enabled = false;
             cmb_Marca.Enabled = false;
             cmb_tipoDisp.Enabled = false;
 
             cmb_Marca.SelectedIndex = -1;
             cmb_CodNacional.SelectedIndex = -1;
             cmb_tipoDisp.SelectedIndex = -1;
-            cmb_Cliente.SelectedIndex = -1;
+            txt_cliente.Clear();
         }
     }
 }
