@@ -11,8 +11,9 @@ using ComunicAr.Formularios.Estadisticas.Clientes;
 //using ComunicAr.Formularios.Estadisticas.Dispositivos;
 //using ComunicAr.Formularios.Estadisticas.DispVendidos;
 using ComunicAr.Formularios.Estadisticas.Numeros;
-//using ComunicAr.Formularios.Estadisticas.ServiciosFijos;
+using ComunicAr.Formularios.Estadisticas.Servicios;
 //using ComunicAr.Formularios.Estadisticas.Llamada;
+using ComunicAr.Formularios.Estadisticas.Dispositivos;
 
 namespace ComunicAr.Formularios.Menu
 {
@@ -36,7 +37,8 @@ namespace ComunicAr.Formularios.Menu
 
         private void bnt_menu_esta_dispositivos_Click(object sender, EventArgs e)
         {
-            
+            Frm_DispVend_Estadisticas dispv = new Frm_DispVend_Estadisticas();
+            dispv.ShowDialog();
         }
 
         private void bnt_menu_esta_numero_Click(object sender, EventArgs e)
@@ -47,7 +49,8 @@ namespace ComunicAr.Formularios.Menu
 
         private void bnt_menu_esta_servicios_Click(object sender, EventArgs e)
         {
-
+            Frm_Servicios_Estadisiticas servicios = new Frm_Servicios_Estadisiticas();
+            servicios.ShowDialog();
         }
 
         private void bnt_menu_esta_llamadas_Click(object sender, EventArgs e)

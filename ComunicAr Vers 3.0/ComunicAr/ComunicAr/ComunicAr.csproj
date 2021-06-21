@@ -357,6 +357,9 @@
     <Compile Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.designer.cs">
       <DependentUpon>Frm_Estadistica_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Dispositivos\DS_DispVend.cs">
+      <DependentUpon>DS_DispVend.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Dispositivos\DS_DispVend.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -790,8 +793,8 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\Frm_DispVend_Estadisticas.resx">
       <DependentUpon>Frm_DispVend_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\Report1.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\ReportDispVend.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\ReporteDispxServ.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.resx">
       <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>

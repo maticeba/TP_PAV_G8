@@ -205,5 +205,10 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
         {
 
         }
+
+        private void rv01_Servicios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
