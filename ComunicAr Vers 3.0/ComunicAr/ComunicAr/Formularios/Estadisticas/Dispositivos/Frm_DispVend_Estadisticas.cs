@@ -170,6 +170,9 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         {
             txtMes.Enabled = true;
             txtYear.Enabled = true;
+            txtMes.Clear();
+            txtYear.Clear();
+
 
         }
 
@@ -179,6 +182,9 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             txtYear.Enabled = false;
             txtMes.Clear();
             txtYear.Clear();
+
+            txtMes.Text = "MM";
+            txtYear.Text = "YYYY";
         }
 
         private void button2_Click(object sender, EventArgs e)

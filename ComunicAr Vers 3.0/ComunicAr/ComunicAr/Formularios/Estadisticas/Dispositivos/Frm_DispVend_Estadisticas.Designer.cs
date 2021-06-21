@@ -38,12 +38,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DispositivosVendidos = new System.Windows.Forms.TabPage();
-            this.txtYear = new ComunicAr.Clases.TextBox01();
-            this.txtMes = new ComunicAr.Clases.TextBox01();
             this.DispositivosPorServicios = new System.Windows.Forms.TabPage();
-            this.cmb_Marca = new ComunicAr.Clases.ComboBox01();
-            this.cmb_tipoDisp = new ComunicAr.Clases.ComboBox01();
-            this.cmb_CodNacional = new ComunicAr.Clases.ComboBox01();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
@@ -53,7 +48,12 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.txtYear = new ComunicAr.Clases.TextBox01();
+            this.txtMes = new ComunicAr.Clases.TextBox01();
             this.txt_cliente = new ComunicAr.Clases.TextBox01();
+            this.cmb_Marca = new ComunicAr.Clases.ComboBox01();
+            this.cmb_tipoDisp = new ComunicAr.Clases.ComboBox01();
+            this.cmb_CodNacional = new ComunicAr.Clases.ComboBox01();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -154,30 +154,6 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.DispositivosVendidos.UseVisualStyleBackColor = true;
             this.DispositivosVendidos.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // txtYear
-            // 
-            this.txtYear.Enabled = false;
-            this.txtYear.Location = new System.Drawing.Point(403, 38);
-            this.txtYear.Name = "txtYear";
-            this.txtYear.Pp_Campo = null;
-            this.txtYear.Pp_MensajeError = null;
-            this.txtYear.Pp_Tabla = null;
-            this.txtYear.Pp_Validable = false;
-            this.txtYear.Size = new System.Drawing.Size(57, 20);
-            this.txtYear.TabIndex = 5;
-            // 
-            // txtMes
-            // 
-            this.txtMes.Enabled = false;
-            this.txtMes.Location = new System.Drawing.Point(340, 38);
-            this.txtMes.Name = "txtMes";
-            this.txtMes.Pp_Campo = null;
-            this.txtMes.Pp_MensajeError = null;
-            this.txtMes.Pp_Tabla = null;
-            this.txtMes.Pp_Validable = false;
-            this.txtMes.Size = new System.Drawing.Size(57, 20);
-            this.txtMes.TabIndex = 4;
-            // 
             // DispositivosPorServicios
             // 
             this.DispositivosPorServicios.Controls.Add(this.txt_cliente);
@@ -196,57 +172,6 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.DispositivosPorServicios.Text = "DispositivosPorServicios";
             this.DispositivosPorServicios.UseVisualStyleBackColor = true;
             this.DispositivosPorServicios.Click += new System.EventHandler(this.DispositivosPorServicios_Click);
-            // 
-            // cmb_Marca
-            // 
-            this.cmb_Marca.Enabled = false;
-            this.cmb_Marca.FormattingEnabled = true;
-            this.cmb_Marca.Location = new System.Drawing.Point(322, 109);
-            this.cmb_Marca.Name = "cmb_Marca";
-            this.cmb_Marca.Pp_Conseleccion = false;
-            this.cmb_Marca.Pp_Descripcion = "marca";
-            this.cmb_Marca.Pp_MensajeError = null;
-            this.cmb_Marca.Pp_NombreCampo = null;
-            this.cmb_Marca.Pp_NombreTabla = null;
-            this.cmb_Marca.Pp_PK = "";
-            this.cmb_Marca.Pp_Tabla = "Dispositivos";
-            this.cmb_Marca.Pp_Validable = false;
-            this.cmb_Marca.Size = new System.Drawing.Size(84, 21);
-            this.cmb_Marca.TabIndex = 16;
-            // 
-            // cmb_tipoDisp
-            // 
-            this.cmb_tipoDisp.Enabled = false;
-            this.cmb_tipoDisp.FormattingEnabled = true;
-            this.cmb_tipoDisp.Location = new System.Drawing.Point(322, 84);
-            this.cmb_tipoDisp.Name = "cmb_tipoDisp";
-            this.cmb_tipoDisp.Pp_Conseleccion = false;
-            this.cmb_tipoDisp.Pp_Descripcion = "nombre_tipo";
-            this.cmb_tipoDisp.Pp_MensajeError = null;
-            this.cmb_tipoDisp.Pp_NombreCampo = null;
-            this.cmb_tipoDisp.Pp_NombreTabla = null;
-            this.cmb_tipoDisp.Pp_PK = "id_tipo_dispositivo";
-            this.cmb_tipoDisp.Pp_Tabla = "Tipo_dispositivo";
-            this.cmb_tipoDisp.Pp_Validable = false;
-            this.cmb_tipoDisp.Size = new System.Drawing.Size(84, 21);
-            this.cmb_tipoDisp.TabIndex = 15;
-            // 
-            // cmb_CodNacional
-            // 
-            this.cmb_CodNacional.Enabled = false;
-            this.cmb_CodNacional.FormattingEnabled = true;
-            this.cmb_CodNacional.Location = new System.Drawing.Point(322, 38);
-            this.cmb_CodNacional.Name = "cmb_CodNacional";
-            this.cmb_CodNacional.Pp_Conseleccion = false;
-            this.cmb_CodNacional.Pp_Descripcion = "cod_nacional";
-            this.cmb_CodNacional.Pp_MensajeError = null;
-            this.cmb_CodNacional.Pp_NombreCampo = null;
-            this.cmb_CodNacional.Pp_NombreTabla = null;
-            this.cmb_CodNacional.Pp_PK = "id_numero";
-            this.cmb_CodNacional.Pp_Tabla = "Numero";
-            this.cmb_CodNacional.Pp_Validable = false;
-            this.cmb_CodNacional.Size = new System.Drawing.Size(84, 21);
-            this.cmb_CodNacional.TabIndex = 13;
             // 
             // groupBox2
             // 
@@ -291,10 +216,10 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton5.AutoSize = true;
             this.radioButton5.Location = new System.Drawing.Point(6, 42);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(78, 17);
+            this.radioButton5.Size = new System.Drawing.Size(92, 17);
             this.radioButton5.TabIndex = 3;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Por cliente:";
+            this.radioButton5.Text = "Por ID cliente:";
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
@@ -351,8 +276,35 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.reportViewer2.TabIndex = 11;
             this.reportViewer2.Load += new System.EventHandler(this.reportViewer2_Load);
             // 
+            // txtYear
+            // 
+            this.txtYear.Enabled = false;
+            this.txtYear.Location = new System.Drawing.Point(403, 38);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Pp_Campo = null;
+            this.txtYear.Pp_MensajeError = null;
+            this.txtYear.Pp_Tabla = null;
+            this.txtYear.Pp_Validable = false;
+            this.txtYear.Size = new System.Drawing.Size(57, 20);
+            this.txtYear.TabIndex = 5;
+            this.txtYear.Text = "AAAA";
+            // 
+            // txtMes
+            // 
+            this.txtMes.Enabled = false;
+            this.txtMes.Location = new System.Drawing.Point(340, 38);
+            this.txtMes.Name = "txtMes";
+            this.txtMes.Pp_Campo = null;
+            this.txtMes.Pp_MensajeError = null;
+            this.txtMes.Pp_Tabla = null;
+            this.txtMes.Pp_Validable = false;
+            this.txtMes.Size = new System.Drawing.Size(57, 20);
+            this.txtMes.TabIndex = 4;
+            this.txtMes.Text = "MM";
+            // 
             // txt_cliente
             // 
+            this.txt_cliente.Enabled = false;
             this.txt_cliente.Location = new System.Drawing.Point(322, 61);
             this.txt_cliente.Name = "txt_cliente";
             this.txt_cliente.Pp_Campo = null;
@@ -361,6 +313,57 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.txt_cliente.Pp_Validable = false;
             this.txt_cliente.Size = new System.Drawing.Size(84, 20);
             this.txt_cliente.TabIndex = 17;
+            // 
+            // cmb_Marca
+            // 
+            this.cmb_Marca.Enabled = false;
+            this.cmb_Marca.FormattingEnabled = true;
+            this.cmb_Marca.Location = new System.Drawing.Point(322, 109);
+            this.cmb_Marca.Name = "cmb_Marca";
+            this.cmb_Marca.Pp_Conseleccion = false;
+            this.cmb_Marca.Pp_Descripcion = "marca";
+            this.cmb_Marca.Pp_MensajeError = null;
+            this.cmb_Marca.Pp_NombreCampo = null;
+            this.cmb_Marca.Pp_NombreTabla = null;
+            this.cmb_Marca.Pp_PK = "";
+            this.cmb_Marca.Pp_Tabla = "Dispositivos";
+            this.cmb_Marca.Pp_Validable = false;
+            this.cmb_Marca.Size = new System.Drawing.Size(84, 21);
+            this.cmb_Marca.TabIndex = 16;
+            // 
+            // cmb_tipoDisp
+            // 
+            this.cmb_tipoDisp.Enabled = false;
+            this.cmb_tipoDisp.FormattingEnabled = true;
+            this.cmb_tipoDisp.Location = new System.Drawing.Point(322, 84);
+            this.cmb_tipoDisp.Name = "cmb_tipoDisp";
+            this.cmb_tipoDisp.Pp_Conseleccion = false;
+            this.cmb_tipoDisp.Pp_Descripcion = "nombre_tipo";
+            this.cmb_tipoDisp.Pp_MensajeError = null;
+            this.cmb_tipoDisp.Pp_NombreCampo = null;
+            this.cmb_tipoDisp.Pp_NombreTabla = null;
+            this.cmb_tipoDisp.Pp_PK = "id_tipo_dispositivo";
+            this.cmb_tipoDisp.Pp_Tabla = "Tipo_dispositivo";
+            this.cmb_tipoDisp.Pp_Validable = false;
+            this.cmb_tipoDisp.Size = new System.Drawing.Size(84, 21);
+            this.cmb_tipoDisp.TabIndex = 15;
+            // 
+            // cmb_CodNacional
+            // 
+            this.cmb_CodNacional.Enabled = false;
+            this.cmb_CodNacional.FormattingEnabled = true;
+            this.cmb_CodNacional.Location = new System.Drawing.Point(322, 38);
+            this.cmb_CodNacional.Name = "cmb_CodNacional";
+            this.cmb_CodNacional.Pp_Conseleccion = false;
+            this.cmb_CodNacional.Pp_Descripcion = "cod_nacional";
+            this.cmb_CodNacional.Pp_MensajeError = null;
+            this.cmb_CodNacional.Pp_NombreCampo = null;
+            this.cmb_CodNacional.Pp_NombreTabla = null;
+            this.cmb_CodNacional.Pp_PK = "id_numero";
+            this.cmb_CodNacional.Pp_Tabla = "Numero";
+            this.cmb_CodNacional.Pp_Validable = false;
+            this.cmb_CodNacional.Size = new System.Drawing.Size(84, 21);
+            this.cmb_CodNacional.TabIndex = 13;
             // 
             // Frm_DispVend_Estadisticas
             // 
