@@ -975,3 +975,49 @@ INSERT INTO Llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_h
 						id_tipo_comun, id_band_horar)
 VALUES		(6, 1, CONVERT(DATETIME, '12/02/2020 10:00:00', 103), 
 			CONVERT(DATETIME, '12/02/2020 16:20:05', 103), 2, 1)
+
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	12,13,'2020-09-04 12:00:00.000','2020-09-04 12:30:00.000',1,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	13,14,'2020-09-05 12:00:00.000','2020-09-05 12:30:00.001',2,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	14,15,'2020-09-06 12:00:00.000','2020-09-06 12:30:00.002',3,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	15,16,'2020-09-07 12:00:00.000','2020-09-07 12:30:00.003',4,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	16,17,'2020-09-08 12:00:00.000','2020-09-08 12:30:00.004',1,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	17,18,'2020-09-09 12:00:00.000','2020-09-09 12:30:00.005',2,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	18,19,'2020-09-10 12:00:00.000','2020-09-10 12:30:00.006',3,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	19,20,'2020-09-11 12:00:00.000','2020-09-11 12:30:00.007',4,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	20,21,'2020-09-12 12:00:00.000','2020-09-12 12:30:00.008',1,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	21,22,'2020-09-13 12:00:00.000','2020-09-13 12:30:00.009',2,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	22,23,'2020-09-14 12:00:00.000','2020-09-14 12:30:00.010',3,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	23,24,'2020-09-15 12:00:00.000','2020-09-15 12:30:00.011',4,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	24,25,'2020-09-16 12:00:00.000','2020-09-16 12:30:00.012',1,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	25,26,'2020-09-17 12:00:00.000','2020-09-17 12:30:00.013',2,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	26,27,'2020-09-18 12:00:00.000','2020-09-18 12:30:00.014',3,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	27,28,'2020-09-19 12:00:00.000','2020-09-19 12:30:00.015',4,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	28,29,'2020-09-20 12:00:00.000','2020-09-20 12:30:00.016',1,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	29,30,'2020-09-21 12:00:00.000','2020-09-21 12:30:00.017',2,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	30,31,'2020-09-22 12:00:00.000','2020-09-22 12:30:00.018',3,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	31,32,'2020-09-23 12:00:00.000','2020-09-23 12:30:00.019',4,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	32,33,'2020-09-24 12:00:00.000','2020-09-24 12:30:00.020',1,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	33,34,'2020-09-25 12:00:00.000','2020-09-25 12:30:00.021',2,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	34,35,'2020-09-26 12:00:00.000','2020-09-26 12:30:00.022',3,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	35,36,'2020-09-27 12:00:00.000','2020-09-27 12:30:00.023',4,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	36,37,'2020-09-28 12:00:00.000','2020-09-28 12:30:00.024',1,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	37,38,'2020-09-29 12:00:00.000','2020-09-29 12:30:00.025',2,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	38,39,'2020-09-30 12:00:00.000','2020-09-30 12:30:00.026',3,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	39,40,'2020-10-01 12:00:00.000','2020-10-01 12:30:00.027',4,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	40,41,'2020-10-02 12:00:00.000','2020-10-02 12:30:00.028',1,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	41,42,'2020-10-03 12:00:00.000','2020-10-03 12:30:00.029',2,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	42,43,'2020-10-04 12:00:00.000','2020-10-04 12:30:00.030',3,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	43,44,'2020-10-05 12:00:00.000','2020-10-05 12:30:00.031',4,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	44,45,'2020-10-06 12:00:00.000','2020-10-06 12:30:00.032',1,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	45,46,'2020-10-07 12:00:00.000','2020-10-07 12:30:00.033',2,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	46,47,'2020-10-08 12:00:00.000','2020-10-08 12:30:00.034',3,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	47,48,'2020-10-09 12:00:00.000','2020-10-09 12:30:00.035',4,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	48,49,'2020-10-10 12:00:00.000','2020-10-10 12:30:00.036',1,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	49,50,'2020-10-11 12:00:00.000','2020-10-11 12:30:00.037',2,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	50,51,'2020-10-12 12:00:00.000','2020-10-12 12:30:00.038',3,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	51,52,'2020-10-13 12:00:00.000','2020-10-13 12:30:00.039',4,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	52,53,'2020-10-14 12:00:00.000','2020-10-14 12:30:00.040',1,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	53,54,'2020-10-15 12:00:00.000','2020-10-15 12:30:00.041',2,3);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	54,55,'2020-10-16 12:00:00.000','2020-10-16 12:30:00.042',3,1);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	55,56,'2020-10-17 12:00:00.000','2020-10-17 12:30:00.043',4,2);
+insert into llamadas (id_nro_emisor, id_nro_receptor, fecha_hora_inicio, fecha_hora_fin, id_tipo_comun, id_band_horar) values (	56,57,'2020-10-18 12:00:00.000','2020-10-18 12:30:00.044',1,3);
