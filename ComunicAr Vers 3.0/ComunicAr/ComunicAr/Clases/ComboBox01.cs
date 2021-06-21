@@ -203,9 +203,12 @@ namespace ComunicAr.Clases
 
         }
 
-        public void Nombre_Cliente()
+        public void Marca()
         {
-            
+            string sql = "SELECT DISTINCT " + Pp_Descripcion + " FROM " + Pp_Tabla;
+            this.DisplayMember = Pp_Descripcion;
+            this.ValueMember = Pp_PK;
+            this.DataSource = _BD.EjecutarSelect(sql);
         }
     }
 }

@@ -28,6 +28,10 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             cmb_CodNacional.SelectedIndex = -1;
             cmb_Cliente.CargarCombo();
             cmb_Cliente.SelectedIndex = -1;
+            cmb_tipoDisp.CargarCombo();
+            cmb_tipoDisp.SelectedIndex = -1;
+            cmb_Marca.Marca();
+            cmb_Marca.SelectedIndex = -1;
             this.reportViewer1.RefreshReport();
             this.reportViewer2.RefreshReport();
             this.reportViewer2.RefreshReport();
@@ -90,6 +94,28 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             {
                 
                 tabla = dispv.DispxServicioCliente(cmb_Cliente.SelectedIndex+1);
+                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                reportViewer2.LocalReport.DataSources.Clear();
+                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                reportViewer2.RefreshReport();
+            }
+
+            if (radioButton6.Checked)
+            {
+
+                tabla = dispv.DispxServicioTipo(cmb_tipoDisp.SelectedIndex + 1);
+                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                reportViewer2.LocalReport.DataSources.Clear();
+                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                reportViewer2.RefreshReport();
+            }
+
+            if (radioButton7.Checked)
+            {
+
+                tabla = dispv.DispxServicioMarca(cmb_Marca.Text);
                 ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
                 reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
                 reportViewer2.LocalReport.DataSources.Clear();

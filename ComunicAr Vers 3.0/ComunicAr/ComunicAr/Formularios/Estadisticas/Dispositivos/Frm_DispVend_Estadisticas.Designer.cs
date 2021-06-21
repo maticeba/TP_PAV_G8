@@ -50,6 +50,10 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.txtMes = new ComunicAr.Clases.TextBox01();
             this.cmb_Cliente = new ComunicAr.Clases.ComboBox01();
             this.cmb_CodNacional = new ComunicAr.Clases.ComboBox01();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.cmb_tipoDisp = new ComunicAr.Clases.ComboBox01();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.cmb_Marca = new ComunicAr.Clases.ComboBox01();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -130,7 +134,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(659, 589);
+            this.tabControl1.Size = new System.Drawing.Size(684, 649);
             this.tabControl1.TabIndex = 6;
             // 
             // DispositivosVendidos
@@ -152,6 +156,8 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // 
             // DispositivosPorServicios
             // 
+            this.DispositivosPorServicios.Controls.Add(this.cmb_Marca);
+            this.DispositivosPorServicios.Controls.Add(this.cmb_tipoDisp);
             this.DispositivosPorServicios.Controls.Add(this.cmb_Cliente);
             this.DispositivosPorServicios.Controls.Add(this.cmb_CodNacional);
             this.DispositivosPorServicios.Controls.Add(this.groupBox2);
@@ -161,7 +167,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.DispositivosPorServicios.Location = new System.Drawing.Point(4, 22);
             this.DispositivosPorServicios.Name = "DispositivosPorServicios";
             this.DispositivosPorServicios.Padding = new System.Windows.Forms.Padding(3);
-            this.DispositivosPorServicios.Size = new System.Drawing.Size(651, 563);
+            this.DispositivosPorServicios.Size = new System.Drawing.Size(676, 623);
             this.DispositivosPorServicios.TabIndex = 1;
             this.DispositivosPorServicios.Text = "DispositivosPorServicios";
             this.DispositivosPorServicios.UseVisualStyleBackColor = true;
@@ -169,12 +175,14 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.radioButton7);
+            this.groupBox2.Controls.Add(this.radioButton6);
             this.groupBox2.Controls.Add(this.radioButton5);
             this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Location = new System.Drawing.Point(162, 20);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(145, 86);
+            this.groupBox2.Size = new System.Drawing.Size(145, 135);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filtros";
@@ -182,7 +190,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 65);
+            this.radioButton3.Location = new System.Drawing.Point(6, 112);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(55, 17);
             this.radioButton3.TabIndex = 2;
@@ -203,7 +211,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // 
             // reportViewer2
             // 
-            this.reportViewer2.Location = new System.Drawing.Point(19, 142);
+            this.reportViewer2.Location = new System.Drawing.Point(19, 206);
             this.reportViewer2.Name = "reportViewer2";
             this.reportViewer2.ServerReport.BearerToken = null;
             this.reportViewer2.Size = new System.Drawing.Size(626, 400);
@@ -297,11 +305,65 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.cmb_CodNacional.Size = new System.Drawing.Size(84, 21);
             this.cmb_CodNacional.TabIndex = 13;
             // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(6, 65);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(131, 17);
+            this.radioButton6.TabIndex = 4;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Por tipo de dispositivo:";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // cmb_tipoDisp
+            // 
+            this.cmb_tipoDisp.FormattingEnabled = true;
+            this.cmb_tipoDisp.Location = new System.Drawing.Point(322, 85);
+            this.cmb_tipoDisp.Name = "cmb_tipoDisp";
+            this.cmb_tipoDisp.Pp_Conseleccion = false;
+            this.cmb_tipoDisp.Pp_Descripcion = "nombre_tipo";
+            this.cmb_tipoDisp.Pp_MensajeError = null;
+            this.cmb_tipoDisp.Pp_NombreCampo = null;
+            this.cmb_tipoDisp.Pp_NombreTabla = null;
+            this.cmb_tipoDisp.Pp_PK = "id_tipo_dispositivo";
+            this.cmb_tipoDisp.Pp_Tabla = "Tipo_dispositivo";
+            this.cmb_tipoDisp.Pp_Validable = false;
+            this.cmb_tipoDisp.Size = new System.Drawing.Size(84, 21);
+            this.cmb_tipoDisp.TabIndex = 15;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(6, 89);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(76, 17);
+            this.radioButton7.TabIndex = 5;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Por marca:";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // cmb_Marca
+            // 
+            this.cmb_Marca.FormattingEnabled = true;
+            this.cmb_Marca.Location = new System.Drawing.Point(322, 109);
+            this.cmb_Marca.Name = "cmb_Marca";
+            this.cmb_Marca.Pp_Conseleccion = false;
+            this.cmb_Marca.Pp_Descripcion = "marca";
+            this.cmb_Marca.Pp_MensajeError = null;
+            this.cmb_Marca.Pp_NombreCampo = null;
+            this.cmb_Marca.Pp_NombreTabla = null;
+            this.cmb_Marca.Pp_PK = "";
+            this.cmb_Marca.Pp_Tabla = "Dispositivos";
+            this.cmb_Marca.Pp_Validable = false;
+            this.cmb_Marca.Size = new System.Drawing.Size(84, 21);
+            this.cmb_Marca.TabIndex = 16;
+            // 
             // Frm_DispVend_Estadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 612);
+            this.ClientSize = new System.Drawing.Size(708, 673);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_DispVend_Estadisticas";
             this.Text = "Frm_DispVend_Estadisticas";
@@ -342,5 +404,9 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         private Clases.ComboBox01 cmb_CodNacional;
         private Clases.ComboBox01 cmb_Cliente;
         private System.Windows.Forms.RadioButton radioButton5;
+        private Clases.ComboBox01 cmb_tipoDisp;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private Clases.ComboBox01 cmb_Marca;
     }
 }

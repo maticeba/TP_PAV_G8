@@ -68,5 +68,30 @@ namespace ComunicAr.Negocio_Estadisticas
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
+        public DataTable DispxServicioTipo(int index)
+        {
+            string sql = @"SELECT tipo_serv = CASE sc.tipo_servicio WHEN 'A' THEN 'Servicio de Datos' " +
+                           " WHEN 'B' THEN 'Servicios Fijos' " +
+                           " WHEN 'C' THEN 'Servicios Prepagos'  " +
+                           " END, COUNT(*) as 'valor' FROM Numero n JOIN Servicios_contratados sc ON sc.id_numero = n.id_numero " +
+                           " JOIN Dispositivos d ON n.id_dispositivo = d.id_dispositivo AND d.id_tipo_dispositivo = " + index +
+                           " GROUP BY sc.tipo_servicio";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
+
+    
+
+        public DataTable DispxServicioMarca(string marca)
+        {
+            string sql = @"SELECT tipo_serv = CASE sc.tipo_servicio WHEN 'A' THEN 'Servicio de Datos' " +
+                           " WHEN 'B' THEN 'Servicios Fijos' " +
+                           " WHEN 'C' THEN 'Servicios Prepagos'  " +
+                           " END, COUNT(*) as 'valor' FROM Numero n JOIN Servicios_contratados sc ON sc.id_numero = n.id_numero " +
+                           " JOIN Dispositivos d ON n.id_dispositivo = d.id_dispositivo AND d.marca = '" + marca + "'" +
+                           " GROUP BY sc.tipo_servicio";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
     }
 }
