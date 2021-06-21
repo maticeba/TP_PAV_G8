@@ -58,5 +58,15 @@ namespace ComunicAr.Negocio_Estadisticas
             return tabla;
         }
 
+        public DataTable DispxServicioCliente(int index)
+        {
+            string sql = @"SELECT tipo_serv = CASE sc.tipo_servicio WHEN 'A' THEN 'Servicio de Datos' " +
+                           " WHEN 'B' THEN 'Servicios Fijos' " +
+                           " WHEN 'C' THEN 'Servicios Prepagos'  " +
+                           " END, COUNT(*) as 'valor' FROM Numero n JOIN Servicios_contratados sc ON sc.id_numero = n.id_numero WHERE n.nro_cliente = " + index +
+                           " GROUP BY sc.tipo_servicio";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
     }
 }

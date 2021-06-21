@@ -202,5 +202,10 @@ namespace ComunicAr.Clases
             this.DataSource = _BD.EjecutarSelect(sql);
 
         }
+
+        public void Nombre_Cliente()
+        {
+            
+        }
     }
 }

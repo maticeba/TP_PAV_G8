@@ -26,6 +26,8 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         {
             cmb_CodNacional.Codigo_Nacional();
             cmb_CodNacional.SelectedIndex = -1;
+            cmb_Cliente.CargarCombo();
+            cmb_Cliente.SelectedIndex = -1;
             this.reportViewer1.RefreshReport();
             this.reportViewer2.RefreshReport();
             this.reportViewer2.RefreshReport();
@@ -65,7 +67,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             DataTable tabla = new DataTable();
             DispVendidos dispv = new DispVendidos();
 
-
+           
             if (radioButton4.Checked)
             {
                 tabla = dispv.DispxServicioCodN(Convert.ToInt32(cmb_CodNacional.Text));
@@ -84,8 +86,18 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
                 reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
                 reportViewer2.RefreshReport();
             }
-            
-            
+            if (radioButton5.Checked)
+            {
+                
+                tabla = dispv.DispxServicioCliente(cmb_Cliente.SelectedIndex+1);
+                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                reportViewer2.LocalReport.DataSources.Clear();
+                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                reportViewer2.RefreshReport();
+            }
+
+
         }
         private void reportViewer1_Load(object sender, EventArgs e)
         {
@@ -123,6 +135,11 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         }
 
         private void DispositivosPorServicios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportViewer2_Load(object sender, EventArgs e)
         {
 
         }
