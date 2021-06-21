@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsLlamada" targetNamespace="http://tempuri.org/DsLlamada.xsd" xmlns:mstns="http://tempuri.org/DsLlamada.xsd" xmlns="http://tempuri.org/DsLlamada.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsLlamada" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsLlamada" msprop:Generator_UserDSName="DsLlamada">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Ds_LLamadaxFecha" msprop:Generator_TableClassName="Ds_LLamadaxFechaDataTable" msprop:Generator_TableVarName="tableDs_LLamadaxFecha" msprop:Generator_RowChangedName="Ds_LLamadaxFechaRowChanged" msprop:Generator_TablePropName="Ds_LLamadaxFecha" msprop:Generator_RowDeletingName="Ds_LLamadaxFechaRowDeleting" msprop:Generator_RowChangingName="Ds_LLamadaxFechaRowChanging" msprop:Generator_RowEvHandlerName="Ds_LLamadaxFechaRowChangeEventHandler" msprop:Generator_RowDeletedName="Ds_LLamadaxFechaRowDeleted" msprop:Generator_RowClassName="Ds_LLamadaxFechaRow" msprop:Generator_UserTableName="Ds_LLamadaxFecha" msprop:Generator_RowEvArgName="Ds_LLamadaxFechaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_llamada" msprop:Generator_ColumnVarNameInTable="columnid_llamada" msprop:Generator_ColumnPropNameInRow="id_llamada" msprop:Generator_ColumnPropNameInTable="id_llamadaColumn" msprop:Generator_UserColumnName="id_llamada" type="xs:string" minOccurs="0" />
+              <xs:element name="id_nro_emisor" msprop:Generator_ColumnVarNameInTable="columnid_nro_emisor" msprop:Generator_ColumnPropNameInRow="id_nro_emisor" msprop:Generator_ColumnPropNameInTable="id_nro_emisorColumn" msprop:Generator_UserColumnName="id_nro_emisor" type="xs:string" minOccurs="0" />
+              <xs:element name="id_nro_receptor" msprop:Generator_ColumnVarNameInTable="columnid_nro_receptor" msprop:Generator_ColumnPropNameInRow="id_nro_receptor" msprop:Generator_ColumnPropNameInTable="id_nro_receptorColumn" msprop:Generator_UserColumnName="id_nro_receptor" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_hora_inicio" msprop:Generator_ColumnVarNameInTable="columnfecha_hora_inicio" msprop:Generator_ColumnPropNameInRow="fecha_hora_inicio" msprop:Generator_ColumnPropNameInTable="fecha_hora_inicioColumn" msprop:Generator_UserColumnName="fecha_hora_inicio" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_hora_fin" msprop:Generator_ColumnVarNameInTable="columnfecha_hora_fin" msprop:Generator_ColumnPropNameInRow="fecha_hora_fin" msprop:Generator_ColumnPropNameInTable="fecha_hora_finColumn" msprop:Generator_UserColumnName="fecha_hora_fin" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
