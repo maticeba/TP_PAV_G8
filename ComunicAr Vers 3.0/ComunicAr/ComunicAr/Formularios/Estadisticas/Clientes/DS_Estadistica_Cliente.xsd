@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Estadistica_Cliente" targetNamespace="http://tempuri.org/DS_Estadistica_Cliente.xsd" xmlns:mstns="http://tempuri.org/DS_Estadistica_Cliente.xsd" xmlns="http://tempuri.org/DS_Estadistica_Cliente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Estadistica_Cliente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Estadistica_Cliente" msprop:Generator_UserDSName="DS_Estadistica_Cliente">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Clientes_x0020_dados_x0020_de_x0020_baja" msprop:Generator_TableClassName="Clientes_dados_de_bajaDataTable" msprop:Generator_TableVarName="tableClientes_dados_de_baja" msprop:Generator_RowChangedName="Clientes_dados_de_bajaRowChanged" msprop:Generator_TablePropName="Clientes_dados_de_baja" msprop:Generator_RowDeletingName="Clientes_dados_de_bajaRowDeleting" msprop:Generator_RowChangingName="Clientes_dados_de_bajaRowChanging" msprop:Generator_RowEvHandlerName="Clientes_dados_de_bajaRowChangeEventHandler" msprop:Generator_RowDeletedName="Clientes_dados_de_bajaRowDeleted" msprop:Generator_RowClassName="Clientes_dados_de_bajaRow" msprop:Generator_UserTableName="Clientes dados de baja" msprop:Generator_RowEvArgName="Clientes_dados_de_bajaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="denominacion" msprop:Generator_ColumnVarNameInTable="columndenominacion" msprop:Generator_ColumnPropNameInRow="denominacion" msprop:Generator_ColumnPropNameInTable="denominacionColumn" msprop:Generator_UserColumnName="denominacion" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" msprop:Generator_UserColumnName="valor" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

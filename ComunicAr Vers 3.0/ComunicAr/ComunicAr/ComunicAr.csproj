@@ -344,6 +344,19 @@
     <Compile Include="Formularios\Escritorio.Designer.cs">
       <DependentUpon>Escritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Cliente.cs">
+      <SubType>code</SubType>
+      <DependentUpon>DS_Estadistica_Cliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Cliente.designer.cs">
+      <DependentUpon>DS_Estadistica_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.designer.cs">
+      <DependentUpon>Frm_Estadistica_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Dispositivos\DS_DispVend.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -395,6 +408,12 @@
     </Compile>
     <Compile Include="Formularios\Menu\Frm_MenuGral.Designer.cs">
       <DependentUpon>Frm_MenuGral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu\Frm_Menu_Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu\Frm_Menu_Estadisticas.designer.cs">
+      <DependentUpon>Frm_Menu_Estadisticas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Menu\Frm_Menu_Listas.cs">
       <SubType>Form</SubType>
@@ -582,6 +601,7 @@
     <Compile Include="Negocio\Servicios_Prepagos.cs" />
     <Compile Include="Negocio_Estadisticas\CantidadLlamadas.cs" />
     <Compile Include="Negocio_Estadisticas\DispVendidos.cs" />
+    <Compile Include="Negocio_Estadisticas\Estadistica_cliente.cs" />
     <Compile Include="Negocio_Estadisticas\Packs_Vendidos.cs" />
     <Compile Include="Negocio_Estadisticas\Tipo_Llamada.cs" />
     <Compile Include="Negocio_Listados\Dispositivos.cs" />
@@ -743,6 +763,10 @@
     <EmbeddedResource Include="Formularios\Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Clientes dado de baja.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.resx">
+      <DependentUpon>Frm_Estadistica_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\Frm_DispVend_Estadisticas.resx">
       <DependentUpon>Frm_DispVend_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
@@ -763,6 +787,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Menu\Frm_MenuGral.resx">
       <DependentUpon>Frm_MenuGral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu\Frm_Menu_Estadisticas.resx">
+      <DependentUpon>Frm_Menu_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Menu\Frm_Menu_Listas.resx">
       <DependentUpon>Frm_Menu_Listas.cs</DependentUpon>
@@ -854,6 +881,13 @@
     <EmbeddedResource Include="Formularios\Reportes\Clientes\Reporte para Clientes.resx">
       <DependentUpon>Reporte para Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Cliente.xsc">
+      <DependentUpon>DS_Estadistica_Cliente.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Cliente.xsd" />
+    <None Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Cliente.xss">
+      <DependentUpon>DS_Estadistica_Cliente.xsd</DependentUpon>
+    </None>
     <None Include="Formularios\Estadisticas\Dispositivos\DS_DispVend.xsc">
       <DependentUpon>DS_DispVend.xsd</DependentUpon>
     </None>

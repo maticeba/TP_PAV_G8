@@ -32,7 +32,7 @@ namespace ComunicAr.Formularios.Menu
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MenuGral));
             this.btn_menu_gral_datos = new System.Windows.Forms.Button();
             this.btn_menu_gral_lista = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_menu_gral_estadistica = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btn_gral_vta_dispo = new System.Windows.Forms.Button();
             this.btn_gral_factura = new System.Windows.Forms.Button();
@@ -71,20 +71,21 @@ namespace ComunicAr.Formularios.Menu
             this.btn_menu_gral_lista.UseVisualStyleBackColor = false;
             this.btn_menu_gral_lista.Click += new System.EventHandler(this.btn_menu_gral_lista_Click_1);
             // 
-            // button3
+            // btn_menu_gral_estadistica
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(278, 65);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 107);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Generar Estadísticas";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_menu_gral_estadistica.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_menu_gral_estadistica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_menu_gral_estadistica.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_menu_gral_estadistica.ForeColor = System.Drawing.Color.Black;
+            this.btn_menu_gral_estadistica.Image = ((System.Drawing.Image)(resources.GetObject("btn_menu_gral_estadistica.Image")));
+            this.btn_menu_gral_estadistica.Location = new System.Drawing.Point(278, 65);
+            this.btn_menu_gral_estadistica.Name = "btn_menu_gral_estadistica";
+            this.btn_menu_gral_estadistica.Size = new System.Drawing.Size(126, 107);
+            this.btn_menu_gral_estadistica.TabIndex = 0;
+            this.btn_menu_gral_estadistica.Text = "Generar Estadísticas";
+            this.btn_menu_gral_estadistica.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_menu_gral_estadistica.UseVisualStyleBackColor = false;
+            this.btn_menu_gral_estadistica.Click += new System.EventHandler(this.btn_menu_gral_estadistica_Click);
             // 
             // button4
             // 
@@ -152,7 +153,7 @@ namespace ComunicAr.Formularios.Menu
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btn_gral_factura);
             this.Controls.Add(this.btn_gral_vta_dispo);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_menu_gral_estadistica);
             this.Controls.Add(this.btn_menu_gral_lista);
             this.Controls.Add(this.btn_menu_gral_datos);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,7 +161,6 @@ namespace ComunicAr.Formularios.Menu
             this.Name = "Frm_MenuGral";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Frm_MenuGral_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,7 +170,7 @@ namespace ComunicAr.Formularios.Menu
 
         private System.Windows.Forms.Button btn_menu_gral_datos;
         private System.Windows.Forms.Button btn_menu_gral_lista;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_menu_gral_estadistica;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btn_gral_vta_dispo;
         private System.Windows.Forms.Button btn_gral_factura;
