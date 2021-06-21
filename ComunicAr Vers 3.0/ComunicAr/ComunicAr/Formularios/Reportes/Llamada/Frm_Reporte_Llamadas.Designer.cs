@@ -35,13 +35,17 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_Calcular = new System.Windows.Forms.Button();
+            this.textBox013 = new ComunicAr.Clases.TextBox01();
+            this.textBox012 = new ComunicAr.Clases.TextBox01();
             this.btn_buscar = new System.Windows.Forms.Button();
+            this.textBox011 = new ComunicAr.Clases.TextBox01();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbtn_Todos = new System.Windows.Forms.RadioButton();
             this.rdbtn_PorFecha = new System.Windows.Forms.RadioButton();
             this.rdbtn_Cliente = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -50,21 +54,17 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.rBD1 = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox013 = new ComunicAr.Clases.TextBox01();
-            this.textBox012 = new ComunicAr.Clases.TextBox01();
-            this.textBox011 = new ComunicAr.Clases.TextBox01();
             this.txt_duracion = new ComunicAr.Clases.TextBox01();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -109,6 +109,7 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pictureBox2);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.btn_Calcular);
@@ -117,7 +118,6 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.tabPage3.Controls.Add(this.btn_buscar);
             this.tabPage3.Controls.Add(this.textBox011);
             this.tabPage3.Controls.Add(this.groupBox1);
-            this.tabPage3.Controls.Add(this.pictureBox1);
             this.tabPage3.Controls.Add(this.reportViewer1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -126,6 +126,24 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Llamadas por Fechas";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(511, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Hasta";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(361, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Desde";
             // 
             // btn_Calcular
             // 
@@ -137,6 +155,28 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.btn_Calcular.UseVisualStyleBackColor = true;
             this.btn_Calcular.Click += new System.EventHandler(this.btn_Calcular_Click);
             // 
+            // textBox013
+            // 
+            this.textBox013.Location = new System.Drawing.Point(552, 41);
+            this.textBox013.Name = "textBox013";
+            this.textBox013.Pp_Campo = null;
+            this.textBox013.Pp_MensajeError = null;
+            this.textBox013.Pp_Tabla = null;
+            this.textBox013.Pp_Validable = false;
+            this.textBox013.Size = new System.Drawing.Size(100, 20);
+            this.textBox013.TabIndex = 6;
+            // 
+            // textBox012
+            // 
+            this.textBox012.Location = new System.Drawing.Point(405, 41);
+            this.textBox012.Name = "textBox012";
+            this.textBox012.Pp_Campo = null;
+            this.textBox012.Pp_MensajeError = null;
+            this.textBox012.Pp_Tabla = null;
+            this.textBox012.Pp_Validable = false;
+            this.textBox012.Size = new System.Drawing.Size(100, 20);
+            this.textBox012.TabIndex = 5;
+            // 
             // btn_buscar
             // 
             this.btn_buscar.Location = new System.Drawing.Point(550, 15);
@@ -146,6 +186,17 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // textBox011
+            // 
+            this.textBox011.Location = new System.Drawing.Point(405, 15);
+            this.textBox011.Name = "textBox011";
+            this.textBox011.Pp_Campo = null;
+            this.textBox011.Pp_MensajeError = null;
+            this.textBox011.Pp_Tabla = null;
+            this.textBox011.Pp_Validable = false;
+            this.textBox011.Size = new System.Drawing.Size(100, 20);
+            this.textBox011.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -194,14 +245,6 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.rdbtn_Cliente.Text = "Por Cliente";
             this.rdbtn_Cliente.UseVisualStyleBackColor = true;
             this.rdbtn_Cliente.CheckedChanged += new System.EventHandler(this.rdbtn_Cliente_CheckedChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 86);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // reportViewer1
             // 
@@ -290,49 +333,6 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.reportViewer2.Size = new System.Drawing.Size(693, 344);
             this.reportViewer2.TabIndex = 4;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(677, 544);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox013
-            // 
-            this.textBox013.Location = new System.Drawing.Point(552, 41);
-            this.textBox013.Name = "textBox013";
-            this.textBox013.Pp_Campo = null;
-            this.textBox013.Pp_MensajeError = null;
-            this.textBox013.Pp_Tabla = null;
-            this.textBox013.Pp_Validable = false;
-            this.textBox013.Size = new System.Drawing.Size(100, 20);
-            this.textBox013.TabIndex = 6;
-            // 
-            // textBox012
-            // 
-            this.textBox012.Location = new System.Drawing.Point(405, 41);
-            this.textBox012.Name = "textBox012";
-            this.textBox012.Pp_Campo = null;
-            this.textBox012.Pp_MensajeError = null;
-            this.textBox012.Pp_Tabla = null;
-            this.textBox012.Pp_Validable = false;
-            this.textBox012.Size = new System.Drawing.Size(100, 20);
-            this.textBox012.TabIndex = 5;
-            // 
-            // textBox011
-            // 
-            this.textBox011.Location = new System.Drawing.Point(405, 15);
-            this.textBox011.Name = "textBox011";
-            this.textBox011.Pp_Campo = null;
-            this.textBox011.Pp_MensajeError = null;
-            this.textBox011.Pp_Tabla = null;
-            this.textBox011.Pp_Validable = false;
-            this.textBox011.Size = new System.Drawing.Size(100, 20);
-            this.textBox011.TabIndex = 3;
-            // 
             // txt_duracion
             // 
             this.txt_duracion.Location = new System.Drawing.Point(376, 25);
@@ -344,23 +344,25 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.txt_duracion.Size = new System.Drawing.Size(100, 20);
             this.txt_duracion.TabIndex = 6;
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(361, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Desde";
+            this.button1.Location = new System.Drawing.Point(677, 544);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // pictureBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(511, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Hasta";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(21, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // Frm_Reporte_Llamadas
             // 
@@ -379,12 +381,12 @@ namespace ComunicAr.Formularios.Reportes.Llamada
             this.tabPage3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -412,11 +414,11 @@ namespace ComunicAr.Formularios.Reportes.Llamada
         private System.Windows.Forms.Button btn_buscar;
         private Clases.TextBox01 textBox011;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton rdbtn_Todos;
         private System.Windows.Forms.RadioButton rdbtn_PorFecha;
         private System.Windows.Forms.RadioButton rdbtn_Cliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
