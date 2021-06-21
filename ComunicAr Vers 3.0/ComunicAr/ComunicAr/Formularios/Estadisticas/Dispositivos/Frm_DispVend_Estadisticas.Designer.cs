@@ -197,6 +197,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Todos";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -208,6 +209,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Por codigo nacional:";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // reportViewer2
             // 
@@ -248,6 +250,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Por cliente:";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // txtYear
             // 
@@ -275,6 +278,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // 
             // cmb_Cliente
             // 
+            this.cmb_Cliente.Enabled = false;
             this.cmb_Cliente.FormattingEnabled = true;
             this.cmb_Cliente.Location = new System.Drawing.Point(322, 61);
             this.cmb_Cliente.Name = "cmb_Cliente";
@@ -291,6 +295,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             // 
             // cmb_CodNacional
             // 
+            this.cmb_CodNacional.Enabled = false;
             this.cmb_CodNacional.FormattingEnabled = true;
             this.cmb_CodNacional.Location = new System.Drawing.Point(322, 38);
             this.cmb_CodNacional.Name = "cmb_CodNacional";
@@ -315,9 +320,11 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Por tipo de dispositivo:";
             this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // cmb_tipoDisp
             // 
+            this.cmb_tipoDisp.Enabled = false;
             this.cmb_tipoDisp.FormattingEnabled = true;
             this.cmb_tipoDisp.Location = new System.Drawing.Point(322, 85);
             this.cmb_tipoDisp.Name = "cmb_tipoDisp";
@@ -342,9 +349,11 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Por marca:";
             this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // cmb_Marca
             // 
+            this.cmb_Marca.Enabled = false;
             this.cmb_Marca.FormattingEnabled = true;
             this.cmb_Marca.Location = new System.Drawing.Point(322, 109);
             this.cmb_Marca.Name = "cmb_Marca";

@@ -169,5 +169,66 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         {
 
         }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_CodNacional.Enabled = true;
+            cmb_Cliente.Enabled = false;
+            cmb_Marca.Enabled = false;
+            cmb_tipoDisp.Enabled = false;
+
+            cmb_Cliente.SelectedIndex = -1;
+            cmb_Marca.SelectedIndex = -1;
+            cmb_tipoDisp.SelectedIndex = -1;
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_CodNacional.Enabled = false;
+            cmb_Cliente.Enabled = true;
+            cmb_Marca.Enabled = false;
+            cmb_tipoDisp.Enabled = false;
+
+            cmb_CodNacional.SelectedIndex = -1;
+            cmb_Marca.SelectedIndex = -1;
+            cmb_tipoDisp.SelectedIndex = -1;
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_CodNacional.Enabled = false;
+            cmb_Cliente.Enabled = false;
+            cmb_Marca.Enabled = false;
+            cmb_tipoDisp.Enabled = true;
+
+            cmb_CodNacional.SelectedIndex = -1;
+            cmb_Marca.SelectedIndex = -1;
+            cmb_Cliente.SelectedIndex = -1;
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_CodNacional.Enabled = false;
+            cmb_Cliente.Enabled = false;
+            cmb_Marca.Enabled = true;
+            cmb_tipoDisp.Enabled = false;
+
+            cmb_CodNacional.SelectedIndex = -1;
+            cmb_tipoDisp.SelectedIndex = -1;
+            cmb_Cliente.SelectedIndex = -1;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            cmb_CodNacional.Enabled = false;
+            cmb_Cliente.Enabled = false;
+            cmb_Marca.Enabled = false;
+            cmb_tipoDisp.Enabled = false;
+
+            cmb_Marca.SelectedIndex = -1;
+            cmb_CodNacional.SelectedIndex = -1;
+            cmb_tipoDisp.SelectedIndex = -1;
+            cmb_Cliente.SelectedIndex = -1;
+        }
     }
 }
