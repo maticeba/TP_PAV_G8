@@ -14,6 +14,7 @@ using ComunicAr.Formularios.Estadisticas.Numeros;
 using ComunicAr.Formularios.Estadisticas.Servicios;
 //using ComunicAr.Formularios.Estadisticas.Llamada;
 using ComunicAr.Formularios.Estadisticas.Dispositivos;
+using ComunicAr.Formularios.Estadisticas.Llamadas;
 
 namespace ComunicAr.Formularios.Menu
 {
@@ -55,7 +56,8 @@ namespace ComunicAr.Formularios.Menu
 
         private void bnt_menu_esta_llamadas_Click(object sender, EventArgs e)
         {
-
+            Frm_Llamadas_Estadisticas Llamadas = new Frm_Llamadas_Estadisticas();
+            Llamadas.ShowDialog();
         }
 
         private void bnt_menu_esta_factura_Click(object sender, EventArgs e)
