@@ -43,15 +43,22 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             DispVendidos dispv = new DispVendidos();
             if (radioButton2.Checked)
             {
-                mes = Convert.ToInt32(txtMes.Text);
-                year = Convert.ToInt32(txtYear.Text);
+                if (txtMes.TextLength == 0 || txtYear.TextLength == 0)
+                {
+                    MessageBox.Show("Rellene los campos Correctamente");
+                }
+                else
+                {
+                    mes = Convert.ToInt32(txtMes.Text);
+                    year = Convert.ToInt32(txtYear.Text);
 
-                tabla = dispv.DispVendxMes(mes, year);
-                ReportDataSource paqueteDatos = new ReportDataSource("DataSet_Disp", tabla);
-                reportViewer1.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReportDispVend.rdlc";
-                reportViewer1.LocalReport.DataSources.Clear();
-                reportViewer1.LocalReport.DataSources.Add(paqueteDatos);
-                reportViewer1.RefreshReport();
+                    tabla = dispv.DispVendxMes(mes, year);
+                    ReportDataSource paqueteDatos = new ReportDataSource("DataSet_Disp", tabla);
+                    reportViewer1.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReportDispVend.rdlc";
+                    reportViewer1.LocalReport.DataSources.Clear();
+                    reportViewer1.LocalReport.DataSources.Add(paqueteDatos);
+                    reportViewer1.RefreshReport();
+                }
             }
             if (radioButton1.Checked)
             {
@@ -74,15 +81,23 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
            
             if (radioButton4.Checked)
             {
-                tabla = dispv.DispxServicioCodN(Convert.ToInt32(cmb_CodNacional.Text));
-                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
-                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
-                reportViewer2.LocalReport.DataSources.Clear();
-                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
-                reportViewer2.RefreshReport();
+                if (cmb_CodNacional.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Rellene los campos Correctamente");
+                }
+                else
+                {
+                    tabla = dispv.DispxServicioCodN(Convert.ToInt32(cmb_CodNacional.Text));
+                    ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                    reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                    reportViewer2.LocalReport.DataSources.Clear();
+                    reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                    reportViewer2.RefreshReport();
+                }
             }
-            if (radioButton4.Checked)
+            if (radioButton3.Checked)
             {
+
                 tabla = dispv.DispxServicio();
                 ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
                 reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
@@ -92,35 +107,52 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             }
             if (radioButton5.Checked)
             {
-                
-                tabla = dispv.DispxServicioCliente(cmb_Cliente.SelectedIndex+1);
-                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
-                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
-                reportViewer2.LocalReport.DataSources.Clear();
-                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
-                reportViewer2.RefreshReport();
+                if (cmb_Cliente.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Rellene los campos Correctamente");
+                }
+                else
+                {
+                    tabla = dispv.DispxServicioCliente(cmb_Cliente.SelectedIndex + 1);
+                    ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                    reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                    reportViewer2.LocalReport.DataSources.Clear();
+                    reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                    reportViewer2.RefreshReport();
+                }
             }
-
             if (radioButton6.Checked)
             {
-
-                tabla = dispv.DispxServicioTipo(cmb_tipoDisp.SelectedIndex + 1);
-                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
-                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
-                reportViewer2.LocalReport.DataSources.Clear();
-                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
-                reportViewer2.RefreshReport();
+                if (cmb_tipoDisp.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Rellene los campos Correctamente");
+                }
+                else
+                {
+                    tabla = dispv.DispxServicioTipo(cmb_tipoDisp.SelectedIndex + 1);
+                    ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                    reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                    reportViewer2.LocalReport.DataSources.Clear();
+                    reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                    reportViewer2.RefreshReport();
+                }
             }
 
             if (radioButton7.Checked)
             {
-
-                tabla = dispv.DispxServicioMarca(cmb_Marca.Text);
-                ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
-                reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
-                reportViewer2.LocalReport.DataSources.Clear();
-                reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
-                reportViewer2.RefreshReport();
+                if (cmb_Marca.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Rellene los campos Correctamente");
+                }
+                else
+                {
+                    tabla = dispv.DispxServicioMarca(cmb_Marca.Text);
+                    ReportDataSource paqueteDatos = new ReportDataSource("DataSet1", tabla);
+                    reportViewer2.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.ReporteDispxServ.rdlc";
+                    reportViewer2.LocalReport.DataSources.Clear();
+                    reportViewer2.LocalReport.DataSources.Add(paqueteDatos);
+                    reportViewer2.RefreshReport();
+                }
             }
 
 
