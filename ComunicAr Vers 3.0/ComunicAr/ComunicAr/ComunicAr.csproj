@@ -344,6 +344,11 @@
     <Compile Include="Formularios\Escritorio.Designer.cs">
       <DependentUpon>Escritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Ciudad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Estadistica_Ciudad.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Cliente.cs">
       <SubType>code</SubType>
       <DependentUpon>DS_Estadistica_Cliente.xsd</DependentUpon>
@@ -804,6 +809,7 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.resx">
       <DependentUpon>Frm_Estadistica_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Report_Estadisticas_ciudad.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\Frm_DispVend_Estadisticas.resx">
       <DependentUpon>Frm_DispVend_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
@@ -926,6 +932,17 @@
     <EmbeddedResource Include="Formularios\Reportes\Clientes\Reporte para Clientes.resx">
       <DependentUpon>Reporte para Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Ciudad.xsc">
+      <DependentUpon>DS_Estadistica_Ciudad.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Ciudad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Estadistica_Ciudad.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Ciudad.xss">
+      <DependentUpon>DS_Estadistica_Ciudad.xsd</DependentUpon>
+    </None>
     <None Include="Formularios\Estadisticas\Clientes\DS_Estadistica_Cliente.xsc">
       <DependentUpon>DS_Estadistica_Cliente.xsd</DependentUpon>
     </None>

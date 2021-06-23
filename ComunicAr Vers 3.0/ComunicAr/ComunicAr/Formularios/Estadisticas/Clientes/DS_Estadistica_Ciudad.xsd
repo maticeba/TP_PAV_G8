@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Estadistica_Ciudad" targetNamespace="http://tempuri.org/DS_Estadistica_Ciudad.xsd" xmlns:mstns="http://tempuri.org/DS_Estadistica_Ciudad.xsd" xmlns="http://tempuri.org/DS_Estadistica_Ciudad.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Estadistica_Ciudad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Estadistica_Ciudad" msprop:Generator_UserDSName="DS_Estadistica_Ciudad">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Clientes_x0020_por_x0020_provincia" msprop:Generator_TableClassName="Clientes_por_provinciaDataTable" msprop:Generator_TableVarName="tableClientes_por_provincia" msprop:Generator_TablePropName="Clientes_por_provincia" msprop:Generator_RowDeletingName="Clientes_por_provinciaRowDeleting" msprop:Generator_RowChangingName="Clientes_por_provinciaRowChanging" msprop:Generator_RowEvHandlerName="Clientes_por_provinciaRowChangeEventHandler" msprop:Generator_RowDeletedName="Clientes_por_provinciaRowDeleted" msprop:Generator_UserTableName="Clientes por provincia" msprop:Generator_RowChangedName="Clientes_por_provinciaRowChanged" msprop:Generator_RowEvArgName="Clientes_por_provinciaRowChangeEvent" msprop:Generator_RowClassName="Clientes_por_provinciaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_ciudad" msdata:Caption="nombre_prov" msprop:Generator_ColumnVarNameInTable="columnnombre_ciudad" msprop:Generator_ColumnPropNameInRow="nombre_ciudad" msprop:Generator_ColumnPropNameInTable="nombre_ciudadColumn" msprop:Generator_UserColumnName="nombre_ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
