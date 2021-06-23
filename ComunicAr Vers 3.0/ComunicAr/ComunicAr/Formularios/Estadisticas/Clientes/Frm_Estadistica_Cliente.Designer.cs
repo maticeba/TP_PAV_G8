@@ -35,7 +35,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_estadistica_cliente_baja_calcular = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_estadistica_cliente_baja_año = new ComunicAr.Clases.TextBox01();
             this.rv_estadistica_cliente_baja = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -44,7 +43,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.rb_fecha_alta = new System.Windows.Forms.RadioButton();
             this.rb_todas = new System.Windows.Forms.RadioButton();
-            this.txt_fecha_alta = new ComunicAr.Clases.TextBox01();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.rv_cliente_servicio = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -53,30 +51,32 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.rb_between = new System.Windows.Forms.RadioButton();
             this.rb_todos = new System.Windows.Forms.RadioButton();
             this.rb_C = new System.Windows.Forms.RadioButton();
-            this.txt_vigencia = new ComunicAr.Clases.TextBox01();
-            this.txt_ingresar_año = new ComunicAr.Clases.TextBox01();
             this.ClientXServ = new System.Windows.Forms.TabPage();
             this.rv_Clien_Serv = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_year_C = new ComunicAr.Clases.TextBox01();
             this.txt_año = new System.Windows.Forms.Label();
             this.btn_calcular_C = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox011 = new ComunicAr.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox012 = new ComunicAr.Clases.TextBox01();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txt_estadistica_cliente_baja_año = new ComunicAr.Clases.TextBox01();
+            this.txt_fecha_alta = new ComunicAr.Clases.TextBox01();
+            this.txt_vigencia = new ComunicAr.Clases.TextBox01();
+            this.txt_ingresar_año = new ComunicAr.Clases.TextBox01();
+            this.txt_year_C = new ComunicAr.Clases.TextBox01();
+            this.textBox011 = new ComunicAr.Clases.TextBox01();
+            this.textBox012 = new ComunicAr.Clases.TextBox01();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -88,6 +88,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox7.SuspendLayout();
             this.ClientXServ.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -97,7 +98,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -111,7 +111,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(862, 537);
+            this.tabControl1.Size = new System.Drawing.Size(679, 540);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -123,8 +123,8 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.tabPage1.Controls.Add(this.rv_estadistica_cliente_baja);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(854, 511);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(671, 514);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Clientes dados de baja";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -134,18 +134,18 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.ErrorImage = null;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 17);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 6);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(99, 74);
+            this.pictureBox4.Size = new System.Drawing.Size(99, 88);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 30;
             this.pictureBox4.TabStop = false;
             // 
             // btn_estadistica_cliente_baja_calcular
             // 
-            this.btn_estadistica_cliente_baja_calcular.Location = new System.Drawing.Point(257, 73);
+            this.btn_estadistica_cliente_baja_calcular.Location = new System.Drawing.Point(562, 16);
             this.btn_estadistica_cliente_baja_calcular.Name = "btn_estadistica_cliente_baja_calcular";
-            this.btn_estadistica_cliente_baja_calcular.Size = new System.Drawing.Size(75, 18);
+            this.btn_estadistica_cliente_baja_calcular.Size = new System.Drawing.Size(68, 20);
             this.btn_estadistica_cliente_baja_calcular.TabIndex = 3;
             this.btn_estadistica_cliente_baja_calcular.Text = "Calcular";
             this.btn_estadistica_cliente_baja_calcular.UseVisualStyleBackColor = true;
@@ -154,29 +154,18 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 77);
+            this.label1.Location = new System.Drawing.Point(126, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Año";
-            // 
-            // txt_estadistica_cliente_baja_año
-            // 
-            this.txt_estadistica_cliente_baja_año.Location = new System.Drawing.Point(155, 73);
-            this.txt_estadistica_cliente_baja_año.Name = "txt_estadistica_cliente_baja_año";
-            this.txt_estadistica_cliente_baja_año.Pp_Campo = null;
-            this.txt_estadistica_cliente_baja_año.Pp_MensajeError = null;
-            this.txt_estadistica_cliente_baja_año.Pp_Tabla = null;
-            this.txt_estadistica_cliente_baja_año.Pp_Validable = false;
-            this.txt_estadistica_cliente_baja_año.Size = new System.Drawing.Size(90, 20);
-            this.txt_estadistica_cliente_baja_año.TabIndex = 1;
+            this.label1.Text = "Año a buscar:";
             // 
             // rv_estadistica_cliente_baja
             // 
-            this.rv_estadistica_cliente_baja.Location = new System.Drawing.Point(11, 108);
+            this.rv_estadistica_cliente_baja.Location = new System.Drawing.Point(31, 100);
             this.rv_estadistica_cliente_baja.Name = "rv_estadistica_cliente_baja";
             this.rv_estadistica_cliente_baja.ServerReport.BearerToken = null;
-            this.rv_estadistica_cliente_baja.Size = new System.Drawing.Size(845, 399);
+            this.rv_estadistica_cliente_baja.Size = new System.Drawing.Size(615, 397);
             this.rv_estadistica_cliente_baja.TabIndex = 0;
             // 
             // tabPage4
@@ -187,10 +176,10 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.tabPage4.Controls.Add(this.groupBox8);
             this.tabPage4.Controls.Add(this.txt_fecha_alta);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage4.Size = new System.Drawing.Size(854, 511);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Size = new System.Drawing.Size(671, 514);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Cliente por Provincia";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -209,17 +198,17 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // 
             // rv_cliente_provincia
             // 
-            this.rv_cliente_provincia.Location = new System.Drawing.Point(2, 84);
-            this.rv_cliente_provincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rv_cliente_provincia.Location = new System.Drawing.Point(30, 100);
+            this.rv_cliente_provincia.Margin = new System.Windows.Forms.Padding(2);
             this.rv_cliente_provincia.Name = "rv_cliente_provincia";
             this.rv_cliente_provincia.ServerReport.BearerToken = null;
-            this.rv_cliente_provincia.Size = new System.Drawing.Size(849, 395);
+            this.rv_cliente_provincia.Size = new System.Drawing.Size(615, 397);
             this.rv_cliente_provincia.TabIndex = 9;
             // 
             // btn_cliente_provincia
             // 
             this.btn_cliente_provincia.Location = new System.Drawing.Point(458, 20);
-            this.btn_cliente_provincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cliente_provincia.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cliente_provincia.Name = "btn_cliente_provincia";
             this.btn_cliente_provincia.Size = new System.Drawing.Size(60, 20);
             this.btn_cliente_provincia.TabIndex = 8;
@@ -232,9 +221,9 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox8.Controls.Add(this.rb_fecha_alta);
             this.groupBox8.Controls.Add(this.rb_todas);
             this.groupBox8.Location = new System.Drawing.Point(109, 5);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox8.Size = new System.Drawing.Size(131, 68);
             this.groupBox8.TabIndex = 6;
             this.groupBox8.TabStop = false;
@@ -244,7 +233,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // 
             this.rb_fecha_alta.AutoSize = true;
             this.rb_fecha_alta.Location = new System.Drawing.Point(5, 17);
-            this.rb_fecha_alta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_fecha_alta.Margin = new System.Windows.Forms.Padding(2);
             this.rb_fecha_alta.Name = "rb_fecha_alta";
             this.rb_fecha_alta.Size = new System.Drawing.Size(82, 17);
             this.rb_fecha_alta.TabIndex = 5;
@@ -257,7 +246,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // 
             this.rb_todas.AutoSize = true;
             this.rb_todas.Location = new System.Drawing.Point(4, 45);
-            this.rb_todas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_todas.Margin = new System.Windows.Forms.Padding(2);
             this.rb_todas.Name = "rb_todas";
             this.rb_todas.Size = new System.Drawing.Size(122, 17);
             this.rb_todas.TabIndex = 4;
@@ -265,18 +254,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.rb_todas.Text = "Todas las provincias";
             this.rb_todas.UseVisualStyleBackColor = true;
             this.rb_todas.CheckedChanged += new System.EventHandler(this.rb_todas_CheckedChanged_1);
-            // 
-            // txt_fecha_alta
-            // 
-            this.txt_fecha_alta.Location = new System.Drawing.Point(243, 21);
-            this.txt_fecha_alta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_fecha_alta.Name = "txt_fecha_alta";
-            this.txt_fecha_alta.Pp_Campo = null;
-            this.txt_fecha_alta.Pp_MensajeError = null;
-            this.txt_fecha_alta.Pp_Tabla = null;
-            this.txt_fecha_alta.Pp_Validable = false;
-            this.txt_fecha_alta.Size = new System.Drawing.Size(85, 20);
-            this.txt_fecha_alta.TabIndex = 7;
             // 
             // tabPage5
             // 
@@ -287,10 +264,10 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.tabPage5.Controls.Add(this.txt_vigencia);
             this.tabPage5.Controls.Add(this.txt_ingresar_año);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Size = new System.Drawing.Size(854, 511);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(671, 514);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Cliente por Servicio";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -309,17 +286,17 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // 
             // rv_cliente_servicio
             // 
-            this.rv_cliente_servicio.Location = new System.Drawing.Point(5, 84);
-            this.rv_cliente_servicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rv_cliente_servicio.Location = new System.Drawing.Point(28, 103);
+            this.rv_cliente_servicio.Margin = new System.Windows.Forms.Padding(2);
             this.rv_cliente_servicio.Name = "rv_cliente_servicio";
             this.rv_cliente_servicio.ServerReport.BearerToken = null;
-            this.rv_cliente_servicio.Size = new System.Drawing.Size(848, 388);
+            this.rv_cliente_servicio.Size = new System.Drawing.Size(615, 397);
             this.rv_cliente_servicio.TabIndex = 10;
             // 
             // btn_cliente_servicio
             // 
             this.btn_cliente_servicio.Location = new System.Drawing.Point(560, 19);
-            this.btn_cliente_servicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cliente_servicio.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cliente_servicio.Name = "btn_cliente_servicio";
             this.btn_cliente_servicio.Size = new System.Drawing.Size(72, 21);
             this.btn_cliente_servicio.TabIndex = 9;
@@ -333,9 +310,9 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox7.Controls.Add(this.rb_todos);
             this.groupBox7.Controls.Add(this.rb_C);
             this.groupBox7.Location = new System.Drawing.Point(109, 5);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox7.Size = new System.Drawing.Size(237, 75);
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
@@ -345,7 +322,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // 
             this.rb_between.AutoSize = true;
             this.rb_between.Location = new System.Drawing.Point(4, 36);
-            this.rb_between.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_between.Margin = new System.Windows.Forms.Padding(2);
             this.rb_between.Name = "rb_between";
             this.rb_between.Size = new System.Drawing.Size(176, 17);
             this.rb_between.TabIndex = 1;
@@ -358,7 +335,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // 
             this.rb_todos.AutoSize = true;
             this.rb_todos.Location = new System.Drawing.Point(4, 56);
-            this.rb_todos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_todos.Margin = new System.Windows.Forms.Padding(2);
             this.rb_todos.Name = "rb_todos";
             this.rb_todos.Size = new System.Drawing.Size(55, 17);
             this.rb_todos.TabIndex = 0;
@@ -371,7 +348,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             // 
             this.rb_C.AutoSize = true;
             this.rb_C.Location = new System.Drawing.Point(4, 16);
-            this.rb_C.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_C.Margin = new System.Windows.Forms.Padding(2);
             this.rb_C.Name = "rb_C";
             this.rb_C.Size = new System.Drawing.Size(217, 17);
             this.rb_C.TabIndex = 0;
@@ -380,47 +357,23 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.rb_C.UseVisualStyleBackColor = true;
             this.rb_C.CheckedChanged += new System.EventHandler(this.rb_C_CheckedChanged_1);
             // 
-            // txt_vigencia
-            // 
-            this.txt_vigencia.Location = new System.Drawing.Point(350, 42);
-            this.txt_vigencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_vigencia.Name = "txt_vigencia";
-            this.txt_vigencia.Pp_Campo = null;
-            this.txt_vigencia.Pp_MensajeError = null;
-            this.txt_vigencia.Pp_Tabla = null;
-            this.txt_vigencia.Pp_Validable = false;
-            this.txt_vigencia.Size = new System.Drawing.Size(77, 20);
-            this.txt_vigencia.TabIndex = 8;
-            // 
-            // txt_ingresar_año
-            // 
-            this.txt_ingresar_año.Location = new System.Drawing.Point(350, 21);
-            this.txt_ingresar_año.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_ingresar_año.Name = "txt_ingresar_año";
-            this.txt_ingresar_año.Pp_Campo = null;
-            this.txt_ingresar_año.Pp_MensajeError = null;
-            this.txt_ingresar_año.Pp_Tabla = null;
-            this.txt_ingresar_año.Pp_Validable = false;
-            this.txt_ingresar_año.Size = new System.Drawing.Size(77, 20);
-            this.txt_ingresar_año.TabIndex = 7;
-            // 
             // ClientXServ
             // 
             this.ClientXServ.Controls.Add(this.rv_Clien_Serv);
             this.ClientXServ.Controls.Add(this.groupBox1);
             this.ClientXServ.Location = new System.Drawing.Point(4, 22);
             this.ClientXServ.Name = "ClientXServ";
-            this.ClientXServ.Size = new System.Drawing.Size(854, 511);
+            this.ClientXServ.Size = new System.Drawing.Size(671, 514);
             this.ClientXServ.TabIndex = 1;
             this.ClientXServ.Text = "Cliente por Servicio Usado";
             this.ClientXServ.UseVisualStyleBackColor = true;
             // 
             // rv_Clien_Serv
             // 
-            this.rv_Clien_Serv.Location = new System.Drawing.Point(4, 113);
+            this.rv_Clien_Serv.Location = new System.Drawing.Point(30, 112);
             this.rv_Clien_Serv.Name = "rv_Clien_Serv";
             this.rv_Clien_Serv.ServerReport.BearerToken = null;
-            this.rv_Clien_Serv.Size = new System.Drawing.Size(844, 393);
+            this.rv_Clien_Serv.Size = new System.Drawing.Size(615, 397);
             this.rv_Clien_Serv.TabIndex = 4;
             // 
             // groupBox1
@@ -434,6 +387,18 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.ErrorImage = null;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(11, 19);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(99, 74);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_year_C);
@@ -443,20 +408,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox2.Size = new System.Drawing.Size(197, 51);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
-            // 
-            // txt_year_C
-            // 
-            this.txt_year_C.Location = new System.Drawing.Point(130, 18);
-            this.txt_year_C.Name = "txt_year_C";
-            this.txt_year_C.Pp_Campo = null;
-            this.txt_year_C.Pp_MensajeError = null;
-            this.txt_year_C.Pp_Tabla = null;
-            this.txt_year_C.Pp_Validable = false;
-            this.txt_year_C.Size = new System.Drawing.Size(60, 20);
-            this.txt_year_C.TabIndex = 1;
-            this.txt_year_C.Text = "AAAA";
-            this.txt_year_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_year_C.Click += new System.EventHandler(this.txt_year_C_Click);
             // 
             // txt_año
             // 
@@ -484,7 +435,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPage3.Size = new System.Drawing.Size(854, 511);
+            this.tabPage3.Size = new System.Drawing.Size(671, 514);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "Cantidad de Clientes por Provincia";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -522,18 +473,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             // 
-            // textBox011
-            // 
-            this.textBox011.Location = new System.Drawing.Point(130, 18);
-            this.textBox011.Name = "textBox011";
-            this.textBox011.Pp_Campo = null;
-            this.textBox011.Pp_MensajeError = null;
-            this.textBox011.Pp_Tabla = null;
-            this.textBox011.Pp_Validable = false;
-            this.textBox011.Size = new System.Drawing.Size(76, 20);
-            this.textBox011.TabIndex = 1;
-            this.textBox011.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -559,7 +498,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPage2.Size = new System.Drawing.Size(854, 511);
+            this.tabPage2.Size = new System.Drawing.Size(671, 514);
             this.tabPage2.TabIndex = 2;
             this.tabPage2.Text = "Cantidad de Clientes por Ciudad";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -597,18 +536,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox5.TabIndex = 27;
             this.groupBox5.TabStop = false;
             // 
-            // textBox012
-            // 
-            this.textBox012.Location = new System.Drawing.Point(140, 18);
-            this.textBox012.Name = "textBox012";
-            this.textBox012.Pp_Campo = null;
-            this.textBox012.Pp_MensajeError = null;
-            this.textBox012.Pp_Tabla = null;
-            this.textBox012.Pp_Validable = false;
-            this.textBox012.Size = new System.Drawing.Size(72, 20);
-            this.textBox012.TabIndex = 1;
-            this.textBox012.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -627,23 +554,96 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.button2.Text = "Mostrar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // txt_estadistica_cliente_baja_año
             // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.ErrorImage = null;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(99, 74);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
+            this.txt_estadistica_cliente_baja_año.Location = new System.Drawing.Point(218, 16);
+            this.txt_estadistica_cliente_baja_año.Name = "txt_estadistica_cliente_baja_año";
+            this.txt_estadistica_cliente_baja_año.Pp_Campo = null;
+            this.txt_estadistica_cliente_baja_año.Pp_MensajeError = null;
+            this.txt_estadistica_cliente_baja_año.Pp_Tabla = null;
+            this.txt_estadistica_cliente_baja_año.Pp_Validable = false;
+            this.txt_estadistica_cliente_baja_año.Size = new System.Drawing.Size(90, 20);
+            this.txt_estadistica_cliente_baja_año.TabIndex = 1;
+            // 
+            // txt_fecha_alta
+            // 
+            this.txt_fecha_alta.Location = new System.Drawing.Point(243, 21);
+            this.txt_fecha_alta.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_fecha_alta.Name = "txt_fecha_alta";
+            this.txt_fecha_alta.Pp_Campo = null;
+            this.txt_fecha_alta.Pp_MensajeError = null;
+            this.txt_fecha_alta.Pp_Tabla = null;
+            this.txt_fecha_alta.Pp_Validable = false;
+            this.txt_fecha_alta.Size = new System.Drawing.Size(85, 20);
+            this.txt_fecha_alta.TabIndex = 7;
+            // 
+            // txt_vigencia
+            // 
+            this.txt_vigencia.Location = new System.Drawing.Point(350, 42);
+            this.txt_vigencia.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_vigencia.Name = "txt_vigencia";
+            this.txt_vigencia.Pp_Campo = null;
+            this.txt_vigencia.Pp_MensajeError = null;
+            this.txt_vigencia.Pp_Tabla = null;
+            this.txt_vigencia.Pp_Validable = false;
+            this.txt_vigencia.Size = new System.Drawing.Size(77, 20);
+            this.txt_vigencia.TabIndex = 8;
+            // 
+            // txt_ingresar_año
+            // 
+            this.txt_ingresar_año.Location = new System.Drawing.Point(350, 21);
+            this.txt_ingresar_año.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_ingresar_año.Name = "txt_ingresar_año";
+            this.txt_ingresar_año.Pp_Campo = null;
+            this.txt_ingresar_año.Pp_MensajeError = null;
+            this.txt_ingresar_año.Pp_Tabla = null;
+            this.txt_ingresar_año.Pp_Validable = false;
+            this.txt_ingresar_año.Size = new System.Drawing.Size(77, 20);
+            this.txt_ingresar_año.TabIndex = 7;
+            // 
+            // txt_year_C
+            // 
+            this.txt_year_C.Location = new System.Drawing.Point(130, 18);
+            this.txt_year_C.Name = "txt_year_C";
+            this.txt_year_C.Pp_Campo = null;
+            this.txt_year_C.Pp_MensajeError = null;
+            this.txt_year_C.Pp_Tabla = null;
+            this.txt_year_C.Pp_Validable = false;
+            this.txt_year_C.Size = new System.Drawing.Size(60, 20);
+            this.txt_year_C.TabIndex = 1;
+            this.txt_year_C.Text = "AAAA";
+            this.txt_year_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_year_C.Click += new System.EventHandler(this.txt_year_C_Click);
+            // 
+            // textBox011
+            // 
+            this.textBox011.Location = new System.Drawing.Point(130, 18);
+            this.textBox011.Name = "textBox011";
+            this.textBox011.Pp_Campo = null;
+            this.textBox011.Pp_MensajeError = null;
+            this.textBox011.Pp_Tabla = null;
+            this.textBox011.Pp_Validable = false;
+            this.textBox011.Size = new System.Drawing.Size(76, 20);
+            this.textBox011.TabIndex = 1;
+            this.textBox011.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox012
+            // 
+            this.textBox012.Location = new System.Drawing.Point(140, 18);
+            this.textBox012.Name = "textBox012";
+            this.textBox012.Pp_Campo = null;
+            this.textBox012.Pp_MensajeError = null;
+            this.textBox012.Pp_Tabla = null;
+            this.textBox012.Pp_Validable = false;
+            this.textBox012.Size = new System.Drawing.Size(72, 20);
+            this.textBox012.TabIndex = 1;
+            this.textBox012.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Frm_Estadistica_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 542);
+            this.ClientSize = new System.Drawing.Size(697, 557);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_Estadistica_Cliente";
             this.Text = "Estadísticas del Cliente";
@@ -664,6 +664,7 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             this.groupBox7.PerformLayout();
             this.ClientXServ.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -676,7 +677,6 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -70,6 +70,8 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -351,19 +353,6 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <ChartTitles>
-              <ChartTitle Name="Default">
-                <Caption>CANTIDAD DE CLIENTES POR SERVICIOS EN USO POR MES EN UN AÑO</Caption>
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontFamily>Bahnschrift Condensed</FontFamily>
-                  <FontSize>18pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextAlign>Left</TextAlign>
-                  <VerticalAlign>Top</VerticalAlign>
-                </Style>
-              </ChartTitle>
-            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -382,9 +371,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.29104cm</Top>
-            <Height>12.48453cm</Height>
-            <Width>17.03917cm</Width>
+            <Top>2.62475cm</Top>
+            <Left>0.92604cm</Left>
+            <Height>7.10812cm</Height>
+            <Width>8.65188cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -398,10 +388,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>1.92674cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.63863cm</Width>
+                  <Width>2.71259cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -469,7 +459,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -490,10 +479,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>5.01509cm</Top>
-            <Left>17.07444cm</Left>
+            <Top>3.3394cm</Top>
+            <Left>10.38931cm</Left>
             <Height>0.6cm</Height>
-            <Width>6.13863cm</Width>
+            <Width>4.63933cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -508,10 +497,8 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>MES</Value>
+                    <Value>Mes</Value>
                     <Style>
-                      <FontFamily>Ebrima</FontFamily>
-                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -522,10 +509,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>4.15933cm</Top>
-            <Left>17.10972cm</Left>
-            <Height>0.78521cm</Height>
-            <Width>2.5cm</Width>
+            <Top>2.62475cm</Top>
+            <Left>10.38931cm</Left>
+            <Height>0.71465cm</Height>
+            <Width>1.92674cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -546,10 +533,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>CANT. CLIENTES</Value>
+                    <Value>Cant. Clientes</Value>
                     <Style>
-                      <FontFamily>Ebrima</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>ARIAL</FontFamily>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -560,10 +546,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>4.15933cm</Top>
-            <Left>19.57444cm</Left>
-            <Height>0.78521cm</Height>
-            <Width>3.63863cm</Width>
+            <Top>2.62475cm</Top>
+            <Left>12.31605cm</Left>
+            <Height>0.71465cm</Height>
+            <Width>2.71259cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -577,11 +563,78 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Cantidad De Clientes Por Servicios En Uso Por Mes En Un Año</Value>
+                    <Style>
+                      <FontFamily>Bahnschrift Condensed</FontFamily>
+                      <FontSize>18pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox7</rd:DefaultName>
+            <Top>0.98132cm</Top>
+            <Height>0.97042cm</Height>
+            <Width>16.15752cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>NavajoWhite</BackgroundColor>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox15">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Globals!ExecutionTime</Value>
+                    <Style>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>9.73286cm</Top>
+            <Left>0.92604cm</Left>
+            <Height>0.6cm</Height>
+            <Width>4.43146cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>5.02975in</Height>
+        <Height>4.23497in</Height>
         <Style />
       </Body>
-      <Width>9.13901in</Width>
+      <Width>6.36123in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
