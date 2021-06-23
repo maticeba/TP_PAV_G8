@@ -195,10 +195,11 @@ namespace ComunicAr.Negocio_Estadisticas
         public DataTable fecha_alta(string año)
         {
             string sql = "SELECT p.nombre_prov, COUNT(*) as cantidad" +
-                        " FROM Barrio b JOIN Cliente c ON b.cod_barrio = c.cod_barrio" +
-                        " JOIN Ciudad cd ON b.id_ciudad = cd.cod_ciudad" +
-                        " JOIN Provincia p ON cd.id_provincia = p.cod_prov" +
-                        " WHERE '2011' BETWEEN YEAR(c.fecha_alta) AND YEAR(c.fecha_baja)" +
+                        " FROM Cliente c, Barrio b, Ciudad ci, Provincia p" +
+                        " WHERE c.cod_barrio = b.cod_barrio" +
+                        " AND b.id_ciudad = ci.cod_ciudad" +
+                        " AND ci.id_provincia = p.cod_prov" +
+                        " AND YEAR(fecha_alta) = 2017" +
                         " GROUP BY p.nombre_prov";
             tabla = BD.EjecutarSelect(sql);
             return tabla;
