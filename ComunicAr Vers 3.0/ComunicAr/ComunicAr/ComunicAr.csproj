@@ -453,16 +453,6 @@
     <Compile Include="Formularios\Menu\Menu_Ubicación.Designer.cs">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reportes\clientes por ciudad\DS_ciudad.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_ciudad.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Reportes\clientes por provincia\DS_provincia.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_provincia.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.cs">
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>
     </Compile>
@@ -809,7 +799,6 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.resx">
       <DependentUpon>Frm_Estadistica_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Report_Estadisticas_ciudad.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\Frm_DispVend_Estadisticas.resx">
       <DependentUpon>Frm_DispVend_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
@@ -850,8 +839,6 @@
     <EmbeddedResource Include="Formularios\Menu\Menu_Ubicación.resx">
       <DependentUpon>Menu_Ubicación.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Reportes\clientes por ciudad\report_ciudad.rdlc" />
-    <EmbeddedResource Include="Formularios\Reportes\clientes por provincia\Report_provincia.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Facturas\Frm_Reporte_Facturas.resx">
       <DependentUpon>Frm_Reporte_Facturas.cs</DependentUpon>
     </EmbeddedResource>
@@ -991,28 +978,6 @@
     <None Include="Formularios\Estadisticas\Servicios\DS_Servicios.xsd" />
     <None Include="Formularios\Estadisticas\Servicios\DS_Servicios.xss">
       <DependentUpon>DS_Servicios.xsd</DependentUpon>
-    </None>
-    <None Include="Formularios\Reportes\clientes por ciudad\DS_ciudad.xsc">
-      <DependentUpon>DS_ciudad.xsd</DependentUpon>
-    </None>
-    <None Include="Formularios\Reportes\clientes por ciudad\DS_ciudad.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_ciudad.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Formularios\Reportes\clientes por ciudad\DS_ciudad.xss">
-      <DependentUpon>DS_ciudad.xsd</DependentUpon>
-    </None>
-    <None Include="Formularios\Reportes\clientes por provincia\DS_provincia.xsc">
-      <DependentUpon>DS_provincia.xsd</DependentUpon>
-    </None>
-    <None Include="Formularios\Reportes\clientes por provincia\DS_provincia.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_provincia.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Formularios\Reportes\clientes por provincia\DS_provincia.xss">
-      <DependentUpon>DS_provincia.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Reportes\Clientes\DS_Rep_Clientes.xsc">
       <DependentUpon>DS_Rep_Clientes.xsd</DependentUpon>

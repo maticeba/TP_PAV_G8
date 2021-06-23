@@ -30,7 +30,7 @@ namespace ComunicAr.Formularios.Reportes.Clientes
             cmb_report_clienteXdispo_tipoDispo.CargarCombo();
             //cmb_report_clienteXdispo_tipoDispo.SelectedIndex = -1;
             //this.reportViewer2.RefreshReport();
-            this.reportViewer2.RefreshReport();
+            //this.reportViewer2.RefreshReport();
         }
 
         private void btn_reporte_cliente_cargar_Click(object sender, EventArgs e)
