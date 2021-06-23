@@ -24,7 +24,9 @@ namespace ComunicAr.Negocio
         {
             string sql = @"SELECT n.*, c.nombre_razonSocial, d.modelo " +
                             "FROM Numero n, Cliente c, Dispositivos d " +
-                            "WHERE n.nro_cliente = c.nro_cliente AND n.id_dispositivo = d.id_dispositivo";
+                            "WHERE n.nro_cliente = c.nro_cliente " +
+                                "AND n.id_dispositivo = d.id_dispositivo " +
+                                "AND n.borrado = 0";
             return BD.EjecutarSelect(sql);
         }
 
@@ -32,7 +34,10 @@ namespace ComunicAr.Negocio
         {
             string sql = @"SELECT n.*, c.nombre_razonSocial, d.modelo "
                        + "FROM numero n, Cliente c, Dispositivos d  "
-                       + "WHERE n.id_numero = " + id_numero + "AND n.nro_cliente = c.nro_cliente AND n.id_dispositivo = d.id_dispositivo";
+                       + "WHERE n.id_numero = " + id_numero + " " +
+                            "AND n.nro_cliente = c.nro_cliente " +
+                            "AND n.id_dispositivo = d.id_dispositivo " +
+                            "AND n.borrado = 0 ";
             return BD.EjecutarSelect(sql);
         }
 
@@ -65,7 +70,12 @@ namespace ComunicAr.Negocio
 
         public void Borrar()
         {
-            string sqlBorrar = "DELETE FROM numero WHERE id_numero = " + Pp_id_numero;
+            DateTime actual = new DateTime();
+            string fecha_borrado = actual.Year.ToString() + "-" + actual.Month.ToString() + "-" + actual.Day.ToString();
+            string sqlBorrar = "UPDATE numero SET " +
+                               " borrado = 1, " +
+                               " fecha_baja = '" + fecha_borrado + "'" +
+                               "WHERE id_numero = " + Pp_id_numero;
             BD.Borrar(sqlBorrar);
         }
     }

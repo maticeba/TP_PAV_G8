@@ -52,7 +52,8 @@ namespace ComunicAr.Negocio_Transacciones
             string sql = @"SELECT   sf.descripcion AS detalle, " +
                                    "df.costo_final AS importe, " +
                                    "df.nro_cuota AS cuota, " +
-                                   "DATEDIFF(MONTH, c.fecha_desde, c.fecha_hasta) AS tot_cuotas " +
+                                   "DATEDIFF(MONTH, c.fecha_desde, c.fecha_hasta) AS tot_cuotas," +
+                                   "c.descuento AS descuento " +
                           "FROM Detalle_fact_fijos df, Servicios_contratados c, Facturas f, Servicios_fijos sf, Numero n " +
                           "WHERE df.cod_serv_contratado = c.cod_servicio " +
                             "AND f.nro_factura = df.nro_factura	" +

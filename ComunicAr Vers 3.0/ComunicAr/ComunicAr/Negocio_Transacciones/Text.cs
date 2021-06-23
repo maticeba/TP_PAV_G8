@@ -94,6 +94,8 @@ namespace ComunicAr.Negocio_Transacciones
                     }
                     subtotal = float.Parse(total.ToString());
                 }
+
+                float descuentoFijos = 0;
                 if (Pb_Flag_Serv_Fijos == true)
                 {
                     Detalle_Servicio_Fijo det_fijo = new Detalle_Servicio_Fijo();
@@ -104,15 +106,37 @@ namespace ComunicAr.Negocio_Transacciones
                         string descripcion = tabla.Rows[i][0].ToString();
                         string total = tabla.Rows[i][1].ToString();
                         string cuota = tabla.Rows[i][2].ToString();
+                        string desc = "0";
+                        if (tabla.Rows[i][4].ToString() != "")
+                        {
+                            desc = tabla.Rows[i][4].ToString();
+                        }
+                        MessageBox.Show(desc, total);
                         string cuota_tot = tabla.Rows[i][3].ToString();
                         tw.WriteLine(count.ToString() + "\tServicio Fijo\t\t" + descripcion + " / Cuota: " + cuota + "/" + cuota_tot + "\t\t$" + total);
                         subtotal += float.Parse(total.ToString());
+                        descuentoFijos = +(float.Parse(total) * float.Parse(desc));
                     }
                 }
+
+                float descuentoDatos = 0;
                 if (Pb_Flag_Serv_Datos == true)
                 {
-
+                    Detalle_Servicios_Datos det_datos = new Detalle_Servicios_Datos();
+                    DataTable tabla = det_datos.Factura_datos(Ps_Nro_Factura, Ps_Nro_Cliente);
+                    for (int i = 0; i < tabla.Rows.Count; i++)
+                    {
+                        count += 1;
+                        string descripcion = tabla.Rows[i][0].ToString();
+                        string importe = tabla.Rows[i][1].ToString();
+                        string desc = tabla.Rows[i][2].ToString();
+                        string total = tabla.Rows[i][3].ToString();
+                        tw.WriteLine(count.ToString() + "\tServicio de Datos\t\t" + descripcion + " / Descuento: " + desc + "%\t\t$" + importe);
+                        subtotal += float.Parse(importe.ToString());
+                        descuentoDatos = +(float.Parse(total) * float.Parse(desc));
+                    }
                 }
+
                 float descuentoPrepago = 0;
                 if (Pb_Flag_Serv_Prepago == true)
                 {
@@ -152,8 +176,11 @@ namespace ComunicAr.Negocio_Transacciones
                 //tw.WriteLine("*****************************************************************************");
                 tw.WriteLine("_____________________________________________________________________________");
                 tw.WriteLine("Subtotal: \t\t\t$" + subtotal.ToString());
-                tw.WriteLine("Descuento prepago: \t\t\t$" + descuentoPrepago.ToString());
-                tw.WriteLine("Descuento Dispositivo: \t\t\t$" + descuentoVta_dispo.ToString());
+                tw.WriteLine("Descuento Fijos: \t\t$" + descuentoFijos.ToString());
+                tw.WriteLine("Descuento Datos: \t\t$" + descuentoDatos.ToString());
+                tw.WriteLine("Descuento Prepago: \t\t$" + descuentoPrepago.ToString());
+                tw.WriteLine("Descuento Dispositivo: \t\t$" + descuentoVta_dispo.ToString());
+                descuento += descuentoDatos + descuentoPrepago + descuentoVta_dispo + descuentoFijos;
                 tw.WriteLine("Descuento: \t\t\t$" + descuento.ToString());
                 tw.WriteLine("Total: \t\t\t\t$" + (subtotal - descuento).ToString());
             }

@@ -92,6 +92,13 @@ namespace ComunicAr.Negocio_Transacciones
             return BD.EjecutarSelect(sql);
 
         }
+        public void Facturado(string nro)
+        {
+            string sql = "UPDATE Facturas SET " +
+                            " facturado = 1 " +
+                            "WHERE nro_factura = " + nro;
+            BD.Insertar(sql);
+        }
 
 
     }

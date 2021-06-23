@@ -149,7 +149,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
             DataTable tabla_datos = new DataTable();
             Detalle_Servicio_Fijo Detalle = new Detalle_Servicio_Fijo();
             tabla_datos = Detalle.RecoleccionDatos(Pp_NroCliente);
-            if (MessageBox.Show("¿Desea cargar el detalle de llamada?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("¿Desea cargar el detalle de Servicios Fijos?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
 
                 for (int i = 0; i < grid_Serv_Fijos.Rows.Count ; i++)
@@ -157,7 +157,7 @@ namespace ComunicAr.Formularios.Transaccion.Detalles_Servicios.Detalle_Servicios
 
                     Detalle.Pp_NroFac = Pp_NroFac;
                     Detalle.Pp_serv_contratados = grid_Serv_Fijos.Rows[i].Cells[0].Value.ToString();
-                    Detalle.Pp_Final = txt_subtotla_SF.Text.ToString();
+                    Detalle.Pp_Final = grid_Serv_Fijos.Rows[i].Cells[6].Value.ToString();
                     Detalle.Pp_descuento = grid_Serv_Fijos.Rows[i].Cells[5].Value.ToString();
                     Detalle.Pp_nro_cuota = tabla_datos.Rows[i]["diferencia"].ToString();
                     Detalle.insertarDetalleServicioFijo();

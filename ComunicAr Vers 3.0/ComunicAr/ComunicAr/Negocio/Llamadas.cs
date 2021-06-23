@@ -69,7 +69,9 @@ namespace ComunicAr.Negocio
 
         public DataTable Search_cliente(string id_cliente)
         {
-            string sql = "SELECT nombre_razonSocial FROM cliente WHERE nro_cliente = " + id_cliente;
+            string sql = @"SELECT nombre_razonSocial FROM cliente " +
+                            "WHERE borrado = 0 " +
+                                " AND nro_cliente = " + id_cliente;
 
             return BD.EjecutarSelect(sql);
         }

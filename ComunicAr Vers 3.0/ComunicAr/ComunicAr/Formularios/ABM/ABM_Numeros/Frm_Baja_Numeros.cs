@@ -23,6 +23,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
 
         private void Frm_Baja_Numeros_Load(object sender, EventArgs e)
         {
+
             cmb_nro_cliente.CargarCombo();
             cmb_nro_cliente.SelectedIndex = -1;
 
@@ -35,6 +36,7 @@ namespace ComunicAr.Formularios.ABM_Numeros
 
         private void MostrarDatos(DataTable tabla)
         {
+            txt_id_numero.Text = id_numeros.ToString();
             txt_cod_nacional.Text = tabla.Rows[0]["cod_nacional"].ToString();
             txt_cod_area.Text = tabla.Rows[0]["cod_area"].ToString();
             txt_nro_telefono.Text = tabla.Rows[0]["nro_telefono"].ToString();

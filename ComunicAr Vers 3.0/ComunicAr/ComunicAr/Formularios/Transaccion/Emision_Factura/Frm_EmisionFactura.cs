@@ -83,12 +83,15 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
                     string nombre = existEmisor.Rows[0]["nombre_razonSocial"].ToString();
                     string numero = Txt_Cliente.Text;
                     MessageBox.Show("El cliente emisor es " + nombre);
+
                     Txt_NombreCliente.Text = nombre;
+
                     Emitir_Factura emicion = new Emitir_Factura();
                     emicion.Pp_nroCliente = numero;
                     DataTable tabla = new DataTable();
                     emicion.CrearSubFactura(numero);
                     tabla = emicion.CargarFactura(numero);
+
                     Txt_nroFac.Text = tabla.Rows[0]["nro_factura"].ToString();
                     Txt_FechEm.Text = tabla.Rows[0]["fecha_emitido"].ToString();
                     Txt_1er.Text = tabla.Rows[0]["fecha_1er_vto"].ToString();
@@ -149,19 +152,34 @@ namespace ComunicAr.Formularios.Transaccion.Emision_Factura
                     Texto.Ps_Nro_Factura = Txt_nroFac.Text;
                     Texto.Ps_Tipo_Factura = cmb_emision_tipo_factura.Text.ToString();
                     Texto.CreateFactura();
+                    Emitir_Factura facturada = new Emitir_Factura();
+                    facturada.Facturado(Txt_nroFac.Text);
                 }
             }
         }
 
         private void bnt_emision_servicio_datos_Click(object sender, EventArgs e)
         {
-            Frm_Detalle_Servicios_Datos datos = new Frm_Detalle_Servicios_Datos();
-            datos.ShowDialog();
+            Detalle_Servicios_Datos det_datos = new Detalle_Servicios_Datos();
+            DataTable tabla = det_datos.RecoleccionDatos(Txt_Cliente.Text);
 
-            
-            //MessageBox.Show("Mantenimiento");
-            chk_emision_serv_datos.Checked = true;
-            btn_emision_servicio_datos.Enabled = false;
+            if (tabla.Rows.Count != 0)
+            {
+                Frm_Detalle_Servicios_Datos datos = new Frm_Detalle_Servicios_Datos();
+                datos.Pp_NroFac = Txt_nroFac.Text;
+                //datos.Pp_NroCliente = Txt_Cliente.Text;
+                datos.ShowDialog();
+                chk_emision_serv_datos.Checked = true;
+                btn_emision_servicio_datos.Enabled = false;
+                Flag_serv_datos = true;
+            }
+            else
+            {
+                MessageBox.Show("No hay servicios prepagos de este cliente para agregar en la factura");
+                chk_emision_serv_datos.Checked = true;
+                btn_emision_servicio_datos.Enabled = false;
+                Flag_serv_datos = false;
+            }
         }
 
         private void bnt_emision_servicio_prepago_Click(object sender, EventArgs e)

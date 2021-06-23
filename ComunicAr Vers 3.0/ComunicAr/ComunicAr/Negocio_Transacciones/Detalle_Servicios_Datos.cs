@@ -25,21 +25,25 @@ namespace ComunicAr.Negocio_Transacciones
         {
             string sql = @"SELECT f. *, f.nro_factura, c.nombre_razonSocial, c.nro_cliente "
                           + "FROM Facturas f, Cliente c"
-                          + " WHERE f.nro_factura = " + NroFac + " AND f.nro_cliente = c.nro_cliente ";
+                          + " WHERE f.nro_factura = " + NroFac + " " +
+                          " AND f.nro_cliente = c.nro_cliente ";
             return BD.EjecutarSelect(sql);
             // reveer
 
         }
         public DataTable RecoleccionDatos(string nro_cliente)
         {
-            string sql = @"SELECT DISTINCT  sc.tipo_servicio, sc.cod_servicio, "
-                        + "d.id_dispositivo, n.nro_cliente, sd.costo_fijo, sc.descuento, "
-                        + "DATEDIFF(month, sc.fecha_desde, convert(date,GETDATE())) as diferencia, DATEDIFF(month, sc.fecha_desde, sc.fecha_hasta) as duracion "
-                        + "FROM Servicios_contratados sc, Dispositivos d, Servicios_datos sd, Numero n "
-                        + "WHERE sc.id_servicio = sd.cod_datos AND d.id_dispositivo = n.id_dispositivo AND sc.id_numero = n.id_numero AND sc.tipo_servicio = sd.tipo_servicio " +
-                        "AND n.nro_cliente = " + nro_cliente 
-                        + " AND month(sc.fecha_desde) NOT LIKE month(GETDATE()) AND month(sc.fecha_hasta) < month(DATEADD(MM,+1,GETDATE()))"
-                        + " AND (year(sc.fecha_desde) = year(GETDATE()) or year(sc.fecha_hasta) = year(GETDATE()) )";
+            string sql = @"SELECT DISTINCT  sc.tipo_servicio, sc.cod_servicio, " +
+                                          " d.id_dispositivo, n.nro_cliente, sd.costo_fijo, sc.descuento, " +
+                                          " DATEDIFF(month, sc.fecha_desde, convert(date,GETDATE())) as diferencia, " +
+                                          " DATEDIFF(month, sc.fecha_desde, sc.fecha_hasta) as duracion " +
+                          "FROM Servicios_contratados sc, Dispositivos d, Servicios_datos sd, Numero n " +
+                          "WHERE sc.id_servicio = sd.cod_datos AND d.id_dispositivo = n.id_dispositivo " +
+                                 "AND sc.id_numero = n.id_numero " +
+                                 "AND sc.tipo_servicio = sd.tipo_servicio " +
+                                 "AND n.nro_cliente = " + nro_cliente + " " +
+                                 "AND (DATEDIFF(month, sc.fecha_desde, convert(date,GETDATE())) <= DATEDIFF(month, sc.fecha_desde, sc.fecha_hasta)) " +
+                                 "AND (DATEDIFF(month, sc.fecha_desde, convert(date,GETDATE())) > 0)";
             return BD.EjecutarSelect(sql);
         }
         public void insertarDetalleServicioDato()
@@ -51,6 +55,22 @@ namespace ComunicAr.Negocio_Transacciones
             string sql = @"INSERT INTO Detalle_fact_datos (nro_factura, cod_serv_contratado, costo_final, descuento, nro_cuota)"
                         + " VALUES (" + Pp_NroFac + ", " + Pp_serv_contratados + ", REPLACE('" + Pp_Final + "', ',', '.'), REPLACE('" + Pp_descuento + "', ',', '.'), "  + Pp_nro_cuota + " ) ";
             BD.Insertar(sql);
+        }
+        public DataTable Factura_datos(string nro_factura, string nro_cliente)
+        {
+            string sql = @"SELECT  sd.descripcion AS detalle, " +
+                                    "dd.costo_final AS importe, " +
+                                    "dd.descuento," +
+                                    "sd.costo_fijo " +
+                          "FROM Detalle_fact_datos dd, Servicios_contratados c, Facturas f, Servicios_datos sd, Numero n " +
+                          "WHERE dd.cod_serv_contratado = c.cod_servicio " +
+                                "AND f.nro_factura = dd.nro_factura " +
+                                "AND c.id_servicio = sd.cod_datos " +
+                                "AND c.tipo_servicio = 'A' " +
+                                "AND c.id_numero = n.id_numero " +
+                                "AND n.nro_cliente = " + nro_cliente + " " +
+                                "AND dd.nro_factura = " + nro_factura + " ";
+            return BD.EjecutarSelect(sql);
         }
     }
 }

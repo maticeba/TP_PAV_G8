@@ -160,10 +160,5 @@ namespace ComunicAr.Formularios.Estadisticas.Clientes
                 ArmarReporteDatos(tabla);
             }
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

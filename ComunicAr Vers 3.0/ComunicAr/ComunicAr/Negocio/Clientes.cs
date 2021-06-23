@@ -23,7 +23,8 @@ namespace ComunicAr.Negocio
         {
             string sql = @"SELECT c.*, b.nombre_barrio " +
                             "FROM Cliente c, barrio b " +
-                            "WHERE c.cod_barrio = b.cod_barrio";
+                            "WHERE c.cod_barrio = b.cod_barrio " +
+                                " AND borrado = 0";
             /*string sql = @"SELECT c.*, b.nombre_barrio as cod_barrio"
                          + "from clientes c join barrios b"
                          + "on c.cod_barrio = b.cod_barrio";*/
@@ -32,27 +33,26 @@ namespace ComunicAr.Negocio
         public DataTable Clientes_por_Numero(string nro_Cliente)
         {
             string sql = @"SELECT c.*, b.nombre_barrio FROM Cliente c, Barrio b "
-                        + "WHERE nro_cliente = " + nro_Cliente + " AND c.cod_barrio = b.cod_barrio" ;
+                        + "WHERE nro_cliente = " + nro_Cliente + " " +
+                            "AND c.cod_barrio = b.cod_barrio " +
+                            "AND borrado = 0" ;
             return BD.EjecutarSelect(sql);
         }
         public DataTable Clientes_por_Nombre(string nombre)
         {
             string sql = @"SELECT c.*, b.nombre_barrio FROM Cliente c, Barrio b "
-                        + "WHERE c.nombre_razonSocial like '%" + nombre.Trim() + "%' AND c.cod_barrio = b.cod_barrio";
+                        + "WHERE c.nombre_razonSocial like '%" + nombre.Trim() + "%' " +
+                            " AND c.cod_barrio = b.cod_barrio " +
+                            " AND borrado = 0";
             return BD.EjecutarSelect(sql);
         }
 
         public DataTable Clientes_por_solo_Numero(string id_cliente)
         {
             string sql = @"SELECT c.* FROM Cliente c "
-                        + "WHERE c.nro_cliente = '" + id_cliente + "'";
+                        + "WHERE c.nro_cliente = '" + id_cliente + "' " +
+                                " AND borrado = 0";
             return BD.EjecutarSelect(sql);
-        }
-        public void Insertar(Control.ControlCollection controles)
-        {
-            TratamientosEspeciales tratamientos = new TratamientosEspeciales();
-            BD.Insertar(tratamientos.ConstructorInsert("clientes", controles));
-            MessageBox.Show("Cliente cargado exitosamente");
         }
         public void Insertar()
         {
@@ -77,10 +77,19 @@ namespace ComunicAr.Negocio
             BD.EjecutarModificar(sqlMod);
             MessageBox.Show("Modificacion realizada con exito");
         }
-
         public void Borrar()
         {
-            string sqlBorrar = "DELETE FROM Cliente WHERE nro_cliente = " + Pp_nroCliente;
+            DateTime actual = new DateTime();
+            string fecha_borrado = actual.Year.ToString() + "-" + actual.Month.ToString() + "-" + actual.Day.ToString();
+            string sqlBorrar = "UPDATE Cliente SET " +
+                                " borrado = 1, " +
+                                " fecha_baja = '" + fecha_borrado + "'" +   
+                                " WHERE nro_cliente = " + Pp_nroCliente + " " +
+                                " " +
+                                "UPDATE Numero SET " +
+                                " borrado = 1, " +
+                                " fecha_baja = '" + fecha_borrado + "'" +
+                                " WHERE nro_cliente = " + Pp_nroCliente + " " ;
             BD.Borrar(sqlBorrar);
         }
         public DataTable Obtener_ubicacion(string cod_barrio)

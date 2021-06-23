@@ -32,7 +32,6 @@ namespace ComunicAr.Negocio_Transacciones
                           + "FROM Facturas f, Cliente c"
                           + " WHERE f.nro_factura = " + NroFac + " AND f.nro_cliente = c.nro_cliente ";
             return BD.EjecutarSelect(sql);
-
         }
 
         public DataTable RecoleccionDatos(string nro_cliente)
@@ -42,9 +41,8 @@ namespace ComunicAr.Negocio_Transacciones
                          + " where n.nro_cliente =  " + nro_cliente + " and v.id_dispositivo = d.id_dispositivo and n.id_dispositivo = d.id_dispositivo " +
                          "and DATEDIFF(MONTH,v.fecha_venta,GETDATE ()) BETWEEN 1 AND v.cant_cuotas ";
             return BD.EjecutarSelect(sql);
-
-
         }
+
         public void insertarDetalleVentaDispositivo()
         {
             if (pp_descuento == "")
@@ -55,6 +53,7 @@ namespace ComunicAr.Negocio_Transacciones
                 Pp_NroFac + ", " + Pp_venta_dispositivo + ",'" + pp_marca + "','" + pp_modelo + "'," + "REPLACE('" + Pp_precioVta + "', ',', '.')" + ", " + "REPLACE('" + pp_descuento + "', ',', '.')" + ", " + pp_nroCuota + " )";
             BD.Insertar(sql);
         }
+
         public DataTable Factura_Dispositivo(string nro_factura, string nro_cliente)
         {
             string sql = @"SELECT  d.marca AS marca, " + 

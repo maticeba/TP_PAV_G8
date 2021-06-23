@@ -38,6 +38,40 @@
     <ReportSection>
       <Body>
         <ReportItems>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Estadisticas Cantidad de Clientes por Ciudad</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Height>0.63387cm</Height>
+            <Width>21.92867cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>HotPink</BackgroundColor>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
           <Textbox Name="ReportParameter1">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -53,10 +87,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>ReportParameter1</rd:DefaultName>
-            <Top>1.98324cm</Top>
-            <Left>0.55562cm</Left>
+            <Top>0.84553cm</Top>
             <Height>0.6cm</Height>
-            <Width>3.54458cm</Width>
+            <Width>16.4827cm</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -71,7 +105,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.92333cm</Width>
+                  <Width>2.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.5cm</Width>
@@ -90,10 +124,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Nombre ciudad</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Value>nombre ciudad</Value>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -105,7 +137,6 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -123,10 +154,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Cantidad</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Value>cantidad</Value>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -138,7 +167,6 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -233,11 +261,11 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DS_Estadistica_ciudad</DataSetName>
-            <Top>2.58324cm</Top>
-            <Left>10.72827cm</Left>
+            <Top>4.73287cm</Top>
+            <Left>17.07303cm</Left>
             <Height>1.2cm</Height>
-            <Width>5.42333cm</Width>
-            <ZIndex>1</ZIndex>
+            <Width>5cm</Width>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -279,8 +307,6 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
-                        <UseValueAsLabel>true</UseValueAsLabel>
-                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -299,6 +325,12 @@
                       <Style />
                     </ChartDataLabel>
                   </ChartEmptyPoints>
+                  <CustomProperties>
+                    <CustomProperty>
+                      <Name>DrawingStyle</Name>
+                      <Value>Cylinder</Value>
+                    </CustomProperty>
+                  </CustomProperties>
                   <ValueAxisName>Primary</ValueAxisName>
                   <CategoryAxisName>Primary</CategoryAxisName>
                   <ChartSmartLabel>
@@ -534,6 +566,10 @@
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                 </ChartValueAxes>
+                <ChartThreeDProperties>
+                  <Enabled>true</Enabled>
+                  <Clustered>true</Clustered>
+                </ChartThreeDProperties>
                 <Style>
                   <BackgroundColor>#00ffffff</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
@@ -575,6 +611,7 @@
             </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
+              <ChartBorderSkinType>Raised</ChartBorderSkinType>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
                 <BackgroundGradientType>None</BackgroundGradientType>
@@ -591,60 +628,24 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DS_Estadistica_ciudad</DataSetName>
-            <Top>2.58324cm</Top>
-            <Left>0.52035cm</Left>
-            <Height>7.08437cm</Height>
-            <Width>9.52882cm</Width>
-            <ZIndex>2</ZIndex>
+            <Top>1.51609cm</Top>
+            <Height>7.34895cm</Height>
+            <Width>16.69903cm</Width>
+            <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
                 <Style>Solid</Style>
               </Border>
-              <BackgroundGradientType>None</BackgroundGradientType>
-              <BackgroundHatchType>None</BackgroundHatchType>
+              <BackgroundColor>Khaki</BackgroundColor>
+              <BackgroundGradientType>HorizontalCenter</BackgroundGradientType>
             </Style>
           </Chart>
-          <Textbox Name="Textbox9">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Cantidad De Clientes Por Ciudad</Value>
-                    <Style>
-                      <FontFamily>Bahnschrift Condensed</FontFamily>
-                      <FontSize>18pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>0.47156cm</Top>
-            <Height>0.97042cm</Height>
-            <Width>16.92805cm</Width>
-            <ZIndex>3</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>NavajoWhite</BackgroundColor>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>4.23497in</Height>
+        <Height>4.07628in</Height>
         <Style />
       </Body>
-      <Width>6.66459in</Width>
+      <Width>9.67442in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

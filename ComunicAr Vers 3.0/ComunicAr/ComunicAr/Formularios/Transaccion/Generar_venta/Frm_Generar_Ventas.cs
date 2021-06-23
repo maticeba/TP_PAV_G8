@@ -194,11 +194,8 @@ namespace ComunicAr.Formularios.Transaccion.Generar_Venta
         }
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-   
             Clientes cliente = new Clientes();
             MostrarCliente(cliente.Clientes_por_solo_Numero(txt_id_cliente.Text));
-            
-           
         }
 
        

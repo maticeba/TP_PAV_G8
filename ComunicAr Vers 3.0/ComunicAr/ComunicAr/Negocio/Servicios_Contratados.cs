@@ -32,7 +32,9 @@ namespace ComunicAr.Negocio
                             "DATEPART(YEAR, s.fecha_hasta) AS año_hasta, " +
                             "n.cod_nacional, n.cod_area, n.nro_telefono " +
                             "FROM servicios_contratados s, Numero n " +
-                            "WHERE s.id_numero = n.id_numero";
+                            "WHERE s.id_numero = n.id_numero " +
+                                "AND n.borrado = 0 " +
+                            "ORDER BY s.cod_servicio";
             return BD.EjecutarSelect(sql);
         }
 
@@ -75,7 +77,8 @@ namespace ComunicAr.Negocio
                        " DATEPART(YEAR, s.fecha_hasta) AS año_hasta " +
                        " FROM servicios_contratados s, Numero n " +
                        " WHERE s.id_numero = n.id_numero " +
-                            " AND s.cod_servicio = " + cod_servicio;
+                            " AND s.cod_servicio = " + cod_servicio + " " +
+                            " AND n.borrado = 0";
             return BD.EjecutarSelect(sql);
         }
 
