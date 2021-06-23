@@ -323,34 +323,6 @@
         RK5CYII=
 </value>
   </data>
-  <data name="bnt_menu_esta_factura.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
   <data name="bnt_menu_esta_cliente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
