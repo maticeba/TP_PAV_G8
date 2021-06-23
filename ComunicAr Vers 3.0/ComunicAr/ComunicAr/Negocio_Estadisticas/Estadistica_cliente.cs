@@ -85,5 +85,123 @@ namespace ComunicAr.Negocio_Estadisticas
             }
             return tabla;
         }
+        ////////////////////////////////// CLIENTES POR SERVICIO ////////////////////////////////////
+
+        public DataTable Todos_clientes()
+        {
+            string sql = "SELECT sc.tipo_servicio, COUNT(*) as 'cantidad'" +
+                        " FROM Servicios_contratados sc" +
+                        " GROUP BY sc.tipo_servicio";
+            tabla = BD.EjecutarSelect(sql);
+            tabla.Columns.Add("nombre_servicio");
+            if (tabla.Rows.Count == 0)
+            {
+                tabla.Rows.Add("0", 0);
+            }
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                if (tabla.Rows[i][0].ToString() == "A")
+                {
+                    tabla.Rows[i][2] = "Servicios de Datos";
+                }
+                else if (tabla.Rows[i][0].ToString() == "B")
+                {
+                    tabla.Rows[i][2] = "Servicios Fijos";
+                }
+                else if (tabla.Rows[i][0].ToString() == "C")
+                {
+                    tabla.Rows[i][2] = "Servicios Prepagos";
+                }
+
+            }
+            return tabla;
+        }
+        public DataTable Servicio_en_un_año(int año)
+        {
+            string sql = "SELECT sc.tipo_servicio, COUNT(*) as cantidad" +
+                " FROM Numero n JOIN Cliente c ON n.nro_cliente = c.nro_cliente" +
+                " JOIN Servicios_contratados sc ON n.id_numero = sc.id_numero" +
+                " WHERE YEAR(sc.fecha_desde) = " + año +
+                " GROUP BY sc.tipo_servicio";
+            tabla = BD.EjecutarSelect(sql);
+            tabla.Columns.Add("nombre_servicio");
+            if (tabla.Rows.Count == 0)
+            {
+                tabla.Rows.Add("0", 0);
+            }
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                if (tabla.Rows[i][0].ToString() == "A")
+                {
+                    tabla.Rows[i][2] = "Servicios de Datos";
+                }
+                else if (tabla.Rows[i][0].ToString() == "B")
+                {
+                    tabla.Rows[i][2] = "Servicios Fijos";
+                }
+                else if (tabla.Rows[i][0].ToString() == "C")
+                {
+                    tabla.Rows[i][2] = "Servicios Prepagos";
+                }
+
+            }
+            return tabla;
+        }
+
+        public DataTable Servicio_en_alta_año(string año)
+        {
+            string sql = "SELECT sc.tipo_servicio, COUNT(c.nro_cliente) as cantidad" +
+                " FROM Numero n JOIN Cliente c ON n.nro_cliente = c.nro_cliente" +
+                " JOIN Servicios_contratados sc ON n.id_numero = sc.id_numero" +
+                " WHERE '" + año + "' BETWEEN YEAR(sc.fecha_desde) AND YEAR(sc.fecha_hasta)" +
+                " GROUP BY sc.tipo_servicio";
+            tabla = BD.EjecutarSelect(sql);
+            tabla.Columns.Add("nombre_servicio");
+            if (tabla.Rows.Count == 0)
+            {
+                tabla.Rows.Add("0", 0);
+            }
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                if (tabla.Rows[i][0].ToString() == "A")
+                {
+                    tabla.Rows[i][2] = "Servicios de Datos";
+                }
+                else if (tabla.Rows[i][0].ToString() == "B")
+                {
+                    tabla.Rows[i][2] = "Servicios Fijos";
+                }
+                else if (tabla.Rows[i][0].ToString() == "C")
+                {
+                    tabla.Rows[i][2] = "Servicios Prepagos";
+                }
+
+            }
+            return tabla;
+        }
+
+        ///////////////////////////////// CLIENTES POR PROVINCIA //////////////////////////////////
+
+        public DataTable Todas_provincias()
+        {
+            string sql = "SELECT p.nombre_prov, COUNT(*) as 'cantidad'" +
+                        " FROM Barrio b JOIN Cliente c ON b.cod_barrio = c.cod_barrio" +
+                        " JOIN Ciudad cd ON b.id_ciudad = cd.cod_ciudad" +
+                        " JOIN Provincia p ON cd.id_provincia = p.cod_prov" +
+                        " GROUP BY p.nombre_prov";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
+        public DataTable fecha_alta(string año)
+        {
+            string sql = "SELECT p.nombre_prov, COUNT(*) as cantidad" +
+                        " FROM Barrio b JOIN Cliente c ON b.cod_barrio = c.cod_barrio" +
+                        " JOIN Ciudad cd ON b.id_ciudad = cd.cod_ciudad" +
+                        " JOIN Provincia p ON cd.id_provincia = p.cod_prov" +
+                        " WHERE '2011' BETWEEN YEAR(c.fecha_alta) AND YEAR(c.fecha_baja)" +
+                        " GROUP BY p.nombre_prov";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
     }
 }

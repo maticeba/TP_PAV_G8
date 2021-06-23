@@ -29,6 +29,22 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Clientes_x0020_por_x0020_servicio" msprop:Generator_TableClassName="Clientes_por_servicioDataTable" msprop:Generator_TableVarName="tableClientes_por_servicio" msprop:Generator_RowChangedName="Clientes_por_servicioRowChanged" msprop:Generator_TablePropName="Clientes_por_servicio" msprop:Generator_RowDeletingName="Clientes_por_servicioRowDeleting" msprop:Generator_RowChangingName="Clientes_por_servicioRowChanging" msprop:Generator_RowEvHandlerName="Clientes_por_servicioRowChangeEventHandler" msprop:Generator_RowDeletedName="Clientes_por_servicioRowDeleted" msprop:Generator_RowClassName="Clientes_por_servicioRow" msprop:Generator_UserTableName="Clientes por servicio" msprop:Generator_RowEvArgName="Clientes_por_servicioRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_servicio" msprop:Generator_ColumnVarNameInTable="columnnombre_servicio" msprop:Generator_ColumnPropNameInRow="nombre_servicio" msprop:Generator_ColumnPropNameInTable="nombre_servicioColumn" msprop:Generator_UserColumnName="nombre_servicio" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Clientes_x0020_por_x0020_provincia" msprop:Generator_TableClassName="Clientes_por_provinciaDataTable" msprop:Generator_TableVarName="tableClientes_por_provincia" msprop:Generator_RowChangedName="Clientes_por_provinciaRowChanged" msprop:Generator_TablePropName="Clientes_por_provincia" msprop:Generator_RowDeletingName="Clientes_por_provinciaRowDeleting" msprop:Generator_RowChangingName="Clientes_por_provinciaRowChanging" msprop:Generator_RowEvHandlerName="Clientes_por_provinciaRowChangeEventHandler" msprop:Generator_RowDeletedName="Clientes_por_provinciaRowDeleted" msprop:Generator_RowClassName="Clientes_por_provinciaRow" msprop:Generator_UserTableName="Clientes por provincia" msprop:Generator_RowEvArgName="Clientes_por_provinciaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_prov" msprop:Generator_ColumnVarNameInTable="columnnombre_prov" msprop:Generator_ColumnPropNameInRow="nombre_prov" msprop:Generator_ColumnPropNameInTable="nombre_provColumn" msprop:Generator_UserColumnName="nombre_prov" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

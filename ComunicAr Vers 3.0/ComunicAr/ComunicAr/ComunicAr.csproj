@@ -798,6 +798,8 @@
       <DependentUpon>Escritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Clientes dado de baja.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Clientes_por_provincia.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Clientes_por_servicio.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Clientes\ClienteXServContratados.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.resx">
       <DependentUpon>Frm_Estadistica_Cliente.cs</DependentUpon>
