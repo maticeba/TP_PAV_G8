@@ -634,6 +634,7 @@
     <Compile Include="Negocio_Estadisticas\DispVendidos.cs" />
     <Compile Include="Negocio_Estadisticas\Estadistica Nros.cs" />
     <Compile Include="Negocio_Estadisticas\Estadistica_cliente.cs" />
+    <Compile Include="Negocio_Estadisticas\Estadistica_ClientXServ.cs" />
     <Compile Include="Negocio_Estadisticas\Packs_Vendidos.cs" />
     <Compile Include="Negocio_Estadisticas\Tipo_Llamada.cs" />
     <Compile Include="Negocio_Listados\Dispositivos.cs" />
@@ -797,6 +798,7 @@
       <DependentUpon>Escritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Clientes dado de baja.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Clientes\ClienteXServContratados.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Clientes\Frm_Estadistica_Cliente.resx">
       <DependentUpon>Frm_Estadistica_Cliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -809,6 +811,7 @@
       <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\ReporteLlamadas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_LlamadasXBanda.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_TipoComunicacion.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Numeros\Estadistica_Numeros_bajas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Numeros\Frm_Estadisticas_Numeros.resx">

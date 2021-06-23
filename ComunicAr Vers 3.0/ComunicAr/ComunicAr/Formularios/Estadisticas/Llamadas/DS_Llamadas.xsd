@@ -12,11 +12,19 @@
   <xs:element name="DS_Llamadas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Llamadas" msprop:Generator_UserDSName="DS_Llamadas">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Denominacion" msprop:Generator_ColumnVarNameInTable="columnDenominacion" msprop:Generator_ColumnPropNameInRow="Denominacion" msprop:Generator_ColumnPropNameInTable="DenominacionColumn" msprop:Generator_UserColumnName="Denominacion" type="xs:string" minOccurs="0" />
               <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Llamadas_x0020_por_x0020_Banda_x0020_Horaria" msprop:Generator_TableClassName="Llamadas_por_Banda_HorariaDataTable" msprop:Generator_TableVarName="tableLlamadas_por_Banda_Horaria" msprop:Generator_TablePropName="Llamadas_por_Banda_Horaria" msprop:Generator_RowDeletingName="Llamadas_por_Banda_HorariaRowDeleting" msprop:Generator_RowChangingName="Llamadas_por_Banda_HorariaRowChanging" msprop:Generator_RowEvHandlerName="Llamadas_por_Banda_HorariaRowChangeEventHandler" msprop:Generator_RowDeletedName="Llamadas_por_Banda_HorariaRowDeleted" msprop:Generator_UserTableName="Llamadas por Banda Horaria" msprop:Generator_RowChangedName="Llamadas_por_Banda_HorariaRowChanged" msprop:Generator_RowEvArgName="Llamadas_por_Banda_HorariaRowChangeEvent" msprop:Generator_RowClassName="Llamadas_por_Banda_HorariaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="banda" msprop:Generator_ColumnVarNameInTable="columnbanda" msprop:Generator_ColumnPropNameInRow="banda" msprop:Generator_ColumnPropNameInTable="bandaColumn" msprop:Generator_UserColumnName="banda" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

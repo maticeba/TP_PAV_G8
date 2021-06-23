@@ -1763,3 +1763,7 @@ C:\Users\Usuario\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\Comunic
 C:\Users\Usuario\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csproj.CopyComplete
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Estadisticas.Clientes.Frm_Estadistica_Cliente.resources
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Estadisticas.Dispositivos.Frm_DispVend_Estadisticas.resources
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Estadisticas.Numeros.Frm_Estadisticas_Numeros.resources
+C:\Users\FM\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Menu.Frm_Menu_Estadisticas.resources

@@ -45,5 +45,22 @@ namespace ComunicAr.Negocio_Estadisticas
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
+        public DataTable LlamadaxBandaxM(int mes, int year)
+        {
+            string sql = "SELECT b.descripcion as banda, COUNT(*) as cantidad FROM Banda_horaria b, Llamadas l WHERE b.id_banda = l.id_band_horar " +
+                        " AND MONTH(l.fecha_hora_inicio) = " +mes +" AND " +
+                        " YEAR(l.fecha_hora_inicio) = " + year + " GROUP BY b.descripcion";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
+        public DataTable LlamadasxBandaxIntervalo(int MDesde, int ADesde, int MHasta, int AHasta)
+        {
+            string sql = "SELECT b.descripcion as banda, COUNT(*) as cantidad FROM Banda_horaria b, Llamadas l WHERE b.id_banda = l.id_band_horar " +
+            " AND MONTH(l.fecha_hora_inicio) >= " + MDesde + " AND " +
+            " YEAR(l.fecha_hora_inicio) >= " + ADesde + " AND MONTH(l.fecha_hora_inicio) <= " + MHasta + " AND " +
+            " YEAR(l.fecha_hora_inicio) <= " + AHasta + " GROUP BY b.descripcion";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
     }
 }
