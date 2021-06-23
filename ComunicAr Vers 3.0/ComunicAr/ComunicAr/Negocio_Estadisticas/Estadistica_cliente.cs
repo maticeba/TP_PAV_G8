@@ -199,7 +199,7 @@ namespace ComunicAr.Negocio_Estadisticas
                         " WHERE c.cod_barrio = b.cod_barrio" +
                         " AND b.id_ciudad = ci.cod_ciudad" +
                         " AND ci.id_provincia = p.cod_prov" +
-                        " AND YEAR(fecha_alta) = 2017" +
+                        " AND YEAR(fecha_alta) = " + año +
                         " GROUP BY p.nombre_prov";
             tabla = BD.EjecutarSelect(sql);
             return tabla;
