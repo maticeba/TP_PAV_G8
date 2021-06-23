@@ -81,11 +81,10 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
 
         private void btn_DetVtaDisp_Generar_Click(object sender, EventArgs e)
         {
-            Detalle_Venta_Dispositivo detalle = new Detalle_Venta_Dispositivo();
-            Pp_NroFac = "1";
+            Detalle_Venta_Dispositivo detalle = new Detalle_Venta_Dispositivo();;
             if (MessageBox.Show("¿Desea cargar el detalle de Venta de Dispositivo?", "Importante", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                for (int i = 0; i < dataGridView_DetVtaDisp.Rows.Count - 1; i++)
+                for (int i = 0; i < dataGridView_DetVtaDisp.Rows.Count ; i++)
                 {
                     detalle.Pp_NroFac = Pp_NroFac;
                     detalle.Pp_venta_dispositivo = dataGridView_DetVtaDisp.Rows[i].Cells[0].Value.ToString();
@@ -128,8 +127,6 @@ namespace ComunicAr.Formularios.Transaccion.Detalle_Dsipositivos
 
         private void Frm_Detalle_VtaDispo_Load(object sender, EventArgs e)
         {
-            Pp_NroFac = "1";
-            Pp_NroCliente = "1";
             flag = false;
             Pp_descuento = 0;
             //Frm_desc desc = new Frm_desc();

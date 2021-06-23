@@ -50,10 +50,11 @@ namespace ComunicAr.Negocio_Transacciones
         public DataTable Factura_fijo(string nro_factura, string nro_cliente)
         {
             string sql = @"SELECT   sf.descripcion AS detalle, " +
-                                   "df.costo_final AS importe, " +
+                                   "sf.costo_mensual AS importe, " +
                                    "df.nro_cuota AS cuota, " +
-                                   "DATEDIFF(MONTH, c.fecha_desde, c.fecha_hasta) AS tot_cuotas," +
-                                   "c.descuento AS descuento " +
+                                   "DATEDIFF(MONTH, c.fecha_desde, c.fecha_hasta) AS tot_cuotas, " +
+                                   "c.descuento AS descuento, " +
+                                   "df.costo_final " +
                           "FROM Detalle_fact_fijos df, Servicios_contratados c, Facturas f, Servicios_fijos sf, Numero n " +
                           "WHERE df.cod_serv_contratado = c.cod_servicio " +
                             "AND f.nro_factura = df.nro_factura	" +

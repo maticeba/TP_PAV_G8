@@ -30,11 +30,28 @@ namespace ComunicAr.Negocio_Transacciones
         }
         public DataTable RecoleccionDatos(string nro_cliente)
         {
-            string sql = @"SELECT DISTINCT  c.fecha_desde, c.fecha_hasta, DATEDIFF(month,c.fecha_desde,convert(date,GETDATE())) as diferencia,DATEDIFF (month, c.fecha_desde, c.fecha_hasta) as duracion, "
-                        + "p.costo,p.tipo_servicio,p.descripcion,r.descripcion_region, n.id_numero ,c.cod_servicio, c.id_numero ,n.nro_cliente,c.descuento, p.id_pack "
-                        + "FROM Servicios_prepago p,Servicios_Contratados c, Numero n ,Region r "
-                        + "WHERE c.tipo_servicio= p.tipo_servicio AND c.id_servicio = p.id_pack  AND p.id_region = r.id_region " +
-                        "AND n.nro_cliente = " + nro_cliente  +" AND c.id_numero = n.id_numero " ;
+            string sql = @"SELECT DISTINCT  sc.fecha_desde, " + 
+                                          " sc.fecha_hasta, " +
+                                          " DATEDIFF(month, sc.fecha_desde,convert(date,GETDATE())) as diferencia, " +
+                                          " DATEDIFF (month, sc.fecha_desde, sc.fecha_hasta) as duracion, " +
+                                          " p.costo, " +
+                                          " p.tipo_servicio, " +
+                                          " p.descripcion," +
+                                          " r.descripcion_region, " +
+                                          " n.id_numero, " +
+                                          " sc.cod_servicio, " +
+                                          " sc.id_numero, " +
+                                          " n.nro_cliente, " +
+                                          " sc.descuento, " +
+                                          " p.id_pack " +
+                          " FROM Servicios_prepago p,Servicios_Contratados sc, Numero n ,Region r " +
+                          " WHERE sc.tipo_servicio= p.tipo_servicio " +
+                                " AND sc.id_servicio = p.id_pack  " +
+                                " AND p.id_region = r.id_region " +
+                                " AND n.nro_cliente = " + nro_cliente  +" " +
+                                " AND sc.id_numero = n.id_numero " +
+                                " AND (DATEDIFF(month, sc.fecha_desde, convert(date,GETDATE())) <= DATEDIFF(month, sc.fecha_desde, sc.fecha_hasta)) " +
+                                " AND(DATEDIFF(month, sc.fecha_desde, convert(date, GETDATE())) > 0)" ;
         
             return BD.EjecutarSelect(sql);
         }
@@ -64,8 +81,8 @@ namespace ComunicAr.Negocio_Transacciones
                                 "AND c.id_numero = n.id_numero " +
                                 "AND n.nro_cliente = " + nro_cliente + " "+
                                 "AND dp.nro_factura = " + nro_factura + " " +
-                                "AND MONTH(c.fecha_desde) = MONTH(DATEADD(MM, -1, GETDATE())) " +
-                                "AND YEAR(c.fecha_desde) = YEAR(DATEADD(MM, -1, GETDATE()))";
+                                " AND (DATEDIFF(month, c.fecha_desde, convert(date,GETDATE())) <= DATEDIFF(month, c.fecha_desde, c.fecha_hasta)) " +
+                                " AND(DATEDIFF(month, c.fecha_desde, convert(date, GETDATE())) > 0)";
             return BD.EjecutarSelect(sql);
         }
     }

@@ -52,27 +52,27 @@ namespace ComunicAr.Negocio_Transacciones
             using (TextWriter tw = new StreamWriter(path + "\\" + name_arch + ".txt", true)) // El true es mucho muy importante sino reescribe el archivo en vez de agregar
             {
                 float subtotal = 0;
-                tw.WriteLine("***********************************************************************************");
-                tw.WriteLine("                                COMUNIC-AR");
-                tw.WriteLine("***********************************************************************************");
+                tw.WriteLine("*****************************************************************************************************************");
+                tw.WriteLine("                                                  COMUNIC-AR");
+                tw.WriteLine("*****************************************************************************************************************");
                 tw.WriteLine("");
                 tw.WriteLine("CUIT: 33-71548658-9  -  Responsable Inscripto");
                 tw.WriteLine("Av. Hipólito Yrigoyen 146, Córdoba Capital, Córdoba, Argentina");
                 tw.WriteLine("Tel: 0800-9998967 - info@comunicar.com.ar - www.comunicar.com.ar");
-                tw.WriteLine("___________________________________________________________________________________");
+                tw.WriteLine("_________________________________________________________________________________________________________________");
                 tw.WriteLine("                                  FACTURA");
                 tw.WriteLine("");
                 tw.WriteLine("- Tipo: " + Ps_Tipo_Factura);
                 tw.WriteLine("- Nro. Factura: " + Ps_Nro_Factura);
                 tw.WriteLine("- Fecha: " + DateTime.Now.ToString());
-                tw.WriteLine("___________________________________________________________________________________");
+                tw.WriteLine("_________________________________________________________________________________________________________________");
                 tw.WriteLine("                                  CLIENTE");
                 tw.WriteLine("");
                 tw.WriteLine("Nro. Cliente: " + Ps_Nro_Cliente);
                 tw.WriteLine("Nombre: " + Ps_Nombre_Cliente);
                 tw.WriteLine("DNI: " + " - Consumidor Final");
-                tw.WriteLine("___________________________________________________________________________________");
-                tw.WriteLine("Item\tTipo Servicio\t\tDetalle\t\t\t\t\tImporte");
+                tw.WriteLine("_________________________________________________________________________________________________________________");
+                tw.WriteLine("Item\tTipo Servicio\t\tDetalle\t\t\t\t\t\t\t\t\t\tImporte");
                 int count = 0;
                 float descuento = 0;
                 if (Pb_Flag_Llamadas == true)
@@ -86,7 +86,7 @@ namespace ComunicAr.Negocio_Transacciones
                     int digitos =+ (int)Math.Floor(Math.Log10(int.Parse(cant)) + 1) + (int)Math.Floor(Math.Log10(int.Parse(tiempo_tot)) + 1);
                     if (digitos < 5)
                     {
-                        tw.WriteLine(count.ToString() + "\tLlamadas\t\t" + "Cant.: " + cant + " / Tiempo: " + tiempo_tot + "\t\t\t$" + total);
+                        tw.WriteLine(count.ToString() + "\tLlamadas\t\t" + "Cant.: " + cant + " / Tiempo: " + tiempo_tot + "\t\t\t\t\t\t\t\t$" + total);
                     }
                     else
                     {
@@ -110,12 +110,12 @@ namespace ComunicAr.Negocio_Transacciones
                         if (tabla.Rows[i][4].ToString() != "")
                         {
                             desc = tabla.Rows[i][4].ToString();
+                            descuentoFijos = +((float.Parse(desc) * float.Parse(total)) / 100);
                         }
-                        MessageBox.Show(desc, total);
                         string cuota_tot = tabla.Rows[i][3].ToString();
                         tw.WriteLine(count.ToString() + "\tServicio Fijo\t\t" + descripcion + " / Cuota: " + cuota + "/" + cuota_tot + "\t\t$" + total);
-                        subtotal += float.Parse(total.ToString());
-                        descuentoFijos = +(float.Parse(total) * float.Parse(desc));
+                        subtotal += float.Parse(total);
+                        
                     }
                 }
 
@@ -129,11 +129,15 @@ namespace ComunicAr.Negocio_Transacciones
                         count += 1;
                         string descripcion = tabla.Rows[i][0].ToString();
                         string importe = tabla.Rows[i][1].ToString();
-                        string desc = tabla.Rows[i][2].ToString();
+                        string desc = "0";
+                        if (tabla.Rows[i][2].ToString() != "")
+                        {
+                            desc = tabla.Rows[i][2].ToString();
+                        }
                         string total = tabla.Rows[i][3].ToString();
-                        tw.WriteLine(count.ToString() + "\tServicio de Datos\t\t" + descripcion + " / Descuento: " + desc + "%\t\t$" + importe);
-                        subtotal += float.Parse(importe.ToString());
-                        descuentoDatos = +(float.Parse(total) * float.Parse(desc));
+                        tw.WriteLine(count.ToString() + "\tServicio de Datos\t" + descripcion + " / Descuento: " + desc + "%\t\t\t\t\t\t\t$" + total);
+                        subtotal += float.Parse(total);
+                        descuentoDatos = +((float.Parse(desc) * float.Parse(total)) / 100);
                     }
                 }
 
@@ -147,11 +151,15 @@ namespace ComunicAr.Negocio_Transacciones
                         count += 1;
                         string descripcion = tabla.Rows[i][0].ToString();
                         string importe = tabla.Rows[i][1].ToString();
-                        string desc = tabla.Rows[i][2].ToString();
+                        string desc = "0";
+                        if (tabla.Rows[i][2].ToString() != "")
+                        {
+                            desc = tabla.Rows[i][2].ToString();
+                        }
                         string total = tabla.Rows[i][3].ToString();
-                        tw.WriteLine(count.ToString() + "\tServicio Prepago\t\t" + descripcion + " / Descuento: " + desc + "%\t\t$" + importe);
-                        subtotal += float.Parse(importe.ToString());
-                        descuentoPrepago = +(float.Parse(total) * float.Parse(desc));
+                        tw.WriteLine(count.ToString() + "\tServicio Prepago\t" + descripcion + " / Descuento: " + desc + "%\t\t\t\t$" + total);
+                        subtotal += float.Parse(total);
+                        descuentoPrepago = +((float.Parse(desc) * float.Parse(total)) / 100);
                     }
                 }
                 float descuentoVta_dispo = 0;
@@ -166,23 +174,27 @@ namespace ComunicAr.Negocio_Transacciones
                         string cant_cuotas = tabla.Rows[i][4].ToString();
                         string cuota = tabla.Rows[i][3].ToString();
                         float importe = float.Parse(tabla.Rows[i][2].ToString()) / float.Parse(cant_cuotas);
-                        string desc = tabla.Rows[i][5].ToString();
+                        string desc = "0";
+                        if (tabla.Rows[i][5].ToString() != "")
+                        {
+                            desc = tabla.Rows[i][5].ToString();
+                        }
                         string total = (float.Parse(tabla.Rows[i][6].ToString()) / float.Parse(cant_cuotas)).ToString();
-                        tw.WriteLine(count.ToString() + "\tServicio de Venta\t\t" + descripcion + " / Desc: " + desc + "% / Cuota: " + cuota + "/" + cant_cuotas + "\t\t$" + importe.ToString());
-                        subtotal += importe;
-                        descuentoVta_dispo = +(float.Parse(total) * float.Parse(desc));
+                        tw.WriteLine(count.ToString() + "\tServicio de Venta\t" + descripcion + " / Desc: " + desc + "% / Cuota: " + cuota + "/" + cant_cuotas + "\t\t\t\t\t\t$" + total.ToString());
+                        subtotal += float.Parse(total);
+                        descuentoVta_dispo = +((float.Parse(desc) * float.Parse(total)) / 100);
                     }
                 }
                 //tw.WriteLine("*****************************************************************************");
-                tw.WriteLine("_____________________________________________________________________________");
-                tw.WriteLine("Subtotal: \t\t\t$" + subtotal.ToString());
-                tw.WriteLine("Descuento Fijos: \t\t$" + descuentoFijos.ToString());
-                tw.WriteLine("Descuento Datos: \t\t$" + descuentoDatos.ToString());
-                tw.WriteLine("Descuento Prepago: \t\t$" + descuentoPrepago.ToString());
-                tw.WriteLine("Descuento Dispositivo: \t\t$" + descuentoVta_dispo.ToString());
+                tw.WriteLine("_________________________________________________________________________________________________________________");
+                tw.WriteLine("Subtotal: \t\t\t\t\t$" + subtotal.ToString());
+                tw.WriteLine("\t-Descuento Fijos: \t\t$" + descuentoFijos.ToString());
+                tw.WriteLine("\t-Descuento Datos: \t\t$" + descuentoDatos.ToString());
+                tw.WriteLine("\t-Descuento Prepago: \t\t$" + descuentoPrepago.ToString());
+                tw.WriteLine("\t-Descuento Dispositivo: \t$" + descuentoVta_dispo.ToString());
                 descuento += descuentoDatos + descuentoPrepago + descuentoVta_dispo + descuentoFijos;
-                tw.WriteLine("Descuento: \t\t\t$" + descuento.ToString());
-                tw.WriteLine("Total: \t\t\t\t$" + (subtotal - descuento).ToString());
+                tw.WriteLine("Descuento: \t\t\t\t\t$" + descuento.ToString());
+                tw.WriteLine("Total: \t\t\t\t\t\t$" + (subtotal - descuento).ToString());
             }
 
             Process p = new Process();
