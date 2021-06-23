@@ -29,7 +29,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Llamadas_Estadisticas));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btn_calcular = new System.Windows.Forms.Button();
@@ -58,7 +57,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.rv02_L = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Calcular_L = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.rb_Mes_L = new System.Windows.Forms.RadioButton();
@@ -74,15 +72,18 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.label4 = new System.Windows.Forms.Label();
             this.txt_desde_mes_L = new ComunicAr.Clases.TextBox01();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.rp_llamadaduracion = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btn_llamadaxduracion_calcular = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_duracion_año = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rdb_llamadasxduracion_todosAños = new System.Windows.Forms.RadioButton();
             this.rdb_llamadaxduracion_Año = new System.Windows.Forms.RadioButton();
-            this.txt_duracion_año = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btn_llamadaxduracion_calcular = new System.Windows.Forms.Button();
+            this.rp_llamadaduracion = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -91,12 +92,14 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +112,12 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabControl1.Location = new System.Drawing.Point(2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(687, 476);
+            this.tabControl1.Size = new System.Drawing.Size(680, 599);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.pictureBox3);
             this.tabPage1.Controls.Add(this.btn_calcular);
             this.tabPage1.Controls.Add(this.txt_año);
             this.tabPage1.Controls.Add(this.txt_mesHasta);
@@ -126,7 +130,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(679, 450);
+            this.tabPage1.Size = new System.Drawing.Size(672, 573);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Llamadas por tipo de comunicacion";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -135,7 +139,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // btn_calcular
             // 
             this.btn_calcular.Enabled = false;
-            this.btn_calcular.Location = new System.Drawing.Point(583, 105);
+            this.btn_calcular.Location = new System.Drawing.Point(551, 89);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(85, 23);
             this.btn_calcular.TabIndex = 3;
@@ -146,7 +150,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // txt_año
             // 
             this.txt_año.Enabled = false;
-            this.txt_año.Location = new System.Drawing.Point(393, 23);
+            this.txt_año.Location = new System.Drawing.Point(411, 35);
             this.txt_año.Name = "txt_año";
             this.txt_año.Pp_Campo = null;
             this.txt_año.Pp_MensajeError = null;
@@ -159,7 +163,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // txt_mesHasta
             // 
             this.txt_mesHasta.Enabled = false;
-            this.txt_mesHasta.Location = new System.Drawing.Point(456, 49);
+            this.txt_mesHasta.Location = new System.Drawing.Point(474, 61);
             this.txt_mesHasta.Name = "txt_mesHasta";
             this.txt_mesHasta.Pp_Campo = null;
             this.txt_mesHasta.Pp_MensajeError = null;
@@ -172,7 +176,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // txt_añoHasta
             // 
             this.txt_añoHasta.Enabled = false;
-            this.txt_añoHasta.Location = new System.Drawing.Point(493, 49);
+            this.txt_añoHasta.Location = new System.Drawing.Point(511, 61);
             this.txt_añoHasta.Name = "txt_añoHasta";
             this.txt_añoHasta.Pp_Campo = null;
             this.txt_añoHasta.Pp_MensajeError = null;
@@ -185,7 +189,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // txt_añoDesde
             // 
             this.txt_añoDesde.Enabled = false;
-            this.txt_añoDesde.Location = new System.Drawing.Point(393, 49);
+            this.txt_añoDesde.Location = new System.Drawing.Point(411, 61);
             this.txt_añoDesde.Name = "txt_añoDesde";
             this.txt_añoDesde.Pp_Campo = null;
             this.txt_añoDesde.Pp_MensajeError = null;
@@ -198,7 +202,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // txt_mesDesde
             // 
             this.txt_mesDesde.Enabled = false;
-            this.txt_mesDesde.Location = new System.Drawing.Point(356, 49);
+            this.txt_mesDesde.Location = new System.Drawing.Point(374, 61);
             this.txt_mesDesde.Name = "txt_mesDesde";
             this.txt_mesDesde.Pp_Campo = null;
             this.txt_mesDesde.Pp_MensajeError = null;
@@ -211,7 +215,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // txt_mes
             // 
             this.txt_mes.Enabled = false;
-            this.txt_mes.Location = new System.Drawing.Point(356, 23);
+            this.txt_mes.Location = new System.Drawing.Point(374, 35);
             this.txt_mes.Name = "txt_mes";
             this.txt_mes.Pp_Campo = null;
             this.txt_mes.Pp_MensajeError = null;
@@ -226,7 +230,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox1.Controls.Add(this.rb_todos);
             this.groupBox1.Controls.Add(this.rb_rango);
             this.groupBox1.Controls.Add(this.rb_mes);
-            this.groupBox1.Location = new System.Drawing.Point(134, 6);
+            this.groupBox1.Location = new System.Drawing.Point(152, 18);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 1;
@@ -270,14 +274,16 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             // rv_tipoLlamadas
             // 
-            this.rv_tipoLlamadas.Location = new System.Drawing.Point(0, 134);
+            this.rv_tipoLlamadas.Location = new System.Drawing.Point(27, 124);
             this.rv_tipoLlamadas.Name = "rv_tipoLlamadas";
             this.rv_tipoLlamadas.ServerReport.BearerToken = null;
-            this.rv_tipoLlamadas.Size = new System.Drawing.Size(676, 320);
+            this.rv_tipoLlamadas.Size = new System.Drawing.Size(618, 426);
             this.rv_tipoLlamadas.TabIndex = 0;
+            this.rv_tipoLlamadas.Load += new System.EventHandler(this.rv_tipoLlamadas_Load);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.pictureBox4);
             this.tabPage2.Controls.Add(this.Calcular2);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
@@ -289,7 +295,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(679, 450);
+            this.tabPage2.Size = new System.Drawing.Size(672, 573);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Llamadas por mes";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -297,7 +303,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             // Calcular2
             // 
-            this.Calcular2.Location = new System.Drawing.Point(593, 90);
+            this.Calcular2.Location = new System.Drawing.Point(570, 90);
             this.Calcular2.Name = "Calcular2";
             this.Calcular2.Size = new System.Drawing.Size(75, 23);
             this.Calcular2.TabIndex = 9;
@@ -309,7 +315,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             this.label2.AutoSize = true;
             this.label2.Enabled = false;
-            this.label2.Location = new System.Drawing.Point(298, 53);
+            this.label2.Location = new System.Drawing.Point(300, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 8;
@@ -319,7 +325,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             this.label1.AutoSize = true;
             this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(328, 28);
+            this.label1.Location = new System.Drawing.Point(330, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 8;
@@ -327,7 +333,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(477, 48);
+            this.btn_buscar.Location = new System.Drawing.Point(479, 58);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(67, 20);
             this.btn_buscar.TabIndex = 7;
@@ -340,7 +346,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             this.groupBox2.Controls.Add(this.rb_sin);
             this.groupBox2.Controls.Add(this.rb_cliente);
-            this.groupBox2.Location = new System.Drawing.Point(150, 6);
+            this.groupBox2.Location = new System.Drawing.Point(152, 16);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(135, 79);
             this.groupBox2.TabIndex = 1;
@@ -372,16 +378,16 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             // rv_llamadas
             // 
-            this.rv_llamadas.Location = new System.Drawing.Point(0, 119);
+            this.rv_llamadas.Location = new System.Drawing.Point(24, 119);
             this.rv_llamadas.Name = "rv_llamadas";
             this.rv_llamadas.ServerReport.BearerToken = null;
-            this.rv_llamadas.Size = new System.Drawing.Size(673, 331);
+            this.rv_llamadas.Size = new System.Drawing.Size(621, 437);
             this.rv_llamadas.TabIndex = 0;
             // 
             // txt_año2
             // 
             this.txt_año2.Enabled = false;
-            this.txt_año2.Location = new System.Drawing.Point(360, 21);
+            this.txt_año2.Location = new System.Drawing.Point(362, 31);
             this.txt_año2.Name = "txt_año2";
             this.txt_año2.Pp_Campo = null;
             this.txt_año2.Pp_MensajeError = null;
@@ -393,7 +399,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // txt_cliente2
             // 
             this.txt_cliente2.Enabled = false;
-            this.txt_cliente2.Location = new System.Drawing.Point(360, 48);
+            this.txt_cliente2.Location = new System.Drawing.Point(362, 58);
             this.txt_cliente2.Name = "txt_cliente2";
             this.txt_cliente2.Pp_Campo = null;
             this.txt_cliente2.Pp_MensajeError = null;
@@ -408,17 +414,17 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(679, 450);
+            this.tabPage3.Size = new System.Drawing.Size(672, 573);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Llamadas por banda horaria";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // rv02_L
             // 
-            this.rv02_L.Location = new System.Drawing.Point(4, 159);
+            this.rv02_L.Location = new System.Drawing.Point(22, 152);
             this.rv02_L.Name = "rv02_L";
             this.rv02_L.ServerReport.BearerToken = null;
-            this.rv02_L.Size = new System.Drawing.Size(672, 291);
+            this.rv02_L.Size = new System.Drawing.Size(629, 406);
             this.rv02_L.TabIndex = 2;
             // 
             // groupBox3
@@ -428,21 +434,11 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox3.Controls.Add(this.groupBox6);
             this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Location = new System.Drawing.Point(3, 3);
+            this.groupBox3.Location = new System.Drawing.Point(22, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(626, 149);
+            this.groupBox3.Size = new System.Drawing.Size(629, 143);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 33);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(107, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
             // 
             // btn_Calcular_L
             // 
@@ -623,16 +619,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.label5.TabIndex = 25;
             this.label5.Text = "Desde";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(599, 484);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.pictureBox1);
@@ -644,24 +630,43 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(679, 450);
+            this.tabPage4.Size = new System.Drawing.Size(672, 573);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
-            // rp_llamadaduracion
+            // btn_llamadaxduracion_calcular
             // 
-            this.rp_llamadaduracion.Location = new System.Drawing.Point(81, 198);
-            this.rp_llamadaduracion.Name = "rp_llamadaduracion";
-            this.rp_llamadaduracion.ServerReport.BearerToken = null;
-            this.rp_llamadaduracion.Size = new System.Drawing.Size(396, 246);
-            this.rp_llamadaduracion.TabIndex = 0;
+            this.btn_llamadaxduracion_calcular.Location = new System.Drawing.Point(536, 32);
+            this.btn_llamadaxduracion_calcular.Name = "btn_llamadaxduracion_calcular";
+            this.btn_llamadaxduracion_calcular.Size = new System.Drawing.Size(97, 23);
+            this.btn_llamadaxduracion_calcular.TabIndex = 9;
+            this.btn_llamadaxduracion_calcular.Text = "Calcular";
+            this.btn_llamadaxduracion_calcular.UseVisualStyleBackColor = true;
+            this.btn_llamadaxduracion_calcular.Click += new System.EventHandler(this.btn_llamadaxduracion_calcular_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(268, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Año";
+            // 
+            // txt_duracion_año
+            // 
+            this.txt_duracion_año.Location = new System.Drawing.Point(314, 37);
+            this.txt_duracion_año.Name = "txt_duracion_año";
+            this.txt_duracion_año.Size = new System.Drawing.Size(49, 20);
+            this.txt_duracion_año.TabIndex = 6;
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.rdb_llamadasxduracion_todosAños);
             this.groupBox7.Controls.Add(this.rdb_llamadaxduracion_Año);
-            this.groupBox7.Location = new System.Drawing.Point(206, 52);
+            this.groupBox7.Location = new System.Drawing.Point(142, 21);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(120, 82);
             this.groupBox7.TabIndex = 2;
@@ -689,37 +694,61 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.rdb_llamadaxduracion_Año.Text = "Por Año";
             this.rdb_llamadaxduracion_Año.UseVisualStyleBackColor = true;
             // 
-            // txt_duracion_año
+            // rp_llamadaduracion
             // 
-            this.txt_duracion_año.Location = new System.Drawing.Point(378, 68);
-            this.txt_duracion_año.Name = "txt_duracion_año";
-            this.txt_duracion_año.Size = new System.Drawing.Size(49, 20);
-            this.txt_duracion_año.TabIndex = 6;
+            this.rp_llamadaduracion.Location = new System.Drawing.Point(22, 129);
+            this.rp_llamadaduracion.Name = "rp_llamadaduracion";
+            this.rp_llamadaduracion.ServerReport.BearerToken = null;
+            this.rp_llamadaduracion.Size = new System.Drawing.Size(628, 419);
+            this.rp_llamadaduracion.TabIndex = 0;
             // 
-            // label6
+            // button1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(332, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Año";
+            this.button1.Location = new System.Drawing.Point(603, 603);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btn_llamadaxduracion_calcular
+            // pictureBox3
             // 
-            this.btn_llamadaxduracion_calcular.Location = new System.Drawing.Point(509, 158);
-            this.btn_llamadaxduracion_calcular.Name = "btn_llamadaxduracion_calcular";
-            this.btn_llamadaxduracion_calcular.Size = new System.Drawing.Size(97, 23);
-            this.btn_llamadaxduracion_calcular.TabIndex = 9;
-            this.btn_llamadaxduracion_calcular.Text = "Calcular";
-            this.btn_llamadaxduracion_calcular.UseVisualStyleBackColor = true;
-            this.btn_llamadaxduracion_calcular.Click += new System.EventHandler(this.btn_llamadaxduracion_calcular_Click);
+            this.pictureBox3.Image = global::ComunicAr.Properties.Resources.telephone;
+            this.pictureBox3.Location = new System.Drawing.Point(40, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(88, 88);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ComunicAr.Properties.Resources.telephone;
+            this.pictureBox4.Location = new System.Drawing.Point(43, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(88, 88);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ComunicAr.Properties.Resources.telephone;
+            this.pictureBox2.Location = new System.Drawing.Point(19, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 88);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 36);
+            this.pictureBox1.Image = global::ComunicAr.Properties.Resources.telephone;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(88, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -727,7 +756,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 513);
+            this.ClientSize = new System.Drawing.Size(694, 642);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_Llamadas_Estadisticas";
@@ -744,7 +773,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -755,6 +783,9 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabPage4.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -805,7 +836,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         private System.Windows.Forms.Label label4;
         private Clases.TextBox01 txt_desde_mes_L;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Microsoft.Reporting.WinForms.ReportViewer rv02_L;
         private System.Windows.Forms.TabPage tabPage4;
         private Microsoft.Reporting.WinForms.ReportViewer rp_llamadaduracion;
@@ -815,6 +845,9 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.RadioButton rdb_llamadasxduracion_todosAños;
         private System.Windows.Forms.RadioButton rdb_llamadaxduracion_Año;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

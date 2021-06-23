@@ -388,10 +388,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>2.98662cm</Top>
+            <Top>2.51037cm</Top>
             <Left>0.63182cm</Left>
             <Height>6.42875cm</Height>
-            <Width>13.71424cm</Width>
+            <Width>11.01549cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -405,10 +405,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>2.80458cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>1.73271cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -425,10 +425,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Denominacion</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox2</rd:DefaultName>
@@ -437,6 +441,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -455,10 +460,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Valor</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
@@ -467,6 +476,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -561,10 +571,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>2.98662cm</Top>
-            <Left>14.52245cm</Left>
+            <Top>2.51037cm</Top>
+            <Left>11.8237cm</Left>
             <Height>1.2cm</Height>
-            <Width>5cm</Width>
+            <Width>4.53729cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -572,35 +582,35 @@
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox8">
+          <Textbox Name="Textbox7">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Tabla Estadistica Cantidad De Llamadas</Value>
+                    <Value>Cantidad De Llamadas</Value>
                     <Style>
-                      <FontWeight>Bold</FontWeight>
+                      <FontFamily>Bahnschrift Condensed</FontFamily>
+                      <FontSize>18pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
                   <TextAlign>Center</TextAlign>
-                  <LineHeight>4pt</LineHeight>
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>0.89641cm</Top>
-            <Height>0.6cm</Height>
-            <Width>20.30266cm</Width>
+            <rd:DefaultName>Textbox7</rd:DefaultName>
+            <Top>0.76412cm</Top>
+            <Height>0.97042cm</Height>
+            <Width>16.5462cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>Orange</BackgroundColor>
+              <BackgroundColor>NavajoWhite</BackgroundColor>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -611,7 +621,7 @@
         <Height>4.26934in</Height>
         <Style />
       </Body>
-      <Width>7.99317in</Width>
+      <Width>6.51425in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

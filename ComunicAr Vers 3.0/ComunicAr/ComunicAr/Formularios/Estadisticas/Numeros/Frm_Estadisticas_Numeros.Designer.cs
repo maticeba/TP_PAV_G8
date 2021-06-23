@@ -40,9 +40,11 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             this.rdBtn_estadistica_nro_bajas_año = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.rv_estadistica_nros_baja = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -51,11 +53,12 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(849, 490);
+            this.tabControl1.Size = new System.Drawing.Size(727, 584);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.btn_estad_nro_baja_cargar);
             this.tabPage1.Controls.Add(this.txt_estad_nro_baja_mes);
             this.tabPage1.Controls.Add(this.txt_estad_nro_baja_año);
@@ -66,7 +69,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(841, 464);
+            this.tabPage1.Size = new System.Drawing.Size(719, 558);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bajas por servicio";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -74,7 +77,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             // 
             // btn_estad_nro_baja_cargar
             // 
-            this.btn_estad_nro_baja_cargar.Location = new System.Drawing.Point(654, 38);
+            this.btn_estad_nro_baja_cargar.Location = new System.Drawing.Point(621, 28);
             this.btn_estad_nro_baja_cargar.Name = "btn_estad_nro_baja_cargar";
             this.btn_estad_nro_baja_cargar.Size = new System.Drawing.Size(75, 23);
             this.btn_estad_nro_baja_cargar.TabIndex = 4;
@@ -84,7 +87,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             // 
             // txt_estad_nro_baja_mes
             // 
-            this.txt_estad_nro_baja_mes.Location = new System.Drawing.Point(508, 40);
+            this.txt_estad_nro_baja_mes.Location = new System.Drawing.Point(408, 50);
             this.txt_estad_nro_baja_mes.Name = "txt_estad_nro_baja_mes";
             this.txt_estad_nro_baja_mes.Pp_Campo = null;
             this.txt_estad_nro_baja_mes.Pp_MensajeError = null;
@@ -95,7 +98,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             // 
             // txt_estad_nro_baja_año
             // 
-            this.txt_estad_nro_baja_año.Location = new System.Drawing.Point(508, 18);
+            this.txt_estad_nro_baja_año.Location = new System.Drawing.Point(408, 28);
             this.txt_estad_nro_baja_año.Name = "txt_estad_nro_baja_año";
             this.txt_estad_nro_baja_año.Pp_Campo = null;
             this.txt_estad_nro_baja_año.Pp_MensajeError = null;
@@ -107,7 +110,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(470, 43);
+            this.label2.Location = new System.Drawing.Point(370, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 1;
@@ -117,7 +120,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             // 
             this.groupBox1.Controls.Add(this.rdBtn_estadistica_nro_bajas_mes);
             this.groupBox1.Controls.Add(this.rdBtn_estadistica_nro_bajas_año);
-            this.groupBox1.Location = new System.Drawing.Point(283, 6);
+            this.groupBox1.Location = new System.Drawing.Point(183, 16);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(140, 64);
             this.groupBox1.TabIndex = 2;
@@ -151,7 +154,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(470, 21);
+            this.label1.Location = new System.Drawing.Point(370, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 1;
@@ -159,17 +162,27 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             // 
             // rv_estadistica_nros_baja
             // 
-            this.rv_estadistica_nros_baja.Location = new System.Drawing.Point(0, 76);
+            this.rv_estadistica_nros_baja.Location = new System.Drawing.Point(15, 111);
             this.rv_estadistica_nros_baja.Name = "rv_estadistica_nros_baja";
             this.rv_estadistica_nros_baja.ServerReport.BearerToken = null;
-            this.rv_estadistica_nros_baja.Size = new System.Drawing.Size(838, 385);
+            this.rv_estadistica_nros_baja.Size = new System.Drawing.Size(681, 424);
             this.rv_estadistica_nros_baja.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ComunicAr.Properties.Resources.smartphone;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(89, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Estadisticas_Numeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 493);
+            this.ClientSize = new System.Drawing.Size(742, 598);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_Estadisticas_Numeros";
             this.Text = "Frm_Estadisticas_Numeros";
@@ -179,6 +192,7 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
             this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,5 +210,6 @@ namespace ComunicAr.Formularios.Estadisticas.Numeros
         private Clases.TextBox01 txt_estad_nro_baja_año;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_estad_nro_baja_cargar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

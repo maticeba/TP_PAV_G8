@@ -397,5 +397,15 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
 
             }
         }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rv_tipoLlamadas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

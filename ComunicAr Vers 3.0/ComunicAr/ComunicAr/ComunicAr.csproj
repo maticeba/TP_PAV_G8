@@ -1135,6 +1135,11 @@
     <None Include="Resources\kisspng-computer-icons-customer-service-favicon-desktop-wa-icon-customers-drawing-5ab1957e19a495.6958333915215875821051.png" />
     <None Include="Resources\kisspng-computer-icons-telephone-mobile-phones-telephone-number-5ad9917457e4e7.49120016152420798836.png" />
     <None Include="Resources\kisspng-computer-icons-invoice-price-icon-library-invoices-5ab1109a4074e9.562365921521553562264.png" />
+    <None Include="Resources\student.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\telephone.png" />
+    <None Include="Resources\task.png" />
+    <None Include="Resources\smartphone.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

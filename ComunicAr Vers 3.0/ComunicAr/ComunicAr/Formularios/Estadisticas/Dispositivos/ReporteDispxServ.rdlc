@@ -51,7 +51,7 @@
                   <Width>3.08208cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.5475cm</Width>
+                  <Width>1.75917cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -68,10 +68,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Tipo de Servicio</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox9</rd:DefaultName>
@@ -80,6 +84,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -98,10 +103,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cantidad</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox11</rd:DefaultName>
@@ -110,6 +119,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -205,9 +215,9 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>2.51037cm</Top>
-            <Left>10.77765cm</Left>
+            <Left>10.14265cm</Left>
             <Height>1.2cm</Height>
-            <Width>4.62958cm</Width>
+            <Width>4.84125cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -562,9 +572,9 @@
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
             <Top>2.51037cm</Top>
-            <Left>0.28787cm</Left>
+            <Left>0.31433cm</Left>
             <Height>7.48708cm</Height>
-            <Width>10.09291cm</Width>
+            <Width>9.35208cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -597,7 +607,7 @@
             <rd:DefaultName>Textbox7</rd:DefaultName>
             <Top>0.90195cm</Top>
             <Height>0.97042cm</Height>
-            <Width>16.51974cm</Width>
+            <Width>15.54078cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -614,7 +624,7 @@
         <Height>4.21725in</Height>
         <Style />
       </Body>
-      <Width>6.50384in</Width>
+      <Width>6.11842in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

@@ -210,5 +210,10 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

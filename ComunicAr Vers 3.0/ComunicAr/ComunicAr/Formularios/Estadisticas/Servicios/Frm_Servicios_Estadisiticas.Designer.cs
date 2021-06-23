@@ -32,10 +32,6 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Servicios_Estadisiticas));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pack_vendidos = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_year_S = new ComunicAr.Clases.TextBox01();
-            this.txt_año = new System.Windows.Forms.Label();
             this.btn_calcular_serv = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rv01_Servicios = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -58,10 +54,11 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             this.txt_desde_mes = new ComunicAr.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_año = new System.Windows.Forms.Label();
+            this.txt_year_S = new ComunicAr.Clases.TextBox01();
             this.tabControl1.SuspendLayout();
             this.pack_vendidos.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.packs_allS.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -69,6 +66,7 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -78,68 +76,26 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(833, 549);
+            this.tabControl1.Size = new System.Drawing.Size(745, 599);
             this.tabControl1.TabIndex = 0;
             // 
             // pack_vendidos
             // 
-            this.pack_vendidos.Controls.Add(this.groupBox1);
+            this.pack_vendidos.Controls.Add(this.groupBox2);
+            this.pack_vendidos.Controls.Add(this.btn_calcular_serv);
             this.pack_vendidos.Controls.Add(this.rv01_Servicios);
+            this.pack_vendidos.Controls.Add(this.pictureBox1);
             this.pack_vendidos.Location = new System.Drawing.Point(4, 22);
             this.pack_vendidos.Name = "pack_vendidos";
             this.pack_vendidos.Padding = new System.Windows.Forms.Padding(3);
-            this.pack_vendidos.Size = new System.Drawing.Size(825, 523);
+            this.pack_vendidos.Size = new System.Drawing.Size(750, 557);
             this.pack_vendidos.TabIndex = 0;
             this.pack_vendidos.Text = "Packs de datos vendidos";
             this.pack_vendidos.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.btn_calcular_serv);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(304, 101);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txt_year_S);
-            this.groupBox2.Controls.Add(this.txt_año);
-            this.groupBox2.Location = new System.Drawing.Point(92, 11);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(197, 50);
-            this.groupBox2.TabIndex = 27;
-            this.groupBox2.TabStop = false;
-            // 
-            // txt_year_S
-            // 
-            this.txt_year_S.Location = new System.Drawing.Point(130, 18);
-            this.txt_year_S.Name = "txt_year_S";
-            this.txt_year_S.Pp_Campo = null;
-            this.txt_year_S.Pp_MensajeError = null;
-            this.txt_year_S.Pp_Tabla = null;
-            this.txt_year_S.Pp_Validable = false;
-            this.txt_year_S.Size = new System.Drawing.Size(60, 20);
-            this.txt_year_S.TabIndex = 1;
-            this.txt_year_S.Text = "AAAA";
-            this.txt_year_S.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_year_S.Click += new System.EventHandler(this.txt_year_S_Click);
-            // 
-            // txt_año
-            // 
-            this.txt_año.AutoSize = true;
-            this.txt_año.Location = new System.Drawing.Point(6, 18);
-            this.txt_año.Name = "txt_año";
-            this.txt_año.Size = new System.Drawing.Size(118, 13);
-            this.txt_año.TabIndex = 25;
-            this.txt_año.Text = "Ingrese el año a buscar";
-            // 
             // btn_calcular_serv
             // 
-            this.btn_calcular_serv.Location = new System.Drawing.Point(214, 67);
+            this.btn_calcular_serv.Location = new System.Drawing.Point(656, 32);
             this.btn_calcular_serv.Name = "btn_calcular_serv";
             this.btn_calcular_serv.Size = new System.Drawing.Size(75, 23);
             this.btn_calcular_serv.TabIndex = 1;
@@ -150,19 +106,19 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 76);
+            this.pictureBox1.Size = new System.Drawing.Size(112, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
             // rv01_Servicios
             // 
-            this.rv01_Servicios.Location = new System.Drawing.Point(6, 113);
+            this.rv01_Servicios.Location = new System.Drawing.Point(29, 128);
             this.rv01_Servicios.Name = "rv01_Servicios";
             this.rv01_Servicios.ServerReport.BearerToken = null;
-            this.rv01_Servicios.Size = new System.Drawing.Size(794, 388);
+            this.rv01_Servicios.Size = new System.Drawing.Size(678, 405);
             this.rv01_Servicios.TabIndex = 1;
             this.rv01_Servicios.Load += new System.EventHandler(this.rv01_Servicios_Load);
             // 
@@ -170,19 +126,20 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             // 
             this.packs_allS.Controls.Add(this.rv02_Serv);
             this.packs_allS.Controls.Add(this.groupBox3);
+            this.packs_allS.Controls.Add(this.pictureBox2);
             this.packs_allS.Location = new System.Drawing.Point(4, 22);
             this.packs_allS.Name = "packs_allS";
-            this.packs_allS.Size = new System.Drawing.Size(825, 523);
+            this.packs_allS.Size = new System.Drawing.Size(737, 573);
             this.packs_allS.TabIndex = 1;
             this.packs_allS.Text = "Pack vendidos por servicio";
             this.packs_allS.UseVisualStyleBackColor = true;
             // 
             // rv02_Serv
             // 
-            this.rv02_Serv.Location = new System.Drawing.Point(4, 159);
+            this.rv02_Serv.Location = new System.Drawing.Point(21, 159);
             this.rv02_Serv.Name = "rv02_Serv";
             this.rv02_Serv.ServerReport.BearerToken = null;
-            this.rv02_Serv.Size = new System.Drawing.Size(813, 356);
+            this.rv02_Serv.Size = new System.Drawing.Size(688, 386);
             this.rv02_Serv.TabIndex = 1;
             this.rv02_Serv.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -192,16 +149,15 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             this.groupBox3.Controls.Add(this.groupBox6);
             this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Controls.Add(this.pictureBox2);
-            this.groupBox3.Location = new System.Drawing.Point(4, 4);
+            this.groupBox3.Location = new System.Drawing.Point(168, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(626, 149);
+            this.groupBox3.Size = new System.Drawing.Size(541, 149);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             // 
             // btn_Calcular_S
             // 
-            this.btn_Calcular_S.Location = new System.Drawing.Point(515, 115);
+            this.btn_Calcular_S.Location = new System.Drawing.Point(442, 104);
             this.btn_Calcular_S.Name = "btn_Calcular_S";
             this.btn_Calcular_S.Size = new System.Drawing.Size(75, 23);
             this.btn_Calcular_S.TabIndex = 31;
@@ -213,7 +169,7 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             // 
             this.groupBox6.Controls.Add(this.rb_mes);
             this.groupBox6.Controls.Add(this.rb_intervalo);
-            this.groupBox6.Location = new System.Drawing.Point(107, 40);
+            this.groupBox6.Location = new System.Drawing.Point(37, 14);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(126, 76);
             this.groupBox6.TabIndex = 30;
@@ -246,7 +202,7 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             this.groupBox5.Controls.Add(this.txt_year);
             this.groupBox5.Controls.Add(this.txt_mes);
             this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Location = new System.Drawing.Point(257, 102);
+            this.groupBox5.Location = new System.Drawing.Point(184, 91);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(200, 41);
             this.groupBox5.TabIndex = 29;
@@ -297,7 +253,7 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.txt_desde_mes);
             this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Location = new System.Drawing.Point(257, 19);
+            this.groupBox4.Location = new System.Drawing.Point(184, 14);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 71);
             this.groupBox4.TabIndex = 28;
@@ -380,27 +336,57 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 40);
+            this.pictureBox2.Location = new System.Drawing.Point(21, 18);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 76);
+            this.pictureBox2.Size = new System.Drawing.Size(100, 94);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txt_year_S);
+            this.groupBox2.Controls.Add(this.txt_año);
+            this.groupBox2.Location = new System.Drawing.Point(143, 14);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(197, 50);
+            this.groupBox2.TabIndex = 27;
+            this.groupBox2.TabStop = false;
+            // 
+            // txt_año
+            // 
+            this.txt_año.AutoSize = true;
+            this.txt_año.Location = new System.Drawing.Point(6, 18);
+            this.txt_año.Name = "txt_año";
+            this.txt_año.Size = new System.Drawing.Size(118, 13);
+            this.txt_año.TabIndex = 25;
+            this.txt_año.Text = "Ingrese el año a buscar";
+            // 
+            // txt_year_S
+            // 
+            this.txt_year_S.Location = new System.Drawing.Point(130, 18);
+            this.txt_year_S.Name = "txt_year_S";
+            this.txt_year_S.Pp_Campo = null;
+            this.txt_year_S.Pp_MensajeError = null;
+            this.txt_year_S.Pp_Tabla = null;
+            this.txt_year_S.Pp_Validable = false;
+            this.txt_year_S.Size = new System.Drawing.Size(60, 20);
+            this.txt_year_S.TabIndex = 1;
+            this.txt_year_S.Text = "AAAA";
+            this.txt_year_S.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_year_S.Click += new System.EventHandler(this.txt_year_S_Click);
             // 
             // Frm_Servicios_Estadisiticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 562);
+            this.ClientSize = new System.Drawing.Size(770, 624);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_Servicios_Estadisiticas";
             this.Text = "Estadisticas Servicios";
             this.Load += new System.EventHandler(this.Frm_Servicios_Estadisiticas_Load);
             this.tabControl1.ResumeLayout(false);
             this.pack_vendidos.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.packs_allS.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -411,6 +397,8 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -420,10 +408,6 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage pack_vendidos;
         private Microsoft.Reporting.WinForms.ReportViewer rv01_Servicios;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private Clases.TextBox01 txt_year_S;
-        private System.Windows.Forms.Label txt_año;
         private System.Windows.Forms.Button btn_calcular_serv;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage packs_allS;
@@ -445,5 +429,8 @@ namespace ComunicAr.Formularios.Estadisticas.Servicios
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.RadioButton rb_mes;
         private System.Windows.Forms.RadioButton rb_intervalo;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private Clases.TextBox01 txt_year_S;
+        private System.Windows.Forms.Label txt_año;
     }
 }
