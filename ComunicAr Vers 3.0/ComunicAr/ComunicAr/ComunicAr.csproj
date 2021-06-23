@@ -1111,6 +1111,7 @@
       <DependentUpon>DS_Rep_Servicio.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ComunicAr.Formularios.Estadisticas.Clientes.DS_Estadistica_Ciudad.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
