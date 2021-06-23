@@ -196,10 +196,14 @@ CREATE TABLE Servicios_prepago	(	tipo_servicio NCHAR(1)	NOT NULL,
 
 CREATE TABLE Venta_dispositivo	(	id_venta_dispo INTEGER		NOT NULL PRIMARY KEY IDENTITY,
 									fecha_venta DATE			NOT NULL,
+									id_numero INTEGER			NOT NULL,
 									id_dispositivo INTEGER		NOT NULL,
 									cant_cuotas	INTEGER			NOT NULL,
 									descuento NUMERIC (3,1)		NULL,
 
+									CONSTRAINT id_numeroXventa
+										FOREIGN KEY (id_numero)
+										REFERENCES Numero,
 									CONSTRAINT id_dispoXventa
 										FOREIGN KEY (id_dispositivo)
 										REFERENCES dispositivos,
