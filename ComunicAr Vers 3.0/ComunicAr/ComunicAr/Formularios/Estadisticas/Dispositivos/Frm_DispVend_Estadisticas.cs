@@ -34,6 +34,7 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.reportViewer1.RefreshReport();
             this.reportViewer2.RefreshReport();
             this.reportViewer2.RefreshReport();
+            this.rpv_VentaDispo_Cuotas.RefreshReport();
         }
 
         private void Calcular_DispVendidos()
@@ -266,6 +267,52 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             cmb_CodNacional.SelectedIndex = -1;
             cmb_tipoDisp.SelectedIndex = -1;
             txt_cliente.Clear();
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_estadistica_calcular_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void tabPage1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_estadistica_calcular_Click_1(object sender, EventArgs e)
+        {
+            DataTable tabla = new DataTable();
+            DispVendidos dispv = new DispVendidos();
+            if (rdb_estadisticas_todos.Checked)
+            {
+                tabla = dispv.VentaDispoxcuotatodos();
+                ReportDataSource paquetes = new ReportDataSource("DataSet1", tabla);
+                rpv_VentaDispo_Cuotas.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.Reporte_VentaDispo_Cuotas.rdlc";
+                rpv_VentaDispo_Cuotas.LocalReport.DataSources.Clear();
+                rpv_VentaDispo_Cuotas.LocalReport.DataSources.Add(paquetes);
+                rpv_VentaDispo_Cuotas.RefreshReport();
+            }
+            if (rdb_estadisticas_fecha.Checked)
+            {
+                tabla = dispv.VentaDispoxcuotasfechas(txt_estadistica_desde.Text, txt_estadisitca_hasta.Text);
+                ReportDataSource paquetes = new ReportDataSource("DataSet1", tabla);
+                rpv_VentaDispo_Cuotas.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Dispositivos.Reporte_VentaDispo_Cuotas.rdlc";
+                rpv_VentaDispo_Cuotas.LocalReport.DataSources.Clear();
+                rpv_VentaDispo_Cuotas.LocalReport.DataSources.Add(paquetes);
+                rpv_VentaDispo_Cuotas.RefreshReport();
+            }
+
         }
     }
 }

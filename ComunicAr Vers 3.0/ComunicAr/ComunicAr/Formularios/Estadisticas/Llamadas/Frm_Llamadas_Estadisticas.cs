@@ -34,6 +34,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.rv02_L.RefreshReport();
             chequeable();
 
+            this.rp_llamadaduracion.RefreshReport();
         }
 
         private void rb_mes_CheckedChanged(object sender, EventArgs e)
@@ -369,6 +370,32 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         {
             txt_year_L.Clear();
 
+        }
+
+        private void btn_llamadaxduracion_calcular_Click(object sender, EventArgs e)
+        {
+            CantidadLlamadas cant_llam = new CantidadLlamadas();
+            if (rdb_llamadaxduracion_Año.Checked == true)
+            {
+                DataTable tabla = new DataTable();
+                tabla = cant_llam.llamadaduracionaño(txt_duracion_año.Text);
+                ReportDataSource dato = new ReportDataSource("DataSet1", tabla);
+                rp_llamadaduracion.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Llamadas.ReporteLlamadas_Duracion.rdlc";
+                rv_llamadas.LocalReport.DataSources.Clear();
+                rv_llamadas.LocalReport.DataSources.Add(dato);
+                rv_llamadas.RefreshReport();
+            }
+            if (rdb_llamadasxduracion_todosAños.Checked == true)
+            {
+                DataTable tabla = new DataTable();
+                tabla = cant_llam.llamadasxduraciontodos();
+                ReportDataSource dato = new ReportDataSource("DataSet1", tabla);
+                rp_llamadaduracion.LocalReport.ReportEmbeddedResource = "ComunicAr.Formularios.Estadisticas.Llamadas.ReporteLlamadas_Duracion.rdlc";
+                rv_llamadas.LocalReport.DataSources.Clear();
+                rv_llamadas.LocalReport.DataSources.Add(dato);
+                rv_llamadas.RefreshReport();
+
+            }
         }
     }
 }

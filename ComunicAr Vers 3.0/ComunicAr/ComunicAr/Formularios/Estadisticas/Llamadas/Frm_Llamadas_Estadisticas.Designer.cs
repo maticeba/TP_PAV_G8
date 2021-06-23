@@ -33,6 +33,12 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btn_calcular = new System.Windows.Forms.Button();
+            this.txt_año = new ComunicAr.Clases.TextBox01();
+            this.txt_mesHasta = new ComunicAr.Clases.TextBox01();
+            this.txt_añoHasta = new ComunicAr.Clases.TextBox01();
+            this.txt_añoDesde = new ComunicAr.Clases.TextBox01();
+            this.txt_mesDesde = new ComunicAr.Clases.TextBox01();
+            this.txt_mes = new ComunicAr.Clases.TextBox01();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rb_todos = new System.Windows.Forms.RadioButton();
             this.rb_rango = new System.Windows.Forms.RadioButton();
@@ -47,34 +53,37 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.rb_sin = new System.Windows.Forms.RadioButton();
             this.rb_cliente = new System.Windows.Forms.RadioButton();
             this.rv_llamadas = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_año2 = new ComunicAr.Clases.TextBox01();
+            this.txt_cliente2 = new ComunicAr.Clases.TextBox01();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.rv02_L = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Calcular_L = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.rb_Mes_L = new System.Windows.Forms.RadioButton();
             this.rb_intervalo_L = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.rv02_L = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.txt_año = new ComunicAr.Clases.TextBox01();
-            this.txt_mesHasta = new ComunicAr.Clases.TextBox01();
-            this.txt_añoHasta = new ComunicAr.Clases.TextBox01();
-            this.txt_añoDesde = new ComunicAr.Clases.TextBox01();
-            this.txt_mesDesde = new ComunicAr.Clases.TextBox01();
-            this.txt_mes = new ComunicAr.Clases.TextBox01();
-            this.txt_año2 = new ComunicAr.Clases.TextBox01();
-            this.txt_cliente2 = new ComunicAr.Clases.TextBox01();
             this.txt_year_L = new ComunicAr.Clases.TextBox01();
             this.txt_mes_L = new ComunicAr.Clases.TextBox01();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txt_hasta_year_L = new ComunicAr.Clases.TextBox01();
             this.txt_desde_year_L = new ComunicAr.Clases.TextBox01();
             this.txt_hasta_mes_L = new ComunicAr.Clases.TextBox01();
+            this.label4 = new System.Windows.Forms.Label();
             this.txt_desde_mes_L = new ComunicAr.Clases.TextBox01();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.rp_llamadaduracion = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.rdb_llamadasxduracion_todosAños = new System.Windows.Forms.RadioButton();
+            this.rdb_llamadaxduracion_Año = new System.Windows.Forms.RadioButton();
+            this.txt_duracion_año = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btn_llamadaxduracion_calcular = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,10 +91,13 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -93,6 +105,7 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -129,6 +142,84 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.btn_calcular.Text = "Calcular";
             this.btn_calcular.UseVisualStyleBackColor = true;
             this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click);
+            // 
+            // txt_año
+            // 
+            this.txt_año.Enabled = false;
+            this.txt_año.Location = new System.Drawing.Point(393, 23);
+            this.txt_año.Name = "txt_año";
+            this.txt_año.Pp_Campo = null;
+            this.txt_año.Pp_MensajeError = null;
+            this.txt_año.Pp_Tabla = null;
+            this.txt_año.Pp_Validable = false;
+            this.txt_año.Size = new System.Drawing.Size(45, 20);
+            this.txt_año.TabIndex = 2;
+            this.txt_año.Text = "YYYY";
+            // 
+            // txt_mesHasta
+            // 
+            this.txt_mesHasta.Enabled = false;
+            this.txt_mesHasta.Location = new System.Drawing.Point(456, 49);
+            this.txt_mesHasta.Name = "txt_mesHasta";
+            this.txt_mesHasta.Pp_Campo = null;
+            this.txt_mesHasta.Pp_MensajeError = null;
+            this.txt_mesHasta.Pp_Tabla = null;
+            this.txt_mesHasta.Pp_Validable = false;
+            this.txt_mesHasta.Size = new System.Drawing.Size(31, 20);
+            this.txt_mesHasta.TabIndex = 2;
+            this.txt_mesHasta.Text = "MM";
+            // 
+            // txt_añoHasta
+            // 
+            this.txt_añoHasta.Enabled = false;
+            this.txt_añoHasta.Location = new System.Drawing.Point(493, 49);
+            this.txt_añoHasta.Name = "txt_añoHasta";
+            this.txt_añoHasta.Pp_Campo = null;
+            this.txt_añoHasta.Pp_MensajeError = null;
+            this.txt_añoHasta.Pp_Tabla = null;
+            this.txt_añoHasta.Pp_Validable = false;
+            this.txt_añoHasta.Size = new System.Drawing.Size(45, 20);
+            this.txt_añoHasta.TabIndex = 2;
+            this.txt_añoHasta.Text = "YYYY";
+            // 
+            // txt_añoDesde
+            // 
+            this.txt_añoDesde.Enabled = false;
+            this.txt_añoDesde.Location = new System.Drawing.Point(393, 49);
+            this.txt_añoDesde.Name = "txt_añoDesde";
+            this.txt_añoDesde.Pp_Campo = null;
+            this.txt_añoDesde.Pp_MensajeError = null;
+            this.txt_añoDesde.Pp_Tabla = null;
+            this.txt_añoDesde.Pp_Validable = false;
+            this.txt_añoDesde.Size = new System.Drawing.Size(45, 20);
+            this.txt_añoDesde.TabIndex = 2;
+            this.txt_añoDesde.Text = "YYYY";
+            // 
+            // txt_mesDesde
+            // 
+            this.txt_mesDesde.Enabled = false;
+            this.txt_mesDesde.Location = new System.Drawing.Point(356, 49);
+            this.txt_mesDesde.Name = "txt_mesDesde";
+            this.txt_mesDesde.Pp_Campo = null;
+            this.txt_mesDesde.Pp_MensajeError = null;
+            this.txt_mesDesde.Pp_Tabla = null;
+            this.txt_mesDesde.Pp_Validable = false;
+            this.txt_mesDesde.Size = new System.Drawing.Size(31, 20);
+            this.txt_mesDesde.TabIndex = 2;
+            this.txt_mesDesde.Text = "MM";
+            // 
+            // txt_mes
+            // 
+            this.txt_mes.Enabled = false;
+            this.txt_mes.Location = new System.Drawing.Point(356, 23);
+            this.txt_mes.Name = "txt_mes";
+            this.txt_mes.Pp_Campo = null;
+            this.txt_mes.Pp_MensajeError = null;
+            this.txt_mes.Pp_Tabla = null;
+            this.txt_mes.Pp_Validable = false;
+            this.txt_mes.Size = new System.Drawing.Size(31, 20);
+            this.txt_mes.TabIndex = 2;
+            this.txt_mes.Text = "MM";
             // 
             // groupBox1
             // 
@@ -287,15 +378,29 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.rv_llamadas.Size = new System.Drawing.Size(673, 331);
             this.rv_llamadas.TabIndex = 0;
             // 
-            // button1
+            // txt_año2
             // 
-            this.button1.Location = new System.Drawing.Point(599, 484);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txt_año2.Enabled = false;
+            this.txt_año2.Location = new System.Drawing.Point(360, 21);
+            this.txt_año2.Name = "txt_año2";
+            this.txt_año2.Pp_Campo = null;
+            this.txt_año2.Pp_MensajeError = null;
+            this.txt_año2.Pp_Tabla = null;
+            this.txt_año2.Pp_Validable = false;
+            this.txt_año2.Size = new System.Drawing.Size(100, 20);
+            this.txt_año2.TabIndex = 2;
+            // 
+            // txt_cliente2
+            // 
+            this.txt_cliente2.Enabled = false;
+            this.txt_cliente2.Location = new System.Drawing.Point(360, 48);
+            this.txt_cliente2.Name = "txt_cliente2";
+            this.txt_cliente2.Pp_Campo = null;
+            this.txt_cliente2.Pp_MensajeError = null;
+            this.txt_cliente2.Pp_Tabla = null;
+            this.txt_cliente2.Pp_Validable = false;
+            this.txt_cliente2.Size = new System.Drawing.Size(100, 20);
+            this.txt_cliente2.TabIndex = 2;
             // 
             // tabPage3
             // 
@@ -307,6 +412,14 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Llamadas por banda horaria";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // rv02_L
+            // 
+            this.rv02_L.Location = new System.Drawing.Point(4, 159);
+            this.rv02_L.Name = "rv02_L";
+            this.rv02_L.ServerReport.BearerToken = null;
+            this.rv02_L.Size = new System.Drawing.Size(672, 291);
+            this.rv02_L.TabIndex = 2;
             // 
             // groupBox3
             // 
@@ -320,6 +433,16 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox3.Size = new System.Drawing.Size(626, 149);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(6, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(107, 93);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
             // 
             // btn_Calcular_L
             // 
@@ -374,167 +497,6 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 13);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Ingrese el mes";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.txt_hasta_year_L);
-            this.groupBox4.Controls.Add(this.txt_desde_year_L);
-            this.groupBox4.Controls.Add(this.txt_hasta_mes_L);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.txt_desde_mes_L);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Location = new System.Drawing.Point(291, 19);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 71);
-            this.groupBox4.TabIndex = 28;
-            this.groupBox4.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 43);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Hasta";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Desde";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 33);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(107, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
-            // 
-            // rv02_L
-            // 
-            this.rv02_L.Location = new System.Drawing.Point(4, 159);
-            this.rv02_L.Name = "rv02_L";
-            this.rv02_L.ServerReport.BearerToken = null;
-            this.rv02_L.Size = new System.Drawing.Size(672, 291);
-            this.rv02_L.TabIndex = 2;
-            // 
-            // txt_año
-            // 
-            this.txt_año.Enabled = false;
-            this.txt_año.Location = new System.Drawing.Point(393, 23);
-            this.txt_año.Name = "txt_año";
-            this.txt_año.Pp_Campo = null;
-            this.txt_año.Pp_MensajeError = null;
-            this.txt_año.Pp_Tabla = null;
-            this.txt_año.Pp_Validable = false;
-            this.txt_año.Size = new System.Drawing.Size(45, 20);
-            this.txt_año.TabIndex = 2;
-            this.txt_año.Text = "YYYY";
-            // 
-            // txt_mesHasta
-            // 
-            this.txt_mesHasta.Enabled = false;
-            this.txt_mesHasta.Location = new System.Drawing.Point(456, 49);
-            this.txt_mesHasta.Name = "txt_mesHasta";
-            this.txt_mesHasta.Pp_Campo = null;
-            this.txt_mesHasta.Pp_MensajeError = null;
-            this.txt_mesHasta.Pp_Tabla = null;
-            this.txt_mesHasta.Pp_Validable = false;
-            this.txt_mesHasta.Size = new System.Drawing.Size(31, 20);
-            this.txt_mesHasta.TabIndex = 2;
-            this.txt_mesHasta.Text = "MM";
-            // 
-            // txt_añoHasta
-            // 
-            this.txt_añoHasta.Enabled = false;
-            this.txt_añoHasta.Location = new System.Drawing.Point(493, 49);
-            this.txt_añoHasta.Name = "txt_añoHasta";
-            this.txt_añoHasta.Pp_Campo = null;
-            this.txt_añoHasta.Pp_MensajeError = null;
-            this.txt_añoHasta.Pp_Tabla = null;
-            this.txt_añoHasta.Pp_Validable = false;
-            this.txt_añoHasta.Size = new System.Drawing.Size(45, 20);
-            this.txt_añoHasta.TabIndex = 2;
-            this.txt_añoHasta.Text = "YYYY";
-            // 
-            // txt_añoDesde
-            // 
-            this.txt_añoDesde.Enabled = false;
-            this.txt_añoDesde.Location = new System.Drawing.Point(393, 49);
-            this.txt_añoDesde.Name = "txt_añoDesde";
-            this.txt_añoDesde.Pp_Campo = null;
-            this.txt_añoDesde.Pp_MensajeError = null;
-            this.txt_añoDesde.Pp_Tabla = null;
-            this.txt_añoDesde.Pp_Validable = false;
-            this.txt_añoDesde.Size = new System.Drawing.Size(45, 20);
-            this.txt_añoDesde.TabIndex = 2;
-            this.txt_añoDesde.Text = "YYYY";
-            // 
-            // txt_mesDesde
-            // 
-            this.txt_mesDesde.Enabled = false;
-            this.txt_mesDesde.Location = new System.Drawing.Point(356, 49);
-            this.txt_mesDesde.Name = "txt_mesDesde";
-            this.txt_mesDesde.Pp_Campo = null;
-            this.txt_mesDesde.Pp_MensajeError = null;
-            this.txt_mesDesde.Pp_Tabla = null;
-            this.txt_mesDesde.Pp_Validable = false;
-            this.txt_mesDesde.Size = new System.Drawing.Size(31, 20);
-            this.txt_mesDesde.TabIndex = 2;
-            this.txt_mesDesde.Text = "MM";
-            // 
-            // txt_mes
-            // 
-            this.txt_mes.Enabled = false;
-            this.txt_mes.Location = new System.Drawing.Point(356, 23);
-            this.txt_mes.Name = "txt_mes";
-            this.txt_mes.Pp_Campo = null;
-            this.txt_mes.Pp_MensajeError = null;
-            this.txt_mes.Pp_Tabla = null;
-            this.txt_mes.Pp_Validable = false;
-            this.txt_mes.Size = new System.Drawing.Size(31, 20);
-            this.txt_mes.TabIndex = 2;
-            this.txt_mes.Text = "MM";
-            // 
-            // txt_año2
-            // 
-            this.txt_año2.Enabled = false;
-            this.txt_año2.Location = new System.Drawing.Point(360, 21);
-            this.txt_año2.Name = "txt_año2";
-            this.txt_año2.Pp_Campo = null;
-            this.txt_año2.Pp_MensajeError = null;
-            this.txt_año2.Pp_Tabla = null;
-            this.txt_año2.Pp_Validable = false;
-            this.txt_año2.Size = new System.Drawing.Size(100, 20);
-            this.txt_año2.TabIndex = 2;
-            // 
-            // txt_cliente2
-            // 
-            this.txt_cliente2.Enabled = false;
-            this.txt_cliente2.Location = new System.Drawing.Point(360, 48);
-            this.txt_cliente2.Name = "txt_cliente2";
-            this.txt_cliente2.Pp_Campo = null;
-            this.txt_cliente2.Pp_MensajeError = null;
-            this.txt_cliente2.Pp_Tabla = null;
-            this.txt_cliente2.Pp_Validable = false;
-            this.txt_cliente2.Size = new System.Drawing.Size(100, 20);
-            this.txt_cliente2.TabIndex = 2;
-            // 
             // txt_year_L
             // 
             this.txt_year_L.Location = new System.Drawing.Point(136, 15);
@@ -562,6 +524,29 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.txt_mes_L.Text = "MM";
             this.txt_mes_L.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_mes_L.Click += new System.EventHandler(this.txt_mes_L_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Ingrese el mes";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.txt_hasta_year_L);
+            this.groupBox4.Controls.Add(this.txt_desde_year_L);
+            this.groupBox4.Controls.Add(this.txt_hasta_mes_L);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.txt_desde_mes_L);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Location = new System.Drawing.Point(291, 19);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(200, 71);
+            this.groupBox4.TabIndex = 28;
+            this.groupBox4.TabStop = false;
             // 
             // txt_hasta_year_L
             // 
@@ -606,6 +591,15 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.txt_hasta_mes_L.Click += new System.EventHandler(this.txt_hasta_mes_L_Click);
             this.txt_hasta_mes_L.TextChanged += new System.EventHandler(this.txt_hasta_mes_L_TextChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Hasta";
+            // 
             // txt_desde_mes_L
             // 
             this.txt_desde_mes_L.Location = new System.Drawing.Point(57, 14);
@@ -619,6 +613,115 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.txt_desde_mes_L.Text = "MM";
             this.txt_desde_mes_L.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_desde_mes_L.Click += new System.EventHandler(this.txt_desde_mes_L_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Desde";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(599, 484);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.pictureBox1);
+            this.tabPage4.Controls.Add(this.btn_llamadaxduracion_calcular);
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Controls.Add(this.txt_duracion_año);
+            this.tabPage4.Controls.Add(this.groupBox7);
+            this.tabPage4.Controls.Add(this.rp_llamadaduracion);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(679, 450);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // rp_llamadaduracion
+            // 
+            this.rp_llamadaduracion.Location = new System.Drawing.Point(81, 198);
+            this.rp_llamadaduracion.Name = "rp_llamadaduracion";
+            this.rp_llamadaduracion.ServerReport.BearerToken = null;
+            this.rp_llamadaduracion.Size = new System.Drawing.Size(396, 246);
+            this.rp_llamadaduracion.TabIndex = 0;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.rdb_llamadasxduracion_todosAños);
+            this.groupBox7.Controls.Add(this.rdb_llamadaxduracion_Año);
+            this.groupBox7.Location = new System.Drawing.Point(206, 52);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(120, 82);
+            this.groupBox7.TabIndex = 2;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Filtros";
+            // 
+            // rdb_llamadasxduracion_todosAños
+            // 
+            this.rdb_llamadasxduracion_todosAños.Location = new System.Drawing.Point(6, 42);
+            this.rdb_llamadasxduracion_todosAños.Name = "rdb_llamadasxduracion_todosAños";
+            this.rdb_llamadasxduracion_todosAños.Size = new System.Drawing.Size(114, 24);
+            this.rdb_llamadasxduracion_todosAños.TabIndex = 1;
+            this.rdb_llamadasxduracion_todosAños.TabStop = true;
+            this.rdb_llamadasxduracion_todosAños.Text = "Todos los Años";
+            this.rdb_llamadasxduracion_todosAños.UseVisualStyleBackColor = true;
+            // 
+            // rdb_llamadaxduracion_Año
+            // 
+            this.rdb_llamadaxduracion_Año.AutoSize = true;
+            this.rdb_llamadaxduracion_Año.Location = new System.Drawing.Point(6, 19);
+            this.rdb_llamadaxduracion_Año.Name = "rdb_llamadaxduracion_Año";
+            this.rdb_llamadaxduracion_Año.Size = new System.Drawing.Size(63, 17);
+            this.rdb_llamadaxduracion_Año.TabIndex = 0;
+            this.rdb_llamadaxduracion_Año.TabStop = true;
+            this.rdb_llamadaxduracion_Año.Text = "Por Año";
+            this.rdb_llamadaxduracion_Año.UseVisualStyleBackColor = true;
+            // 
+            // txt_duracion_año
+            // 
+            this.txt_duracion_año.Location = new System.Drawing.Point(378, 68);
+            this.txt_duracion_año.Name = "txt_duracion_año";
+            this.txt_duracion_año.Size = new System.Drawing.Size(49, 20);
+            this.txt_duracion_año.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(332, 73);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Año";
+            // 
+            // btn_llamadaxduracion_calcular
+            // 
+            this.btn_llamadaxduracion_calcular.Location = new System.Drawing.Point(509, 158);
+            this.btn_llamadaxduracion_calcular.Name = "btn_llamadaxduracion_calcular";
+            this.btn_llamadaxduracion_calcular.Size = new System.Drawing.Size(97, 23);
+            this.btn_llamadaxduracion_calcular.TabIndex = 9;
+            this.btn_llamadaxduracion_calcular.Text = "Calcular";
+            this.btn_llamadaxduracion_calcular.UseVisualStyleBackColor = true;
+            this.btn_llamadaxduracion_calcular.Click += new System.EventHandler(this.btn_llamadaxduracion_calcular_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(6, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(134, 82);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Llamadas_Estadisticas
             // 
@@ -641,13 +744,18 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -699,5 +807,14 @@ namespace ComunicAr.Formularios.Estadisticas.Llamadas
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Microsoft.Reporting.WinForms.ReportViewer rv02_L;
+        private System.Windows.Forms.TabPage tabPage4;
+        private Microsoft.Reporting.WinForms.ReportViewer rp_llamadaduracion;
+        private System.Windows.Forms.Button btn_llamadaxduracion_calcular;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_duracion_año;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.RadioButton rdb_llamadasxduracion_todosAños;
+        private System.Windows.Forms.RadioButton rdb_llamadaxduracion_Año;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

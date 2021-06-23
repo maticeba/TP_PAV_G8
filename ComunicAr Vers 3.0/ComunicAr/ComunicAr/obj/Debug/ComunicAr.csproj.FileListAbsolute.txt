@@ -1776,3 +1776,4 @@ C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Frm_Reporte_Facturas.resources
 C:\Users\Tomas\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Reportes.Llamada.Frm_Reporte_Llamadas.resources
 C:\Users\Nico\Documents\Proyectos VS\PAV1\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.csprojAssemblyReference.cache
+C:\Users\Renzo Padilla\Documents\GitHub\TP_PAV_G8\ComunicAr Vers 3.0\ComunicAr\ComunicAr\obj\Debug\ComunicAr.Formularios.Estadisticas.Numeros.Frm_Estadisticas_Numeros.resources

@@ -34,6 +34,22 @@ namespace ComunicAr.Negocio_Estadisticas
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
+        public DataTable llamadaduracionaño(string año)
+        {
+            string sql = @"SELECT A.Mes, COUNT (*) AS Total_Llamadas, SUM(A.DURACION) AS Duracion_total,SUM(A.DURACION)/ COUNT (*) AS Duracion_Promedio " +
+                           " FROM ( SELECT MONTH (fecha_hora_inicio) AS Mes, DATEDIFF(minute, fecha_hora_inicio, fecha_hora_fin) AS DURACION FROM Llamadas WHERE YEAR(fecha_hora_inicio) = " + año + ") A " +
+                           "GROUP BY Mes";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
 
+        public DataTable llamadasxduraciontodos()
+        {
+            string sql = @"SELECT A.Mes, COUNT (*) AS Total_Llamadas, SUM(A.DURACION) AS Duracion_total,SUM(A.DURACION)/ COUNT (*) AS Duracion_Promedio " +
+                          " FROM ( SELECT MONTH (fecha_hora_inicio) AS Mes, DATEDIFF(minute, fecha_hora_inicio, fecha_hora_fin) AS DURACION FROM Llamadas) A " +
+                          "GROUP BY Mes";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
     }
 }

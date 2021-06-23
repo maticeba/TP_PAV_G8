@@ -12,7 +12,7 @@
   <xs:element name="DS_Llamadas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Llamadas" msprop:Generator_UserDSName="DS_Llamadas">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Denominacion" msprop:Generator_ColumnVarNameInTable="columnDenominacion" msprop:Generator_ColumnPropNameInRow="Denominacion" msprop:Generator_ColumnPropNameInTable="DenominacionColumn" msprop:Generator_UserColumnName="Denominacion" type="xs:string" minOccurs="0" />
@@ -20,11 +20,21 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Llamadas_x0020_por_x0020_Banda_x0020_Horaria" msprop:Generator_TableClassName="Llamadas_por_Banda_HorariaDataTable" msprop:Generator_TableVarName="tableLlamadas_por_Banda_Horaria" msprop:Generator_TablePropName="Llamadas_por_Banda_Horaria" msprop:Generator_RowDeletingName="Llamadas_por_Banda_HorariaRowDeleting" msprop:Generator_RowChangingName="Llamadas_por_Banda_HorariaRowChanging" msprop:Generator_RowEvHandlerName="Llamadas_por_Banda_HorariaRowChangeEventHandler" msprop:Generator_RowDeletedName="Llamadas_por_Banda_HorariaRowDeleted" msprop:Generator_UserTableName="Llamadas por Banda Horaria" msprop:Generator_RowChangedName="Llamadas_por_Banda_HorariaRowChanged" msprop:Generator_RowEvArgName="Llamadas_por_Banda_HorariaRowChangeEvent" msprop:Generator_RowClassName="Llamadas_por_Banda_HorariaRow">
+        <xs:element name="Llamadas_x0020_por_x0020_Banda_x0020_Horaria" msprop:Generator_TableClassName="Llamadas_por_Banda_HorariaDataTable" msprop:Generator_TableVarName="tableLlamadas_por_Banda_Horaria" msprop:Generator_RowChangedName="Llamadas_por_Banda_HorariaRowChanged" msprop:Generator_TablePropName="Llamadas_por_Banda_Horaria" msprop:Generator_RowDeletingName="Llamadas_por_Banda_HorariaRowDeleting" msprop:Generator_RowChangingName="Llamadas_por_Banda_HorariaRowChanging" msprop:Generator_RowEvHandlerName="Llamadas_por_Banda_HorariaRowChangeEventHandler" msprop:Generator_RowDeletedName="Llamadas_por_Banda_HorariaRowDeleted" msprop:Generator_RowClassName="Llamadas_por_Banda_HorariaRow" msprop:Generator_UserTableName="Llamadas por Banda Horaria" msprop:Generator_RowEvArgName="Llamadas_por_Banda_HorariaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="banda" msprop:Generator_ColumnVarNameInTable="columnbanda" msprop:Generator_ColumnPropNameInRow="banda" msprop:Generator_ColumnPropNameInTable="bandaColumn" msprop:Generator_UserColumnName="banda" type="xs:string" minOccurs="0" />
               <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Llamadas" msprop:Generator_ColumnVarNameInTable="columnTotal_Llamadas" msprop:Generator_ColumnPropNameInRow="Total_Llamadas" msprop:Generator_ColumnPropNameInTable="Total_LlamadasColumn" msprop:Generator_UserColumnName="Total_Llamadas" type="xs:string" minOccurs="0" />
+              <xs:element name="Duracion_Total" msprop:Generator_ColumnVarNameInTable="columnDuracion_Total" msprop:Generator_ColumnPropNameInRow="Duracion_Total" msprop:Generator_ColumnPropNameInTable="Duracion_TotalColumn" msprop:Generator_UserColumnName="Duracion_Total" type="xs:string" minOccurs="0" />
+              <xs:element name="Duracion_Promedio" msprop:Generator_ColumnVarNameInTable="columnDuracion_Promedio" msprop:Generator_ColumnPropNameInRow="Duracion_Promedio" msprop:Generator_ColumnPropNameInTable="Duracion_PromedioColumn" msprop:Generator_UserColumnName="Duracion_Promedio" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

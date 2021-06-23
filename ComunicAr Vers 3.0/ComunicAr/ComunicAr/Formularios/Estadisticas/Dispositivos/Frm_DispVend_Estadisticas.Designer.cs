@@ -30,129 +30,50 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_DispVend_Estadisticas));
+            this.DispositivosPorServicios = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.DispositivosVendidos = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.DispositivosVendidos = new System.Windows.Forms.TabPage();
-            this.DispositivosPorServicios = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.rpv_VentaDispo_Cuotas = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rdb_estadisticas_todos = new System.Windows.Forms.RadioButton();
+            this.rdb_estadisticas_fecha = new System.Windows.Forms.RadioButton();
+            this.txt_estadisitca_hasta = new System.Windows.Forms.TextBox();
+            this.txt_estadistica_desde = new System.Windows.Forms.TextBox();
+            this.btn_estadistica_calcular = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtYear = new ComunicAr.Clases.TextBox01();
             this.txtMes = new ComunicAr.Clases.TextBox01();
             this.txt_cliente = new ComunicAr.Clases.TextBox01();
             this.cmb_Marca = new ComunicAr.Clases.ComboBox01();
             this.cmb_tipoDisp = new ComunicAr.Clases.ComboBox01();
             this.cmb_CodNacional = new ComunicAr.Clases.ComboBox01();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.DispositivosVendidos.SuspendLayout();
             this.DispositivosPorServicios.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.DispositivosVendidos.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(19, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Location = new System.Drawing.Point(19, 128);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(603, 407);
-            this.reportViewer1.TabIndex = 1;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(547, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(162, 20);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(172, 70);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Filtros";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 42);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(106, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Mes y año actual";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(158, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "En un mes y año especifico:";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.DispositivosVendidos);
-            this.tabControl1.Controls.Add(this.DispositivosPorServicios);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(684, 649);
-            this.tabControl1.TabIndex = 6;
-            // 
-            // DispositivosVendidos
-            // 
-            this.DispositivosVendidos.Controls.Add(this.reportViewer1);
-            this.DispositivosVendidos.Controls.Add(this.txtYear);
-            this.DispositivosVendidos.Controls.Add(this.pictureBox1);
-            this.DispositivosVendidos.Controls.Add(this.txtMes);
-            this.DispositivosVendidos.Controls.Add(this.button1);
-            this.DispositivosVendidos.Controls.Add(this.groupBox1);
-            this.DispositivosVendidos.Location = new System.Drawing.Point(4, 22);
-            this.DispositivosVendidos.Name = "DispositivosVendidos";
-            this.DispositivosVendidos.Padding = new System.Windows.Forms.Padding(3);
-            this.DispositivosVendidos.Size = new System.Drawing.Size(676, 623);
-            this.DispositivosVendidos.TabIndex = 0;
-            this.DispositivosVendidos.Text = "DispositivosVendidos";
-            this.DispositivosVendidos.UseVisualStyleBackColor = true;
-            this.DispositivosVendidos.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // DispositivosPorServicios
             // 
@@ -173,6 +94,35 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.DispositivosPorServicios.UseVisualStyleBackColor = true;
             this.DispositivosPorServicios.Click += new System.EventHandler(this.DispositivosPorServicios_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(550, 20);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Calcular";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(19, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 86);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // reportViewer2
+            // 
+            this.reportViewer2.Location = new System.Drawing.Point(19, 206);
+            this.reportViewer2.Name = "reportViewer2";
+            this.reportViewer2.ServerReport.BearerToken = null;
+            this.reportViewer2.Size = new System.Drawing.Size(626, 400);
+            this.reportViewer2.TabIndex = 11;
+            this.reportViewer2.Load += new System.EventHandler(this.reportViewer2_Load);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.radioButton7);
@@ -187,41 +137,17 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filtros";
             // 
-            // radioButton7
+            // radioButton4
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(6, 89);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(76, 17);
-            this.radioButton7.TabIndex = 5;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Por marca:";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(6, 65);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(131, 17);
-            this.radioButton6.TabIndex = 4;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Por tipo de dispositivo:";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(6, 42);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(92, 17);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Por ID cliente:";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(6, 19);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(122, 17);
+            this.radioButton4.TabIndex = 1;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Por codigo nacional:";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -235,46 +161,224 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // radioButton4
+            // radioButton5
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(6, 19);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(122, 17);
-            this.radioButton4.TabIndex = 1;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Por codigo nacional:";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(6, 42);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(92, 17);
+            this.radioButton5.TabIndex = 3;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Por ID cliente:";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
-            // pictureBox2
+            // radioButton6
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(19, 20);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 86);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(6, 65);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(131, 17);
+            this.radioButton6.TabIndex = 4;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Por tipo de dispositivo:";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
-            // button2
+            // radioButton7
             // 
-            this.button2.Location = new System.Drawing.Point(550, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Calcular";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(6, 89);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(76, 17);
+            this.radioButton7.TabIndex = 5;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Por marca:";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
-            // reportViewer2
+            // DispositivosVendidos
             // 
-            this.reportViewer2.Location = new System.Drawing.Point(19, 206);
-            this.reportViewer2.Name = "reportViewer2";
-            this.reportViewer2.ServerReport.BearerToken = null;
-            this.reportViewer2.Size = new System.Drawing.Size(626, 400);
-            this.reportViewer2.TabIndex = 11;
-            this.reportViewer2.Load += new System.EventHandler(this.reportViewer2_Load);
+            this.DispositivosVendidos.Controls.Add(this.reportViewer1);
+            this.DispositivosVendidos.Controls.Add(this.txtYear);
+            this.DispositivosVendidos.Controls.Add(this.txtMes);
+            this.DispositivosVendidos.Controls.Add(this.pictureBox1);
+            this.DispositivosVendidos.Controls.Add(this.button1);
+            this.DispositivosVendidos.Controls.Add(this.groupBox1);
+            this.DispositivosVendidos.Location = new System.Drawing.Point(4, 22);
+            this.DispositivosVendidos.Name = "DispositivosVendidos";
+            this.DispositivosVendidos.Padding = new System.Windows.Forms.Padding(3);
+            this.DispositivosVendidos.Size = new System.Drawing.Size(676, 623);
+            this.DispositivosVendidos.TabIndex = 0;
+            this.DispositivosVendidos.Text = "DispositivosVendidos";
+            this.DispositivosVendidos.UseVisualStyleBackColor = true;
+            this.DispositivosVendidos.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Location = new System.Drawing.Point(162, 20);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(172, 70);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filtros";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 19);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(158, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "En un mes y año especifico:";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 42);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(106, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Mes y año actual";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(547, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Calcular";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(19, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(88, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(19, 128);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(603, 407);
+            this.reportViewer1.TabIndex = 1;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.DispositivosVendidos);
+            this.tabControl1.Controls.Add(this.DispositivosPorServicios);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(684, 649);
+            this.tabControl1.TabIndex = 6;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.pictureBox3);
+            this.tabPage1.Controls.Add(this.btn_estadistica_calcular);
+            this.tabPage1.Controls.Add(this.txt_estadisitca_hasta);
+            this.tabPage1.Controls.Add(this.txt_estadistica_desde);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.rpv_VentaDispo_Cuotas);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(676, 623);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Por Cuotas";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click_1);
+            // 
+            // rpv_VentaDispo_Cuotas
+            // 
+            this.rpv_VentaDispo_Cuotas.Location = new System.Drawing.Point(16, 252);
+            this.rpv_VentaDispo_Cuotas.Name = "rpv_VentaDispo_Cuotas";
+            this.rpv_VentaDispo_Cuotas.ServerReport.BearerToken = null;
+            this.rpv_VentaDispo_Cuotas.Size = new System.Drawing.Size(654, 271);
+            this.rpv_VentaDispo_Cuotas.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rdb_estadisticas_todos);
+            this.groupBox3.Controls.Add(this.rdb_estadisticas_fecha);
+            this.groupBox3.Location = new System.Drawing.Point(177, 45);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(125, 72);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "filtros";
+            // 
+            // rdb_estadisticas_todos
+            // 
+            this.rdb_estadisticas_todos.AutoSize = true;
+            this.rdb_estadisticas_todos.Location = new System.Drawing.Point(16, 42);
+            this.rdb_estadisticas_todos.Name = "rdb_estadisticas_todos";
+            this.rdb_estadisticas_todos.Size = new System.Drawing.Size(51, 17);
+            this.rdb_estadisticas_todos.TabIndex = 1;
+            this.rdb_estadisticas_todos.TabStop = true;
+            this.rdb_estadisticas_todos.Text = "todos";
+            this.rdb_estadisticas_todos.UseVisualStyleBackColor = true;
+            // 
+            // rdb_estadisticas_fecha
+            // 
+            this.rdb_estadisticas_fecha.AutoSize = true;
+            this.rdb_estadisticas_fecha.Location = new System.Drawing.Point(16, 19);
+            this.rdb_estadisticas_fecha.Name = "rdb_estadisticas_fecha";
+            this.rdb_estadisticas_fecha.Size = new System.Drawing.Size(69, 17);
+            this.rdb_estadisticas_fecha.TabIndex = 0;
+            this.rdb_estadisticas_fecha.TabStop = true;
+            this.rdb_estadisticas_fecha.Text = "Mes/Año";
+            this.rdb_estadisticas_fecha.UseVisualStyleBackColor = true;
+            // 
+            // txt_estadisitca_hasta
+            // 
+            this.txt_estadisitca_hasta.Location = new System.Drawing.Point(407, 61);
+            this.txt_estadisitca_hasta.Name = "txt_estadisitca_hasta";
+            this.txt_estadisitca_hasta.Size = new System.Drawing.Size(60, 20);
+            this.txt_estadisitca_hasta.TabIndex = 7;
+            // 
+            // txt_estadistica_desde
+            // 
+            this.txt_estadistica_desde.Location = new System.Drawing.Point(333, 61);
+            this.txt_estadistica_desde.Name = "txt_estadistica_desde";
+            this.txt_estadistica_desde.Size = new System.Drawing.Size(36, 20);
+            this.txt_estadistica_desde.TabIndex = 6;
+            // 
+            // btn_estadistica_calcular
+            // 
+            this.btn_estadistica_calcular.BackColor = System.Drawing.Color.Transparent;
+            this.btn_estadistica_calcular.Location = new System.Drawing.Point(569, 153);
+            this.btn_estadistica_calcular.Name = "btn_estadistica_calcular";
+            this.btn_estadistica_calcular.Size = new System.Drawing.Size(75, 23);
+            this.btn_estadistica_calcular.TabIndex = 8;
+            this.btn_estadistica_calcular.Text = "Calcular";
+            this.btn_estadistica_calcular.UseVisualStyleBackColor = false;
+            this.btn_estadistica_calcular.Click += new System.EventHandler(this.btn_estadistica_calcular_Click_1);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(16, 26);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(83, 78);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
             // 
             // txtYear
             // 
@@ -374,46 +478,60 @@ namespace ComunicAr.Formularios.Estadisticas.Dispositivos
             this.Name = "Frm_DispVend_Estadisticas";
             this.Text = "Frm_DispVend_Estadisticas";
             this.Load += new System.EventHandler(this.Frm_DispVend_Estadisticas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.DispositivosVendidos.ResumeLayout(false);
-            this.DispositivosVendidos.PerformLayout();
             this.DispositivosPorServicios.ResumeLayout(false);
             this.DispositivosPorServicios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.DispositivosVendidos.ResumeLayout(false);
+            this.DispositivosVendidos.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private Clases.TextBox01 txtMes;
-        private Clases.TextBox01 txtYear;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage DispositivosVendidos;
         private System.Windows.Forms.TabPage DispositivosPorServicios;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2;
+        private Clases.TextBox01 txt_cliente;
+        private Clases.ComboBox01 cmb_Marca;
+        private Clases.ComboBox01 cmb_tipoDisp;
+        private Clases.ComboBox01 cmb_CodNacional;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private Clases.ComboBox01 cmb_CodNacional;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private Clases.ComboBox01 cmb_tipoDisp;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private Clases.ComboBox01 cmb_Marca;
-        private Clases.TextBox01 txt_cliente;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TabPage DispositivosVendidos;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Clases.TextBox01 txtYear;
+        private Clases.TextBox01 txtMes;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private Microsoft.Reporting.WinForms.ReportViewer rpv_VentaDispo_Cuotas;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rdb_estadisticas_todos;
+        private System.Windows.Forms.RadioButton rdb_estadisticas_fecha;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btn_estadistica_calcular;
+        private System.Windows.Forms.TextBox txt_estadisitca_hasta;
+        private System.Windows.Forms.TextBox txt_estadistica_desde;
     }
 }

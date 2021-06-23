@@ -815,10 +815,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\ReportDispVend.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\ReporteDispxServ.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Dispositivos\Reporte_VentaDispo_Cuotas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Frm_Llamadas_Estadisticas.resx">
       <DependentUpon>Frm_Llamadas_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\ReporteLlamadas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\ReporteLlamadas_Duracion.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_LlamadasXBanda.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Llamadas\Reporte_TipoComunicacion.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\Numeros\Estadistica_Numeros_bajas.rdlc" />

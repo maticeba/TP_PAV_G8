@@ -93,5 +93,25 @@ namespace ComunicAr.Negocio_Estadisticas
             tabla = BD.EjecutarSelect(sql);
             return tabla;
         }
+
+        public DataTable VentaDispoxcuotatodos()
+        {
+            string sql = @"select v.cant_cuotas,COUNT(*) as 'valor' " +
+                            " from Venta_dispositivo v " +
+                            " where v.cant_cuotas in (1,3,6,12) " +
+                            " group by v.cant_cuotas ";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
+
+        public DataTable VentaDispoxcuotasfechas(string mes, string año)
+        {
+            string sql = @"select v.cant_cuotas,COUNT(*) as 'valor' " +
+                         " from Venta_dispositivo v " +
+                         " where month(v.fecha_venta) = " + mes + " and year(v.fecha_venta) = " + año +
+                         " group by v.cant_cuotas ";
+            tabla = BD.EjecutarSelect(sql);
+            return tabla;
+        }
     }
 }
