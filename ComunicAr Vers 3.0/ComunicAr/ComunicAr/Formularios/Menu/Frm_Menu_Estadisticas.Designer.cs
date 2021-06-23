@@ -54,7 +54,7 @@ namespace ComunicAr.Formularios.Menu
             this.bnt_menu_esta_dispositivos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bnt_menu_esta_dispositivos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_menu_esta_dispositivos.Image = ((System.Drawing.Image)(resources.GetObject("bnt_menu_esta_dispositivos.Image")));
-            this.bnt_menu_esta_dispositivos.Location = new System.Drawing.Point(75, 126);
+            this.bnt_menu_esta_dispositivos.Location = new System.Drawing.Point(93, 126);
             this.bnt_menu_esta_dispositivos.Name = "bnt_menu_esta_dispositivos";
             this.bnt_menu_esta_dispositivos.Size = new System.Drawing.Size(115, 108);
             this.bnt_menu_esta_dispositivos.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace ComunicAr.Formularios.Menu
             this.bnt_menu_esta_llamadas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bnt_menu_esta_llamadas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_menu_esta_llamadas.Image = ((System.Drawing.Image)(resources.GetObject("bnt_menu_esta_llamadas.Image")));
-            this.bnt_menu_esta_llamadas.Location = new System.Drawing.Point(196, 126);
+            this.bnt_menu_esta_llamadas.Location = new System.Drawing.Point(214, 126);
             this.bnt_menu_esta_llamadas.Name = "bnt_menu_esta_llamadas";
             this.bnt_menu_esta_llamadas.Size = new System.Drawing.Size(115, 108);
             this.bnt_menu_esta_llamadas.TabIndex = 1;
@@ -132,7 +132,7 @@ namespace ComunicAr.Formularios.Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 276);
+            this.ClientSize = new System.Drawing.Size(419, 274);
             this.Controls.Add(this.bnt_menu_esta_llamadas);
             this.Controls.Add(this.bnt_menu_esta_numero);
             this.Controls.Add(this.bnt_menu_esta_servicios);
